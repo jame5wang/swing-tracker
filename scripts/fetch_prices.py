@@ -28,6 +28,7 @@ def main():
             "high": row.get("HighestPrice"),
             "low": row.get("LowestPrice"),
             "volume": row.get("TradeVolume"),
+            "change": row.get("Change"),  # 今日漲跌（帶正負號），前端用 close-change 算昨收
         })
 
     output = {"date": today, "source": "TWSE OpenAPI (上市)", "stocks": stocks}

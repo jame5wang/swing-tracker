@@ -141,7 +141,11 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .row .rName{font-size:14.5px; font-weight:650;}
 .row .rCode{color:var(--sub); font-size:12px; margin-left:6px; font-family:var(--mono);}
 .row .rLabel{font-size:11.5px; color:var(--sub); margin-top:2px;}
+.row .rPriceWrap{text-align:right; flex-shrink:0;}
 .row .rPrice{font-size:15.5px; font-weight:700; font-variant-numeric:tabular-nums; font-family:var(--mono);}
+.row .rChg{font-size:11px; font-weight:700; font-family:var(--mono); margin-top:2px; white-space:nowrap;}
+.row .rChg.up{color:var(--buy);} .row .rChg.down{color:var(--sell);} .row .rChg.flat{color:var(--mute);}
+.row .rPrevClose{font-size:10px; color:var(--mute); margin-top:1px; font-family:var(--mono); white-space:nowrap;}
 .row .rChev{color:var(--mute); font-size:18px;}
 .dotStatus.st-buy{background:var(--buy); box-shadow:0 0 7px 0 var(--buy);} .dotStatus.st-sell{background:var(--sell); box-shadow:0 0 7px 0 var(--sell);}
 .dotStatus.st-stop{background:var(--deep); box-shadow:0 0 7px 0 var(--deep);} .dotStatus.st-hold{background:var(--hold);}
@@ -491,6 +495,22 @@ function fmt(n){ return (n===''||n===null||n===undefined||isNaN(n))?'':Number(n)
 function pct(a,b){ if(isNaN(a)||isNaN(b)||b===0) return null; return ((a-b)/b*100); }
 function pctStr(v){ if(v===null) return '—'; const s=v>=0?'+':''; return s+v.toFixed(1)+'%'; }
 
+// 今日漲跌／昨收：change 是自動盤後資料帶的今日漲跌金額（帶正負號），沒有的話（手動輸入股價）
+// 就不顯示，避免顯示錯誤的漲跌資訊
+function changeBadgeHtml(s){
+  const price=parseFloat(s.price), chg=parseFloat(s.change);
+  if(isNaN(price) || isNaN(chg) || s.priceSource!=='auto') return '';
+  const prevClose=price-chg;
+  if(isNaN(prevClose) || prevClose===0) return '';
+  const chgPct=(chg/prevClose*100);
+  const dir = chg>0?'up':(chg<0?'down':'flat');
+  const arrow = chg>0?'▲':(chg<0?'▼':'—');
+  const chgAbsStr = Math.abs(chg).toFixed(Math.abs(chg)%1===0?0:2);
+  return `
+    <div class="rChg ${dir}">${arrow}${chgAbsStr} (${chgPct>=0?'+':''}${chgPct.toFixed(2)}%)</div>
+    <div class="rPrevClose">昨收 ${fmt(prevClose)}</div>`;
+}
+
 const NEAR_PCT=3; // 距離買賣參考價多少 % 以內算「接近提醒」
 const REBUY_BAND_PCT=3; // 噴出後拉回測10日線，上下多少 % 以內算「拉回買回」提醒
 
@@ -562,11 +582,11 @@ function statusOf(s){
   }
   if(buyRef!==null){
     const d=(p-buyRef)/buyRef*100;
-    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-buy', label:`接近${buyIsAi?'AI 建議':''}買點（+${d.toFixed(1)}%）`};
+    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-buy', label:`接近${buyIsAi?'AI 建議':''}安全買進（+${d.toFixed(1)}%）`};
   }
   if(sellRef!==null){
     const d=(sellRef-p)/sellRef*100;
-    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-sell', label:`接近${sellIsAi?'AI 建議':''}賣點（-${d.toFixed(1)}%）`};
+    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-sell', label:`接近${sellIsAi?'AI 建議':''}部分停利（-${d.toFixed(1)}%）`};
   }
   return {cls:'st-hold', label:'區間內 · 續抱觀察'};
 }
@@ -602,6 +622,7 @@ function applyAutoPrices(){
     const match=autoData.stocks.find(x=>String(x.code).trim()===String(s.code).trim());
     if(match && match.close && !isNaN(parseFloat(match.close))){
       s.price=match.close; s.priceSource='auto'; s.updated=(match.market||'')+' 自動更新'; changed=true;
+      s.change=(match.change!==undefined && match.change!==null && match.change!=='' && !isNaN(parseFloat(match.change))) ? parseFloat(match.change) : '';
     }
   });
   if(changed){ save(); render(); }
@@ -917,7 +938,10 @@ function renderRows(){
             <span class="rName">${s.name||'(未命名)'}</span><span class="rCode">${s.code||''}</span>
             <div class="rLabel">${st.label}</div>
           </div>
-          <div class="rPrice">${s.price?fmt(s.price):'—'}</div>
+          <div class="rPriceWrap">
+            <div class="rPrice">${s.price?fmt(s.price):'—'}</div>
+            ${changeBadgeHtml(s)}
+          </div>
           <div class="rChev">›</div>
         </div>`;
     });

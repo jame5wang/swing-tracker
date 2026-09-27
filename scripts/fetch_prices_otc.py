@@ -20,6 +20,7 @@ FIELD_CANDIDATES = {
     "high": ["High", "最高", "HighestPrice", "最高價"],
     "low": ["Low", "最低", "LowestPrice", "最低價"],
     "volume": ["TradingShares", "成交股數", "TradeVolume", "成交量"],
+    "change": ["Change", "漲跌", "漲跌值", "漲跌價"],
 }
 
 
@@ -63,6 +64,7 @@ def main():
             "high": pick(row, FIELD_CANDIDATES["high"]),
             "low": pick(row, FIELD_CANDIDATES["low"]),
             "volume": pick(row, FIELD_CANDIDATES["volume"]),
+            "change": pick(row, FIELD_CANDIDATES["change"]),  # 今日漲跌（帶正負號），前端用 close-change 算昨收
         })
 
     output = {"date": today, "source": "TPEx OpenAPI (上櫃)", "stocks": stocks}
