@@ -180,6 +180,8 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .st-stop{color:var(--deep); background:var(--deepBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--deep) 30%, transparent);}
 .st-hold{color:var(--hold); background:var(--holdBg);}
 .st-none{color:var(--mute); background:var(--panel2);}
+.st-extended{color:var(--sell); background:var(--sellBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--sell) 30%, transparent);}
+.dotStatus.st-extended{background:var(--sell); box-shadow:0 0 7px 0 var(--sell);}
 
 .tabBar{display:flex; gap:4px; margin:16px 0 0; padding-bottom:0; border-bottom:1px solid var(--line); overflow-x:auto; scrollbar-width:none;}
 .tabBar::-webkit-scrollbar{display:none;}
@@ -566,6 +568,13 @@ function statusOf(s){
   if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'跌破深度加碼價 · 基本面未變可分批加碼'};
   if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'進入 AI 建議買進區':'進入買進區'};
 
+  // 噴出未拉回：近20日大漲且現價仍貼近20日高點，代表這波噴出還沒被真正拉回測試過，
+  // 現在的「安全買進」只是噴出後的短暫整理，不是經過驗證的支撐，追價風險較高
+  const isExtended = !!(s.research && s.research.technical && s.research.technical.extended);
+  if(isExtended && buyRef!==null && p>buyRef && (sellRef===null || p<sellRef)){
+    return {cls:'st-extended', label:'噴出未拉回 · 追價風險高，勿在此追價'};
+  }
+
   // 噴出後拉回測10日均線：股價明顯高於原始買點（代表已經噴出過一段），
   // 現在拉回到10日線附近，且均線仍多頭排列 → 視為「買回」訊號，而不是原本的靜態買點
   if(trend && trend.uptrend && buyRef!==null){
@@ -832,7 +841,7 @@ function render(){
 let searchQuery='';
 let signalOnly=false;
 let pillFilter=null; // null | 'st-buy' | 'st-sell' | 'st-stop' | 'st-rebuy' | 'near' | 'st-hold'
-const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy'];
+const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy','st-extended'];
 
 function renderList(){
   const view=document.getElementById('view');
@@ -865,7 +874,7 @@ function renderRows(){
   const summaryBox=document.getElementById('summaryBox');
   if(!rowsEl) return;
 
-  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0};
+  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0,'st-extended':0};
   stocks.forEach(s=>{ const c=statusOf(s).cls; if(counts[c]!==undefined) counts[c]++; });
   const nearCount=counts['st-near-buy']+counts['st-near-sell'];
 
@@ -877,6 +886,7 @@ function renderRows(){
       <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利減碼中</button>
       <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 深度加碼</button>
       <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</button>
+      <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 噴出未拉回</button>
       <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
       <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
     `;
@@ -902,7 +912,7 @@ function renderRows(){
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'買進區','st-sell':'停利減碼中','st-stop':'深度加碼','st-rebuy':'拉回買回','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillLabels={'st-buy':'買進區','st-sell':'停利減碼中','st-stop':'深度加碼','st-rebuy':'拉回買回','st-extended':'噴出未拉回','near':'接近提醒','st-hold':'續抱觀察'};
     const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
       : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
       : `找不到符合「${searchQuery}」的股票`;
@@ -925,7 +935,7 @@ function renderRows(){
     rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span></div>`;
     groups[sec].forEach(({s,i})=>{
       const st=statusOf(s);
-      const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy'||st.cls==='st-rebuy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : ''));
+      const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy'||st.cls==='st-rebuy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell'||st.cls==='st-extended' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : ''));
       rows+=`
         <div class="row ${accentCls}" data-open="${i}">
           <div class="dotStatus ${st.cls}"></div>
