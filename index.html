@@ -607,8 +607,12 @@ function statusOf(s){
   return {cls:'st-hold', label:'區間內 · 續抱觀察'};
 }
 
+const PAGE_LOAD_TS=Date.now();
 async function fetchJson(path){
-  try{ const res=await fetch(path,{cache:'no-store'}); if(!res.ok) return null; return await res.json(); }
+  // 加上時間戳參數，避免 GitHub Pages 的 CDN（Fastly）快取到舊版資料——
+  // cache:'no-store' 只能防止瀏覽器自己的快取，防不了 CDN 邊緣快取。
+  const bust = path.includes('?') ? `&_=${PAGE_LOAD_TS}` : `?_=${PAGE_LOAD_TS}`;
+  try{ const res=await fetch(path+bust,{cache:'no-store'}); if(!res.ok) return null; return await res.json(); }
   catch(e){ return null; }
 }
 
