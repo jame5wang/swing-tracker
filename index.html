@@ -120,8 +120,10 @@ main{max-width:720px; margin:0 auto; padding:18px 16px 60px; position:relative;}
 .dotStatus.st-none{background:var(--mute);}
 .dotStatus.st-near-buy{background:var(--buy); box-shadow:0 0 0 3px var(--buyBg);}
 .dotStatus.st-near-sell{background:var(--sell); box-shadow:0 0 0 3px var(--sellBg);}
+.dotStatus.st-rebuy{background:var(--accent2); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent2) 20%, transparent), 0 0 8px 0 var(--accent2);}
 .st-near-buy{color:var(--buy); background:var(--buyBg);}
 .st-near-sell{color:var(--sell); background:var(--sellBg);}
+.st-rebuy{color:var(--accent2); background:color-mix(in srgb, var(--accent2) 14%, var(--panel2));}
 .searchBar{margin-bottom:14px; display:flex; gap:8px;}
 .searchBar input{flex:1; min-width:0; padding:10px 12px; border-radius:9px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
 .signalToggleBtn{flex-shrink:0; padding:10px 14px; border-radius:9px; border:1px solid var(--line); background:var(--panel); color:var(--sub); font-size:12.5px; font-weight:650; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:6px;}
@@ -386,7 +388,21 @@ function pct(a,b){ if(isNaN(a)||isNaN(b)||b===0) return null; return ((a-b)/b*10
 function pctStr(v){ if(v===null) return '—'; const s=v>=0?'+':''; return s+v.toFixed(1)+'%'; }
 
 const NEAR_PCT=3; // 距離買賣參考價多少 % 以內算「接近提醒」
+const REBUY_BAND_PCT=3; // 噴出後拉回測10日線，上下多少 % 以內算「拉回買回」提醒
 
+// 讀取該股票目前的均線趨勢（只有上市股/累積滿20天的上櫃股才有 MA10/MA20）
+function trendInfo(code){
+  if(!technicalData || !technicalData.stocks) return null;
+  const t=technicalData.stocks[code];
+  if(!t || t.insufficientHistory || t.ma10===undefined || t.ma20===undefined) return null;
+  return {t, uptrend: t.ma10>=t.ma20};
+}
+
+// 回測分析發現：容易「賣飛」的股票（如3037欣興、2303聯電、6213聯茂）共同點是
+// 停利出場後均線仍多頭排列、股價持續噴出，卻沒有再進場；而執行得好的（景碩、環球晶、金居）
+// 都是出場後很快抓拉回買回，等於用均線接力續抱。以下兩個機制就是把這個差異變成系統化提醒：
+// 1) 到達停利目標但均線仍多頭排列時，標示為「分批減碼，勿全出」而非單純「賣出」
+// 2) 噴出後拉回測10日均線、且均線仍未走弱時，標示「拉回買回」提醒，取代靜態買價
 function statusOf(s){
   const p=parseFloat(s.price);
   if(isNaN(p)) return {cls:'st-none', label:'尚未取得股價'};
@@ -396,10 +412,28 @@ function statusOf(s){
   const buyIsAi = isNaN(buy) && !isNaN(aiBuy);
   const sellRef = !isNaN(sell)?sell:(!isNaN(aiSell)?aiSell:null);
   const sellIsAi = isNaN(sell) && !isNaN(aiSell);
+  const trend=trendInfo(String(s.code||'').trim());
 
   if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'跌破停損 · 檢視是否出場'};
   if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'進入 AI 建議買進區':'進入買進區'};
-  if(sellRef!==null && p>=sellRef) return {cls:'st-sell', label:sellIsAi?'達 AI 建議賣出區 · 分批賣出':'到達停利目標 · 分批賣出'};
+
+  // 噴出後拉回測10日均線：股價明顯高於原始買點（代表已經噴出過一段），
+  // 現在拉回到10日線附近，且均線仍多頭排列 → 視為「買回」訊號，而不是原本的靜態買點
+  if(trend && trend.uptrend && buyRef!==null){
+    const ma10=trend.t.ma10;
+    const distToMa10=(p-ma10)/ma10*100;
+    const extendedAboveBuy=(p-buyRef)/buyRef*100;
+    if(extendedAboveBuy>REBUY_BAND_PCT*2 && distToMa10>=-REBUY_BAND_PCT && distToMa10<=REBUY_BAND_PCT){
+      return {cls:'st-rebuy', label:`拉回測10日均線 · 留意買回（10MA ${ma10}）`};
+    }
+  }
+
+  if(sellRef!==null && p>=sellRef){
+    if(trend && trend.uptrend){
+      return {cls:'st-sell', label: sellIsAi?'達 AI 建議賣出區 · 分批減碼（均線多頭，勿全出）':'到達停利目標 · 分批減碼（均線多頭，勿全出）'};
+    }
+    return {cls:'st-sell', label:sellIsAi?'達 AI 建議賣出區 · 分批賣出':'到達停利目標 · 分批賣出'};
+  }
   if(buyRef!==null){
     const d=(p-buyRef)/buyRef*100;
     if(d>0 && d<=NEAR_PCT) return {cls:'st-near-buy', label:`接近${buyIsAi?'AI 建議':''}買點（+${d.toFixed(1)}%）`};
@@ -494,7 +528,7 @@ async function loadTechnical(){
   const json=await fetchJson('data/technical.json');
   if(!json) return;
   technicalData=json;
-  if(activeIndex!==null) render();
+  render(); // 列表頁的「拉回買回」提示與強勢燈號也要跟著技術資料更新，不只是詳情頁
 }
 
 let macroData=null;
@@ -558,7 +592,7 @@ function render(){
 
 let searchQuery='';
 let signalOnly=false;
-const SIGNAL_CLASSES=['st-buy','st-sell','st-stop'];
+const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy'];
 
 function renderList(){
   const view=document.getElementById('view');
@@ -603,7 +637,7 @@ function renderRows(){
   const summaryBox=document.getElementById('summaryBox');
   if(!rowsEl) return;
 
-  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0};
+  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0};
   stocks.forEach(s=>{ const c=statusOf(s).cls; if(counts[c]!==undefined) counts[c]++; });
   const nearCount=counts['st-near-buy']+counts['st-near-sell'];
 
@@ -613,6 +647,7 @@ function renderRows(){
       <span class="pill" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</span>
       <span class="pill" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利區</span>
       <span class="pill" style="color:var(--stop)"><b>${counts['st-stop']}</b> 停損警示</span>
+      <span class="pill" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</span>
       <span class="pill"><b>${nearCount}</b> 接近提醒</span>
       <span class="pill"><b>${counts['st-hold']}</b> 續抱觀察</span>
     `;
@@ -645,7 +680,7 @@ function renderRows(){
     rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span></div>`;
     groups[sec].forEach(({s,i})=>{
       const st=statusOf(s);
-      const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : ''));
+      const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy'||st.cls==='st-rebuy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : ''));
       rows+=`
         <div class="row ${accentCls}" data-open="${i}">
           <div class="dotStatus ${st.cls}"></div>
@@ -862,6 +897,13 @@ function renderDetail(i){
   const reportsCount = (r && r.reports) ? r.reports.length : 0;
   const hasReportsNews = reportsCount>0 || !!(r && r.news);
 
+  let momentumNoteHtml='';
+  if(st.cls==='st-rebuy'){
+    momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 回測分析發現你出場後常常又快速找拉回買回（像景碩、環球晶那樣），這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，是你過去操作得好的那種買回時機。</div>`;
+  }else if(st.cls==='st-sell' && /勿全出/.test(st.label)){
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 回測你的交易紀錄發現，容易賣飛的股票都有一個共同點：出場後均線沒走弱、股價繼續噴出卻沒再買回。這檔目前10日均線仍在20日均線之上（多頭排列未破），建議只減碼一部分、保留基本部位，等拉回測10日均線再考慮買回，而不是直接全部出清。</div>`;
+  }
+
   const overviewHtml = `
     ${rangeHtml}
     <div class="distGrid">
@@ -869,6 +911,7 @@ function renderDetail(i){
       <div class="distItem"><div class="dLabel">${sellRefLabel}</div><div class="dVal">${pctStr(toSell)}</div></div>
       <div class="distItem"><div class="dLabel">距停損價</div><div class="dVal">${pctStr(toStop)}</div></div>
     </div>
+    ${momentumNoteHtml}
     <div class="sectionTitle">價位設定</div>
     <div class="grid">
       <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><input type="number" step="0.01" data-f="price" value="${fmt(s.price)}" placeholder="—"></div>
