@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-27T07:56:00.000Z",
+  "items": [
+    {
+      "summary": "台積電嘉義科學園區三期正式啟動，法人透露長線將加碼至10座晶圓廠、5座先進封裝廠，2奈米製程明年產能上看11萬片，反映AI需求持續帶動擴產動能，周邊封測與載板供應鏈可望受惠。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "台積電嘉科園區設廠衝10座！消費人潮湧入 地方喊話基建快跟上", "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%98%89%E7%A7%91%E5%9C%92%E5%8D%80%E8%A8%AD%E5%BB%A0%E8%A1%9D10%E5%BA%A7-%E6%B6%88%E8%B2%BB%E4%BA%BA%E6%BD%AE%E6%B9%A7%E5%85%A5-%E5%9C%B0%E6%96%B9%E5%96%8A%E8%A9%B1%E5%9F%BA%E5%BB%BA%E5%BF%AB%E8%B7%9F%E4%B8%8A-070017352.html" },
+        { "title": "台積電2、3奈米擴產全盤點！2奈米明年衝11萬片 這幾檔供應鏈迎大單", "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB2-3%E5%A5%88%E7%B1%B3%E6%93%B4%E7%94%A2%E5%85%A8%E7%9B%A4%E9%BB%9E-2%E5%A5%88%E7%B1%B3%E6%98%8E%E5%B9%B4%E8%A1%9D11%E8%90%AC%E7%89%87-%E9%80%99%E5%B9%BE%E6%AA%94%E4%BE%9B%E6%87%89%E9%8F%88%E8%BF%8E%E5%A4%A7%E5%96%AE-070000696.html" },
+        { "title": "嘉科三期啟動！傳台積電擬加碼5座封裝廠 AI需求成擴產推手", "url": "https://tw.stock.yahoo.com/news/%E5%98%89%E7%A7%91%E4%B8%89%E6%9C%9F%E5%95%9F%E5%8B%95-%E5%82%B3%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%93%AC%E5%8A%A0%E7%A2%BC5%E5%BA%A7%E5%B0%81%E8%A3%9D%E5%BB%A0-ai%E9%9C%80%E6%B1%82%E6%88%90%E6%93%B4%E7%94%A2%E6%8E%A8%E6%89%8B-055000147.html" }
+      ]
+    },
+    {
+      "summary": "川習會落幕，美中達成8項協議，同意就AI議題建立溝通管道，並對合計約300億美元的商品互降關稅，市場解讀為中美貿易緊張階段性緩解，有助降低台灣科技供應鏈的短期不確定性。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "川習會後破冰！美中同意建立 AI 溝通管道 對 300 億美元商品減降關稅", "url": "https://tw.news.yahoo.com/%E5%B7%9D%E7%BF%92%E6%9C%83%E5%BE%8C%E7%A0%B4%E5%86%B0-%E7%BE%8E%E4%B8%AD%E5%90%8C%E6%84%8F%E5%BB%BA%E7%AB%8B-ai-%E6%BA%9D%E9%80%9A%E7%AE%A1%E9%81%93-%E5%B0%8D-054012202.html" },
+        { "title": "川習會落幕 美中敲定 300 億美元關稅減讓並啟動超級智慧對話", "url": "https://tw.news.yahoo.com/%E5%B7%9D%E7%BF%92%E6%9C%83%E8%90%BD%E5%B9%95-%E7%BE%8E%E4%B8%AD%E6%95%B2%E5%AE%9A-300-%E5%84%84%E7%BE%8E%E5%85%83%E9%97%9C%E7%A8%85%E6%B8%9B%E8%AE%93%E4%B8%A6%E5%95%9F%E5%8B%95%E8%B6%85%E7%B4%9A%E6%99%BA%E6%85%A7%E5%B0%8D%E8%A9%B1-053714304.html" }
+      ]
+    },
+    {
+      "summary": "馬斯克透露旗下SpaceX AI今年將新增66萬顆輝達GB300 GPU，總數逼近144萬顆，顯示超大規模業者的AI基礎建設投資動能未見降溫，對ABF載板、CCL、PCB、封測、矽晶圓等台廠供應鏈訂單能見度偏正面。",
+      "relatedStocks": [
+        { "code": "3037", "name": "欣興" },
+        { "code": "8046", "name": "南電" },
+        { "code": "3189", "name": "景碩" },
+        { "code": "2383", "name": "台光電" },
+        { "code": "6274", "name": "台燿" },
+        { "code": "6213", "name": "聯茂" },
+        { "code": "6672", "name": "騰輝電子" },
+        { "code": "2368", "name": "金像電" },
+        { "code": "4958", "name": "臻鼎" },
+        { "code": "8358", "name": "金居" },
+        { "code": "2313", "name": "華通" },
+        { "code": "3711", "name": "日月光" },
+        { "code": "6239", "name": "力成" },
+        { "code": "6147", "name": "頎邦" },
+        { "code": "6182", "name": "合晶" },
+        { "code": "6488", "name": "環球晶" },
+        { "code": "2455", "name": "全新" },
+        { "code": "3105", "name": "穩懋" },
+        { "code": "4971", "name": "IET-KY" }
+      ],
+      "sources": [
+        { "title": "馬斯克AI算力狂飆！SpaceXAI今年增66萬顆輝達GB300 GPU、總數逼近144萬顆", "url": "https://tw.stock.yahoo.com/news/%E9%A6%AC%E6%96%AF%E5%85%8Bai%E7%AE%97%E5%8A%9B%E7%8B%82%E9%A3%86-spacexai%E4%BB%8A%E5%B9%B4%E5%A2%9E66%E8%90%AC%E9%A1%86%E8%BC%9D%E9%81%94gb300-gpu-%E7%B8%BD%E6%95%B8%E9%80%BC%E8%BF%91144%E8%90%AC%E9%A1%86-061003853.html" }
+      ]
+    },
+    {
+      "summary": "法人指出AI伺服器與相關電源供應鏈需求同步暢旺，除台積電、聯發科、鴻海外，電源管理廠台達電、光寶科也被點名是這波AI大單的受惠族群，後續營運展望轉趨樂觀。",
+      "relatedStocks": [
+        { "code": "2308", "name": "台達電" },
+        { "code": "2301", "name": "光寶科" }
+      ],
+      "sources": [
+        { "title": "AI大單持續湧入！台積電、聯發科、鴻海、台達電怎麼買？", "url": "https://tw.news.yahoo.com/ai%E5%A4%A7%E5%96%AE%E6%8C%81%E7%BA%8C%E6%B9%A7%E5%85%A5-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91-%E9%B4%BB%E6%B5%B7-%E5%8F%B0%E9%81%94%E9%9B%BB%E6%80%8E%E9%BA%BC%E8%B2%B7-042429541.html" }
+      ]
+    },
+    {
+      "summary": "日本國家隊Rapidus積極衝刺2奈米製程量產進度，並評估赴美掛牌籌資，市場關注其能否對台積電在先進製程的領先地位構成中長期挑戰。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "Rapidus挑戰2奈米量產！下一步赴美上市？揭開日本半導體追趕台積電的關鍵戰略", "url": "https://tw.news.yahoo.com/rapidus%E6%8C%91%E6%88%B02%E5%A5%88%E7%B1%B3%E9%87%8F%E7%94%A2-%E4%B8%8B-%E6%AD%A5%E8%B5%B4%E7%BE%8E%E4%B8%8A%E5%B8%82-%E6%8F%AD%E9%96%8B%E6%97%A5%E6%9C%AC%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%BF%BD%E8%B6%95%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%9A%84%E9%97%9C%E9%8D%B5%E6%88%B0%E7%95%A5-052000050.html" }
+      ]
+    },
+    {
+      "summary": "美銀示警美股評價偏高、債市波動升溫，市場對Fed升息機率的預期一度飆破六成，法人提醒國慶連假結束後，台股可能因美股波動加劇而連帶承壓。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "美股恐迎猛烈拋售！美銀示警2大關鍵指標 債市波動突破「這數值」要小心", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%81%90%E8%BF%8E%E7%8C%9B%E7%83%88%E6%8B%8B%E5%94%AE-%E7%BE%8E%E9%8A%80%E7%A4%BA%E8%AD%A62%E5%A4%A7%E9%97%9C%E9%8D%B5%E6%8C%87%E6%A8%99-%E5%82%B5%E5%B8%82%E6%B3%A2%E5%8B%95%E7%AA%81%E7%A0%B4-%E9%80%99%E6%95%B8%E5%80%BC-%E8%A6%81%E5%B0%8F%E5%BF%83-043500095.html" },
+        { "title": "連假後台股剉咧等？美股創高藏2危機：Fed「升息機率飆破6成」", "url": "https://tw.news.yahoo.com/%E9%80%A3%E5%81%87%E5%BE%8C%E5%8F%B0%E8%82%A1%E5%89%89%E5%92%A7%E7%AD%89-%E7%BE%8E%E8%82%A1%E5%89%B5%E9%AB%98%E8%97%8F2%E5%8D%B1%E6%A9%9F-fed-%E5%8D%87%E6%81%AF%E6%A9%9F%E7%8E%87%E9%A3%86%E7%A0%B46%E6%88%90-043100385.html" }
+      ]
+    },
+    {
+      "summary": "南韓股市8月出現散戶資金大舉撤出逾13.5兆韓元的現象，市場關注在外資與機構主導下KOSPI後續動能能否延續，這對區域科技股（含記憶體雙雄所在地）的資金流向具一定指標意義。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "南韓股市資金換擋！散戶8月撤資13.5兆韓元、KOSPI下輪行情由誰主宰？", "url": "https://tw.stock.yahoo.com/news/%E5%8D%97%E9%9F%93%E8%82%A1%E5%B8%82%E8%B3%87%E9%87%91%E6%8F%9B%E6%93%8B-%E6%95%A3%E6%88%B68%E6%9C%88%E6%92%A4%E8%B3%8713-5%E5%85%86%E9%9F%93%E5%85%83-kospi%E4%B8%8B%E8%BC%AA%E8%A1%8C%E6%83%85%E7%94%B1%E8%AA%B0%E4%B8%BB%E5%AE%B0-051003375.html" }
+      ]
+    },
+    {
+      "summary": "國際產業調查顯示，記憶體短缺已從HBM擴散至企業級SSD與伺服器CPU附屬記憶體，第三季混合DRAM均價估季增20-30%，超大型雲端業者甚至已接受2027年首季合約價高於今年第四季；德意志銀行預估供給缺口將延續到2027-2028年才逐漸緩解。此趨勢對台廠記憶體模組與控制晶片廠可望帶來訂單與報價的雙重挹注，但需留意DDR4等成熟產品已出現過剩分歧。",
+      "relatedStocks": [
+        { "code": "2344", "name": "華邦電" },
+        { "code": "2408", "name": "南亞科" },
+        { "code": "8299", "name": "群聯" },
+        { "code": "5289", "name": "宜鼎" }
+      ],
+      "sources": [
+        { "title": "404K SEMI-AI 2026-09-25 Memory Weekly — Shortages Broaden: Enterprise SSDs and CPU Memory Take the Baton", "url": "https://404kresearch.substack.com/p/404k-semi-ai-2026-09-25-memory-weekly" }
+      ]
+    },
+    {
+      "summary": "外媒分析指出，這次川習會期間美國晶片出口管制議題相對低調，主因是中國本土AI伺服器晶片（華為、寒武紀等）市占率今年衝上近八成、外商市占則從去年的34%滑落至21%，中國對自主替代的信心提升；分析認為美方後續可能改採聯合荷、日等盟友的間接管制模式，台灣半導體供應鏈需留意中國市場分化與地緣政治風險持續複雜化。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "Why US chip controls took a back seat at the Xi-Trump summit", "url": "https://www.koreatimes.co.kr/world/20260927/why-us-chip-controls-took-a-back-seat-at-xi-trump-summit" },
+        { "title": "China's AI chip blitz arms Xi with a message for Trump: 'You can't choke us off'", "url": "https://www.cnbc.com/2026/09/24/trump-xi-china-summit-ai-export-control-nvidia-huawei-alibaba-.html" }
+      ]
+    }
+  ]
+}
