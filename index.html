@@ -87,6 +87,11 @@ main{max-width:720px; margin:0 auto; padding:18px 16px 60px; position:relative;}
 .macroEvents{font-size:11.5px; color:var(--sub); margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
 .macroNews{margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
 .macroNewsTitle{font-size:11.5px; color:var(--sub); margin-bottom:6px; font-weight:650;}
+.macroDigestTag{font-size:10px; padding:1px 7px; border-radius:6px; margin-left:6px; background:color-mix(in srgb, var(--accent) 16%, var(--panel2)); color:var(--accent); font-weight:700; vertical-align:1px;}
+.digestSummary{font-size:12.5px; line-height:1.55; color:var(--ink);}
+.digestSources{margin-top:3px; font-size:11px; color:var(--sub); line-height:1.5;}
+.digestSources .newsLink{color:var(--sub);}
+.digestSources .newsLink:hover{color:var(--accent);}
 .newsPager{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px;}
 .newsPagerBtn{font-size:11px; padding:4px 9px; border-radius:8px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font-family:var(--mono); cursor:pointer;}
 .newsPagerBtn:disabled{opacity:0.35; cursor:default;}
@@ -583,6 +588,7 @@ async function loadMacro(){
 }
 
 let newsData=null;
+let digestData=null; // Claude 每日彙整版（若當天有跑），優先於原始RSS清單顯示
 let newsIndex=[]; // 可查詢的日期清單，新到舊
 let newsDateIdx=0; // 目前顯示的是 newsIndex 中第幾個（0 = 最新）
 async function loadNews(){
@@ -595,9 +601,13 @@ async function loadNews(){
 async function loadNewsForCurrentDate(){
   const date=newsIndex[newsDateIdx];
   if(!date) return;
-  const json=await fetchJson(`data/news/${date}.json`);
-  if(!json) return;
-  newsData=json;
+  digestData=null;
+  const [json, digest]=await Promise.all([
+    fetchJson(`data/news/${date}.json`),
+    fetchJson(`data/news/${date}-digest.json`),
+  ]);
+  if(json) newsData=json;
+  if(digest) digestData=digest;
   renderMacroCard();
 }
 function newsGoTo(delta){
@@ -653,12 +663,20 @@ function renderMacroCard(){
         <button type="button" id="newsNewerBtn" class="newsPagerBtn" ${canGoNewer?'':'disabled'}>較新 ›</button>
       </div>`
     : '';
+  const digestItems=(digestData && digestData.items) || [];
+  const hasDigest=digestItems.length>0;
   const newsHtml = (hasNewsArchive)
     ? `<div class="macroNews">
-        <div class="macroNewsTitle">焦點消息${newsData && newsData.stale?'<span class="macroStale">（上次成功結果，非最新）</span>':''}</div>
+        <div class="macroNewsTitle">焦點消息${hasDigest?'<span class="macroDigestTag">Claude 每日彙整</span>':''}${newsData && newsData.stale?'<span class="macroStale">（上次成功結果，非最新）</span>':''}</div>
         ${newsPagerHtml}
         <div class="newsList">
-          ${newsItems.length ? newsItems.map(n=>`
+          ${hasDigest ? digestItems.map(d=>`
+            <div class="newsItem">
+              <div class="digestSummary">${d.summary}</div>
+              ${(d.relatedStocks&&d.relatedStocks.length) ? `<div class="newsRelated">相關持股：${(()=>{ const rs=d.relatedStocks; const shown=rs.slice(0,6).map(r=>`${r.name}(${r.code})`).join('、'); return rs.length>6 ? `${shown} 等共${rs.length}檔` : shown; })()}</div>` : ''}
+              ${(d.sources&&d.sources.length) ? `<div class="digestSources">來源：${d.sources.map(s=>`<a class="newsLink" href="${s.url}" target="_blank" rel="noopener">${s.title}</a>`).join('、')}</div>` : ''}
+            </div>`).join('')
+          : (newsItems.length ? newsItems.map(n=>`
             <div class="newsItem">
               <div class="newsItemMain">
                 <span class="newsTag">${n.source||''}</span>
@@ -666,7 +684,7 @@ function renderMacroCard(){
                 <span class="newsTime">${relativeTimeFrom(n.pubDate)}</span>
               </div>
               ${(n.relatedStocks&&n.relatedStocks.length) ? `<div class="newsRelated">相關持股：${(()=>{ const rs=n.relatedStocks; const shown=rs.slice(0,6).map(r=>`${r.name}(${r.code})`).join('、'); return rs.length>6 ? `${shown} 等共${rs.length}檔` : shown; })()}</div>` : ''}
-            </div>`).join('') : `<div class="newsEmpty">這天沒有抓到相關新聞</div>`}
+            </div>`).join('') : `<div class="newsEmpty">這天沒有抓到相關新聞</div>`)}
         </div>
       </div>`
     : '';
