@@ -388,6 +388,47 @@ try{
   }
 }catch(e){}
 
+// 第二輪校正：改用「箱型操作」邏輯重算買進/減碼/深度加碼價。上一輪(RECAL_MAP)是用回測交易
+// 中位數(+4%/-5%)套統一公式，導致買賣價擠在一起，跟真實箱型結構脫節；這輪改成逐檔看真實
+// 日K線，抓出「真箱頂/箱底」(排除單日噴出／崩跌造成的假極值)，讓減碼價貼近實際壓力區、
+// 深度加碼價貼近實際箱底破位，買進價則對齊近期整理區間支撐。同樣只在值仍等於上一版舊值時
+// 才套用，不覆蓋使用者自己改過的價位。
+const BOXRECAL_KEY='swingTrackerBoxRecal_v1';
+const BOXRECAL_MAP={
+  '3037':{oldBuy:1120,newBuy:1120,oldSell:1150,newSell:1190,oldStop:1060,newStop:1000},
+  '8046':{oldBuy:1150,newBuy:1150,oldSell:1195,newSell:1270,oldStop:1065,newStop:1000},
+  '3189':{oldBuy:880,newBuy:880,oldSell:925,newSell:990,oldStop:810,newStop:770},
+  '2383':{oldBuy:4850,newBuy:4850,oldSell:4980,newSell:5150,oldStop:4630,newStop:4600},
+  '6213':{oldBuy:540,newBuy:510,oldSell:565,newSell:595,oldStop:500,newStop:480},
+  '6672':{oldBuy:305,newBuy:300,oldSell:320,newSell:337,oldStop:290,newStop:262},
+  '2368':{oldBuy:1020,newBuy:1020,oldSell:1070,newSell:1150,oldStop:960,newStop:940},
+  '4958':{oldBuy:465,newBuy:470,oldSell:480,newSell:505,oldStop:450,newStop:450},
+  '3711':{oldBuy:655,newBuy:658,oldSell:675,newSell:710,oldStop:635,newStop:590},
+  '6239':{oldBuy:280,newBuy:272,oldSell:285,newSell:290,oldStop:265,newStop:262},
+  '2303':{oldBuy:152,newBuy:152,oldSell:155,newSell:163,oldStop:147,newStop:133},
+  '2344':{oldBuy:166,newBuy:164,oldSell:171,newSell:180,oldStop:159,newStop:155},
+  '3481':{oldBuy:48,newBuy:47,oldSell:49,newSell:50.5,oldStop:46,newStop:45.5},
+  '2308':{oldBuy:1875,newBuy:1850,oldSell:1910,newSell:1965,oldStop:1810,newStop:1560},
+  '2301':{oldBuy:280,newBuy:274,oldSell:285,newSell:299,oldStop:270,newStop:265},
+  '2455':{oldBuy:535,newBuy:520,oldSell:550,newSell:575,oldStop:510,newStop:495},
+  '2313':{oldBuy:219,newBuy:218,oldSell:225,newSell:230,oldStop:210,newStop:208},
+  '2408':{oldBuy:497,newBuy:475,oldSell:510,newSell:535,oldStop:475,newStop:465},
+};
+try{
+  if(!localStorage.getItem(BOXRECAL_KEY)){
+    let boxChanged=false;
+    stocks.forEach(s=>{
+      const m=BOXRECAL_MAP[String(s.code).trim()];
+      if(!m) return;
+      if(Number(s.buy)===m.oldBuy){ s.buy=m.newBuy; boxChanged=true; }
+      if(Number(s.sell)===m.oldSell){ s.sell=m.newSell; boxChanged=true; }
+      if(Number(s.stop)===m.oldStop){ s.stop=m.newStop; boxChanged=true; }
+    });
+    if(boxChanged) save();
+    localStorage.setItem(BOXRECAL_KEY,'1');
+  }
+}catch(e){}
+
 try{
   if(!localStorage.getItem(SEED_KEY)){
     if(stocks.length===0){
