@@ -858,7 +858,7 @@ function renderRows(){
     summaryBox.innerHTML=`
       <button type="button" class="pill${pillActive(null)}" data-pill="all"><b>${stocks.length}</b> 檔追蹤中</button>
       <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</button>
-      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 減碼區</button>
+      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利減碼中</button>
       <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 深度加碼</button>
       <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</button>
       <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
@@ -886,7 +886,7 @@ function renderRows(){
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'買進區','st-sell':'減碼區','st-stop':'深度加碼','st-rebuy':'拉回買回','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillLabels={'st-buy':'買進區','st-sell':'停利減碼中','st-stop':'深度加碼','st-rebuy':'拉回買回','near':'接近提醒','st-hold':'續抱觀察'};
     const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
       : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
       : `找不到符合「${searchQuery}」的股票`;
