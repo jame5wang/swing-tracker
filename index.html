@@ -506,16 +506,18 @@ function trendInfo(code){
 // 但也有17%達10%以上、6%達15%以上的大波段單。用中位數(+4%)當成統一停利目標，
 // 等於把「碰到噴出股」的能力，套用「碰到盤整股」的習慣去砍，這就是3037/2303/6213
 // 被錯殺的根本原因。所以「停利目標」只當第一次減碼參考，均線沒走弱前不設全出上限，
-// 改用這個「延伸目標」(買進參考價 * 1.15，對應大波段單的中位數幅度) 當續抱的具體指引。
+// 改用這個「延伸目標」(第一階段減碼價 * 1.15，對應大波段單的中位數幅度) 當續抱的具體指引。
+// 原本用「買進參考價」當基準，但箱型校正後買進價跟減碼價已經拉開了合理距離，改用減碼價
+// 起算才符合「站上箱頂/前高後還能噴多遠」的原意。
 const STRETCH_MULT=1.15;
 function niceRoundPrice(x){
   if(x>=200) return Math.round(x/5)*5;
   if(x>=20) return Math.round(x);
   return Math.round(x*2)/2;
 }
-function stretchTargetOf(buyRef){
-  if(buyRef===null || isNaN(buyRef)) return null;
-  return niceRoundPrice(buyRef*STRETCH_MULT);
+function stretchTargetOf(sellRef){
+  if(sellRef===null || isNaN(sellRef)) return null;
+  return niceRoundPrice(sellRef*STRETCH_MULT);
 }
 
 // 回測分析發現：容易「賣飛」的股票（如3037欣興、2303聯電、6213聯茂）共同點是
@@ -550,7 +552,7 @@ function statusOf(s){
 
   if(sellRef!==null && p>=sellRef){
     if(trend && trend.uptrend){
-      const stretch=stretchTargetOf(buyRef);
+      const stretch=stretchTargetOf(sellRef);
       if(stretch!==null && p<stretch){
         return {cls:'st-sell', momentum:'first-stage', stretch, label:`第一階段停利 · 分批減碼，續抱看 ${stretch}（均線多頭）`};
       }
@@ -1090,7 +1092,7 @@ function renderDetail(i){
   const sellRefVal = !isNaN(sell)?sell:resist;
   const sellRefLabel = !isNaN(sell)?'距部分停利':'距 AI 建議賣點';
   const toBuy=pct(p,buyRefVal), toSell=pct(p,sellRefVal), toStop=pct(p,stop);
-  const stretchVal = !isNaN(buyRefVal) ? stretchTargetOf(buyRefVal) : null;
+  const stretchVal = !isNaN(sellRefVal) ? stretchTargetOf(sellRefVal) : null;
   const toStretch = stretchVal!==null ? pct(p,stretchVal) : null;
 
   let rangeHtml='';
@@ -1143,9 +1145,9 @@ function renderDetail(i){
   }else if(st.cls==='st-rebuy'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 回測分析發現你出場後常常又快速找拉回買回（像景碩、環球晶那樣），這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，是你過去操作得好的那種買回時機。</div>`;
   }else if(st.momentum==='first-stage'){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 回測82筆個股期貨交易發現，你的獲利是雙峰分布：34%是0~2%的快速價差單，但也有17%達10%以上、6%達15%以上的大波段單。把中位數(+4%)當成統一停利目標，就是3037/2303/6213被錯殺的原因——這裡的「停利目標」現在只算「第一次減碼」的參考，均線仍多頭排列（未走弱）時不建議全出，續抱看延伸目標 <b>${st.stretch}</b>（買進參考價×1.15，對應你大波段單的中位數幅度）。</div>`;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 回測82筆個股期貨交易發現，你的獲利是雙峰分布：34%是0~2%的快速價差單，但也有17%達10%以上、6%達15%以上的大波段單。把中位數(+4%)當成統一停利目標，就是3037/2303/6213被錯殺的原因——這裡的「部分停利」現在只算「第一次減碼」的參考，均線仍多頭排列（未走弱）時不建議全出，續抱看突破箱型/前高訊號 <b>${st.stretch}</b>（部分停利價×1.15，對應你大波段單的中位數幅度）。</div>`;
   }else if(st.momentum==='extended'){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到延伸目標 <b>${st.stretch}</b> 附近（約當買進參考價的+15%，對應你歷史大波段單的幅度），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到突破箱型/前高訊號 <b>${st.stretch}</b> 附近（約當部分停利價的+15%，對應你歷史大波段單的幅度），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
   }
 
   const overviewHtml = `
@@ -1167,7 +1169,7 @@ function renderDetail(i){
       <div class="field"><label>技術壓力（AI）</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
       <div class="field"><label>突破箱型/前高訊號（AI，僅供參考）</label><input type="text" value="${stretchVal!==null?stretchVal:'—'}" disabled></div>
     </div>
-    <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（安全買進試單價 × 1.15），均線走弱才是真正該全數出場的時候。</div>`;
+    <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（部分停利價 × 1.15），均線走弱才是真正該全數出場的時候。</div>`;
 
   const technicalHtml = renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
   const fundamentalHtml = renderFundamentalTab(s);
