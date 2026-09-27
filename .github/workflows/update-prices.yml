@@ -1,0 +1,30 @@
+name: 更新台股盤後收盤價
+
+on:
+  schedule:
+    # 每個交易日台北時間下午 3:00（UTC 07:00）執行，週六日跳過
+    - cron: '0 7 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 抓取證交所盤後資料（上市）
+        run: python3 scripts/fetch_prices.py
+
+      - name: 抓取櫃買中心盤後資料（上櫃）
+        run: python3 scripts/fetch_prices_otc.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json data/prices_otc.json
+          git diff --quiet --cached || git commit -m "更新盤後收盤價 $(date -u +'%Y-%m-%d')"
+          git push
