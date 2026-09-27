@@ -132,6 +132,10 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 }
 .sectorHead:first-of-type{margin-top:6px;}
 .sectorHead .sectorCount{font-size:11px; font-weight:600; color:var(--mute); font-family:var(--mono); text-transform:none; letter-spacing:0;}
+.sectorNewsBtn{margin-left:auto; font-size:11px; font-weight:600; color:var(--accent); background:color-mix(in srgb, var(--accent) 14%, var(--panel2)); border:none; border-radius:20px; padding:3px 10px; cursor:pointer; text-transform:none; letter-spacing:0; font-family:inherit;}
+.sectorNewsBtn:hover{background:color-mix(in srgb, var(--accent) 24%, var(--panel2));}
+.sectorNewsBox{margin:0 0 10px 10px; padding:10px 12px; border-radius:10px; background:var(--panel2); border:1px solid var(--line); display:flex; flex-direction:column; gap:9px;}
+.sectorNewsItem+.sectorNewsItem{padding-top:9px; border-top:1px solid var(--line);}
 .sectorTag{display:inline-block; margin-left:8px; padding:2px 9px; border-radius:20px; background:var(--panel2); color:var(--sub); font-size:11.5px; font-weight:600; vertical-align:middle;}
 
 .row{
@@ -730,6 +734,7 @@ async function loadNewsForCurrentDate(){
   if(json) newsData=json;
   if(digest) digestData=digest;
   renderMacroCard();
+  render(); // 產業分類旁的「相關新聞」需要 digestData 就緒後才能標示，一併重繪列表
 }
 function newsGoTo(delta){
   const next=newsDateIdx+delta;
@@ -848,6 +853,18 @@ let searchQuery='';
 let signalOnly=false;
 let pillFilter=null; // null | 'st-buy' | 'st-sell' | 'st-stop' | 'st-rebuy' | 'near' | 'st-hold'
 const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy','st-extended'];
+let sectorNewsExpanded={}; // 產業分類旁「相關新聞」展開狀態，key=sector 名稱
+function sectorNewsFor(codes){
+  if(!digestData || !Array.isArray(digestData.items) || !codes || !codes.length) return [];
+  const codeSet=new Set(codes);
+  return digestData.items.filter(it=>(it.relatedStocks||[]).some(rs=>codeSet.has(rs.code)));
+}
+function sectorNewsItemHtml(it){
+  return `<div class="sectorNewsItem">
+    <div class="digestSummary">${it.summary}</div>
+    ${(it.sources&&it.sources.length)?`<div class="digestSources">來源：${it.sources.map(s=>`<a class="newsLink" href="${s.url}" target="_blank" rel="noopener">${s.title}</a>`).join('、')}</div>`:''}
+  </div>`;
+}
 
 function renderList(){
   const view=document.getElementById('view');
@@ -938,7 +955,13 @@ function renderRows(){
 
   let rows='';
   orderedSectors.forEach(sec=>{
-    rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span></div>`;
+    const secCodes=groups[sec].map(({s})=>s.code).filter(Boolean);
+    const secNews=sectorNewsFor(secCodes);
+    const secExpanded=!!sectorNewsExpanded[sec];
+    rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span>${secNews.length?`<button type="button" class="sectorNewsBtn" data-sector="${sec}">📰 ${secNews.length}則相關新聞${secExpanded?' ▴':' ▾'}</button>`:''}</div>`;
+    if(secNews.length && secExpanded){
+      rows+=`<div class="sectorNewsBox">${secNews.map(sectorNewsItemHtml).join('')}</div>`;
+    }
     groups[sec].forEach(({s,i})=>{
       const st=statusOf(s);
       const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy'||st.cls==='st-rebuy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell'||st.cls==='st-extended' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : ''));
@@ -960,6 +983,14 @@ function renderRows(){
   rowsEl.innerHTML=rows;
   rowsEl.querySelectorAll('[data-open]').forEach(el=>{
     el.addEventListener('click',()=>{ savedListScrollY=window.scrollY; activeIndex=parseInt(el.dataset.open,10); activeTab='overview'; render(); window.scrollTo(0,0); });
+  });
+  rowsEl.querySelectorAll('.sectorNewsBtn').forEach(btn=>{
+    btn.addEventListener('click',(e)=>{
+      e.stopPropagation();
+      const sec=btn.dataset.sector;
+      sectorNewsExpanded[sec]=!sectorNewsExpanded[sec];
+      renderRows();
+    });
   });
 }
 
