@@ -1,0 +1,27 @@
+name: 盤前國際總經簡報
+
+on:
+  schedule:
+    # 台北時間週一到週五早上 7:30（UTC 前一天 23:30），台股9:00開盤前更新
+    - cron: '30 23 * * 0-4'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 抓取國際指標並計算風險燈號
+        run: python3 scripts/fetch_macro.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/macro.json
+          git diff --quiet --cached || git commit -m "更新盤前國際總經簡報 $(date -u +'%Y-%m-%d')"
+          git push

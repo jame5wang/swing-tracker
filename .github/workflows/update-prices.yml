@@ -21,10 +21,13 @@ jobs:
       - name: 抓取櫃買中心盤後資料（上櫃）
         run: python3 scripts/fetch_prices_otc.py
 
+      - name: 計算技術面指標（MA10/MA20、20日60日高低點、相對大盤強弱）
+        run: python3 scripts/fetch_technical.py
+
       - name: 提交更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json data/prices_otc.json
-          git diff --quiet --cached || git commit -m "更新盤後收盤價 $(date -u +'%Y-%m-%d')"
+          git add data/prices.json data/prices_otc.json data/technical.json data/price_history_otc.json
+          git diff --quiet --cached || git commit -m "更新盤後收盤價與技術指標 $(date -u +'%Y-%m-%d')"
           git push

@@ -41,6 +41,28 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .dataBar{display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--sub); margin-bottom:14px; flex-wrap:wrap;}
 .dataBar .dot{width:7px; height:7px; border-radius:50%; background:var(--mute);}
 .dataBar.ok .dot{background:var(--buy);}
+
+.macroCard{border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px; background:var(--panel);}
+.macroCard.riskGreen{border-left:4px solid var(--buy);}
+.macroCard.riskYellow{border-left:4px solid var(--sell);}
+.macroCard.riskRed{border-left:4px solid var(--stop);}
+.macroCard.riskGray{border-left:4px solid var(--mute);}
+.macroHead{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+.macroTitle{font-size:14px; font-weight:700;}
+.macroLight{font-size:12.5px; font-weight:700; padding:4px 11px; border-radius:20px;}
+.macroLight.riskGreen{color:var(--buy); background:var(--buyBg);}
+.macroLight.riskYellow{color:var(--sell); background:var(--sellBg);}
+.macroLight.riskRed{color:var(--stop); background:var(--stopBg);}
+.macroLight.riskGray{color:var(--mute); background:var(--panel2);}
+.macroReasons{font-size:12.5px; color:var(--sub); margin-top:6px; line-height:1.6;}
+.macroGrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(90px,1fr)); gap:8px; margin-top:10px;}
+.macroItem{background:var(--panel2); border-radius:8px; padding:7px 9px;}
+.macroItem .miLabel{font-size:10.5px; color:var(--sub);}
+.macroItem .miVal{font-size:13.5px; font-weight:700; margin-top:1px;}
+.macroItem .miVal.up{color:var(--buy);} .macroItem .miVal.down{color:var(--sell);}
+.macroEvents{font-size:11.5px; color:var(--sub); margin-top:8px; padding-top:8px; border-top:1px solid var(--line);}
+.macroFoot{font-size:10.5px; color:var(--mute); margin-top:8px;}
+.macroStale{font-size:11px; color:var(--mute); margin-left:6px;}
 .summary{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px;}
 .pill{font-size:12.5px; padding:5px 11px; border-radius:20px; border:1px solid var(--line); color:var(--sub); background:var(--panel);}
 .pill b{color:var(--ink); font-weight:650;}
@@ -173,6 +195,7 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
   </div>
 </header>
 <main>
+  <div id="macroCard"></div>
   <div class="dataBar" id="dataBar"><span class="dot"></span><span id="dataBarText">正在讀取自動盤後資料…</span></div>
   <div id="view"></div>
 </main>
@@ -353,6 +376,55 @@ async function loadResearchData(){
   mergeResearchList(json.stocks, {allowAdd:false});
 }
 
+let technicalData=null;
+async function loadTechnical(){
+  const json=await fetchJson('data/technical.json');
+  if(!json) return;
+  technicalData=json;
+  if(activeIndex!==null) render();
+}
+
+let macroData=null;
+async function loadMacro(){
+  const json=await fetchJson('data/macro.json');
+  if(!json) return;
+  macroData=json;
+  renderMacroCard();
+}
+
+function fmtPct(v){ if(v===undefined||v===null||isNaN(v)) return null; const s=v>=0?'+':''; return s+v.toFixed(2)+'%'; }
+
+function renderMacroCard(){
+  const el=document.getElementById('macroCard');
+  if(!el || !macroData) return;
+  const rl=macroData.riskLight||{level:'gray',label:'資料暫缺',reasons:[]};
+  const cls='risk'+rl.level.charAt(0).toUpperCase()+rl.level.slice(1);
+  const idx=macroData.indices||{};
+  const names={dji:'道瓊',sp500:'S&P500',nasdaq:'那斯達克',sox:'費半',vix:'VIX',dxy:'美元指數',tsmAdr:'台積電ADR'};
+  let gridHtml='';
+  Object.keys(names).forEach(k=>{
+    const d=idx[k];
+    if(!d) return;
+    const dir = d.changePct>0?'up':(d.changePct<0?'down':'');
+    gridHtml+=`<div class="macroItem"><div class="miLabel">${names[k]}</div><div class="miVal ${dir}">${d.price}　${fmtPct(d.changePct)||''}</div></div>`;
+  });
+  const events=(macroData.upcomingEvents||[]);
+  const eventsHtml = events.length
+    ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.date} ${e.name}${e.daysAway===0?'（今天）':`（${e.daysAway}天後）`}`).join('、')}</div>`
+    : '';
+  el.innerHTML=`
+    <div class="macroCard ${cls}">
+      <div class="macroHead">
+        <span class="macroTitle">盤前國際總經簡報${macroData.stale?'<span class="macroStale">（資料為上次成功結果，非最新）</span>':''}</span>
+        <span class="macroLight ${cls}">${rl.label}</span>
+      </div>
+      <div class="macroReasons">${(rl.reasons||[]).join('；')}</div>
+      ${gridHtml?`<div class="macroGrid">${gridHtml}</div>`:''}
+      ${eventsHtml}
+      <div class="macroFoot">${macroData.generated?('更新於 '+macroData.generated+'　'):''}${macroData.note||''}</div>
+    </div>`;
+}
+
 function render(){
   if(activeIndex!==null && stocks[activeIndex]) renderDetail(activeIndex);
   else renderList();
@@ -490,6 +562,64 @@ function renderMarginCard(q){
   </div>`;
 }
 
+function renderTechnicalSection(s,p){
+  if(!technicalData || !technicalData.stocks) return '';
+  const t=technicalData.stocks[s.code];
+  if(!t) return `<div class="researchBlock"><div class="rbTitle">技術面補充（MA／相對大盤強弱）</div><div class="researchEmpty">尚無資料，等待下一次收盤後排程計算。</div></div>`;
+
+  if(t.insufficientHistory){
+    return `<div class="researchBlock">
+      <div class="rbTitle">技術面補充（MA／相對大盤強弱）</div>
+      <div class="researchEmpty">上櫃股票沒有官方逐日歷史API，正在每日累積價格資料中（目前累積 ${t.days||0} 天，需達20天才能算出完整均線與區間），累積完成前先以「AI建議」的支撐/壓力參考為主。</div>
+    </div>`;
+  }
+
+  const rows=[];
+  if(t.ma10!==undefined){
+    const pos = !isNaN(p) ? (p>=t.ma10?'站上':'跌破') : '';
+    rows.push({label:'10日均線(MA10)', val:t.ma10, extra:pos});
+  }
+  if(t.ma20!==undefined){
+    const pos = !isNaN(p) ? (p>=t.ma20?'站上':'跌破') : '';
+    rows.push({label:'20日均線(MA20)', val:t.ma20, extra:pos});
+  }
+  let rangeRow='';
+  if(t.low20!==undefined && t.high20!==undefined){
+    rangeRow+=`<div class="revItem"><div class="dLabel">20日區間</div><div class="dVal">${t.low20} ~ ${t.high20}</div></div>`;
+  }
+  if(t.low60!==undefined && t.high60!==undefined){
+    rangeRow+=`<div class="revItem"><div class="dLabel">60日區間</div><div class="dVal">${t.low60} ~ ${t.high60}</div></div>`;
+  }
+  let maRow='';
+  rows.forEach(r=>{
+    maRow+=`<div class="revItem"><div class="dLabel">${r.label}</div><div class="dVal">${r.val}${r.extra?`　<span class="revSub" style="display:inline">(${r.extra})</span>`:''}</div></div>`;
+  });
+
+  let relHtml='';
+  const rel5=t.relStrength5d, rel20=t.relStrength20d;
+  if(rel5!==undefined || rel20!==undefined){
+    const dirCls=v=>v>0?'up':(v<0?'down':'');
+    relHtml=`<div class="revItem marginItem">
+      <div class="dLabel">相對加權指數(TAIEX)強弱</div>
+      <div class="marginRow"><span class="marginName">近5日</span><span class="dVal marginVal ${dirCls(rel5)}">${rel5!==undefined?fmtPct(rel5):'—'}</span></div>
+      <div class="marginRow"><span class="marginName">近20日</span><span class="dVal marginVal ${dirCls(rel20)}">${rel20!==undefined?fmtPct(rel20):'—'}</span></div>
+    </div>`;
+  }
+
+  let warnHtml='';
+  const taiexChange5d = technicalData.taiex && technicalData.taiex.change5d;
+  if(taiexChange5d!==undefined && taiexChange5d<-1 && t.change5d!==undefined && t.change5d<0){
+    warnHtml=`<div class="srcList" style="color:var(--sell)">⚠ 大盤近5日同步下跌${fmtPct(taiexChange5d)}，這次拉回可能只是跟著大盤走弱，非個股獨立止跌訊號，進場前請一併確認大盤是否止穩。</div>`;
+  }
+
+  return `<div class="researchBlock">
+    <div class="rbTitle">技術面補充（MA／相對大盤強弱）</div>
+    <div class="revGrid">${maRow}${rangeRow}${relHtml}</div>
+    ${warnHtml}
+    <div class="srcList">資料來源：證交所歷史股價與加權指數（自動計算，非法人報告）</div>
+  </div>`;
+}
+
 function renderResearchSection(s){
   const r=s.research;
   if(!r){
@@ -601,6 +731,8 @@ function renderDetail(i){
         <div class="distItem"><div class="dLabel">距停損價</div><div class="dVal">${pctStr(toStop)}</div></div>
       </div>
 
+      ${renderTechnicalSection(s,p)}
+
       <div class="sectionTitle">價位設定</div>
       <div class="grid">
         <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><input type="number" step="0.01" data-f="price" value="${fmt(s.price)}" placeholder="—"></div>
@@ -676,6 +808,8 @@ document.getElementById('importApplyBtn').addEventListener('click',()=>{
 render();
 loadAutoData();
 loadResearchData();
+loadTechnical();
+loadMacro();
 </script>
 </body>
 </html>
