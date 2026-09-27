@@ -2,8 +2,8 @@ name: 更新台股盤後收盤價
 
 on:
   schedule:
-    # 每個交易日台北時間下午 3:00（UTC 07:00）執行，週六日跳過
-    - cron: '0 7 * * 1-5'
+    # 每個交易日台北時間下午 5:00（UTC 09:00）執行，週六日跳過
+    - cron: '0 9 * * 1-5'
   workflow_dispatch: {}
 
 permissions:
