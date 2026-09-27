@@ -17,12 +17,18 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "177.46億元",
+            "yoy": "+56.26%",
+            "mom": "+9.18%"
+          },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "3.28元",
-            "yoyEps": "+446%（創13季新高）",
-            "profit": "50.42億元（歸屬母公司淨利）",
-            "grossMargin": "24.80%",
+            "period": "2026 Q2",
+            "eps": "8.45元",
+            "yoyEps": "—",
+            "profit": "—",
+            "grossMargin": "24.8%",
             "grossMarginPrev": "17.96%",
             "opMargin": "15.51%",
             "opMarginPrev": "7.36%",
@@ -30,43 +36,39 @@
           },
           "sources": [
             {
-              "title": "EPS年增446%！「這載板龍頭廠」Q1財報出爐 外資看好目標價1060元",
-              "url": "https://tw.stock.yahoo.com/news/eps%E5%B9%B4%E5%A2%9E446-%E9%80%99%E8%BC%89%E6%9D%BF%E9%BE%8D%E9%A0%AD%E5%BB%A0-q1%E8%B2%A1%E5%A0%B1%E5%87%BA%E7%88%90-%E5%A4%96%E8%B3%87%E7%9C%8B%E5%A5%BD%E7%9B%AE%E6%A8%99%E5%83%B91060%E5%85%83-131500444.html"
+              "title": "營收速報 - 欣興(3037)8月營收177.46億元年增率高達56.26%",
+              "url": "https://news.cnyes.com/news/id/6600686"
             },
             {
-              "title": "3037 毛利率／營益率 財報數據",
+              "title": "欣興(3037)2026年第2季毛利率為24.8%；淨利率為31.11%",
               "url": "https://statementdog.com/analysis/3037/profit-margin"
+            },
+            {
+              "title": "欣興(3037)2026年第2季EPS為8.45元，季增157.62%",
+              "url": "https://statementdog.com/analysis/3037/eps"
             }
           ]
         },
         "reports": [
           {
-            "source": "外資機構（未具名）",
-            "date": "2026-04-29",
-            "target": "1060元",
-            "view": "目標價上修",
-            "note": "Q1單季EPS 3.28元、年增446%創13季新高，看好AI伺服器與高階載板需求",
-            "url": "https://tw.stock.yahoo.com/news/eps%E5%B9%B4%E5%A2%9E446-%E9%80%99%E8%BC%89%E6%9D%BF%E9%BE%8D%E9%A0%AD%E5%BB%A0-q1%E8%B2%A1%E5%A0%B1%E5%87%BA%E7%88%90-%E5%A4%96%E8%B3%87%E7%9C%8B%E5%A5%BD%E7%9B%AE%E6%A8%99%E5%83%B91060%E5%85%83-131500444.html"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "1175元",
-            "view": "EPS預估上修至15.75元",
-            "note": "多次調查中較新一次目標價，估值持續上調",
-            "url": "https://news.cnyes.com/news/id/6540865"
+            "source": "Factset法人調查（鉅亨網）",
+            "date": "2026-08-19",
+            "target": "1280元",
+            "view": "目標價上修3.02%",
+            "note": "18家分析師調查，17家正向評等、2家中立，最高估值1700元、最低990元",
+            "url": "https://news.cnyes.com/news/id/6581756"
           }
         ],
         "news": {
-          "summary": "Q1營收374.46億元，稅後淨利50.42億元，EPS 3.28元創13季新高，年增446%；外資喊出目標價1060元，反映AI伺服器與高階ABF載板需求持續強勁，9月下旬股價連續放量突破整理區。",
+          "summary": "欣興8月合併營收177.46億元創單月新高，年增56.26%、月增9.18%，前8月營收年增34.16%；ABF載板供不應求、市占逾7成，AI伺服器與Blackwell相關訂單持續塞爆，法說會提及ABF主線產能未受近期洗產地爭議影響。外資目標價8月中上修至1280元。",
           "sources": [
             {
-              "title": "EPS年增446%！Q1財報出爐 外資看好目標價1060元",
-              "url": "https://tw.stock.yahoo.com/news/eps%E5%B9%B4%E5%A2%9E446-%E9%80%99%E8%BC%89%E6%9D%BF%E9%BE%8D%E9%A0%AD%E5%BB%A0-q1%E8%B2%A1%E5%A0%B1%E5%87%BA%E7%88%90-%E5%A4%96%E8%B3%87%E7%9C%8B%E5%A5%BD%E7%9B%AE%E6%A8%99%E5%83%B91060%E5%85%83-131500444.html"
+              "title": "欣興8月營收177.46億元創新高年增達56.26%",
+              "url": "https://news.cnyes.com/news/id/6600408"
             },
             {
-              "title": "Factset最新調查：欣興EPS預估上修至15.75元，目標價1175元",
-              "url": "https://news.cnyes.com/news/id/6540865"
+              "title": "目標價一口氣攻上1200元！欣興「ABF載板供不應求」市占逾7成",
+              "url": "https://tw.stock.yahoo.com/news/%E7%9B%AE%E6%A8%99%E5%83%B9-%E5%8F%A3%E6%B0%A3%E6%94%BB%E4%B8%8A1200%E5%85%83-%E6%AC%A3%E8%88%88-abf%E8%BC%89%E6%9D%BF%E4%BE%9B%E4%B8%8D%E6%87%89%E6%B1%82-%E5%B8%82%E5%8D%A0%E9%80%BE7%E6%88%90-085000738.html"
             }
           ]
         }
@@ -87,56 +89,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "53.53億元",
+            "yoy": "+40.59%",
+            "mom": "-1.6%"
+          },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "2.03元",
+            "period": "2026 Q2",
+            "eps": "3.5元",
             "yoyEps": "—",
-            "profit": "營收111.8億元",
+            "profit": "22.61億元",
             "grossMargin": "24.75%",
-            "grossMarginPrev": "15.85%",
+            "grossMarginPrev": "—",
             "opMargin": "21.36%",
-            "opMarginPrev": "12.10%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（毛利率、營益率創近13季高）"
           },
           "sources": [
             {
-              "title": "個股／載板王者南電 新目標價曝光",
-              "url": "https://inews.setn.com/news/1858896"
+              "title": "營收速報 - 南電(8046)8月營收53.53億元年增率高達40.59%",
+              "url": "https://news.cnyes.com/news/id/6596496"
             },
             {
-              "title": "8046 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/8046/profit-margin"
+              "title": "《電零組》南電上半年獲利暴增 EPS 5.53元創近3年同期高",
+              "url": "https://www.chinatimes.com/realtimenews/20260807001617-260410"
             }
           ]
         },
         "reports": [
           {
-            "source": "法人（三立iNEWS報導）",
-            "date": "2026-06-19",
+            "source": "瑞銀證券（UBS）",
+            "date": "2026-08-10",
             "target": "1150元",
-            "view": "上調至買進評等",
-            "note": "看好AI伺服器、800G/1.6T網通用ABF載板需求，估2026年EPS 12.43元、2027年28.9元",
-            "url": "https://inews.setn.com/news/1858896"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "1600元",
-            "view": "EPS預估上修至17.61元",
-            "note": "多次調查後較新一次目標價",
-            "url": "https://news.cnyes.com/news/id/6609959"
+            "view": "中立",
+            "note": "預估2026年EPS 16.06元、營收582.82億元，維持觀望評等待實際營運驗證",
+            "url": "https://cmnews.com.tw/article/yeguanyu-6bf7b035-9467-11f1-a0dd-4cd270532a17"
           }
         ],
         "news": {
-          "summary": "Q1營收111.8億元、EPS 2.03元；法人看好AI伺服器、800G/1.6T網通用ABF載板需求推升公司進入快速擴張階段，6月中上調評等至買進、目標價1150元，近期Factset調查目標價一度上看1600元。",
+          "summary": "南電8月營收53.53億元、月減1.6%但年增40.59%，前8月營收年增約四成；上半年EPS達5.53元創近3年同期新高，Q2毛利率24.75%、營益率21.36%均創近13季高，淨利季增72.84%。AI伺服器與高階載板需求持續拉動產能利用率，但外資對後續評等偏中立、等待驗證。",
           "sources": [
             {
-              "title": "個股／載板王者南電 新目標價曝光",
-              "url": "https://inews.setn.com/news/1858896"
+              "title": "南電營收／8月53.53億元 月減1.6%",
+              "url": "https://money.udn.com/money/story/5710/9732463"
             },
             {
-              "title": "Factset最新調查：南電EPS預估上修至17.61元",
-              "url": "https://news.cnyes.com/news/id/6609959"
+              "title": "《電零組》南電上半年獲利暴增 EPS 5.53元創近3年同期高",
+              "url": "https://www.chinatimes.com/realtimenews/20260807001617-260410"
             }
           ]
         }
@@ -158,69 +158,49 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/04",
-            "value": "40.72億元",
-            "yoy": "+26.75%",
-            "mom": "+3.38%"
+            "period": "2026/08",
+            "value": "48.10億元",
+            "yoy": "+40.58%",
+            "mom": "+5.73%"
           },
           "quarterly": {
-            "period": "2026 全年估值",
-            "eps": "7.5～8.8元（法人估值區間）",
-            "yoyEps": "—",
-            "profit": "—",
-            "grossMargin": "26.09%",
-            "grossMarginPrev": "21.16%",
-            "opMargin": "13.43%",
-            "opMarginPrev": "8.02%",
+            "period": "2026 Q2",
+            "eps": "2.57元",
+            "yoyEps": "+287.7%",
+            "profit": "13.1億元（歸屬母公司）",
+            "grossMargin": "26.1%",
+            "grossMarginPrev": "約21.1%",
+            "opMargin": "13.4%",
+            "opMarginPrev": "約8.0%",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "【即時新聞】景碩2026首季營收亮眼表現，EPS預估7.5至8.8元股價高檔反彈",
-              "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-ab2591da-4d80-11f1-af1b-d9099f3f8725"
+              "title": "營收速報 - 景碩(3189)8月營收48.10億元年增率高達40.58%",
+              "url": "https://news.cnyes.com/news/id/6597743"
             },
             {
-              "title": "3189 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/3189/profit-margin"
+              "title": "景碩財報／第2季獲利衝上去年同期近四倍 EPS 2.57元、毛利率26.1%",
+              "url": "https://udn.com/news/story/7252/9663592"
             }
           ]
         },
         "reports": [
           {
-            "source": "理財周刊",
-            "date": "",
-            "target": "—",
-            "view": "ABF漲價潮引爆，2026年獲利估翻倍",
-            "note": "外資多次上修目標價",
-            "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/222606"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "1010元",
-            "view": "EPS預估上修至10.57元",
-            "note": "多次調查後較新一次目標價；近期漲勢兇猛，需留意獲利了結風險",
-            "url": "https://news.cnyes.com/news/id/6613883"
-          },
-          {
-            "source": "Zephyrtech微風智慧科技（提醒觀點）",
-            "date": "",
-            "target": "—",
-            "view": "9天狂飆52%後提醒「踩煞車」",
-            "note": "提示主升段末端／出貨風險，與多數樂觀法人看法互為對照",
-            "url": "https://zephyrtech.substack.com/p/zephyrtech-9523189ai-380"
+            "source": "高盛（Goldman Sachs）",
+            "date": "2026-02-14",
+            "target": "370元",
+            "view": "目標價大幅上修194.4%（原125.68元）",
+            "note": "此報告距今已逾2個月，僅供參考，未找到9月近期新報告",
+            "url": "https://money.udn.com/money/story/5607/9330839"
           }
         ],
         "news": {
-          "summary": "4月合併營收40.72億元，月增3.38%、年增26.75%，創172個月新高；隨AI伺服器ABF載板漲價潮發酵，9月下旬股價急拉，9/24收962元創新高，但漲勢陡峭，部分市場聲音提醒留意獲利了結賣壓。",
+          "summary": "景碩8月營收48.10億元創單月同期新高，年增40.58%、月增5.73%，前8月營收年增32.09%；Q2 EPS 2.57元、毛利率26.1%，受惠高階載板需求升溫與產能利用率改善，Q2營運明顯加速，8月EPS已達Q2單季逾六成水準。",
           "sources": [
             {
-              "title": "景碩2026首季營收亮眼表現",
-              "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-ab2591da-4d80-11f1-af1b-d9099f3f8725"
-            },
-            {
-              "title": "ABF漲價潮引爆！景碩飆漲超越目標",
-              "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/222606"
+              "title": "景碩8月每股賺1.59元，達Q2逾六成水準",
+              "url": "https://tw.stock.yahoo.com/news/%E6%99%AF%E7%A2%A98%E6%9C%88%E6%AF%8F%E8%82%A1%E8%B3%BA1-59%E5%85%83-%E9%81%94q2%E9%80%BE%E5%85%AD%E6%88%90%E6%B0%B4%E6%BA%96-001600830.html"
             }
           ]
         }
@@ -241,56 +221,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "201.46億元",
+            "yoy": "+129.85%",
+            "mom": "+4.89%"
+          },
           "quarterly": {
             "period": "2026 Q2",
-            "eps": "—（法人估將創新高）",
+            "eps": "27.55元",
             "yoyEps": "—",
-            "profit": "營收472.7億元，優於市場預期",
-            "grossMargin": "33.85%",
-            "grossMarginPrev": "29.42%",
-            "opMargin": "26.94%",
-            "opMarginPrev": "21.56%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "profit": "98.7億元（單季新高）",
+            "grossMargin": "33.9%",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（淨利季增84.9%）"
           },
           "sources": [
             {
-              "title": "第2季財報「三率三升」可期 法人調升台光電目標價",
-              "url": "https://money.udn.com/money/story/5607/9624313"
+              "title": "營收速報 - 台光電(2383)8月營收201.46億元年增率高達129.85%",
+              "url": "https://news.cnyes.com/news/id/6597599"
             },
             {
-              "title": "2383 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2383/profit-margin"
+              "title": "台光電Q2獲利98.7億元改寫新高季增84.9% 上半年EPS 42.46元",
+              "url": "https://uanalyze.com.tw/articles/9219952430"
             }
           ]
         },
         "reports": [
           {
-            "source": "經濟日報",
-            "date": "2026-07-13",
-            "target": "—",
-            "view": "法人調升全年獲利預估與目標價",
-            "note": "Q2營收472.7億優於預期，三率三升可期，2025年全球CCL市占率16.2%排名第一",
-            "url": "https://money.udn.com/money/story/5607/9624313"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "7200元",
-            "view": "EPS預估上修至114.67元",
-            "note": "多次調查後較高一次目標價區間",
-            "url": "https://news.cnyes.com/news/id/6574058"
+            "source": "美系外資（未具名，工商時報報導）",
+            "date": "2026-09-07",
+            "target": "6000元",
+            "view": "買進",
+            "note": "AI資料中心與交換器帶動高階CCL需求強勁，未來兩年產能基本滿載",
+            "url": "https://www.ctee.com.tw/news/20260907700859-430201"
           }
         ],
         "news": {
-          "summary": "Q2營收472.7億元優於市場預期，法人看好三率三升與EPS創歷史新高，高階CCL供不應求態勢可望延續至2028年；9月中旬股價一度重挫逾18%後回穩，目前於整理區間。",
+          "summary": "台光電8月營收201.46億元、年增129.85%，前8月營收年增95.18%；Q2單季獲利98.7億元創新高、季增84.9%，上半年EPS達42.46元、毛利率32.02%。多家外資近期齊步喊上調目標價，看好AI伺服器與低軌衛星應用帶動高階CCL滿載到2027年後。",
           "sources": [
             {
-              "title": "第2季財報「三率三升」可期 法人調升台光電目標價",
-              "url": "https://money.udn.com/money/story/5607/9624313"
+              "title": "《電零組》台光電前景俏 美系外資維持「買進」",
+              "url": "https://www.ctee.com.tw/news/20260907700859-430201"
             },
             {
-              "title": "Factset最新調查：台光電EPS預估上修至114.67元",
-              "url": "https://news.cnyes.com/news/id/6574058"
+              "title": "台光電 115年8月營收201.46億、年增129.85%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%85%89%E9%9B%BB-115%E5%B9%B48%E6%9C%88%E7%87%9F%E6%94%B6201-46%E5%84%84-%E5%B9%B4%E5%A2%9E129-85-063900182.html"
             }
           ]
         }
@@ -312,61 +290,61 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/07",
-            "value": "59.08億元",
-            "yoy": "+121.52%",
+            "period": "2026/08",
+            "value": "59.15億元",
+            "yoy": "+132.48%",
             "mom": "—"
           },
           "quarterly": {
-            "period": "2026 Q2（單月）",
-            "eps": "3.06元（6月單月）",
-            "yoyEps": "6月淨利年增+219.2%",
-            "profit": "6月淨利約9億元",
+            "period": "2026 Q2",
+            "eps": "8.02元",
+            "yoyEps": "+259.3%",
+            "profit": "23.42億元",
             "grossMargin": "29.72%",
-            "grossMarginPrev": "25.15%",
-            "opMargin": "23.48%",
-            "opMarginPrev": "18.18%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（淨利季增85.84%）"
           },
           "sources": [
             {
-              "title": "營收速報 - 台燿7月營收59.08億元年增率高達121.52%",
-              "url": "https://news.cnyes.com/news/id/6562889"
+              "title": "營收速報 - 台燿(6274)8月營收59.15億元年增率高達132.48%",
+              "url": "https://m.cnyes.com/news/id/6597745"
             },
             {
-              "title": "6274 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/6274/profit-margin"
+              "title": "【26Q2財報公告】台燿(6274) Q2 營收143.0104億元，創歷史新高，季增42.24%、年成長110.92%",
+              "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1242327"
             }
           ]
         },
         "reports": [
           {
-            "source": "經濟日報",
-            "date": "2026-07-21",
-            "target": "—",
-            "view": "法人上修全年EPS至32~35元",
-            "note": "6月營運利益率估達26%，遠高於市場預期20.6%",
-            "url": "https://money.udn.com/money/story/11162/9640832"
+            "source": "大和證券（Daiwa）",
+            "date": "2026-08",
+            "target": "2122元",
+            "view": "重申買進",
+            "note": "CCL二度漲價、M8高階材料占比攀升",
+            "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%87%BF-6274--CCL%E4%BA%8C%E5%BA%A6%E6%BC%B2%E5%83%B9-M8%E5%8D%A0%E6%AF%94%E6%94%80%E5%8D%87%E2%80%94%E2%80%94%E5%A4%A7%E5%92%8C%E9%87%8D%E7%94%B3%E8%B2%B7%E9%80%B2-%E7%9B%AE%E6%A8%99%E5%83%B9%E7%9B%B4%E6%8C%872-122%E5%85%83-%E8%B1%90%E5%AD%B8PRIME%E7%9B%A4%E5%BE%8C%E7%B2%BE%E9%81%B8--6a30a4344f8fa7d0e100c5bf"
           },
           {
-            "source": "富果法說會筆記",
-            "date": "2026-03-12",
-            "target": "—",
-            "view": "法說會展望重點",
-            "note": "CCL漲價與稼動率提升為核心動能",
-            "url": "https://blog.fugle.tw/post/earnings-call-6274-2026-03-12"
+            "source": "日系外資（未具名，工商時報報導）",
+            "date": "2026-06-30",
+            "target": "2115元",
+            "view": "AI動能續強",
+            "note": "此為6月底報告，時間稍早但與8月大和報告方向一致",
+            "url": "https://www.ctee.com.tw/news/20260630700839-430201"
           }
         ],
         "news": {
-          "summary": "連三月營收創高，7月營收59.08億元、年增121.52%；6月EPS達3.06元，法人上修全年EPS至32~35元，看好CCL漲價效益與稼動率提升延續。",
+          "summary": "台燿8月營收59.15億元、年增132.48%，創歷史新高，前8月營收362億元優於法人共識；Q2營收143.01億元亦創歷史新高，季增42.24%、年增110.92%，Q2 EPS 8.02元、季增83.95%，法說會提及啟動百億籌資與中長期大規模擴產計畫。",
           "sources": [
             {
-              "title": "台燿連三月營收創高，法人預期2026年EPS上看18元",
-              "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-d63e674d-b5fd-11f0-bc41-c5c809054fa8"
+              "title": "【月營收快報】台燿8月營收59.15億元年增132%，前8月362億元優於法人共識",
+              "url": "https://m.cnyes.com/news/id/6597527"
             },
             {
-              "title": "台燿6月EPS 3.06元 法人上修全年EPS預估",
-              "url": "https://money.udn.com/money/story/11162/9640832"
+              "title": "2026/07/30 台燿 (6274.TW) 法說會：Q2 獲利大幅擊敗預期，啟動百億籌資與中長期大規模擴產",
+              "url": "https://vocus.cc/article/6a6c26e5fd89780001fb4fb5"
             }
           ]
         }
@@ -387,11 +365,17 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "50.44億元",
+            "yoy": "+97.93%",
+            "mom": "+6.21%"
+          },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "3.52元",
             "yoyEps": "—",
-            "profit": "H1 EPS合計4.39元；毛利率22%、營益率16%",
+            "profit": "12.79億元",
             "grossMargin": "22.02%",
             "grossMarginPrev": "11.42%",
             "opMargin": "16.03%",
@@ -400,43 +384,35 @@
           },
           "sources": [
             {
-              "title": "多重動能挹注 法人調升聯茂獲利預估值及目標價",
-              "url": "https://money.udn.com/money/story/5607/9681787"
+              "title": "營收速報 - 聯茂(6213)8月營收50.44億元年增率高達97.93%",
+              "url": "https://news.cnyes.com/news/id/6597607"
             },
             {
-              "title": "6213 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/6213/profit-margin"
+              "title": "(6213)聯茂電子法說會 2026/08",
+              "url": "https://vocus.cc/article/6a92d9a1fd89780001fdd6a3"
             }
           ]
         },
         "reports": [
           {
-            "source": "經濟日報",
+            "source": "大型本國投顧（經濟日報報導，未具名）",
             "date": "2026-08-10",
             "target": "—",
-            "view": "法人調高獲利預估與目標價",
-            "note": "Q2毛利率22%、營益率16%，漲價、稼動率提升、產能擴充為成長動能",
+            "view": "調升獲利預估及目標價",
+            "note": "文中未揭露具體目標價數字，僅提及產品漲價、稼動率提升及擴產帶動獲利上調",
             "url": "https://money.udn.com/money/story/5607/9681787"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "421元",
-            "view": "EPS預估上修至8.54元",
-            "note": "較早一次調查數值，近期股價已顯著突破此區間",
-            "url": "https://news.cnyes.com/news/id/6566336"
           }
         ],
         "news": {
-          "summary": "H1 EPS達4.39元，Q2毛利率22%、營益率16%；8月法人調升獲利與目標價預估，9/24股價無視大盤逆勢長紅創波段新高，但當日量縮，短線宜留意是否為誘多。",
+          "summary": "聯茂8月稅後淨利9.24億元、年增852.58%，單月EPS 2.54元，合併營收50.44億元創單月新高、年增97.93%；稅前及稅後淨利率分別提升至25.8%、18.3%（Q2為15.9%、11.1%），9/24股價開盤即漲停。美系投行看好Q3獲利優於市場預期，AI相關需求持續強勁。",
           "sources": [
             {
-              "title": "多重動能挹注 法人調升聯茂獲利預估值及目標價",
-              "url": "https://money.udn.com/money/story/5607/9681787"
+              "title": "《電零組》聯茂8月EPS達2.54元年增8.5倍 開盤漲停",
+              "url": "https://www.chinatimes.com/realtimenews/20260924001727-260410"
             },
             {
-              "title": "聯茂(6213)最新每股盈餘",
-              "url": "https://www.nstock.tw/stock_info?stock_id=6213&status=6"
+              "title": "聯茂8月每股賺2.54元，達Q2逾七成水準",
+              "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E8%8C%828%E6%9C%88%E6%AF%8F%E8%82%A1%E8%B3%BA2-54%E5%85%83-%E9%81%94q2%E9%80%BE%E4%B8%83%E6%88%90%E6%B0%B4%E6%BA%96-004300140.html"
             }
           ]
         }
@@ -458,61 +434,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/04",
-            "value": "5.1億元",
-            "yoy": "+37%",
-            "mom": "—"
+            "period": "2026/08",
+            "value": "8.06億元",
+            "yoy": "+133.24%",
+            "mom": "+21.13%"
           },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "1.73元",
-            "yoyEps": "稅後純益年增+65%",
-            "profit": "營收12.5億元，年增22%",
-            "grossMargin": "35.98%",
-            "grossMarginPrev": "34.02%",
-            "opMargin": "16.78%",
-            "opMarginPrev": "11.67%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "period": "2026 Q2",
+            "eps": "3.02元",
+            "yoyEps": "—",
+            "profit": "2.3億元",
+            "grossMargin": "36%",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（淨利季增89%，EPS創18季新高）"
           },
           "sources": [
             {
-              "title": "騰輝財報／第1季獲利季增25%、EPS 1.73元 4月營收創近4年高",
-              "url": "https://udn.com/news/story/7253/9490504"
+              "title": "CCL廠騰輝電子8月營收8.1億元登巔峰 年增1.33倍",
+              "url": "https://news.cnyes.com/news/id/6596495"
             },
             {
-              "title": "6672 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/6672/profit-margin"
+              "title": "騰輝電子財報／上半年 EPS 達4.75元 已接近去年全年獲利",
+              "url": "https://money.udn.com/money/story/5710/9677220"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "本土法人（未具名）",
-            "date": "2026-06-02",
-            "target": "260元",
-            "view": "維持買進評等",
-            "note": "漲價效益延續至Q3、PI 901材料在半導體測試板2025-2027年CAGR達112.6%，2026年EPS上調至9.47元(+95.4%)",
-            "url": "https://www.ftnn.com.tw/news/550273"
-          },
-          {
-            "source": "CMoney讀墨",
-            "date": "",
-            "target": "—",
-            "view": "2026年EPS估8元以上",
-            "note": "投資人追蹤股價提早反應動能",
-            "url": "https://readmo.cmoney.tw/article/94bf16ec-c2f0-48de-8057-fcb3851835db"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "Q1稅後純益年增65%，EPS 1.73元；法人看好PI 901特殊材料在半導體測試板市場的高成長性(2025-2027 CAGR 112.6%)，6月喊出目標價260元，9/24爆量長紅創波段新高337.5元。",
+          "summary": "騰輝電子-KY 8月營收8.06億元創單月歷史新高，年增133.24%、月增21.13%；Q2單季EPS 3.02元創18季新高，毛利率維持36%高水準，上半年EPS已達4.75元、接近去年全年獲利。成長動能來自高毛利航太材料及各產品線漲價，AI伺服器相關應用需求強勁。未找到近1-2個月內具體外資目標價報告。",
           "sources": [
             {
-              "title": "目標價210元與2026年EPS 8.81元：估值區間、追高風險與分批處理策略",
-              "url": "https://cmnews.com.tw/article/marketwatcher-c008ec59-403e-11f1-ab14-28353de0ff41"
+              "title": "CCL廠騰輝電子8月營收8.1億元登巔峰 年增1.33倍",
+              "url": "https://tw.stock.yahoo.com/news/ccl%E5%BB%A0%E9%A8%B0%E8%BC%9D%E9%9B%BB%E5%AD%908%E6%9C%88%E7%87%9F%E6%94%B68-1%E5%84%84%E5%85%83%E7%99%BB%E5%B7%94%E5%B3%B0-%E5%B9%B4%E5%A2%9E1-33%E5%80%8D-063538665.html"
             },
             {
-              "title": "進入量價齊揚循環！「CCL大廠」目標價喊高260元",
-              "url": "https://www.ftnn.com.tw/news/550273"
+              "title": "騰輝-KY 上半年每股純益4.75元已接近2025年全年",
+              "url": "https://uanalyze.com.tw/articles/5239953018"
             }
           ]
         }
@@ -533,56 +492,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "103.84億元",
+            "yoy": "+76.39%",
+            "mom": "+3.69%"
+          },
           "quarterly": {
-            "period": "2026 全年估值",
-            "eps": "38.28～41.57元（法人估值區間，多次上修）",
+            "period": "2026 Q2",
+            "eps": "9.27元",
             "yoyEps": "—",
-            "profit": "—",
+            "profit": "47.83億元",
             "grossMargin": "34.65%",
-            "grossMarginPrev": "34.81%",
-            "opMargin": "26.43%",
-            "opMarginPrev": "26.85%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（淨利季增37.31%）"
           },
           "sources": [
             {
-              "title": "AI算力浪潮下的絕對霸主：金像電強勢刷爆業績距目標價還有85.39%潛在漲幅",
-              "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/238572"
+              "title": "營收速報 - 金像電(2368)8月營收103.84億元年增率高達76.39%",
+              "url": "https://news.cnyes.com/news/id/6600755"
             },
             {
-              "title": "2368 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2368/profit-margin"
+              "title": "PCB廠上半年獲利靚 金像電EPS16.14元領先健鼎的13.02元",
+              "url": "https://news.cnyes.com/news/id/6571335"
             }
           ]
         },
         "reports": [
           {
-            "source": "理財周刊",
-            "date": "",
-            "target": "1700元",
-            "view": "AI算力浪潮下的絕對霸主",
-            "note": "距目標價潛在漲幅逾85%，EPS預估上修至38.28元",
-            "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/238572"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "1695元",
-            "view": "EPS預估上修至41.57元",
-            "note": "較新一次調查目標價",
-            "url": "https://news.cnyes.com/news/id/6606173"
+            "source": "法人（聯合新聞網報導，未具名）",
+            "date": "2026-05-19",
+            "target": "—",
+            "view": "調高獲利預估及目標價",
+            "note": "此為5月報告，文中未揭露具體目標價數字，時間已逾2個月僅供參考",
+            "url": "https://udn.com/news/story/7253/9512091"
           }
         ],
         "news": {
-          "summary": "受惠AI伺服器與高速運算帶動PCB需求，法人多次上修金像電全年EPS及目標價，最新Factset調查目標價落在1695~1700元區間；技術面9月中旬急跌後於千元關卡附近止穩回升。",
+          "summary": "金像電8月營收103.84億元，連兩月站上百億元、創新高，年增76.39%、月增3.69%，前8月營收年增71.25%；Q2稅後純益47.83億元、EPS 9.27元，毛利率34.65%，上半年EPS達16.14元領先同業健鼎，全年無淡季，伺服器與高階交換器需求持續帶動業績走高。",
           "sources": [
             {
-              "title": "AI算力浪潮下的絕對霸主：金像電強勢刷爆業績",
-              "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/238572"
+              "title": "金像電8月營收續創高，連兩月破百億元",
+              "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a9915b20-9ddb-4791-b549-b35d8b870dab"
             },
             {
-              "title": "Factset最新調查：金像電EPS預估上修至41.57元",
-              "url": "https://news.cnyes.com/news/id/6606173"
+              "title": "PCB廠上半年獲利靚 金像電EPS16.14元領先健鼎的13.02元",
+              "url": "https://news.cnyes.com/news/id/6571335"
             }
           ]
         }
@@ -603,56 +560,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "206.66億元",
+            "yoy": "+41.05%",
+            "mom": "+17.42%"
+          },
           "quarterly": {
-            "period": "2026 H1",
-            "eps": "3.55元（上半年合計）",
+            "period": "2026 Q2",
+            "eps": "2.19元",
             "yoyEps": "—",
             "profit": "—",
-            "grossMargin": "23.10%",
-            "grossMarginPrev": "21.64%",
-            "opMargin": "7.77%",
-            "opMarginPrev": "6.15%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "—",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（淨利季增67%）"
           },
           "sources": [
             {
-              "title": "上半年EPS賺3.55元！「PCB龍頭」目標價、獲利預估齊遭下修",
-              "url": "https://www.ftnn.com.tw/news/569197"
+              "title": "【公告】臻鼎-KY 2026年8月合併營收206.66億元 年增41.05%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%87%BB%E9%BC%8E-ky-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6206-66%E5%84%84%E5%85%83-071302749.html"
             },
             {
-              "title": "4958 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/4958/profit-margin"
+              "title": "臻鼎-KY (4958) 估值分析：Q2淨利季增67%驗證組合改善",
+              "url": "https://vocus.cc/article/6a9a703dfd8978000168a222"
             }
           ]
         },
         "reports": [
           {
-            "source": "FTNN新聞網",
-            "date": "",
-            "target": "—",
-            "view": "上半年EPS 3.55元，法人下修目標價與獲利預估",
-            "note": "法人揭示客戶集中度、匯率、蘋果訂單能見度三大壓力",
-            "url": "https://www.ftnn.com.tw/news/569197"
-          },
-          {
-            "source": "經濟日報",
-            "date": "",
-            "target": "—",
-            "view": "營運動能爆發，目標價上調逾五成",
-            "note": "較早期報導，反映本輪走勢波動大、法人看法分歧",
-            "url": "https://money.udn.com/money/story/5607/9380277"
+            "source": "Factset法人調查（鉅亨網）",
+            "date": "2026-09-08",
+            "target": "682.5元",
+            "view": "EPS預估小幅下修",
+            "note": "13位分析師調查，2026年EPS預估由13.93元下修至13.78元，目標價682.5元",
+            "url": "https://news.cnyes.com/news/id/6600449"
           }
         ],
         "news": {
-          "summary": "上半年EPS 3.55元，法人對後續獲利與目標價出現分歧——先有報導指目標價上調逾五成，後續又有法人下修，反映蘋果訂單能見度與匯率為主要不確定因素；股價自高點回落後於460~505元區間整理。",
+          "summary": "臻鼎-KY 8月合併營收206.66億元創同期新高，年增41.05%、月增17.42%，前8月營收1274億元、年增19.89%，AI相關業務年增逾3倍；8月為傳統旺季加上AI伺服器需求助攻雙成長。Q2 EPS 2.19元、季增創同期新高，淨利季增67%，AI伺服器與光模塊挹注下半年營運動能。上半年EPS 3.55元曾遭部分法人下修目標價，但8月營收動能強勁後Factset目標價止穩於682.5元。",
           "sources": [
             {
-              "title": "上半年EPS賺3.55元！目標價、獲利預估齊遭下修",
-              "url": "https://www.ftnn.com.tw/news/569197"
+              "title": "臻鼎營收／8月206億元、年增41.05% 創同期新高AI相關業務年增逾3倍",
+              "url": "https://udn.com/news/story/7252/9739504"
             },
             {
-              "title": "臻鼎-KY 營運動能爆發 目標價上調逾五成",
-              "url": "https://money.udn.com/money/story/5607/9380277"
+              "title": "《電零組》臻鼎最強8月營收雙成長 傳統旺季＋AI助攻",
+              "url": "https://wantrich.chinatimes.com/news/20260907900544-420101"
             }
           ]
         }
@@ -673,48 +628,45 @@
           "source": "櫃買中心 tradingStock 個股日成交資訊（近4個月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "10.56億元",
+            "yoy": "+59.71%",
+            "mom": "+4.72%"
+          },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "2.16元",
-            "yoyEps": "+227.27%",
-            "profit": "—",
+            "yoyEps": "+227.27%（去年同期0.66元）",
+            "profit": "5.45億元（年增226.4%）",
             "grossMargin": "27.39%",
-            "grossMarginPrev": "28.71%",
+            "grossMarginPrev": "—",
             "opMargin": "24.42%",
-            "opMarginPrev": "25.63%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs 2025 Q2（毛利率年增8.53個百分點）"
           },
           "sources": [
             {
-              "title": "金居(8358)最新每股盈餘",
-              "url": "https://shop.nstock.tw/stock_info?stock_id=8358&status=6"
+              "title": "金居Q2獲利年增逾2倍 EPS 2.16元、毛利率衝27.39％",
+              "url": "https://www.ctee.com.tw/news/20260807701501-430502"
             },
             {
-              "title": "8358 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/8358/profit-margin"
+              "title": "「銅箔大廠」Q2每股賺2.16元、H1EPS衝4.22元 7月營收再報捷、迎年月雙增",
+              "url": "https://tw.stock.yahoo.com/news/%E9%8A%85%E7%AE%94%E5%A4%A7%E5%BB%A0-q2%E6%AF%8F%E8%82%A1%E8%B3%BA2-16%E5%85%83-h1eps%E8%A1%9D4-22%E5%85%83-121000466.html"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "股市爆料同學會（法人估值討論）",
-            "date": "",
-            "target": "—",
-            "view": "2026年EPS估上看10元",
-            "note": "AI伺服器高速傳輸PCB需求推升銅箔材料升級",
-            "url": "https://www.cmoney.tw/forum/article/175907008"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "Q2 EPS 2.16元，年增227.27%；受惠AI伺服器高速傳輸PCB對銅箔材料升級需求，法人看好2026年EPS上看10元，近四季EPS達25.44元。",
+          "summary": "金居Q2單季營收28.05億元、年增40.1%，EPS 2.16元較去年同期0.66元大增227%，毛利率衝上27.39%（年增8.53個百分點），主要受惠AI伺服器與高階PCB用銅箔需求續強；8月營收10.56億元、年增59.71%，月增4.72%，營運動能延續至下半年。",
           "sources": [
             {
-              "title": "金居(8358)最新每股盈餘",
-              "url": "https://shop.nstock.tw/stock_info?stock_id=8358&status=6"
+              "title": "金居Q2獲利年增逾2倍 EPS 2.16元、毛利率衝27.39％",
+              "url": "https://www.ctee.com.tw/news/20260807701501-430502"
             },
             {
-              "title": "8358金居 展望2026-2027年",
-              "url": "https://www.facebook.com/CrazyMoney8/posts/%E4%BB%8A%E6%97%A5%E7%84%A6%E9%BB%9E%E5%A4%96%E8%B3%87%E8%B2%B7%E8%B3%A3%E8%B6%85-8358%E9%87%91%E5%B1%85%E5%B1%95%E6%9C%9B-2026-2027%E5%B9%B4ai-%E6%96%B0%E5%B9%B3%E5%8F%B0%E7%AE%97%E5%8A%9B%E6%9B%B4%E5%BC%B7%E5%A4%A7pcb-%E8%A8%AD%E8%A8%88%E5%9C%A8%E9%AB%98%E9%80%9F%E5%82%B3%E8%BC%B8%E5%8F%8A%E8%A8%8A%E8%99%9F%E4%BD%8E%E5%BB%B6%E9%81%B2%E6%80%A7%E5%B0%87%E5%86%8D%E5%8D%87%E7%B4%9A%E8%87%B3-/1381811320646692/"
+              "title": "營收速報 - 金居(8358)8月營收10.56億元年增率高達59.71％",
+              "url": "https://news.cnyes.com/news/id/6601774"
             }
           ]
         }
@@ -736,61 +688,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/06",
-            "value": "9.66億元",
-            "yoy": "+14.11%",
-            "mom": "+8.67%"
+            "period": "2026/08",
+            "value": "10.04億元",
+            "yoy": "+19.97%",
+            "mom": "+1.02%"
           },
           "quarterly": {
             "period": "2026 Q1",
-            "eps": "約0元（年增-100%，基期干擾）",
-            "yoyEps": "-100%",
+            "eps": "0.0元",
+            "yoyEps": "—（季減100%，上季轉盈為虧損邊緣）",
             "profit": "—",
-            "grossMargin": "22.64%",
-            "grossMarginPrev": "19.03%",
-            "opMargin": "3.34%",
-            "opMarginPrev": "1.06%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "—",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q1；Q2據報獲利強彈、上半年獲利創近3年新高，惟單季EPS與毛利率明確數字尚未查得"
           },
           "sources": [
             {
-              "title": "營收快訊：合晶2026年6月營收9.66億元 月增8.67% 年增14.11%",
-              "url": "https://winvest.tw/News/Detail/89653"
+              "title": "合晶(6182)2026年第1季EPS為0.0元，季增-100.0%",
+              "url": "https://statementdog.com/analysis/6182/eps"
             },
             {
-              "title": "6182 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/6182/profit-margin"
+              "title": "《半導體》Q2獲利強彈、H1登近3年高 合晶亮燈攻頂",
+              "url": "https://www.chinatimes.com/realtimenews/20260817002684-260410"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "富果法說會筆記",
-            "date": "2026-08-06",
-            "target": "—",
-            "view": "法說會展望重點",
-            "note": "漲價效應、方形晶圓、12吋擴產進度為關鍵看點",
-            "url": "https://blog.fugle.tw/post/earnings-call-6182-2026-08-06"
-          },
-          {
-            "source": "口袋學堂",
-            "date": "",
-            "target": "—",
-            "view": "漲價效應、方形晶圓、12吋擴產一次看懂",
-            "note": "",
-            "url": "https://www.pocket.tw/school/report/SCHOOL/7598/"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "6月營收9.66億元，月增8.67%、年增14.11%；法說會提及漲價效應、方形晶圓需求與12吋產能擴充進度，為後續營運關鍵觀察指標，惟Q1獲利基期仍偏弱。",
+          "summary": "合晶宣布斥資159.5億元擴產二林廠12吋晶圓產能，目標月產能挑戰10萬片，強化方形晶圓與12吋全流程布局；Q2獲利明顯強彈、上半年獲利創近3年新高，8月營收10.04億元、年增19.97%，月增1.02%，反映矽晶圓景氣回溫。",
           "sources": [
             {
-              "title": "合晶法說會重點內容備忘錄",
-              "url": "https://blog.fugle.tw/post/earnings-call-6182-2026-08-06"
+              "title": "12吋月產能拚10萬片 合晶斥資159.5億 二林廠擴產",
+              "url": "https://www.ctee.com.tw/news/20260818700186-430501"
             },
             {
-              "title": "合晶近期新聞：漲價效應、方形晶圓、12吋擴產一次看懂",
-              "url": "https://www.pocket.tw/school/report/SCHOOL/7598/"
+              "title": "《半導體》Q2獲利強彈、H1登近3年高 合晶亮燈攻頂",
+              "url": "https://www.chinatimes.com/realtimenews/20260817002684-260410"
             }
           ]
         }
@@ -812,60 +747,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/01",
-            "value": "599.89億元",
-            "yoy": "+21.33%",
-            "mom": "—"
+            "period": "2026/08",
+            "value": "822.47億元",
+            "yoy": "+45.66%",
+            "mom": "+11.47%"
           },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "3.24元",
-            "yoyEps": "創歷史同期新高",
-            "grossMargin": "21.01%",
-            "grossMarginPrev": "20.07%",
-            "opMargin": "11.06%",
-            "opMarginPrev": "10.10%",
+            "period": "2026 Q2",
+            "eps": "4.80元",
+            "yoyEps": "+176%",
+            "profit": "210.68億元（年增180%）",
+            "grossMargin": "21.0%",
+            "grossMarginPrev": "20.1%（2026 Q1）",
+            "opMargin": "—",
+            "opMarginPrev": "10.1%（2026 Q1）",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "財報狗｜日月光投控每月營收",
-              "url": "https://statementdog.com/analysis/3711/monthly-revenue"
+              "title": "日月光投控(3711) 2026 Q2財報法說：Q3指引大爆發，AI封裝與載板供應鏈迎來強心針",
+              "url": "https://cmnews.com.tw/article/cmoney-00d4670e-8c1a-11f1-853d-662240246660"
             },
             {
-              "title": "3711 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/3711/profit-margin"
+              "title": "日月光投控Q1每股賺3.24元；Q2雙率續向上",
+              "url": "https://www.ttv.com.tw/finance/view/0420263008211342AF4AD1144267BD6EE6AC85E23AFC32A8/588"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "多數外資/法人（區間彙整）",
-            "date": "2026-09",
-            "target": "520~660元",
-            "view": "買進",
-            "note": "多數法人集中看在此區間，外資最樂觀喊660元，凱基投顧588元，也有看400~420元的保守版本",
-            "url": "https://www.threads.com/@meta.ai/post/DY66yoFj8Z8"
-          },
-          {
-            "source": "經濟日報報導",
-            "date": "2026-08",
-            "target": "上調（未附精確金額）",
-            "view": "買進",
-            "note": "資本支出及展望超標，法人調升獲利預估值及目標價",
-            "url": "https://money.udn.com/money/story/5607/9667525"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "2026/07/30法說會：Q1 EPS 3.24元創歷史同期新高，資本支出上調至逾80億美元（後續再上修至近百億美元），先進封裝LEAP業務目標上修至35億美元以上，預告Q4毛利率將突破結構性上限。主要看點為CoWoS外溢訂單承接、先進封裝擴產進度，以及AI需求能否彌補消費性電子需求下滑。",
+          "summary": "日月光投控Q2合併營收1,910.64億元、年增26.7%，EPS 4.80元年增176%，毛利率21.0%（年增4個百分點），ATM封測毛利率達27.3%，AI/HPC運算應用占封裝業務比重升至30%；法說會上修先進封裝(LEAP)全年營收目標至35億美元以上，高雄仁武擴產承諾逾千億元，Q3合併營收預估季增21~22%，8月營收822.47億元、年增45.66%創同期新高。",
           "sources": [
             {
-              "title": "日月光法說重點：Q1 EPS 3.24元創新高（Sinotrade）",
-              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E6%97%A5%E6%9C%88%E5%85%89-3711-%E5%81%9A%E4%BB%80%E9%BA%BC-%E6%B3%95%E8%AA%AA%E9%87%8D%E9%BB%9E%E6%9C%89%E5%93%AA%E4%BA%9B-Q1%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%983-24%E5%85%83%E5%89%B5%E6%AD%B7%E5%8F%B2%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-%E6%B3%95%E8%AA%AA%E6%9C%83%E5%AE%A3%E5%B8%83%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E8%AA%BF%E8%87%B3%E9%80%BE80%E5%84%84%E7%BE%8E%E5%85%83-LEAP%E7%9B%AE%E6%A8%99%E4%B8%8A%E4%BF%AE%E8%87%B335%E5%84%84%E7%BE%8E%E5%85%83%E4%BB%A5%E4%B8%8A-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69f1d1c2693c8f006c8ce67e"
+              "title": "日月光投控(3711) 2026 Q2財報法說：Q3指引大爆發",
+              "url": "https://cmnews.com.tw/article/cmoney-00d4670e-8c1a-11f1-853d-662240246660"
             },
             {
-              "title": "上修資本支出至百億美元，預告Q4毛利率突破結構性上限（Vocus）",
-              "url": "https://vocus.cc/article/6a6c26e4fd89780001fb4f46"
+              "title": "營收速報 - 日月光投控(3711)8月營收822.47億元年增率高達45.66％",
+              "url": "https://news.cnyes.com/news/id/6601765"
             }
           ]
         }
@@ -886,56 +805,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "85.58億元",
+            "yoy": "+24.46%",
+            "mom": "—"
+          },
           "quarterly": {
-            "period": "2026年法人估值",
-            "eps": "10.9元（2026年估值）",
-            "yoyEps": "—",
+            "period": "2026 Q2",
+            "eps": "3.0元",
+            "yoyEps": "—（Q1 EPS 2.50元，年增58.23%；Q2再創近四年單季新高）",
             "profit": "—",
-            "grossMargin": "21.76%",
-            "grossMarginPrev": "19.44%",
-            "opMargin": "15.27%",
-            "opMarginPrev": "12.95%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "21.8%",
+            "grossMarginPrev": "—",
+            "opMargin": "15.3%",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（營收231億元，季增8.5%、年增28%）"
           },
           "sources": [
             {
-              "title": "力成法說後獲多機構上調預估，2026年EPS可望達10.9元",
-              "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-3fe8e8ab-b534-11f0-8949-30c6de5d6710"
+              "title": "【力成法說會重點內容備忘錄】未來展望趨勢 20260728",
+              "url": "https://blog.fugle.tw/post/earnings-call-6239-2026-07-28"
             },
             {
-              "title": "6239 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/6239/profit-margin"
+              "title": "力成(6239)2026年第1季EPS為2.5元，季增-0.89%",
+              "url": "https://statementdog.com/analysis/6239/eps"
             }
           ]
         },
         "reports": [
           {
-            "source": "CMoney投資網誌",
-            "date": "",
-            "target": "—",
-            "view": "法說後獲多機構上調預估，2026年EPS上看10.9元",
-            "note": "",
-            "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-3fe8e8ab-b534-11f0-8949-30c6de5d6710"
-          },
-          {
-            "source": "CMoney黃勢明",
-            "date": "",
+            "source": "CMoney／多機構調查",
+            "date": "2026-08",
             "target": "385元",
-            "view": "目標價385元的成長假設與評等邏輯",
-            "note": "拆解2025-2026成長假設",
-            "url": "https://cmnews.com.tw/article/marketwatcher-1cee3d2e-55b0-11f1-9c4d-4f6a35c3020e"
+            "view": "上調2026年EPS預估至10.9元",
+            "note": "法說後多機構上調全年獲利預估，看好先進封裝(FO-PLP)與AI需求推升獲利",
+            "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-3fe8e8ab-b534-11f0-8949-30c6de5d6710"
           }
         ],
         "news": {
-          "summary": "7月28日法說會後多家機構上調獲利預估，2026年EPS上看10.9元，目標價喊上385元；股價9月中旬回測262元支撐後反彈，近期於280~296元區間整理。",
+          "summary": "力成Q2營收231億元、季增8.5%、年增28%，EPS 3.0元、毛利率21.8%、營益率15.3%，單季營收與毛利率創近四年新高，主要受惠AI相關先進封裝與記憶體需求強勁；法說後多家機構上修2026年EPS看至10.9元、目標價385元；8月營收85.58億元、年增24.46%，動能延續。",
           "sources": [
             {
-              "title": "力成法說後獲多機構上調預估",
-              "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-3fe8e8ab-b534-11f0-8949-30c6de5d6710"
+              "title": "【力成法說會重點內容備忘錄】未來展望趨勢 20260728",
+              "url": "https://blog.fugle.tw/post/earnings-call-6239-2026-07-28"
             },
             {
-              "title": "力成法說會重點內容備忘錄",
-              "url": "https://blog.fugle.tw/post/earnings-call-6239-2026-07-28"
+              "title": "【公告】力成 2026年8月合併營收85.58億元 年增24.46%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%88%90-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B685-58%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E24-073356918.html"
             }
           ]
         }
@@ -956,52 +873,45 @@
           "source": "櫃買中心 tradingStock 個股日成交資訊（近4個月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "26.20億元",
+            "yoy": "+43.61%",
+            "mom": "+3.85%"
+          },
           "quarterly": {
-            "period": "2026年法人估值",
-            "eps": "4.34元（估值）",
-            "yoyEps": "—",
+            "period": "2026 Q2",
+            "eps": "1.28元",
+            "yoyEps": "+132.73%",
             "profit": "—",
-            "grossMargin": "30.30%",
-            "grossMarginPrev": "23.46%",
-            "opMargin": "19.27%",
-            "opMarginPrev": "13.69%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "—",
+            "grossMarginPrev": "23.46%（2026 Q1）",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（EPS季增116.95%）"
           },
           "sources": [
             {
-              "title": "頎邦 EPS估4.34元，代表便宜還是貴",
-              "url": "https://readmo.cmoney.tw/article/c13e08d8-478c-456a-b6b6-ec6d387eda84"
+              "title": "頎邦(6147) 每股盈餘 - Yahoo股市",
+              "url": "https://tw.stock.yahoo.com/quote/6147.TWO/eps"
             },
             {
-              "title": "6147 毛利率／營益率 財報數據",
+              "title": "頎邦(6147)2026年第1季毛利率為23.46%；淨利率為7.6%",
               "url": "https://statementdog.com/analysis/6147/profit-margin"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "260元",
-            "view": "目標價調升至260元，幅度約4%",
-            "note": "",
-            "url": "https://news.cnyes.com/news/id/6606459"
-          },
-          {
-            "source": "CMoney讀墨",
-            "date": "",
-            "target": "—",
-            "view": "EPS估4.34元，評估估值是否合理",
-            "note": "",
-            "url": "https://readmo.cmoney.tw/article/c13e08d8-478c-456a-b6b6-ec6d387eda84"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "法人最新調查將目標價調升至260元(+4%)，EPS估4.34元；驅動IC封測需求回溫為主要看點，但漲幅相對同業封測廠溫和。",
+          "summary": "頎邦Q2 EPS 1.28元，較上季0.59元季增116.95%、年增132.73%，獲利明顯回升；8月營收26.20億元、年增43.61%、月增3.85%，創波段新高，反映驅動IC及非驅動IC封測需求同步回溫。",
           "sources": [
             {
-              "title": "Factset最新調查：頎邦目標價調升至260元",
-              "url": "https://news.cnyes.com/news/id/6606459"
+              "title": "營收速報 - 頎邦(6147)8月營收26.20億元年增率高達43.61％",
+              "url": "https://news.cnyes.com/news/id/6600572"
+            },
+            {
+              "title": "頎邦(6147) 每股盈餘 - Yahoo股市",
+              "url": "https://tw.stock.yahoo.com/quote/6147.TWO/eps"
             }
           ]
         }
@@ -1022,42 +932,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "250.45億元",
+            "yoy": "+30.71%",
+            "mom": "—"
+          },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "3.39元",
-            "yoyEps": "創單季新高",
-            "grossMargin": "32.48%",
-            "grossMarginPrev": "29.19%",
-            "opMargin": "21.75%",
-            "opMarginPrev": "18.47%",
+            "yoyEps": "—（單季EPS創新高，季增逾6成）",
+            "profit": "422億元",
+            "grossMargin": "32.5%",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "Goodinfo! 聯電每月營收",
-              "url": "https://goodinfo.tw/StockInfo/ShowSaleMonChart.asp?STOCK_ID=2303"
+              "title": "聯電Q2每股純益3.39元、毛利率32.5% 符合預期 本季估高個位數增幅",
+              "url": "https://udn.com/money/story/5710/9658613"
             },
             {
-              "title": "2303 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2303/profit-margin"
+              "title": "聯電財報／第2季淨利422億元、毛利率32.5% EPS 3.39元",
+              "url": "https://udn.com/news/story/7252/9658618"
             }
           ]
         },
-        "reports": [],
+        "reports": [
+          {
+            "source": "未具名法人",
+            "date": "2026-08",
+            "target": "120元",
+            "view": "上看120元，喊買",
+            "note": "EPS季增逾6成，法人看好晶圓代工報價與AI需求外溢效應",
+            "url": "https://tw.stock.yahoo.com/news/eps%E5%AD%A3%E5%A2%9E%E9%80%BE6%E6%88%90-%E6%B3%95%E4%BA%BA%E5%96%8A%E8%B2%B7%E8%81%AF%E9%9B%BB-%E7%9B%AE%E6%A8%99%E5%83%B9%E4%B8%8A%E7%9C%8B120%E5%85%83-%E6%8A%95%E4%BF%A1%E9%80%A39%E8%B2%B7%E5%86%8D%E7%A0%B844%E5%84%84%E8%B3%87%E9%87%91%E7%8B%82%E6%8E%833-9%E8%90%AC%E5%BC%B5-110000764.html"
+          }
+        ],
         "news": {
-          "summary": "股東會後市場關注英特爾12奈米製程驗證推進、矽中介層(interposer)產能倍增兩大題材，成熟製程下半年啟動漲價，法人視為攻守兼備訊號，股東會後法人買盤積極。法說會：Q2 EPS 3.39元創單季新高，資本支出上調至20億美元，Q3產能利用率上看逾90%。",
+          "summary": "聯電Q2單季EPS 3.39元創新高，毛利率32.5%、稅後淨利422億元符合預期；法說會上調資本支出至20億美元，預估Q3出貨季增高個位數、產能利用率上看逾九成，反映漲價與AI需求外溢效應；8月營收250.45億元、年增30.71%，續創同期新高，投信近9個交易日買超逾4萬張。",
           "sources": [
             {
-              "title": "聯電股東會：英特爾12奈米驗證推進、矽中介層產能倍增（Sinotrade）",
-              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E8%81%AF%E9%9B%BB-2303-%E8%82%A1%E6%9D%B1%E6%9C%83-%E8%8B%B1%E7%89%B9%E7%88%BE12%E5%A5%88%E7%B1%B3%E9%A9%97%E8%AD%89%E6%8E%A8%E9%80%B2-%E7%9F%BD%E4%B8%AD%E4%BB%8B%E5%B1%A4%E7%94%A2%E8%83%BD%E5%80%8D%E5%A2%9E-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%95%9F%E5%8B%95%E6%BC%B2%E5%83%B9%E6%94%BB%E5%AE%88%E5%85%BC%E5%82%99-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a17913b9997291927f6f773"
-            },
-            {
-              "title": "聯電成熟製程漲價、營收穩健，法人狂敲（經濟日報）",
-              "url": "https://money.udn.com/money/story/5710/9464579"
-            },
-            {
-              "title": "聯電法說：Q2 EPS 3.39元創新高（Sinotrade）",
+              "title": "聯電法說／第二季EPS達3.39元創單季新高，資本支出上調至20億美元，Q3產能利用率上看逾90%",
               "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E8%81%AF%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E9%81%943-39%E5%85%83%E5%89%B5%E5%96%AE%E5%AD%A3%E6%96%B0%E9%AB%98-%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E8%AA%BF%E8%87%B320%E5%84%84%E7%BE%8E%E5%85%83-Q3%E7%94%A2%E8%83%BD%E5%88%A9%E7%94%A8%E7%8E%87%E4%B8%8A%E7%9C%8B%E9%80%BE90--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a69ce9b59e586efa18faba9"
+            },
+            {
+              "title": "【公告】聯電 2026年8月合併營收250.45億元 年增30.71%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6250-45%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E30-065257420.html"
             }
           ]
         }
@@ -1078,52 +1000,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "273.09億元",
+            "yoy": "+289.43%",
+            "mom": "—"
+          },
           "quarterly": {
-            "period": "2026年法人估值",
-            "eps": "25.37元（最新一次估值）",
-            "yoyEps": "持續上修",
-            "profit": "—",
-            "grossMargin": "66.25%",
-            "grossMarginPrev": "53.37%",
-            "opMargin": "48.43%",
-            "opMarginPrev": "32.81%",
+            "period": "2026 Q2",
+            "eps": "5.4元",
+            "yoyEps": "—（上半年EPS 7.65元；Q1 EPS約2.25元）",
+            "profit": "243億元（季增約1.4倍）",
+            "grossMargin": "66%（整體）／記憶體毛利率70.3%",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "Factset最新調查：華邦電EPS預估上修至25.37元，目標價233元",
-              "url": "https://news.cnyes.com/news/id/6600446"
+              "title": "《半導體》華邦電Q2毛利率66% 上半年EPS 7.65元 看記憶體明年更吃緊",
+              "url": "https://www.ctee.com.tw/news/20260806701656-430201"
             },
             {
-              "title": "2344 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2344/profit-margin"
+              "title": "華邦電法說1》締新猷！第二季大賺243億元季增1.4倍 上半年每股盈餘7.65元",
+              "url": "https://tw.stock.yahoo.com/news/%E8%8F%AF%E9%82%A6%E9%9B%BB%E6%B3%95%E8%AA%AA1%E3%80%8B%E7%B7%A0%E6%96%B0%E7%8C%B7%EF%BC%81%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%A4%A7%E8%B3%BA243%E5%84%84%E5%85%83%E5%AD%A3%E5%A2%9E14%E5%80%8D-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%98765%E5%85%83-074713877.html"
             }
           ]
         },
         "reports": [
           {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "236元",
-            "view": "EPS預估上修至24.43~24.87元",
-            "note": "記憶體漲價循環帶動獲利上修",
-            "url": "https://news.cnyes.com/news/id/6570495"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "233元",
-            "view": "EPS預估上修至25.37元",
-            "note": "較新一次調查，EPS續上修但目標價略微下修",
-            "url": "https://news.cnyes.com/news/id/6600446"
+            "source": "未具名法人／FTNN報導",
+            "date": "2026-09",
+            "target": "230元",
+            "view": "EPS看高到4股本",
+            "note": "CMS利基型記憶體合約價續漲，缺口延伸至2028年，全年擴產405億元",
+            "url": "https://www.ftnn.com.tw/news/577302"
           }
         ],
         "news": {
-          "summary": "受惠記憶體(DRAM/NOR Flash)漲價循環，法人持續上修華邦電全年EPS估值，最新調查EPS上看25.37元、目標價233元；股價9月中旬急跌後於166~180元區間整理。",
+          "summary": "華邦電Q2大賺243億元、季增約1.4倍，EPS 5.4元創高，整體毛利率66%、記憶體毛利率飆至70.3%，上半年EPS達7.65元；法說會揭露CMS利基型記憶體缺口將延伸至2028年，全年資本支出擴產405億元；8月營收273.09億元、年增289.43%，連續創同期新高，反映記憶體與CMS供給吃緊、價格續漲。",
           "sources": [
             {
-              "title": "Factset最新調查：華邦電EPS預估上修至25.37元",
-              "url": "https://news.cnyes.com/news/id/6600446"
+              "title": "華邦電法說／26Q2 EPS 5.4元創高，記憶體營收季增73%、CMS營收年增467%",
+              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E8%8F%AF%E9%82%A6%E9%9B%BB-2344-%E5%81%9A%E4%BB%80%E9%BA%BC-%E6%B3%95%E8%AA%AA%E6%9C%83%E9%87%8D%E9%BB%9E%E6%9C%89%E5%93%AA%E4%BA%9B-Q1-EPS%E8%A1%9D2-25%E5%85%83%E6%94%B9%E5%AF%AB%E8%BF%91%E4%BA%94%E5%B9%B4%E6%96%B0%E9%AB%98-CMS%E7%BC%BA%E5%8F%A3%E5%BB%B6%E4%BC%B8%E8%87%B32028%E5%B9%B4-%E5%85%A8%E5%B9%B4%E6%93%B4%E7%94%A2405%E5%84%84%E5%8A%9B%E6%8B%BC%E4%B8%8B%E4%B8%80%E8%BC%AA%E6%88%90%E9%95%B7-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69f9b4e674fe280086c42437"
+            },
+            {
+              "title": "目標價230元！「記憶體大廠」EPS看高到4股本 CMS合約價續漲、8月營收旺連9月創高",
+              "url": "https://www.ftnn.com.tw/news/577302"
             }
           ]
         }
@@ -1144,11 +1068,17 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "446.90億元",
+            "yoy": "+560.85%",
+            "mom": "—"
+          },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "14.66元",
-            "yoyEps": "—",
-            "profit": "營收連8個月創高",
+            "yoyEps": "+684%（營收年增，EPS年增幅未單獨揭露）",
+            "profit": "501.92億元（歸屬母公司稅後淨利，季增92.61%）",
             "grossMargin": "79.49%",
             "grossMarginPrev": "67.89%",
             "opMargin": "73.68%",
@@ -1157,43 +1087,39 @@
           },
           "sources": [
             {
-              "title": "營收連8月創高、Q2每股14.66元...南亞科財報炸裂！",
-              "url": "https://wantrich.chinatimes.com/news/20260805900003-420101"
+              "title": "【公告】南亞科 2026年8月合併營收446.9億元 年增560.85%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E4%BA%9E%E7%A7%91-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6446-9%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E560-071215063.html"
             },
             {
-              "title": "2408 毛利率／營益率 財報數據",
+              "title": "【26Q2財報公告】南亞科(2408) Q2 營收825.4907億元，季增68.17%、年成長684.23%",
+              "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1245199"
+            },
+            {
+              "title": "南亞科(2408) 毛利率／營益率 財報數據",
               "url": "https://statementdog.com/analysis/2408/profit-margin"
             }
           ]
         },
         "reports": [
           {
-            "source": "旺得富理財網",
-            "date": "2026-08-05",
-            "target": "—",
-            "view": "Q2 EPS 14.66元，營收連8月創高",
-            "note": "記憶體模組廠同步受惠",
-            "url": "https://wantrich.chinatimes.com/news/20260805900003-420101"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "637.5元",
-            "view": "EPS預估上修至66.98元",
-            "note": "較新一次調查，反映記憶體大缺貨循環樂觀預期，估值波動劇烈",
-            "url": "https://news.cnyes.com/news/id/6610540"
+            "source": "FactSet（法人調查）",
+            "date": "2026-09-01",
+            "target": "617.5元",
+            "view": "目標價上修4.66%（14位分析師，全數積極樂觀）",
+            "note": "股價8/31收543元，5日累計上漲8.38%，優於半導體族群與大盤",
+            "url": "https://news.cnyes.com/news/id/6593373"
           }
         ],
         "news": {
-          "summary": "Q2 EPS達14.66元，營收連8個月創高；受惠記憶體大缺貨循環，法人多次大幅上修全年EPS估值，最新Factset調查上看66.98元、目標價637.5元，估值波動劇烈，建議留意追高風險。",
+          "summary": "南亞科8月合併營收446.9億元，年增560.85%，連續10個月創新高，前8月累計營收年增逾6倍；公司法說預期Q3將有約60%季增、DRAM毛利率可能突破80%，並將資本支出大幅提高420%至697億元以擴產。DRAM報價自Q2起持續走揚，市場預期缺口將延續至2027年新廠量產前。",
           "sources": [
             {
-              "title": "南亞科財報炸裂，法人最新目標價出爐",
-              "url": "https://wantrich.chinatimes.com/news/20260805900003-420101"
+              "title": "連10個月改寫新高！南亞科8月營收衝446.9億元、年增逾5倍",
+              "url": "https://news.ustv.com.tw/newsdetail/20260902A001020"
             },
             {
-              "title": "Factset最新調查：南亞科EPS預估上修至66.98元",
-              "url": "https://news.cnyes.com/news/id/6610540"
+              "title": "南亞科：DRAM 報價 Q2跳漲 預期年底前價格一路向上",
+              "url": "https://money.udn.com/money/story/5612/9359987"
             }
           ]
         }
@@ -1214,59 +1140,54 @@
           "source": "櫃買中心 tradingStock 個股日成交資訊（近4個月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "282.76億元",
+            "yoy": "+376.52%",
+            "mom": "+4%"
+          },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "68.8元",
-            "yoyEps": "單季暴賺，約當7個股本",
-            "grossMargin": "65.35%",
-            "grossMarginPrev": "61.82%",
-            "opMargin": "38.84%",
-            "opMarginPrev": "36.23%",
+            "period": "2026 Q2",
+            "eps": "118.57元",
+            "yoyEps": "約+35倍",
+            "profit": "262.2億元（季增約72%）",
+            "grossMargin": "65.3%",
+            "grossMarginPrev": "約61.3%（Q2季增約4個百分點推算）",
+            "opMargin": "38.8%",
+            "opMarginPrev": "約36.2%（Q2季增約2.6個百分點推算）",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "Goodinfo! 群聯每月營收",
-              "url": "https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=8299"
+              "title": "群聯8月營收282.76億元、年增377% 刷新歷史新高",
+              "url": "https://finance.ettoday.net/news/3234642"
             },
             {
-              "title": "8299 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/8299/profit-margin"
+              "title": "群聯法說會／第2季 EPS 118.57元創高 上半年大賺187.43元、配息60元",
+              "url": "https://money.udn.com/money/story/5612/9689746"
             }
           ]
         },
         "reports": [
           {
-            "source": "Factset法人調查",
-            "date": "2026-09",
-            "target": "2740元",
-            "view": "中性偏多",
-            "note": "EPS預估下修至388.99元後，目標價同步下修",
-            "url": "https://news.cnyes.com/news/id/6599668"
-          },
-          {
-            "source": "Factset法人調查",
-            "date": "2026-08",
-            "target": "2815元",
-            "view": "中性偏多",
-            "note": "EPS預估上修至402.74元階段的預估目標價",
-            "url": "https://news.cnyes.com/news/id/6612400"
-          },
-          {
-            "source": "工商時報報導",
-            "date": "2026-05-11",
-            "target": "3字頭（未附精確金額）",
-            "view": "買進",
-            "note": "財報公布後股價直奔漲停，法人上修目標價至3字頭",
-            "url": "https://www.ctee.com.tw/news/20260511700619-430201"
+            "source": "FactSet（法人調查）",
+            "date": "2026-09-23",
+            "target": "2900元",
+            "view": "2026年EPS預估上修至409.86元（區間360.88~478.35元）",
+            "note": "10位分析師調查，反映NAND供需吃緊、AI儲存需求推升獲利預期",
+            "url": "https://news.cnyes.com/news/id/6613881"
           }
         ],
         "news": {
-          "summary": "群聯受惠NAND供給吃緊與AI伺服器控制IC需求，2026年首季EPS達68.8元，轉型為AI生態系關鍵供應商角色。近期股價從高點明顯拉回，法人對目標價看法也出現下修，主要風險為記憶體現貨價波動與客戶拉貨力道變化，波動度偏高需留意追高風險。",
+          "summary": "群聯8月營收282.76億元，年增376.52%、月增約4%，續創歷史新高；Q2受惠NAND Flash供需吃緊、價格上漲及AI儲存需求升溫，單季營收與獲利雙創新高。公司法說指出NAND供需吃緊狀況可能延續至2027、2028年，多家投顧上修全年EPS預估。",
           "sources": [
             {
-              "title": "群聯首季暴賺近7個股本 大咖法人目標價曝光 最大隱患（Yahoo股市）",
-              "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E8%82%A1%E9%82%84%E5%85%AC%E9%81%93%E8%A1%8C%E6%83%85%E4%BE%86%E4%BA%86-%E7%BE%A4%E8%81%AF%E9%A6%96%E5%AD%A3%E6%9A%B4%E8%B3%BA%E8%BF%917%E5%80%8B%E8%82%A1%E6%9C%AC-%E5%A4%A7%E5%92%96%E6%B3%95%E4%BA%BA%E7%9B%AE%E6%A8%99%E5%83%B9%E6%9B%9D%E5%85%89-%E6%9C%80%E5%A4%A7%E9%9A%B1%E6%82%A3%E6%98%AF-%E9%80%99%E5%80%8B-000344809.html"
+              "title": "群聯8月營收282.76億元、年增377% 刷新歷史新高",
+              "url": "https://finance.ettoday.net/news/3234642"
+            },
+            {
+              "title": "群聯好猛 上半年賺贏六年 看好NAND將吃緊「好多年」",
+              "url": "https://money.udn.com/money/story/5612/9690409"
             }
           ]
         }
@@ -1288,61 +1209,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/07",
-            "value": "84.95億元",
-            "yoy": "+636.53%",
-            "mom": "—"
+            "period": "2026/08",
+            "value": "86.80億元",
+            "yoy": "+576.29%",
+            "mom": "+2.18%"
           },
           "quarterly": {
-            "period": "2025 Q3（近期公布資料）",
-            "eps": "6.87元",
-            "yoyEps": "季增+240.1%",
-            "profit": "近四季EPS達15.07元",
+            "period": "2026 Q2",
+            "eps": "108.93元",
+            "yoyEps": "—",
+            "profit": "104.05億元",
             "grossMargin": "65.01%",
-            "grossMarginPrev": "59.10%",
-            "opMargin": "58.57%",
-            "opMarginPrev": "51.96%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2（Q1比較數據未取得）"
           },
           "sources": [
             {
-              "title": "營收速報 - 宜鼎7月營收84.95億元年增率高達636.53%",
-              "url": "https://news.cnyes.com/news/id/6563659"
+              "title": "營收速報 - 宜鼎(5289)8月營收86.80億元年增率高達576.29%",
+              "url": "https://news.cnyes.com/news/id/6597814"
             },
             {
-              "title": "5289 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/5289/profit-margin"
+              "title": "記憶體賺翻了！「工控記憶體大廠」Q2大賺逾10股本、H1EPS達166.45元",
+              "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E8%B3%BA%E7%BF%BB%E4%BA%86-%E5%B7%A5%E6%8E%A7%E8%A8%98%E6%86%B6%E9%AB%94%E5%A4%A7%E5%BB%A0-q2%E5%A4%A7%E8%B3%BA%E9%80%BE10%E8%82%A1%E6%9C%AC-h1eps%E9%81%94166-45%E5%85%83-121000345.html"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "今周刊",
-            "date": "",
-            "target": "—",
-            "view": "7天飆3成後仍看多，目標價再看漲逾30%",
-            "note": "股價由825元一度衝至1075元",
-            "url": "https://www.businesstoday.com.tw/article/category/183008/post/202604080016/"
-          },
-          {
-            "source": "CMoney讀墨",
-            "date": "",
-            "target": "1250元",
-            "view": "目標價上看1250元",
-            "note": "解讀評等、EPS預估與風險",
-            "url": "https://readmo.cmoney.tw/article/1c266312-bb12-4130-a15c-08621a40b122"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "7月營收84.95億元，年增高達636.53%，獲利爆發式成長；法人上看目標價1250元，股價短期已由825元飆漲至逾千元，追高風險與獲利了結賣壓需留意。",
+          "summary": "宜鼎8月營收86.80億元，年增576.29%、月增2.18%，前8月累計營收528.01億元；Q2單季大賺逾10個股本，EPS 108.93元，上半年EPS達166.45元，主要受惠DRAM及NAND Flash價格上揚，加上工控、企業級儲存與AI相關產品出貨量增加。",
           "sources": [
             {
-              "title": "宜鼎7月營收84.95億元年增率高達636.53%",
-              "url": "https://news.cnyes.com/news/id/6563659"
+              "title": "記憶體賺翻了！「工控記憶體大廠」Q2大賺逾10股本、H1EPS達166.45元",
+              "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E8%B3%BA%E7%BF%BB%E4%BA%86-%E5%B7%A5%E6%8E%A7%E8%A8%98%E6%86%B6%E9%AB%94%E5%A4%A7%E5%BB%A0-q2%E5%A4%A7%E8%B3%BA%E9%80%BE10%E8%82%A1%E6%9C%AC-h1eps%E9%81%94166-45%E5%85%83-121000345.html"
             },
             {
-              "title": "宜鼎7天飆3成，最新目標價調高",
-              "url": "https://www.businesstoday.com.tw/article/category/183008/post/202604080016/"
+              "title": "營收速報 - 宜鼎(5289)8月營收86.80億元年增率高達576.29%",
+              "url": "https://news.cnyes.com/news/id/6597814"
             }
           ]
         }
@@ -1363,56 +1267,45 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "186.97億元",
+            "yoy": "+0.02%",
+            "mom": "—"
+          },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "0.57元",
-            "yoyEps": "+670%",
-            "profit": "三筆賣廠業外挹注197億元",
+            "yoyEps": "由虧轉盈（去年同期為虧損）",
+            "profit": "45.32億元",
             "grossMargin": "14.56%",
             "grossMarginPrev": "14.43%",
             "opMargin": "2.56%",
-            "opMarginPrev": "2.25%",
+            "opMarginPrev": "2.24%",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "群創(3481)最新每股盈餘",
-              "url": "https://shop.nstock.tw/stock_info?stock_id=3481&status=6"
+              "title": "【公告】群創 2026年8月合併營收186.97億元 年增0.02%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%A4%E5%89%B5-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6186-97%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-061324003.html"
             },
             {
-              "title": "3481 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/3481/profit-margin"
+              "title": "群創Q2純益創近6季高EPS0.57元 上半年每股賺0.77元",
+              "url": "https://news.cnyes.com/news/id/6577399"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "nStock股市資訊",
-            "date": "",
-            "target": "—",
-            "view": "Q2 EPS 0.57元，年增670%",
-            "note": "獲利主要來自資產活化（賣廠）業外挹注，而非本業改善",
-            "url": "https://shop.nstock.tw/stock_info?stock_id=3481&status=6"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "65元",
-            "view": "EPS預估下修至1.57元",
-            "note": "面板本業獲利能見度仍待改善",
-            "url": "https://news.cnyes.com/news/id/6599510"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "三筆賣廠業外挹注197億元，帶動Q2 EPS達0.57元、年增670%；但法人對本業面板獲利能見度仍偏保守，近期Factset調查下修全年EPS預估至1.57元，股價於48~52元區間整理。",
+          "summary": "群創8月合併營收186.97億元，年增僅0.02%，呈現持平；Q2稅後淨利45.32億元，EPS 0.57元創近6季新高，較去年同期由虧轉盈，毛利率14.56%（季增0.13個百分點、年增6.18個百分點），公司透過優化產品組合、增加高毛利業務維持獲利，另有出售廠房資產挹注業外收益。",
           "sources": [
             {
-              "title": "群創近期新聞：三筆賣廠業外入袋197億",
-              "url": "https://www.pocket.tw/school/report/SCHOOL/7429/"
+              "title": "群創Q2純益創近6季高EPS0.57元 上半年每股賺0.77元",
+              "url": "https://news.cnyes.com/news/id/6577399"
             },
             {
-              "title": "Factset最新調查：群創EPS預估下修至1.57元",
-              "url": "https://news.cnyes.com/news/id/6599510"
+              "title": "群創（3481）近期新聞｜三筆賣廠業外入袋197億、FOPLP量產翻十倍、CarUX座艙轉型一次看懂",
+              "url": "https://www.pocket.tw/school/report/SCHOOL/7429/"
             }
           ]
         }
@@ -1434,84 +1327,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/05",
-            "value": "589.62億元",
-            "yoy": "—",
+            "period": "2026/08",
+            "value": "645.86億元",
+            "yoy": "+34.95%",
             "mom": "—"
           },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "9.68元",
-            "yoyEps": "創單季新高",
-            "grossMargin": "35.64%",
-            "grossMarginPrev": "37.00%",
-            "opMargin": "16.68%",
-            "opMarginPrev": "17.83%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "yoyEps": "—",
+            "profit": "—",
+            "grossMargin": "—",
+            "grossMarginPrev": "37.0%（2026 Q1）",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（Q2毛利率/營益率細項未取得，僅EPS確認）"
           },
           "sources": [
             {
-              "title": "5月營收589.62億元為歷史次高（Yahoo股市）",
-              "url": "https://tw.stock.yahoo.com/news/%E7%9B%AE%E6%A8%99%E5%83%B9%E7%9B%B4%E8%A1%9D4500%E5%85%83-%E9%9B%BB%E4%BE%9B%E5%A4%A7%E5%BB%A0-5%E6%9C%88%E7%87%9F%E6%94%B6589-62%E5%84%84%E5%85%83%E7%82%BA%E6%AD%B7%E5%8F%B2%E6%AC%A1%E9%AB%98-%E5%A4%96%E8%B3%87%E7%9C%8B%E5%A5%BD%E5%85%B6%E9%9B%BB%E4%BE%9B-150000391.html"
+              "title": "營收速報 - 台達電(2308)8月營收645.86億元年增率高達34.95%",
+              "url": "https://news.cnyes.com/news/id/6601755"
             },
             {
-              "title": "Goodinfo! 台達電每月營收",
-              "url": "https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=2308"
-            },
-            {
-              "title": "財報狗｜台達電每月營收",
-              "url": "https://statementdog.com/analysis/2308/monthly-revenue"
-            },
-            {
-              "title": "2308 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2308/profit-margin"
+              "title": "台達電法說／第二季EPS衝上9.68元創新高，鄭平喊全年資本支出上看700億元、AI營收占比估逾25%",
+              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E9%81%94%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E8%A1%9D%E4%B8%8A9-68%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E9%84%AD%E5%B9%B3%E5%96%8A%E5%85%A8%E5%B9%B4%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E7%9C%8B700%E5%84%84%E5%85%83-AI%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%94%E4%BC%B0%E9%80%BE25--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a6b11d27f0b170b6caf1923"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "本土＋日系法人",
-            "date": "2026-09",
-            "target": "1000~1050元",
-            "view": "買進",
-            "note": "看好AI電源、BBU與液冷帶動獲利，本益比30倍成新常態",
-            "url": "https://www.threads.com/@meta.ai/post/DY-Xav4gt-2"
-          },
-          {
-            "source": "元大、中信投顧",
-            "date": "2026-09",
-            "target": "1300~1325元",
-            "view": "買進",
-            "note": "看好HVDC架構升級，估2026-2027年EPS 36.9~57.7元，給28-30倍本益比",
-            "url": "https://www.threads.com/@meta.ai/post/DY-Xav4gt-2"
-          },
-          {
-            "source": "美系外資",
-            "date": "2026-07",
-            "target": "上修（未附具體金額）",
-            "view": "買進",
-            "note": "上修2026-2028年EPS至41.5/65.1/98.5元，同步調升目標價",
-            "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-930a6df6-4777-11f1-8e9e-3d579fa396bb"
-          },
-          {
-            "source": "工商時報報導",
-            "date": "2026-07-16",
-            "target": "2750元",
-            "view": "買進",
-            "note": "法說會30日登場前，外資調升目標價至2750元",
-            "url": "https://www.ctee.com.tw/news/20260716701061-430201"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "2026/07/30法說會：Q2 EPS 9.68元創新高，全年資本支出上看700億元，鄭平表示AI營收占比估逾25%；800V架構規劃2027年放量。市場關注下半年AI伺服器電源、液冷散熱訂單能見度與800V平台客戶認證進度。",
+          "summary": "台達電8月合併營收645.86億元，年增34.95%；Q2 EPS衝上9.68元創新高，符合市場預期，AI營收占比持續攀升至約40%，總經理鄭平表示全年資本支出上看700億元、AI相關營收占比估可超過25%，散熱與電源供應鏈同步受惠AI伺服器需求增長。（近期外資目標價多為4~5個月前資料，暫未納入最新報告）",
           "sources": [
             {
-              "title": "法說會重點：Q2 EPS 9.68元創新高（Sinotrade）",
+              "title": "台達電法說／第二季EPS衝上9.68元創新高",
               "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E9%81%94%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E8%A1%9D%E4%B8%8A9-68%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E9%84%AD%E5%B9%B3%E5%96%8A%E5%85%A8%E5%B9%B4%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E7%9C%8B700%E5%84%84%E5%85%83-AI%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%94%E4%BC%B0%E9%80%BE25--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a6b11d27f0b170b6caf1923"
             },
             {
-              "title": "台達電法說會重點內容備忘錄（富果）",
-              "url": "https://blog.fugle.tw/post/earnings-call-2308-2026-02-26"
+              "title": "營收速報 - 台達電(2308)8月營收645.86億元年增率高達34.95%",
+              "url": "https://news.cnyes.com/news/id/6601755"
             }
           ]
         }
@@ -1532,56 +1385,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "195.92億元",
+            "yoy": "+25.2%",
+            "mom": "—"
+          },
           "quarterly": {
             "period": "2026 Q2",
-            "eps": "3.14元（創單季新高）",
-            "yoyEps": "—",
-            "profit": "—",
-            "grossMargin": "27.22%",
-            "grossMarginPrev": "21.66%",
-            "opMargin": "15.56%",
-            "opMarginPrev": "9.44%",
+            "eps": "3.14元",
+            "yoyEps": "+126%",
+            "profit": "71.2億元（逾倍增）",
+            "grossMargin": "27.2%",
+            "grossMarginPrev": "約21.7%（Q2季增5.5個百分點推算）",
+            "opMargin": "15.6%",
+            "opMarginPrev": "約9.4%（Q2季增6.2個百分點推算）",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "光寶科Q2 EPS衝上3.14元創新高，法說會後股價罕見不摔反大漲",
-              "url": "https://www.pocket.tw/school/report/SCHOOL/7720/"
+              "title": "營收速報 - 光寶科(2301)8月營收195.92億元年增率高達25.2%",
+              "url": "https://news.cnyes.com/news/id/6601754"
             },
             {
-              "title": "2301 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2301/profit-margin"
+              "title": "〈光寶科法說〉Q2毛利率達27% 上半年獲利突破百億元年增逾6成 EPS 4.8元",
+              "url": "https://news.cnyes.com/news/id/6554607"
             }
           ]
         },
         "reports": [
           {
-            "source": "口袋學堂",
-            "date": "",
-            "target": "—",
-            "view": "Q2 EPS衝上3.14元創新高，法說會後股價逆勢上漲",
-            "note": "",
-            "url": "https://www.pocket.tw/school/report/SCHOOL/7720/"
-          },
-          {
-            "source": "鏡週刊 Mirror Media",
-            "date": "",
-            "target": "370元",
-            "view": "明年EPS喊近19元，目標價上看370元",
-            "note": "",
-            "url": "https://www.mirrormedia.mg/external/setn_1910926"
+            "source": "FactSet（法人調查）",
+            "date": "2026-08-03",
+            "target": "250元",
+            "view": "重申評等",
+            "note": "2026年EPS預估8.8元",
+            "url": "https://www.cnyes.com/twstock/foreignrating.aspx?code=2301"
           }
         ],
         "news": {
-          "summary": "Q2 EPS衝上3.14元創單季新高，法說會後股價逆勢上漲；法人樂觀看待2026年EPS上看19元、目標價上看370元，惟股價近期於278~295元區間整理，尚未突破前高。",
+          "summary": "光寶科8月合併營收195.92億元，年增25.2%；Q2 EPS 3.14元創新高，年增126%，毛利率27.2%、營益率15.6%，均較Q1明顯改善，主要受惠北美CSP新單挹注及AI電源產品放量；公司並宣布赴美投資約300億元佈局，法人看好其成長動能延續。",
           "sources": [
             {
-              "title": "光寶科Q2 EPS衝上3.14元創新高",
+              "title": "光寶科(2301)Q2 EPS衝上3.14元創新高，法說會後股價罕見不摔反大漲",
               "url": "https://www.pocket.tw/school/report/SCHOOL/7720/"
             },
             {
-              "title": "光寶科明年EPS喊近19元 目標價上看370元",
-              "url": "https://www.mirrormedia.mg/external/setn_1910926"
+              "title": "300億元砸對了！光寶科赴美大投資 法人看法曝光 目標價、EPS一次看",
+              "url": "https://tw.stock.yahoo.com/news/300%E5%84%84%E5%85%83%E7%A0%B8%E5%B0%8D%E4%BA%86-%E5%85%89%E5%AF%B6%E7%A7%91%E8%B5%B4%E7%BE%8E%E5%A4%A7%E6%8A%95%E8%B3%87-%E6%B3%95%E4%BA%BA%E7%9C%8B%E6%B3%95%E6%9B%9D%E5%85%89-%E7%9B%AE%E6%A8%99%E5%83%B9-eps-212630876.html"
             }
           ]
         }
@@ -1602,56 +1453,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "4.71億元",
+            "yoy": "+71.16%",
+            "mom": "—"
+          },
           "quarterly": {
             "period": "2026 Q2",
             "eps": "1.15元",
             "yoyEps": "+475%",
             "profit": "—",
-            "grossMargin": "38.61%",
-            "grossMarginPrev": "38.09%",
-            "opMargin": "23.18%",
-            "opMarginPrev": "23.63%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "—",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2（毛利率/營益率細項未取得）"
           },
           "sources": [
             {
-              "title": "全新(2455)最新每股盈餘",
-              "url": "https://shop.nstock.tw/stock_info?stock_id=2455&status=6"
+              "title": "【公告】全新 2026年8月合併營收4.71億元 年增71.16%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E6%96%B0-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-71%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E71-064439929.html"
             },
             {
-              "title": "2455 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2455/profit-margin"
+              "title": "全新(2455)2026年第2季EPS年增率為475.0%；近四季EPS年增率為59.37%",
+              "url": "https://statementdog.com/analysis/2455/eps-growth-rate"
             }
           ]
         },
         "reports": [
           {
-            "source": "三立新聞網SETN",
-            "date": "",
-            "target": "600元",
-            "view": "明年EPS衝上8.3元，目標價上看600元",
-            "note": "光通訊產品組合升級為主要動能",
-            "url": "https://www.setn.com/news/1910232"
-          },
-          {
-            "source": "旺得富理財網",
+            "source": "官股投顧（未具名）",
             "date": "2026-06-15",
-            "target": "—",
-            "view": "官股法人喊買，AI光通訊爆發還沒完",
-            "note": "",
+            "target": "424元",
+            "view": "買進",
+            "note": "2026年EPS估4.63元、2027年EPS估8.48元，以2027年EPS 50倍PE推算目標價，看好光電事業占比自31.4%成長至51.3%（AI資料中心傳輸需求、Micro LED、平流層衛星太陽能電池新產品）",
             "url": "https://wantrich.chinatimes.com/news/20260615900509-420101"
           }
         ],
         "news": {
-          "summary": "Q2 EPS 1.15元、年增475%；受惠AI光通訊需求持續爆發，法人看好2026年EPS上看8.3元、目標價喊上600元，股價9/21衝高590元創波段新高後小幅回落整理。",
+          "summary": "全新8月合併營收4.71億元，年增71.16%；Q2 EPS 1.15元，年增475%，主要受惠AI資料中心光通訊傳輸需求持續放量。法人看好其化合物半導體本業與新興光電業務（Micro LED、衛星通訊等）成長動能，惟該目標價報告距今已逾3個月，最新法人觀點需留意後續更新。",
           "sources": [
             {
-              "title": "明年EPS將衝上8.3元！光通訊大廠產品組合升級 目標價上看600元",
-              "url": "https://www.setn.com/news/1910232"
+              "title": "AI光通訊爆發還沒完？官股法人喊買全新！目標價、EPS一次看",
+              "url": "https://wantrich.chinatimes.com/news/20260615900509-420101"
             },
             {
-              "title": "AI光通訊爆發還沒完？官股法人喊買全新",
-              "url": "https://wantrich.chinatimes.com/news/20260615900509-420101"
+              "title": "全新(2455)2026年第2季EPS年增率為475.0%",
+              "url": "https://statementdog.com/analysis/2455/eps-growth-rate"
             }
           ]
         }
@@ -1672,56 +1521,54 @@
           "source": "櫃買中心 tradingStock 個股日成交資訊（近4個月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "19.37億元",
+            "yoy": "+30.55%",
+            "mom": "—"
+          },
           "quarterly": {
-            "period": "2026年法人估值",
-            "eps": "5.4～7.03元（法人估值區間，各家看法不一）",
-            "yoyEps": "—",
-            "profit": "—",
-            "grossMargin": "28.24%",
-            "grossMarginPrev": "26.34%",
-            "opMargin": "14.11%",
-            "opMarginPrev": "9.39%",
+            "period": "2026 Q2",
+            "eps": "2.3元",
+            "yoyEps": "由虧轉盈（去年同期每股虧損約1元）",
+            "profit": "9.977億元（歸屬母公司淨利，季增約80%）",
+            "grossMargin": "28.2%",
+            "grossMarginPrev": "26.3%",
+            "opMargin": "14.1%",
+            "opMarginPrev": "9.3%",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "Factset最新調查：穩懋EPS預估上修至7.03元，目標價562.5元",
-              "url": "https://www.sinotrade.com.tw/richclub/news/6a66a688b17ee73678828250"
+              "title": "〈焦點股〉穩懋8月營收創56個月新高 盤中大漲超過半根停板",
+              "url": "https://news.cnyes.com/news/id/6601476"
             },
             {
-              "title": "3105 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/3105/profit-margin"
+              "title": "2026/07/24 穩懋(3105.TWO) 法說會：Q2轉虧為盈，AI光通訊與低軌衛星驅動Q3樂觀財測",
+              "url": "https://vocus.cc/article/6a68b0c0fd897800018799d9"
             }
           ]
         },
         "reports": [
           {
-            "source": "CMoney讀墨",
-            "date": "",
-            "target": "496元",
-            "view": "目標價496元的EPS與本益比假設",
-            "note": "評估估值是否合理",
-            "url": "https://readmo.cmoney.tw/article/62b22d8f-0155-493f-9a0d-3dae8b2a48ae"
-          },
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "562.5元",
-            "view": "EPS預估上修至7.03元",
-            "note": "法人上修但市場對成長延續性看法分歧",
-            "url": "https://www.sinotrade.com.tw/richclub/news/6a66a688b17ee73678828250"
+            "source": "FactSet（法人調查）",
+            "date": "2026-08-10",
+            "target": "395元",
+            "view": "目標價下修5.39%（自417.5元）",
+            "note": "14位分析師調查，9多、1中立、4空；目標價區間142~620元，2026年EPS估約7.65元",
+            "url": "https://news.cnyes.com/news/id/6567751"
           }
         ],
         "news": {
-          "summary": "法人對穩懋2026年後EPS成長性看法出現分歧，目標價估值區間介於312~562.5元不等；PA晶圓代工訂單能見度與客戶集中度為主要觀察重點。",
+          "summary": "穩懋8月營收19.37億元，年增30.55%，創56個月新高；Q2由虧轉盈，EPS 2.3元，毛利率28.2%、營益率14.1%，均較Q1明顯改善，主要受惠AI高速傳輸／光通訊與低軌衛星相關高毛利產品出貨增加，公司法說對Q3財測樂觀，惟法人目標價於8月出現下修。",
           "sources": [
             {
-              "title": "穩懋目標價496元的EPS與本益比假設合理嗎？",
-              "url": "https://readmo.cmoney.tw/article/62b22d8f-0155-493f-9a0d-3dae8b2a48ae"
+              "title": "〈焦點股〉穩懋8月營收創56個月新高 盤中大漲超過半根停板",
+              "url": "https://news.cnyes.com/news/id/6601476"
             },
             {
-              "title": "Factset最新調查：穩懋EPS預估上修至7.03元",
-              "url": "https://www.sinotrade.com.tw/richclub/news/6a66a688b17ee73678828250"
+              "title": "2026/07/24 穩懋(3105.TWO) 法說會：Q2轉虧為盈，AI光通訊與低軌衛星驅動Q3樂觀財測",
+              "url": "https://vocus.cc/article/6a68b0c0fd897800018799d9"
             }
           ]
         }
@@ -1743,61 +1590,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/05",
-            "value": "7,803.7萬元",
-            "yoy": "+1.07%",
-            "mom": "—"
+            "period": "2026/08",
+            "value": "1.06億元",
+            "yoy": "+33.03%",
+            "mom": "+0.91%"
           },
           "quarterly": {
-            "period": "2025 Q4",
-            "eps": "1.56元",
-            "yoyEps": "+313.70%",
+            "period": "2026 Q2",
+            "eps": "0.43元",
+            "yoyEps": "—",
             "profit": "—",
-            "grossMargin": "34.00%",
-            "grossMarginPrev": "47.84%",
-            "opMargin": "8.43%",
-            "opMarginPrev": "29.07%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "—",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（季減78.17%，自Q1 1.97元）"
           },
           "sources": [
             {
-              "title": "IET-KY(4971)2026年5月營收為78,037千元，年增1.07%",
-              "url": "https://statementdog.com/analysis/4971/monthly-revenue"
+              "title": "IET-KY(4971) 最新每股盈餘 - 2026Q2EPS為0.43元",
+              "url": "https://shop.nstock.tw/stock_info?stock_id=4971&status=6"
             },
             {
-              "title": "4971 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/4971/profit-margin"
+              "title": "IET-KY(4971)2026年8月營收為106,034千元，月增0.91%，年增33.03%",
+              "url": "https://statementdog.com/analysis/4971/monthly-revenue"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "CMoney",
-            "date": "",
-            "target": "—",
-            "view": "法說會樂觀展望，全年營收年增目標20%至40%不變",
-            "note": "",
-            "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1184988"
-          },
-          {
-            "source": "富果法說會筆記／Yahoo股市",
-            "date": "2026-05-07",
-            "target": "—",
-            "view": "InP需求續強，拚基板供應改善推升營運",
-            "note": "",
-            "url": "https://tw.stock.yahoo.com/news/iet-ky-inp%E9%9C%80%E6%B1%82%E7%BA%8C%E5%BC%B7-%E6%8B%9A%E5%9F%BA%E6%9D%BF%E4%BE%9B%E6%87%89%E6%94%B9%E5%96%84%E6%8E%A8%E5%8D%87%E7%87%9F%E9%81%8B-071700964.html"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "5月營收7,803.7萬元，年增僅1.07%，成長動能略顯平緩；法說會維持全年營收年增20%至40%目標不變，InP材料需求延續強勁，基板供應改善為後續營運關鍵。",
+          "summary": "IET-KY 8月營收約1.06億元，年增33.03%、月增0.91%；Q2 EPS降至0.43元，較Q1的1.97元季減78.17%，獲利波動較大，尚未找到近期具名法人目標價報告。3月法說會提及AI光通訊需求帶動營運轉型成長，但Q2獲利未能延續Q1強勢，需留意後續財報表現。",
           "sources": [
             {
-              "title": "IET-KY 2026年5月營收年增1.07%",
-              "url": "https://statementdog.com/analysis/4971/monthly-revenue"
+              "title": "2026/03/12 IET-KY(4971.TWO)法說會：AI光通訊爆發，營運翻轉進高成長",
+              "url": "https://vocus.cc/article/69faa498fd897800015ab2e4"
             },
             {
-              "title": "IET-KY InP需求續強，拚基板供應改善推升營運",
-              "url": "https://tw.stock.yahoo.com/news/iet-ky-inp%E9%9C%80%E6%B1%82%E7%BA%8C%E5%BC%B7-%E6%8B%9A%E5%9F%BA%E6%9D%BF%E4%BE%9B%E6%87%89%E6%94%B9%E5%96%84%E6%8E%A8%E5%8D%87%E7%87%9F%E9%81%8B-071700964.html"
+              "title": "IET-KY(4971)2026年8月營收為106,034千元，月增0.91%，年增33.03%",
+              "url": "https://statementdog.com/analysis/4971/monthly-revenue"
             }
           ]
         }
@@ -1818,39 +1648,54 @@
           "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
         },
         "revenue": {
+          "monthly": {
+            "period": "2026/08",
+            "value": "70.12億元",
+            "yoy": "+6.87%",
+            "mom": "—"
+          },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "1.26元",
-            "yoyEps": "年增14.55%",
-            "profit": "近四季EPS 25.44元",
+            "period": "2026 Q2",
+            "eps": "1.24元",
+            "yoyEps": "—（上半年EPS 2.5元，年增39%）",
+            "profit": "14.79億元（年增77.86%）",
             "grossMargin": "18.51%",
-            "grossMarginPrev": "17.98%",
-            "opMargin": "9.76%",
-            "opMarginPrev": "9.92%",
+            "grossMarginPrev": "17.98%（估算，季增0.53個百分點）",
+            "opMargin": "9.84%（上半年累計，年增0.3個百分點）",
+            "opMarginPrev": "—",
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
-              "title": "Goodinfo! 華通每月營收",
-              "url": "https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=2313"
+              "title": "《電零組》華通Q2每股賺1.24元、前7月營收登峰 今年拚逐季揚",
+              "url": "https://www.chinatimes.com/realtimenews/20260806003559-260410"
             },
             {
-              "title": "nStock｜華通最新每股盈餘",
-              "url": "https://www.nstock.tw/stock_info?stock_id=2313&status=6"
-            },
-            {
-              "title": "2313 毛利率／營益率 財報數據",
-              "url": "https://statementdog.com/analysis/2313/profit-margin"
+              "title": "華通財報／上半年每股賺2.5元 法人看好毛利率逐季增",
+              "url": "https://udn.com/news/story/7252/9675045"
             }
           ]
         },
-        "reports": [],
+        "reports": [
+          {
+            "source": "Factset法人調查／鉅亨網",
+            "date": "2026-09",
+            "target": "310元",
+            "view": "EPS預估下修至7.68元",
+            "note": "多家法人最新調查平均目標價310元，全年EPS預估較先前小幅下修",
+            "url": "https://today.line.me/tw/v3/article/vXaw0V8"
+          }
+        ],
         "news": {
-          "summary": "2025年營收759.96億元創3年新高，Q4單季營收創210.16億元歷史紀錄。三大成長動能：低軌衛星（估185億元、年增22%，訂單能見度看到2026年）、AI伺服器（2026年估翻倍成長）、AI智慧眼鏡（打入Meta、小米供應鏈）。泰國新廠月產能達40萬呎、年增28%，2026上半年投產。法人認為2026年營收與毛利仍有上修空間。",
+          "summary": "華通Q2單季EPS 1.24元，稅後淨利14.79億元、年增77.86%，毛利率季增0.53個百分點至18.51%，主因原物料交期正常化、衛星產品出貨增加；上半年EPS達2.5元、年增39%，法人看好下半年毛利率逐季走升；8月營收70.12億元、年增6.87%，前8月累計年增12.68%。",
           "sources": [
             {
-              "title": "不只低軌衛星！華通三箭齊發 資本支出大增、2026年獲利地圖曝光（經濟日報）",
-              "url": "https://money.udn.com/money/story/5710/9266904"
+              "title": "HDI大廠華通上半年獲利大增39%EPS達2.5元 今年營運逐季走高",
+              "url": "https://news.cnyes.com/news/id/6562372"
+            },
+            {
+              "title": "【公告】華通 2026年8月合併營收70.12億元 年增6.87%",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%AF%E9%80%9A-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B670-12%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-091214825.html"
             }
           ]
         }
@@ -1872,53 +1717,44 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/06",
-            "value": "56.24億元",
-            "yoy": "-1.63%",
-            "mom": "+16.16%"
+            "period": "2026/08",
+            "value": "47.64億元",
+            "yoy": "+7.6%",
+            "mom": "-4.3%"
           },
           "quarterly": {
             "period": "2026 Q2",
-            "eps": "—",
-            "yoyEps": "—",
+            "eps": "7.9元",
+            "yoyEps": "—（稅後淨利年增125%，含評價利益挹注）",
             "profit": "—",
-            "grossMargin": "20.64%",
-            "grossMarginPrev": "20.83%",
-            "opMargin": "9.35%",
-            "opMarginPrev": "10.55%",
-            "marginPeriod": "2026 Q2 vs Q1"
+            "grossMargin": "—",
+            "grossMarginPrev": "—",
+            "opMargin": "—",
+            "opMarginPrev": "—",
+            "marginPeriod": "2026 Q2 vs Q1（Q1 EPS 3.97元，季減13.91%；Q2創同期新高）"
           },
           "sources": [
             {
-              "title": "環球晶(6488) 2026年6月營收56.24億元，月增16.16% 年減1.63%",
-              "url": "https://winvest.tw/Stock/Symbol/MonthlyRevenue/6488"
+              "title": "環球晶Q2每股賺7.9元 既有12吋產能滿載、全球擴產進入收成期",
+              "url": "https://finance.ettoday.net/news/3213389"
             },
             {
-              "title": "6488環球晶 毛利率／營益率財報數據",
-              "url": "https://statementdog.com/analysis/6488/profit-margin"
+              "title": "環球晶法說／第二季EPS達7.9元創同期新高，評價利益挹注稅後淨利年增125%",
+              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E7%92%B0%E7%90%83%E6%99%B6%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E9%81%947-9%E5%85%83%E5%89%B5%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-%E8%A9%95%E5%83%B9%E5%88%A9%E7%9B%8A%E6%8C%B9%E6%B3%A8%E7%A8%85%E5%BE%8C%E6%B7%A8%E5%88%A9%E5%B9%B4%E5%A2%9E125--AI%E9%9C%80%E6%B1%82%E7%B5%90%E6%A7%8B%E6%80%A7%E6%88%90%E9%95%B7%E9%BB%9E%E7%81%AB%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%BE%A9%E7%94%A6-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a71b052b9c5f20b1eb6aa5e"
             }
           ]
         },
-        "reports": [
-          {
-            "source": "鉅亨網／Factset法人調查",
-            "date": "",
-            "target": "733.5元",
-            "view": "EPS預估上修至21.12元",
-            "note": "同一輪調查另有580元與1442.5元等差異極大的目標價估值，反映市場對矽晶圓景氣看法分歧，估值區間需謹慎解讀",
-            "url": "https://news.cnyes.com/news/id/6559681"
-          }
-        ],
+        "reports": [],
         "news": {
-          "summary": "6月營收56.24億元，月增16.16%但年減1.63%，成長動能轉弱；毛利率與營益率連續兩季下滑，反映矽晶圓產業景氣尚在盤整。法人對後續EPS與目標價看法分歧極大（580~1442.5元），估值不確定性高，建議留意半導體資本支出與矽晶圓報價走向。",
+          "summary": "環球晶Q2 EPS達7.9元創同期新高，既有12吋產能滿載、全球擴產進入收成期，日本廠表現最佳，評價利益挹注稅後淨利年增125%，法人看好AI需求結構性成長帶動下半年復甦；不過8月營收47.64億元月減4.3%、年增7.6%，短線動能略見反覆。",
           "sources": [
             {
-              "title": "環球晶5月營收48.42億元",
-              "url": "https://finance.technews.tw/2026/06/05/gwc-6488-202605-financial-report"
+              "title": "環球晶Q2每股純益7.9元 全球擴產進入收成期 日本廠表現最佳",
+              "url": "https://money.udn.com/money/story/11074/9670501"
             },
             {
-              "title": "Factset最新調查：環球晶EPS預估上修至21.12元",
-              "url": "https://news.cnyes.com/news/id/6559681"
+              "title": "環球晶8月營收47.64億元",
+              "url": "https://cdnfinance.technews.tw/2026/09/08/gwc-6488-202608-financial-report/"
             }
           ]
         }

@@ -24,10 +24,13 @@ jobs:
       - name: 計算技術面指標（MA10/MA20、20日60日高低點、相對大盤強弱）
         run: python3 scripts/fetch_technical.py
 
+      - name: 更新單月營收（公開資訊觀測站 MOPS 官方資料）
+        run: python3 scripts/fetch_revenue.py
+
       - name: 提交更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json data/prices_otc.json data/technical.json
+          git add data/prices.json data/prices_otc.json data/technical.json data/research.json
           git diff --quiet --cached || git commit -m "更新盤後收盤價與技術指標 $(date -u +'%Y-%m-%d')"
           git push
