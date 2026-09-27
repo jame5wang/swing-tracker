@@ -1236,7 +1236,14 @@ function renderDetail(i){
     momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到突破箱型/前高訊號 <b>${st.stretch}</b> 附近（約當部分停利價的+15%），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
   }
 
+  const companyOverviewHtml = (r && r.overview) ? `
+    <div class="researchBlock">
+      <div class="rbTitle">公司產業概況</div>
+      <div class="rbBody">${r.overview}</div>
+    </div>` : '';
+
   const overviewHtml = `
+    ${companyOverviewHtml}
     ${rangeHtml}
     <div class="distGrid">
       <div class="distItem"><div class="dLabel">${buyRefLabel}</div><div class="dVal">${pctStr(toBuy)}</div></div>
