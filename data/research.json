@@ -1780,12 +1780,19 @@
         },
         "revenue": {
           "monthly": {
-            "note": "2026年8月合併營收數據未於本次研究中直接取得逐月金額，法人上修全年EPS至96.5元並上調目標價至3450→3600元(2026/08/13)，反映AI伺服器液冷/散熱需求強勁。"
+            "period": "2026/08",
+            "value": "194.81億元",
+            "yoy": "+54.34%",
+            "mom": "+4.79%"
           },
           "quarterly": {
             "note": "Factset調查19位分析師一致看多，2026年EPS共識區間3235-4000元對應股價，目標價中樞3600元。"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3017 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://news.cnyes.com/news/id/6574444",
               "url": "https://news.cnyes.com/news/id/6574444"
@@ -1835,16 +1842,19 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026-08",
+            "period": "2026/08",
             "value": "31.41億元",
             "yoy": "+67.18%",
-            "mom": "月減(較7月37.65億元下滑)",
-            "note": "8月合併營收為歷史第3高單月"
+            "mom": "-16.58%"
           },
           "quarterly": {
             "note": "公司表示Q3拚季增20%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3324 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%9B%99%E9%B4%BB-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B631-41%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E67-063236830.html",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%9B%99%E9%B4%BB-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B631-41%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E67-063236830.html"
@@ -1895,16 +1905,19 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026-08",
+            "period": "2026/08",
             "value": "32.26億元",
-            "yoy": "+90.9%",
-            "mom": "+0.4%",
-            "note": "1-8月累計營收190.19億元，年增42.93%"
+            "yoy": "+90.90%",
+            "mom": "+0.40%"
           },
           "quarterly": {
             "note": "Q2毛利率46.8%創高，7月營收年增91%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3653 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://news.cnyes.com/news/id/6599378",
               "url": "https://news.cnyes.com/news/id/6599378"
@@ -1956,12 +1969,16 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026-08",
+            "period": "2026/08",
             "value": "3.57億元",
             "yoy": "+42.77%",
-            "note": "8月營收連8個月年增，法人看好2026年EPS年增率可達35%以上"
+            "mom": "-47.19%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3529 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%97%BA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-071258927.html",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%97%BA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-071258927.html"
@@ -2012,13 +2029,16 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026-07",
-            "value": "10.55億元(1,054,680千元)",
-            "yoy": "+73.44%",
-            "mom": "+4.17%",
-            "note": "2026年營運喊衝，訂單看到半年後"
+            "period": "2026/08",
+            "value": "11.09億元",
+            "yoy": "+103.06%",
+            "mom": "+5.13%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6187 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue",
               "url": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue"
@@ -2060,15 +2080,19 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026-08",
+            "period": "2026/08",
             "value": "1.48億元",
             "yoy": "+96.73%",
-            "note": "8月營收連15個月創高，下半年動能續強"
+            "mom": "+7.34%"
           },
           "quarterly": {
             "note": "2025年營收8.06億元(年增96.7%)，推算EPS 16.13元；分析師預估2026年EPS 23.37元、2027年34.12元"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6739 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%AB%B9%E9%99%9E%E7%A7%91%E6%8A%80-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E96-065303225.html",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%AB%B9%E9%99%9E%E7%A7%91%E6%8A%80-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E96-065303225.html"
@@ -2119,15 +2143,19 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026-08",
+            "period": "2026/08",
             "value": "12.2億元",
             "yoy": "+152.98%",
-            "note": "8月營收創高帶動股價於9/8觸及漲停(971元)"
+            "mom": "+6.37%"
           },
           "quarterly": {
             "note": "受惠AI伺服器與先進封裝雙引擎驅動，為高階研磨拋光設備龍頭"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3167 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://m.cnyes.com/news/id/6600246",
               "url": "https://m.cnyes.com/news/id/6600246"
@@ -2169,7 +2197,10 @@
         },
         "revenue": {
           "monthly": {
-            "note": "本次研究未直接取得逐月營收金額，但Q2營收與獲利同步創歷史新高，EPS達2.08元，年增285.5%。"
+            "period": "2026/08",
+            "value": "7.71億元",
+            "yoy": "+97.75%",
+            "mom": "+5.50%"
           },
           "quarterly": {
             "period": "2026-Q2",
@@ -2178,6 +2209,10 @@
             "note": "營收與獲利同步創歷史新高"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 8021 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html",
               "url": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html"
