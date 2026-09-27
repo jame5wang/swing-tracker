@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>詹姆5王的股市觀測站</title>
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('swingTrackerTheme');
+    document.documentElement.setAttribute('data-theme', saved==='light' ? 'light' : 'dark');
+  }catch(e){ document.documentElement.setAttribute('data-theme','dark'); }
+})();
+</script>
 <style>
 :root{
   --bg:#f4f5f7; --bg2:#eceef2; --panel:#ffffff; --panel2:#eef0f4; --line:#dde1e8;
@@ -1197,7 +1205,9 @@ function renderDetail(i){
 
 document.getElementById('themeBtn').addEventListener('click',()=>{
   const cur=document.documentElement.getAttribute('data-theme');
-  document.documentElement.setAttribute('data-theme', cur==='dark'?'light':'dark');
+  const next=cur==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try{ localStorage.setItem('swingTrackerTheme', next); }catch(e){}
 });
 document.getElementById('brandTitle').addEventListener('click',()=>{
   activeIndex=null; render(); window.scrollTo(0,0);
