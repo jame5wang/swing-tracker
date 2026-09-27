@@ -662,7 +662,7 @@ function renderMacroCard(){
                 <a class="newsLink" href="${n.link}" target="_blank" rel="noopener">${n.title}</a>
                 <span class="newsTime">${relativeTimeFrom(n.pubDate)}</span>
               </div>
-              ${(n.relatedStocks&&n.relatedStocks.length) ? `<div class="newsRelated">相關持股：${n.relatedStocks.map(r=>`${r.name}(${r.code})`).join('、')}</div>` : ''}
+              ${(n.relatedStocks&&n.relatedStocks.length) ? `<div class="newsRelated">相關持股：${(()=>{ const rs=n.relatedStocks; const shown=rs.slice(0,6).map(r=>`${r.name}(${r.code})`).join('、'); return rs.length>6 ? `${shown} 等共${rs.length}檔` : shown; })()}</div>` : ''}
             </div>`).join('') : `<div class="newsEmpty">這天沒有抓到相關新聞</div>`}
         </div>
       </div>`
