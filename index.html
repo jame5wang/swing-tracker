@@ -586,7 +586,7 @@ function statusOf(s){
     const distToMa10=(p-ma10)/ma10*100;
     const extendedAboveBuy=(p-buyRef)/buyRef*100;
     if(extendedAboveBuy>REBUY_BAND_PCT*2 && distToMa10>=-REBUY_BAND_PCT && distToMa10<=REBUY_BAND_PCT){
-      return {cls:'st-rebuy', label:`拉回買進 · 拉回測10日均線（10MA ${ma10}）`};
+      return {cls:'st-rebuy', label:`突破後拉回找買點 · 拉回測10日均線（10MA ${ma10}）`};
     }
   }
 
@@ -911,7 +911,7 @@ function renderRows(){
       <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 建倉買進</button>
       <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 漲多停利減碼</button>
       <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 超跌區</button>
-      <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買進</button>
+      <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 突破後拉回找買點</button>
       <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 噴出未拉回</button>
       <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
       <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
@@ -938,7 +938,7 @@ function renderRows(){
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'拉回買進','st-extended':'噴出未拉回','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'噴出未拉回','near':'接近提醒','st-hold':'續抱觀察'};
     const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
       : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
       : `找不到符合「${searchQuery}」的股票`;
