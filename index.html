@@ -1256,11 +1256,13 @@ function renderDetail(i){
       <div class="rbBody">${r.overview}</div>
     </div>` : '';
 
-  const plRows=[{cls:'current', label:'目前股價', price:fmt(s.price)||'—'}];
-  if(!isNaN(buyRefVal)) plRows.push({cls:'buy', label:buyRefLabel, price:fmt(buyRefVal)||'—', dist:pctStr(toBuy)});
-  if(!isNaN(sellRefVal)) plRows.push({cls:'sell', label:sellRefLabel, price:fmt(sellRefVal)||'—', dist:pctStr(toSell)});
-  if(!isNaN(stop)) plRows.push({cls:'stop', label:'跌深買進', price:fmt(stop)||'—', dist:pctStr(toStop)});
-  if(stretchVal!==null) plRows.push({cls:'stretch', label:'突破箱型/前高訊號', price:stretchVal, dist:pctStr(toStretch)});
+  const plLevelRows=[];
+  if(!isNaN(buyRefVal)) plLevelRows.push({cls:'buy', label:buyRefLabel, val:buyRefVal, price:fmt(buyRefVal)||'—', dist:pctStr(toBuy)});
+  if(!isNaN(sellRefVal)) plLevelRows.push({cls:'sell', label:sellRefLabel, val:sellRefVal, price:fmt(sellRefVal)||'—', dist:pctStr(toSell)});
+  if(!isNaN(stop)) plLevelRows.push({cls:'stop', label:'跌深買進', val:stop, price:fmt(stop)||'—', dist:pctStr(toStop)});
+  if(stretchVal!==null) plLevelRows.push({cls:'stretch', label:'突破箱型/前高訊號', val:stretchVal, price:stretchVal, dist:pctStr(toStretch)});
+  plLevelRows.sort((a,b)=>b.val-a.val); // 由高到低排列，跟上方橫向尺規的價位高低方向一致
+  const plRows=[{cls:'current', label:'目前股價', price:fmt(s.price)||'—'}, ...plLevelRows];
   const plListHtml=`<div class="plList">${plRows.map(row=>`
       <div class="plRow ${row.cls}">
         <div class="plLabelWrap">${row.cls!=='current'?'<span class="plDot"></span>':''}<span class="plLabel">${row.label}</span></div>

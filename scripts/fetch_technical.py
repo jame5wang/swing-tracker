@@ -10,6 +10,7 @@
 - 大盤：加權指數(TAIEX) 用證交所 FMTQIK，作為個股「相對強弱」比較基準。
         櫃買指數目前沒有找到穩定可用的官方逐日歷史 API，因此上櫃股票的相對強弱
         也先用加權指數做參考基準（非完全精確，但方向性仍有意義）。
+- series：近60個交易日的日線開高低收（日期統一轉成西元 YYYY-MM-DD），供前端K線圖使用。
 """
 import json
 import urllib.request
@@ -20,6 +21,7 @@ TWSE_STOCK_DAY = "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json
 TWSE_FMTQIK = "https://www.twse.com.tw/exchangeReport/FMTQIK?response=json&date={date}"
 TPEX_TRADING_STOCK = "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?date={date}&code={code}&response=json"
 OUTPUT_PATH = "data/technical.json"
+SERIES_DAYS = 60  # K線圖顯示的近期交易日數
 
 # 與 index.html 的 SEED_STOCKS 一致；市場分類供本腳本抓取歷史資料使用
 TWSE_CODES = [
@@ -45,8 +47,15 @@ def http_get_json(url):
         return json.load(resp)
 
 
+def roc_date_to_iso(date_roc):
+    """'115/09/24'（民國年）-> '2026-09-24'（西元年，供前端K線圖排序/顯示）"""
+    y, m, d = str(date_roc).strip().split("/")
+    return f"{int(y)+1911}-{int(m):02d}-{int(d):02d}"
+
+
 def fetch_stock_day_months(code, months):
-    """抓取指定股票近 N 個月的 STOCK_DAY 資料，回傳依日期排序的 (date, close, high, low) list"""
+    """抓取指定股票近 N 個月的 STOCK_DAY 資料，回傳依日期排序的 dict list：
+    {date(ISO), open, high, low, close}"""
     rows = []
     today = datetime.now(timezone(timedelta(hours=8)))
     for i in range(months):
@@ -64,23 +73,25 @@ def fetch_stock_day_months(code, months):
         data = raw.get("data") or []
         for row in data:
             try:
-                date_roc = row[0]
-                close = float(str(row[6] if len(row) > 6 else row[-1]).replace(",", ""))
-                high = float(str(row[4] if len(row) > 4 else row[-1]).replace(",", ""))
-                low = float(str(row[5] if len(row) > 5 else row[-1]).replace(",", ""))
-                rows.append((date_roc, close, high, low))
+                date_iso = roc_date_to_iso(row[0])
+                open_p = float(str(row[3]).replace(",", ""))
+                high = float(str(row[4]).replace(",", ""))
+                low = float(str(row[5]).replace(",", ""))
+                close = float(str(row[6]).replace(",", ""))
+                rows.append({"date": date_iso, "open": open_p, "high": high, "low": low, "close": close})
             except (ValueError, IndexError):
                 continue
-    # 去重、依日期排序（民國年字串排序在同世紀內是安全的）
+    # 去重、依日期排序
     seen = {}
     for r in rows:
-        seen[r[0]] = r
-    ordered = sorted(seen.values(), key=lambda r: r[0])
+        seen[r["date"]] = r
+    ordered = sorted(seen.values(), key=lambda r: r["date"])
     return ordered
 
 
 def fetch_otc_stock_months(code, months):
-    """抓取指定上櫃股票近 N 個月的個股日成交資訊，回傳依日期排序的 (date, close, high, low) list"""
+    """抓取指定上櫃股票近 N 個月的個股日成交資訊，回傳依日期排序的 dict list：
+    {date(ISO), open, high, low, close}"""
     rows = []
     today = datetime.now(timezone(timedelta(hours=8)))
     for i in range(months):
@@ -104,28 +115,29 @@ def fetch_otc_stock_months(code, months):
                 open_p, high_p, low_p, close_p = row[3], row[4], row[5], row[6]
                 if "--" in (str(open_p), str(high_p), str(low_p), str(close_p)):
                     continue
-                close = float(str(close_p).replace(",", ""))
+                open_v = float(str(open_p).replace(",", ""))
                 high = float(str(high_p).replace(",", ""))
                 low = float(str(low_p).replace(",", ""))
+                close = float(str(close_p).replace(",", ""))
                 y, m, d = date_roc.split("/")
-                date_key = f"{int(y)+1911}{int(m):02d}{int(d):02d}"
-                rows.append((date_key, close, high, low))
+                date_iso = f"{int(y)+1911}-{int(m):02d}-{int(d):02d}"
+                rows.append({"date": date_iso, "open": open_v, "high": high, "low": low, "close": close})
             except (ValueError, IndexError, TypeError):
                 continue
     seen = {}
     for r in rows:
-        seen[r[0]] = r
-    ordered = sorted(seen.values(), key=lambda r: r[0])
+        seen[r["date"]] = r
+    ordered = sorted(seen.values(), key=lambda r: r["date"])
     return ordered
 
 
 def compute_metrics(rows):
-    """rows: list of (date, close, high, low)，由舊到新排序"""
+    """rows: list of {date, open, high, low, close}，由舊到新排序"""
     if not rows:
         return None
-    closes = [r[1] for r in rows]
-    highs = [r[2] for r in rows]
-    lows = [r[3] for r in rows]
+    closes = [r["close"] for r in rows]
+    highs = [r["high"] for r in rows]
+    lows = [r["low"] for r in rows]
     n = len(closes)
     result = {
         "days": n,
@@ -157,6 +169,12 @@ def compute_metrics(rows):
         result["low60"] = min(lows)
     if n >= 5:
         result["change5d"] = round((closes[-1] - closes[-5]) / closes[-5] * 100, 2)
+    # K線圖用的日線序列（近 SERIES_DAYS 個交易日），欄位縮寫節省檔案大小
+    series = rows[-SERIES_DAYS:]
+    result["series"] = [
+        {"d": r["date"], "o": r["open"], "h": r["high"], "l": r["low"], "c": r["close"]}
+        for r in series
+    ]
     return result
 
 
@@ -221,7 +239,7 @@ def main():
 
     output = {
         "generated": today,
-        "note": "MA10/MA20/20日60日高低點由官方歷史股價計算（上市：證交所STOCK_DAY，上櫃：櫃買中心個股日成交資訊）。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。",
+        "note": "MA10/MA20/20日60日高低點由官方歷史股價計算（上市：證交所STOCK_DAY，上櫃：櫃買中心個股日成交資訊）。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。series為近60個交易日開高低收，供K線圖使用。",
         "taiex": taiex_metrics,
         "stocks": stock_results,
     }
