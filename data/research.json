@@ -1763,6 +1763,449 @@
           ]
         }
       }
+    },
+    {
+      "code": "3017",
+      "sector": "散熱模組",
+      "support": 3160,
+      "buy": 3160,
+      "resist": 3600,
+      "sell": 3600,
+      "stop": 3055,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "近20日(08/28-09/24)：MA10 3341.5 < MA20 3366.75，屬短線均線走弱格局(uptrend=false)。第一階段減碼價取近20日高點3600；買進參考價取20日低點×1.02=3160；深度加碼價取20日低點×0.985=3055。最新收盤3555(09/24)。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "note": "2026年8月合併營收數據未於本次研究中直接取得逐月金額，法人上修全年EPS至96.5元並上調目標價至3450→3600元(2026/08/13)，反映AI伺服器液冷/散熱需求強勁。"
+          },
+          "quarterly": {
+            "note": "Factset調查19位分析師一致看多，2026年EPS共識區間3235-4000元對應股價，目標價中樞3600元。"
+          },
+          "sources": [
+            {
+              "title": "https://news.cnyes.com/news/id/6574444",
+              "url": "https://news.cnyes.com/news/id/6574444"
+            },
+            {
+              "title": "https://news.cnyes.com/news/id/6569217",
+              "url": "https://news.cnyes.com/news/id/6569217"
+            },
+            {
+              "title": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A5%87%E9%8B%90-3017-%E5%81%9A%E4%BB%80%E9%BA%BC-%E5%8E%BB%E5%B9%B4%E7%87%9F%E6%94%B6%E8%A1%9D%E7%A0%B4%E5%8D%83%E5%84%84%E5%AF%AB%E6%96%B0%E7%8C%B7-%E7%99%BC%E8%A1%A8%E6%9C%83%E6%8F%AD%E9%9C%B2%E5%8D%81%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%8A%8D%E9%82%81%E5%90%91%E6%B6%B2%E5%86%B7%E5%85%83%E5%B9%B4-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e73ca3828d0b0adeeda706",
+              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A5%87%E9%8B%90-3017-%E5%81%9A%E4%BB%80%E9%BA%BC-%E5%8E%BB%E5%B9%B4%E7%87%9F%E6%94%B6%E8%A1%9D%E7%A0%B4%E5%8D%83%E5%84%84%E5%AF%AB%E6%96%B0%E7%8C%B7-%E7%99%BC%E8%A1%A8%E6%9C%83%E6%8F%AD%E9%9C%B2%E5%8D%81%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%8A%8D%E9%82%81%E5%90%91%E6%B6%B2%E5%86%B7%E5%85%83%E5%B9%B4-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e73ca3828d0b0adeeda706"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "鉅亨網Factset",
+            "date": "2026-08-13",
+            "targetPrice": 3600,
+            "prevTargetPrice": 3450,
+            "note": "19位分析師一致看多，目標價上調4.35%"
+          }
+        ],
+        "news": {
+          "summary": "奇鋐去年營收衝破千億元創新猷，公司於發表會揭露十年磨一劍布局液冷技術，2026年進入液冷元年，受惠AI伺服器散熱需求擴張。多位分析師持續上修EPS及目標價預估，最新目標價共識約3600元。",
+          "sources": [
+            {
+              "title": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A5%87%E9%8B%90-3017-%E5%81%9A%E4%BB%80%E9%BA%BC-%E5%8E%BB%E5%B9%B4%E7%87%9F%E6%94%B6%E8%A1%9D%E7%A0%B4%E5%8D%83%E5%84%84%E5%AF%AB%E6%96%B0%E7%8C%B7-%E7%99%BC%E8%A1%A8%E6%9C%83%E6%8F%AD%E9%9C%B2%E5%8D%81%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%8A%8D%E9%82%81%E5%90%91%E6%B6%B2%E5%86%B7%E5%85%83%E5%B9%B4-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e73ca3828d0b0adeeda706",
+              "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A5%87%E9%8B%90-3017-%E5%81%9A%E4%BB%80%E9%BA%BC-%E5%8E%BB%E5%B9%B4%E7%87%9F%E6%94%B6%E8%A1%9D%E7%A0%B4%E5%8D%83%E5%84%84%E5%AF%AB%E6%96%B0%E7%8C%B7-%E7%99%BC%E8%A1%A8%E6%9C%83%E6%8F%AD%E9%9C%B2%E5%8D%81%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%8A%8D%E9%82%81%E5%90%91%E6%B6%B2%E5%86%B7%E5%85%83%E5%B9%B4-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e73ca3828d0b0adeeda706"
+            },
+            {
+              "title": "https://news.cnyes.com/news/id/6574444",
+              "url": "https://news.cnyes.com/news/id/6574444"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "3324",
+      "sector": "均熱板/散熱模組",
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "資料缺口：TPEx STOCK_DAY API (tpex.org.tw) 在本次研究中對3324的9月與8月查詢均持續回傳403錯誤(嘗試約8次，含不同日期參數與重試)，未能取得任何逐日OHLC資料，故無法依規範方法計算買進/賣出/加碼價，暫填null。其他上櫃個股(3529、6187、6739)有取得9月18個交易日資料，僅3324完全失敗，建議之後補抓。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026-08",
+            "value": "31.41億元",
+            "yoy": "+67.18%",
+            "mom": "月減(較7月37.65億元下滑)",
+            "note": "8月合併營收為歷史第3高單月"
+          },
+          "quarterly": {
+            "note": "公司表示Q3拚季增20%"
+          },
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%9B%99%E9%B4%BB-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B631-41%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E67-063236830.html",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%9B%99%E9%B4%BB-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B631-41%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E67-063236830.html"
+            },
+            {
+              "title": "https://www.ctee.com.tw/news/20260908701611-430201",
+              "url": "https://www.ctee.com.tw/news/20260908701611-430201"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "鉅亨網Factset",
+            "date": "2026-09-07",
+            "targetPrice": 1353,
+            "epsEstimate": 56.41,
+            "note": "2026年EPS共識由57.13元下修至56.41元，12位分析師預估區間51.09-58.8元"
+          }
+        ],
+        "news": {
+          "summary": "雙鴻2026年8月合併營收31.41億元，年增67.18%，為歷史單月第3高，但較7月的37.65億元月減，公司表示第三季拚季增20%。法人近期小幅下修2026年EPS預估至56.41元，目標價約1353元，反映AI伺服器液冷散熱模組雖需求強勁但短線營收波動。",
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/news/%E9%9B%99%E9%B4%BB8%E6%9C%88%E7%87%9F%E6%94%B631-41%E5%84%84%E5%85%83%E5%B9%B4%E5%A2%9E67-%E6%AD%B7%E5%8F%B2%E7%AC%AC3%E9%AB%98-072715884.html",
+              "url": "https://tw.stock.yahoo.com/news/%E9%9B%99%E9%B4%BB8%E6%9C%88%E7%87%9F%E6%94%B631-41%E5%84%84%E5%85%83%E5%B9%B4%E5%A2%9E67-%E6%AD%B7%E5%8F%B2%E7%AC%AC3%E9%AB%98-072715884.html"
+            },
+            {
+              "title": "https://news.cnyes.com/news/id/6599080",
+              "url": "https://news.cnyes.com/news/id/6599080"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "3653",
+      "sector": "均熱片/精密沖壓(散熱)",
+      "support": 5780,
+      "buy": 5780,
+      "resist": 6920,
+      "sell": 6920,
+      "stop": 5130,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "近20日(08/28-09/24)：MA10 5796.5 >= MA20 5782，屬多頭排列(uptrend=true)。第一階段減碼價取20日高點6920；買進參考價取20日均線5780(四捨五入)；深度加碼價取20日低點×0.985=5130。最新收盤6920(09/24)，股價創高。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026-08",
+            "value": "32.26億元",
+            "yoy": "+90.9%",
+            "mom": "+0.4%",
+            "note": "1-8月累計營收190.19億元，年增42.93%"
+          },
+          "quarterly": {
+            "note": "Q2毛利率46.8%創高，7月營收年增91%"
+          },
+          "sources": [
+            {
+              "title": "https://news.cnyes.com/news/id/6599378",
+              "url": "https://news.cnyes.com/news/id/6599378"
+            },
+            {
+              "title": "https://www.pocket.tw/school/report/SCHOOL/6275/",
+              "url": "https://www.pocket.tw/school/report/SCHOOL/6275/"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "鉅亨網Factset",
+            "date": "2026-09-14",
+            "targetPrice": 6747.5,
+            "epsEstimate": 67.31,
+            "prevEps": 66.46,
+            "note": "8位分析師共識上修，2026年EPS區間58.7-70.93元"
+          }
+        ],
+        "news": {
+          "summary": "健策8月營收32.26億元，年增90.9%，1-8月累計年增42.93%，受惠AI伺服器均熱片與3D封裝散熱需求。法人持續上修2026年EPS至67.31元，目標價上調至6747.5元，股價於9月下旬急漲並創歷史新高，反映市場對其散熱龍頭地位的樂觀預期。",
+          "sources": [
+            {
+              "title": "https://news.cnyes.com/news/id/6599378",
+              "url": "https://news.cnyes.com/news/id/6599378"
+            },
+            {
+              "title": "https://news.cnyes.com/news/id/6605555",
+              "url": "https://news.cnyes.com/news/id/6605555"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "3529",
+      "sector": "IC設計/矽智財(SIP)",
+      "support": 2740,
+      "buy": 2740,
+      "resist": 3350,
+      "sell": 3350,
+      "stop": 2295,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "資料缺口：TPEx 8月資料多次嘗試(403)未能取得，僅取得9月18個交易日(09/01-09/24)作為近似20日窗口。MA10 2866.5 >= MA20(約)2740，屬多頭(uptrend=true)。第一階段減碼價取(近18日)高點3350；買進參考價取(近似)20日均線2740；深度加碼價取低點×0.985=2295。最新收盤3230(09/24)。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026-08",
+            "value": "3.57億元",
+            "yoy": "+42.77%",
+            "note": "8月營收連8個月年增，法人看好2026年EPS年增率可達35%以上"
+          },
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%97%BA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-071258927.html",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%97%BA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-071258927.html"
+            },
+            {
+              "title": "https://www.lifetoutiao.news/355618/",
+              "url": "https://www.lifetoutiao.news/355618/"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "鉅亨網Factset",
+            "date": "2026-07 (較早)",
+            "targetPrice": 4155,
+            "epsEstimate": 36.74,
+            "note": "較早調查資料，EPS預估下修，後續有更新調查但本次未完整取得最新一版"
+          }
+        ],
+        "news": {
+          "summary": "力旺2026年8月合併營收3.57億元，年增42.77%，為連續第8個月正成長，法人看好其IC矽智財(SIP)授權業務受惠先進製程需求，預估2026年EPS年增率可達35%以上。股價9月下旬強勢上漲並創波段新高3305元。",
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%97%BA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-071258927.html",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E6%97%BA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-071258927.html"
+            },
+            {
+              "title": "https://www.lifetoutiao.news/355618/",
+              "url": "https://www.lifetoutiao.news/355618/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "6187",
+      "sector": "自動化設備",
+      "support": 1205,
+      "buy": 1205,
+      "resist": 1435,
+      "sell": 1435,
+      "stop": 1160,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "資料缺口：TPEx 8月資料多次嘗試(403)未能取得，僅取得9月18個交易日(09/01-09/24)作為近似20日窗口。MA10 1222 < MA20(約)1272.5，屬短線轉弱(uptrend=false)。第一階段減碼價取(近18日)高點1435；買進參考價取低點×1.02=1205；深度加碼價取低點×0.985=1160。最新收盤1195(09/24)，股價自高點回落。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026-07",
+            "value": "10.55億元(1,054,680千元)",
+            "yoy": "+73.44%",
+            "mom": "+4.17%",
+            "note": "2026年營運喊衝，訂單看到半年後"
+          },
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue",
+              "url": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue"
+            },
+            {
+              "title": "https://udn.com/news/story/7254/9233121",
+              "url": "https://udn.com/news/story/7254/9233121"
+            }
+          ]
+        },
+        "news": {
+          "summary": "萬潤7月營收10.55億元，年增73.44%，公司表示2026年訂單能見度已看到半年後，反映自動化設備需求擴張。9月股價自高點1435回落至1195，短線均線由多轉弱，需留意動能是否延續。",
+          "sources": [
+            {
+              "title": "https://udn.com/news/story/7254/9233121",
+              "url": "https://udn.com/news/story/7254/9233121"
+            },
+            {
+              "title": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue",
+              "url": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "6739",
+      "sector": "智慧製造/工業自動化整合",
+      "support": 1065,
+      "buy": 1065,
+      "resist": 1370,
+      "sell": 1370,
+      "stop": 1030,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "資料缺口：TPEx 8月資料多次嘗試(403)未能取得，僅取得9月18個交易日(09/01-09/24)作為近似20日窗口。MA10 1111 < MA20(約)1131.4，屬短線轉弱(uptrend=false)。第一階段減碼價取(近18日)高點1370；買進參考價取低點×1.02=1065；深度加碼價取低點×0.985=1030。最新收盤1110(09/24)。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026-08",
+            "value": "1.48億元",
+            "yoy": "+96.73%",
+            "note": "8月營收連15個月創高，下半年動能續強"
+          },
+          "quarterly": {
+            "note": "2025年營收8.06億元(年增96.7%)，推算EPS 16.13元；分析師預估2026年EPS 23.37元、2027年34.12元"
+          },
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%AB%B9%E9%99%9E%E7%A7%91%E6%8A%80-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E96-065303225.html",
+              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%AB%B9%E9%99%9E%E7%A7%91%E6%8A%80-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E96-065303225.html"
+            },
+            {
+              "title": "https://vocus.cc/article/69bfce4ffd897800013887ef",
+              "url": "https://vocus.cc/article/69bfce4ffd897800013887ef"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "分析師追蹤報告(vocus)",
+            "date": "2026-09",
+            "epsEstimate2026": 23.37,
+            "epsEstimate2027": 34.12,
+            "note": "轉型半導體AI智慧製造標配，Agentic AI與Physical AI軟硬整合"
+          }
+        ],
+        "news": {
+          "summary": "竹陞科技8月營收1.48億元，年增96.73%，連續15個月創高，公司已轉型為半導體AI智慧製造標配供應商，透過Agentic AI與Physical AI軟硬整合突破硬體銷售毛利限制。竹北研發中心2026年啟用可解除產能瓶頸，分析師預估2026年EPS 23.37元、2027年34.12元，長約與SaaS商模支撐獲利成長。",
+          "sources": [
+            {
+              "title": "https://tw.stock.yahoo.com/news/%E7%AB%B9%E9%99%9E%E7%A7%91%E6%8A%808%E6%9C%88%E7%87%9F%E6%94%B6%E9%80%A315%E5%80%8B%E6%9C%88%E5%89%B5%E9%AB%98-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%8B%95%E8%83%BD%E7%BA%8C%E5%BC%B7-040500060.html",
+              "url": "https://tw.stock.yahoo.com/news/%E7%AB%B9%E9%99%9E%E7%A7%91%E6%8A%808%E6%9C%88%E7%87%9F%E6%94%B6%E9%80%A315%E5%80%8B%E6%9C%88%E5%89%B5%E9%AB%98-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%8B%95%E8%83%BD%E7%BA%8C%E5%BC%B7-040500060.html"
+            },
+            {
+              "title": "https://vocus.cc/article/69bfce4ffd897800013887ef",
+              "url": "https://vocus.cc/article/69bfce4ffd897800013887ef"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "3167",
+      "sector": "研磨拋光/精密設備",
+      "support": 790,
+      "buy": 790,
+      "resist": 970,
+      "sell": 970,
+      "stop": 625,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "資料延遲：TWSE STOCK_DAY對3167的資料截至09/16即無更新(嘗試取得完整月資料確認為12筆)，故以09/16為最新可得收盤價824計算，非09/24或09/26。近20日(08/20-09/16)：MA10 835.6 >= MA20 789.55，屬多頭(uptrend=true)。第一階段減碼價取20日高點971(09/08漲停價)；買進參考價取20日均線790；深度加碼價取20日低點×0.985=625。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026-08",
+            "value": "12.2億元",
+            "yoy": "+152.98%",
+            "note": "8月營收創高帶動股價於9/8觸及漲停(971元)"
+          },
+          "quarterly": {
+            "note": "受惠AI伺服器與先進封裝雙引擎驅動，為高階研磨拋光設備龍頭"
+          },
+          "sources": [
+            {
+              "title": "https://m.cnyes.com/news/id/6600246",
+              "url": "https://m.cnyes.com/news/id/6600246"
+            },
+            {
+              "title": "https://uc913.com/stock-3167/",
+              "url": "https://uc913.com/stock-3167/"
+            }
+          ]
+        },
+        "news": {
+          "summary": "大量科技受惠AI伺服器與先進封裝雙引擎驅動，8月營收年增152.98%，帶動股價於9月8日盤中觸及漲停971元，創波段新高。公司為高階研磨拋光設備龍頭，市場對其在半導體先進封裝製程中的設備需求持續看好，但需留意TWSE資料在本次查詢時已有約10個交易日的延遲缺口。",
+          "sources": [
+            {
+              "title": "https://m.cnyes.com/news/id/6600246",
+              "url": "https://m.cnyes.com/news/id/6600246"
+            },
+            {
+              "title": "https://uc913.com/stock-3167/",
+              "url": "https://uc913.com/stock-3167/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "8021",
+      "sector": "PCB鑽針/精密工具",
+      "support": 400,
+      "buy": 400,
+      "resist": 465,
+      "sell": 465,
+      "stop": 280,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "資料延遲：TWSE STOCK_DAY對8021的資料截至09/11即無更新(9月僅取得9筆)，改用7月+8月+9月共37筆資料回推近20交易日窗口(07/27-09/11)，以09/11收盤價418.5為最新可得價格。MA10 438.8 >= MA20 400.875，屬多頭(uptrend=true)。第一階段減碼價取20日高點465；買進參考價取20日均線400.875；深度加碼價取20日低點×0.985=280。",
+          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {
+            "note": "本次研究未直接取得逐月營收金額，但Q2營收與獲利同步創歷史新高，EPS達2.08元，年增285.5%。"
+          },
+          "quarterly": {
+            "period": "2026-Q2",
+            "epsNTD": 2.08,
+            "yoyProfitPct": "+285.5%",
+            "note": "營收與獲利同步創歷史新高"
+          },
+          "sources": [
+            {
+              "title": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html",
+              "url": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "分析師報告(轉載自Yahoo新聞)",
+            "date": "2026 Q2後",
+            "targetPrice": 505,
+            "note": "維持買進評等，但因中國APT鎢粉報價自Q1高點滑落，下修2026-2027年EPS預估；目標價自更高水準調降至505元(報告當時股價428元)"
+          }
+        ],
+        "news": {
+          "summary": "尖點2026年第二季營收與獲利同步創歷史新高，EPS達2.08元，年增285.5%，受惠AI伺服器與高階基板對PCB鑽針需求。但分析師關注中國APT鎢粉報價自第1季高點明顯滑落，可能壓縮下半年鑽針平均售價，故下修目標價至505元，惟仍維持買進評等，看好其在泰國擴產「China+1」佈局及2026年底產能衝上4500萬支的長期成長性。",
+          "sources": [
+            {
+              "title": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html",
+              "url": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html"
+            },
+            {
+              "title": "https://www.youtube.com/watch?v=YL_lsvQdk2I",
+              "url": "https://www.youtube.com/watch?v=YL_lsvQdk2I"
+            }
+          ]
+        }
+      }
     }
   ]
 }
