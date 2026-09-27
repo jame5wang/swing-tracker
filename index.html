@@ -670,8 +670,10 @@ function mergeResearchList(list, opts){
     if(item.sector!==undefined && item.sector!==null && item.sector!=='' && s.sector!==item.sector){
       s.sector=item.sector; changed=true;
     }
+    // 網站已改為唯讀觀察站（不再有手動輸入價位的介面），這些欄位一律都是自動產生的，
+    // 所以永遠以 research.json 最新版本覆蓋，不再有「使用者手動改過就不覆蓋」的顧慮。
     ['support','resist','buy','sell','stop'].forEach(f=>{
-      if(item[f]!==undefined && item[f]!==null && item[f]!=='' && (s[f]===undefined||s[f]===null||s[f]==='')){
+      if(item[f]!==undefined && item[f]!==null && item[f]!=='' && s[f]!==item[f]){
         s[f]=item[f]; changed=true;
       }
     });
