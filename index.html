@@ -576,7 +576,7 @@ function statusOf(s){
   // 現在的「安全買進」只是噴出後的短暫整理，不是經過驗證的支撐，追價風險較高
   const isExtended = !!(s.research && s.research.technical && s.research.technical.extended);
   if(isExtended && buyRef!==null && p>buyRef && (sellRef===null || p<sellRef)){
-    return {cls:'st-extended', label:'噴出未拉回 · 追價風險高，勿在此追價'};
+    return {cls:'st-extended', label:'突破區間/創短期新高尚未拉回 · 追價風險高，勿在此追價'};
   }
 
   // 噴出後拉回測10日均線：股價明顯高於原始買點（代表已經噴出過一段），
@@ -912,7 +912,7 @@ function renderRows(){
       <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 漲多停利減碼</button>
       <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 超跌區</button>
       <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 突破後拉回找買點</button>
-      <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 噴出未拉回</button>
+      <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 突破區間/創短期新高尚未拉回</button>
       <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
       <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
     `;
@@ -938,7 +938,7 @@ function renderRows(){
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'噴出未拉回','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'突破區間/創短期新高尚未拉回','near':'接近提醒','st-hold':'續抱觀察'};
     const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
       : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
       : `找不到符合「${searchQuery}」的股票`;
