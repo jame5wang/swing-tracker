@@ -105,17 +105,46 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .del{background:none; border:none; color:var(--mute); font-size:12.5px; cursor:pointer; padding:4px;}
 .del:hover{color:var(--stop);}
 .themeToggle{background:none; border:1px solid var(--line); border-radius:7px; padding:6px 10px; color:var(--sub); font-size:12px; cursor:pointer;}
+.headerBtns{display:flex; gap:8px;}
+.importBtn{background:none; border:1px solid var(--line); border-radius:7px; padding:6px 10px; color:var(--sub); font-size:12px; cursor:pointer;}
+.importOverlay{position:fixed; inset:0; background:rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; z-index:20; padding:20px;}
+.importOverlay.hidden{display:none;}
+.importPanel{background:var(--panel); border-radius:12px; padding:20px; max-width:560px; width:100%; max-height:80vh; overflow:auto;}
+.importPanel h2{font-size:16px; margin:0 0 6px;}
+.importPanel p{font-size:12.5px; color:var(--sub); line-height:1.6; margin:0 0 12px;}
+.importPanel textarea{width:100%; min-height:180px; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12.5px; line-height:1.5;}
+.importActions{display:flex; justify-content:flex-end; gap:8px; margin-top:12px;}
+.importActions button{padding:8px 14px; border-radius:8px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:13px; cursor:pointer;}
+.importActions button.primary{background:var(--ink); color:var(--bg); border-color:var(--ink);}
+.importMsg{font-size:12.5px; margin-top:8px;}
+.importMsg.ok{color:var(--buy);} .importMsg.err{color:var(--stop);}
 </style>
 </head>
 <body>
 <header>
   <div><h1>波段追蹤台</h1><span class="tag">基本面已篩選，追蹤進出場價位</span></div>
-  <button class="themeToggle" id="themeBtn" type="button">切換深色/淺色</button>
+  <div class="headerBtns">
+    <button class="importBtn" id="importOpenBtn" type="button">匯入研究資料</button>
+    <button class="themeToggle" id="themeBtn" type="button">切換深色/淺色</button>
+  </div>
 </header>
 <main>
   <div class="dataBar" id="dataBar"><span class="dot"></span><span id="dataBarText">正在讀取自動盤後資料…</span></div>
   <div id="view"></div>
 </main>
+
+<div class="importOverlay hidden" id="importOverlay">
+  <div class="importPanel">
+    <h2>匯入研究資料</h2>
+    <p>把 Claude 幫你整理好的 JSON 資料貼在下面，按「套用」會依股票代號比對，自動填入營收/法人/法說會/新聞重點，以及技術支撐壓力。買進/停利/停損價只有在你還沒填過的情況下才會被帶入，不會覆蓋你自己設定的數字。</p>
+    <textarea id="importText" placeholder='[{"code":"2330","revenue":"...","report":"...","conf":"...","news":"...","support":900,"resist":950}]'></textarea>
+    <div class="importMsg" id="importMsg"></div>
+    <div class="importActions">
+      <button type="button" id="importCancelBtn">取消</button>
+      <button type="button" class="primary" id="importApplyBtn">套用</button>
+    </div>
+  </div>
+</div>
 
 <script>
 const KEY='swingTrackerStocks_v1';
@@ -384,6 +413,58 @@ function renderDetail(i){
 document.getElementById('themeBtn').addEventListener('click',()=>{
   const cur=document.documentElement.getAttribute('data-theme');
   document.documentElement.setAttribute('data-theme', cur==='dark'?'light':'dark');
+});
+
+// ---- 匯入研究資料 ----
+const importOverlay=document.getElementById('importOverlay');
+const importText=document.getElementById('importText');
+const importMsg=document.getElementById('importMsg');
+
+document.getElementById('importOpenBtn').addEventListener('click',()=>{
+  importMsg.textContent=''; importMsg.className='importMsg';
+  importOverlay.classList.remove('hidden');
+});
+document.getElementById('importCancelBtn').addEventListener('click',()=>{
+  importOverlay.classList.add('hidden');
+});
+importOverlay.addEventListener('click',(e)=>{ if(e.target===importOverlay) importOverlay.classList.add('hidden'); });
+
+document.getElementById('importApplyBtn').addEventListener('click',()=>{
+  let data;
+  try{ data=JSON.parse(importText.value); }
+  catch(e){ importMsg.textContent='JSON 格式讀不懂，請確認完整複製貼上。'; importMsg.className='importMsg err'; return; }
+  if(!Array.isArray(data)){ importMsg.textContent='資料格式需要是一個陣列 [ {...}, {...} ]。'; importMsg.className='importMsg err'; return; }
+
+  let matched=0, added=0;
+  data.forEach(d=>{
+    if(!d || !d.code) return;
+    const code=String(d.code).trim();
+    let idx=stocks.findIndex(s=>String(s.code).trim()===code);
+    if(idx===-1){
+      // 網站上還沒有這檔，直接新增
+      stocks.push({code, name:d.name||'', price:'', buy:'', sell:'', stop:'', support:'', resist:'', revenue:'', report:'', conf:'', news:'', updated:'', priceSource:''});
+      idx=stocks.length-1;
+      added++;
+    }else{
+      matched++;
+    }
+    const s=stocks[idx];
+    ['revenue','report','conf','news'].forEach(f=>{
+      if(d[f]!==undefined && d[f]!==null && d[f]!==''){ s[f]=d[f]; }
+    });
+    ['support','resist','buy','sell','stop'].forEach(f=>{
+      if(d[f]!==undefined && d[f]!==null && d[f]!=='' && (s[f]===undefined || s[f]===null || s[f]==='')){
+        s[f]=d[f];
+      }
+    });
+    s.updated=new Date().toLocaleString('zh-TW',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})+'（研究資料匯入）';
+  });
+
+  save(); render();
+  importMsg.textContent=`套用完成：更新 ${matched} 檔，新增 ${added} 檔。`;
+  importMsg.className='importMsg ok';
+  importText.value='';
+  setTimeout(()=>{ importOverlay.classList.add('hidden'); },1400);
 });
 
 render();
