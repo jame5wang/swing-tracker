@@ -1059,19 +1059,19 @@ function renderDetail(i){
   const support=parseFloat(s.support), resist=parseFloat(s.resist);
 
   const buyRefVal = !isNaN(buy)?buy:support;
-  const buyRefLabel = !isNaN(buy)?'距買進參考價':'距 AI 建議買點';
+  const buyRefLabel = !isNaN(buy)?'距安全買進試單':'距 AI 建議買點';
   const sellRefVal = !isNaN(sell)?sell:resist;
-  const sellRefLabel = !isNaN(sell)?'距第一階段減碼':'距 AI 建議賣點';
+  const sellRefLabel = !isNaN(sell)?'距部分停利':'距 AI 建議賣點';
   const toBuy=pct(p,buyRefVal), toSell=pct(p,sellRefVal), toStop=pct(p,stop);
   const stretchVal = !isNaN(buyRefVal) ? stretchTargetOf(buyRefVal) : null;
   const toStretch = stretchVal!==null ? pct(p,stretchVal) : null;
 
   let rangeHtml='';
   const marks=[];
-  if(!isNaN(stop)) marks.push({v:stop,label:'深度加碼',cls:'stop'});
-  if(!isNaN(buy)) marks.push({v:buy,label:'買進',cls:'buy'});
+  if(!isNaN(stop)) marks.push({v:stop,label:'跌深買進',cls:'stop'});
+  if(!isNaN(buy)) marks.push({v:buy,label:'安全買進',cls:'buy'});
   else if(!isNaN(support)) marks.push({v:support,label:'AI支撐',cls:'sup'});
-  if(!isNaN(sell)) marks.push({v:sell,label:'減碼',cls:'sell'});
+  if(!isNaN(sell)) marks.push({v:sell,label:'部分停利',cls:'sell'});
   else if(!isNaN(resist)) marks.push({v:resist,label:'AI壓力',cls:'res'});
   if(marks.length && !isNaN(p)){
     const vals=marks.map(m=>m.v).concat([p]);
@@ -1115,21 +1115,21 @@ function renderDetail(i){
     <div class="distGrid">
       <div class="distItem"><div class="dLabel">${buyRefLabel}</div><div class="dVal">${pctStr(toBuy)}</div></div>
       <div class="distItem"><div class="dLabel">${sellRefLabel}</div><div class="dVal">${pctStr(toSell)}</div></div>
-      <div class="distItem"><div class="dLabel">距深度加碼價</div><div class="dVal">${pctStr(toStop)}</div></div>
-      ${stretchVal!==null?`<div class="distItem"><div class="dLabel">距延伸目標（AI，+15%）</div><div class="dVal">${pctStr(toStretch)}</div></div>`:''}
+      <div class="distItem"><div class="dLabel">跌深買進（對應深度加碼）</div><div class="dVal">${pctStr(toStop)}</div></div>
+      ${stretchVal!==null?`<div class="distItem"><div class="dLabel">突破箱型/前高訊號</div><div class="dVal">${pctStr(toStretch)}</div></div>`:''}
     </div>
     ${momentumNoteHtml}
     <div class="sectionTitle">價位設定</div>
     <div class="grid">
       <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><input type="number" step="0.01" data-f="price" value="${fmt(s.price)}" placeholder="—"></div>
-      <div class="field"><label>買進參考價</label><input type="number" step="0.01" data-f="buy" value="${fmt(s.buy)}" placeholder="${!isNaN(support)?'AI建議 '+support:'—'}"></div>
-      <div class="field"><label>第一階段減碼價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="${!isNaN(resist)?'AI建議 '+resist:'—'}"></div>
-      <div class="field"><label>深度加碼價</label><input type="number" step="0.01" data-f="stop" value="${fmt(s.stop)}" placeholder="—"></div>
+      <div class="field"><label>安全買進試單價</label><input type="number" step="0.01" data-f="buy" value="${fmt(s.buy)}" placeholder="${!isNaN(support)?'AI建議 '+support:'—'}"></div>
+      <div class="field"><label>部分停利價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="${!isNaN(resist)?'AI建議 '+resist:'—'}"></div>
+      <div class="field"><label>跌深買進價（對應深度加碼）</label><input type="number" step="0.01" data-f="stop" value="${fmt(s.stop)}" placeholder="—"></div>
       <div class="field"><label>技術支撐（AI）</label><input type="number" step="0.01" data-f="support" value="${fmt(s.support)}" placeholder="—"></div>
       <div class="field"><label>技術壓力（AI）</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
-      <div class="field"><label>延伸目標（AI，僅供參考）</label><input type="text" value="${stretchVal!==null?stretchVal:'—'}" disabled></div>
+      <div class="field"><label>突破箱型/前高訊號（AI，僅供參考）</label><input type="text" value="${stretchVal!==null?stretchVal:'—'}" disabled></div>
     </div>
-    <div class="srcList">「第一階段減碼」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「延伸目標」對應你歷史大波段單的幅度（買進參考價 × 1.15），均線走弱才是真正該全數出場的時候。</div>`;
+    <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（安全買進試單價 × 1.15），均線走弱才是真正該全數出場的時候。</div>`;
 
   const technicalHtml = renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
   const fundamentalHtml = renderFundamentalTab(s);
