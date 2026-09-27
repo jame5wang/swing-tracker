@@ -146,6 +146,15 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .revItem .dLabel{font-size:11.5px; color:var(--sub);}
 .revItem .dVal{font-size:16px; font-weight:700; margin-top:2px;}
 .revSub{font-size:11.5px; color:var(--sub); margin-top:3px;}
+.marginItem{grid-column:1/-1;}
+.marginRow{display:flex; align-items:baseline; gap:8px; margin-top:4px; flex-wrap:wrap;}
+.marginRow:first-of-type{margin-top:6px;}
+.marginName{font-size:12.5px; color:var(--sub); min-width:44px;}
+.marginVal{font-size:15px;}
+.mTrend{font-size:11.5px; font-weight:600;}
+.mTrend.mUp{color:var(--buy);}
+.mTrend.mDown{color:var(--sell);}
+.mTrend.mFlat{color:var(--mute);}
 .reportList{display:grid; gap:10px; margin-top:6px;}
 .reportItem{background:var(--panel); border-radius:8px; padding:10px 12px;}
 .reportHead{display:flex; justify-content:space-between; gap:8px; font-size:12px; margin-bottom:4px;}
@@ -461,6 +470,26 @@ function renderSources(list){
   return `<div class="srcList">資料來源：${list.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.title||s.url}</a>`).join('、')}</div>`;
 }
 
+function marginTrend(cur,prev){
+  const c=parseFloat(cur), p=parseFloat(prev);
+  if(isNaN(c)||isNaN(p)) return '';
+  const d=c-p;
+  if(Math.abs(d)<0.05) return '<span class="mTrend mFlat">→ 持平</span>';
+  return d>0?`<span class="mTrend mUp">▲ 較上季 +${d.toFixed(1)}ppt</span>`:`<span class="mTrend mDown">▼ 較上季 ${d.toFixed(1)}ppt</span>`;
+}
+function renderMarginCard(q){
+  const gm=q.grossMargin, gmp=q.grossMarginPrev, om=q.opMargin, omp=q.opMarginPrev;
+  return `<div class="revItem marginItem">
+    <div class="dLabel">毛利率／營益率（${q.marginPeriod||q.period||''}）</div>
+    <div class="marginRow">
+      <span class="marginName">毛利率</span><span class="dVal marginVal">${gm||'—'}</span>${marginTrend(gm,gmp)}
+    </div>
+    <div class="marginRow">
+      <span class="marginName">營益率</span><span class="dVal marginVal">${om||'—'}</span>${marginTrend(om,omp)}
+    </div>
+  </div>`;
+}
+
 function renderResearchSection(s){
   const r=s.research;
   if(!r){
@@ -483,6 +512,7 @@ function renderResearchSection(s){
       <div class="revGrid">
         ${m?`<div class="revItem"><div class="dLabel">單月營收（${m.period||''}）</div><div class="dVal">${m.value||'—'}</div><div class="revSub">YoY ${m.yoy||'—'}　MoM ${m.mom||'—'}</div></div>`:''}
         ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div><div class="revSub">YoY ${q.yoyEps||'—'}${q.profit?('　淨利 '+q.profit):''}</div></div>`:''}
+        ${(q&&(q.grossMargin||q.opMargin))?renderMarginCard(q):''}
       </div>
       ${renderSources(r.revenue.sources)}
     </div>`;

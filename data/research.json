@@ -21,12 +21,21 @@
             "period": "2026 Q1",
             "eps": "3.28元",
             "yoyEps": "+446%（創13季新高）",
-            "profit": "50.42億元（歸屬母公司淨利）"
+            "profit": "50.42億元（歸屬母公司淨利）",
+            "grossMargin": "24.80%",
+            "grossMarginPrev": "17.96%",
+            "opMargin": "15.51%",
+            "opMarginPrev": "7.36%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "EPS年增446%！「這載板龍頭廠」Q1財報出爐 外資看好目標價1060元",
               "url": "https://tw.stock.yahoo.com/news/eps%E5%B9%B4%E5%A2%9E446-%E9%80%99%E8%BC%89%E6%9D%BF%E9%BE%8D%E9%A0%AD%E5%BB%A0-q1%E8%B2%A1%E5%A0%B1%E5%87%BA%E7%88%90-%E5%A4%96%E8%B3%87%E7%9C%8B%E5%A5%BD%E7%9B%AE%E6%A8%99%E5%83%B91060%E5%85%83-131500444.html"
+            },
+            {
+              "title": "3037 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/3037/profit-margin"
             }
           ]
         },
@@ -82,12 +91,21 @@
             "period": "2026 Q1",
             "eps": "2.03元",
             "yoyEps": "—",
-            "profit": "營收111.8億元"
+            "profit": "營收111.8億元",
+            "grossMargin": "24.75%",
+            "grossMarginPrev": "15.85%",
+            "opMargin": "21.36%",
+            "opMarginPrev": "12.10%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "個股／載板王者南電 新目標價曝光",
               "url": "https://inews.setn.com/news/1858896"
+            },
+            {
+              "title": "8046 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/8046/profit-margin"
             }
           ]
         },
@@ -149,12 +167,21 @@
             "period": "2026 全年估值",
             "eps": "7.5～8.8元（法人估值區間）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "26.09%",
+            "grossMarginPrev": "21.16%",
+            "opMargin": "13.43%",
+            "opMarginPrev": "8.02%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "【即時新聞】景碩2026首季營收亮眼表現，EPS預估7.5至8.8元股價高檔反彈",
               "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-ab2591da-4d80-11f1-af1b-d9099f3f8725"
+            },
+            {
+              "title": "3189 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/3189/profit-margin"
             }
           ]
         },
@@ -218,12 +245,21 @@
             "period": "2026 Q2",
             "eps": "—（法人估將創新高）",
             "yoyEps": "—",
-            "profit": "營收472.7億元，優於市場預期"
+            "profit": "營收472.7億元，優於市場預期",
+            "grossMargin": "33.85%",
+            "grossMarginPrev": "29.42%",
+            "opMargin": "26.94%",
+            "opMarginPrev": "21.56%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "第2季財報「三率三升」可期 法人調升台光電目標價",
               "url": "https://money.udn.com/money/story/5607/9624313"
+            },
+            {
+              "title": "2383 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2383/profit-margin"
             }
           ]
         },
@@ -285,12 +321,21 @@
             "period": "2026 Q2（單月）",
             "eps": "3.06元（6月單月）",
             "yoyEps": "6月淨利年增+219.2%",
-            "profit": "6月淨利約9億元"
+            "profit": "6月淨利約9億元",
+            "grossMargin": "29.72%",
+            "grossMarginPrev": "25.15%",
+            "opMargin": "23.48%",
+            "opMarginPrev": "18.18%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "營收速報 - 台燿7月營收59.08億元年增率高達121.52%",
               "url": "https://news.cnyes.com/news/id/6562889"
+            },
+            {
+              "title": "6274 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/6274/profit-margin"
             }
           ]
         },
@@ -346,12 +391,21 @@
             "period": "2026 Q2",
             "eps": "3.52元",
             "yoyEps": "—",
-            "profit": "H1 EPS合計4.39元；毛利率22%、營益率16%"
+            "profit": "H1 EPS合計4.39元；毛利率22%、營益率16%",
+            "grossMargin": "22.02%",
+            "grossMarginPrev": "11.42%",
+            "opMargin": "16.03%",
+            "opMarginPrev": "4.64%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "多重動能挹注 法人調升聯茂獲利預估值及目標價",
               "url": "https://money.udn.com/money/story/5607/9681787"
+            },
+            {
+              "title": "6213 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/6213/profit-margin"
             }
           ]
         },
@@ -413,12 +467,21 @@
             "period": "2026 Q1",
             "eps": "1.73元",
             "yoyEps": "稅後純益年增+65%",
-            "profit": "營收12.5億元，年增22%"
+            "profit": "營收12.5億元，年增22%",
+            "grossMargin": "35.98%",
+            "grossMarginPrev": "34.02%",
+            "opMargin": "16.78%",
+            "opMarginPrev": "11.67%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "騰輝財報／第1季獲利季增25%、EPS 1.73元 4月營收創近4年高",
               "url": "https://udn.com/news/story/7253/9490504"
+            },
+            {
+              "title": "6672 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/6672/profit-margin"
             }
           ]
         },
@@ -474,12 +537,21 @@
             "period": "2026 全年估值",
             "eps": "38.28～41.57元（法人估值區間，多次上修）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "34.65%",
+            "grossMarginPrev": "34.81%",
+            "opMargin": "26.43%",
+            "opMarginPrev": "26.85%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "AI算力浪潮下的絕對霸主：金像電強勢刷爆業績距目標價還有85.39%潛在漲幅",
               "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/238572"
+            },
+            {
+              "title": "2368 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2368/profit-margin"
             }
           ]
         },
@@ -535,12 +607,21 @@
             "period": "2026 H1",
             "eps": "3.55元（上半年合計）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "23.10%",
+            "grossMarginPrev": "21.64%",
+            "opMargin": "7.77%",
+            "opMarginPrev": "6.15%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "上半年EPS賺3.55元！「PCB龍頭」目標價、獲利預估齊遭下修",
               "url": "https://www.ftnn.com.tw/news/569197"
+            },
+            {
+              "title": "4958 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/4958/profit-margin"
             }
           ]
         },
@@ -596,12 +677,21 @@
             "period": "2026 Q2",
             "eps": "2.16元",
             "yoyEps": "+227.27%",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "27.39%",
+            "grossMarginPrev": "28.71%",
+            "opMargin": "24.42%",
+            "opMarginPrev": "25.63%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "金居(8358)最新每股盈餘",
               "url": "https://shop.nstock.tw/stock_info?stock_id=8358&status=6"
+            },
+            {
+              "title": "8358 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/8358/profit-margin"
             }
           ]
         },
@@ -655,12 +745,21 @@
             "period": "2026 Q1",
             "eps": "約0元（年增-100%，基期干擾）",
             "yoyEps": "-100%",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "22.64%",
+            "grossMarginPrev": "19.03%",
+            "opMargin": "3.34%",
+            "opMarginPrev": "1.06%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "營收快訊：合晶2026年6月營收9.66億元 月增8.67% 年增14.11%",
               "url": "https://winvest.tw/News/Detail/89653"
+            },
+            {
+              "title": "6182 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/6182/profit-margin"
             }
           ]
         },
@@ -721,12 +820,21 @@
           "quarterly": {
             "period": "2026 Q1",
             "eps": "3.24元",
-            "yoyEps": "創歷史同期新高"
+            "yoyEps": "創歷史同期新高",
+            "grossMargin": "21.01%",
+            "grossMarginPrev": "20.07%",
+            "opMargin": "11.06%",
+            "opMarginPrev": "10.10%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "財報狗｜日月光投控每月營收",
               "url": "https://statementdog.com/analysis/3711/monthly-revenue"
+            },
+            {
+              "title": "3711 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/3711/profit-margin"
             }
           ]
         },
@@ -782,12 +890,21 @@
             "period": "2026年法人估值",
             "eps": "10.9元（2026年估值）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "21.76%",
+            "grossMarginPrev": "19.44%",
+            "opMargin": "15.27%",
+            "opMarginPrev": "12.95%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "力成法說後獲多機構上調預估，2026年EPS可望達10.9元",
               "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-3fe8e8ab-b534-11f0-8949-30c6de5d6710"
+            },
+            {
+              "title": "6239 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/6239/profit-margin"
             }
           ]
         },
@@ -843,12 +960,21 @@
             "period": "2026年法人估值",
             "eps": "4.34元（估值）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "30.30%",
+            "grossMarginPrev": "23.46%",
+            "opMargin": "19.27%",
+            "opMarginPrev": "13.69%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "頎邦 EPS估4.34元，代表便宜還是貴",
               "url": "https://readmo.cmoney.tw/article/c13e08d8-478c-456a-b6b6-ec6d387eda84"
+            },
+            {
+              "title": "6147 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/6147/profit-margin"
             }
           ]
         },
@@ -899,12 +1025,21 @@
           "quarterly": {
             "period": "2026 Q2",
             "eps": "3.39元",
-            "yoyEps": "創單季新高"
+            "yoyEps": "創單季新高",
+            "grossMargin": "32.48%",
+            "grossMarginPrev": "29.19%",
+            "opMargin": "21.75%",
+            "opMarginPrev": "18.47%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "Goodinfo! 聯電每月營收",
               "url": "https://goodinfo.tw/StockInfo/ShowSaleMonChart.asp?STOCK_ID=2303"
+            },
+            {
+              "title": "2303 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2303/profit-margin"
             }
           ]
         },
@@ -947,12 +1082,21 @@
             "period": "2026年法人估值",
             "eps": "25.37元（最新一次估值）",
             "yoyEps": "持續上修",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "66.25%",
+            "grossMarginPrev": "53.37%",
+            "opMargin": "48.43%",
+            "opMarginPrev": "32.81%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "Factset最新調查：華邦電EPS預估上修至25.37元，目標價233元",
               "url": "https://news.cnyes.com/news/id/6600446"
+            },
+            {
+              "title": "2344 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2344/profit-margin"
             }
           ]
         },
@@ -1004,12 +1148,21 @@
             "period": "2026 Q2",
             "eps": "14.66元",
             "yoyEps": "—",
-            "profit": "營收連8個月創高"
+            "profit": "營收連8個月創高",
+            "grossMargin": "79.49%",
+            "grossMarginPrev": "67.89%",
+            "opMargin": "73.68%",
+            "opMarginPrev": "61.34%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "營收連8月創高、Q2每股14.66元...南亞科財報炸裂！",
               "url": "https://wantrich.chinatimes.com/news/20260805900003-420101"
+            },
+            {
+              "title": "2408 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2408/profit-margin"
             }
           ]
         },
@@ -1064,12 +1217,21 @@
           "quarterly": {
             "period": "2026 Q1",
             "eps": "68.8元",
-            "yoyEps": "單季暴賺，約當7個股本"
+            "yoyEps": "單季暴賺，約當7個股本",
+            "grossMargin": "65.35%",
+            "grossMarginPrev": "61.82%",
+            "opMargin": "38.84%",
+            "opMarginPrev": "36.23%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "Goodinfo! 群聯每月營收",
               "url": "https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=8299"
+            },
+            {
+              "title": "8299 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/8299/profit-margin"
             }
           ]
         },
@@ -1135,12 +1297,21 @@
             "period": "2025 Q3（近期公布資料）",
             "eps": "6.87元",
             "yoyEps": "季增+240.1%",
-            "profit": "近四季EPS達15.07元"
+            "profit": "近四季EPS達15.07元",
+            "grossMargin": "65.01%",
+            "grossMarginPrev": "59.10%",
+            "opMargin": "58.57%",
+            "opMarginPrev": "51.96%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "營收速報 - 宜鼎7月營收84.95億元年增率高達636.53%",
               "url": "https://news.cnyes.com/news/id/6563659"
+            },
+            {
+              "title": "5289 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/5289/profit-margin"
             }
           ]
         },
@@ -1196,12 +1367,21 @@
             "period": "2026 Q2",
             "eps": "0.57元",
             "yoyEps": "+670%",
-            "profit": "三筆賣廠業外挹注197億元"
+            "profit": "三筆賣廠業外挹注197億元",
+            "grossMargin": "14.56%",
+            "grossMarginPrev": "14.43%",
+            "opMargin": "2.56%",
+            "opMarginPrev": "2.25%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "群創(3481)最新每股盈餘",
               "url": "https://shop.nstock.tw/stock_info?stock_id=3481&status=6"
+            },
+            {
+              "title": "3481 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/3481/profit-margin"
             }
           ]
         },
@@ -1262,7 +1442,12 @@
           "quarterly": {
             "period": "2026 Q2",
             "eps": "9.68元",
-            "yoyEps": "創單季新高"
+            "yoyEps": "創單季新高",
+            "grossMargin": "35.64%",
+            "grossMarginPrev": "37.00%",
+            "opMargin": "16.68%",
+            "opMarginPrev": "17.83%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -1276,6 +1461,10 @@
             {
               "title": "財報狗｜台達電每月營收",
               "url": "https://statementdog.com/analysis/2308/monthly-revenue"
+            },
+            {
+              "title": "2308 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2308/profit-margin"
             }
           ]
         },
@@ -1347,12 +1536,21 @@
             "period": "2026 Q2",
             "eps": "3.14元（創單季新高）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "27.22%",
+            "grossMarginPrev": "21.66%",
+            "opMargin": "15.56%",
+            "opMarginPrev": "9.44%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "光寶科Q2 EPS衝上3.14元創新高，法說會後股價罕見不摔反大漲",
               "url": "https://www.pocket.tw/school/report/SCHOOL/7720/"
+            },
+            {
+              "title": "2301 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2301/profit-margin"
             }
           ]
         },
@@ -1408,12 +1606,21 @@
             "period": "2026 Q2",
             "eps": "1.15元",
             "yoyEps": "+475%",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "38.61%",
+            "grossMarginPrev": "38.09%",
+            "opMargin": "23.18%",
+            "opMarginPrev": "23.63%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "全新(2455)最新每股盈餘",
               "url": "https://shop.nstock.tw/stock_info?stock_id=2455&status=6"
+            },
+            {
+              "title": "2455 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2455/profit-margin"
             }
           ]
         },
@@ -1469,12 +1676,21 @@
             "period": "2026年法人估值",
             "eps": "5.4～7.03元（法人估值區間，各家看法不一）",
             "yoyEps": "—",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "28.24%",
+            "grossMarginPrev": "26.34%",
+            "opMargin": "14.11%",
+            "opMarginPrev": "9.39%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "Factset最新調查：穩懋EPS預估上修至7.03元，目標價562.5元",
               "url": "https://www.sinotrade.com.tw/richclub/news/6a66a688b17ee73678828250"
+            },
+            {
+              "title": "3105 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/3105/profit-margin"
             }
           ]
         },
@@ -1536,12 +1752,21 @@
             "period": "2025 Q4",
             "eps": "1.56元",
             "yoyEps": "+313.70%",
-            "profit": "—"
+            "profit": "—",
+            "grossMargin": "34.00%",
+            "grossMarginPrev": "47.84%",
+            "opMargin": "8.43%",
+            "opMarginPrev": "29.07%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
               "title": "IET-KY(4971)2026年5月營收為78,037千元，年增1.07%",
               "url": "https://statementdog.com/analysis/4971/monthly-revenue"
+            },
+            {
+              "title": "4971 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/4971/profit-margin"
             }
           ]
         },
@@ -1597,7 +1822,12 @@
             "period": "2026 Q1",
             "eps": "1.26元",
             "yoyEps": "年增14.55%",
-            "profit": "近四季EPS 25.44元"
+            "profit": "近四季EPS 25.44元",
+            "grossMargin": "18.51%",
+            "grossMarginPrev": "17.98%",
+            "opMargin": "9.76%",
+            "opMarginPrev": "9.92%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -1607,6 +1837,10 @@
             {
               "title": "nStock｜華通最新每股盈餘",
               "url": "https://www.nstock.tw/stock_info?stock_id=2313&status=6"
+            },
+            {
+              "title": "2313 毛利率／營益率 財報數據",
+              "url": "https://statementdog.com/analysis/2313/profit-margin"
             }
           ]
         },
