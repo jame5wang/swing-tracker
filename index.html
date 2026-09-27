@@ -259,6 +259,54 @@ try{
   stocks=raw?JSON.parse(raw):[];
 }catch(e){ stocks=[]; }
 
+// 依使用者實際期貨交易紀錄回測校正：原先賣出/停損目標區間偏寬（平均獲利區間設定約+9%才停利），
+// 但實際交易習慣顯示平均獲利即出手（個股約+4%中位數）、停損約-5%中位數，屬於短波段、紀律嚴謹的
+// 區間操作型；因此下修「停利」目標為更貼近實際節奏，停損則小幅收斂。只在使用者尚未手動改過
+// AI 建議值（即目前值仍等於舊版預設值）時才套用，不覆蓋使用者自行輸入過的價位。
+const RECAL_KEY='swingTrackerRecal_v1';
+const RECAL_MAP={
+  '3037':{oldSell:1195,newSell:1150,oldStop:1050,newStop:1060},
+  '8046':{oldSell:1260,newSell:1195,oldStop:1050,newStop:1065},
+  '3189':{oldSell:985,newSell:925,oldStop:800,newStop:810},
+  '2383':{oldSell:5150,newSell:4980,oldStop:4600,newStop:4630},
+  '6274':{oldSell:1580,newSell:1475,oldStop:1300,newStop:1315},
+  '6213':{oldSell:600,newSell:565,oldStop:495,newStop:500},
+  '6672':{oldSell:335,newSell:320,oldStop:285,newStop:290},
+  '2368':{oldSell:1135,newSell:1070,oldStop:950,newStop:960},
+  '4958':{oldSell:495,newSell:480,oldStop:445,newStop:450},
+  '8358':{oldSell:550,newSell:510,oldStop:450,newStop:455},
+  '6182':{oldSell:128,newSell:119,oldStop:105,newStop:106},
+  '3711':{oldSell:705,newSell:675,oldStop:630,newStop:635},
+  '6239':{oldSell:294,newSell:285,oldStop:262,newStop:265},
+  '6147':{oldSell:222,newSell:210,oldStop:190,newStop:190},
+  '2303':{oldSell:159,newSell:155,oldStop:146,newStop:147},
+  '2344':{oldSell:178,newSell:171,oldStop:158,newStop:159},
+  '2408':{oldSell:522,newSell:510,oldStop:470,newStop:475},
+  '8299':{oldSell:2280,newSell:2120,oldStop:1880,newStop:1895},
+  '5289':{oldSell:1400,newSell:1295,oldStop:1150,newStop:1160},
+  '3481':{oldSell:51,newSell:49,oldStop:46,newStop:46},
+  '2308':{oldSell:1955,newSell:1910,oldStop:1800,newStop:1810},
+  '2301':{oldSell:293,newSell:285,oldStop:270,newStop:270},
+  '2455':{oldSell:570,newSell:550,oldStop:505,newStop:510},
+  '3105':{oldSell:535,newSell:500,oldStop:440,newStop:445},
+  '4971':{oldSell:585,newSell:540,oldStop:480,newStop:485},
+  '2313':{oldSell:227,newSell:225,oldStop:210,newStop:210},
+  '6488':{oldSell:1030,newSell:955,oldStop:850,newStop:855},
+};
+try{
+  if(!localStorage.getItem(RECAL_KEY)){
+    let recalChanged=false;
+    stocks.forEach(s=>{
+      const m=RECAL_MAP[String(s.code).trim()];
+      if(!m) return;
+      if(Number(s.sell)===m.oldSell){ s.sell=m.newSell; recalChanged=true; }
+      if(Number(s.stop)===m.oldStop){ s.stop=m.newStop; recalChanged=true; }
+    });
+    if(recalChanged) save();
+    localStorage.setItem(RECAL_KEY,'1');
+  }
+}catch(e){}
+
 try{
   if(!localStorage.getItem(SEED_KEY)){
     if(stocks.length===0){
