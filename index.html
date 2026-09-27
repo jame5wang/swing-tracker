@@ -1103,6 +1103,13 @@ function yoyEpsHtml(q){
   if(m) return `<div class="revSub revNote">${m[1]}</div>`;
   return `<div class="revSub">年增 ${y}</div>`;
 }
+function qoqEpsHtml(q){
+  const v=(q.qoqEps||'').toString().trim();
+  if(!v || v==='—') return '';
+  const m=v.match(/^—\s*[（(](.+)[）)]\s*$/);
+  if(m) return `<div class="revSub revNote">${m[1]}</div>`;
+  return `<div class="revSub">季增 ${v}</div>`;
+}
 
 function renderFundamentalTab(s){
   const r=s.research;
@@ -1114,7 +1121,7 @@ function renderFundamentalTab(s){
     <div class="rbTitle">營收與獲利${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>
     <div class="revGrid">
       ${m?`<div class="revItem"><div class="dLabel">單月營收（${m.period||''}）</div><div class="dVal">${m.value||'—'}</div><div class="revSub">YoY ${m.yoy||'—'}　MoM ${m.mom||'—'}</div></div>`:''}
-      ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div>${yoyEpsHtml(q)}${q.profit?`<div class="revSub">淨利 ${q.profit}</div>`:''}</div>`:''}
+      ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div>${yoyEpsHtml(q)}${qoqEpsHtml(q)}${q.profit?`<div class="revSub">淨利 ${q.profit}</div>`:''}</div>`:''}
       ${(q&&(q.grossMargin||q.opMargin))?renderMarginCard(q):''}
     </div>
     ${renderSources(r.revenue.sources)}
