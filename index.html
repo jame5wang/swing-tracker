@@ -64,6 +64,12 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .dotStatus.st-buy{background:var(--buy);} .dotStatus.st-sell{background:var(--sell);}
 .dotStatus.st-stop{background:var(--stop);} .dotStatus.st-hold{background:var(--hold);}
 .dotStatus.st-none{background:var(--mute);}
+.dotStatus.st-near-buy{background:var(--buy); box-shadow:0 0 0 3px var(--buyBg);}
+.dotStatus.st-near-sell{background:var(--sell); box-shadow:0 0 0 3px var(--sellBg);}
+.st-near-buy{color:var(--buy); background:var(--buyBg);}
+.st-near-sell{color:var(--sell); background:var(--sellBg);}
+.searchBar{margin-bottom:14px;}
+.searchBar input{width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
 
 .backBtn{background:none; border:none; color:var(--sub); font-size:14px; cursor:pointer; padding:6px 0 14px; display:flex; align-items:center; gap:4px;}
 .backBtn:hover{color:var(--ink);}
@@ -84,6 +90,7 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .rangeMark{position:absolute; top:50%; transform:translate(-50%,-50%); width:2px; height:16px; background:var(--sub);}
 .rangeMark .rmLabel{position:absolute; top:-24px; left:50%; transform:translateX(-50%); font-size:10.5px; color:var(--sub); white-space:nowrap;}
 .rangeMark .rmVal{position:absolute; bottom:-20px; left:50%; transform:translateX(-50%); font-size:10.5px; color:var(--mute); white-space:nowrap;}
+.rangeMark.sup,.rangeMark.res{background:var(--mute); opacity:.6;}
 .rangeDot{position:absolute; top:50%; width:14px; height:14px; border-radius:50%; background:var(--ink); border:2px solid var(--bg); transform:translate(-50%,-50%); box-shadow:0 0 0 1px var(--line);}
 
 .distGrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin:16px 0;}
@@ -118,6 +125,26 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .importActions button.primary{background:var(--ink); color:var(--bg); border-color:var(--ink);}
 .importMsg{font-size:12.5px; margin-top:8px;}
 .importMsg.ok{color:var(--buy);} .importMsg.err{color:var(--stop);}
+
+.researchBlock{margin:14px 0; padding:14px; background:var(--panel2); border-radius:10px;}
+.rbTitle{font-size:13px; font-weight:650; margin-bottom:6px;}
+.rbBody{font-size:13.5px; line-height:1.65; white-space:pre-wrap;}
+.researchEmpty{font-size:13px; color:var(--sub); padding:14px; background:var(--panel2); border-radius:10px; margin:14px 0;}
+.srcList{font-size:11.5px; color:var(--sub); margin-top:8px; line-height:1.6;}
+.srcList a{color:var(--sub); text-decoration:underline; text-decoration-color:var(--line); margin-right:4px;}
+.srcList a:hover{color:var(--ink);}
+.revGrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:6px;}
+.revItem{background:var(--panel); border-radius:8px; padding:10px 12px;}
+.revItem .dLabel{font-size:11.5px; color:var(--sub);}
+.revItem .dVal{font-size:16px; font-weight:700; margin-top:2px;}
+.revSub{font-size:11.5px; color:var(--sub); margin-top:3px;}
+.reportList{display:grid; gap:10px; margin-top:6px;}
+.reportItem{background:var(--panel); border-radius:8px; padding:10px 12px;}
+.reportHead{display:flex; justify-content:space-between; gap:8px; font-size:12px; margin-bottom:4px;}
+.reportSrc a{color:var(--ink); font-weight:650; text-decoration:underline; text-decoration-color:var(--line);}
+.reportSrc{font-weight:650;}
+.reportDate{color:var(--mute);}
+.reportBody{font-size:13px; line-height:1.55;}
 </style>
 </head>
 <body>
@@ -136,8 +163,8 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 <div class="importOverlay hidden" id="importOverlay">
   <div class="importPanel">
     <h2>匯入研究資料</h2>
-    <p>把 Claude 幫你整理好的 JSON 資料貼在下面，按「套用」會依股票代號比對，自動填入營收/法人/法說會/新聞重點，以及技術支撐壓力。買進/停利/停損價只有在你還沒填過的情況下才會被帶入，不會覆蓋你自己設定的數字。</p>
-    <textarea id="importText" placeholder='[{"code":"2330","revenue":"...","report":"...","conf":"...","news":"...","support":900,"resist":950}]'></textarea>
+    <p>把 Claude 幫你整理好的 JSON 資料貼在下面，按「套用」會依股票代號比對，自動填入技術面看法、營收獲利、法人報告、新聞，以及技術支撐壓力。買進/停利/停損價只有在你還沒填過的情況下才會被帶入，不會覆蓋你自己設定的數字。</p>
+    <textarea id="importText" placeholder='[{"code":"2330","support":900,"resist":950,"research":{"updated":"2026-09-27","technical":{"view":"...","source":"..."},"revenue":{"monthly":{...},"quarterly":{...},"sources":[{"title":"...","url":"..."}]},"reports":[{"source":"...","date":"...","target":"...","view":"...","url":"..."}],"news":{"summary":"...","sources":[...]}}}]'></textarea>
     <div class="importMsg" id="importMsg"></div>
     <div class="importActions">
       <button type="button" id="importCancelBtn">取消</button>
@@ -193,8 +220,7 @@ try{
     if(stocks.length===0){
       stocks=SEED_STOCKS.map(d=>({
         code:d.code, name:d.name, price:d.price,
-        buy:'', sell:'', stop:'', support:'', resist:'',
-        revenue:'', report:'', conf:'', news:'',
+        buy:'', sell:'', stop:'', support:'', resist:'', note:'',
         updated:'即時報價截圖帶入（手動，非官方收盤價）',
         priceSource:'manual'
       }));
@@ -209,13 +235,29 @@ function fmt(n){ return (n===''||n===null||n===undefined||isNaN(n))?'':Number(n)
 function pct(a,b){ if(isNaN(a)||isNaN(b)||b===0) return null; return ((a-b)/b*100); }
 function pctStr(v){ if(v===null) return '—'; const s=v>=0?'+':''; return s+v.toFixed(1)+'%'; }
 
+const NEAR_PCT=3; // 距離買賣參考價多少 % 以內算「接近提醒」
+
 function statusOf(s){
   const p=parseFloat(s.price);
   if(isNaN(p)) return {cls:'st-none', label:'尚未取得股價'};
   const buy=parseFloat(s.buy), stop=parseFloat(s.stop), sell=parseFloat(s.sell);
+  const aiBuy=parseFloat(s.support), aiSell=parseFloat(s.resist);
+  const buyRef = !isNaN(buy)?buy:(!isNaN(aiBuy)?aiBuy:null);
+  const buyIsAi = isNaN(buy) && !isNaN(aiBuy);
+  const sellRef = !isNaN(sell)?sell:(!isNaN(aiSell)?aiSell:null);
+  const sellIsAi = isNaN(sell) && !isNaN(aiSell);
+
   if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'跌破停損 · 檢視是否出場'};
-  if(!isNaN(buy) && p<=buy) return {cls:'st-buy', label:'進入買進區'};
-  if(!isNaN(sell) && p>=sell) return {cls:'st-sell', label:'到達停利目標 · 分批賣出'};
+  if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'進入 AI 建議買進區':'進入買進區'};
+  if(sellRef!==null && p>=sellRef) return {cls:'st-sell', label:sellIsAi?'達 AI 建議賣出區 · 分批賣出':'到達停利目標 · 分批賣出'};
+  if(buyRef!==null){
+    const d=(p-buyRef)/buyRef*100;
+    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-buy', label:`接近${buyIsAi?'AI 建議':''}買點（+${d.toFixed(1)}%）`};
+  }
+  if(sellRef!==null){
+    const d=(sellRef-p)/sellRef*100;
+    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-sell', label:`接近${sellIsAi?'AI 建議':''}賣點（-${d.toFixed(1)}%）`};
+  }
   return {cls:'st-hold', label:'區間內 · 續抱觀察'};
 }
 
@@ -255,36 +297,50 @@ function applyAutoPrices(){
   if(changed){ save(); render(); }
 }
 
-// ---- 自動研究資料（data/research.json，由 Claude 定期更新）----
+// ---- 研究資料合併（自動讀取 data/research.json 與手動匯入共用同一套邏輯）----
+// item 格式：{ code, name?, support?, resist?, buy?, sell?, stop?, research:{ updated, technical:{view,source}, revenue:{monthly,quarterly,sources}, reports:[...], news:{summary,sources} } }
+function mergeResearchList(list, opts){
+  opts = opts || {};
+  let matched=0, added=0, changed=false;
+  list.forEach(item=>{
+    if(!item || !item.code) return;
+    const code=String(item.code).trim();
+    let idx=stocks.findIndex(s=>String(s.code).trim()===code);
+    if(idx===-1){
+      if(!opts.allowAdd) return; // 自動路徑：只更新已追蹤的股票，不會自動幫你新增新標的
+      stocks.push({code, name:item.name||'', price:'', buy:'', sell:'', stop:'', support:'', resist:'', note:'', updated:'', priceSource:''});
+      idx=stocks.length-1;
+      added++;
+    }else{
+      matched++;
+    }
+    const s=stocks[idx];
+    if(item.research){
+      s.research=item.research;
+      changed=true;
+    }
+    ['support','resist','buy','sell','stop'].forEach(f=>{
+      if(item[f]!==undefined && item[f]!==null && item[f]!=='' && (s[f]===undefined||s[f]===null||s[f]==='')){
+        s[f]=item[f]; changed=true;
+      }
+    });
+  });
+  if(changed){ save(); render(); }
+  return {matched, added};
+}
+
 async function loadResearchData(){
   const json=await fetchJson('data/research.json');
   if(!json || !Array.isArray(json.stocks)) return;
-  let changed=false;
-  const genDate=json.generated||'';
-  json.stocks.forEach(r=>{
-    if(!r.code) return;
-    const idx=stocks.findIndex(s=>String(s.code).trim()===String(r.code).trim());
-    if(idx===-1) return; // 只更新使用者已經在追蹤的股票，不會自動幫你新增新標的
-    const s=stocks[idx];
-    ['revenue','report','conf','news'].forEach(f=>{
-      if(r[f]!==undefined && r[f]!==null && r[f]!==''){
-        if(s[f]!==r[f]){ s[f]=r[f]; changed=true; }
-      }
-    });
-    ['support','resist'].forEach(f=>{
-      if(r[f]!==undefined && r[f]!==null && r[f]!=='' && (s[f]===undefined||s[f]===null||s[f]==='')){
-        s[f]=r[f]; changed=true;
-      }
-    });
-    if(genDate && s.researchUpdated!==genDate){ s.researchUpdated=genDate; changed=true; }
-  });
-  if(changed){ save(); render(); }
+  mergeResearchList(json.stocks, {allowAdd:false});
 }
 
 function render(){
   if(activeIndex!==null && stocks[activeIndex]) renderDetail(activeIndex);
   else renderList();
 }
+
+let searchQuery='';
 
 function renderList(){
   const view=document.getElementById('view');
@@ -299,10 +355,57 @@ function renderList(){
     bindAddBar();
     return;
   }
-  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0};
-  stocks.forEach(s=>counts[statusOf(s).cls]++);
+  view.innerHTML=`
+    <div class="summary" id="summaryBox"></div>
+    <div class="searchBar"><input id="searchBox" placeholder="搜尋股票代號或名稱" value="${(searchQuery||'').replace(/"/g,'&quot;')}"></div>
+    <div class="addBar">
+      <input id="inCode" placeholder="股票代號，如 2330" maxlength="10">
+      <input id="inName" placeholder="股票名稱，如 台積電" maxlength="20">
+      <button id="addBtn" type="button">新增追蹤</button>
+    </div>
+    <div id="rows"></div>
+  `;
+  bindAddBar();
+  document.getElementById('searchBox').addEventListener('input',(e)=>{
+    searchQuery=e.target.value;
+    renderRows();
+  });
+  renderRows();
+}
+
+function renderRows(){
+  const rowsEl=document.getElementById('rows');
+  const summaryBox=document.getElementById('summaryBox');
+  if(!rowsEl) return;
+
+  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0};
+  stocks.forEach(s=>{ const c=statusOf(s).cls; if(counts[c]!==undefined) counts[c]++; });
+  const nearCount=counts['st-near-buy']+counts['st-near-sell'];
+
+  if(summaryBox){
+    summaryBox.innerHTML=`
+      <span class="pill"><b>${stocks.length}</b> 檔追蹤中</span>
+      <span class="pill" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</span>
+      <span class="pill" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利區</span>
+      <span class="pill" style="color:var(--stop)"><b>${counts['st-stop']}</b> 停損警示</span>
+      <span class="pill"><b>${nearCount}</b> 接近提醒</span>
+      <span class="pill"><b>${counts['st-hold']}</b> 續抱觀察</span>
+    `;
+  }
+
+  const q=(searchQuery||'').trim().toLowerCase();
+  const items=stocks.map((s,i)=>({s,i})).filter(({s})=>{
+    if(!q) return true;
+    return (s.code||'').toLowerCase().includes(q) || (s.name||'').toLowerCase().includes(q);
+  });
+
+  if(items.length===0){
+    rowsEl.innerHTML=`<div class="empty">找不到符合「${searchQuery}」的股票</div>`;
+    return;
+  }
+
   let rows='';
-  stocks.forEach((s,i)=>{
+  items.forEach(({s,i})=>{
     const st=statusOf(s);
     rows+=`
       <div class="row" data-open="${i}">
@@ -315,23 +418,8 @@ function renderList(){
         <div class="rChev">›</div>
       </div>`;
   });
-  view.innerHTML=`
-    <div class="summary">
-      <span class="pill"><b>${stocks.length}</b> 檔追蹤中</span>
-      <span class="pill" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</span>
-      <span class="pill" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利區</span>
-      <span class="pill" style="color:var(--stop)"><b>${counts['st-stop']}</b> 停損警示</span>
-      <span class="pill"><b>${counts['st-hold']}</b> 續抱觀察</span>
-    </div>
-    <div class="addBar">
-      <input id="inCode" placeholder="股票代號，如 2330" maxlength="10">
-      <input id="inName" placeholder="股票名稱，如 台積電" maxlength="20">
-      <button id="addBtn" type="button">新增追蹤</button>
-    </div>
-    <div id="rows">${rows}</div>
-  `;
-  bindAddBar();
-  view.querySelectorAll('[data-open]').forEach(el=>{
+  rowsEl.innerHTML=rows;
+  rowsEl.querySelectorAll('[data-open]').forEach(el=>{
     el.addEventListener('click',()=>{ activeIndex=parseInt(el.dataset.open,10); render(); window.scrollTo(0,0); });
   });
 }
@@ -341,9 +429,68 @@ function bindAddBar(){
     const code=document.getElementById('inCode').value.trim();
     const name=document.getElementById('inName').value.trim();
     if(!code && !name) return;
-    stocks.push({code,name,price:'',buy:'',sell:'',stop:'',support:'',resist:'',revenue:'',report:'',conf:'',news:'',updated:'',priceSource:''});
+    stocks.push({code,name,price:'',buy:'',sell:'',stop:'',support:'',resist:'',note:'',updated:'',priceSource:''});
     save(); render(); applyAutoPrices();
   });
+}
+
+function renderSources(list){
+  if(!list || !list.length) return '';
+  return `<div class="srcList">資料來源：${list.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.title||s.url}</a>`).join('、')}</div>`;
+}
+
+function renderResearchSection(s){
+  const r=s.research;
+  if(!r){
+    return `<div class="sectionTitle">Claude 研究資料</div><div class="researchEmpty">尚無研究資料。跟 Claude 說要幫這檔股票查新聞、營收、法人報告，查完會自動出現在這裡。</div>`;
+  }
+  let html=`<div class="sectionTitle">Claude 研究資料${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>`;
+
+  if(r.technical){
+    html+=`<div class="researchBlock">
+      <div class="rbTitle">技術面看法</div>
+      <div class="rbBody">${r.technical.view||''}</div>
+      ${r.technical.source?`<div class="srcList">資料來源：${r.technical.source}</div>`:''}
+    </div>`;
+  }
+
+  if(r.revenue){
+    const m=r.revenue.monthly, q=r.revenue.quarterly;
+    html+=`<div class="researchBlock">
+      <div class="rbTitle">營收與獲利</div>
+      <div class="revGrid">
+        ${m?`<div class="revItem"><div class="dLabel">單月營收（${m.period||''}）</div><div class="dVal">${m.value||'—'}</div><div class="revSub">YoY ${m.yoy||'—'}　MoM ${m.mom||'—'}</div></div>`:''}
+        ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div><div class="revSub">YoY ${q.yoyEps||'—'}${q.profit?('　淨利 '+q.profit):''}</div></div>`:''}
+      </div>
+      ${renderSources(r.revenue.sources)}
+    </div>`;
+  }
+
+  if(r.reports && r.reports.length){
+    html+=`<div class="researchBlock">
+      <div class="rbTitle">法人報告（${r.reports.length} 則）</div>
+      <div class="reportList">
+        ${r.reports.map(rp=>`
+          <div class="reportItem">
+            <div class="reportHead">
+              <span class="reportSrc">${rp.url?`<a href="${rp.url}" target="_blank" rel="noopener">${rp.source||'法人'}</a>`:(rp.source||'法人')}</span>
+              ${rp.date?`<span class="reportDate">${rp.date}</span>`:''}
+            </div>
+            <div class="reportBody">${rp.view?`<b>${rp.view}</b>　`:''}${rp.target?`目標價 ${rp.target}　`:''}${rp.note||''}</div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  if(r.news){
+    html+=`<div class="researchBlock">
+      <div class="rbTitle">近期新聞</div>
+      <div class="rbBody">${r.news.summary||''}</div>
+      ${renderSources(r.news.sources)}
+    </div>`;
+  }
+
+  return html;
 }
 
 function renderDetail(i){
@@ -351,14 +498,21 @@ function renderDetail(i){
   const s=stocks[i];
   const st=statusOf(s);
   const p=parseFloat(s.price), buy=parseFloat(s.buy), sell=parseFloat(s.sell), stop=parseFloat(s.stop);
+  const support=parseFloat(s.support), resist=parseFloat(s.resist);
 
-  const toBuy=pct(p,buy), toSell=pct(p,sell), toStop=pct(p,stop);
+  const buyRefVal = !isNaN(buy)?buy:support;
+  const buyRefLabel = !isNaN(buy)?'距買進參考價':'距 AI 建議買點';
+  const sellRefVal = !isNaN(sell)?sell:resist;
+  const sellRefLabel = !isNaN(sell)?'距停利目標':'距 AI 建議賣點';
+  const toBuy=pct(p,buyRefVal), toSell=pct(p,sellRefVal), toStop=pct(p,stop);
 
   let rangeHtml='';
   const marks=[];
   if(!isNaN(stop)) marks.push({v:stop,label:'停損',cls:'stop'});
   if(!isNaN(buy)) marks.push({v:buy,label:'買進',cls:'buy'});
+  else if(!isNaN(support)) marks.push({v:support,label:'AI支撐',cls:'sup'});
   if(!isNaN(sell)) marks.push({v:sell,label:'停利',cls:'sell'});
+  else if(!isNaN(resist)) marks.push({v:resist,label:'AI壓力',cls:'res'});
   if(marks.length && !isNaN(p)){
     const vals=marks.map(m=>m.v).concat([p]);
     let min=Math.min(...vals), max=Math.max(...vals);
@@ -366,7 +520,7 @@ function renderDetail(i){
     min-=pad; max+=pad;
     const posOf=v=>((v-min)/(max-min)*100);
     let marksHtml=marks.map(m=>`
-      <div class="rangeMark" style="left:${posOf(m.v)}%">
+      <div class="rangeMark ${m.cls}" style="left:${posOf(m.v)}%">
         <span class="rmLabel">${m.label}</span>
         <span class="rmVal">${m.v}</span>
       </div>`).join('');
@@ -390,27 +544,26 @@ function renderDetail(i){
       ${rangeHtml}
 
       <div class="distGrid">
-        <div class="distItem"><div class="dLabel">距買進參考價</div><div class="dVal">${pctStr(toBuy)}</div></div>
-        <div class="distItem"><div class="dLabel">距停利目標</div><div class="dVal">${pctStr(toSell)}</div></div>
+        <div class="distItem"><div class="dLabel">${buyRefLabel}</div><div class="dVal">${pctStr(toBuy)}</div></div>
+        <div class="distItem"><div class="dLabel">${sellRefLabel}</div><div class="dVal">${pctStr(toSell)}</div></div>
         <div class="distItem"><div class="dLabel">距停損價</div><div class="dVal">${pctStr(toStop)}</div></div>
       </div>
 
       <div class="sectionTitle">價位設定</div>
       <div class="grid">
         <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><input type="number" step="0.01" data-f="price" value="${fmt(s.price)}" placeholder="—"></div>
-        <div class="field"><label>買進參考價</label><input type="number" step="0.01" data-f="buy" value="${fmt(s.buy)}" placeholder="—"></div>
-        <div class="field"><label>停利目標價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="—"></div>
+        <div class="field"><label>買進參考價</label><input type="number" step="0.01" data-f="buy" value="${fmt(s.buy)}" placeholder="${!isNaN(support)?'AI建議 '+support:'—'}"></div>
+        <div class="field"><label>停利目標價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="${!isNaN(resist)?'AI建議 '+resist:'—'}"></div>
         <div class="field"><label>停損價</label><input type="number" step="0.01" data-f="stop" value="${fmt(s.stop)}" placeholder="—"></div>
-        <div class="field"><label>技術支撐</label><input type="number" step="0.01" data-f="support" value="${fmt(s.support)}" placeholder="—"></div>
-        <div class="field"><label>技術壓力</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
+        <div class="field"><label>技術支撐（AI）</label><input type="number" step="0.01" data-f="support" value="${fmt(s.support)}" placeholder="—"></div>
+        <div class="field"><label>技術壓力（AI）</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
       </div>
 
-      <div class="sectionTitle">基本面分析筆記${s.researchUpdated?`<span class="autoTag">Claude 研究更新於 ${s.researchUpdated}</span>`:''}</div>
+      ${renderResearchSection(s)}
+
+      <div class="sectionTitle">個人筆記</div>
       <div class="notes">
-        <div class="n"><label>營收重點</label><textarea data-f="revenue" placeholder="月營收年增/月增、展望...">${s.revenue||''}</textarea></div>
-        <div class="n"><label>法人報告重點</label><textarea data-f="report" placeholder="外資/投信目標價、評等調整...">${s.report||''}</textarea></div>
-        <div class="n"><label>法說會重點</label><textarea data-f="conf" placeholder="法說會日期、關鍵發言...">${s.conf||''}</textarea></div>
-        <div class="n"><label>新聞重點</label><textarea data-f="news" placeholder="近期重大新聞...">${s.news||''}</textarea></div>
+        <div class="n"><textarea data-f="note" placeholder="寫下你自己的操作想法、進出場計畫...">${s.note||''}</textarea></div>
       </div>
 
       <div class="cardFoot">
@@ -461,32 +614,7 @@ document.getElementById('importApplyBtn').addEventListener('click',()=>{
   catch(e){ importMsg.textContent='JSON 格式讀不懂，請確認完整複製貼上。'; importMsg.className='importMsg err'; return; }
   if(!Array.isArray(data)){ importMsg.textContent='資料格式需要是一個陣列 [ {...}, {...} ]。'; importMsg.className='importMsg err'; return; }
 
-  let matched=0, added=0;
-  data.forEach(d=>{
-    if(!d || !d.code) return;
-    const code=String(d.code).trim();
-    let idx=stocks.findIndex(s=>String(s.code).trim()===code);
-    if(idx===-1){
-      // 網站上還沒有這檔，直接新增
-      stocks.push({code, name:d.name||'', price:'', buy:'', sell:'', stop:'', support:'', resist:'', revenue:'', report:'', conf:'', news:'', updated:'', priceSource:''});
-      idx=stocks.length-1;
-      added++;
-    }else{
-      matched++;
-    }
-    const s=stocks[idx];
-    ['revenue','report','conf','news'].forEach(f=>{
-      if(d[f]!==undefined && d[f]!==null && d[f]!==''){ s[f]=d[f]; }
-    });
-    ['support','resist','buy','sell','stop'].forEach(f=>{
-      if(d[f]!==undefined && d[f]!==null && d[f]!=='' && (s[f]===undefined || s[f]===null || s[f]==='')){
-        s[f]=d[f];
-      }
-    });
-    s.updated=new Date().toLocaleString('zh-TW',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})+'（研究資料匯入）';
-  });
-
-  save(); render();
+  const {matched, added}=mergeResearchList(data, {allowAdd:true});
   importMsg.textContent=`套用完成：更新 ${matched} 檔，新增 ${added} 檔。`;
   importMsg.className='importMsg ok';
   importText.value='';

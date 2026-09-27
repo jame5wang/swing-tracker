@@ -1,51 +1,152 @@
 {
   "generated": "2026-09-27",
-  "note": "由 Claude 根據公開新聞、法說會報導與證交所歷史股價整理，非投資建議，僅供參考",
+  "note": "由 Claude 根據公開新聞、法說會報導、證交所歷史股價整理，非投資建議，僅供參考",
   "stocks": [
     {
       "code": "2308",
-      "revenue": "台達電近期營收動能強勁，法人關注AI電源、BBU（電池備援系統）及液冷散熱業務放量，2026年資本支出上看700億元，鄭平於法說會表示AI營收占比估逾25%。",
-      "report": "外資普遍上調目標價：本土法人看1000~1050元；元大、中信投顧看好HVDC架構升級，估2026-2027年EPS 36.9~57.7元，目標價1300~1325元；美系大行上修2026-2028年EPS至41.5/65.1/98.5元，同步調升目標價。目標價區間分歧大，僅供參考。",
-      "conf": "2026/07/30 法說會：Q2 EPS 9.68元創新高，全年資本支出上看700億元，AI營收占比估逾25%，800V架構2027年放量。",
-      "news": "電供龍頭地位持續強化，AI伺服器電源與液冷需求為主要成長引擎，市場關注下半年800V平台進度與客戶認證狀況。",
       "support": 1875,
-      "resist": 1965
+      "resist": 1965,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "近5個交易日股價在1875~1965元區間整理，9/22創月內新高1965元後小幅拉回，屬於高檔震盪格局。1875元為近期拉回後的支撐位，若跌破需留意獲利了結賣壓；1965元為近期高點壓力，站穩後才具備續創新高的動能。",
+          "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {"period":"2026/05","value":"589.62億元","yoy":"—","mom":"—"},
+          "quarterly": {"period":"2026 Q2","eps":"9.68元","yoyEps":"創單季新高"},
+          "sources": [
+            {"title":"5月營收589.62億元為歷史次高（Yahoo股市）","url":"https://tw.stock.yahoo.com/news/%E7%9B%AE%E6%A8%99%E5%83%B9%E7%9B%B4%E8%A1%9D4500%E5%85%83-%E9%9B%BB%E4%BE%9B%E5%A4%A7%E5%BB%A0-5%E6%9C%88%E7%87%9F%E6%94%B6589-62%E5%84%84%E5%85%83%E7%82%BA%E6%AD%B7%E5%8F%B2%E6%AC%A1%E9%AB%98-%E5%A4%96%E8%B3%87%E7%9C%8B%E5%A5%BD%E5%85%B6%E9%9B%BB%E4%BE%9B-150000391.html"},
+            {"title":"Goodinfo! 台達電每月營收","url":"https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=2308"},
+            {"title":"財報狗｜台達電每月營收","url":"https://statementdog.com/analysis/2308/monthly-revenue"}
+          ]
+        },
+        "reports": [
+          {"source":"本土＋日系法人","date":"2026-09","target":"1000~1050元","view":"買進","note":"看好AI電源、BBU與液冷帶動獲利，本益比30倍成新常態","url":"https://www.threads.com/@meta.ai/post/DY-Xav4gt-2"},
+          {"source":"元大、中信投顧","date":"2026-09","target":"1300~1325元","view":"買進","note":"看好HVDC架構升級，估2026-2027年EPS 36.9~57.7元，給28-30倍本益比","url":"https://www.threads.com/@meta.ai/post/DY-Xav4gt-2"},
+          {"source":"美系外資","date":"2026-07","target":"上修（未附具體金額）","view":"買進","note":"上修2026-2028年EPS至41.5/65.1/98.5元，同步調升目標價","url":"https://cmnews.com.tw/article/newsyoudeservetoknow-930a6df6-4777-11f1-8e9e-3d579fa396bb"},
+          {"source":"工商時報報導","date":"2026-07-16","target":"2750元","view":"買進","note":"法說會30日登場前，外資調升目標價至2750元","url":"https://www.ctee.com.tw/news/20260716701061-430201"}
+        ],
+        "news": {
+          "summary": "2026/07/30法說會：Q2 EPS 9.68元創新高，全年資本支出上看700億元，鄭平表示AI營收占比估逾25%；800V架構規劃2027年放量。市場關注下半年AI伺服器電源、液冷散熱訂單能見度與800V平台客戶認證進度。",
+          "sources": [
+            {"title":"法說會重點：Q2 EPS 9.68元創新高（Sinotrade）","url":"https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E9%81%94%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E8%A1%9D%E4%B8%8A9-68%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E9%84%AD%E5%B9%B3%E5%96%8A%E5%85%A8%E5%B9%B4%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E7%9C%8B700%E5%84%84%E5%85%83-AI%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%94%E4%BC%B0%E9%80%BE25--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a6b11d27f0b170b6caf1923"},
+            {"title":"台達電法說會重點內容備忘錄（富果）","url":"https://blog.fugle.tw/post/earnings-call-2308-2026-02-26"}
+          ]
+        }
+      }
     },
     {
       "code": "8299",
-      "revenue": "群聯受惠NAND供給吃緊與AI伺服器控制IC需求，2026年首季EPS達68.8元，單季表現強勁，轉型為AI生態系關鍵供應商角色。",
-      "report": "外資（Factset調查）EPS預估約388~403元，預估目標價區間約2740~2815元；財報公布後一度有法人喊上3000元以上高點，目標價分歧度高，且股價波動大，近期已從高點拉回，請留意追高風險。",
-      "conf": "2026/05/08 法說會：Q1 EPS 68.8元，強調NAND控制IC話語權與AI伺服器升級趨勢帶動的營運轉型。",
-      "news": "記憶體類股缺貨行情延續，群聯為NAND控制IC關鍵供應商，惟需留意記憶體現貨價格波動與客戶端拉貨力道變化為主要風險。",
       "support": 2000,
-      "resist": 2300
+      "resist": 2300,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "群聯為上櫃股票，證交所歷史股價API無法直接取得，以下區間屬概略參考：股價自財報公布後高點已明顯拉回至今日約2125元，今日盤中下跌逾4%，短線波動劇烈。概略以2000元整數關卡為支撐參考、近期整理區2300元附近為壓力參考，精確度低於上市股票的技術數字，請自行核對即時線圖。",
+          "source": "概略推估，非證交所官方逐日數據（8299為櫃買中心TPEx股票）"
+        },
+        "revenue": {
+          "quarterly": {"period":"2026 Q1","eps":"68.8元","yoyEps":"單季暴賺，約當7個股本"},
+          "sources": [
+            {"title":"Goodinfo! 群聯每月營收","url":"https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=8299"}
+          ]
+        },
+        "reports": [
+          {"source":"Factset法人調查","date":"2026-09","target":"2740元","view":"中性偏多","note":"EPS預估下修至388.99元後，目標價同步下修","url":"https://news.cnyes.com/news/id/6599668"},
+          {"source":"Factset法人調查","date":"2026-08","target":"2815元","view":"中性偏多","note":"EPS預估上修至402.74元階段的預估目標價","url":"https://news.cnyes.com/news/id/6612400"},
+          {"source":"工商時報報導","date":"2026-05-11","target":"3字頭（未附精確金額）","view":"買進","note":"財報公布後股價直奔漲停，法人上修目標價至3字頭","url":"https://www.ctee.com.tw/news/20260511700619-430201"}
+        ],
+        "news": {
+          "summary": "群聯受惠NAND供給吃緊與AI伺服器控制IC需求，2026年首季EPS達68.8元，轉型為AI生態系關鍵供應商角色。近期股價從高點明顯拉回，法人對目標價看法也出現下修，主要風險為記憶體現貨價波動與客戶拉貨力道變化，波動度偏高需留意追高風險。",
+          "sources": [
+            {"title":"群聯首季暴賺近7個股本 大咖法人目標價曝光 最大隱患（Yahoo股市）","url":"https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E8%82%A1%E9%82%84%E5%85%AC%E9%81%93%E8%A1%8C%E6%83%85%E4%BE%86%E4%BA%86-%E7%BE%A4%E8%81%AF%E9%A6%96%E5%AD%A3%E6%9A%B4%E8%B3%BA%E8%BF%917%E5%80%8B%E8%82%A1%E6%9C%AC-%E5%A4%A7%E5%92%96%E6%B3%95%E4%BA%BA%E7%9B%AE%E6%A8%99%E5%83%B9%E6%9B%9D%E5%85%89-%E6%9C%80%E5%A4%A7%E9%9A%B1%E6%82%A3%E6%98%AF-%E9%80%99%E5%80%8B-000344809.html"}
+          ]
+        }
+      }
     },
     {
       "code": "2313",
-      "revenue": "華通2025年營收759.96億元創3年新高，第四季單季營收創210.16億元歷史紀錄；三大成長動能為低軌衛星（估185億元，年增22%）、AI伺服器（2026年估翻倍成長）、AI智慧眼鏡（打入Meta、小米供應鏈）。",
-      "report": "法人看好2026年營收與毛利仍有上修空間，主因高毛利產品（AI眼鏡、衛星板）比重上升帶動獲利結構改善；泰國新廠月產能達40萬呎（年增28%），2026上半年投產。",
-      "conf": "近期法說會重點：資本支出上修、泰國廠擴產進度、低軌衛星訂單能見度已看到2026年。",
-      "news": "低軌衛星、AI伺服器、AI智慧眼鏡三箭齊發，帶動2026年獲利展望轉佳，為近期法人報告聚焦重點。",
       "support": 219,
-      "resist": 229
+      "resist": 229,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "股價自9/1高點259.5元一路拉回至9/14低點213元，近5個交易日在219~229元區間築底整理，219元為近期低點附近的支撐參考，229元為近期反彈高點壓力，屬於高檔拉回後的整理格局，尚未明確止跌轉強。",
+          "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "quarterly": {"period":"2026 Q1","eps":"1.26元","yoyEps":"年增14.55%","profit":"近四季EPS 25.44元"},
+          "sources": [
+            {"title":"Goodinfo! 華通每月營收","url":"https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=2313"},
+            {"title":"nStock｜華通最新每股盈餘","url":"https://www.nstock.tw/stock_info?stock_id=2313&status=6"}
+          ]
+        },
+        "reports": [],
+        "news": {
+          "summary": "2025年營收759.96億元創3年新高，Q4單季營收創210.16億元歷史紀錄。三大成長動能：低軌衛星（估185億元、年增22%，訂單能見度看到2026年）、AI伺服器（2026年估翻倍成長）、AI智慧眼鏡（打入Meta、小米供應鏈）。泰國新廠月產能達40萬呎、年增28%，2026上半年投產。法人認為2026年營收與毛利仍有上修空間。",
+          "sources": [
+            {"title":"不只低軌衛星！華通三箭齊發 資本支出大增、2026年獲利地圖曝光（經濟日報）","url":"https://money.udn.com/money/story/5710/9266904"}
+          ]
+        }
+      }
     },
     {
       "code": "3711",
-      "revenue": "日月光投控Q1 EPS 3.24元創歷史同期新高，資本支出上調至逾80億美元（後續法說會再上調至近百億美元），先進封裝LEAP業務目標上修至35億美元以上。",
-      "report": "法人目標價分歧頗大，區間約400~660元：外資最樂觀喊660元，凱基投顧588元，也有看400~420元版本；多數法人集中在520~660元區間。主要看點為CoWoS外溢訂單、資本支出擴產進度、AI需求能否彌補消費性電子下滑。",
-      "conf": "2026/07/30 法說會：上修資本支出至百億美元等級，預告Q4毛利率將突破結構性上限，AI先進封裝LEAP業務2026年營收估翻倍至35億美元。",
-      "news": "先進封裝擴產與PLP(Panel Level Packaging)量產進度為近期焦點，AI需求為主要成長動能，惟消費性電子復甦力道仍待觀察。",
       "support": 655,
-      "resist": 711
+      "resist": 711,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "股價近5個交易日強勢上攻，9/21~9/23連續站上655~711元，9/22-23創月內新高711元，短線動能強但漲多，655元為最近一次拉回支撐，711元為近期高點壓力，追高風險需留意。",
+          "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "monthly": {"period":"2026/01","value":"599.89億元","yoy":"+21.33%","mom":"—"},
+          "quarterly": {"period":"2026 Q1","eps":"3.24元","yoyEps":"創歷史同期新高"},
+          "sources": [
+            {"title":"財報狗｜日月光投控每月營收","url":"https://statementdog.com/analysis/3711/monthly-revenue"}
+          ]
+        },
+        "reports": [
+          {"source":"多數外資/法人（區間彙整）","date":"2026-09","target":"520~660元","view":"買進","note":"多數法人集中看在此區間，外資最樂觀喊660元，凱基投顧588元，也有看400~420元的保守版本","url":"https://www.threads.com/@meta.ai/post/DY66yoFj8Z8"},
+          {"source":"經濟日報報導","date":"2026-08","target":"上調（未附精確金額）","view":"買進","note":"資本支出及展望超標，法人調升獲利預估值及目標價","url":"https://money.udn.com/money/story/5607/9667525"}
+        ],
+        "news": {
+          "summary": "2026/07/30法說會：Q1 EPS 3.24元創歷史同期新高，資本支出上調至逾80億美元（後續再上修至近百億美元），先進封裝LEAP業務目標上修至35億美元以上，預告Q4毛利率將突破結構性上限。主要看點為CoWoS外溢訂單承接、先進封裝擴產進度，以及AI需求能否彌補消費性電子需求下滑。",
+          "sources": [
+            {"title":"日月光法說重點：Q1 EPS 3.24元創新高（Sinotrade）","url":"https://www.sinotrade.com.tw/richclub/hotstock/%E6%97%A5%E6%9C%88%E5%85%89-3711-%E5%81%9A%E4%BB%80%E9%BA%BC-%E6%B3%95%E8%AA%AA%E9%87%8D%E9%BB%9E%E6%9C%89%E5%93%AA%E4%BA%9B-Q1%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%983-24%E5%85%83%E5%89%B5%E6%AD%B7%E5%8F%B2%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-%E6%B3%95%E8%AA%AA%E6%9C%83%E5%AE%A3%E5%B8%83%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E8%AA%BF%E8%87%B3%E9%80%BE80%E5%84%84%E7%BE%8E%E5%85%83-LEAP%E7%9B%AE%E6%A8%99%E4%B8%8A%E4%BF%AE%E8%87%B335%E5%84%84%E7%BE%8E%E5%85%83%E4%BB%A5%E4%B8%8A-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69f1d1c2693c8f006c8ce67e"},
+            {"title":"上修資本支出至百億美元，預告Q4毛利率突破結構性上限（Vocus）","url":"https://vocus.cc/article/6a6c26e4fd89780001fb4f46"}
+          ]
+        }
+      }
     },
     {
       "code": "2303",
-      "revenue": "聯電受惠成熟製程漲價與英特爾12奈米驗證推進，矽中介層(interposer)產能倍增，下半年啟動漲價，法人看好營運穩健向上。",
-      "report": "法人對聯電評價轉positive，成熟製程漲價循環+矽中介層放量為主要催化劑，股東會後法人買盤積極。",
-      "conf": "2026年Q2法說會：EPS達3.39元創單季新高，資本支出上調至20億美元，Q3產能利用率上看逾90%。",
-      "news": "英特爾12奈米製程驗證推進、矽中介層產能倍增，是近期市場關注聯電的兩大題材，成熟製程下半年漲價可視為攻守兼備的訊號。",
       "support": 152,
-      "resist": 160.5
+      "resist": 160.5,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "股價自9/17起明顯放量走高，9/18跳空站上155元後續強，9/22創月內新高168.5元，隨後回落至9/24收154元，152元為拉回支撐參考，160.5元為近期整理區壓力（168.5元為前波高點，站穩160.5才有機會挑戰）。",
+          "source": "台灣證券交易所 STOCK_DAY 歷史股價（2026年9月）"
+        },
+        "revenue": {
+          "quarterly": {"period":"2026 Q2","eps":"3.39元","yoyEps":"創單季新高"},
+          "sources": [
+            {"title":"Goodinfo! 聯電每月營收","url":"https://goodinfo.tw/StockInfo/ShowSaleMonChart.asp?STOCK_ID=2303"}
+          ]
+        },
+        "reports": [],
+        "news": {
+          "summary": "股東會後市場關注英特爾12奈米製程驗證推進、矽中介層(interposer)產能倍增兩大題材，成熟製程下半年啟動漲價，法人視為攻守兼備訊號，股東會後法人買盤積極。法說會：Q2 EPS 3.39元創單季新高，資本支出上調至20億美元，Q3產能利用率上看逾90%。",
+          "sources": [
+            {"title":"聯電股東會：英特爾12奈米驗證推進、矽中介層產能倍增（Sinotrade）","url":"https://www.sinotrade.com.tw/richclub/hotstock/%E8%81%AF%E9%9B%BB-2303-%E8%82%A1%E6%9D%B1%E6%9C%83-%E8%8B%B1%E7%89%B9%E7%88%BE12%E5%A5%88%E7%B1%B3%E9%A9%97%E8%AD%89%E6%8E%A8%E9%80%B2-%E7%9F%BD%E4%B8%AD%E4%BB%8B%E5%B1%A4%E7%94%A2%E8%83%BD%E5%80%8D%E5%A2%9E-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%95%9F%E5%8B%95%E6%BC%B2%E5%83%B9%E6%94%BB%E5%AE%88%E5%85%BC%E5%82%99-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a17913b9997291927f6f773"},
+            {"title":"聯電成熟製程漲價、營收穩健，法人狂敲（經濟日報）","url":"https://money.udn.com/money/story/5710/9464579"},
+            {"title":"聯電法說：Q2 EPS 3.39元創新高（Sinotrade）","url":"https://www.sinotrade.com.tw/richclub/hotstock/%E8%81%AF%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E9%81%943-39%E5%85%83%E5%89%B5%E5%96%AE%E5%AD%A3%E6%96%B0%E9%AB%98-%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%B8%8A%E8%AA%BF%E8%87%B320%E5%84%84%E7%BE%8E%E5%85%83-Q3%E7%94%A2%E8%83%BD%E5%88%A9%E7%94%A8%E7%8E%87%E4%B8%8A%E7%9C%8B%E9%80%BE90--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a69ce9b59e586efa18faba9"}
+          ]
+        }
+      }
     }
   ]
 }
