@@ -25,6 +25,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/macro.json data/news.json
+          git add data/macro.json data/news/
           git diff --quiet --cached || git commit -m "更新盤前國際總經簡報 $(date -u +'%Y-%m-%d')"
           git push
