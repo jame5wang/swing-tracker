@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>波段追蹤台</title>
+<title>詹姆5王的股市觀測站</title>
 <style>
 :root{
   --bg:#f5f4f1; --panel:#ffffff; --panel2:#f0efec; --line:#dedad2;
@@ -98,8 +98,10 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 .dotStatus.st-near-sell{background:var(--sell); box-shadow:0 0 0 3px var(--sellBg);}
 .st-near-buy{color:var(--buy); background:var(--buyBg);}
 .st-near-sell{color:var(--sell); background:var(--sellBg);}
-.searchBar{margin-bottom:14px;}
-.searchBar input{width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
+.searchBar{margin-bottom:14px; display:flex; gap:8px;}
+.searchBar input{flex:1; min-width:0; padding:10px 12px; border-radius:8px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
+.signalToggleBtn{flex-shrink:0; padding:10px 14px; border-radius:8px; border:1px solid var(--line); background:var(--panel); color:var(--sub); font-size:13px; font-weight:600; cursor:pointer; white-space:nowrap;}
+.signalToggleBtn.active{background:var(--sell); border-color:var(--sell); color:#fff;}
 
 .backBtn{background:none; border:none; color:var(--sub); font-size:14px; cursor:pointer; padding:6px 0 14px; display:flex; align-items:center; gap:4px;}
 .backBtn:hover{color:var(--ink);}
@@ -188,7 +190,7 @@ main{max-width:720px; margin:0 auto; padding:20px 16px 60px;}
 </head>
 <body>
 <header>
-  <div><h1>波段追蹤台</h1><span class="tag">基本面已篩選，追蹤進出場價位</span></div>
+  <div><h1>詹姆5王的股市觀測站</h1><span class="tag">基本面已篩選，追蹤進出場價位</span></div>
   <div class="headerBtns">
     <button class="importBtn" id="importOpenBtn" type="button">匯入研究資料</button>
     <button class="themeToggle" id="themeBtn" type="button">切換深色/淺色</button>
@@ -221,7 +223,7 @@ let autoData=null;
 let activeIndex=null;
 
 // 使用者提供的即時報價截圖（成交價），首次載入時預先帶入，之後留給自動盤後資料或手動更新覆蓋
-const SECTOR_ORDER=['ABF載板','CCL／覆銅板','PCB／軟板','上游材料','封測','晶圓代工','記憶體','面板','電源／工控','化合物半導體','其他'];
+const SECTOR_ORDER=['ABF載板','CCL／覆銅板','PCB／軟板','矽晶圓','封測','晶圓代工','記憶體','面板','電源／工控','化合物半導體','其他'];
 const SEED_STOCKS=[
   {code:'3037',name:'欣興',price:1185,sector:'ABF載板'},
   {code:'8046',name:'南電',price:1240,sector:'ABF載板'},
@@ -233,8 +235,9 @@ const SEED_STOCKS=[
   {code:'2368',name:'金像電',price:1105,sector:'PCB／軟板'},
   {code:'4958',name:'臻鼎-KY',price:475.5,sector:'PCB／軟板'},
   {code:'2313',name:'華通',price:222.5,sector:'PCB／軟板'},
-  {code:'8358',name:'金居',price:511,sector:'上游材料'},
-  {code:'6182',name:'合晶',price:120.5,sector:'上游材料'},
+  {code:'8358',name:'金居',price:511,sector:'PCB／軟板'},
+  {code:'6182',name:'合晶',price:120.5,sector:'矽晶圓'},
+  {code:'6488',name:'環球晶',price:948,sector:'矽晶圓'},
   {code:'3711',name:'日月光投控',price:699,sector:'封測'},
   {code:'6239',name:'力成',price:287.0,sector:'封測'},
   {code:'6147',name:'頎邦',price:213.5,sector:'封測'},
@@ -268,6 +271,21 @@ try{
       save();
     }
     localStorage.setItem(SEED_KEY,'1');
+  }else{
+    // 已經初次建立過的使用者：若程式碼內建清單新增了尚未追蹤的標的，補進來（不覆蓋既有資料）
+    let addedNew=false;
+    SEED_STOCKS.forEach(d=>{
+      if(!stocks.some(s=>String(s.code).trim()===String(d.code).trim())){
+        stocks.push({
+          code:d.code, name:d.name, price:d.price, sector:d.sector||'',
+          buy:'', sell:'', stop:'', support:'', resist:'', note:'',
+          updated:'即時報價截圖帶入（手動，非官方收盤價）',
+          priceSource:'manual'
+        });
+        addedNew=true;
+      }
+    });
+    if(addedNew) save();
   }
 }catch(e){}
 
@@ -360,7 +378,11 @@ function mergeResearchList(list, opts){
       s.research=item.research;
       changed=true;
     }
-    ['support','resist','buy','sell','stop','sector'].forEach(f=>{
+    // 產業分類由研究資料為準，永遠以最新分類覆蓋（不是使用者手動填的欄位）
+    if(item.sector!==undefined && item.sector!==null && item.sector!=='' && s.sector!==item.sector){
+      s.sector=item.sector; changed=true;
+    }
+    ['support','resist','buy','sell','stop'].forEach(f=>{
       if(item[f]!==undefined && item[f]!==null && item[f]!=='' && (s[f]===undefined||s[f]===null||s[f]==='')){
         s[f]=item[f]; changed=true;
       }
@@ -431,6 +453,8 @@ function render(){
 }
 
 let searchQuery='';
+let signalOnly=false;
+const SIGNAL_CLASSES=['st-buy','st-sell','st-stop'];
 
 function renderList(){
   const view=document.getElementById('view');
@@ -447,7 +471,10 @@ function renderList(){
   }
   view.innerHTML=`
     <div class="summary" id="summaryBox"></div>
-    <div class="searchBar"><input id="searchBox" placeholder="搜尋股票代號或名稱" value="${(searchQuery||'').replace(/"/g,'&quot;')}"></div>
+    <div class="searchBar">
+      <input id="searchBox" placeholder="搜尋股票代號或名稱" value="${(searchQuery||'').replace(/"/g,'&quot;')}">
+      <button id="signalToggleBtn" class="signalToggleBtn${signalOnly?' active':''}" type="button">🔔 今日訊號${signalOnly?'（顯示中）':''}</button>
+    </div>
     <div class="addBar">
       <input id="inCode" placeholder="股票代號，如 2330" maxlength="10">
       <input id="inName" placeholder="股票名稱，如 台積電" maxlength="20">
@@ -459,6 +486,10 @@ function renderList(){
   document.getElementById('searchBox').addEventListener('input',(e)=>{
     searchQuery=e.target.value;
     renderRows();
+  });
+  document.getElementById('signalToggleBtn').addEventListener('click',()=>{
+    signalOnly=!signalOnly;
+    renderList();
   });
   renderRows();
 }
@@ -485,12 +516,13 @@ function renderRows(){
 
   const q=(searchQuery||'').trim().toLowerCase();
   const items=stocks.map((s,i)=>({s,i})).filter(({s})=>{
+    if(signalOnly && !SIGNAL_CLASSES.includes(statusOf(s).cls)) return false;
     if(!q) return true;
     return (s.code||'').toLowerCase().includes(q) || (s.name||'').toLowerCase().includes(q);
   });
 
   if(items.length===0){
-    rowsEl.innerHTML=`<div class="empty">找不到符合「${searchQuery}」的股票</div>`;
+    rowsEl.innerHTML=`<div class="empty">${signalOnly?'今天沒有股票達到買進／賣出／停損訊號，可以先休息一下。':`找不到符合「${searchQuery}」的股票`}</div>`;
     return;
   }
 

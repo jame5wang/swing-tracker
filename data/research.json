@@ -660,7 +660,7 @@
     },
     {
       "code": "8358",
-      "sector": "上游材料",
+      "sector": "PCB／軟板",
       "support": 480,
       "resist": 560,
       "buy": 480,
@@ -722,7 +722,7 @@
     },
     {
       "code": "6182",
-      "sector": "上游材料",
+      "sector": "矽晶圓",
       "support": 112,
       "resist": 132,
       "buy": 112,
@@ -1851,6 +1851,74 @@
             {
               "title": "不只低軌衛星！華通三箭齊發 資本支出大增、2026年獲利地圖曝光（經濟日報）",
               "url": "https://money.udn.com/money/story/5710/9266904"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "6488",
+      "sector": "矽晶圓",
+      "support": 900,
+      "resist": 1050,
+      "buy": 900,
+      "sell": 1030,
+      "stop": 850,
+      "research": {
+        "updated": "2026-09-27",
+        "technical": {
+          "view": "因屬上櫃股票，未能取得官方逐日成交歷史資料，支撐/壓力依目前股價(9/24收948元)與獲利動能粗略估算。近兩季毛利率、營益率連續下滑，月營收年增轉負，基本面動能略顯轉弱；若回測支撐區可留意逢低承接機會，但反彈力度需觀察矽晶圓產業景氣能否回溫，且法人目標價估值出現大幅分歧(580~1442.5元)，估值不確定性偏高，不宜重倉單押。",
+          "source": "依現有股價與法人預估推估（無官方逐日上櫃歷史股價可查）"
+        },
+        "revenue": {
+          "monthly": {
+            "period": "2026/06",
+            "value": "56.24億元",
+            "yoy": "-1.63%",
+            "mom": "+16.16%"
+          },
+          "quarterly": {
+            "period": "2026 Q2",
+            "eps": "—",
+            "yoyEps": "—",
+            "profit": "—",
+            "grossMargin": "20.64%",
+            "grossMarginPrev": "20.83%",
+            "opMargin": "9.35%",
+            "opMarginPrev": "10.55%",
+            "marginPeriod": "2026 Q2 vs Q1"
+          },
+          "sources": [
+            {
+              "title": "環球晶(6488) 2026年6月營收56.24億元，月增16.16% 年減1.63%",
+              "url": "https://winvest.tw/Stock/Symbol/MonthlyRevenue/6488"
+            },
+            {
+              "title": "6488環球晶 毛利率／營益率財報數據",
+              "url": "https://statementdog.com/analysis/6488/profit-margin"
+            }
+          ]
+        },
+        "reports": [
+          {
+            "source": "鉅亨網／Factset法人調查",
+            "date": "",
+            "target": "733.5元",
+            "view": "EPS預估上修至21.12元",
+            "note": "同一輪調查另有580元與1442.5元等差異極大的目標價估值，反映市場對矽晶圓景氣看法分歧，估值區間需謹慎解讀",
+            "url": "https://news.cnyes.com/news/id/6559681"
+          }
+        ],
+        "news": {
+          "summary": "6月營收56.24億元，月增16.16%但年減1.63%，成長動能轉弱；毛利率與營益率連續兩季下滑，反映矽晶圓產業景氣尚在盤整。法人對後續EPS與目標價看法分歧極大（580~1442.5元），估值不確定性高，建議留意半導體資本支出與矽晶圓報價走向。",
+          "sources": [
+            {
+              "title": "環球晶5月營收48.42億元",
+              "url": "https://finance.technews.tw/2026/06/05/gwc-6488-202605-financial-report"
+            },
+            {
+              "title": "Factset最新調查：環球晶EPS預估上修至21.12元",
+              "url": "https://news.cnyes.com/news/id/6559681"
             }
           ]
         }
