@@ -791,17 +791,20 @@ function renderMacroCard(){
     : '';
   const digestItems=(digestData && digestData.items) || [];
   const hasDigest=digestItems.length>0;
+  // 總經類：沒有相關持股的消息，顯示在最上方的總經簡報卡片。有相關持股的算「產業類」，
+  // 改顯示在該產業分類旁邊（見 sectorNewsFor），這裡不重複列出，避免同一則新聞出現兩次。
+  const macroOnlyItems = digestItems.filter(d=>!(d.relatedStocks && d.relatedStocks.length));
+  const sectorItemsCount = digestItems.length - macroOnlyItems.length;
   const newsHtml = (hasNewsArchive)
     ? `<div class="macroNews">
-        <div class="macroNewsTitle">焦點消息${hasDigest?'<span class="macroDigestTag">Claude 每日彙整</span>':''}${newsData && newsData.stale?'<span class="macroStale">（上次成功結果，非最新）</span>':''}</div>
+        <div class="macroNewsTitle">總經焦點消息${hasDigest?'<span class="macroDigestTag">Claude 每日彙整</span>':''}${newsData && newsData.stale?'<span class="macroStale">（上次成功結果，非最新）</span>':''}</div>
         ${newsPagerHtml}
         <div class="newsList">
-          ${hasDigest ? digestItems.map(d=>`
+          ${hasDigest ? (macroOnlyItems.length ? macroOnlyItems.map(d=>`
             <div class="newsItem">
               <div class="digestSummary">${d.summary}</div>
-              ${(d.relatedStocks&&d.relatedStocks.length) ? `<div class="newsRelated">相關持股：${(()=>{ const rs=d.relatedStocks; const shown=rs.slice(0,6).map(r=>`${r.name}(${r.code})`).join('、'); return rs.length>6 ? `${shown} 等共${rs.length}檔` : shown; })()}</div>` : ''}
               ${(d.sources&&d.sources.length) ? `<div class="digestSources">來源：${d.sources.map(s=>`<a class="newsLink" href="${s.url}" target="_blank" rel="noopener">${s.title}</a>`).join('、')}</div>` : ''}
-            </div>`).join('')
+            </div>`).join('') : `<div class="newsEmpty">今天沒有總經類消息${sectorItemsCount?'，產業類消息請到下面個股列表對應分類旁查看':''}</div>`)
           : (newsItems.length ? newsItems.map(n=>`
             <div class="newsItem">
               <div class="newsItemMain">
@@ -958,7 +961,7 @@ function renderRows(){
     const secCodes=groups[sec].map(({s})=>s.code).filter(Boolean);
     const secNews=sectorNewsFor(secCodes);
     const secExpanded=!!sectorNewsExpanded[sec];
-    rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span>${secNews.length?`<button type="button" class="sectorNewsBtn" data-sector="${sec}">📰 ${secNews.length}則相關新聞${secExpanded?' ▴':' ▾'}</button>`:''}</div>`;
+    rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span>${secNews.length?`<button type="button" class="sectorNewsBtn" data-sector="${sec}">📰 ${secNews.length}則產業消息${secExpanded?' ▴':' ▾'}</button>`:''}</div>`;
     if(secNews.length && secExpanded){
       rows+=`<div class="sectorNewsBox">${secNews.map(sectorNewsItemHtml).join('')}</div>`;
     }
