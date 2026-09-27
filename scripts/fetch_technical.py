@@ -138,6 +138,16 @@ def compute_metrics(rows):
         result["high20"] = max(highs[-20:])
         result["low20"] = min(lows[-20:])
         result["change20d"] = round((closes[-1] - closes[-20]) / closes[-20] * 100, 2)
+        # 近20日平均真實波動幅度（近似ATR%）：每日(高-低)/收盤價，取20日平均，
+        # 用來衡量「這檔股票平常一天正常噪音有多大」，買賣停價位間距至少要拉開
+        # 這個噪音的幾倍，否則只是正常盤中波動就會被誤判為跌破/突破。
+        daily_range_pct = [
+            (h - l) / c * 100
+            for c, h, l in zip(closes[-20:], highs[-20:], lows[-20:])
+            if c
+        ]
+        if daily_range_pct:
+            result["atr20Pct"] = round(sum(daily_range_pct) / len(daily_range_pct), 2)
     if n >= 60:
         result["high60"] = max(highs[-60:])
         result["low60"] = min(lows[-60:])
