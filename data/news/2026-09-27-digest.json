@@ -1,7 +1,17 @@
 {
   "date": "2026-09-27",
-  "generatedAt": "2026-09-27T13:54:44.949428Z",
+  "generatedAt": "2026-09-27T14:03:59.728159Z",
   "items": [
+    {
+      "summary": "Dell營運長Jeff Clarke與摩根士丹利分析師會談時指出，隨Agentic AI推論帶動資料量快速增加、主要HDD廠產能擴張有限，Nearline硬碟供應吃緊，若AI工作負載持續快速成長，部分關鍵零組件供應緊張情況可能延續超過5年；Seagate、西部數據也證實資料中心儲存需求能見度已看到2030年後，預估未來5年Exabyte需求年複合成長率將超過25%。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "Dell談硬碟缺貨：關鍵零組件供應吃緊恐延續超過5年",
+          "url": "https://technews.tw/2026/09/26/dell-highlights-hdd-shortage-hard-drive-supply-remains-tight/"
+        }
+      ]
+    },
     {
       "summary": "台積電嘉義科學園區三期正式啟動，法人透露長線將加碼至10座晶圓廠、5座先進封裝廠，2奈米製程明年產能上看11萬片，反映AI需求持續帶動擴產動能，周邊封測與載板供應鏈可望受惠。",
       "relatedStocks": [],
