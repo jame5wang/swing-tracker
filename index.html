@@ -115,9 +115,6 @@ button.pill{cursor:pointer; -webkit-tap-highlight-color:transparent; transition:
 button.pill:active{transform:scale(0.96);}
 button.pill:hover{border-color:var(--accent);}
 button.pill.active{background:var(--panel2, var(--panel)); border-color:currentColor; box-shadow:0 0 0 1px currentColor inset;}
-.addBar{display:flex; gap:8px; margin-bottom:22px; flex-wrap:wrap;}
-.addBar input{flex:1; min-width:100px; padding:10px 12px; border-radius:9px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
-.addBar button{padding:10px 16px; border-radius:9px; border:1px solid var(--accent); background:var(--accent); color:#fff; font-size:14px; font-weight:650; cursor:pointer;}
 .empty{border:1px dashed var(--line); border-radius:12px; padding:36px 20px; text-align:center; color:var(--sub); font-size:14px; line-height:1.7;}
 
 .sectorHead{
@@ -208,31 +205,15 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .field input{width:100%; padding:8px 9px; border-radius:7px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font-size:14px; font-family:var(--mono);}
 .field input:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);}
 .field.price input{font-weight:700;}
+.field .fieldVal{width:100%; padding:8px 9px; border-radius:7px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font-size:14px; font-family:var(--mono); box-sizing:border-box;}
+.field.price .fieldVal{font-weight:700;}
 .autoTag{font-size:10.5px; color:var(--buy); margin-left:4px;}
 .sectionTitle{font-size:11.5px; color:var(--sub); font-weight:700; margin:18px 0 8px; text-transform:uppercase; letter-spacing:.08em;}
-.notes{display:grid; gap:8px;}
-.notes .n label{font-size:12px; color:var(--sub); display:block; margin-bottom:4px;}
-.notes .n textarea{width:100%; min-height:120px; resize:vertical; padding:10px 12px; border-radius:8px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font-size:13.5px; font-family:inherit; line-height:1.6;}
-.notes .n textarea:focus{outline:none; border-color:var(--accent);}
-.cardFoot{display:flex; justify-content:space-between; align-items:center; margin-top:16px; padding-top:12px; border-top:1px solid var(--line);}
+.cardFoot{display:flex; justify-content:flex-end; align-items:center; margin-top:16px; padding-top:12px; border-top:1px solid var(--line);}
 .updated{font-size:11px; color:var(--mute); font-family:var(--mono);}
-.del{background:none; border:none; color:var(--mute); font-size:12.5px; cursor:pointer; padding:4px;}
-.del:hover{color:var(--stop);}
 .themeToggle{background:none; border:1px solid var(--line); border-radius:8px; padding:6px 11px; color:var(--sub); font-size:12px; cursor:pointer;}
-.themeToggle:hover, .importBtn:hover{border-color:var(--accent); color:var(--accent);}
+.themeToggle:hover{border-color:var(--accent); color:var(--accent);}
 .headerBtns{display:flex; gap:8px;}
-.importBtn{background:none; border:1px solid var(--line); border-radius:8px; padding:6px 11px; color:var(--sub); font-size:12px; cursor:pointer;}
-.importOverlay{position:fixed; inset:0; background:rgba(5,8,14,.55); backdrop-filter:blur(2px); display:flex; align-items:center; justify-content:center; z-index:20; padding:20px;}
-.importOverlay.hidden{display:none;}
-.importPanel{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px; max-width:560px; width:100%; max-height:80vh; overflow:auto; box-shadow:var(--glow);}
-.importPanel h2{font-size:16px; margin:0 0 6px;}
-.importPanel p{font-size:12.5px; color:var(--sub); line-height:1.6; margin:0 0 12px;}
-.importPanel textarea{width:100%; min-height:180px; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font-family:var(--mono); font-size:12.5px; line-height:1.5;}
-.importActions{display:flex; justify-content:flex-end; gap:8px; margin-top:12px;}
-.importActions button{padding:8px 14px; border-radius:8px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:13px; cursor:pointer;}
-.importActions button.primary{background:var(--accent); color:#fff; border-color:var(--accent);}
-.importMsg{font-size:12.5px; margin-top:8px;}
-.importMsg.ok{color:var(--buy);} .importMsg.err{color:var(--stop);}
 
 .researchBlock{margin:14px 0; padding:14px; background:var(--panel2); border-radius:11px; border:1px solid var(--line);}
 .rbTitle{font-size:12.5px; font-weight:700; margin-bottom:6px; color:var(--sub); text-transform:uppercase; letter-spacing:.06em;}
@@ -246,6 +227,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .revItem .dLabel{font-size:11px; color:var(--sub);}
 .revItem .dVal{font-size:16px; font-weight:700; margin-top:2px; font-family:var(--mono);}
 .revSub{font-size:11.5px; color:var(--sub); margin-top:3px; font-family:var(--mono);}
+.revNote{font-family:inherit; line-height:1.4;}
 .marginItem{grid-column:1/-1;}
 .marginRow{display:flex; align-items:baseline; gap:8px; margin-top:4px; flex-wrap:wrap;}
 .marginRow:first-of-type{margin-top:6px;}
@@ -267,9 +249,8 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 </head>
 <body>
 <header>
-  <div><h1 id="brandTitle" style="cursor:pointer" title="回首頁">詹姆5王的股市觀測站</h1><span class="tag">基本面已篩選，追蹤進出場價位</span></div>
+  <div><h1 id="brandTitle" style="cursor:pointer" title="回首頁">詹姆5王的股市觀測站</h1><span class="tag">網站標的具備良好基本面，同時擁有市場動能，這是一個個人關注標的的觀察中心，不作買賣建議</span></div>
   <div class="headerBtns">
-    <button class="importBtn" id="importOpenBtn" type="button">匯入研究資料</button>
     <button class="themeToggle" id="themeBtn" type="button">切換深色/淺色</button>
   </div>
 </header>
@@ -278,19 +259,6 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
   <div class="dataBar" id="dataBar"><span class="dot"></span><span id="dataBarText">正在讀取自動盤後資料…</span></div>
   <div id="view"></div>
 </main>
-
-<div class="importOverlay hidden" id="importOverlay">
-  <div class="importPanel">
-    <h2>匯入研究資料</h2>
-    <p>把 Claude 幫你整理好的 JSON 資料貼在下面，按「套用」會依股票代號比對，自動填入技術面看法、營收獲利、法人報告、新聞，以及技術支撐壓力。買進/減碼/深度加碼價只有在你還沒填過的情況下才會被帶入，不會覆蓋你自己設定的數字。</p>
-    <textarea id="importText" placeholder='[{"code":"2330","support":900,"resist":950,"research":{"updated":"2026-09-27","technical":{"view":"...","source":"..."},"revenue":{"monthly":{...},"quarterly":{...},"sources":[{"title":"...","url":"..."}]},"reports":[{"source":"...","date":"...","target":"...","view":"...","url":"..."}],"news":{"summary":"...","sources":[...]}}}]'></textarea>
-    <div class="importMsg" id="importMsg"></div>
-    <div class="importActions">
-      <button type="button" id="importCancelBtn">取消</button>
-      <button type="button" class="primary" id="importApplyBtn">套用</button>
-    </div>
-  </div>
-</div>
 
 <script>
 const KEY='swingTrackerStocks_v1';
@@ -610,7 +578,7 @@ async function loadAutoData(){
     applyAutoPrices();
   }else{
     bar.className='dataBar';
-    text.textContent='尚無自動盤後資料，等待第一次排程執行，或先手動輸入股價';
+    text.textContent='尚無自動盤後資料，等待排程首次執行';
   }
 }
 
@@ -831,13 +799,7 @@ function renderList(){
   const view=document.getElementById('view');
   if(stocks.length===0){
     view.innerHTML=`
-      <div class="addBar">
-        <input id="inCode" placeholder="股票代號，如 2330" maxlength="10">
-        <input id="inName" placeholder="股票名稱，如 台積電" maxlength="20">
-        <button id="addBtn" type="button">新增追蹤</button>
-      </div>
-      <div class="empty">還沒有追蹤的股票<br>先在上面輸入代號與名稱，新增你已經做過基本面分析的標的。上市、上櫃股票的收盤價都會自動帶入。</div>`;
-    bindAddBar();
+      <div class="empty">還沒有追蹤的股票，等待資料載入中…</div>`;
     return;
   }
   view.innerHTML=`
@@ -846,14 +808,8 @@ function renderList(){
       <input id="searchBox" placeholder="搜尋股票代號或名稱" value="${(searchQuery||'').replace(/"/g,'&quot;')}">
       <button id="signalToggleBtn" class="signalToggleBtn${signalOnly?' active':''}" type="button"><span class="sigDot"></span>今日訊號${signalOnly?'（顯示中）':''}</button>
     </div>
-    <div class="addBar">
-      <input id="inCode" placeholder="股票代號，如 2330" maxlength="10">
-      <input id="inName" placeholder="股票名稱，如 台積電" maxlength="20">
-      <button id="addBtn" type="button">新增追蹤</button>
-    </div>
     <div id="rows"></div>
   `;
-  bindAddBar();
   document.getElementById('searchBox').addEventListener('input',(e)=>{
     searchQuery=e.target.value;
     renderRows();
@@ -952,15 +908,6 @@ function renderRows(){
   });
 }
 
-function bindAddBar(){
-  document.getElementById('addBtn').addEventListener('click',()=>{
-    const code=document.getElementById('inCode').value.trim();
-    const name=document.getElementById('inName').value.trim();
-    if(!code && !name) return;
-    stocks.push({code,name,price:'',sector:'',buy:'',sell:'',stop:'',support:'',resist:'',note:'',updated:'',priceSource:''});
-    save(); render(); applyAutoPrices();
-  });
-}
 
 function renderSources(list){
   if(!list || !list.length) return '';
@@ -1057,6 +1004,17 @@ function renderTechnicalNarrative(s){
 }
 
 // 基本面：營收獲利／毛利率營益率
+// 單季 EPS 年增率顯示：有明確數字（如 +287.7%、由虧轉盈）就標「年增」；
+// 沒有可比較基期、只有說明文字（如「—（去年同期為虧損邊緣...）」）就直接顯示說明，不硬套「YoY —」；
+// 完全沒資料就不顯示這行，避免出現空洞的「YoY —」。
+function yoyEpsHtml(q){
+  const y=(q.yoyEps||'').toString().trim();
+  if(!y || y==='—') return '';
+  const m=y.match(/^—\s*[（(](.+)[）)]\s*$/);
+  if(m) return `<div class="revSub revNote">${m[1]}</div>`;
+  return `<div class="revSub">年增 ${y}</div>`;
+}
+
 function renderFundamentalTab(s){
   const r=s.research;
   if(!r || !r.revenue){
@@ -1067,7 +1025,7 @@ function renderFundamentalTab(s){
     <div class="rbTitle">營收與獲利${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>
     <div class="revGrid">
       ${m?`<div class="revItem"><div class="dLabel">單月營收（${m.period||''}）</div><div class="dVal">${m.value||'—'}</div><div class="revSub">YoY ${m.yoy||'—'}　MoM ${m.mom||'—'}</div></div>`:''}
-      ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div><div class="revSub">YoY ${q.yoyEps||'—'}${q.profit?('　淨利 '+q.profit):''}</div></div>`:''}
+      ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div>${yoyEpsHtml(q)}${q.profit?`<div class="revSub">淨利 ${q.profit}</div>`:''}</div>`:''}
       ${(q&&(q.grossMargin||q.opMargin))?renderMarginCard(q):''}
     </div>
     ${renderSources(r.revenue.sources)}
@@ -1188,30 +1146,25 @@ function renderDetail(i){
     ${momentumNoteHtml}
     <div class="sectionTitle">價位設定</div>
     <div class="grid">
-      <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><input type="number" step="0.01" data-f="price" value="${fmt(s.price)}" placeholder="—"></div>
-      <div class="field"><label>安全買進試單價</label><input type="number" step="0.01" data-f="buy" value="${fmt(s.buy)}" placeholder="${!isNaN(support)?'AI建議 '+support:'—'}"></div>
-      <div class="field"><label>部分停利價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="${!isNaN(resist)?'AI建議 '+resist:'—'}"></div>
-      <div class="field"><label>跌深買進價（對應深度加碼）</label><input type="number" step="0.01" data-f="stop" value="${fmt(s.stop)}" placeholder="—"></div>
-      <div class="field"><label>技術支撐（AI）</label><input type="number" step="0.01" data-f="support" value="${fmt(s.support)}" placeholder="—"></div>
-      <div class="field"><label>技術壓力（AI）</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
-      <div class="field"><label>突破箱型/前高訊號（AI，僅供參考）</label><input type="text" value="${stretchVal!==null?stretchVal:'—'}" disabled></div>
+      <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><div class="fieldVal">${fmt(s.price)||'—'}</div></div>
+      <div class="field"><label>安全買進試單價</label><div class="fieldVal">${fmt(s.buy)||'—'}</div></div>
+      <div class="field"><label>部分停利價</label><div class="fieldVal">${fmt(s.sell)||'—'}</div></div>
+      <div class="field"><label>跌深買進價（對應深度加碼）</label><div class="fieldVal">${fmt(s.stop)||'—'}</div></div>
+      <div class="field"><label>技術支撐（AI）</label><div class="fieldVal">${fmt(s.support)||'—'}</div></div>
+      <div class="field"><label>技術壓力（AI）</label><div class="fieldVal">${fmt(s.resist)||'—'}</div></div>
+      <div class="field"><label>突破箱型/前高訊號（AI，僅供參考）</label><div class="fieldVal">${stretchVal!==null?stretchVal:'—'}</div></div>
     </div>
-    <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（部分停利價 × 1.15），均線走弱才是真正該全數出場的時候。</div>`;
+    <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（部分停利價 × 1.15），均線走弱才是真正該全數出場的時候。這裡所有數字僅供個人觀察記錄，不構成買賣建議。</div>`;
 
   const technicalHtml = renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
   const fundamentalHtml = renderFundamentalTab(s);
   const reportsHtml = renderReportsNewsTab(s);
-  const notesHtml = `
-    <div class="notes">
-      <div class="n"><textarea data-f="note" placeholder="寫下你自己的操作想法、進出場計畫...">${s.note||''}</textarea></div>
-    </div>`;
 
   const tabs=[
     {id:'overview', label:'總覽', html:overviewHtml, has:true},
     {id:'technical', label:'技術面', html:technicalHtml, has:hasTechnical},
     {id:'fundamental', label:'基本面', html:fundamentalHtml, has:hasFundamental},
     {id:'reports', label:'法人／新聞', html:reportsHtml, has:hasReportsNews, count:reportsCount},
-    {id:'notes', label:'筆記', html:notesHtml, has:!!s.note},
   ];
   if(!tabs.some(t=>t.id===activeTab)) activeTab='overview';
 
@@ -1232,7 +1185,6 @@ function renderDetail(i){
 
       <div class="cardFoot">
         <span class="updated">${s.updated?('更新於 '+s.updated):'尚未更新'}</span>
-        <button class="del" id="delBtn" type="button">刪除這檔股票</button>
       </div>
     </div>
   `;
@@ -1240,19 +1192,6 @@ function renderDetail(i){
   document.getElementById('backBtn').addEventListener('click',()=>{ activeIndex=null; render(); });
   view.querySelectorAll('.tabBtn').forEach(btn=>{
     btn.addEventListener('click',()=>{ activeTab=btn.dataset.tab; render(); });
-  });
-  view.querySelectorAll('input,textarea').forEach(el=>{
-    el.addEventListener('change',()=>{
-      stocks[i][el.dataset.f]=el.value;
-      if(el.dataset.f==='price'){ stocks[i].priceSource='manual'; }
-      stocks[i].updated=new Date().toLocaleString('zh-TW',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})+(stocks[i].priceSource==='manual'?'（手動）':'');
-      save(); render();
-    });
-  });
-  document.getElementById('delBtn').addEventListener('click',()=>{
-    if(confirm(`確定要刪除 ${s.name||s.code} 的追蹤資料嗎？`)){
-      stocks.splice(i,1); activeIndex=null; save(); render();
-    }
   });
 }
 
@@ -1262,33 +1201,6 @@ document.getElementById('themeBtn').addEventListener('click',()=>{
 });
 document.getElementById('brandTitle').addEventListener('click',()=>{
   activeIndex=null; render(); window.scrollTo(0,0);
-});
-
-// ---- 匯入研究資料 ----
-const importOverlay=document.getElementById('importOverlay');
-const importText=document.getElementById('importText');
-const importMsg=document.getElementById('importMsg');
-
-document.getElementById('importOpenBtn').addEventListener('click',()=>{
-  importMsg.textContent=''; importMsg.className='importMsg';
-  importOverlay.classList.remove('hidden');
-});
-document.getElementById('importCancelBtn').addEventListener('click',()=>{
-  importOverlay.classList.add('hidden');
-});
-importOverlay.addEventListener('click',(e)=>{ if(e.target===importOverlay) importOverlay.classList.add('hidden'); });
-
-document.getElementById('importApplyBtn').addEventListener('click',()=>{
-  let data;
-  try{ data=JSON.parse(importText.value); }
-  catch(e){ importMsg.textContent='JSON 格式讀不懂，請確認完整複製貼上。'; importMsg.className='importMsg err'; return; }
-  if(!Array.isArray(data)){ importMsg.textContent='資料格式需要是一個陣列 [ {...}, {...} ]。'; importMsg.className='importMsg err'; return; }
-
-  const {matched, added}=mergeResearchList(data, {allowAdd:true});
-  importMsg.textContent=`套用完成：更新 ${matched} 檔，新增 ${added} 檔。`;
-  importMsg.className='importMsg ok';
-  importText.value='';
-  setTimeout(()=>{ importOverlay.classList.add('hidden'); },1400);
 });
 
 render();
