@@ -1166,7 +1166,7 @@ function renderDetail(i){
   const support=parseFloat(s.support), resist=parseFloat(s.resist);
 
   const buyRefVal = !isNaN(buy)?buy:support;
-  const buyRefLabel = !isNaN(buy)?'距安全買進試單':'距 AI 建議買點';
+  const buyRefLabel = !isNaN(buy)?'距安全買進':'距 AI 建議買點';
   const sellRefVal = !isNaN(sell)?sell:resist;
   const sellRefLabel = !isNaN(sell)?'距部分停利':'距 AI 建議賣點';
   const toBuy=pct(p,buyRefVal), toSell=pct(p,sellRefVal), toStop=pct(p,stop);
@@ -1236,7 +1236,7 @@ function renderDetail(i){
     <div class="distGrid">
       <div class="distItem"><div class="dLabel">${buyRefLabel}</div><div class="dVal">${pctStr(toBuy)}</div></div>
       <div class="distItem"><div class="dLabel">${sellRefLabel}</div><div class="dVal">${pctStr(toSell)}</div></div>
-      <div class="distItem"><div class="dLabel">跌深買進（對應深度加碼）</div><div class="dVal">${pctStr(toStop)}</div></div>
+      <div class="distItem"><div class="dLabel">跌深買進</div><div class="dVal">${pctStr(toStop)}</div></div>
       ${stretchVal!==null?`<div class="distItem"><div class="dLabel">突破箱型/前高訊號</div><div class="dVal">${pctStr(toStretch)}</div></div>`:''}
     </div>
     ${momentumNoteHtml}
