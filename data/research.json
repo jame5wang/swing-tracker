@@ -698,15 +698,15 @@
             "mom": "+1.02%"
           },
           "quarterly": {
-            "period": "2026 Q1",
-            "eps": "0.0元",
-            "yoyEps": "—（季減100%，上季轉盈為虧損邊緣）",
+            "period": "2026 Q2",
+            "eps": "0.05元",
+            "yoyEps": "—（去年同期為虧損邊緣，統計基礎不適用；季增由0.00元轉為0.05元）",
             "profit": "—",
-            "grossMargin": "—",
-            "grossMarginPrev": "—",
-            "opMargin": "—",
-            "opMarginPrev": "—",
-            "marginPeriod": "2026 Q1；Q2據報獲利強彈、上半年獲利創近3年新高，惟單季EPS與毛利率明確數字尚未查得"
+            "grossMargin": "22.64%",
+            "grossMarginPrev": "19.03%",
+            "opMargin": "3.34%",
+            "opMarginPrev": "1.06%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -716,6 +716,10 @@
             {
               "title": "《半導體》Q2獲利強彈、H1登近3年高 合晶亮燈攻頂",
               "url": "https://www.chinatimes.com/realtimenews/20260817002684-260410"
+            },
+            {
+              "title": "合晶(6182) 利潤比率 - 財報狗",
+              "url": "https://statementdog.com/analysis/6182/profit-margin"
             }
           ]
         },
@@ -1786,7 +1790,15 @@
             "mom": "+4.79%"
           },
           "quarterly": {
-            "note": "Factset調查19位分析師一致看多，2026年EPS共識區間3235-4000元對應股價，目標價中樞3600元。"
+            "period": "2026 Q2",
+            "eps": "24.37元",
+            "yoyEps": "+65.98%（以營收年增幅估算，EPS原始年增率未查得，惟單季EPS創歷史新高）",
+            "profit": "95.67億元（季增20.86%）",
+            "grossMargin": "32.57%",
+            "grossMarginPrev": "29.77%",
+            "opMargin": "27.44%",
+            "opMarginPrev": "24.51%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -1804,6 +1816,14 @@
             {
               "title": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A5%87%E9%8B%90-3017-%E5%81%9A%E4%BB%80%E9%BA%BC-%E5%8E%BB%E5%B9%B4%E7%87%9F%E6%94%B6%E8%A1%9D%E7%A0%B4%E5%8D%83%E5%84%84%E5%AF%AB%E6%96%B0%E7%8C%B7-%E7%99%BC%E8%A1%A8%E6%9C%83%E6%8F%AD%E9%9C%B2%E5%8D%81%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%8A%8D%E9%82%81%E5%90%91%E6%B6%B2%E5%86%B7%E5%85%83%E5%B9%B4-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e73ca3828d0b0adeeda706",
               "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A5%87%E9%8B%90-3017-%E5%81%9A%E4%BB%80%E9%BA%BC-%E5%8E%BB%E5%B9%B4%E7%87%9F%E6%94%B6%E8%A1%9D%E7%A0%B4%E5%8D%83%E5%84%84%E5%AF%AB%E6%96%B0%E7%8C%B7-%E7%99%BC%E8%A1%A8%E6%9C%83%E6%8F%AD%E9%9C%B2%E5%8D%81%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%8A%8D%E9%82%81%E5%90%91%E6%B6%B2%E5%86%B7%E5%85%83%E5%B9%B4-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e73ca3828d0b0adeeda706"
+            },
+            {
+              "title": "奇鋐2026 Q2財報法說會全解析：營收季增僅0.17%，毛利率卻大幅墊高2.8個百分點 | 槓桿學院",
+              "url": "https://leveragetw.com/auras-3017-2026q2-earnings/"
+            },
+            {
+              "title": "奇鋐(3017)2026年第1季毛利率為29.77%；淨利率為17.69% | 財報狗股票",
+              "url": "https://statementdog.com/analysis/3017/profit-margin"
             }
           ]
         },
@@ -1837,8 +1857,8 @@
       "research": {
         "updated": "2026-09-27",
         "technical": {
-          "view": "資料缺口：TPEx STOCK_DAY API (tpex.org.tw) 在本次研究中對3324的9月與8月查詢均持續回傳403錯誤(嘗試約8次，含不同日期參數與重試)，未能取得任何逐日OHLC資料，故無法依規範方法計算買進/賣出/加碼價，暫填null。其他上櫃個股(3529、6187、6739)有取得9月18個交易日資料，僅3324完全失敗，建議之後補抓。",
-          "source": "台灣證券交易所 STOCK_DAY / 櫃買中心 tradingStock 歷史股價（2026年9月）"
+          "view": "雙鴻9月以來呈急漲噴出走勢，9/24單日大漲7.21%觸及1750元高點，但當日振幅逾10%明顯偏離近期常態波動，屬單日噴出非真實箱頂；9/22~9/23已兩度在1630元附近受阻，可視為較真實的近期壓力。近20個交易日(8/28~9/24)20日均線約1411元，作為短線回測分批買進的支撐參考；若拉回至8月底噴出起漲前的低點1075元附近(×0.985≈1059)，代表急漲段結構明確轉弱，基本面未變下視為深度加碼機會，而非停損出場訊號。",
+          "source": "TPEx STOCK_DAY API多次嘗試仍持續403，改以Goodinfo日K線頁面取得3324完整逐日OHLC(2026年7月30日至9月24日)，並與histock個股頁9/24收盤1710元(+7.21%)交叉核對一致"
         },
         "revenue": {
           "monthly": {
@@ -1887,7 +1907,12 @@
             }
           ]
         }
-      }
+      },
+      "buy": 1411,
+      "support": 1411,
+      "sell": 1630,
+      "resist": 1630,
+      "stop": 1059
     },
     {
       "code": "3653",
@@ -1911,7 +1936,15 @@
             "mom": "+0.40%"
           },
           "quarterly": {
-            "note": "Q2毛利率46.8%創高，7月營收年增91%"
+            "period": "2026 Q2",
+            "eps": "15.8元",
+            "yoyEps": "—（原始年增率未查得，惟毛利率、獲利均創歷史新高）",
+            "profit": "23.18億元",
+            "grossMargin": "46.81%",
+            "grossMarginPrev": "41.78%",
+            "opMargin": "37.79%",
+            "opMarginPrev": "31.98%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -1925,6 +1958,14 @@
             {
               "title": "https://www.pocket.tw/school/report/SCHOOL/6275/",
               "url": "https://www.pocket.tw/school/report/SCHOOL/6275/"
+            },
+            {
+              "title": "健策Q2毛利率/獲利均創新高，每股賺15.8元 - MoneyDJ理財網",
+              "url": "https://m.moneydj.com/f1a.aspx?a=550593bf-ecb5-4d73-942c-0f90e8e7bb69&c=MB06"
+            },
+            {
+              "title": "健策(3653) 利潤比率 - 財報狗",
+              "url": "https://statementdog.com/analysis/3653/profit-margin"
             }
           ]
         },
@@ -1986,8 +2027,27 @@
             {
               "title": "https://www.lifetoutiao.news/355618/",
               "url": "https://www.lifetoutiao.news/355618/"
+            },
+            {
+              "title": "力旺(3529)2026年第2季EPS年增率為44.96% | 財報狗股票",
+              "url": "https://statementdog.com/analysis/3529/eps-growth-rate"
+            },
+            {
+              "title": "力旺(3529) 利潤比率 - 財報狗",
+              "url": "https://statementdog.com/analysis/3529/profit-margin"
             }
-          ]
+          ],
+          "quarterly": {
+            "period": "2026 Q2",
+            "eps": "7.77元",
+            "yoyEps": "+44.96%",
+            "profit": "—",
+            "grossMargin": "100.0%（IC矽智財授權業務近乎無成本結構，長期維持100%）",
+            "grossMarginPrev": "100.0%",
+            "opMargin": "60.74%",
+            "opMarginPrev": "60.55%",
+            "marginPeriod": "2026 Q2 vs Q1"
+          }
         },
         "reports": [
           {
@@ -2046,8 +2106,27 @@
             {
               "title": "https://udn.com/news/story/7254/9233121",
               "url": "https://udn.com/news/story/7254/9233121"
+            },
+            {
+              "title": "萬潤財報／第2季獲利翻倍創高 單季賺贏前兩季總和、EPS 8.5元 - 經濟日報",
+              "url": "https://money.udn.com/money/story/11074/9682512"
+            },
+            {
+              "title": "萬潤(6187)目標價800元與EPS 20.62：從本益比與產業循環看估值合理性",
+              "url": "https://cmnews.com.tw/article/marketwatcher-f987f6ae-42bb-11f1-b89d-1cdcbb107a83"
             }
-          ]
+          ],
+          "quarterly": {
+            "period": "2026 Q2",
+            "eps": "8.50元（上半年11.90元）",
+            "yoyEps": "+107%（以稅後淨利年增幅估算）",
+            "profit": "8.27億元（季增154.8%、年增107%）",
+            "grossMargin": "54.8%",
+            "grossMarginPrev": "51.8%（54.8%季增3個百分點推算）",
+            "opMargin": "33.3%",
+            "opMarginPrev": "23.2%（33.3%季增10.1個百分點推算）",
+            "marginPeriod": "2026 Q2 vs Q1"
+          }
         },
         "news": {
           "summary": "萬潤7月營收10.55億元，年增73.44%，公司表示2026年訂單能見度已看到半年後，反映自動化設備需求擴張。9月股價自高點1435回落至1195，短線均線由多轉弱，需留意動能是否延續。",
@@ -2061,7 +2140,17 @@
               "url": "https://tw.stock.yahoo.com/quote/6187.TWO/revenue"
             }
           ]
-        }
+        },
+        "reports": [
+          {
+            "source": "富邦證券",
+            "date": "2026-09",
+            "target": "800元",
+            "view": "看多",
+            "note": "2026年EPS預估20.62元，隱含本益比約38~40倍，基於半導體設備景氣循環復甦假設；文章提醒單一券商目標價為假設模型而非市場共識",
+            "url": "https://cmnews.com.tw/article/marketwatcher-f987f6ae-42bb-11f1-b89d-1cdcbb107a83"
+          }
+        ]
       }
     },
     {
@@ -2086,7 +2175,15 @@
             "mom": "+7.34%"
           },
           "quarterly": {
-            "note": "2025年營收8.06億元(年增96.7%)，推算EPS 16.13元；分析師預估2026年EPS 23.37元、2027年34.12元"
+            "period": "2026 Q2",
+            "eps": "7.55元（上半年13.31元，同期新高）",
+            "yoyEps": "約+149.2%（以2026Q2 7.55元 vs 2025Q2 3.03元估算；淨利年增150.6%）",
+            "profit": "1.76億元（季增30.9%、年增150.6%）",
+            "grossMargin": "66.82%",
+            "grossMarginPrev": "68.38%",
+            "opMargin": "58.28%",
+            "opMarginPrev": "58.94%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -2100,6 +2197,14 @@
             {
               "title": "https://vocus.cc/article/69bfce4ffd897800013887ef",
               "url": "https://vocus.cc/article/69bfce4ffd897800013887ef"
+            },
+            {
+              "title": "竹陞上半年 EPS 13.31元 同期新高 - 經濟日報",
+              "url": "https://money.udn.com/money/story/11074/9682846"
+            },
+            {
+              "title": "竹陞科技(6739) 利潤比率 - 財報狗",
+              "url": "https://statementdog.com/analysis/6739/profit-margin"
             }
           ]
         },
@@ -2149,7 +2254,15 @@
             "mom": "+6.37%"
           },
           "quarterly": {
-            "note": "受惠AI伺服器與先進封裝雙引擎驅動，為高階研磨拋光設備龍頭"
+            "period": "2026 Q2",
+            "eps": "6.10元",
+            "yoyEps": "+206.53%",
+            "profit": "—",
+            "grossMargin": "44.20%",
+            "grossMarginPrev": "42.34%",
+            "opMargin": "26.82%",
+            "opMarginPrev": "21.03%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -2163,6 +2276,14 @@
             {
               "title": "https://uc913.com/stock-3167/",
               "url": "https://uc913.com/stock-3167/"
+            },
+            {
+              "title": "大量(3167)2026年第2季EPS為6.10元，季增91.22% - 財報狗股票",
+              "url": "https://statementdog.com/analysis/3167/eps"
+            },
+            {
+              "title": "大量(3167) 利潤比率 - 財報狗",
+              "url": "https://statementdog.com/analysis/3167/profit-margin"
             }
           ]
         },
@@ -2200,13 +2321,18 @@
             "period": "2026/08",
             "value": "7.71億元",
             "yoy": "+97.75%",
-            "mom": "+5.50%"
+            "mom": "+5.5%"
           },
           "quarterly": {
-            "period": "2026-Q2",
-            "epsNTD": 2.08,
-            "yoyProfitPct": "+285.5%",
-            "note": "營收與獲利同步創歷史新高"
+            "period": "2026 Q2",
+            "eps": "2.08元",
+            "yoyEps": "+285.5%",
+            "profit": "—",
+            "grossMargin": "41.78%",
+            "grossMarginPrev": "36.59%",
+            "opMargin": "28.08%",
+            "opMarginPrev": "20.12%",
+            "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
             {
@@ -2216,6 +2342,18 @@
             {
               "title": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html",
               "url": "https://tw.news.yahoo.com/q2%E7%8D%B2%E5%88%A9%E9%A3%86285-%E9%80%99%E5%A4%A7%E5%BB%A0-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%8D%BB%E9%81%AD%E8%AA%BF%E9%99%8D%E8%87%B3505%E5%85%83-%E6%B3%95%E4%BA%BA%E6%8F%AD%E9%97%9C%E9%8D%B5%E9%9A%B1%E6%86%82-180500133.html"
+            },
+            {
+              "title": "【優分析即時新聞】尖點(8021)8月營收年增97.75%連6月創高，AI鑽針缺貨撐出毛利率41.8%",
+              "url": "https://uanalyze.com.tw/articles/6472454742"
+            },
+            {
+              "title": "尖點(8021) 2026年8月營收7.71億元 - Win投資",
+              "url": "https://winvest.tw/Stock/Symbol/MonthlyRevenue/8021"
+            },
+            {
+              "title": "尖點(8021) 利潤比率 - 財報狗",
+              "url": "https://statementdog.com/analysis/8021/profit-margin"
             }
           ]
         },

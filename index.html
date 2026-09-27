@@ -263,7 +263,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 </head>
 <body>
 <header>
-  <div><h1>詹姆5王的股市觀測站</h1><span class="tag">基本面已篩選，追蹤進出場價位</span></div>
+  <div><h1 id="brandTitle" style="cursor:pointer" title="回首頁">詹姆5王的股市觀測站</h1><span class="tag">基本面已篩選，追蹤進出場價位</span></div>
   <div class="headerBtns">
     <button class="importBtn" id="importOpenBtn" type="button">匯入研究資料</button>
     <button class="themeToggle" id="themeBtn" type="button">切換深色/淺色</button>
@@ -1040,7 +1040,7 @@ function renderFundamentalTab(s){
   }
   const m=r.revenue.monthly, q=r.revenue.quarterly;
   return `<div class="researchBlock">
-    <div class="rbTitle">營收與獲利</div>
+    <div class="rbTitle">營收與獲利${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>
     <div class="revGrid">
       ${m?`<div class="revItem"><div class="dLabel">單月營收（${m.period||''}）</div><div class="dVal">${m.value||'—'}</div><div class="revSub">YoY ${m.yoy||'—'}　MoM ${m.mom||'—'}</div></div>`:''}
       ${q?`<div class="revItem"><div class="dLabel">單季獲利（${q.period||''}）</div><div class="dVal">EPS ${q.eps||'—'}</div><div class="revSub">YoY ${q.yoyEps||'—'}${q.profit?('　淨利 '+q.profit):''}</div></div>`:''}
@@ -1056,7 +1056,7 @@ function renderReportsNewsTab(s){
   let html='';
   if(r && r.reports && r.reports.length){
     html+=`<div class="researchBlock">
-      <div class="rbTitle">法人報告（${r.reports.length} 則）</div>
+      <div class="rbTitle">法人報告（${r.reports.length} 則）${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>
       <div class="reportList">
         ${r.reports.map(rp=>`
           <div class="reportItem">
@@ -1071,7 +1071,7 @@ function renderReportsNewsTab(s){
   }
   if(r && r.news){
     html+=`<div class="researchBlock">
-      <div class="rbTitle">近期新聞</div>
+      <div class="rbTitle">近期新聞${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>
       <div class="rbBody">${r.news.summary||''}</div>
       ${renderSources(r.news.sources)}
     </div>`;
@@ -1146,11 +1146,11 @@ function renderDetail(i){
   if(st.cls==='st-stop'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--deep); margin:10px 0 0">◆ 跌破深度加碼價不代表要出場——這裡假設你追蹤的都是已經自己確認過基本面的標的，超跌本身可能是機會而不是風險。系統只負責標出「到價了」，不做技術面抄底判斷；請自己確認基本面假設是否還成立（財報、產業展望有沒有變化），成立就當加碼機會，不成立就是真的該重新檢視部位了。</div>`;
   }else if(st.cls==='st-rebuy'){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 回測分析發現你出場後常常又快速找拉回買回（像景碩、環球晶那樣），這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，是你過去操作得好的那種買回時機。</div>`;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，屬於「噴出後找拉回買回」的典型時機，比追高進場更有紀律。</div>`;
   }else if(st.momentum==='first-stage'){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 回測82筆個股期貨交易發現，你的獲利是雙峰分布：34%是0~2%的快速價差單，但也有17%達10%以上、6%達15%以上的大波段單。把中位數(+4%)當成統一停利目標，就是3037/2303/6213被錯殺的原因——這裡的「部分停利」現在只算「第一次減碼」的參考，均線仍多頭排列（未走弱）時不建議全出，續抱看突破箱型/前高訊號 <b>${st.stretch}</b>（部分停利價×1.15，對應你大波段單的中位數幅度）。</div>`;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 這裡的「部分停利」只算「第一次減碼」的參考，不是全出訊號；均線仍多頭排列（未走弱）時不建議全出，續抱看突破箱型/前高訊號 <b>${st.stretch}</b>（部分停利價×1.15，對應噴出段的延伸幅度）。</div>`;
   }else if(st.momentum==='extended'){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到突破箱型/前高訊號 <b>${st.stretch}</b> 附近（約當部分停利價的+15%，對應你歷史大波段單的幅度），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到突破箱型/前高訊號 <b>${st.stretch}</b> 附近（約當部分停利價的+15%），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
   }
 
   const overviewHtml = `
@@ -1235,6 +1235,9 @@ function renderDetail(i){
 document.getElementById('themeBtn').addEventListener('click',()=>{
   const cur=document.documentElement.getAttribute('data-theme');
   document.documentElement.setAttribute('data-theme', cur==='dark'?'light':'dark');
+});
+document.getElementById('brandTitle').addEventListener('click',()=>{
+  activeIndex=null; render(); window.scrollTo(0,0);
 });
 
 // ---- 匯入研究資料 ----
