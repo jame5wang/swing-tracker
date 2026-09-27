@@ -398,6 +398,22 @@ function trendInfo(code){
   return {t, uptrend: t.ma10>=t.ma20};
 }
 
+// 回測82筆個股期貨已平倉交易發現，獲利是「雙峰分布」：34%是0~2%的快速價差單，
+// 但也有17%達10%以上、6%達15%以上的大波段單。用中位數(+4%)當成統一停利目標，
+// 等於把「碰到噴出股」的能力，套用「碰到盤整股」的習慣去砍，這就是3037/2303/6213
+// 被錯殺的根本原因。所以「停利目標」只當第一次減碼參考，均線沒走弱前不設全出上限，
+// 改用這個「延伸目標」(買進參考價 * 1.15，對應大波段單的中位數幅度) 當續抱的具體指引。
+const STRETCH_MULT=1.15;
+function niceRoundPrice(x){
+  if(x>=200) return Math.round(x/5)*5;
+  if(x>=20) return Math.round(x);
+  return Math.round(x*2)/2;
+}
+function stretchTargetOf(buyRef){
+  if(buyRef===null || isNaN(buyRef)) return null;
+  return niceRoundPrice(buyRef*STRETCH_MULT);
+}
+
 // 回測分析發現：容易「賣飛」的股票（如3037欣興、2303聯電、6213聯茂）共同點是
 // 停利出場後均線仍多頭排列、股價持續噴出，卻沒有再進場；而執行得好的（景碩、環球晶、金居）
 // 都是出場後很快抓拉回買回，等於用均線接力續抱。以下兩個機制就是把這個差異變成系統化提醒：
@@ -430,7 +446,11 @@ function statusOf(s){
 
   if(sellRef!==null && p>=sellRef){
     if(trend && trend.uptrend){
-      return {cls:'st-sell', label: sellIsAi?'達 AI 建議賣出區 · 分批減碼（均線多頭，勿全出）':'到達停利目標 · 分批減碼（均線多頭，勿全出）'};
+      const stretch=stretchTargetOf(buyRef);
+      if(stretch!==null && p<stretch){
+        return {cls:'st-sell', momentum:'first-stage', stretch, label:`第一階段停利 · 分批減碼，續抱看 ${stretch}（均線多頭）`};
+      }
+      return {cls:'st-sell', momentum:'extended', stretch, label:`已達延伸目標 ${stretch!==null?stretch:''} · 可分批加重出場`};
     }
     return {cls:'st-sell', label:sellIsAi?'達 AI 建議賣出區 · 分批賣出':'到達停利目標 · 分批賣出'};
   }
@@ -645,7 +665,7 @@ function renderRows(){
     summaryBox.innerHTML=`
       <span class="pill"><b>${stocks.length}</b> 檔追蹤中</span>
       <span class="pill" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</span>
-      <span class="pill" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利區</span>
+      <span class="pill" style="color:var(--sell)"><b>${counts['st-sell']}</b> 減碼區</span>
       <span class="pill" style="color:var(--stop)"><b>${counts['st-stop']}</b> 停損警示</span>
       <span class="pill" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</span>
       <span class="pill"><b>${nearCount}</b> 接近提醒</span>
@@ -861,15 +881,17 @@ function renderDetail(i){
   const buyRefVal = !isNaN(buy)?buy:support;
   const buyRefLabel = !isNaN(buy)?'距買進參考價':'距 AI 建議買點';
   const sellRefVal = !isNaN(sell)?sell:resist;
-  const sellRefLabel = !isNaN(sell)?'距停利目標':'距 AI 建議賣點';
+  const sellRefLabel = !isNaN(sell)?'距第一階段減碼':'距 AI 建議賣點';
   const toBuy=pct(p,buyRefVal), toSell=pct(p,sellRefVal), toStop=pct(p,stop);
+  const stretchVal = !isNaN(buyRefVal) ? stretchTargetOf(buyRefVal) : null;
+  const toStretch = stretchVal!==null ? pct(p,stretchVal) : null;
 
   let rangeHtml='';
   const marks=[];
   if(!isNaN(stop)) marks.push({v:stop,label:'停損',cls:'stop'});
   if(!isNaN(buy)) marks.push({v:buy,label:'買進',cls:'buy'});
   else if(!isNaN(support)) marks.push({v:support,label:'AI支撐',cls:'sup'});
-  if(!isNaN(sell)) marks.push({v:sell,label:'停利',cls:'sell'});
+  if(!isNaN(sell)) marks.push({v:sell,label:'減碼',cls:'sell'});
   else if(!isNaN(resist)) marks.push({v:resist,label:'AI壓力',cls:'res'});
   if(marks.length && !isNaN(p)){
     const vals=marks.map(m=>m.v).concat([p]);
@@ -900,8 +922,10 @@ function renderDetail(i){
   let momentumNoteHtml='';
   if(st.cls==='st-rebuy'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 回測分析發現你出場後常常又快速找拉回買回（像景碩、環球晶那樣），這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，是你過去操作得好的那種買回時機。</div>`;
-  }else if(st.cls==='st-sell' && /勿全出/.test(st.label)){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 回測你的交易紀錄發現，容易賣飛的股票都有一個共同點：出場後均線沒走弱、股價繼續噴出卻沒再買回。這檔目前10日均線仍在20日均線之上（多頭排列未破），建議只減碼一部分、保留基本部位，等拉回測10日均線再考慮買回，而不是直接全部出清。</div>`;
+  }else if(st.momentum==='first-stage'){
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 回測82筆個股期貨交易發現，你的獲利是雙峰分布：34%是0~2%的快速價差單，但也有17%達10%以上、6%達15%以上的大波段單。把中位數(+4%)當成統一停利目標，就是3037/2303/6213被錯殺的原因——這裡的「停利目標」現在只算「第一次減碼」的參考，均線仍多頭排列（未走弱）時不建議全出，續抱看延伸目標 <b>${st.stretch}</b>（買進參考價×1.15，對應你大波段單的中位數幅度）。</div>`;
+  }else if(st.momentum==='extended'){
+    momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到延伸目標 <b>${st.stretch}</b> 附近（約當買進參考價的+15%，對應你歷史大波段單的幅度），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
   }
 
   const overviewHtml = `
@@ -910,17 +934,20 @@ function renderDetail(i){
       <div class="distItem"><div class="dLabel">${buyRefLabel}</div><div class="dVal">${pctStr(toBuy)}</div></div>
       <div class="distItem"><div class="dLabel">${sellRefLabel}</div><div class="dVal">${pctStr(toSell)}</div></div>
       <div class="distItem"><div class="dLabel">距停損價</div><div class="dVal">${pctStr(toStop)}</div></div>
+      ${stretchVal!==null?`<div class="distItem"><div class="dLabel">距延伸目標（AI，+15%）</div><div class="dVal">${pctStr(toStretch)}</div></div>`:''}
     </div>
     ${momentumNoteHtml}
     <div class="sectionTitle">價位設定</div>
     <div class="grid">
       <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><input type="number" step="0.01" data-f="price" value="${fmt(s.price)}" placeholder="—"></div>
       <div class="field"><label>買進參考價</label><input type="number" step="0.01" data-f="buy" value="${fmt(s.buy)}" placeholder="${!isNaN(support)?'AI建議 '+support:'—'}"></div>
-      <div class="field"><label>停利目標價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="${!isNaN(resist)?'AI建議 '+resist:'—'}"></div>
+      <div class="field"><label>第一階段減碼價</label><input type="number" step="0.01" data-f="sell" value="${fmt(s.sell)}" placeholder="${!isNaN(resist)?'AI建議 '+resist:'—'}"></div>
       <div class="field"><label>停損價</label><input type="number" step="0.01" data-f="stop" value="${fmt(s.stop)}" placeholder="—"></div>
       <div class="field"><label>技術支撐（AI）</label><input type="number" step="0.01" data-f="support" value="${fmt(s.support)}" placeholder="—"></div>
       <div class="field"><label>技術壓力（AI）</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
-    </div>`;
+      <div class="field"><label>延伸目標（AI，僅供參考）</label><input type="text" value="${stretchVal!==null?stretchVal:'—'}" disabled></div>
+    </div>
+    <div class="srcList">「第一階段減碼」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「延伸目標」對應你歷史大波段單的幅度（買進參考價 × 1.15），均線走弱才是真正該全數出場的時候。</div>`;
 
   const technicalHtml = renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
   const fundamentalHtml = renderFundamentalTab(s);
