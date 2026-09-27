@@ -1242,13 +1242,13 @@ function renderDetail(i){
     ${momentumNoteHtml}
     <div class="sectionTitle">價位設定</div>
     <div class="grid">
-      <div class="field price"><label>目前股價${s.priceSource==='auto'?'<span class="autoTag">自動</span>':''}</label><div class="fieldVal">${fmt(s.price)||'—'}</div></div>
+      <div class="field price"><label>目前股價</label><div class="fieldVal">${fmt(s.price)||'—'}</div></div>
       <div class="field"><label>安全買進試單價</label><div class="fieldVal">${fmt(s.buy)||'—'}</div></div>
       <div class="field"><label>部分停利價</label><div class="fieldVal">${fmt(s.sell)||'—'}</div></div>
-      <div class="field"><label>跌深買進價（對應深度加碼）</label><div class="fieldVal">${fmt(s.stop)||'—'}</div></div>
-      <div class="field"><label>技術支撐（AI）</label><div class="fieldVal">${fmt(s.support)||'—'}</div></div>
-      <div class="field"><label>技術壓力（AI）</label><div class="fieldVal">${fmt(s.resist)||'—'}</div></div>
-      <div class="field"><label>突破箱型/前高訊號（AI，僅供參考）</label><div class="fieldVal">${stretchVal!==null?stretchVal:'—'}</div></div>
+      <div class="field"><label>跌深買進價</label><div class="fieldVal">${fmt(s.stop)||'—'}</div></div>
+      <div class="field"><label>技術支撐</label><div class="fieldVal">${fmt(s.support)||'—'}</div></div>
+      <div class="field"><label>技術壓力</label><div class="fieldVal">${fmt(s.resist)||'—'}</div></div>
+      <div class="field"><label>突破箱型/前高訊號</label><div class="fieldVal">${stretchVal!==null?stretchVal:'—'}</div></div>
     </div>
     <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（部分停利價 × 1.15），均線走弱才是真正該全數出場的時候。這裡所有數字僅供個人觀察記錄，不構成買賣建議。</div>`;
 
