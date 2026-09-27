@@ -1766,7 +1766,7 @@
     },
     {
       "code": "3017",
-      "sector": "散熱模組",
+      "sector": "散熱",
       "support": 3160,
       "buy": 3160,
       "resist": 3600,
@@ -1826,7 +1826,7 @@
     },
     {
       "code": "3324",
-      "sector": "均熱板/散熱模組",
+      "sector": "散熱",
       "research": {
         "updated": "2026-09-27",
         "technical": {
@@ -1881,7 +1881,7 @@
     },
     {
       "code": "3653",
-      "sector": "均熱片/精密沖壓(散熱)",
+      "sector": "散熱",
       "support": 5780,
       "buy": 5780,
       "resist": 6920,
@@ -2046,7 +2046,7 @@
     },
     {
       "code": "6739",
-      "sector": "智慧製造/工業自動化整合",
+      "sector": "自動化設備",
       "support": 1065,
       "buy": 1065,
       "resist": 1370,
@@ -2105,7 +2105,7 @@
     },
     {
       "code": "3167",
-      "sector": "研磨拋光/精密設備",
+      "sector": "自動化設備",
       "support": 790,
       "buy": 790,
       "resist": 970,
@@ -2155,7 +2155,7 @@
     },
     {
       "code": "8021",
-      "sector": "PCB鑽針/精密工具",
+      "sector": "PCB／軟板",
       "support": 400,
       "buy": 400,
       "resist": 465,

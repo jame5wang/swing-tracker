@@ -297,7 +297,7 @@ let activeIndex=null;
 let activeTab='overview';
 
 // 使用者提供的即時報價截圖（成交價），首次載入時預先帶入，之後留給自動盤後資料或手動更新覆蓋
-const SECTOR_ORDER=['ABF載板','CCL／覆銅板','PCB／軟板','矽晶圓','封測','晶圓代工','記憶體','面板','電源／工控','化合物半導體','其他'];
+const SECTOR_ORDER=['ABF載板','CCL／覆銅板','PCB／軟板','矽晶圓','封測','晶圓代工','記憶體','面板','電源／工控','化合物半導體','散熱','自動化設備','IC設計/矽智財(SIP)','其他'];
 const SEED_STOCKS=[
   {code:'3037',name:'欣興',price:1185,sector:'ABF載板'},
   {code:'8046',name:'南電',price:1240,sector:'ABF載板'},
@@ -326,14 +326,14 @@ const SEED_STOCKS=[
   {code:'2455',name:'全新',price:554,sector:'化合物半導體'},
   {code:'3105',name:'穩懋',price:502,sector:'化合物半導體'},
   {code:'4971',name:'IET-KY',price:552,sector:'化合物半導體'},
-  {code:'3017',name:'奇鋐',price:3555,sector:'散熱模組'},
-  {code:'3653',name:'健策',price:6920,sector:'均熱片/精密沖壓(散熱)'},
-  {code:'3324',name:'雙鴻',price:1195,sector:'均熱板/散熱模組'},
+  {code:'3017',name:'奇鋐',price:3555,sector:'散熱'},
+  {code:'3653',name:'健策',price:6920,sector:'散熱'},
+  {code:'3324',name:'雙鴻',price:1195,sector:'散熱'},
   {code:'3529',name:'力旺',price:3230,sector:'IC設計/矽智財(SIP)'},
   {code:'6187',name:'萬潤',price:1195,sector:'自動化設備'},
-  {code:'6739',name:'竹陞科技',price:1110,sector:'智慧製造/工業自動化整合'},
-  {code:'3167',name:'大量',price:824,sector:'研磨拋光/精密設備'},
-  {code:'8021',name:'尖點',price:418.5,sector:'PCB鑽針/精密工具'},
+  {code:'6739',name:'竹陞科技',price:1110,sector:'自動化設備'},
+  {code:'3167',name:'大量',price:824,sector:'自動化設備'},
+  {code:'8021',name:'尖點',price:418.5,sector:'PCB／軟板'},
 ];
 
 try{
