@@ -569,8 +569,8 @@ function statusOf(s){
   const sellIsAi = isNaN(sell) && !isNaN(aiSell);
   const trend=trendInfo(String(s.code||'').trim());
 
-  if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'跌破深度加碼價 · 基本面未變可分批加碼'};
-  if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'進入 AI 建議買進區':'進入買進區'};
+  if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'超跌區 · 基本面未變可分批加碼'};
+  if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'建倉買進（AI 建議）':'建倉買進'};
 
   // 噴出未拉回：近20日大漲且現價仍貼近20日高點，代表這波噴出還沒被真正拉回測試過，
   // 現在的「安全買進」只是噴出後的短暫整理，不是經過驗證的支撐，追價風險較高
@@ -586,7 +586,7 @@ function statusOf(s){
     const distToMa10=(p-ma10)/ma10*100;
     const extendedAboveBuy=(p-buyRef)/buyRef*100;
     if(extendedAboveBuy>REBUY_BAND_PCT*2 && distToMa10>=-REBUY_BAND_PCT && distToMa10<=REBUY_BAND_PCT){
-      return {cls:'st-rebuy', label:`拉回測10日均線 · 留意買回（10MA ${ma10}）`};
+      return {cls:'st-rebuy', label:`拉回買進 · 拉回測10日均線（10MA ${ma10}）`};
     }
   }
 
@@ -594,21 +594,21 @@ function statusOf(s){
     if(trend && trend.uptrend){
       const stretch=stretchTargetOf(sellRef);
       if(stretch!==null && p<stretch){
-        return {cls:'st-sell', momentum:'first-stage', stretch, label:`第一階段停利 · 分批減碼，續抱看 ${stretch}（均線多頭）`};
+        return {cls:'st-sell', momentum:'first-stage', stretch, label:`漲多停利減碼 · 分批減碼，續抱看 ${stretch}（均線多頭）`};
       }
-      return {cls:'st-sell', momentum:'extended', stretch, label:`已達延伸目標 ${stretch!==null?stretch:''} · 可分批加重出場`};
+      return {cls:'st-sell', momentum:'extended', stretch, label:`漲多停利減碼 · 已達延伸目標 ${stretch!==null?stretch:''}，可分批加重出場`};
     }
-    return {cls:'st-sell', label:sellIsAi?'達 AI 建議賣出區 · 分批賣出':'到達停利目標 · 分批賣出'};
+    return {cls:'st-sell', label:sellIsAi?'漲多停利減碼（AI 建議）· 分批賣出':'漲多停利減碼 · 分批賣出'};
   }
   if(buyRef!==null){
     const d=(p-buyRef)/buyRef*100;
-    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-buy', label:`接近${buyIsAi?'AI 建議':''}安全買進（+${d.toFixed(1)}%）`};
+    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-buy', label:`接近提醒 · ${buyIsAi?'AI 建議':''}安全買進（+${d.toFixed(1)}%）`};
   }
   if(sellRef!==null){
     const d=(sellRef-p)/sellRef*100;
-    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-sell', label:`接近${sellIsAi?'AI 建議':''}部分停利（-${d.toFixed(1)}%）`};
+    if(d>0 && d<=NEAR_PCT) return {cls:'st-near-sell', label:`接近提醒 · ${sellIsAi?'AI 建議':''}部分停利（-${d.toFixed(1)}%）`};
   }
-  return {cls:'st-hold', label:'區間內 · 續抱觀察'};
+  return {cls:'st-hold', label:'續抱觀察 · 區間內'};
 }
 
 const PAGE_LOAD_TS=Date.now();
@@ -908,10 +908,10 @@ function renderRows(){
     const pillActive=(key)=> pillFilter===key ? ' active' : '';
     summaryBox.innerHTML=`
       <button type="button" class="pill${pillActive(null)}" data-pill="all"><b>${stocks.length}</b> 檔追蹤中</button>
-      <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</button>
-      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 停利減碼中</button>
-      <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 深度加碼</button>
-      <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</button>
+      <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 建倉買進</button>
+      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 漲多停利減碼</button>
+      <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 超跌區</button>
+      <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買進</button>
       <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 噴出未拉回</button>
       <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
       <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
@@ -938,7 +938,7 @@ function renderRows(){
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'買進區','st-sell':'停利減碼中','st-stop':'深度加碼','st-rebuy':'拉回買回','st-extended':'噴出未拉回','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'拉回買進','st-extended':'噴出未拉回','near':'接近提醒','st-hold':'續抱觀察'};
     const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
       : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
       : `找不到符合「${searchQuery}」的股票`;
