@@ -213,6 +213,20 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .distItem{background:var(--panel2); border-radius:9px; padding:10px 12px; border:1px solid var(--line);}
 .distItem .dLabel{font-size:11px; color:var(--sub);}
 .distItem .dVal{font-size:15px; font-weight:700; margin-top:2px; font-family:var(--mono);}
+.plList{display:flex; flex-direction:column; gap:8px; margin:16px 0;}
+.plRow{display:flex; align-items:center; justify-content:space-between; gap:10px; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:10px 14px;}
+.plRow.current{background:transparent; border-style:dashed; padding:6px 14px;}
+.plLabelWrap{display:flex; align-items:center; gap:8px; min-width:0;}
+.plDot{width:8px; height:8px; border-radius:50%; flex:none; background:var(--sub);}
+.plLabel{font-size:12.5px; font-weight:600; color:var(--sub); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.plRow.current .plLabel{color:var(--mute);}
+.plPrice{font-family:var(--mono); font-weight:700; font-size:15px; margin-left:auto;}
+.plRow.current .plPrice{font-size:17px;}
+.plDist{font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--sub); min-width:58px; text-align:right;}
+.plRow.buy .plDot{background:var(--buy);} .plRow.buy .plLabel{color:var(--buy);}
+.plRow.sell .plDot{background:var(--sell);} .plRow.sell .plLabel{color:var(--sell);}
+.plRow.stop .plDot{background:var(--deep);} .plRow.stop .plLabel{color:var(--deep);}
+.plRow.stretch .plDot{background:var(--sell); opacity:.55;} .plRow.stretch .plLabel{color:var(--sell); opacity:.85;}
 
 .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin:14px 0;}
 .field label{display:block; font-size:11px; color:var(--sub); margin-bottom:4px;}
@@ -1171,9 +1185,9 @@ function renderDetail(i){
   const support=parseFloat(s.support), resist=parseFloat(s.resist);
 
   const buyRefVal = !isNaN(buy)?buy:support;
-  const buyRefLabel = !isNaN(buy)?'距安全買進':'距 AI 建議買點';
+  const buyRefLabel = !isNaN(buy)?'安全買進':'AI 建議買點';
   const sellRefVal = !isNaN(sell)?sell:resist;
-  const sellRefLabel = !isNaN(sell)?'距部分停利':'距 AI 建議賣點';
+  const sellRefLabel = !isNaN(sell)?'部分停利':'AI 建議賣點';
   const toBuy=pct(p,buyRefVal), toSell=pct(p,sellRefVal), toStop=pct(p,stop);
   const stretchVal = !isNaN(sellRefVal) ? stretchTargetOf(sellRefVal) : null;
   const toStretch = stretchVal!==null ? pct(p,stretchVal) : null;
@@ -1242,26 +1256,23 @@ function renderDetail(i){
       <div class="rbBody">${r.overview}</div>
     </div>` : '';
 
+  const plRows=[{cls:'current', label:'目前股價', price:fmt(s.price)||'—'}];
+  if(!isNaN(buyRefVal)) plRows.push({cls:'buy', label:buyRefLabel, price:fmt(buyRefVal)||'—', dist:pctStr(toBuy)});
+  if(!isNaN(sellRefVal)) plRows.push({cls:'sell', label:sellRefLabel, price:fmt(sellRefVal)||'—', dist:pctStr(toSell)});
+  if(!isNaN(stop)) plRows.push({cls:'stop', label:'跌深買進', price:fmt(stop)||'—', dist:pctStr(toStop)});
+  if(stretchVal!==null) plRows.push({cls:'stretch', label:'突破箱型/前高訊號', price:stretchVal, dist:pctStr(toStretch)});
+  const plListHtml=`<div class="plList">${plRows.map(row=>`
+      <div class="plRow ${row.cls}">
+        <div class="plLabelWrap">${row.cls!=='current'?'<span class="plDot"></span>':''}<span class="plLabel">${row.label}</span></div>
+        <div class="plPrice">${row.price}</div>
+        ${row.dist?`<div class="plDist">${row.dist}</div>`:''}
+      </div>`).join('')}</div>`;
+
   const overviewHtml = `
     ${companyOverviewHtml}
     ${rangeHtml}
-    <div class="distGrid">
-      <div class="distItem"><div class="dLabel">${buyRefLabel}</div><div class="dVal">${pctStr(toBuy)}</div></div>
-      <div class="distItem"><div class="dLabel">${sellRefLabel}</div><div class="dVal">${pctStr(toSell)}</div></div>
-      <div class="distItem"><div class="dLabel">跌深買進</div><div class="dVal">${pctStr(toStop)}</div></div>
-      ${stretchVal!==null?`<div class="distItem"><div class="dLabel">突破箱型/前高訊號</div><div class="dVal">${pctStr(toStretch)}</div></div>`:''}
-    </div>
+    ${plListHtml}
     ${momentumNoteHtml}
-    <div class="sectionTitle">價位設定</div>
-    <div class="grid">
-      <div class="field price"><label>目前股價</label><div class="fieldVal">${fmt(s.price)||'—'}</div></div>
-      <div class="field"><label>安全買進試單價</label><div class="fieldVal">${fmt(s.buy)||'—'}</div></div>
-      <div class="field"><label>部分停利價</label><div class="fieldVal">${fmt(s.sell)||'—'}</div></div>
-      <div class="field"><label>跌深買進價</label><div class="fieldVal">${fmt(s.stop)||'—'}</div></div>
-      <div class="field"><label>技術支撐</label><div class="fieldVal">${fmt(s.support)||'—'}</div></div>
-      <div class="field"><label>技術壓力</label><div class="fieldVal">${fmt(s.resist)||'—'}</div></div>
-      <div class="field"><label>突破箱型/前高訊號</label><div class="fieldVal">${stretchVal!==null?stretchVal:'—'}</div></div>
-    </div>
     <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（部分停利價 × 1.15），均線走弱才是真正該全數出場的時候。這裡所有數字僅供個人觀察記錄，不構成買賣建議。</div>`;
 
   const technicalHtml = renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
