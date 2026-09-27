@@ -18,7 +18,7 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/07",
+            "period": "2026/08",
             "value": "177.46億元",
             "yoy": "+56.26%",
             "mom": "+9.18%"
@@ -35,6 +35,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3037 2026/08 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 欣興(3037)8月營收177.46億元年增率高達56.26%",
               "url": "https://news.cnyes.com/news/id/6600686"
