@@ -246,17 +246,6 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .researchBlock{margin:14px 0; padding:14px; background:var(--panel2); border-radius:11px; border:1px solid var(--line);}
 .rbTitle{font-size:12.5px; font-weight:700; margin-bottom:6px; color:var(--sub); text-transform:uppercase; letter-spacing:.06em;}
 .rbBody{font-size:13.5px; line-height:1.7; white-space:pre-wrap;}
-.candleWrap{width:100%; margin-top:6px;}
-.candleWrap canvas{width:100%; display:block; border-radius:8px;}
-.candleLegend{display:flex; gap:14px; flex-wrap:wrap; margin-top:8px; font-size:11px; color:var(--sub);}
-.candleLegend span{display:flex; align-items:center; gap:5px;}
-.candleDot{width:9px; height:9px; border-radius:2px; display:inline-block;}
-.candleDot.up{background:var(--buy);}
-.candleDot.down{background:var(--stop);}
-.candleLine{width:14px; height:0; border-top:2px solid; display:inline-block;}
-.candleLine.ma10{border-color:var(--accent);}
-.candleLine.ma20{border-color:var(--accent2);}
-.candleLine.ma60{border-color:#f2c94c;}
 .researchEmpty{font-size:13px; color:var(--sub); padding:16px; background:var(--panel2); border:1px dashed var(--line); border-radius:11px; margin:14px 0; text-align:center;}
 .srcList{font-size:11.5px; color:var(--sub); margin-top:8px; line-height:1.6;}
 .srcList a{color:var(--accent); text-decoration:none; margin-right:4px;}
@@ -1111,195 +1100,6 @@ function renderTechnicalSection(s,p){
   </div>`;
 }
 
-// K線圖：用 technical.json 的 series（近90日開高低收，含MA60所需的緩衝資料）畫在
-// canvas 上，只顯示最近30根K棒（避免太密），疊加 MA10/MA20/MA60 與目前設定的
-// 買賣停價位（虛線），比純數字的距離百分比更直覺看出「現在位置在哪」。
-const CANDLE_DISPLAY_DAYS = 30;
-
-function renderCandleChartBlock(s){
-  const t=(technicalData && technicalData.stocks) ? technicalData.stocks[String(s.code||'').trim()] : null;
-  const series = t && t.series;
-  if(!series || series.length<2){
-    return `<div class="researchBlock">
-      <div class="rbTitle">K線圖（近${CANDLE_DISPLAY_DAYS}日）</div>
-      <div class="researchEmpty">尚無日線資料，等待下一次收盤後排程計算後會自動出現。</div>
-    </div>`;
-  }
-  const buy=parseFloat(s.buy), sell=parseFloat(s.sell), stop=parseFloat(s.stop);
-  const support=parseFloat(s.support), resist=parseFloat(s.resist);
-  const buyRef = !isNaN(buy)?buy:support;
-  const sellRef = !isNaN(sell)?sell:resist;
-  const stretch = !isNaN(sellRef) ? stretchTargetOf(sellRef) : null;
-  const levels=[];
-  if(!isNaN(buyRef)) levels.push({v:buyRef, cls:'buy', label:'安全買進'});
-  if(!isNaN(sellRef)) levels.push({v:sellRef, cls:'sell', label:'部分停利'});
-  if(!isNaN(stop)) levels.push({v:stop, cls:'stop', label:'跌深買進'});
-  if(stretch!==null) levels.push({v:stretch, cls:'stretch', label:'突破箱型'});
-  const shownDays=Math.min(CANDLE_DISPLAY_DAYS, series.length);
-  return `<div class="researchBlock">
-    <div class="rbTitle">K線圖（近${shownDays}日）</div>
-    <div class="candleWrap"><canvas id="candleCanvas" data-series='${JSON.stringify(series).replace(/'/g,'&#39;')}' data-levels='${JSON.stringify(levels).replace(/'/g,'&#39;')}'></canvas></div>
-    <div class="candleLegend">
-      <span><i class="candleDot up"></i>上漲</span>
-      <span><i class="candleDot down"></i>下跌</span>
-      <span><i class="candleLine ma10"></i>MA10</span>
-      <span><i class="candleLine ma20"></i>MA20</span>
-      <span><i class="candleLine ma60"></i>MA60</span>
-    </div>
-    <div class="srcList">資料來源：證交所／櫃買中心歷史股價（自動計算），虛線為目前設定的買賣停價位。</div>
-  </div>`;
-}
-
-function drawCandleChart(){
-  const canvas=document.getElementById('candleCanvas');
-  if(!canvas) return;
-  let full, levels;
-  try{
-    full=JSON.parse(canvas.dataset.series||'[]');
-    levels=JSON.parse(canvas.dataset.levels||'[]');
-  }catch(e){ return; }
-  if(!full.length) return;
-
-  // full：完整history（含MA60需要的緩衝天數）；disp：實際畫成K棒的最近N天
-  const dispCount=Math.min(CANDLE_DISPLAY_DAYS, full.length);
-  const dispStart=full.length-dispCount;
-  const disp=full.slice(dispStart);
-
-  const wrap=canvas.parentElement;
-  const cssWidth=Math.max(200, wrap.clientWidth);
-  const cssHeight=220;
-  const dpr=window.devicePixelRatio||1;
-  canvas.width=cssWidth*dpr;
-  canvas.height=cssHeight*dpr;
-  canvas.style.width=cssWidth+'px';
-  canvas.style.height=cssHeight+'px';
-  const ctx=canvas.getContext('2d');
-  ctx.setTransform(dpr,0,0,dpr,0,0);
-  ctx.clearRect(0,0,cssWidth,cssHeight);
-
-  const cs=getComputedStyle(document.documentElement);
-  const col=name=>cs.getPropertyValue(name).trim();
-  const colBuy=col('--buy'), colSell=col('--sell'), colStop=col('--stop'), colDeep=col('--deep'),
-        colLine=col('--line'), colMute=col('--mute'), colAccent=col('--accent'), colAccent2=col('--accent2');
-  const colMa60='#f2c94c'; // MA60 固定用琥珀色，跟MA10(藍)/MA20(青)拉開辨識度，避免同色系混淆
-
-  const padL=42, padR=8, padT=10, padB=18;
-  const plotW=cssWidth-padL-padR, plotH=cssHeight-padT-padB;
-
-  // 用「顯示範圍內的K棒」算MA，但取值用完整history往前補，這樣MA60從第一根K棒就能畫出來
-  function maSeries(period){
-    return disp.map((_,i)=>{
-      const j=dispStart+i;
-      if(j-period+1<0) return null;
-      let sum=0; for(let k=j-period+1;k<=j;k++) sum+=full[k].c;
-      return sum/period;
-    });
-  }
-  const ma10=maSeries(10), ma20=maSeries(20), ma60=maSeries(60);
-
-  const n=disp.length;
-  const slot=plotW/n;
-  const candleW=Math.max(2, Math.min(11, slot*0.62));
-  const xOf=i=>padL + slot*i + slot/2;
-
-  const rangeVals=[];
-  disp.forEach(d=>{ rangeVals.push(d.h, d.l); });
-  [ma10,ma20,ma60].forEach(arr=>arr.forEach(v=>{ if(v!==null) rangeVals.push(v); }));
-  levels.forEach(l=>rangeVals.push(l.v));
-  let maxV=Math.max(...rangeVals), minV=Math.min(...rangeVals);
-  const rangePad=(maxV-minV)*0.08 || maxV*0.02 || 1;
-  maxV+=rangePad; minV-=rangePad;
-  const yOf=v=>padT + (maxV-v)/(maxV-minV)*plotH;
-
-  // 價格格線
-  ctx.strokeStyle=colLine; ctx.lineWidth=1; ctx.font='10px ui-monospace,SF Mono,Consolas,monospace'; ctx.fillStyle=colMute;
-  const steps=4;
-  for(let i=0;i<=steps;i++){
-    const v=minV+(maxV-minV)*i/steps;
-    const y=yOf(v);
-    ctx.globalAlpha=0.5;
-    ctx.beginPath(); ctx.moveTo(padL,y); ctx.lineTo(cssWidth-padR,y); ctx.stroke();
-    ctx.globalAlpha=1;
-    ctx.fillText(v.toFixed(v<100?2:0), 2, y+3);
-  }
-
-  // MA10 / MA20 / MA60
-  function drawMaLine(arr, color){
-    ctx.strokeStyle=color; ctx.lineWidth=1.4; ctx.beginPath();
-    let started=false;
-    arr.forEach((v,i)=>{
-      if(v===null) return;
-      const x=xOf(i), y=yOf(v);
-      if(!started){ ctx.moveTo(x,y); started=true; } else ctx.lineTo(x,y);
-    });
-    ctx.stroke();
-  }
-  drawMaLine(ma10, colAccent);
-  drawMaLine(ma20, colAccent2);
-  drawMaLine(ma60, colMa60);
-
-  // K棒
-  disp.forEach((d,i)=>{
-    const x=xOf(i);
-    const up=d.c>=d.o;
-    const c=up?colBuy:colStop;
-    ctx.strokeStyle=c; ctx.fillStyle=c; ctx.lineWidth=1;
-    ctx.beginPath(); ctx.moveTo(x, yOf(d.h)); ctx.lineTo(x, yOf(d.l)); ctx.stroke();
-    const yTop=yOf(Math.max(d.o,d.c)), yBot=yOf(Math.min(d.o,d.c));
-    const h=Math.max(1, yBot-yTop);
-    ctx.fillRect(x-candleW/2, yTop, candleW, h);
-  });
-
-  // 買賣停價位參考虛線
-  ctx.font='10px ui-monospace,SF Mono,Consolas,monospace';
-  levels.forEach(lv=>{
-    const y=yOf(lv.v);
-    let color=colMute;
-    if(lv.cls==='buy') color=colBuy;
-    else if(lv.cls==='sell') color=colSell;
-    else if(lv.cls==='stop') color=colDeep;
-    else if(lv.cls==='stretch') color=colSell;
-    ctx.save();
-    ctx.strokeStyle=color; ctx.setLineDash([4,3]); ctx.globalAlpha=lv.cls==='stretch'?0.6:0.9; ctx.lineWidth=1.2;
-    ctx.beginPath(); ctx.moveTo(padL,y); ctx.lineTo(cssWidth-padR,y); ctx.stroke();
-    ctx.restore();
-    lv._labelY=y;
-  });
-  // 價位太接近時，文字標籤會疊在一起，由高到低排序後互相推開（至少間隔11px）
-  const sortedLevels=[...levels].sort((a,b)=>a._labelY-b._labelY);
-  for(let i=1;i<sortedLevels.length;i++){
-    const prev=sortedLevels[i-1], cur=sortedLevels[i];
-    if(cur._labelY - prev._labelY < 11) cur._labelY = prev._labelY + 11;
-  }
-  sortedLevels.forEach(lv=>{
-    let color=colMute;
-    if(lv.cls==='buy') color=colBuy;
-    else if(lv.cls==='sell') color=colSell;
-    else if(lv.cls==='stop') color=colDeep;
-    else if(lv.cls==='stretch') color=colSell;
-    ctx.fillStyle=color; ctx.textAlign='right';
-    ctx.fillText(`${lv.label} ${lv.v}`, cssWidth-padR-2, lv._labelY-3);
-    ctx.textAlign='left';
-  });
-
-  // X軸日期（起／中／末）
-  ctx.fillStyle=colMute; ctx.font='10px ui-monospace,SF Mono,Consolas,monospace';
-  [0, Math.floor((n-1)/2), n-1].forEach(i=>{
-    const d=disp[i];
-    const x=Math.min(Math.max(xOf(i)-14, padL), cssWidth-padR-32);
-    ctx.fillText((d.d||'').slice(5), x, cssHeight-4);
-  });
-}
-
-if(!window._candleResizeBound){
-  window._candleResizeBound=true;
-  let _candleResizeTimer;
-  window.addEventListener('resize', ()=>{
-    clearTimeout(_candleResizeTimer);
-    _candleResizeTimer=setTimeout(drawCandleChart, 150);
-  });
-}
-
 // AI 技術面文字看法（跟 renderTechnicalSection 的 MA／相對強弱數字放在同一個「技術面」分頁）
 function renderTechnicalNarrative(s){
   const r=s.research;
@@ -1477,7 +1277,7 @@ function renderDetail(i){
     ${momentumNoteHtml}
     <div class="srcList">「部分停利」是分批出場的參考點，不是全出訊號；只要均線仍多頭排列就建議保留基本部位續抱，「突破箱型/前高訊號」對應你歷史大波段單的幅度（部分停利價 × 1.15），均線走弱才是真正該全數出場的時候。這裡所有數字僅供個人觀察記錄，不構成買賣建議。</div>`;
 
-  const technicalHtml = renderCandleChartBlock(s) + renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
+  const technicalHtml = renderTechnicalNarrative(s) + renderTechnicalSection(s,p) || `<div class="researchEmpty">尚無技術面資料。</div>`;
   const fundamentalHtml = renderFundamentalTab(s);
   const reportsHtml = renderReportsNewsTab(s);
 
@@ -1514,7 +1314,6 @@ function renderDetail(i){
   view.querySelectorAll('.tabBtn').forEach(btn=>{
     btn.addEventListener('click',()=>{ activeTab=btn.dataset.tab; render(); });
   });
-  if(activeTab==='technical'){ requestAnimationFrame(drawCandleChart); }
 }
 
 document.getElementById('themeBtn').addEventListener('click',()=>{
