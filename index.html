@@ -255,6 +255,32 @@ function applyAutoPrices(){
   if(changed){ save(); render(); }
 }
 
+// ---- 自動研究資料（data/research.json，由 Claude 定期更新）----
+async function loadResearchData(){
+  const json=await fetchJson('data/research.json');
+  if(!json || !Array.isArray(json.stocks)) return;
+  let changed=false;
+  const genDate=json.generated||'';
+  json.stocks.forEach(r=>{
+    if(!r.code) return;
+    const idx=stocks.findIndex(s=>String(s.code).trim()===String(r.code).trim());
+    if(idx===-1) return; // 只更新使用者已經在追蹤的股票，不會自動幫你新增新標的
+    const s=stocks[idx];
+    ['revenue','report','conf','news'].forEach(f=>{
+      if(r[f]!==undefined && r[f]!==null && r[f]!==''){
+        if(s[f]!==r[f]){ s[f]=r[f]; changed=true; }
+      }
+    });
+    ['support','resist'].forEach(f=>{
+      if(r[f]!==undefined && r[f]!==null && r[f]!=='' && (s[f]===undefined||s[f]===null||s[f]==='')){
+        s[f]=r[f]; changed=true;
+      }
+    });
+    if(genDate && s.researchUpdated!==genDate){ s.researchUpdated=genDate; changed=true; }
+  });
+  if(changed){ save(); render(); }
+}
+
 function render(){
   if(activeIndex!==null && stocks[activeIndex]) renderDetail(activeIndex);
   else renderList();
@@ -379,7 +405,7 @@ function renderDetail(i){
         <div class="field"><label>技術壓力</label><input type="number" step="0.01" data-f="resist" value="${fmt(s.resist)}" placeholder="—"></div>
       </div>
 
-      <div class="sectionTitle">基本面分析筆記</div>
+      <div class="sectionTitle">基本面分析筆記${s.researchUpdated?`<span class="autoTag">Claude 研究更新於 ${s.researchUpdated}</span>`:''}</div>
       <div class="notes">
         <div class="n"><label>營收重點</label><textarea data-f="revenue" placeholder="月營收年增/月增、展望...">${s.revenue||''}</textarea></div>
         <div class="n"><label>法人報告重點</label><textarea data-f="report" placeholder="外資/投信目標價、評等調整...">${s.report||''}</textarea></div>
@@ -469,6 +495,7 @@ document.getElementById('importApplyBtn').addEventListener('click',()=>{
 
 render();
 loadAutoData();
+loadResearchData();
 </script>
 </body>
 </html>
