@@ -87,6 +87,10 @@ main{max-width:720px; margin:0 auto; padding:18px 16px 60px; position:relative;}
 .summary{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px;}
 .pill{font-size:12px; padding:5px 11px; border-radius:20px; border:1px solid var(--line); color:var(--sub); background:var(--panel); font-family:var(--mono);}
 .pill b{color:var(--ink); font-weight:650; font-family:var(--mono);}
+button.pill{cursor:pointer; -webkit-tap-highlight-color:transparent; transition:transform .1s, background .15s, border-color .15s;}
+button.pill:active{transform:scale(0.96);}
+button.pill:hover{border-color:var(--accent);}
+button.pill.active{background:var(--panel2, var(--panel)); border-color:currentColor; box-shadow:0 0 0 1px currentColor inset;}
 .addBar{display:flex; gap:8px; margin-bottom:22px; flex-wrap:wrap;}
 .addBar input{flex:1; min-width:100px; padding:10px 12px; border-radius:9px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
 .addBar button{padding:10px 16px; border-radius:9px; border:1px solid var(--accent); background:var(--accent); color:#fff; font-size:14px; font-weight:650; cursor:pointer;}
@@ -612,6 +616,7 @@ function render(){
 
 let searchQuery='';
 let signalOnly=false;
+let pillFilter=null; // null | 'st-buy' | 'st-sell' | 'st-stop' | 'st-rebuy' | 'near' | 'st-hold'
 const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy'];
 
 function renderList(){
@@ -662,26 +667,43 @@ function renderRows(){
   const nearCount=counts['st-near-buy']+counts['st-near-sell'];
 
   if(summaryBox){
+    const pillActive=(key)=> pillFilter===key ? ' active' : '';
     summaryBox.innerHTML=`
-      <span class="pill"><b>${stocks.length}</b> 檔追蹤中</span>
-      <span class="pill" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</span>
-      <span class="pill" style="color:var(--sell)"><b>${counts['st-sell']}</b> 減碼區</span>
-      <span class="pill" style="color:var(--stop)"><b>${counts['st-stop']}</b> 停損警示</span>
-      <span class="pill" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</span>
-      <span class="pill"><b>${nearCount}</b> 接近提醒</span>
-      <span class="pill"><b>${counts['st-hold']}</b> 續抱觀察</span>
+      <button type="button" class="pill${pillActive(null)}" data-pill="all"><b>${stocks.length}</b> 檔追蹤中</button>
+      <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 買進區</button>
+      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 減碼區</button>
+      <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--stop)"><b>${counts['st-stop']}</b> 停損警示</button>
+      <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 拉回買回</button>
+      <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
+      <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
     `;
+    summaryBox.querySelectorAll('[data-pill]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const key=btn.dataset.pill==='all'?null:btn.dataset.pill;
+        pillFilter = (pillFilter===key) ? null : key;
+        renderRows();
+      });
+    });
   }
 
   const q=(searchQuery||'').trim().toLowerCase();
   const items=stocks.map((s,i)=>({s,i})).filter(({s})=>{
     if(signalOnly && !SIGNAL_CLASSES.includes(statusOf(s).cls)) return false;
+    if(pillFilter){
+      const cls=statusOf(s).cls;
+      if(pillFilter==='near'){ if(cls!=='st-near-buy' && cls!=='st-near-sell') return false; }
+      else if(cls!==pillFilter) return false;
+    }
     if(!q) return true;
     return (s.code||'').toLowerCase().includes(q) || (s.name||'').toLowerCase().includes(q);
   });
 
   if(items.length===0){
-    rowsEl.innerHTML=`<div class="empty">${signalOnly?'今天沒有股票達到買進／賣出／停損訊號，可以先休息一下。':`找不到符合「${searchQuery}」的股票`}</div>`;
+    const pillLabels={'st-buy':'買進區','st-sell':'減碼區','st-stop':'停損警示','st-rebuy':'拉回買回','near':'接近提醒','st-hold':'續抱觀察'};
+    const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／停損訊號，可以先休息一下。'
+      : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
+      : `找不到符合「${searchQuery}」的股票`;
+    rowsEl.innerHTML=`<div class="empty">${emptyMsg}</div>`;
     return;
   }
 
