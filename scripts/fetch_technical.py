@@ -21,7 +21,8 @@ TWSE_STOCK_DAY = "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json
 TWSE_FMTQIK = "https://www.twse.com.tw/exchangeReport/FMTQIK?response=json&date={date}"
 TPEX_TRADING_STOCK = "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?date={date}&code={code}&response=json"
 OUTPUT_PATH = "data/technical.json"
-SERIES_DAYS = 60  # K線圖顯示的近期交易日數
+SERIES_DAYS = 90  # 存進 series 的交易日數（前端K線圖只畫最近30日的K棒，
+                   # 但MA60需要往前多抓30天資料才能讓均線從第一根K棒就完整畫出來）
 
 # 與 index.html 的 SEED_STOCKS 一致；市場分類供本腳本抓取歷史資料使用
 TWSE_CODES = [
@@ -214,18 +215,19 @@ def main():
     if taiex_closes:
         taiex_metrics["lastClose"] = taiex_closes[-1]
 
-    # 2) 上市股票：直接抓 STOCK_DAY 近 3 個月
+    # 2) 上市股票：直接抓 STOCK_DAY 近 5 個月（約90+交易日，讓 series 存滿 SERIES_DAYS
+    #    同時讓 MA60 在近30日K線圖範圍內能從第一根K棒就完整畫出來）
     stock_results = {}
     for code in TWSE_CODES:
-        rows = fetch_stock_day_months(code, months=3)
+        rows = fetch_stock_day_months(code, months=5)
         metrics = compute_metrics(rows)
         if metrics:
             stock_results[code] = metrics
 
-    # 3) 上櫃股票：直接抓「個股日成交資訊」近 4 個月（含開高低收），跟上市股票一樣
+    # 3) 上櫃股票：直接抓「個股日成交資訊」近 5 個月（含開高低收），跟上市股票一樣
     #    不再需要每日累積，同一次就能拿到完整月份歷史
     for code in OTC_CODES:
-        rows = fetch_otc_stock_months(code, months=4)
+        rows = fetch_otc_stock_months(code, months=5)
         metrics = compute_metrics(rows)
         if metrics:
             stock_results[code] = metrics
@@ -239,7 +241,7 @@ def main():
 
     output = {
         "generated": today,
-        "note": "MA10/MA20/20日60日高低點由官方歷史股價計算（上市：證交所STOCK_DAY，上櫃：櫃買中心個股日成交資訊）。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。series為近60個交易日開高低收，供K線圖使用。",
+        "note": "MA10/MA20/20日60日高低點由官方歷史股價計算（上市：證交所STOCK_DAY，上櫃：櫃買中心個股日成交資訊）。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。series為近90個交易日開高低收，供K線圖使用（前端只畫最近30日K棒，多存的部分用來讓MA60能完整顯示）。",
         "taiex": taiex_metrics,
         "stocks": stock_results,
     }
