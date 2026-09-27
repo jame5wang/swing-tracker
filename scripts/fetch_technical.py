@@ -1,10 +1,12 @@
 """
 抓取追蹤股票的近期歷史股價，計算技術面參考指標，寫入 data/technical.json
 - 上市股票：透過證交所 STOCK_DAY 逐月歷史資料，計算 MA10 / MA20 / 20日與60日高低點
-- 上櫃股票：STOCK_DAY 無法取得，改用「每日累積」方式：每次執行時把當天收盤價
-  append 進 data/price_history_otc.json，隨時間累積後才能算出均線；累積天數不足
-  20 天前，技術指標會標記 insufficientHistory=true，前端會清楚顯示「資料累積中」
-  而不是假裝精確。
+- 上櫃股票：改用櫃買中心「個股日成交資訊」（tradingStock）逐月歷史資料，跟上市股票
+  一樣每次直接抓近 4 個月，不再需要「每日累積」慢慢養資料——這支端點過去沒被
+  找到，原本誤以為上櫃只有「今日快照」可用（tpex_mainboard_daily_close_quotes），
+  所以改成每天存一筆累積；但那個端點其實只是另一個不同用途的快照 API，
+  tradingStock 才是官方提供的個股歷史資料來源，一次就能拿到完整月份的
+  開高低收，不用再等好幾週才能算出 MA20/60日高低點。
 - 大盤：加權指數(TAIEX) 用證交所 FMTQIK，作為個股「相對強弱」比較基準。
         櫃買指數目前沒有找到穩定可用的官方逐日歷史 API，因此上櫃股票的相對強弱
         也先用加權指數做參考基準（非完全精確，但方向性仍有意義）。
@@ -16,9 +18,8 @@ from datetime import datetime, timezone, timedelta
 
 TWSE_STOCK_DAY = "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date={date}&stockNo={code}"
 TWSE_FMTQIK = "https://www.twse.com.tw/exchangeReport/FMTQIK?response=json&date={date}"
-OTC_HISTORY_PATH = "data/price_history_otc.json"
+TPEX_TRADING_STOCK = "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?date={date}&code={code}&response=json"
 OUTPUT_PATH = "data/technical.json"
-MAX_OTC_HISTORY_DAYS = 90  # 上櫃累積歷史保留天數上限
 
 # 與 index.html 的 SEED_STOCKS 一致；市場分類供本腳本抓取歷史資料使用
 TWSE_CODES = [
@@ -71,6 +72,46 @@ def fetch_stock_day_months(code, months):
     return ordered
 
 
+def fetch_otc_stock_months(code, months):
+    """抓取指定上櫃股票近 N 個月的個股日成交資訊，回傳依日期排序的 (date, close, high, low) list"""
+    rows = []
+    today = datetime.now(timezone(timedelta(hours=8)))
+    for i in range(months):
+        year = today.year
+        month = today.month - i
+        while month <= 0:
+            month += 12
+            year -= 1
+        date_str = f"{year}/{month:02d}/01"
+        url = TPEX_TRADING_STOCK.format(date=date_str, code=code)
+        try:
+            raw = http_get_json(url)
+        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
+            continue
+        tables = raw.get("tables") or []
+        if not tables:
+            continue
+        for row in tables[0].get("data") or []:
+            try:
+                date_roc = str(row[0]).replace("*", "").strip()
+                open_p, high_p, low_p, close_p = row[3], row[4], row[5], row[6]
+                if "--" in (str(open_p), str(high_p), str(low_p), str(close_p)):
+                    continue
+                close = float(str(close_p).replace(",", ""))
+                high = float(str(high_p).replace(",", ""))
+                low = float(str(low_p).replace(",", ""))
+                y, m, d = date_roc.split("/")
+                date_key = f"{int(y)+1911}{int(m):02d}{int(d):02d}"
+                rows.append((date_key, close, high, low))
+            except (ValueError, IndexError, TypeError):
+                continue
+    seen = {}
+    for r in rows:
+        seen[r[0]] = r
+    ordered = sorted(seen.values(), key=lambda r: r[0])
+    return ordered
+
+
 def compute_metrics(rows):
     """rows: list of (date, close, high, low)，由舊到新排序"""
     if not rows:
@@ -100,24 +141,6 @@ def compute_metrics(rows):
     if n >= 5:
         result["change5d"] = round((closes[-1] - closes[-5]) / closes[-5] * 100, 2)
     return result
-
-
-def load_otc_history():
-    try:
-        with open(OTC_HISTORY_PATH, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {}
-
-
-def append_otc_today(history, code, close, date_str):
-    series = history.setdefault(code, [])
-    if series and series[-1]["date"] == date_str:
-        series[-1]["close"] = close  # 同一天重複執行時覆蓋，不重複累積
-    else:
-        series.append({"date": date_str, "close": close})
-    if len(series) > MAX_OTC_HISTORY_DAYS:
-        del series[: len(series) - MAX_OTC_HISTORY_DAYS]
 
 
 def main():
@@ -164,37 +187,13 @@ def main():
         if metrics:
             stock_results[code] = metrics
 
-    # 3) 上櫃股票：讀取既有累積歷史，補上今天，重新計算
-    otc_history = load_otc_history()
-    try:
-        otc_snapshot = http_get_json(
-            "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
-        )
-    except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
-        otc_snapshot = []
-
-    otc_close_map = {}
-    for row in otc_snapshot if isinstance(otc_snapshot, list) else []:
-        code = str(row.get("SecuritiesCompanyCode") or row.get("Code") or "").strip()
-        close_raw = row.get("Close") or row.get("ClosingPrice") or row.get("close")
-        if code and close_raw:
-            try:
-                otc_close_map[code] = float(str(close_raw).replace(",", ""))
-            except ValueError:
-                pass
-
+    # 3) 上櫃股票：直接抓「個股日成交資訊」近 4 個月（含開高低收），跟上市股票一樣
+    #    不再需要每日累積，同一次就能拿到完整月份歷史
     for code in OTC_CODES:
-        close = otc_close_map.get(code)
-        if close is not None:
-            append_otc_today(otc_history, code, close, today)
-        series = otc_history.get(code, [])
-        rows = [(s["date"], s["close"], s["close"], s["close"]) for s in series]
+        rows = fetch_otc_stock_months(code, months=4)
         metrics = compute_metrics(rows)
         if metrics:
             stock_results[code] = metrics
-
-    with open(OTC_HISTORY_PATH, "w", encoding="utf-8") as f:
-        json.dump(otc_history, f, ensure_ascii=False, separators=(",", ":"))
 
     # 4) 個股相對大盤強弱（近5日、近20日漲跌幅相對加權指數的差）
     for code, m in stock_results.items():
@@ -205,7 +204,7 @@ def main():
 
     output = {
         "generated": today,
-        "note": "MA10/MA20/20日60日高低點由官方歷史股價計算；上櫃股票無官方逐日歷史API，改採每日累積方式，累積未達20個交易日前指標會標記為「資料累積中」。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。",
+        "note": "MA10/MA20/20日60日高低點由官方歷史股價計算（上市：證交所STOCK_DAY，上櫃：櫃買中心個股日成交資訊）。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。",
         "taiex": taiex_metrics,
         "stocks": stock_results,
     }
