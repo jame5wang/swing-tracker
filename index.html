@@ -468,7 +468,7 @@ function pctStr(v){ if(v===null) return '—'; const s=v>=0?'+':''; return s+v.t
 function changeBadgeHtml(s){
   const price=parseFloat(s.price), chg=parseFloat(s.change);
   if(isNaN(price) || isNaN(chg) || s.priceSource!=='auto') return '';
-  const prevClose=price-chg;
+  const prevClose=Math.round((price-chg)*100)/100;
   if(isNaN(prevClose) || prevClose===0) return '';
   const chgPct=(chg/prevClose*100);
   const dir = chg>0?'up':(chg<0?'down':'flat');
