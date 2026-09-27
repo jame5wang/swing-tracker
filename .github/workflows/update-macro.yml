@@ -18,13 +18,10 @@ jobs:
       - name: 抓取國際指標並計算風險燈號
         run: python3 scripts/fetch_macro.py
 
-      - name: 抓取財經新聞頭條
-        run: python3 scripts/fetch_news.py
-
       - name: 提交更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/macro.json data/news/
+          git add data/macro.json
           git diff --quiet --cached || git commit -m "更新盤前國際總經簡報 $(date -u +'%Y-%m-%d')"
           git push
