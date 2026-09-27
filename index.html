@@ -188,6 +188,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .rangeMark .rmLabel{position:absolute; top:-24px; left:50%; transform:translateX(-50%); font-size:10px; color:var(--sub); white-space:nowrap; font-weight:600;}
 .rangeMark .rmVal{position:absolute; bottom:-20px; left:50%; transform:translateX(-50%); font-size:10.5px; color:var(--mute); white-space:nowrap; font-family:var(--mono);}
 .rangeMark.sup,.rangeMark.res{background:var(--mute); opacity:.6;}
+.rangeEnds{display:flex; justify-content:space-between; font-size:10px; color:var(--mute); font-weight:600; margin-bottom:4px;}
 .rangeMark.buy{background:var(--buy);} .rangeMark.buy .rmLabel{color:var(--buy);}
 .rangeMark.sell{background:var(--sell);} .rangeMark.sell .rmLabel{color:var(--sell);}
 .rangeMark.stop{background:var(--deep);} .rangeMark.stop .rmLabel{color:var(--deep);}
@@ -428,6 +429,32 @@ try{
     localStorage.setItem(BOXRECAL_KEY,'1');
   }
 }catch(e){}
+
+// 未來排程（每月箱型/基本面重新研究）要強制更新買賣價到使用者本地端時，往這個陣列
+// push 一筆新物件即可，不用再複製整個 try/catch 區塊：
+// { key:'swingTrackerBoxRecal_v2', map:{ 'CODE':{oldBuy,newBuy,oldSell,newSell,oldStop,newStop}, ... } }
+// key 每次要換一個新的版本字串（自己遞增），且沿用同樣的「只在本地值仍等於研究出的舊值時才套用」
+// 保護機制，不會覆蓋使用者自己手動改過的價位。oldXxx/newXxx 三組都可省略其中幾個（例如這次
+// 只改了 sell，就不用寫 oldBuy/newBuy）。
+const FUTURE_PRICE_MIGRATIONS=[
+  // 範例（已套用過，勿重複加入）：
+  // {key:'swingTrackerBoxRecal_v1', map: BOXRECAL_MAP},
+];
+FUTURE_PRICE_MIGRATIONS.forEach(mig=>{
+  try{
+    if(localStorage.getItem(mig.key)) return;
+    let changed=false;
+    stocks.forEach(s=>{
+      const m=mig.map[String(s.code).trim()];
+      if(!m) return;
+      if(m.oldBuy!==undefined && Number(s.buy)===m.oldBuy){ s.buy=m.newBuy; changed=true; }
+      if(m.oldSell!==undefined && Number(s.sell)===m.oldSell){ s.sell=m.newSell; changed=true; }
+      if(m.oldStop!==undefined && Number(s.stop)===m.oldStop){ s.stop=m.newStop; changed=true; }
+    });
+    if(changed) save();
+    localStorage.setItem(mig.key,'1');
+  }catch(e){}
+});
 
 try{
   if(!localStorage.getItem(SEED_KEY)){
@@ -1068,6 +1095,9 @@ function renderDetail(i){
 
   let rangeHtml='';
   const marks=[];
+  const td60=(technicalData && technicalData.stocks) ? technicalData.stocks[String(s.code||'').trim()] : null;
+  const prevHigh60=td60 && !isNaN(parseFloat(td60.high60)) ? parseFloat(td60.high60) : null;
+  const prevLow60=td60 && !isNaN(parseFloat(td60.low60)) ? parseFloat(td60.low60) : null;
   if(!isNaN(stop)) marks.push({v:stop,label:'跌深買進',cls:'stop'});
   if(!isNaN(buy)) marks.push({v:buy,label:'安全買進',cls:'buy'});
   else if(!isNaN(support)) marks.push({v:support,label:'AI支撐',cls:'sup'});
@@ -1084,8 +1114,16 @@ function renderDetail(i){
         <span class="rmLabel">${m.label}</span>
         <span class="rmVal">${m.v}</span>
       </div>`).join('');
+    // 前波高點/前波低點（60日）只當作區間頭尾的固定參考標籤，不納入同一把尺的比例計算，
+    // 避免因為距離現有買賣價太遠而把真正在操作的價位擠成一團
+    const endsHtml=(prevLow60!==null || prevHigh60!==null) ? `
+      <div class="rangeEnds">
+        <span class="rangeEndLabel">${prevLow60!==null?`前波低點 ${prevLow60}`:''}</span>
+        <span class="rangeEndLabel">${prevHigh60!==null?`前波高點 ${prevHigh60}`:''}</span>
+      </div>` : '';
     rangeHtml=`
       <div class="rangeWrap">
+        ${endsHtml}
         <div class="rangeTrack">
           ${marksHtml}
           <div class="rangeDot" style="left:${posOf(p)}%" title="現價 ${p}"></div>
