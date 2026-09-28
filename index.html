@@ -227,13 +227,11 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .distItem .dVal{font-size:15px; font-weight:700; margin-top:2px; font-family:var(--mono);}
 .plList{display:flex; flex-direction:column; gap:8px; margin:16px 0;}
 .plRow{display:flex; align-items:center; justify-content:space-between; gap:10px; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:10px 14px;}
-.plRow.current{background:color-mix(in srgb, var(--accent) 10%, var(--panel2)); border:2px solid var(--accent); padding:9px 13px; box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent), 0 0 14px 0 color-mix(in srgb, var(--accent) 35%, transparent);}
+.plRow.current{border:2px solid var(--accent); padding:9px 13px;}
 .plLabelWrap{display:flex; align-items:center; gap:8px; min-width:0;}
 .plDot{width:8px; height:8px; border-radius:50%; flex:none; background:var(--sub);}
 .plLabel{font-size:12.5px; font-weight:600; color:var(--sub); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.plRow.current .plLabel{color:var(--accent); font-weight:750;}
 .plPrice{font-family:var(--mono); font-weight:700; font-size:15px; margin-left:auto;}
-.plRow.current .plPrice{font-size:17px; color:var(--accent);}
 .plDist{font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--sub); min-width:58px; text-align:right;}
 .plRow.buy .plDot{background:var(--buy);} .plRow.buy .plLabel{color:var(--buy);}
 .plRow.sell .plDot{background:var(--sell);} .plRow.sell .plLabel{color:var(--sell);}
@@ -1332,7 +1330,7 @@ function renderDetail(i){
       <div class="plRow ${row.cls}">
         <div class="plLabelWrap">${row.cls!=='current'?'<span class="plDot"></span>':''}<span class="plLabel">${row.label}</span></div>
         <div class="plPrice">${row.price}</div>
-        ${row.dist?`<div class="plDist">${row.dist}</div>`:''}
+        <div class="plDist">${row.dist||''}</div>
       </div>`).join('')}</div>`;
 
   const overviewHtml = `
