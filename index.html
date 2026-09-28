@@ -921,19 +921,21 @@ function renderRows(){
 
   const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0,'st-extended':0};
   stocks.forEach(s=>{ const c=statusOf(s).cls; if(counts[c]!==undefined) counts[c]++; });
-  const nearCount=counts['st-near-buy']+counts['st-near-sell'];
 
   if(summaryBox){
     const pillActive=(key)=> pillFilter===key ? ' active' : '';
+    // 由買進排到賣出（價格由低到高）：超跌區 → 建倉買進 → 接近提醒‧買進 → 突破後拉回找買點
+    // → 續抱觀察 → 接近提醒‧賣出 → 漲多停利減碼 → 突破區間/創短期新高尚未拉回
     summaryBox.innerHTML=`
       <button type="button" class="pill${pillActive(null)}" data-pill="all"><b>${stocks.length}</b> 檔追蹤中</button>
-      <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 建倉買進</button>
-      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 漲多停利減碼</button>
       <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 超跌區</button>
+      <button type="button" class="pill${pillActive('st-buy')}" data-pill="st-buy" style="color:var(--buy)"><b>${counts['st-buy']}</b> 建倉買進</button>
+      <button type="button" class="pill${pillActive('st-near-buy')}" data-pill="st-near-buy" style="color:var(--buy)"><b>${counts['st-near-buy']}</b> 接近提醒‧買進</button>
       <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 突破後拉回找買點</button>
-      <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 突破區間/創短期新高尚未拉回</button>
-      <button type="button" class="pill${pillActive('near')}" data-pill="near"><b>${nearCount}</b> 接近提醒</button>
       <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
+      <button type="button" class="pill${pillActive('st-near-sell')}" data-pill="st-near-sell" style="color:var(--sell)"><b>${counts['st-near-sell']}</b> 接近提醒‧賣出</button>
+      <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 漲多停利減碼</button>
+      <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 突破區間/創短期新高尚未拉回</button>
     `;
     summaryBox.querySelectorAll('[data-pill]').forEach(btn=>{
       btn.addEventListener('click',()=>{
@@ -949,8 +951,7 @@ function renderRows(){
     if(signalOnly && !SIGNAL_CLASSES.includes(statusOf(s).cls)) return false;
     if(pillFilter){
       const cls=statusOf(s).cls;
-      if(pillFilter==='near'){ if(cls!=='st-near-buy' && cls!=='st-near-sell') return false; }
-      else if(cls!==pillFilter) return false;
+      if(cls!==pillFilter) return false;
     }
     if(!q) return true;
     return (s.code||'').toLowerCase().includes(q) || (s.name||'').toLowerCase().includes(q);
