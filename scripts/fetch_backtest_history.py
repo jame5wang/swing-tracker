@@ -59,7 +59,7 @@ def fetch_stock_day_months(code, months):
         url = TWSE_STOCK_DAY.format(date=date_str, code=code)
         try:
             raw = http_get_json(url)
-        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
+        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, OSError, TimeoutError, ValueError, KeyError):
             continue
         data = raw.get("data") or []
         for row in data:
@@ -91,7 +91,7 @@ def fetch_otc_stock_months(code, months):
         url = TPEX_TRADING_STOCK.format(date=date_str, code=code)
         try:
             raw = http_get_json(url)
-        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
+        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, OSError, TimeoutError, ValueError, KeyError):
             continue
         tables = raw.get("tables") or []
         if not tables:
@@ -123,13 +123,21 @@ def main():
 
     result = {}
     for code in TWSE_CODES:
-        rows = fetch_stock_day_months(code, months=MONTHS)
+        try:
+            rows = fetch_stock_day_months(code, months=MONTHS)
+        except Exception as e:  # 任何單一代號的錯誤都不該讓整支腳本中斷
+            print(f"TWSE {code}: 失敗 {e}")
+            continue
         if rows:
             result[code] = rows
         print(f"TWSE {code}: {len(rows)} days")
 
     for code in OTC_CODES:
-        rows = fetch_otc_stock_months(code, months=MONTHS)
+        try:
+            rows = fetch_otc_stock_months(code, months=MONTHS)
+        except Exception as e:
+            print(f"OTC {code}: 失敗 {e}")
+            continue
         if rows:
             result[code] = rows
         print(f"OTC {code}: {len(rows)} days")
