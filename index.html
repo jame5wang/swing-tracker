@@ -227,13 +227,13 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .distItem .dVal{font-size:15px; font-weight:700; margin-top:2px; font-family:var(--mono);}
 .plList{display:flex; flex-direction:column; gap:8px; margin:16px 0;}
 .plRow{display:flex; align-items:center; justify-content:space-between; gap:10px; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:10px 14px;}
-.plRow.current{background:transparent; border-style:dashed; padding:6px 14px;}
+.plRow.current{background:color-mix(in srgb, var(--accent) 10%, var(--panel2)); border:2px solid var(--accent); padding:9px 13px; box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent), 0 0 14px 0 color-mix(in srgb, var(--accent) 35%, transparent);}
 .plLabelWrap{display:flex; align-items:center; gap:8px; min-width:0;}
 .plDot{width:8px; height:8px; border-radius:50%; flex:none; background:var(--sub);}
 .plLabel{font-size:12.5px; font-weight:600; color:var(--sub); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.plRow.current .plLabel{color:var(--mute);}
+.plRow.current .plLabel{color:var(--accent); font-weight:750;}
 .plPrice{font-family:var(--mono); font-weight:700; font-size:15px; margin-left:auto;}
-.plRow.current .plPrice{font-size:17px;}
+.plRow.current .plPrice{font-size:17px; color:var(--accent);}
 .plDist{font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--sub); min-width:58px; text-align:right;}
 .plRow.buy .plDot{background:var(--buy);} .plRow.buy .plLabel{color:var(--buy);}
 .plRow.sell .plDot{background:var(--sell);} .plRow.sell .plLabel{color:var(--sell);}
@@ -1323,8 +1323,11 @@ function renderDetail(i){
   if(!isNaN(sellRefVal)) plLevelRows.push({cls:'sell', label:sellRefLabel, val:sellRefVal, price:fmt(sellRefVal)||'—', dist:pctStr(toSell)});
   if(!isNaN(stop)) plLevelRows.push({cls:'stop', label:'跌深買進', val:stop, price:fmt(stop)||'—', dist:pctStr(toStop)});
   if(stretchVal!==null) plLevelRows.push({cls:'stretch', label:'突破箱型/前高訊號', val:stretchVal, price:stretchVal, dist:pctStr(toStretch)});
+  // 「目前股價」不再固定放最上面，改成跟其他價位一起依價格高低排序，
+  // 這樣才能一眼看出現價實際卡在哪兩個點位之間，並用外框特別標示出來。
+  if(!isNaN(p)) plLevelRows.push({cls:'current', label:'目前股價', val:p, price:fmt(p)||'—'});
   plLevelRows.sort((a,b)=>b.val-a.val); // 由高到低排列，跟上方橫向尺規的價位高低方向一致
-  const plRows=[{cls:'current', label:'目前股價', price:fmt(s.price)||'—'}, ...plLevelRows];
+  const plRows = isNaN(p) ? [{cls:'current', label:'目前股價', price:'—'}, ...plLevelRows] : plLevelRows;
   const plListHtml=`<div class="plList">${plRows.map(row=>`
       <div class="plRow ${row.cls}">
         <div class="plLabelWrap">${row.cls!=='current'?'<span class="plDot"></span>':''}<span class="plLabel">${row.label}</span></div>
