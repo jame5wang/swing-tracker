@@ -92,6 +92,18 @@ main{max-width:720px; margin:0 auto; padding:18px 16px 60px; position:relative;}
 .macroItem .miPrice{font-size:13.5px; font-weight:700; margin-top:3px; font-family:var(--mono); white-space:nowrap;}
 .macroItem .miVal{font-size:11.5px; font-weight:700; margin-top:1px; font-family:var(--mono); white-space:nowrap;}
 .macroItem .miVal.up{color:var(--buy);} .macroItem .miVal.down{color:var(--sell);}
+.breadthRow{display:flex; align-items:center; gap:9px; flex-wrap:wrap; margin-top:10px; padding:8px 10px; border-radius:9px; background:var(--panel2);}
+.breadthLight{font-size:11.5px; font-weight:700; padding:3px 10px; border-radius:20px; font-family:var(--mono); white-space:nowrap;}
+.breadthLight.riskGreen{color:var(--buy); background:var(--buyBg);}
+.breadthLight.riskYellow{color:var(--sell); background:var(--sellBg);}
+.breadthLight.riskRed{color:var(--stop); background:var(--stopBg);}
+.breadthLight.riskGray{color:var(--mute); background:var(--panel);}
+.breadthDetail{font-size:11.5px; color:var(--sub); font-family:var(--mono);}
+.soxItem{box-shadow:0 0 0 1px color-mix(in srgb, var(--accent2) 30%, transparent);}
+.soxTag{display:inline-block; margin-left:5px; font-size:9px; font-weight:700; padding:0 5px; border-radius:5px; background:color-mix(in srgb, var(--accent2) 18%, var(--panel)); color:var(--accent2); vertical-align:1px;}
+.miVal5d{font-size:10.5px; font-weight:650; margin-top:1px; font-family:var(--mono); white-space:nowrap; color:var(--sub);}
+.miVal5d.up{color:var(--buy);} .miVal5d.down{color:var(--sell);}
+.breadthWarn{font-size:11px; color:var(--deep); font-weight:650; margin-top:4px; line-height:1.5;}
 .macroEvents{font-size:11.5px; color:var(--sub); margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
 .macroNews{margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
 .macroNewsTitle{font-size:11.5px; color:var(--sub); margin-bottom:6px; font-weight:650;}
@@ -718,11 +730,36 @@ async function loadResearchData(){
 }
 
 let technicalData=null;
+// 市場內部強弱燈號：計算追蹤股票中「收盤價跌破自己20日均線」的比例。
+// 這個比例就是回測驗證過、能有效壓低系統性下跌期間最大回撤的「大盤濾網」同一套邏輯
+// （見7月AI資本支出疑慮事件回測：加上此濾網後最大回撤從28.0%降到8.17%），
+// 現在做成即時指標讓使用者不用等回測就能看到目前的市場內部結構。
+const BREADTH_RED_PCT=50; // 跌破20日均線比例 >= 50% 視為系統性轉弱
+const BREADTH_YELLOW_PCT=30; // >= 30% 視為部分轉弱、留意擴散
+let marketBreadthData=null;
+function computeMarketBreadth(){
+  if(!technicalData || !technicalData.stocks) return null;
+  let weak=0, total=0;
+  Object.values(technicalData.stocks).forEach(t=>{
+    if(t && t.lastClose!=null && t.ma20!=null && !isNaN(t.lastClose) && !isNaN(t.ma20)){
+      total++;
+      if(t.lastClose < t.ma20) weak++;
+    }
+  });
+  if(total===0) return null;
+  const pct = weak/total*100;
+  let level='green', label='多數追蹤股票站上20日均線，內部結構健康';
+  if(pct>=BREADTH_RED_PCT){ level='red'; label='多數追蹤股票同步跌破20日均線，屬系統性轉弱期間'; }
+  else if(pct>=BREADTH_YELLOW_PCT){ level='yellow'; label='部分追蹤股票轉弱，留意是否持續擴散'; }
+  return {pct:Math.round(pct*10)/10, weak, total, level, label};
+}
 async function loadTechnical(){
   const json=await fetchJson('data/technical.json');
   if(!json) return;
   technicalData=json;
+  marketBreadthData=computeMarketBreadth();
   render(); // 列表頁的「拉回買回」提示與強勢燈號也要跟著技術資料更新，不只是詳情頁
+  renderMacroCard(); // 強弱燈號放在盤前簡報卡片內，技術資料到位後要一併重繪
 }
 
 let macroData=null;
@@ -779,6 +816,14 @@ function relativeTimeFrom(iso){
 
 function fmtPct(v){ if(v===undefined||v===null||isNaN(v)) return null; const s=v>=0?'+':''; return s+v.toFixed(2)+'%'; }
 
+// 「跌深買進(超跌區)」訊號在市場內部強弱燈號轉紅（多數追蹤股票同步跌破20日均線）時，
+// 額外附加系統性風險警示——超跌可能是個股機會，也可能是系統性下殺的一部分，
+// 這時候更需要先確認基本面假設是否還成立，而不是機械式加碼。
+function stopBreadthWarningHtml(cls){
+  if(cls!=='st-stop' || !marketBreadthData || marketBreadthData.level!=='red') return '';
+  return `<div class="breadthWarn">⚠ 目前${marketBreadthData.weak}/${marketBreadthData.total}檔追蹤股票同步跌破20日均線，屬系統性下跌期間，加碼前請留意基本面假設是否仍成立</div>`;
+}
+
 let macroCollapsed=false;
 function renderMacroCard(){
   const el=document.getElementById('macroCard');
@@ -792,11 +837,23 @@ function renderMacroCard(){
     const d=idx[k];
     if(!d) return;
     const dir = d.changePct>0?'up':(d.changePct<0?'down':'');
-    gridHtml+=`<div class="macroItem"><div class="miLabel">${names[k]}</div><div class="miPrice">${d.price}</div><div class="miVal ${dir}">${fmtPct(d.changePct)||''}</div></div>`;
+    const isSox = k==='sox';
+    const c5 = d.change5dPct;
+    const c5Html = (isSox && c5!==undefined && c5!==null)
+      ? `<div class="miVal5d ${c5>0?'up':(c5<0?'down':'')}">5日${fmtPct(c5)||''}</div>` : '';
+    gridHtml+=`<div class="macroItem${isSox?' soxItem':''}"><div class="miLabel">${names[k]}${isSox?'<span class="soxTag">領先指標</span>':''}</div><div class="miPrice">${d.price}</div><div class="miVal ${dir}">${fmtPct(d.changePct)||''}</div>${c5Html}</div>`;
   });
   const events=(macroData.upcomingEvents||[]);
   const eventsHtml = events.length
-    ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.date} ${e.name}${e.daysAway===0?'（今天）':`（${e.daysAway}天後）`}`).join('、')}</div>`
+    ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.watch?'🔥':''}${e.date} ${e.name}${e.daysAway===0?'（今天）':`（${e.daysAway}天後）`}`).join('、')}</div>`
+    : '';
+  const breadth = marketBreadthData;
+  const bCls = breadth ? 'risk'+breadth.level.charAt(0).toUpperCase()+breadth.level.slice(1) : '';
+  const breadthHtml = breadth
+    ? `<div class="breadthRow ${bCls}">
+        <span class="breadthLight ${bCls}">${breadth.label}</span>
+        <span class="breadthDetail">${breadth.weak}/${breadth.total} 檔（${breadth.pct}%）跌破自己的20日均線</span>
+      </div>`
     : '';
   const newsItems=(newsData && newsData.items) || [];
   const hasNewsArchive = newsIndex.length>0;
@@ -846,6 +903,7 @@ function renderMacroCard(){
       </div>
       <div class="macroBody">
         <div class="macroReasons">${(rl.reasons||[]).join('；')}</div>
+        ${breadthHtml}
         ${gridHtml?`<div class="macroGrid">${gridHtml}</div>`:''}
         ${eventsHtml}
         ${newsHtml}
@@ -996,6 +1054,7 @@ function renderRows(){
           <div class="rInfo">
             <span class="rName">${s.name||'(未命名)'}</span><span class="rCode">${s.code||''}</span>
             <div class="rLabel">${st.label}</div>
+            ${stopBreadthWarningHtml(st.cls)}
           </div>
           <div class="rPriceWrap">
             <div class="rPrice">${s.price?fmt(s.price):'—'}</div>
@@ -1244,7 +1303,7 @@ function renderDetail(i){
 
   let momentumNoteHtml='';
   if(st.cls==='st-stop'){
-    momentumNoteHtml=`<div class="srcList" style="color:var(--deep); margin:10px 0 0">◆ 跌破深度加碼價不代表要出場——這裡假設你追蹤的都是已經自己確認過基本面的標的，超跌本身可能是機會而不是風險。系統只負責標出「到價了」，不做技術面抄底判斷；請自己確認基本面假設是否還成立（財報、產業展望有沒有變化），成立就當加碼機會，不成立就是真的該重新檢視部位了。</div>`;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--deep); margin:10px 0 0">◆ 跌破深度加碼價不代表要出場——這裡假設你追蹤的都是已經自己確認過基本面的標的，超跌本身可能是機會而不是風險。系統只負責標出「到價了」，不做技術面抄底判斷；請自己確認基本面假設是否還成立（財報、產業展望有沒有變化），成立就當加碼機會，不成立就是真的該重新檢視部位了。</div>${stopBreadthWarningHtml(st.cls)}`;
   }else if(st.cls==='st-rebuy'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，屬於「噴出後找拉回買回」的典型時機，比追高進場更有紀律。</div>`;
   }else if(st.momentum==='first-stage'){

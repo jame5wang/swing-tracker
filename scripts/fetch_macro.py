@@ -46,6 +46,18 @@ KNOWN_EVENTS_2026 = [
     ("2026-10-02", "美國非農就業"), ("2026-11-06", "美國非農就業"), ("2026-12-04", "美國非農就業"),
 ]
 
+# AI資本支出／超大型雲端業者財報行事曆：這些公司的財報與資本支出指引，常是牽動
+# 半導體供應鏈（含本站追蹤標的）股價的關鍵日，故獨立標記為「高波動關注日」。
+# 日期來源：公司官方投資人關係頁面（已公告者）或主流財經資訊平台的預估排程（未正式確認者，
+# 名稱會標註「預估」），會隨公司後續正式公告調整。
+AI_CAPEX_EARNINGS_2026 = [
+    ("2026-10-15", "台積電 3Q26法說會"),
+    ("2026-10-28", "微軟 FY27 Q1財報（預估，未正式確認）"),
+    ("2026-10-28", "Alphabet(Google) 3Q26財報（預估，未正式確認）"),
+    ("2026-10-28", "Meta 3Q26財報（預估，未正式確認）"),
+    ("2026-11-17", "NVIDIA 3Q FY27財報"),
+]
+
 
 def http_get_json(url):
     req = urllib.request.Request(
@@ -70,11 +82,16 @@ def fetch_symbol(symbol):
             return None
         last, prev = closes[-1], closes[-2]
         change_pct = round((last - prev) / prev * 100, 2)
-        return {
+        out = {
             "price": round(last, 2),
             "changePct": change_pct,
             "regularMarketTime": meta.get("regularMarketTime"),
         }
+        # 5日累計漲跌：費半(SOX)常領先台股約1~2週反應（如2026年7月AI資本支出疑慮事件），
+        # 單日漲跌容易忽略連續轉弱的趨勢，額外算5日變化供領先指標判讀用。
+        if len(closes) >= 6 and closes[-6]:
+            out["change5dPct"] = round((last - closes[-6]) / closes[-6] * 100, 2)
+        return out
     except (urllib.error.URLError, urllib.error.HTTPError, KeyError, IndexError, ValueError, TypeError):
         return None
 
@@ -103,6 +120,13 @@ def compute_risk_light(data):
             reasons.append(f"費半下跌{sox['changePct']}%")
         elif sox["changePct"] >= 2:
             reasons.append(f"費半上漲{sox['changePct']}%（偏正面）")
+        c5 = sox.get("change5dPct")
+        if c5 is not None:
+            if c5 <= -5:
+                score += 1
+                reasons.append(f"費半近5日累計跌{c5}%（領先指標轉弱，留意擴散至台股半導體供應鏈）")
+            elif c5 >= 5:
+                reasons.append(f"費半近5日累計漲{c5}%（領先指標偏正面）")
 
     tsm = data.get("tsmAdr")
     if tsm:
@@ -141,11 +165,13 @@ def compute_risk_light(data):
 def upcoming_events(today_str, days=5):
     today = datetime.strptime(today_str, "%Y-%m-%d").date()
     out = []
-    for date_str, name in KNOWN_EVENTS_2026:
+    all_events = [(d, n, False) for d, n in KNOWN_EVENTS_2026] + \
+                 [(d, n, True) for d, n in AI_CAPEX_EARNINGS_2026]
+    for date_str, name, watch in all_events:
         d = datetime.strptime(date_str, "%Y-%m-%d").date()
         delta = (d - today).days
         if 0 <= delta <= days:
-            out.append({"date": date_str, "name": name, "daysAway": delta})
+            out.append({"date": date_str, "name": name, "daysAway": delta, "watch": watch})
     out.sort(key=lambda e: e["date"])
     return out
 
@@ -185,8 +211,8 @@ def main():
         "stale": stale,
         "indices": indices,
         "riskLight": risk_light,
-        "upcomingEvents": upcoming_events(today),
-        "note": "指標來源 Yahoo Finance 公開資料，風險燈號為簡化規則式框架（VIX／費半／台積電ADR／美股三大指數綜合評分），僅供觀察國際市場情緒參考，不構成投資或資產配置建議。",
+        "upcomingEvents": upcoming_events(today, days=10),
+        "note": "指標來源 Yahoo Finance 公開資料，風險燈號為簡化規則式框架（VIX／費半單日與5日變化／台積電ADR／美股三大指數綜合評分），近期事件含台積電/NVIDIA/微軟/Google/Meta財報等AI資本支出高波動關注日，僅供觀察國際市場情緒參考，不構成投資或資產配置建議。",
     }
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
