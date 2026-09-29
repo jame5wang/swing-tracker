@@ -13,6 +13,7 @@
 - series：近60個交易日的日線開高低收（日期統一轉成西元 YYYY-MM-DD），供前端K線圖使用。
 """
 import json
+import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone, timedelta
@@ -44,10 +45,31 @@ OTC_CODES = [
 ]
 
 
+REQUEST_RETRIES = 3
+REQUEST_PAUSE = 0.35  # 每次請求間隔（秒），避免連續爆量請求被證交所/櫃買中心限流
+CRITICAL_MONTHS = 2   # 本月+上月：涵蓋最近20個交易日（MA20/20日高低點/最新收盤價）所需資料
+
+
+class FetchError(Exception):
+    pass
+
+
 def http_get_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.load(resp)
+    """單一請求最多重試 REQUEST_RETRIES 次。所有例外都要接住——之前只接 URLError，
+    讀取逾時（TimeoutError / IncompleteRead）會直接讓整支腳本當掉，連帶讓後續
+    reconcile / 營收更新 / commit 全部被跳過，當天抓到的新股價也一起丟掉。"""
+    last_exc = None
+    for attempt in range(1, REQUEST_RETRIES + 1):
+        time.sleep(REQUEST_PAUSE)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.load(resp)
+        except Exception as e:
+            last_exc = e
+            if attempt < REQUEST_RETRIES:
+                time.sleep(3 * attempt)
+    raise FetchError(str(last_exc))
 
 
 def roc_date_to_iso(date_roc):
@@ -57,9 +79,10 @@ def roc_date_to_iso(date_roc):
 
 
 def fetch_stock_day_months(code, months):
-    """抓取指定股票近 N 個月的 STOCK_DAY 資料，回傳依日期排序的 dict list：
-    {date(ISO), open, high, low, close}"""
+    """抓取指定股票近 N 個月的 STOCK_DAY 資料，回傳 (依日期排序的 dict list, 失敗月份索引list)：
+    {date(ISO), open, high, low, close}；月份索引 0=本月、1=上月…"""
     rows = []
+    failed = []
     today = datetime.now(timezone(timedelta(hours=8)))
     for i in range(months):
         year = today.year
@@ -71,7 +94,11 @@ def fetch_stock_day_months(code, months):
         url = TWSE_STOCK_DAY.format(date=date_str, code=code)
         try:
             raw = http_get_json(url)
-        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
+        except FetchError:
+            failed.append(i)
+            continue
+        if not isinstance(raw, dict):
+            failed.append(i)
             continue
         data = raw.get("data") or []
         for row in data:
@@ -89,13 +116,13 @@ def fetch_stock_day_months(code, months):
     for r in rows:
         seen[r["date"]] = r
     ordered = sorted(seen.values(), key=lambda r: r["date"])
-    return ordered
+    return ordered, failed
 
 
 def fetch_otc_stock_months(code, months):
-    """抓取指定上櫃股票近 N 個月的個股日成交資訊，回傳依日期排序的 dict list：
-    {date(ISO), open, high, low, close}"""
+    """抓取指定上櫃股票近 N 個月的個股日成交資訊，回傳 (依日期排序的 dict list, 失敗月份索引list)"""
     rows = []
+    failed = []
     today = datetime.now(timezone(timedelta(hours=8)))
     for i in range(months):
         year = today.year
@@ -107,7 +134,11 @@ def fetch_otc_stock_months(code, months):
         url = TPEX_TRADING_STOCK.format(date=date_str, code=code)
         try:
             raw = http_get_json(url)
-        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
+        except FetchError:
+            failed.append(i)
+            continue
+        if not isinstance(raw, dict):
+            failed.append(i)
             continue
         tables = raw.get("tables") or []
         if not tables:
@@ -131,7 +162,7 @@ def fetch_otc_stock_months(code, months):
     for r in rows:
         seen[r["date"]] = r
     ordered = sorted(seen.values(), key=lambda r: r["date"])
-    return ordered
+    return ordered, failed
 
 
 def compute_metrics(rows):
@@ -153,7 +184,11 @@ def compute_metrics(rows):
         result["ma20"] = round(sum(closes[-20:]) / 20, 2)
         result["high20"] = max(highs[-20:])
         result["low20"] = min(lows[-20:])
-        result["change20d"] = round((closes[-1] - closes[-20]) / closes[-20] * 100, 2)
+    if n >= 21:
+        # 近20個交易日漲跌幅：要跟「20個交易日前」的收盤價比，也就是 closes[-21]。
+        # 之前用 closes[-20] 其實只算了19個交易日（5日同理，之前只算了4日）。
+        result["change20d"] = round((closes[-1] - closes[-21]) / closes[-21] * 100, 2)
+    if n >= 20:
         # 近20日平均真實波動幅度（近似ATR%）：每日(高-低)/收盤價，取20日平均，
         # 用來衡量「這檔股票平常一天正常噪音有多大」，買賣停價位間距至少要拉開
         # 這個噪音的幾倍，否則只是正常盤中波動就會被誤判為跌破/突破。
@@ -170,8 +205,8 @@ def compute_metrics(rows):
     elif n >= 1:
         result["high60"] = max(highs)
         result["low60"] = min(lows)
-    if n >= 5:
-        result["change5d"] = round((closes[-1] - closes[-5]) / closes[-5] * 100, 2)
+    if n >= 6:
+        result["change5d"] = round((closes[-1] - closes[-6]) / closes[-6] * 100, 2)
     # K線圖用的日線序列（近 SERIES_DAYS 個交易日），欄位縮寫節省檔案大小
     series = rows[-SERIES_DAYS:]
     result["series"] = [
@@ -197,7 +232,9 @@ def main():
         date_str = f"{year}{month:02d}01"
         try:
             raw = http_get_json(TWSE_FMTQIK.format(date=date_str))
-        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError):
+        except FetchError:
+            continue
+        if not isinstance(raw, dict):
             continue
         for row in raw.get("data") or []:
             try:
@@ -210,29 +247,61 @@ def main():
     taiex_closes = [seen[k] for k in sorted(seen.keys())]
 
     taiex_metrics = {}
-    if len(taiex_closes) >= 5:
-        taiex_metrics["change5d"] = round((taiex_closes[-1] - taiex_closes[-5]) / taiex_closes[-5] * 100, 2)
-    if len(taiex_closes) >= 20:
-        taiex_metrics["change20d"] = round((taiex_closes[-1] - taiex_closes[-20]) / taiex_closes[-20] * 100, 2)
+    if len(taiex_closes) >= 6:
+        taiex_metrics["change5d"] = round((taiex_closes[-1] - taiex_closes[-6]) / taiex_closes[-6] * 100, 2)
+    if len(taiex_closes) >= 21:
+        taiex_metrics["change20d"] = round((taiex_closes[-1] - taiex_closes[-21]) / taiex_closes[-21] * 100, 2)
     if taiex_closes:
         taiex_metrics["lastClose"] = taiex_closes[-1]
 
     # 2) 上市股票：直接抓 STOCK_DAY 近 5 個月（約90+交易日，讓 series 存滿 SERIES_DAYS
     #    同時讓 MA60 在近30日K線圖範圍內能從第一根K棒就完整畫出來）
+    try:
+        with open(OUTPUT_PATH, encoding="utf-8") as f:
+            previous = (json.load(f) or {}).get("stocks") or {}
+    except (FileNotFoundError, json.JSONDecodeError):
+        previous = {}
+
     stock_results = {}
-    for code in TWSE_CODES:
-        rows = fetch_stock_day_months(code, months=5)
+    fallback_codes = []
+    partial_codes = []
+
+    def settle(code, rows, failed):
+        """本月或上月抓取失敗 → 最近20個交易日資料不完整（可能連今天的收盤都沒有），
+        沿用上一次成功的資料並標記 stale，避免寫出一份「看起來正常、其實缺最新交易日」的序列，
+        再被 reconcile_prices.py 拿去覆蓋掉正確的收盤價。只有更早的月份失敗時，
+        近期指標仍正確，保留新資料但標記 partialHistory（MA60/60日高低點可能不完整）。"""
+        critical_failed = any(i < CRITICAL_MONTHS for i in failed)
+        if critical_failed:
+            old = previous.get(code)
+            if old:
+                old = dict(old)
+                old["stale"] = True
+                old["staleReason"] = "近期月份資料抓取失敗，沿用上次成功的資料"
+                stock_results[code] = old
+                fallback_codes.append(code)
+                return
         metrics = compute_metrics(rows)
-        if metrics:
-            stock_results[code] = metrics
+        if not metrics:
+            return
+        if critical_failed:
+            metrics["stale"] = True
+            metrics["staleReason"] = "近期月份資料抓取失敗，且沒有上次成功的資料可沿用"
+            fallback_codes.append(code)
+        elif failed:
+            metrics["partialHistory"] = True
+            partial_codes.append(code)
+        stock_results[code] = metrics
+
+    for code in TWSE_CODES:
+        rows, failed = fetch_stock_day_months(code, months=5)
+        settle(code, rows, failed)
 
     # 3) 上櫃股票：直接抓「個股日成交資訊」近 5 個月（含開高低收），跟上市股票一樣
     #    不再需要每日累積，同一次就能拿到完整月份歷史
     for code in OTC_CODES:
-        rows = fetch_otc_stock_months(code, months=5)
-        metrics = compute_metrics(rows)
-        if metrics:
-            stock_results[code] = metrics
+        rows, failed = fetch_otc_stock_months(code, months=5)
+        settle(code, rows, failed)
 
     # 4) 個股相對大盤強弱（近5日、近20日漲跌幅相對加權指數的差）
     for code, m in stock_results.items():
@@ -241,8 +310,11 @@ def main():
         if "change20d" in m and "change20d" in taiex_metrics:
             m["relStrength20d"] = round(m["change20d"] - taiex_metrics["change20d"], 2)
 
+    latest_dates = [m["series"][-1]["d"] for m in stock_results.values() if m.get("series") and not m.get("stale")]
     output = {
         "generated": today,
+        "latestTradingDate": max(latest_dates) if latest_dates else None,
+        "staleCodes": sorted(fallback_codes),
         "note": "MA10/MA20/20日60日高低點由官方歷史股價計算（上市：證交所STOCK_DAY，上櫃：櫃買中心個股日成交資訊）。相對強弱以加權指數(TAIEX)為比較基準，上櫃股票缺乏對應的櫃買指數精確資料，僅供方向性參考。series為近90個交易日開高低收，供K線圖使用（前端只畫最近30日K棒，多存的部分用來讓MA60能完整顯示）。",
         "taiex": taiex_metrics,
         "stocks": stock_results,
@@ -251,7 +323,11 @@ def main():
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, separators=(",", ":"))
 
-    print(f"寫入 {len(stock_results)} 檔股票技術指標，日期：{today}")
+    if fallback_codes:
+        print(f"::warning::{len(fallback_codes)} 檔近期資料抓取失敗、沿用上次資料：{', '.join(sorted(fallback_codes))}")
+    if partial_codes:
+        print(f"較早月份抓取失敗（近期指標不受影響）：{', '.join(sorted(partial_codes))}")
+    print(f"寫入 {len(stock_results)} 檔股票技術指標，執行日：{today}，最新交易日：{output['latestTradingDate']}")
 
 
 if __name__ == "__main__":

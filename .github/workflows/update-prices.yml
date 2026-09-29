@@ -4,14 +4,23 @@ on:
   schedule:
     # 每個交易日台北時間下午 5:00（UTC 09:00）執行，週六日跳過
     - cron: '0 9 * * 1-5'
-    # 安全網：30分鐘後（台北時間下午 5:30）再跑一次。抓取腳本本身已有重試機制，
+    # 安全網：台北時間下午 5:30 再跑一次。抓取腳本本身已有重試機制，
     # 但若證交所/櫃買中心當下真的整個掛掉太久，這次會再補抓一次；
-    # 若5:00那次已經成功，這次資料沒有變化就不會產生新的commit，不會有副作用。
+    # 若前一次已經成功，這次資料沒有變化就不會產生新的commit，不會有副作用。
     - cron: '30 9 * * 1-5'
+    # 第二道安全網：台北時間晚上 8:10。2026-09-29 曾發生證交所批次收盤價 API 盤後好幾個小時
+    # 都還是舊資料，晚一點再抓一次，讓非追蹤股票的收盤價資料也能補上。
+    - cron: '10 12 * * 1-5'
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+# 同一個 workflow 同時只跑一個（例如 17:00 那次跑比較久、17:30 又觸發），
+# 後來的會排隊等前一個跑完，不會兩個同時改同一批檔案。
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -19,19 +28,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 每個抓取步驟都 continue-on-error：任何一支腳本意外當掉，都不該讓後面的步驟
+      # （尤其是最後的 commit）被跳過，否則其他已經抓到的新資料也會一起丟掉。
       - name: 抓取證交所盤後資料（上市）
+        continue-on-error: true
         run: python3 scripts/fetch_prices.py
 
       - name: 抓取櫃買中心盤後資料（上櫃）
+        continue-on-error: true
         run: python3 scripts/fetch_prices_otc.py
 
       - name: 計算技術面指標（MA10/MA20、20日60日高低點、相對大盤強弱）
+        continue-on-error: true
         run: python3 scripts/fetch_technical.py
 
-      - name: 用技術指標資料校正收盤價（防止證交所批次API發布延遲導致收盤價停在前一交易日）
+      - name: 用逐日K資料校正追蹤股票收盤價（防止批次API發布延遲導致收盤價停在前一交易日）
+        continue-on-error: true
         run: python3 scripts/reconcile_prices.py
 
       - name: 更新單月營收（公開資訊觀測站 MOPS 官方資料）
+        continue-on-error: true
         run: python3 scripts/fetch_revenue.py
 
       - name: 提交更新
@@ -39,5 +55,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/prices.json data/prices_otc.json data/technical.json data/research.json
-          git diff --quiet --cached || git commit -m "更新盤後收盤價與技術指標 $(date -u +'%Y-%m-%d')"
-          git push
+          git diff --quiet --cached && exit 0
+          git commit -m "更新盤後收盤價與技術指標 $(date -u +'%Y-%m-%d')"
+          # 其他排程（總經、新聞、Claude 分析）可能同時推送到 main，推送失敗時先 rebase 再重試
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*15))
+          done
+          echo "::error::推送失敗（重試5次仍衝突）"
+          exit 1

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>詹姆5王的股市觀測站</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%88%3C/text%3E%3C/svg%3E">
 <script>
 (function(){
   try{
@@ -170,6 +171,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .row .rChg.up{color:var(--buy);} .row .rChg.down{color:var(--sell);} .row .rChg.flat{color:var(--mute);}
 .row .rPrevClose{font-size:10px; color:var(--mute); margin-top:1px; font-family:var(--mono); white-space:nowrap;}
 .row .rChev{color:var(--mute); font-size:18px;}
+.row .rStalePrice{color:var(--sell);}
 .dotStatus.st-buy{background:var(--buy); box-shadow:0 0 7px 0 var(--buy);} .dotStatus.st-sell{background:var(--sell); box-shadow:0 0 7px 0 var(--sell);}
 .dotStatus.st-stop{background:var(--deep); box-shadow:0 0 7px 0 var(--deep);} .dotStatus.st-hold{background:var(--hold);}
 .dotStatus.st-none{background:var(--mute);}
@@ -302,7 +304,6 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 
 <script>
 const KEY='swingTrackerStocks_v1';
-const SEED_KEY='swingTrackerSeeded_v3';
 let stocks=[];
 let autoData=null;
 let activeIndex=null;
@@ -386,155 +387,34 @@ const SEED_STOCKS=[
   {code:'6510',name:'精測',price:3310.00,sector:'測試設備'},
 ];
 
-try{
-  const raw=localStorage.getItem(KEY);
-  stocks=raw?JSON.parse(raw):[];
-}catch(e){ stocks=[]; }
-
-// 依使用者實際期貨交易紀錄回測校正：原先賣出/停損目標區間偏寬（平均獲利區間設定約+9%才停利），
-// 但實際交易習慣顯示平均獲利即出手（個股約+4%中位數）、停損約-5%中位數，屬於短波段、紀律嚴謹的
-// 區間操作型；因此下修「停利」目標為更貼近實際節奏，停損則小幅收斂。只在使用者尚未手動改過
-// AI 建議值（即目前值仍等於舊版預設值）時才套用，不覆蓋使用者自行輸入過的價位。
-const RECAL_KEY='swingTrackerRecal_v1';
-const RECAL_MAP={
-  '3037':{oldSell:1195,newSell:1150,oldStop:1050,newStop:1060},
-  '8046':{oldSell:1260,newSell:1195,oldStop:1050,newStop:1065},
-  '3189':{oldSell:985,newSell:925,oldStop:800,newStop:810},
-  '2383':{oldSell:5150,newSell:4980,oldStop:4600,newStop:4630},
-  '6274':{oldSell:1580,newSell:1475,oldStop:1300,newStop:1315},
-  '6213':{oldSell:600,newSell:565,oldStop:495,newStop:500},
-  '6672':{oldSell:335,newSell:320,oldStop:285,newStop:290},
-  '2368':{oldSell:1135,newSell:1070,oldStop:950,newStop:960},
-  '4958':{oldSell:495,newSell:480,oldStop:445,newStop:450},
-  '8358':{oldSell:550,newSell:510,oldStop:450,newStop:455},
-  '6182':{oldSell:128,newSell:119,oldStop:105,newStop:106},
-  '3711':{oldSell:705,newSell:675,oldStop:630,newStop:635},
-  '6239':{oldSell:294,newSell:285,oldStop:262,newStop:265},
-  '6147':{oldSell:222,newSell:210,oldStop:190,newStop:190},
-  '2303':{oldSell:159,newSell:155,oldStop:146,newStop:147},
-  '2344':{oldSell:178,newSell:171,oldStop:158,newStop:159},
-  '2408':{oldSell:522,newSell:510,oldStop:470,newStop:475},
-  '8299':{oldSell:2280,newSell:2120,oldStop:1880,newStop:1895},
-  '5289':{oldSell:1400,newSell:1295,oldStop:1150,newStop:1160},
-  '3481':{oldSell:51,newSell:49,oldStop:46,newStop:46},
-  '2308':{oldSell:1955,newSell:1910,oldStop:1800,newStop:1810},
-  '2301':{oldSell:293,newSell:285,oldStop:270,newStop:270},
-  '2455':{oldSell:570,newSell:550,oldStop:505,newStop:510},
-  '3105':{oldSell:535,newSell:500,oldStop:440,newStop:445},
-  '4971':{oldSell:585,newSell:540,oldStop:480,newStop:485},
-  '2313':{oldSell:227,newSell:225,oldStop:210,newStop:210},
-  '6488':{oldSell:1030,newSell:955,oldStop:850,newStop:855},
-};
-try{
-  if(!localStorage.getItem(RECAL_KEY)){
-    let recalChanged=false;
-    stocks.forEach(s=>{
-      const m=RECAL_MAP[String(s.code).trim()];
-      if(!m) return;
-      if(Number(s.sell)===m.oldSell){ s.sell=m.newSell; recalChanged=true; }
-      if(Number(s.stop)===m.oldStop){ s.stop=m.newStop; recalChanged=true; }
-    });
-    if(recalChanged) save();
-    localStorage.setItem(RECAL_KEY,'1');
-  }
-}catch(e){}
-
-// 第二輪校正：改用「箱型操作」邏輯重算買進/減碼/深度加碼價。上一輪(RECAL_MAP)是用回測交易
-// 中位數(+4%/-5%)套統一公式，導致買賣價擠在一起，跟真實箱型結構脫節；這輪改成逐檔看真實
-// 日K線，抓出「真箱頂/箱底」(排除單日噴出／崩跌造成的假極值)，讓減碼價貼近實際壓力區、
-// 深度加碼價貼近實際箱底破位，買進價則對齊近期整理區間支撐。同樣只在值仍等於上一版舊值時
-// 才套用，不覆蓋使用者自己改過的價位。
-const BOXRECAL_KEY='swingTrackerBoxRecal_v1';
-const BOXRECAL_MAP={
-  '3037':{oldBuy:1120,newBuy:1120,oldSell:1150,newSell:1190,oldStop:1060,newStop:1000},
-  '8046':{oldBuy:1150,newBuy:1150,oldSell:1195,newSell:1270,oldStop:1065,newStop:1000},
-  '3189':{oldBuy:880,newBuy:880,oldSell:925,newSell:990,oldStop:810,newStop:770},
-  '2383':{oldBuy:4850,newBuy:4850,oldSell:4980,newSell:5150,oldStop:4630,newStop:4600},
-  '6213':{oldBuy:540,newBuy:510,oldSell:565,newSell:595,oldStop:500,newStop:480},
-  '6672':{oldBuy:305,newBuy:300,oldSell:320,newSell:337,oldStop:290,newStop:262},
-  '2368':{oldBuy:1020,newBuy:1020,oldSell:1070,newSell:1150,oldStop:960,newStop:940},
-  '4958':{oldBuy:465,newBuy:470,oldSell:480,newSell:505,oldStop:450,newStop:450},
-  '3711':{oldBuy:655,newBuy:658,oldSell:675,newSell:710,oldStop:635,newStop:590},
-  '6239':{oldBuy:280,newBuy:272,oldSell:285,newSell:290,oldStop:265,newStop:262},
-  '2303':{oldBuy:152,newBuy:152,oldSell:155,newSell:163,oldStop:147,newStop:133},
-  '2344':{oldBuy:166,newBuy:164,oldSell:171,newSell:180,oldStop:159,newStop:155},
-  '3481':{oldBuy:48,newBuy:47,oldSell:49,newSell:50.5,oldStop:46,newStop:45.5},
-  '2308':{oldBuy:1875,newBuy:1850,oldSell:1910,newSell:1965,oldStop:1810,newStop:1560},
-  '2301':{oldBuy:280,newBuy:274,oldSell:285,newSell:299,oldStop:270,newStop:265},
-  '2455':{oldBuy:535,newBuy:520,oldSell:550,newSell:575,oldStop:510,newStop:495},
-  '2313':{oldBuy:219,newBuy:218,oldSell:225,newSell:230,oldStop:210,newStop:208},
-  '2408':{oldBuy:497,newBuy:475,oldSell:510,newSell:535,oldStop:475,newStop:465},
-};
-try{
-  if(!localStorage.getItem(BOXRECAL_KEY)){
-    let boxChanged=false;
-    stocks.forEach(s=>{
-      const m=BOXRECAL_MAP[String(s.code).trim()];
-      if(!m) return;
-      if(Number(s.buy)===m.oldBuy){ s.buy=m.newBuy; boxChanged=true; }
-      if(Number(s.sell)===m.oldSell){ s.sell=m.newSell; boxChanged=true; }
-      if(Number(s.stop)===m.oldStop){ s.stop=m.newStop; boxChanged=true; }
-    });
-    if(boxChanged) save();
-    localStorage.setItem(BOXRECAL_KEY,'1');
-  }
-}catch(e){}
-
-// 未來排程（每月箱型/基本面重新研究）要強制更新買賣價到使用者本地端時，往這個陣列
-// push 一筆新物件即可，不用再複製整個 try/catch 區塊：
-// { key:'swingTrackerBoxRecal_v2', map:{ 'CODE':{oldBuy,newBuy,oldSell,newSell,oldStop,newStop}, ... } }
-// key 每次要換一個新的版本字串（自己遞增），且沿用同樣的「只在本地值仍等於研究出的舊值時才套用」
-// 保護機制，不會覆蓋使用者自己手動改過的價位。oldXxx/newXxx 三組都可省略其中幾個（例如這次
-// 只改了 sell，就不用寫 oldBuy/newBuy）。
-const FUTURE_PRICE_MIGRATIONS=[
-  // 範例（已套用過，勿重複加入）：
-  // {key:'swingTrackerBoxRecal_v1', map: BOXRECAL_MAP},
-];
-FUTURE_PRICE_MIGRATIONS.forEach(mig=>{
+// 股票清單一律以 SEED_STOCKS 為準重新建立（網站是唯讀觀察站，沒有使用者自訂股票），
+// localStorage 只當作「上次看到的價格／價位／研究資料」快取，讓頁面在資料載入完成前先有內容。
+// 之前的作法是把整份清單存在 localStorage、只把 SEED 新增的股票補進去，會造成：
+// 1) 從清單移除的股票永遠留著；2) 股票改名不會生效；3) 瀏覽器封鎖 localStorage 時整頁永遠空白。
+// （原本的 RECAL/BOXRECAL 價位遷移程式也一併移除：價位一律以 data/research.json 為準覆蓋。）
+function buildStocks(){
+  const cached={};
   try{
-    if(localStorage.getItem(mig.key)) return;
-    let changed=false;
-    stocks.forEach(s=>{
-      const m=mig.map[String(s.code).trim()];
-      if(!m) return;
-      if(m.oldBuy!==undefined && Number(s.buy)===m.oldBuy){ s.buy=m.newBuy; changed=true; }
-      if(m.oldSell!==undefined && Number(s.sell)===m.oldSell){ s.sell=m.newSell; changed=true; }
-      if(m.oldStop!==undefined && Number(s.stop)===m.oldStop){ s.stop=m.newStop; changed=true; }
-    });
-    if(changed) save();
-    localStorage.setItem(mig.key,'1');
+    const raw=localStorage.getItem(KEY);
+    const arr=raw?JSON.parse(raw):[];
+    if(Array.isArray(arr)) arr.forEach(c=>{ if(c && c.code) cached[String(c.code).trim()]=c; });
   }catch(e){}
-});
-
-try{
-  if(!localStorage.getItem(SEED_KEY)){
-    if(stocks.length===0){
-      stocks=SEED_STOCKS.map(d=>({
-        code:d.code, name:d.name, price:d.price, sector:d.sector||'',
-        buy:'', sell:'', stop:'', support:'', resist:'', note:'',
-        updated:'即時報價截圖帶入（手動，非官方收盤價）',
-        priceSource:'manual'
-      }));
-      save();
-    }
-    localStorage.setItem(SEED_KEY,'1');
-  }else{
-    // 已經初次建立過的使用者：若程式碼內建清單新增了尚未追蹤的標的，補進來（不覆蓋既有資料）
-    let addedNew=false;
-    SEED_STOCKS.forEach(d=>{
-      if(!stocks.some(s=>String(s.code).trim()===String(d.code).trim())){
-        stocks.push({
-          code:d.code, name:d.name, price:d.price, sector:d.sector||'',
-          buy:'', sell:'', stop:'', support:'', resist:'', note:'',
-          updated:'即時報價截圖帶入（手動，非官方收盤價）',
-          priceSource:'manual'
-        });
-        addedNew=true;
-      }
-    });
-    if(addedNew) save();
-  }
-}catch(e){}
+  return SEED_STOCKS.map(d=>{
+    const c=cached[d.code]||{};
+    const hasCachedPrice = c.price!==undefined && c.price!==null && c.price!=='';
+    return {
+      buy:'', sell:'', stop:'', support:'', resist:'', note:'',
+      ...c,
+      code:d.code, name:d.name,
+      sector:c.sector||d.sector||'',
+      price: hasCachedPrice ? c.price : d.price,
+      // 快取來的價格在本次盤後資料載入前都視為「舊資料」，不顯示漲跌（避免把前一天的漲跌當成今天的）
+      priceSource: hasCachedPrice ? 'cache' : 'seed',
+      updated: hasCachedPrice ? (c.updated||'') : '內建初始價格（尚未取得盤後資料）',
+    };
+  });
+}
+stocks=buildStocks();
 
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(stocks)); }catch(e){} }
 function fmt(n){ return (n===''||n===null||n===undefined||isNaN(n))?'':Number(n); }
@@ -543,6 +423,29 @@ function pctStr(v){ if(v===null) return '—'; const s=v>=0?'+':''; return s+v.t
 
 // 今日漲跌／昨收：change 是自動盤後資料帶的今日漲跌金額（帶正負號），沒有的話（手動輸入股價）
 // 就不顯示，避免顯示錯誤的漲跌資訊
+// 這檔的股價不是最新交易日的資料時（當天沒成交、這次沒抓到、還沒載入完成）明確標示出來，
+// 避免把舊價格當成今天的收盤價在判斷訊號
+function priceAgeHtml(s){
+  if(!autoData) return '';
+  if(s.priceSource==='auto'){
+    if(!latestPriceDate || !s.priceDate || s.priceDate>=latestPriceDate) return '';
+    return `<div class="rPrevClose rStalePrice">股價日期 ${s.priceDate}</div>`;
+  }
+  return `<div class="rPrevClose rStalePrice">${s.priceSource==='cache'?'上次瀏覽價格，非最新':'初始價格，非最新'}</div>`;
+}
+
+// 詳情頁會收起上方資料狀態列，所以股價不是最新交易日時要在詳情頁直接提示
+function detailPriceNoteHtml(s){
+  if(!autoData) return '';
+  let msg='';
+  if(s.priceSource==='auto'){
+    if(latestPriceDate && s.priceDate && s.priceDate<latestPriceDate) msg=`⚠ 這檔股價是 ${s.priceDate} 的收盤價（最新交易日為 ${latestPriceDate}，可能當天未成交），訊號判斷請留意`;
+  }else{
+    msg='⚠ 這檔這次沒有取得最新盤後股價，顯示的是較舊的價格，訊號判斷可能不準';
+  }
+  return msg?`<div class="srcList" style="color:var(--sell); margin:8px 0 0">${msg}</div>`:'';
+}
+
 function changeBadgeHtml(s){
   const price=parseFloat(s.price), chg=parseFloat(s.change);
   if(isNaN(price) || isNaN(chg) || s.priceSource!=='auto') return '';
@@ -591,6 +494,17 @@ function stretchTargetOf(sellRef){
 // 都是出場後很快抓拉回買回，等於用均線接力續抱。以下兩個機制就是把這個差異變成系統化提醒：
 // 1) 到達停利目標但均線仍多頭排列時，標示為「分批減碼，勿全出」而非單純「賣出」
 // 2) 噴出後拉回測10日均線、且均線仍未走弱時，標示「拉回買回」提醒，取代靜態買價
+// 「噴出未拉回」的判斷門檻（2026-09-27 定義）：近20個交易日漲幅≥20%，且現價距20日高點≤7%
+const EXTENDED_CHANGE20_PCT=20;
+const EXTENDED_NEAR_HIGH_PCT=7;
+function isExtendedNow(trend, p){
+  if(!trend || isNaN(p)) return false;
+  const t=trend.t;
+  if(t.change20d===undefined || t.high20===undefined || !t.high20) return false;
+  const distHigh=(t.high20-p)/t.high20*100;
+  return t.change20d>=EXTENDED_CHANGE20_PCT && distHigh<=EXTENDED_NEAR_HIGH_PCT;
+}
+
 function statusOf(s){
   const p=parseFloat(s.price);
   if(isNaN(p)) return {cls:'st-none', label:'尚未取得股價'};
@@ -606,15 +520,20 @@ function statusOf(s){
   if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'建倉買進（AI 建議）':'建倉買進'};
 
   // 噴出未拉回：近20日大漲且現價仍貼近20日高點，代表這波噴出還沒被真正拉回測試過，
-  // 現在的「安全買進」只是噴出後的短暫整理，不是經過驗證的支撐，追價風險較高
-  const isExtended = !!(s.research && s.research.technical && s.research.technical.extended);
+  // 現在的「安全買進」只是噴出後的短暫整理，不是經過驗證的支撐，追價風險較高。
+  // 改為每天用技術指標即時判斷（原本是分析當下寫死在 research.json 的旗標，股價回落後不會解除，
+  // 例如 2026-09-29 聯發科回落到安全買進上方1%，仍被標成「勿追價」，蓋掉了「接近提醒‧安全買進」）。
+  const isExtended = isExtendedNow(trend, p);
   if(isExtended && buyRef!==null && p>buyRef && (sellRef===null || p<sellRef)){
     return {cls:'st-extended', label:'突破區間/創短期新高尚未拉回 · 追價風險高，勿在此追價'};
   }
 
   // 噴出後拉回測10日均線：股價明顯高於原始買點（代表已經噴出過一段），
   // 現在拉回到10日線附近，且均線仍多頭排列 → 視為「買回」訊號，而不是原本的靜態買點
-  if(trend && trend.uptrend && buyRef!==null){
+  // 「突破後」要真的突破過：近20日最高價曾站上部分停利（箱頂），否則只是箱型內震盪、
+  // 剛好貼近10日線，不該標成「突破後拉回找買點」（例如穩懋從未站上箱頂卻被標成買回訊號）。
+  const brokeOut = !!(trend && sellRef!==null && trend.t.high20!==undefined && trend.t.high20>=sellRef);
+  if(trend && trend.uptrend && buyRef!==null && brokeOut){
     const ma10=trend.t.ma10;
     const distToMa10=(p-ma10)/ma10*100;
     const extendedAboveBuy=(p-buyRef)/buyRef*100;
@@ -653,28 +572,36 @@ async function fetchJson(path){
   catch(e){ return null; }
 }
 
+let latestPriceDate=''; // 追蹤股票中最新的收盤價交易日，用來標示「股價不是最新交易日」的個別股票
 async function loadAutoData(){
   const bar=document.getElementById('dataBar');
   const text=document.getElementById('dataBarText');
   const [twse,tpex]=await Promise.all([fetchJson('data/prices.json'),fetchJson('data/prices_otc.json')]);
-  const merged=[]; let dates=[]; let anyStale=false;
-  if(twse && twse.stocks){
-    merged.push(...twse.stocks.map(s=>({...s,market:'上市'})));
-    if(twse.date) dates.push(`上市 ${twse.date}${twse.stale?'（抓取失敗，非最新）':''}`);
-    if(twse.stale) anyStale=true;
-  }
-  if(tpex && tpex.stocks){
-    merged.push(...tpex.stocks.map(s=>({...s,market:'上櫃'})));
-    if(tpex.date) dates.push(`上櫃 ${tpex.date}${tpex.stale?'（抓取失敗，非最新）':''}`);
-    if(tpex.stale) anyStale=true;
-  }
+  const merged=[]; const parts=[]; const warnings=[];
+  const addMarket=(json,market)=>{
+    if(!json || !Array.isArray(json.stocks)){
+      warnings.push(`${market}資料讀取失敗，${market}股票顯示的是上次瀏覽時的價格`);
+      return;
+    }
+    const fileDate=json.trackedDate||json.date||'';
+    merged.push(...json.stocks.map(s=>({...s,market,date:s.date||fileDate})));
+    parts.push(`${market} ${fileDate}${json.stale?'（抓取失敗，非最新）':''}`);
+    if(json.stale) warnings.push(`${market}收盤價抓取失敗，顯示的是前一次成功的資料`);
+  };
+  addMarket(twse,'上市');
+  addMarket(tpex,'上櫃');
   if(merged.length){
     autoData={stocks:merged};
-    // stale：抓取當下重試多次仍失敗，保留的是前一次成功的舊資料，不是今天的收盤價，
-    // 用醒目的警示樣式提醒使用者現在看到的股價/訊號可能不是最新的。
-    bar.className=anyStale?'dataBar stale':'dataBar ok';
-    text.textContent=(anyStale?'⚠ ':'')+'自動盤後資料：'+dates.join('，');
     applyAutoPrices();
+  }
+  // stale／讀取失敗：顯示的股價可能不是最新交易日，用醒目的警示樣式提醒，
+  // 避免使用者以為看到的是今天的收盤價、進而依據過期股價判斷買賣訊號。
+  if(warnings.length){
+    bar.className='dataBar stale';
+    text.textContent='⚠ '+(parts.length?('自動盤後資料：'+parts.join('，')+'　'):'')+warnings.join('；');
+  }else if(parts.length){
+    bar.className='dataBar ok';
+    text.textContent='自動盤後資料：'+parts.join('，');
   }else{
     bar.className='dataBar';
     text.textContent='尚無自動盤後資料，等待排程首次執行';
@@ -683,15 +610,25 @@ async function loadAutoData(){
 
 function applyAutoPrices(){
   if(!autoData) return;
+  const byCode={};
+  autoData.stocks.forEach(x=>{ byCode[String(x.code).trim()]=x; });
   let changed=false;
   stocks.forEach(s=>{
     if(!s.code) return;
-    const match=autoData.stocks.find(x=>String(x.code).trim()===String(s.code).trim());
-    if(match && match.close && !isNaN(parseFloat(match.close))){
-      s.price=match.close; s.priceSource='auto'; s.updated=(match.market||'')+' 自動更新'; changed=true;
-      s.change=(match.change!==undefined && match.change!==null && match.change!=='' && !isNaN(parseFloat(match.change))) ? parseFloat(match.change) : '';
+    const match=byCode[String(s.code).trim()];
+    const close=match ? parseFloat(String(match.close).replace(/,/g,'')) : NaN;
+    if(match && !isNaN(close)){
+      s.price=close; s.priceSource='auto'; s.priceDate=match.date||'';
+      s.updated=`${match.market||''} ${match.date||''} 收盤`.trim();
+      const chg=parseFloat(String(match.change).replace(/,/g,''));
+      s.change=isNaN(chg)?'':chg;
+      changed=true;
+    }else if(s.priceSource==='auto'){
+      // 這次沒有拿到這檔的收盤價（例如當天暫停交易）：保留舊價格但不再當成今天的資料
+      s.priceSource='cache'; changed=true;
     }
   });
+  latestPriceDate=stocks.reduce((m,s)=>(s.priceSource==='auto' && s.priceDate && s.priceDate>m)?s.priceDate:m,'');
   if(changed){ save(); render(); }
 }
 
@@ -724,9 +661,10 @@ function mergeResearchList(list, opts){
     // 網站已改為唯讀觀察站（不再有手動輸入價位的介面），這些欄位一律都是自動產生的，
     // 所以永遠以 research.json 最新版本覆蓋，不再有「使用者手動改過就不覆蓋」的顧慮。
     ['support','resist','buy','sell','stop'].forEach(f=>{
-      if(item[f]!==undefined && item[f]!==null && item[f]!=='' && s[f]!==item[f]){
-        s[f]=item[f]; changed=true;
-      }
+      if(!(f in item)) return;
+      // research.json 明確給 null/空字串代表「清除這個價位」，之前會被忽略而沿用舊值
+      const v=(item[f]===null || item[f]===undefined) ? '' : item[f];
+      if(s[f]!==v){ s[f]=v; changed=true; }
     });
   });
   if(changed){ save(); render(); }
@@ -794,13 +732,15 @@ async function loadNews(){
 async function loadNewsForCurrentDate(){
   const date=newsIndex[newsDateIdx];
   if(!date) return;
-  digestData=null;
   const [json, digest]=await Promise.all([
     fetchJson(`data/news/${date}.json`),
     fetchJson(`data/news/${date}-digest.json`),
   ]);
-  if(json) newsData=json;
-  if(digest) digestData=digest;
+  // 快速連點「較舊/較新」時，較早發出的請求可能比較晚回來：只採用目前選中日期的結果
+  if(newsIndex[newsDateIdx]!==date) return;
+  // 這天的檔案讀取失敗時，不能沿用上一天的內容（之前會出現「日期是A、內容是B」的錯亂）
+  newsData = json || {date, items:[], missing:true};
+  digestData = digest || null;
   renderMacroCard();
   render(); // 產業分類旁的「相關新聞」需要 digestData 就緒後才能標示，一併重繪列表
 }
@@ -822,6 +762,17 @@ function relativeTimeFrom(iso){
   if(diffHr<24) return `${diffHr}小時前`;
   const diffDay=Math.round(diffHr/24);
   return `${diffDay}天前`;
+}
+
+// 台北時區的今天（YYYY-MM-DD）與日期差，用來即時計算事件倒數、判斷新聞是不是「今天」
+function taipeiToday(){
+  try{ return new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Taipei'}); }
+  catch(e){ const d=new Date(Date.now()+8*3600*1000); return d.toISOString().slice(0,10); }
+}
+function daysBetween(fromIso,toIso){
+  const a=Date.UTC(+fromIso.slice(0,4),+fromIso.slice(5,7)-1,+fromIso.slice(8,10));
+  const b=Date.UTC(+toIso.slice(0,4),+toIso.slice(5,7)-1,+toIso.slice(8,10));
+  return Math.round((b-a)/86400000);
 }
 
 function fmtPct(v){ if(v===undefined||v===null||isNaN(v)) return null; const s=v>=0?'+':''; return s+v.toFixed(2)+'%'; }
@@ -853,7 +804,12 @@ function renderMacroCard(){
       ? `<div class="miVal5d ${c5>0?'up':(c5<0?'down':'')}">5日${fmtPct(c5)||''}</div>` : '';
     gridHtml+=`<div class="macroItem${isSox?' soxItem':''}"><div class="miLabel">${names[k]}${isSox?'<span class="soxTag">領先指標</span>':''}</div><div class="miPrice">${d.price}</div><div class="miVal ${dir}">${fmtPct(d.changePct)||''}</div>${c5Html}</div>`;
   });
-  const events=(macroData.upcomingEvents||[]);
+  // 倒數天數在瀏覽器即時計算：macro.json 只在每個交易日早上8點產生一次，
+  // 直接用檔案裡的 daysAway 會在週末/隔天看到錯的倒數，已經過去的事件也還掛著「今天」
+  const todayTpe=taipeiToday();
+  const events=(macroData.upcomingEvents||[])
+    .map(e=>({...e, daysAway: daysBetween(todayTpe, e.date)}))
+    .filter(e=>e.daysAway>=0);
   const eventsHtml = events.length
     ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.watch?'🔥':''}${e.date} ${e.name}${e.daysAway===0?'（今天）':`（${e.daysAway}天後）`}`).join('、')}</div>`
     : '';
@@ -867,13 +823,13 @@ function renderMacroCard(){
     : '';
   const newsItems=(newsData && newsData.items) || [];
   const hasNewsArchive = newsIndex.length>0;
-  const newsDateLabel = newsData && newsData.date ? newsData.date : '';
+  const newsDateLabel = newsIndex[newsDateIdx] || (newsData && newsData.date) || '';
   const canGoOlder = newsDateIdx < newsIndex.length-1;
   const canGoNewer = newsDateIdx > 0;
   const newsPagerHtml = hasNewsArchive
     ? `<div class="newsPager">
         <button type="button" id="newsOlderBtn" class="newsPagerBtn" ${canGoOlder?'':'disabled'}>‹ 較舊</button>
-        <span class="newsPagerDate">${newsDateLabel}${newsDateIdx===0?'（今天）':''}</span>
+        <span class="newsPagerDate">${newsDateLabel}${newsDateLabel===taipeiToday()?'（今天）':''}</span>
         <button type="button" id="newsNewerBtn" class="newsPagerBtn" ${canGoNewer?'':'disabled'}>較新 ›</button>
       </div>`
     : '';
@@ -938,6 +894,9 @@ function render(){
   if(macroEl) macroEl.style.display = isDetail ? 'none' : '';
   if(dataBarEl) dataBarEl.style.display = isDetail ? 'none' : '';
   if(isDetail) renderDetail(activeIndex);
+  // 列表已經在畫面上時只重繪列表內容，不重建搜尋框——資料是非同步陸續載入的，
+  // 之前每載入一份資料就重建一次搜尋框，打字打到一半會失去焦點（手機鍵盤會直接收起來）
+  else if(document.getElementById('rows') && document.getElementById('searchBox')) renderRows();
   else renderList();
 }
 
@@ -1028,9 +987,12 @@ function renderRows(){
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'突破區間/創短期新高尚未拉回','near':'接近提醒','st-hold':'續抱觀察'};
-    const emptyMsg = signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
-      : pillFilter ? `目前沒有股票屬於「${pillLabels[pillFilter]||pillFilter}」。`
+    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'突破區間/創短期新高尚未拉回','st-near-buy':'接近提醒‧買進','st-near-sell':'接近提醒‧賣出','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillName = pillFilter ? (pillLabels[pillFilter]||pillFilter) : '';
+    const emptyMsg = (signalOnly && pillFilter) ? `「今日訊號」和「${pillName}」兩個篩選同時開著，沒有股票同時符合，可以關掉其中一個。`
+      : (q && (signalOnly || pillFilter)) ? `在目前的篩選條件下，找不到符合「${searchQuery}」的股票。`
+      : signalOnly ? '今天沒有股票達到買進／賣出／深度加碼訊號，可以先休息一下。'
+      : pillFilter ? `目前沒有股票屬於「${pillName}」。`
       : `找不到符合「${searchQuery}」的股票`;
     rowsEl.innerHTML=`<div class="empty">${emptyMsg}</div>`;
     return;
@@ -1069,6 +1031,7 @@ function renderRows(){
           <div class="rPriceWrap">
             <div class="rPrice">${s.price?fmt(s.price):'—'}</div>
             ${changeBadgeHtml(s)}
+            ${priceAgeHtml(s)}
           </div>
           <div class="rChev">›</div>
         </div>`;
@@ -1371,6 +1334,7 @@ function renderDetail(i){
         <div class="ticker">${s.name||'(未命名)'}<span class="code">${s.code||''}</span>${s.sector?`<span class="sectorTag">${s.sector}</span>`:''}</div>
         <div class="status ${st.cls}">${st.label}</div>
       </div>
+      ${detailPriceNoteHtml(s)}
 
       <div class="tabBar">
         ${tabs.map(t=>`<button type="button" class="tabBtn${t.id===activeTab?' active':''}" data-tab="${t.id}">${t.label}${t.count?`<span class="tabBadge">${t.count}</span>`:(t.has?'<span class="tabBadge">•</span>':'')}</button>`).join('')}
@@ -1380,7 +1344,7 @@ function renderDetail(i){
       </div>
 
       <div class="cardFoot">
-        <span class="updated">${s.updated?('更新於 '+s.updated):'尚未更新'}</span>
+        <span class="updated">${s.updated?('股價：'+s.updated):'尚未取得盤後股價'}</span>
       </div>
     </div>
   `;

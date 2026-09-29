@@ -15,6 +15,7 @@
 import csv
 import io
 import json
+import time
 import urllib.request
 import urllib.error
 
@@ -114,9 +115,15 @@ def main():
     revenue_by_code = {}
     any_success = False
     for market, url in MOPS_URLS.items():
-        try:
-            text = http_get_text(url)
-        except (urllib.error.URLError, urllib.error.HTTPError):
+        text = None
+        for attempt in range(1, 4):
+            try:
+                text = http_get_text(url)
+                break
+            except Exception as e:  # 讀取逾時（TimeoutError/IncompleteRead）不是 URLError，之前會讓整支腳本當掉
+                print(f"{market} 月營收第{attempt}次抓取失敗：{e}")
+                time.sleep(5 * attempt)
+        if text is None:
             continue
         parsed = parse_revenue_csv(text)
         if parsed:

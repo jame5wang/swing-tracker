@@ -7,7 +7,9 @@ data/news/YYYY-MM-DD.json（索引在 data/news/index.json），讓網站可以�
 公開、免費、無需金鑰，非爬蟲行為。
 
 「相關持股」比對邏輯：
-1. 直接比對新聞標題是否出現你追蹤的27檔個股名稱／代號。
+1. 直接比對新聞標題是否出現你追蹤的個股名稱／代號（清單直接讀網站 index.html 的 SEED_STOCKS，
+   新增追蹤股票時不用再回來改這支腳本）。名稱是常見詞彙的（全新、大量、創意、新代、南亞）
+   改用全名比對，避免「全新產品」「大量出貨」之類的標題被誤標成持股新聞。
 2. 主題關鍵字比對——例如新聞提到「輝達」「GB300」「AI伺服器」等AI晶片供應鏈
    關鍵字時，即使沒有直接點名某檔台股，也會關聯到你持股中屬於該供應鏈的個股
    （ABF載板／CCL／封測／矽晶圓等）。這是規則式關鍵字比對，不是語意理解，
@@ -40,8 +42,8 @@ FEEDS = [
     {"url": "https://tw.stock.yahoo.com/rss?category=tw-market", "tag": "台股"},
 ]
 
-# 追蹤中的27檔個股：代號 -> 名稱（用於直接比對新聞標題是否點名）
-STOCK_NAMES = {
+# 備援清單：讀不到 index.html 時才使用（正常情況下以 SEED_STOCKS 為準，見 load_stock_names）
+FALLBACK_STOCK_NAMES = {
     "3037": "欣興", "8046": "南電", "3189": "景碩",
     "2383": "台光電", "6274": "台燿", "6213": "聯茂", "6672": "騰輝電子",
     "2368": "金像電", "4958": "臻鼎", "8358": "金居", "2313": "華通",
@@ -137,18 +139,80 @@ def fetch_feed(feed):
                 "pubDate": dt.astimezone(timezone.utc).isoformat(),
             })
         return items
-    except (urllib.error.URLError, urllib.error.HTTPError, ET.ParseError, ValueError):
+    except Exception as e:  # 包含讀取逾時等非 URLError 例外，之前沒接住會讓整支腳本當掉
+        print(f"{feed['url']} 抓取失敗：{e}")
         return None
+
+
+# 名稱本身是常見詞彙、或會誤中其他公司/地區名稱的股票，改用較不會誤判的寫法比對
+NAME_PATTERN_OVERRIDES = {
+    "2455": r"全新光電",                 # 「全新」是常見形容詞（全新產品、全新架構）
+    "3167": r"大量科技",                 # 「大量」是常見副詞（大量出貨）
+    "3443": r"創意電子",                 # 「創意」是常見名詞
+    "7750": r"新代科技",                 # 「新代」會誤中「新代工」
+    "1303": r"南亞(?!科|洲|太|地區|國家|局勢|市場|各國)",  # 避免誤中南亞科(2408)與「南亞地區」
+    "6672": r"騰輝",
+    "6739": r"竹陞",
+    "4576": r"大銀微",
+    "3711": r"日月光",
+    "4971": r"(?<![A-Za-z])IET(?![A-Za-z])",
+}
+
+
+def load_stock_names():
+    """從網站主清單 index.html 的 SEED_STOCKS 讀取追蹤股票（代號→名稱）。
+    之前這裡手動維護一份清單，後來新增的股票都沒補進來（72檔只涵蓋35檔）。"""
+    try:
+        with open("index.html", encoding="utf-8") as f:
+            html = f.read()
+        pairs = re.findall(r"code:'(\w+)',name:'([^']+)'", html)
+        if pairs:
+            return dict(pairs)
+    except OSError:
+        pass
+    return dict(FALLBACK_STOCK_NAMES)
+
+
+STOCK_NAMES = load_stock_names()
+
+
+def name_pattern(code, name):
+    if code in NAME_PATTERN_OVERRIDES:
+        return NAME_PATTERN_OVERRIDES[code]
+    base = re.sub(r"-(KY|創)$", "", name)
+    return re.escape(base)
+
+
+# 直接點名：名稱或代號（代號前後不能緊接其他數字，避免 23030 之類誤中 2303）
+NAME_REGEXES = [
+    (code, name, re.compile(f"{name_pattern(code, name)}|(?<!\\d){code}(?!\\d)"))
+    for code, name in STOCK_NAMES.items()
+]
+
+
+def _bounded(pattern):
+    """主題關鍵字裡的英文縮寫加上字母邊界：之前「PA」用不分大小寫比對，
+    連「SpaceXAI」都會被當成功率放大器新聞；「GaN」也會誤中 began/organ。"""
+    parts = []
+    for alt in pattern.split("|"):
+        if re.fullmatch(r"[A-Za-z0-9 ]+", alt):
+            parts.append(f"(?<![A-Za-z]){alt}(?![A-Za-z])")
+        else:
+            parts.append(alt)
+    return "|".join(parts)
+
+
+THEME_REGEXES = [(re.compile(_bounded(p), re.IGNORECASE), codes) for p, codes in THEME_KEYWORDS.items()]
 
 
 def related_stocks_for(title):
     """回傳這則新聞標題關聯到的持股清單 [{code,name}]，依直接點名優先，其次主題比對。"""
     matched = {}
-    for code, name in STOCK_NAMES.items():
-        if name in title:
+    for code, name, rx in NAME_REGEXES:
+        if rx.search(title):
             matched[code] = name
-    for pattern, codes in THEME_KEYWORDS.items():
-        if re.search(pattern, title, re.IGNORECASE):
+    for rx, codes in THEME_REGEXES:
+        if rx.search(title):
             for code in codes:
                 if code not in matched:
                     matched[code] = STOCK_NAMES.get(code, code)

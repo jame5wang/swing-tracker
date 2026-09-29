@@ -26,21 +26,24 @@ SYMBOLS = {
 }
 
 # 已知的 2026 年重要財經事件日期（美東時間日期），公開行事曆固定排程，非即時抓取
-# FOMC 會議結果公布日；CPI/非農公布日期以美國勞工部/BLS 公告為準，此處為排程慣例日估計
+# FOMC 會議結果公布日（federalreserve.gov）；CPI/非農公布日期依美國勞工統計局(BLS)官方2026年排程
+# （bls.gov/schedule/news_release/cpi.htm、empsit.htm），2026-09-29 已逐一核對。
+# 注意：都是美東時間日期，公布時間約為台北時間當晚20:30（CPI/非農）或隔日凌晨2:00（FOMC），
+# 對台股的影響通常反映在「下一個台股交易日」。
 KNOWN_EVENTS_2026 = [
     ("2026-01-28", "FOMC利率決議"),
     ("2026-03-18", "FOMC利率決議"),
-    ("2026-04-30", "FOMC利率決議"),
+    ("2026-04-29", "FOMC利率決議"),
     ("2026-06-17", "FOMC利率決議"),
     ("2026-07-29", "FOMC利率決議"),
     ("2026-09-16", "FOMC利率決議"),
     ("2026-10-28", "FOMC利率決議"),
     ("2026-12-09", "FOMC利率決議"),
-    ("2026-01-13", "美國12月CPI"), ("2026-02-11", "美國1月CPI"), ("2026-03-11", "美國2月CPI"),
+    ("2026-01-13", "美國12月CPI"), ("2026-02-13", "美國1月CPI"), ("2026-03-11", "美國2月CPI"),
     ("2026-04-10", "美國3月CPI"), ("2026-05-12", "美國4月CPI"), ("2026-06-10", "美國5月CPI"),
-    ("2026-07-14", "美國6月CPI"), ("2026-08-12", "美國7月CPI"), ("2026-09-15", "美國8月CPI"),
-    ("2026-10-13", "美國9月CPI"), ("2026-11-12", "美國10月CPI"), ("2026-12-10", "美國11月CPI"),
-    ("2026-01-09", "美國非農就業"), ("2026-02-06", "美國非農就業"), ("2026-03-06", "美國非農就業"),
+    ("2026-07-14", "美國6月CPI"), ("2026-08-12", "美國7月CPI"), ("2026-09-11", "美國8月CPI"),
+    ("2026-10-14", "美國9月CPI"), ("2026-11-10", "美國10月CPI"), ("2026-12-10", "美國11月CPI"),
+    ("2026-01-09", "美國非農就業"), ("2026-02-11", "美國非農就業"), ("2026-03-06", "美國非農就業"),
     ("2026-04-03", "美國非農就業"), ("2026-05-08", "美國非農就業"), ("2026-06-05", "美國非農就業"),
     ("2026-07-02", "美國非農就業"), ("2026-08-07", "美國非農就業"), ("2026-09-04", "美國非農就業"),
     ("2026-10-02", "美國非農就業"), ("2026-11-06", "美國非農就業"), ("2026-12-04", "美國非農就業"),
@@ -55,7 +58,7 @@ AI_CAPEX_EARNINGS_2026 = [
     ("2026-10-28", "微軟 FY27 Q1財報（預估，未正式確認）"),
     ("2026-10-28", "Alphabet(Google) 3Q26財報（預估，未正式確認）"),
     ("2026-10-28", "Meta 3Q26財報（預估，未正式確認）"),
-    ("2026-11-17", "NVIDIA 3Q FY27財報"),
+    ("2026-11-17", "NVIDIA 3Q FY27財報（預估，未正式公告）"),
 ]
 
 
@@ -92,7 +95,8 @@ def fetch_symbol(symbol):
         if len(closes) >= 6 and closes[-6]:
             out["change5dPct"] = round((last - closes[-6]) / closes[-6] * 100, 2)
         return out
-    except (urllib.error.URLError, urllib.error.HTTPError, KeyError, IndexError, ValueError, TypeError):
+    except Exception as e:  # 包含讀取逾時 TimeoutError / IncompleteRead，之前沒接住會讓整支腳本當掉
+        print(f"{symbol} 抓取失敗：{e}")
         return None
 
 
@@ -158,6 +162,10 @@ def compute_risk_light(data):
 
     if not reasons:
         reasons.append("主要指標無明顯異常")
+    stale_names = {"vix": "VIX", "sox": "費半", "tsmAdr": "台積電ADR", "dji": "道瓊", "sp500": "S&P500", "nasdaq": "那斯達克"}
+    stale_list = [stale_names[k] for k in stale_names if (data.get(k) or {}).get("stale")]
+    if stale_list:
+        reasons.append(f"（{'、'.join(stale_list)}本次抓取失敗，沿用前次數值計算）")
 
     return {"level": level, "label": label, "score": score, "reasons": reasons}
 
@@ -195,12 +203,21 @@ def main():
         pass
 
     stale = len(data) == 0
+    stale_symbols = []
     if stale and old.get("indices"):
         indices = old["indices"]
         generated = old.get("generated", today)
     else:
-        indices = data
+        indices = dict(data)
         generated = today
+        # 部分指標抓取失敗：沿用上次數值並逐項標記 stale。之前是直接把失敗的指標丟掉，
+        # 例如費半抓不到時風險燈號會少算費半的分數，黃燈可能被誤判成綠燈。
+        for key in SYMBOLS:
+            if key not in indices and (old.get("indices") or {}).get(key):
+                prev = dict(old["indices"][key])
+                prev["stale"] = True
+                indices[key] = prev
+                stale_symbols.append(key)
 
     risk_light = compute_risk_light(indices) if indices else {
         "level": "gray", "label": "資料暫缺", "score": 0, "reasons": ["國際指標資料暫時無法取得"]
@@ -209,6 +226,7 @@ def main():
     output = {
         "generated": generated,
         "stale": stale,
+        "staleSymbols": stale_symbols,
         "indices": indices,
         "riskLight": risk_light,
         "upcomingEvents": upcoming_events(today, days=10),
