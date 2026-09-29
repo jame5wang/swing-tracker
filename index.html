@@ -67,6 +67,8 @@ main{max-width:720px; margin:0 auto; padding:18px 16px 60px; position:relative;}
 .dataBar{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--sub); margin-bottom:14px; flex-wrap:wrap; font-family:var(--mono);}
 .dataBar .dot{width:6px; height:6px; border-radius:50%; background:var(--mute);}
 .dataBar.ok .dot{background:var(--buy); box-shadow:0 0 6px 1px var(--buy);}
+.dataBar.stale{color:var(--stop); font-weight:650;}
+.dataBar.stale .dot{background:var(--stop); box-shadow:0 0 6px 1px var(--stop);}
 
 .macroCard{border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:16px; background:var(--panel); box-shadow:var(--glow); position:relative; overflow:hidden;}
 .macroCard::before{content:''; position:absolute; left:0; top:0; bottom:0; width:3px;}
@@ -655,13 +657,23 @@ async function loadAutoData(){
   const bar=document.getElementById('dataBar');
   const text=document.getElementById('dataBarText');
   const [twse,tpex]=await Promise.all([fetchJson('data/prices.json'),fetchJson('data/prices_otc.json')]);
-  const merged=[]; let dates=[];
-  if(twse && twse.stocks){ merged.push(...twse.stocks.map(s=>({...s,market:'上市'}))); if(twse.date) dates.push('上市 '+twse.date); }
-  if(tpex && tpex.stocks){ merged.push(...tpex.stocks.map(s=>({...s,market:'上櫃'}))); if(tpex.date) dates.push('上櫃 '+tpex.date); }
+  const merged=[]; let dates=[]; let anyStale=false;
+  if(twse && twse.stocks){
+    merged.push(...twse.stocks.map(s=>({...s,market:'上市'})));
+    if(twse.date) dates.push(`上市 ${twse.date}${twse.stale?'（抓取失敗，非最新）':''}`);
+    if(twse.stale) anyStale=true;
+  }
+  if(tpex && tpex.stocks){
+    merged.push(...tpex.stocks.map(s=>({...s,market:'上櫃'})));
+    if(tpex.date) dates.push(`上櫃 ${tpex.date}${tpex.stale?'（抓取失敗，非最新）':''}`);
+    if(tpex.stale) anyStale=true;
+  }
   if(merged.length){
     autoData={stocks:merged};
-    bar.className='dataBar ok';
-    text.textContent='自動盤後資料：'+dates.join('，');
+    // stale：抓取當下重試多次仍失敗，保留的是前一次成功的舊資料，不是今天的收盤價，
+    // 用醒目的警示樣式提醒使用者現在看到的股價/訊號可能不是最新的。
+    bar.className=anyStale?'dataBar stale':'dataBar ok';
+    text.textContent=(anyStale?'⚠ ':'')+'自動盤後資料：'+dates.join('，');
     applyAutoPrices();
   }else{
     bar.className='dataBar';
