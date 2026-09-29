@@ -1,0 +1,182 @@
+{
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-29T23:09:10.131255+00:00",
+  "stale": false,
+  "items": [
+    {
+      "title": "2020-2026台股房市大脫鉤！股市飆破4萬6千點、房市移轉量卻創9年新低 專家揭「人造斷點」真相",
+      "link": "https://tw.stock.yahoo.com/news/2020-2026%E5%8F%B0%E8%82%A1%E6%88%BF%E5%B8%82%E5%A4%A7%E8%84%AB%E9%89%A4%EF%BC%81%E8%82%A1%E5%B8%82%E9%A3%86%E7%A0%B44%E8%90%AC6%E5%8D%83%E9%BB%9E%E3%80%81%E6%88%BF%E5%B8%82%E7%A7%BB%E8%BD%89%E9%87%8F%E5%8D%BB%E5%89%B59%E5%B9%B4%E6%96%B0%E4%BD%8E-%E5%B0%88%E5%AE%B6%E6%8F%AD%E3%80%8C%E4%BA%BA%E9%80%A0%E6%96%B7%E9%BB%9E%E3%80%8D%E7%9C%9F%E7%9B%B8-225200058.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:52:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "友達ADR29日上漲0.326美元漲幅3.05%折台股35.13元",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94adr29%E6%97%A5%E4%B8%8A%E6%BC%B20-326%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%853-05-%E6%8A%98%E5%8F%B0%E8%82%A135-13%E5%85%83-225140605.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:51:40+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "中華電信ADR29日下跌0.39美元跌幅0.85%折台股145.32元",
+      "link": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1adr29%E6%97%A5%E4%B8%8B%E8%B7%8C0-39%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%850-85-%E6%8A%98%E5%8F%B0%E8%82%A1145-32%E5%85%83-225136075.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:51:36+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "聯電ADR29日上漲0.87美元漲幅3.65%折台股157.59元",
+      "link": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr29%E6%97%A5%E4%B8%8A%E6%BC%B20-87%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%853-65-%E6%8A%98%E5%8F%B0%E8%82%A1157-59%E5%85%83-225134367.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:51:34+00:00",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ]
+    },
+    {
+      "title": "台積電ADR29日上漲4.06美元漲幅0.90%折台股2913.08元",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBadr29%E6%97%A5%E4%B8%8A%E6%BC%B24-06%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%850-90-%E6%8A%98%E5%8F%B0%E8%82%A12913-08%E5%85%83-224632040.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:46:32+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "台股中秋變盤向下2兇手曝！分析師估台積「這時」再創新高：5類股可買",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E4%B8%AD%E7%A7%8B%E8%AE%8A%E7%9B%A4%E5%90%91%E4%B8%8B2%E5%85%87%E6%89%8B%E6%9B%9D-%E5%88%86%E6%9E%90%E5%B8%AB%E4%BC%B0%E5%8F%B0%E7%A9%8D-%E9%80%99%E6%99%82-%E5%86%8D%E5%89%B5%E6%96%B0%E9%AB%98-5%E9%A1%9E%E8%82%A1%E5%8F%AF%E8%B2%B7-224600122.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:46:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "蘋果新品一波波 帶旺台鏈！鴻海、廣達、仁寶有望受惠",
+      "link": "https://tw.news.yahoo.com/%E8%98%8B%E6%9E%9C%E6%96%B0%E5%93%81-%E6%B3%A2%E6%B3%A2-%E5%B8%B6%E6%97%BA%E5%8F%B0%E9%8F%88-%E9%B4%BB%E6%B5%B7-%E5%BB%A3%E9%81%94-224157591.html",
+      "source": "台股",
+      "pubDate": "2026-09-29T22:41:57+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美股兩樣情！三大指數皆墨　「這指數」卻逆勢大漲1.32%",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E5%85%A9%E6%A8%A3%E6%83%85-%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E7%9A%86%E5%A2%A8-%E9%80%99%E6%8C%87%E6%95%B8-%E5%8D%BB%E9%80%86%E5%8B%A2%E5%A4%A7%E6%BC%B21-32-221026151.html",
+      "source": "國際",
+      "pubDate": "2026-09-29T22:40:45+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "輝達大手筆股票回購 AI熱潮下大型科技業「貧富差距」浮現",
+      "link": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94%E5%A4%A7%E6%89%8B%E7%AD%86%E8%82%A1%E7%A5%A8%E5%9B%9E%E8%B3%BC-ai%E7%86%B1%E6%BD%AE%E4%B8%8B%E5%A4%A7%E5%9E%8B%E7%A7%91%E6%8A%80%E6%A5%AD-%E8%B2%A7%E5%AF%8C%E5%B7%AE%E8%B7%9D-%E6%B5%AE%E7%8F%BE-222005856.html",
+      "source": "國際",
+      "pubDate": "2026-09-29T22:20:05+00:00",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ]
+    },
+    {
+      "title": "美債殖利率飆24年新高！美股三大指數連2黑",
+      "link": "https://tw.news.yahoo.com/%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%8624%E5%B9%B4%E6%96%B0%E9%AB%98-%E7%BE%8E%E8%82%A1%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E9%80%A32%E9%BB%91-221614337.html",
+      "source": "國際",
+      "pubDate": "2026-09-29T22:16:14+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "〈美股盤後〉30年期美債殖利率創24年新高 三大指數續黑 蘋果領跌道瓊",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E5%89%B524%E5%B9%B4%E6%96%B0%E9%AB%98-%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E7%BA%8C%E9%BB%91-%E8%98%8B%E6%9E%9C%E9%A0%98%E8%B7%8C%E9%81%93%E7%93%8A-215446800.html",
+      "source": "國際",
+      "pubDate": "2026-09-29T21:54:46+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "【美股盤後】3大指數收跌　費半漲逾1%",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-3%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E8%B7%8C-%E8%B2%BB%E5%8D%8A%E6%BC%B2%E9%80%BE1-215106886.html",
+      "source": "國際",
+      "pubDate": "2026-09-29T21:51:06+00:00",
+      "relatedStocks": []
+    }
+  ],
+  "note": "來源：Yahoo股市 RSS（國際財經／台股）自動彙整最新標題並依關鍵字關聯持股，非人工編選，僅供參考，不構成投資建議。"
+}
