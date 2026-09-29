@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-29T23:43:37.577Z",
+  "items": [
+    {
+      "summary": "美國30年期公債殖利率飆升至24年新高，美股道瓊、標普、那斯達克三大指數連兩日收黑，蘋果領跌道瓊；但費城半導體指數逆勢大漲逾1%（一度漲近2%），顯示資金在利率壓力升溫下仍偏好半導體族群，為台股開盤情緒的重要觀察指標。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "美債殖利率飆24年新高！美股三大指數連2黑", "url": "https://tw.news.yahoo.com/%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%8624%E5%B9%B4%E6%96%B0%E9%AB%98-%E7%BE%8E%E8%82%A1%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E9%80%A32%E9%BB%91-221614337.html"},
+        {"title": "〈美股盤後〉30年期美債殖利率創24年新高 三大指數續黑 蘋果領跌道瓊", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E5%89%B524%E5%B9%B4%E6%96%B0%E9%AB%98-%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E7%BA%8C%E9%BB%91-%E8%98%8B%E6%9E%9C%E9%A0%98%E8%B7%8C%E9%81%93%E7%93%8A-215446800.html"},
+        {"title": "【美股盤後】3大指數收跌　費半漲逾1%", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-3%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E8%B7%8C-%E8%B2%BB%E5%8D%8A%E6%BC%B2%E9%80%BE1-215106886.html"}
+      ]
+    },
+    {
+      "summary": "有分析師檢視台股中秋前後拉回修正的成因，並預期台積電未來仍有機會再創新高，點名可留意受惠的相關類股；反映法人對台股主要權值指標股後市看法仍偏樂觀，值得留意其對大盤與供應鏈情緒的帶動效果。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "台股中秋變盤向下2兇手曝！分析師估台積「這時」再創新高：5類股可買", "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E4%B8%AD%E7%A7%8B%E8%AE%8A%E7%9B%A4%E5%90%91%E4%B8%8B2%E5%85%87%E6%89%8B%E6%9B%9D-%E5%88%86%E6%9E%90%E5%B8%AB%E4%BC%B0%E5%8F%B0%E7%A9%8D-%E9%80%99%E6%99%82-%E5%86%8D%E5%89%B5%E6%96%B0%E9%AB%98-5%E9%A1%9E%E8%82%A1%E5%8F%AF%E8%B2%B7-224600122.html"}
+      ]
+    },
+    {
+      "summary": "SK海力士旗下NAND子公司Solidigm傳最快2027年赴美IPO、估值上看1500億美元，市場憂心此舉將稀釋SK海力士對AI NAND超級週期獲利的間接權益，導致SK海力士、美光、威騰電子（Western Digital）美股同步重挫4~6%。此為全球記憶體類股情緒的重大波動事件，台廠記憶體概念股次日交易恐受國際同業股價連動影響。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"},
+        {"code": "6531", "name": "愛普"}
+      ],
+      "sources": [
+        {"title": "估值1500億美元、募資150億！Solidigm擬最快2027赴美上市 母企SK海力士面臨估值動搖", "url": "https://news.cnyes.com/news/id/6617253"},
+        {"title": "SK Hynix Drops 6% as Bloomberg Puts $100B Value on Potential Solidigm IPO; Micron and Western Digital Fall 4%", "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-drops-6-bloomberg-150341625.html"}
+      ]
+    }
+  ],
+  "note": "由 Claude 依原始RSS新聞與額外搜尋整理彙總，經人工設定規則篩選相關性，非即時全面新聞，僅供參考，不構成投資建議。"
+}
