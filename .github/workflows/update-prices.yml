@@ -28,6 +28,9 @@ jobs:
       - name: 計算技術面指標（MA10/MA20、20日60日高低點、相對大盤強弱）
         run: python3 scripts/fetch_technical.py
 
+      - name: 用技術指標資料校正收盤價（防止證交所批次API發布延遲導致收盤價停在前一交易日）
+        run: python3 scripts/reconcile_prices.py
+
       - name: 更新單月營收（公開資訊觀測站 MOPS 官方資料）
         run: python3 scripts/fetch_revenue.py
 
