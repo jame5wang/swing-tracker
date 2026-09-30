@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-01",
+  "generatedAt": "2026-09-30T23:39:02Z",
+  "items": [
+    {
+      "summary": "市場傳出輝達下一代AI晶片將導入玻璃基板（glass substrate）封裝技術、並與SCHMID合作設備產線，帶動群創、欣興、南電、景碩等ABF載板／面板／CCL／PCB供應鏈齊聲走高，三大法人單日買超逾83億元；友達ADR同步大漲逾9%，反映市場對台廠切入下一代先進封裝材料的樂觀預期。",
+      "relatedStocks": [
+        {"code": "3481", "name": "群創"},
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "6672", "name": "騰輝電子-KY"},
+        {"code": "2368", "name": "金像電"},
+        {"code": "4958", "name": "臻鼎-KY"},
+        {"code": "8358", "name": "金居"},
+        {"code": "2313", "name": "華通"},
+        {"code": "3711", "name": "日月光投控"},
+        {"code": "6239", "name": "力成"},
+        {"code": "6147", "name": "頎邦"},
+        {"code": "6182", "name": "合晶"},
+        {"code": "6488", "name": "環球晶"},
+        {"code": "3017", "name": "奇鋐"},
+        {"code": "3653", "name": "健策"},
+        {"code": "3324", "name": "雙鴻"}
+      ],
+      "sources": [
+        {"title": "輝達下一代AI晶片傳導入玻璃基板！群創、友達等4檔直接亮燈　三大法人狂砸逾83億搶進", "url": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94%E4%B8%8B-%E4%BB%A3ai%E6%99%B6%E7%89%87%E5%82%B3%E5%B0%8E%E5%85%A5%E7%8E%BB%E7%92%83%E5%9F%BA%E6%9D%BF-%E7%BE%A4%E5%89%B5-%E5%8F%8B%E9%81%94%E7%AD%894%E6%AA%94%E7%9B%B4%E6%8E%A5%E4%BA%AE%E7%87%88-%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E7%8B%82%E7%A0%B8%E9%80%BE83%E5%84%84%E6%90%B6%E9%80%B2-225400476.html"},
+        {"title": "輝達與SCHMID合作玻璃基板　惠台廠19強", "url": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E8%88%87schmid%E5%90%88%E4%BD%9C%E7%8E%BB%E7%92%83%E5%9F%BA%E6%9D%BF-%E6%83%A0%E5%8F%B0%E5%BB%A019%E5%BC%B7-225000556.html"},
+        {"title": "友達ADR30日上漲1.01美元漲幅9.17%折台股38.32元", "url": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94adr30%E6%97%A5%E4%B8%8A%E6%BC%B21-01%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%859-17-%E6%8A%98%E5%8F%B0%E8%82%A138-32%E5%85%83-214109128.html"}
+      ]
+    },
+    {
+      "summary": "台股9月大漲1811點收在47940點創歷史新高，主因費城半導體指數同步走揚，帶動台積電、聯發科、台達電等權值股領漲；法人分析認為AI需求已轉化為實際出貨動能，Q4選股可聚焦ASIC、高階PCB、電力及液冷散熱，以及因半導體擴產、先進封裝升級而受惠的設備材料與玻璃基板供應鏈。",
+      "relatedStocks": [
+        {"code": "2454", "name": "聯發科"},
+        {"code": "2308", "name": "台達電"},
+        {"code": "2301", "name": "光寶科"},
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "3017", "name": "奇鋐"},
+        {"code": "3324", "name": "雙鴻"},
+        {"code": "3653", "name": "健策"}
+      ],
+      "sources": [
+        {"title": "台股9月大漲1811點創新高！今再漲308點收47940 台積電2480元", "url": "https://www.nownews.com/news/6879340"},
+        {"title": "就市論勢／高階PCB、半導體設備 聚光", "url": "https://money.udn.com/money/story/5607/9786601"}
+      ]
+    },
+    {
+      "summary": "美國最新通膨數據雖低於市場預期，但30年期公債殖利率飆升至24年新高，市場解讀聯準會中長期仍可能維持較高利率、降息空間受限，美股道瓊尾盤重摔逾440點、那指小漲收盤漲跌互見；台積電ADR同步小跌0.16%，台指期夜盤下跌32點，反映overnight風險趨避情緒對台股開盤的壓力。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "美最新通膨數據低於預期！ 美股道瓊跌443點、台積電ADR跌0.16%", "url": "https://tw.news.yahoo.com/%E7%BE%8E%E6%9C%80%E6%96%B0%E9%80%9A%E8%86%A8%E6%95%B8%E6%93%9A%E4%BD%8E%E6%96%BC%E9%A0%90%E6%9C%9F-%E7%BE%8E%E8%82%A1%E9%81%93%E7%93%8A%E8%B7%8C443%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C0-16-223102138.html"},
+        {"title": "30年期美債殖利率飆24年來新高！美股受壓抑多收黑　台指期夜盤小跌32點", "url": "https://tw.stock.yahoo.com/news/30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%8624%E5%B9%B4%E4%BE%86%E6%96%B0%E9%AB%98-%E7%BE%8E%E8%82%A1%E5%8F%97%E5%A3%93%E6%8A%91%E5%A4%9A%E6%94%B6%E9%BB%91-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E5%B0%8F%E8%B7%8C32%E9%BB%9E-221936892.html"}
+      ]
+    },
+    {
+      "summary": "南韓媒體報導三星電子、SK海力士將於10月底公布Q3財報，市場預期兩家合計獲利上看190兆韓元，將是檢驗AI驅動記憶體「超級週期」能否延續的重要指標；若財報續強，可望帶動台廠DRAM／NAND模組廠報價與出貨動能同步走升。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"}
+      ],
+      "sources": [
+        {"title": "Samsung, SK hynix Q3 Earnings to Test Durability of Memory Supercycle", "url": "https://en.sedaily.com/finance/2026/09/25/samsung-sk-hynix-q3-earnings-to-test-durability-of-memory"},
+        {"title": "Samsung and SK Hynix eye 190 trillion won profit in Q3 2026", "url": "https://www.sammyfans.com/2026/09/24/samsung-and-sk-hynix-eye-190-trillion-won-profit-in-q3-2026/"}
+      ]
+    }
+  ],
+  "note": "來源：Yahoo股市RSS自動彙整＋額外新聞搜尋，經人工邏輯彙整並過濾相關性，非即時逐字轉載，僅供參考，不構成投資建議。"
+}
