@@ -816,7 +816,7 @@ function renderMacroCard(){
     .map(e=>({...e, daysAway: daysBetween(todayTpe, e.date)}))
     .filter(e=>e.daysAway>=0);
   const eventsHtml = events.length
-    ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.watch?'🔥':''}${e.date} ${e.name}${e.daysAway===0?'（今天）':`（${e.daysAway}天後）`}`).join('、')}</div>`
+    ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.watch?'🔥':''}${e.date} ${e.name}（${e.daysAway===0?'今天':`${e.daysAway}天後`}${e.tpeTime?'，'+e.tpeTime:''}）`).join('、')}</div>`
     : '';
   const breadth = marketBreadthData;
   const bCls = breadth ? 'risk'+breadth.level.charAt(0).toUpperCase()+breadth.level.slice(1) : '';

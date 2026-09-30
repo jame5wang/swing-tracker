@@ -25,11 +25,16 @@ SYMBOLS = {
     "tsmAdr": "TSM",
 }
 
-# 已知的 2026 年重要財經事件日期（美東時間日期），公開行事曆固定排程，非即時抓取
-# FOMC 會議結果公布日（federalreserve.gov）；CPI/非農公布日期依美國勞工統計局(BLS)官方2026年排程
-# （bls.gov/schedule/news_release/cpi.htm、empsit.htm），2026-09-29 已逐一核對。
-# 注意：都是美東時間日期，公布時間約為台北時間當晚20:30（CPI/非農）或隔日凌晨2:00（FOMC），
+# 已知的 2026 年重要財經事件日期（美東時間日期），公開行事曆固定排程，非即時抓取。
+# - FOMC 利率決議：federalreserve.gov 官方會議日程（美東 14:00 公布聲明）
+# - CPI／非農／PPI：美國勞工統計局(BLS)官方2026年排程（美東 8:30 公布）
+# - PCE／GDP：美國經濟分析局(BEA)官方發布排程 bea.gov/news/schedule（美東 8:30 公布）
+#   PCE 是聯準會最重視的通膨指標，2026-09-30 使用者指出行事曆漏掉 PCE 後補上。
+# 2026-09-29/30 已逐一核對官方排程。前端會依美東時間換算成台北時間顯示（含美國夏令時間切換）。
 # 對台股的影響通常反映在「下一個台股交易日」。
+US_DATA_TIME = "08:30"   # BLS/BEA 數據公布時間（美東）
+FOMC_TIME = "14:00"      # FOMC 聲明公布時間（美東）
+
 KNOWN_EVENTS_2026 = [
     ("2026-01-28", "FOMC利率決議"),
     ("2026-03-18", "FOMC利率決議"),
@@ -47,7 +52,37 @@ KNOWN_EVENTS_2026 = [
     ("2026-04-03", "美國非農就業"), ("2026-05-08", "美國非農就業"), ("2026-06-05", "美國非農就業"),
     ("2026-07-02", "美國非農就業"), ("2026-08-07", "美國非農就業"), ("2026-09-04", "美國非農就業"),
     ("2026-10-02", "美國非農就業"), ("2026-11-06", "美國非農就業"), ("2026-12-04", "美國非農就業"),
+    # PCE 物價指數（BEA Personal Income and Outlays）
+    ("2026-09-30", "美國8月PCE物價指數"), ("2026-10-29", "美國9月PCE物價指數"),
+    ("2026-11-25", "美國10月PCE物價指數"), ("2026-12-23", "美國11月PCE物價指數"),
+    # GDP（BEA，與 PCE 同日公布）
+    ("2026-10-29", "美國第3季GDP初值"), ("2026-11-25", "美國第3季GDP修正值"), ("2026-12-23", "美國第3季GDP終值"),
+    # PPI 生產者物價指數（BLS）
+    ("2026-10-15", "美國9月PPI"), ("2026-11-13", "美國10月PPI"), ("2026-12-15", "美國11月PPI"),
 ]
+
+
+def event_time_et(name):
+    """回傳這個事件的美東公布時間；財報類事件（台積電法說、美國科技股財報）沒有固定時間回傳 None"""
+    if name.startswith("FOMC"):
+        return FOMC_TIME
+    if name.startswith("美國"):
+        return US_DATA_TIME
+    return None
+
+
+def taipei_time_label(date_str, et_time):
+    """美東日期+時間 → 台北時間標籤，例如「台北 20:30」或「台北 隔日02:00」；自動處理美國夏令時間。"""
+    if not et_time:
+        return None
+    try:
+        from zoneinfo import ZoneInfo
+        et = datetime.strptime(f"{date_str} {et_time}", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("America/New_York"))
+        tpe = et.astimezone(ZoneInfo("Asia/Taipei"))
+    except Exception:
+        return None
+    prefix = "隔日" if tpe.date().isoformat() != date_str else ""
+    return f"台北 {prefix}{tpe.strftime('%H:%M')}"
 
 # AI資本支出／超大型雲端業者財報行事曆：這些公司的財報與資本支出指引，常是牽動
 # 半導體供應鏈（含本站追蹤標的）股價的關鍵日，故獨立標記為「高波動關注日」。
@@ -179,8 +214,11 @@ def upcoming_events(today_str, days=5):
         d = datetime.strptime(date_str, "%Y-%m-%d").date()
         delta = (d - today).days
         if 0 <= delta <= days:
-            out.append({"date": date_str, "name": name, "daysAway": delta, "watch": watch})
-    out.sort(key=lambda e: e["date"])
+            out.append({
+                "date": date_str, "name": name, "daysAway": delta, "watch": watch,
+                "tpeTime": taipei_time_label(date_str, event_time_et(name)),
+            })
+    out.sort(key=lambda e: (e["date"], e["name"]))
     return out
 
 
@@ -230,7 +268,7 @@ def main():
         "indices": indices,
         "riskLight": risk_light,
         "upcomingEvents": upcoming_events(today, days=10),
-        "note": "指標來源 Yahoo Finance 公開資料，風險燈號為簡化規則式框架（VIX／費半單日與5日變化／台積電ADR／美股三大指數綜合評分），近期事件含台積電/NVIDIA/微軟/Google/Meta財報等AI資本支出高波動關注日，僅供觀察國際市場情緒參考，不構成投資或資產配置建議。",
+        "note": "指標來源 Yahoo Finance 公開資料，風險燈號為簡化規則式框架（VIX／費半單日與5日變化／台積電ADR／美股三大指數綜合評分）；財經事件依聯準會、BLS、BEA 官方排程（FOMC／CPI／非農／PCE／GDP／PPI），並含台積電/NVIDIA/微軟/Google/Meta財報等AI資本支出高波動關注日，僅供觀察國際市場情緒參考，不構成投資或資產配置建議。",
     }
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
