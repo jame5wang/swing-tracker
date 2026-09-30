@@ -563,15 +563,20 @@ function statusOf(s){
   return {cls:'st-hold', label:'續抱觀察 · 區間內'};
 }
 
-const PAGE_LOAD_TS=Date.now();
 async function fetchJson(path){
   // 加上時間戳參數，避免 GitHub Pages 的 CDN（Fastly）快取到舊版資料——
   // cache:'no-store' 只能防止瀏覽器自己的快取，防不了 CDN 邊緣快取。
-  const bust = path.includes('?') ? `&_=${PAGE_LOAD_TS}` : `?_=${PAGE_LOAD_TS}`;
+  // 每次抓取都用當下時間當參數：頁面開著時會定期重抓，若沿用開頁時間，可能拿到 CDN 快取的舊版本
+  const ts=Date.now();
+  const bust = path.includes('?') ? `&_=${ts}` : `?_=${ts}`;
   try{ const res=await fetch(path+bust,{cache:'no-store'}); if(!res.ok) return null; return await res.json(); }
   catch(e){ return null; }
 }
 
+function loadedAtLabel(){
+  try{ return '　·　網頁資料載入於 '+new Date().toLocaleTimeString('zh-TW',{timeZone:'Asia/Taipei',hour:'2-digit',minute:'2-digit',hour12:false}); }
+  catch(e){ return ''; }
+}
 let latestPriceDate=''; // 追蹤股票中最新的收盤價交易日，用來標示「股價不是最新交易日」的個別股票
 async function loadAutoData(){
   const bar=document.getElementById('dataBar');
@@ -598,10 +603,10 @@ async function loadAutoData(){
   // 避免使用者以為看到的是今天的收盤價、進而依據過期股價判斷買賣訊號。
   if(warnings.length){
     bar.className='dataBar stale';
-    text.textContent='⚠ '+(parts.length?('自動盤後資料：'+parts.join('，')+'　'):'')+warnings.join('；');
+    text.textContent='⚠ '+(parts.length?('自動盤後資料：'+parts.join('，')+'　'):'')+warnings.join('；')+loadedAtLabel();
   }else if(parts.length){
     bar.className='dataBar ok';
-    text.textContent='自動盤後資料：'+parts.join('，');
+    text.textContent='自動盤後資料：'+parts.join('，')+loadedAtLabel();
   }else{
     bar.className='dataBar';
     text.textContent='尚無自動盤後資料，等待排程首次執行';
@@ -1365,12 +1370,30 @@ document.getElementById('brandTitle').addEventListener('click',()=>{
   activeIndex=null; render(); window.scrollTo(0,0);
 });
 
+// 之前只在打開網頁的那一刻抓一次資料：分頁一直開著、或手機瀏覽器從背景直接恢復舊頁面時，
+// 盤後資料明明已經更新，畫面卻還停在舊價格。改成：回到這個分頁時若距離上次抓取超過5分鐘就重抓，
+// 分頁開著時每10分鐘也自動重抓一次。
+let lastDataLoadTs=0;
+const DATA_REFRESH_STALE_MS=5*60*1000;
+function loadAllData(){
+  lastDataLoadTs=Date.now();
+  loadAutoData();
+  loadResearchData();
+  loadTechnical();
+  loadMacro();
+  // 正在翻看較舊日期的新聞時不要把使用者拉回今天
+  if(newsDateIdx===0) loadNews();
+}
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible' && Date.now()-lastDataLoadTs>DATA_REFRESH_STALE_MS) loadAllData();
+});
+window.addEventListener('pageshow',(e)=>{
+  if(e.persisted && Date.now()-lastDataLoadTs>DATA_REFRESH_STALE_MS) loadAllData();
+});
+setInterval(()=>{ if(document.visibilityState==='visible') loadAllData(); }, 10*60*1000);
+
 render();
-loadAutoData();
-loadResearchData();
-loadTechnical();
-loadMacro();
-loadNews();
+loadAllData();
 </script>
 </body>
 </html>
