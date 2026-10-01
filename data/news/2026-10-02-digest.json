@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-01T23:48:52Z",
+  "items": [
+    {
+      "summary": "美光公布2026財年第四季法說，營收創單季新高542.3億美元，並預告下季營收上看615億美元；客戶預付訂單承諾金額倍增至320億美元，逾75%的2027財年記憶體出貨量已被預訂，執行長示警DRAM／NAND缺貨與漲價格局恐延續至2028年。三星、SK海力士股價同步走揚反映市場樂觀解讀，為台廠記憶體概念股報價與出貨動能增添想像空間。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"},
+        {"code": "6531", "name": "愛普*"}
+      ],
+      "sources": [
+        {"title": "〈美股盤後〉美債回暖！三大指數收漲迎10月 美光彈升3%", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%BE%8E%E5%82%B5%E5%9B%9E%E6%9A%96-%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E6%BC%B2%E8%BF%8E10%E6%9C%88-%E7%BE%8E%E5%85%89%E5%BD%88%E5%8D%873-214725762.html"},
+        {"title": "RAM supply set to worsen, says Micron, as CEO celebrates 'much higher' prices", "url": "https://www.theregister.com/systems/2026/10/01/ram_supply_set_to_worsen_says_micron_as_ceo_celebrates_much_higher_prices/"},
+        {"title": "Samsung, SK Hynix rise after Micron earnings but investors ignore the 24-year warning", "url": "https://invezz.com/news/2026/10/01/samsung-sk-hynix-rise-after-micron-earnings-but-investors-ignore-the-24-year-warning/"},
+        {"title": "Micron Blew Past Estimates and Says It Can't See When the Memory Shortage Ends", "url": "https://247wallst.com/investing/2026/10/01/micron-blew-past-estimates-and-says-it-cant-see-when-the-memory-shortage-ends/"}
+      ]
+    },
+    {
+      "summary": "欣興電子宣布斥資新台幣100.8億元買下新竹湖口近1.9萬坪廠地（含14棟建物），規劃擴充ABF載板產能以因應AI伺服器、交換器與資料中心客戶長達五年的產能預訂需求，產能擴充藍圖排至2030年，顯示高階ABF載板供需吃緊的結構性成長趨勢未歇。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"}
+      ],
+      "sources": [
+        {"title": "欣興砸百億湖口買地，因應持續擴產高階載板需求", "url": "https://finance.technews.tw/2026/10/01/xinxing-spends-billions-to-buy-land-in-hukou/"},
+        {"title": "Unimicron expands ABF substrate capacity with NT$10B Hukou land deal", "url": "https://www.digitimes.com/news/a20261001PD200/unimicron-capacity-abf-substrate-taiwan-demand.html"},
+        {"title": "欣興砸百億入手新竹湖口廠地 ABF 擴產藍圖一路排到 2030", "url": "https://tw.news.yahoo.com/%E6%AC%A3%E8%88%88%E7%A0%B8%E7%99%BE%E5%84%84%E5%85%A5%E6%89%8B%E6%96%B0%E7%AB%B9%E6%B9%96%E5%8F%A3%E5%BB%A0%E5%9C%B0-abf-%E6%93%B4%E7%94%A2%E8%97%8D%E5%9C%96-%E8%B7%AF%E6%8E%92%E5%88%B0-2030-054800081.html"}
+      ]
+    },
+    {
+      "summary": "台積電將於10月15日召開第3季法說會，法人聚焦資本支出規劃、先進封裝產能、AI伺服器需求能見度與地緣政治／關稅風險等六大議題；由於台積電法說向來被視為全球半導體供應鏈與台股大盤情緒的重要指標，市場正密切關注會中基調是否延續近期的樂觀展望。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "台積電15日法說 聚焦六議題", "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB15%E6%97%A5%E6%B3%95%E8%AA%AA-%E8%81%9A%E7%84%A6%E5%85%AD%E8%AD%B0%E9%A1%8C-224416505.html"}
+      ]
+    }
+  ],
+  "note": "來源：Yahoo股市RSS自動彙整＋額外新聞搜尋，經人工邏輯彙整並過濾相關性，非即時逐字轉載，僅供參考，不構成投資建議。"
+}
