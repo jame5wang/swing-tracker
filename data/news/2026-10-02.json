@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-01T23:08:22.498433+00:00",
+  "stale": false,
+  "items": [
+    {
+      "title": "台積電15日法說 聚焦六議題",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB15%E6%97%A5%E6%B3%95%E8%AA%AA-%E8%81%9A%E7%84%A6%E5%85%AD%E8%AD%B0%E9%A1%8C-224416505.html",
+      "source": "台股",
+      "pubDate": "2026-10-01T22:44:16+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "甲骨文奪算力大單帶旺台廠 挹注鴻海、神達、廣達等接單",
+      "link": "https://tw.news.yahoo.com/%E7%94%B2%E9%AA%A8%E6%96%87%E5%A5%AA%E7%AE%97%E5%8A%9B%E5%A4%A7%E5%96%AE%E5%B8%B6%E6%97%BA%E5%8F%B0%E5%BB%A0-%E6%8C%B9%E6%B3%A8%E9%B4%BB%E6%B5%B7-%E7%A5%9E%E9%81%94-%E5%BB%A3%E9%81%94%E7%AD%89%E6%8E%A5%E5%96%AE-224240039.html",
+      "source": "台股",
+      "pubDate": "2026-10-01T22:42:40+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "蘋果擬推新智慧家庭裝置 台積、鴻海有機會受惠",
+      "link": "https://tw.news.yahoo.com/%E8%98%8B%E6%9E%9C%E6%93%AC%E6%8E%A8%E6%96%B0%E6%99%BA%E6%85%A7%E5%AE%B6%E5%BA%AD%E8%A3%9D%E7%BD%AE-%E5%8F%B0%E7%A9%8D-%E9%B4%BB%E6%B5%B7%E6%9C%89%E6%A9%9F%E6%9C%83%E5%8F%97%E6%83%A0-224240539.html",
+      "source": "台股",
+      "pubDate": "2026-10-01T22:42:40+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "三星新平板開賣 聯發科沾光",
+      "link": "https://tw.news.yahoo.com/%E4%B8%89%E6%98%9F%E6%96%B0%E5%B9%B3%E6%9D%BF%E9%96%8B%E8%B3%A3-%E8%81%AF%E7%99%BC%E7%A7%91%E6%B2%BE%E5%85%89-224240169.html",
+      "source": "台股",
+      "pubDate": "2026-10-01T22:42:40+00:00",
+      "relatedStocks": [
+        {
+          "code": "2454",
+          "name": "聯發科"
+        },
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        }
+      ]
+    },
+    {
+      "title": "美債殖利率回落！美股全面反彈收紅　台指期夜盤下滑0.46％",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E5%9B%9E%E8%90%BD-%E7%BE%8E%E8%82%A1%E5%85%A8%E9%9D%A2%E5%8F%8D%E5%BD%88%E6%94%B6%E7%B4%85-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E4%B8%8B%E6%BB%910-46-223328215.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T22:33:28+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "【盤前】美股紅盤台股卻有隱憂！台指夜盤跌223點　台股攻防要看這關",
+      "link": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E7%BE%8E%E8%82%A1%E7%B4%85%E7%9B%A4%E5%8F%B0%E8%82%A1%E5%8D%BB%E6%9C%89%E9%9A%B1%E6%86%82-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E8%B7%8C223%E9%BB%9E-%E5%8F%B0%E8%82%A1%E6%94%BB%E9%98%B2%E8%A6%81%E7%9C%8B%E9%80%99%E9%97%9C-222100568.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T22:21:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "期中大選倒數1月！共和黨考慮迅速提高美債務上限  以削弱民主黨籌碼",
+      "link": "https://tw.stock.yahoo.com/news/%E6%9C%9F%E4%B8%AD%E5%A4%A7%E9%81%B8%E5%80%92%E6%95%B81%E6%9C%88-%E5%85%B1%E5%92%8C%E9%BB%A8%E8%80%83%E6%85%AE%E8%BF%85%E9%80%9F%E6%8F%90%E9%AB%98%E7%BE%8E%E5%82%B5%E5%8B%99%E4%B8%8A%E9%99%90-%E4%BB%A5%E5%89%8A%E5%BC%B1%E6%B0%91%E4%B8%BB%E9%BB%A8%E7%B1%8C%E7%A2%BC-221542154.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T22:15:42+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "新債王岡拉克警告：美股就像一顆「空心樹」 隨時會斷裂",
+      "link": "https://tw.stock.yahoo.com/news/%E6%96%B0%E5%82%B5%E7%8E%8B%E5%B2%A1%E6%8B%89%E5%85%8B%E8%AD%A6%E5%91%8A-%E7%BE%8E%E8%82%A1%E5%B0%B1%E5%83%8F-%E9%A1%86-%E7%A9%BA%E5%BF%83%E6%A8%B9-%E9%9A%A8%E6%99%82%E6%9C%83%E6%96%B7%E8%A3%82-220003342.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T22:00:03+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美債殖利率回落、美股小漲　國際油價升破4%",
+      "link": "https://tw.news.yahoo.com/%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E5%9B%9E%E8%90%BD-%E7%BE%8E%E8%82%A1%E5%B0%8F%E6%BC%B2-%E5%9C%8B%E9%9A%9B%E6%B2%B9%E5%83%B9%E5%8D%87%E7%A0%B44-215842222.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T21:58:42+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "〈美股盤後〉美債回暖！三大指數收漲迎10月 美光彈升3%",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%BE%8E%E5%82%B5%E5%9B%9E%E6%9A%96-%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E6%BC%B2%E8%BF%8E10%E6%9C%88-%E7%BE%8E%E5%85%89%E5%BD%88%E5%8D%873-214725762.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T21:47:25+00:00",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        }
+      ]
+    },
+    {
+      "title": "美國公債殖利率高點回落！美股4大指數全收紅　費半漲200點",
+      "link": "https://tw.news.yahoo.com/%E7%BE%8E%E5%9C%8B%E5%85%AC%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%AB%98%E9%BB%9E%E5%9B%9E%E8%90%BD-%E7%BE%8E%E8%82%A14%E5%A4%A7%E6%8C%87%E6%95%B8%E5%85%A8%E6%94%B6%E7%B4%85-%E8%B2%BB%E5%8D%8A%E6%BC%B2200%E9%BB%9E-214200546.html",
+      "source": "國際",
+      "pubDate": "2026-10-01T21:42:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "8檔台股高息ETF 9月含息績效打敗大盤",
+      "link": "https://tw.news.yahoo.com/8%E6%AA%94%E5%8F%B0%E8%82%A1%E9%AB%98%E6%81%AFetf-9%E6%9C%88%E5%90%AB%E6%81%AF%E7%B8%BE%E6%95%88%E6%89%93%E6%95%97%E5%A4%A7%E7%9B%A4-213435868.html",
+      "source": "台股",
+      "pubDate": "2026-10-01T21:34:35+00:00",
+      "relatedStocks": []
+    }
+  ],
+  "note": "來源：Yahoo股市 RSS（國際財經／台股）自動彙整最新標題並依關鍵字關聯持股，非人工編選，僅供參考，不構成投資建議。"
+}
