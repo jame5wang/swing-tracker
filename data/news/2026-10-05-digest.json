@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-04T23:50:20.268267Z",
+  "coversWeekend": true,
+  "items": [
+    {
+      "summary": "馬斯克週末證實台積電正評估與其公司Terafab合作，在美國德州協助營運新晶圓廠，投資規模可能超越亞利桑那州2,650億美元擴廠案；台積電10/15登場的Q3法說會，外資將聚焦德州擴廠進度、先進製程產能與AI資本支出等六大議題，是本週台股法說行情的重頭戲。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台積電聯手馬斯克 評估協助 Terafab 在德州營運晶圓廠",
+          "url": "https://udn.com/news/story/6811/9793018"
+        },
+        {
+          "title": "傳合作台積電「德州建晶圓廠」 馬斯克本人證實：討論中",
+          "url": "https://www.ettoday.net/news/20261003/3248491.htm"
+        },
+        {
+          "title": "台積電15日法說 聚焦六議題",
+          "url": "https://udn.com/news/story/7240/9789501"
+        }
+      ]
+    },
+    {
+      "summary": "輝達更新800V高壓直流(HVDC)資料中心供電藍圖，推動電源供應鏈卡位潮，台達電、光寶科等台廠已提前布局HVDC相關產品，訂單能見度看至2029年，帶動電源族群概念股近期走勢偏強。",
+      "relatedStocks": [
+        {
+          "code": "2308",
+          "name": "台達電"
+        },
+        {
+          "code": "2301",
+          "name": "光寶科"
+        },
+        {
+          "code": "7788",
+          "name": "松川精密"
+        },
+        {
+          "code": "6278",
+          "name": "台表科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "輝達官網更新800 VDC 藍圖 下半年啟動 台達電、光寶跟著衝",
+          "url": "https://money.udn.com/money/story/5612/9695336"
+        },
+        {
+          "title": "【盤前】輝達改玩800V高壓！「10檔」概念股電力十足",
+          "url": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E6%94%B9%E7%8E%A9800v%E9%AB%98%E5%A3%93-10%E6%AA%94-%E6%A6%82%E5%BF%B5%E8%82%A1%E9%9B%BB%E5%8A%9B%E5%8D%81%E8%B6%B3-222500774.html"
+        }
+      ]
+    },
+    {
+      "summary": "美光上季財報優於預期、美股上週五大漲逾3%，執行長警告AI驅動的記憶體缺貨恐延續至2027、2028年甚至更久；三星、SK海力士同步表態DRAM與HBM產能已預先賣斷至2026年之後，台灣記憶體概念股可望延續漲價行情。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Micron CEO Says Memory Supply Will Be Much Tighter in 2027 and 2028 Than in 2026",
+          "url": "https://www.techpowerup.com/353296/micron-ceo-says-memory-supply-will-be-much-tighter-in-2027-and-2028-than-in-2026"
+        },
+        {
+          "title": "Samsung and SK hynix warn AI-driven memory shortages could last until 2027 and beyond",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/samsung-sk-hynix-warn-ai-144657780.html"
+        },
+        {
+          "title": "〈美股盤後〉美債回暖！三大指數收漲迎10月 美光彈升3%",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%BE%8E%E5%82%B5%E5%9B%9E%E6%9A%96-%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E6%BC%B2%E8%BF%8E10%E6%9C%88-%E7%BE%8E%E5%85%89%E5%BD%88%E5%8D%873-214725762.html"
+        }
+      ]
+    },
+    {
+      "summary": "Dell營運長在與大摩分析師會談時透露，受Agentic AI工作負載推升需求，硬碟(HDD)、DRAM、NAND等關鍵零組件缺貨恐延續超過5年；Seagate與Western Digital的近線硬碟(nearline HDD)訂單已排到2028至2031年，而東芝宣布砸3.8億美元擴產硬碟的消息，反讓WD、Seagate股價重挫逾7~11%，顯示儲存供應鏈吃緊與擴產預期間的角力，呼應記憶體整體缺貨的長期化趨勢。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dell 點名 HDD 缺貨，硬碟供應持續吃緊",
+          "url": "https://technews.tw/2026/09/26/dell-highlights-hdd-shortage-hard-drive-supply-remains-tight/"
+        },
+        {
+          "title": "Toshiba Wants to Double HDD Supply — Western Digital, Seagate Investors Don't Like It",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62132305/toshiba-wants-to-double-hdd-supply-western-digital-seagate-investors-dont-like-it"
+        },
+        {
+          "title": "Western Digital is already sold out of hard drives for all of 2026",
+          "url": "https://www.tomshardware.com/pc-components/hdds/western-digital-is-already-sold-out-of-hard-drives-for-all-of-2026-chief-says-some-long-term-agreements-for-2027-and-2028-already-in-place"
+        }
+      ]
+    },
+    {
+      "summary": "台股上週資金湧入、單週上漲451點，法人認為AI與記憶體兩大主流動能延續強勢，加上台積電(10/15)、台達電等重磅法說會接力登場，10月大盤可望挑戰歷史新高5萬點關卡，週一夜盤費半大漲亦為台股開盤添柴火。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台股超級法說行情起跑 10月有望挑戰5萬點大關",
+          "url": "https://money.udn.com/money/story/5607/9794464"
+        },
+        {
+          "title": "股民大進補！台股一週漲451點　這3類包辦成交前三",
+          "url": "https://tw.news.yahoo.com/%E8%82%A1%E6%B0%91%E5%A4%A7%E9%80%B2%E8%A3%9C-%E5%8F%B0%E8%82%A1-%E9%80%B1%E6%BC%B2451%E9%BB%9E-%E9%80%993%E9%A1%9E%E5%8C%85%E8%BE%A6%E6%88%90%E4%BA%A4%E5%89%8D%E4%B8%89-202500036.html"
+        },
+        {
+          "title": "【盤前】費半漲2.4%壯膽！台指夜盤飆677點　3大利多點火台股戰史高",
+          "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E8%B2%BB%E5%8D%8A%E6%BC%B22-4-%E5%A3%AF%E8%86%BD-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E9%A3%86677%E9%BB%9E-220600920.html"
+        }
+      ]
+    }
+  ]
+}
