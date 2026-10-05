@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T06:30:00+08:00",
+  "items": [
+    {
+      "summary": "台積電股價法說會前衝高、市值飆破66兆元新高，法人預期Q3營收有望達財測高標；外資法說預覽指出10/15法說會將聚焦與馬斯克Terafab合作評估德州新廠、不排除加碼達拉斯第二美國據點、2027年資本支出規模，以及先進製程明年恐漲價5~10%、先進封裝漲價10~15%、A14對抗英特爾14A代工競賽等五大焦點，牽動整體晶圓代工與報價行情氣氛。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台積電法說前市場押寶 市值飆衝66兆元新高",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E5%89%8D%E5%B8%82%E5%A0%B4%E6%8A%BC%E5%AF%B6-%E5%B8%82%E5%80%BC%E9%A3%86%E8%A1%9D66%E5%85%86%E5%85%83%E6%96%B0%E9%AB%98-224553646.html"
+        },
+        {
+          "title": "台積電Q3業績有望達財測高標",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BBq3%E6%A5%AD%E7%B8%BE%E6%9C%89%E6%9C%9B%E9%81%94%E8%B2%A1%E6%B8%AC%E9%AB%98%E6%A8%99-224553908.html"
+        },
+        {
+          "title": "TSMC Earnings Preview: Terafab Talks, Price Hikes and A14-Intel Race Lead Five Key Themes",
+          "url": "https://www.trendforce.com/news/2026/10/05/news-tsmc-earnings-preview-terafab-talks-price-hikes-and-a14-intel-race-lead-five-key-themes/"
+        }
+      ]
+    },
+    {
+      "summary": "大摩重新將輝達列為半導體產業「首選股」，目標價上看300美元，帶動輝達AI供應鏈相關的ABF載板、CCL、PCB、矽晶圓、封測與散熱等概念股同步受外資關注。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "6672", "name": "騰輝電子-KY"},
+        {"code": "2368", "name": "金像電"},
+        {"code": "4958", "name": "臻鼎-KY"},
+        {"code": "8358", "name": "金居"},
+        {"code": "2313", "name": "華通"},
+        {"code": "3711", "name": "日月光投控"},
+        {"code": "6239", "name": "力成"},
+        {"code": "6147", "name": "頎邦"},
+        {"code": "6182", "name": "合晶"},
+        {"code": "6488", "name": "環球晶"},
+        {"code": "3017", "name": "奇鋐"},
+        {"code": "3653", "name": "健策"},
+        {"code": "3324", "name": "雙鴻"},
+        {"code": "3167", "name": "大量"},
+        {"code": "8021", "name": "尖點"}
+      ],
+      "sources": [
+        {
+          "title": "大摩力挺！輝達重回半導體「首選股」寶座　目標價上看300美元",
+          "url": "https://tw.news.yahoo.com/%E5%A4%A7%E6%91%A9%E5%8A%9B%E6%8C%BA-%E8%BC%9D%E9%81%94%E9%87%8D%E5%9B%9E%E5%8D%8A%E5%B0%8E%E9%AB%94-%E9%A6%96%E9%81%B8%E8%82%A1-%E5%AF%B6%E5%BA%A7-%E7%9B%AE%E6%A8%99%E5%83%B9%E4%B8%8A%E7%9C%8B300%E7%BE%8E%E5%85%83-224100797.html"
+        }
+      ]
+    },
+    {
+      "summary": "美股四大指數齊揚、那斯達克再創歷史新高，帶動台指期夜盤一度衝上50118點突破5萬點大關，台積電ADR同步大漲2.75%，為台股今日續攻歷史新高添動能。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "科技股領漲「那指創新高」！美股全面收漲　台指期夜盤收50118點",
+          "url": "https://tw.stock.yahoo.com/news/%E7%A7%91%E6%8A%80%E8%82%A1%E9%A0%98%E6%BC%B2-%E9%82%A3%E6%8C%87%E5%89%B5%E6%96%B0%E9%AB%98-%E7%BE%8E%E8%82%A1%E5%85%A8%E9%9D%A2%E6%94%B6%E6%BC%B2-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E6%94%B650118%E9%BB%9E-222818910.html"
+        },
+        {
+          "title": "【盤前】台指夜盤漲174點！美股全紅那指再創高　台股今再戰歷史新高",
+          "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%BC%B2174%E9%BB%9E-%E7%BE%8E%E8%82%A1%E5%85%A8%E7%B4%85%E9%82%A3%E6%8C%87%E5%86%8D%E5%89%B5%E9%AB%98-%E5%8F%B0%E8%82%A1%E4%BB%8A%E5%86%8D%E6%88%B0%E6%AD%B7%E5%8F%B2%E6%96%B0%E9%AB%98-221900531.html"
+        },
+        {
+          "title": "美股收高！台指期夜盤突破50000大關！台積電ADR漲2.75％",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%94%B6%E9%AB%98-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E7%AA%81%E7%A0%B450000%E5%A4%A7%E9%97%9C-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E6%BC%B22-75-220456904.html"
+        }
+      ]
+    },
+    {
+      "summary": "美國CCIA等5個科技公協會10/2聯名致信白宮，要求重新考慮對半導體、機器人與工業機械加徵232條款關稅，CCIA估算25%半導體關稅將使資料中心建置成本增加15.6%、四年內美國企業合計多付900億美元，警告關稅反而拖累晶圓廠與AI資料中心的在地擴產進度，為台廠美國設廠的關稅風險添變數。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "Tech Associations Present Semiconductor and Industrial Machinery Tariff Concerns in White House Letter",
+          "url": "https://ccianet.org/news/2026/10/tech-associations-present-semiconductor-and-industrial-machinery-tariff-concerns-in-white-house-letter/"
+        }
+      ]
+    },
+    {
+      "summary": "美光上季財報優於預期後，市場焦點轉向三星與SK海力士：三星10/8將公布Q3初步財報，券商預估DRAM平均售價季增22%、營收上看217.7兆韓元；SK海力士則受惠HBM需求擴張壓縮傳統DRAM供給，法人看好HBM4明年放量後HBM營收占比將推升至約15%，強化記憶體類股獲利能見度，呼應近期記憶體缺貨與漲價行情延續。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"},
+        {"code": "6531", "name": "愛普"}
+      ],
+      "sources": [
+        {
+          "title": "After Micron's Earnings Beat, Eyes Turn to Samsung and SK hynix",
+          "url": "https://en.sedaily.com/finance/2026/10/04/after-microns-earnings-beat-eyes-turn-to-samsung-and-sk"
+        }
+      ]
+    }
+  ]
+}
