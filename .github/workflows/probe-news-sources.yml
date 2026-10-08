@@ -1,0 +1,67 @@
+name: 探測新聞資料來源（暫時，驗證後刪除）
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 探測各資料來源
+        run: |
+          cat > /tmp/probe.py << 'PY'
+          import json, urllib.request, urllib.parse
+          UA={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36","Accept-Language":"zh-TW,zh;q=0.9"}
+          out={}
+          def get(url, timeout=30):
+              req=urllib.request.Request(url, headers=UA)
+              with urllib.request.urlopen(req, timeout=timeout) as r:
+                  return r.status, r.headers.get('content-type'), r.read()
+          def probe(name,url,kind='json',n=3):
+              try:
+                  st,ct,body=get(url)
+                  rec={'url':url,'status':st,'ctype':ct,'bytes':len(body)}
+                  if kind=='json':
+                      j=json.loads(body.decode('utf-8-sig'))
+                      if isinstance(j,list):
+                          rec['count']=len(j); rec['keys']=list(j[0].keys()) if j else []; rec['sample']=j[:n]
+                          rec['codes_3017_6805']=[x for x in j if any(str(v).strip() in ('3017','6805') for v in x.values())][:4]
+                      else:
+                          rec['sample']=json.dumps(j,ensure_ascii=False)[:2500]
+                  else:
+                      rec['head']=body.decode('utf-8','replace')[:3500]
+                  out[name]=rec
+              except Exception as e:
+                  out[name]={'url':url,'error':repr(e)}
+          for nm,url in [('twse_swagger','https://openapi.twse.com.tw/v1/swagger.json'),('tpex_swagger','https://www.tpex.org.tw/openapi/swagger.json')]:
+              try:
+                  st,ct,body=get(url); j=json.loads(body.decode('utf-8-sig'))
+                  paths={p:(v.get('get',{}).get('summary') or v.get('get',{}).get('description') or '') for p,v in j.get('paths',{}).items()}
+                  out[nm]={'status':st,'n_paths':len(paths),'hits':{p:s for p,s in paths.items() if ('重大訊息' in s) or ('重訊' in s) or ('ap04' in p)}}
+              except Exception as e:
+                  out[nm]={'error':repr(e)}
+          probe('twse_t187ap04_L','https://openapi.twse.com.tw/v1/opendata/t187ap04_L')
+          probe('tpex_mopsfin_t187ap04_O','https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O')
+          probe('tpex_t187ap04_O','https://www.tpex.org.tw/openapi/v1/t187ap04_O')
+          for nm,q in [('gnews_name','奇鋐'),('gnews_name_code','奇鋐 3017'),('gnews_fsd','富世達')]:
+              probe(nm,'https://news.google.com/rss/search?q='+urllib.parse.quote(q)+'&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',kind='text')
+          probe('yahoo_stock_rss','https://tw.stock.yahoo.com/rss?s=3017',kind='text')
+          probe('cnyes_twstock','https://api.cnyes.com/media/api/v1/newslist/category/tw_stock?limit=5')
+          json.dump(out,open('probe_output.json','w'),ensure_ascii=False,indent=1)
+          PY
+          python3 /tmp/probe.py
+      - name: 推到暫時分支 probe-news
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cp probe_output.json /tmp/probe_output.json
+          git checkout --orphan probe-news
+          git rm -rf --cached . > /dev/null
+          cp /tmp/probe_output.json probe_output.json
+          git add probe_output.json
+          git commit -m "probe output"
+          git push -f origin probe-news
