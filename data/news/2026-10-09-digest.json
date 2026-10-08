@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09T08:30:00+08:00",
+  "items": [
+    {
+      "summary": "OpenAI公布營收不如市場預期，衝擊AI類股信心，美股四大指數10/8全面收黑，費城半導體指數重挫逾440點（跌逾3%），台積電ADR同步重挫逾3%，顯示AI供應鏈評價已偏高、對獲利不如預期的消息格外敏感，台股隔日開盤也隨之承壓。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "〈美股盤後〉OpenAI營收遭爆不如預期 AI概念股嚇趴 費半、台積電ADR重挫逾3%", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-openai%E7%87%9F%E6%94%B6%E9%81%AD%E7%88%86%E4%B8%8D%E5%A6%82%E9%A0%90%E6%9C%9F-ai%E6%A6%82%E5%BF%B5%E8%82%A1%E5%9A%87%E8%B6%B4-%E8%B2%BB%E5%8D%8A-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E9%87%8D%E6%8C%AB%E9%80%BE3-220120048.html"},
+        {"title": "OpenAI's Revenue Miss Ripples Through S&P 500 While Earnings Pour In", "url": "https://finance.yahoo.com/markets/stocks/articles/openai-revenue-miss-ripples-p-132038121.html"}
+      ]
+    },
+    {
+      "summary": "散熱大廠奇鋐與關係企業富世達遭法務部調查局搜索約談（傳涉內線交易，大陸子公司董座已以100萬元交保），兩檔重訊證實消息當日股價雙雙開低，但公司強調營運正常、9月營收仍創歷史新高，外資隨後站上買方；事件屬公司治理風險而非營運基本面惡化，但後續檢調調查進度值得持續追蹤。",
+      "relatedStocks": [
+        {"code": "3017", "name": "奇鋐"},
+        {"code": "6805", "name": "富世達"}
+      ],
+      "sources": [
+        {"title": "公告法務部調查局至本公司新莊廠區對員工進行搜索及調查（奇鋐）", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"},
+        {"title": "散熱大廠奇鋐爆內線交易！調查局搜索約談5人 大陸子公司董座100萬交保", "url": "https://news.google.com/rss/articles/CBMi7ANBVV95cUxPbEMxX016MW9IVU9IbDA4OHp6N3VoWTZUenpMajFRaFZNS2hXb1NvMDJ4LUZJMHVWYXlrNFhpUDhDWHJmVlBxRFZIa0x5QkFUVC1KLUpJc3U0VWtqcF9QeHVzRzNFUjNhVHktQ3MxS1EyVFJkTGpxZWV2VDA3SlF0WWVmWUVQREZJc08tNW1ERDZBVXBhNlh5VjFSanpHT01Ya2FBdW9pTDhjQTZfOVYxWGhnTDNBOUYtNTBUSVJ6cVZ4SEx2TUZOU0k2UVlKV285ME9qRXBoMUhnN3ZyWWUzS2JnN1R5MHlYQmtLcm1BNF9qVWhBS3Jud3NrTnlTYVpCQlVGdkdRWFNtVTVEY3poMlJCYklrSjB6cGEzaG82STNJSDNObGd1akFxVzBURVFDWFg1NmlKSGpCN19qN19GaUJkcE8wWEhGREdVTUlxbHBLRzVsblcxTDJDSnFQcnRkejZhSXhtZm9oekV5VklqOEY5OHNWSjMxUVBFREJZSUZHbUhIMDNOX3llc2lRUzE1SW9GbVMyRkVPQ1dvU1cwOFRmY3U5c1VpZE9MMkxXX3dNY1RFOHZhYWl5S1YyakFxT2pDSDlHbkRQYTBRUTlvRFhuRXVnSGRxUlpFeFVYeER0NEtnMFEyLVJPVWw?oc=5"}
+      ]
+    },
+    {
+      "summary": "智邦董事會一口氣通過多項大型資本支出：南寮廠興建預算67.4億元、竹北AI智慧園區產業專區二追加32.86億元（總投資達66.26億元）、新加坡子公司生產設備預算30.13億元，以及關係企業長期租賃案11.81億元，合計資本支出規模逾170億元，顯示公司積極擴充網通設備產能以因應AI資料中心需求。",
+      "relatedStocks": [
+        {"code": "2345", "name": "智邦"}
+      ],
+      "sources": [
+        {"title": "本公司董事會通過南寮廠預算案等多項資本支出案", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"},
+        {"title": "智邦擴大布局！砸67.4億元興建南寮廠，AI智慧園區追加32.86億元投資", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmpRMGpyb0NjNVcySWd0dnp3azBhYWNVWndLbjcwSkxMX0R1cEp6ZzFkREYtbEdXYXhDRTVOQzJ4WjRVemM4ZEY0T1VCaExzdmlOVWVOeEdvT0k?oc=5"}
+      ]
+    },
+    {
+      "summary": "亞馬遜由金像電客戶轉為入股股東，金像電宣布170億元資本支出擴產因應ASIC相關訂單，蘇州、泰國新產能預計明年開出；市場將此與輝達、亞馬遜近期重金投資台灣供應鏈夥伴（如世芯）的動作並列，視為AI大廠與代工夥伴從單純採購關係走向「資本共生」的結構性轉變。",
+      "relatedStocks": [
+        {"code": "2368", "name": "金像電"}
+      ],
+      "sources": [
+        {"title": "金像電搭ASIC快車 擴產拚成長！亞馬遜從客戶變股東，170億資本支出火力全開", "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9RUVRkY2taT3NoWmtWQ2hHdGk1UUY2d091VjVtTEpXVDFTY0d3bVQ0U1dPNm94cHE0T3RaUjlobEYwYTJBU3dPbkZ1aExRMmozbEpXZ1ZoM2w3LUtIZnlDbzY4bWwza055YjJfRmVqMW0zVjBjVmpIZHZJNA?oc=5"},
+        {"title": "亞馬遜、輝達重金插旗台廠！世芯、金像電、聯發科…AI供應鏈進入「資本共生」時代", "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sMENCbXg0NkJyLXNsemlSSDVrWXBUMEZiSFFxX2tCdEsxYy1xV3gwdTRHZzFHZ25LcGtSZFNGaG55Qmx1bEVnR3BUZmI2UlZWWFd0VGQtdUVtQzNMb2lV?oc=5"}
+      ]
+    },
+    {
+      "summary": "矽晶圓大廠合晶第四度申請「台商回台」投資方案，加碼178.8億元擴建中部科學園區廠區，持續強化台灣在地矽晶圓產能，為半導體供應鏈在地化與未來先進製程需求預作準備。",
+      "relatedStocks": [
+        {"code": "6182", "name": "合晶"}
+      ],
+      "sources": [
+        {"title": "矽晶圓大廠加碼台灣！合晶投資178.8億元 中科園區擴廠", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9SQnloY1prY2tyN2c0Y0thcVlubW5yblBaeXBPRzZmRVBfenp4UWxlZlo4bGF4NV9OSWl3djg1YzV6NEZ6aE9udkc3YnXSAVJBVV95cUxNT0pXMjBrek5XbEV6eGN2WlhwOWExUlQwX3FTU0p1Q2RUU1g3UVNvNi16VzBJSm4zQ1lYNnowajFrcWZfemd1MFY0WkhfTDZncTVR?oc=5"},
+        {"title": "合晶第四度申請台商回台投資 再砸178.8億元擴廠", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9lS29oUlVjUmVqSTF2bzFhREsycFA5NUpVWUdCWGVCNVZkZnQ3UFFPOV9HLUFkOXNYOUZvTzE0c1c1bHdsNXhES3Ywb2c?oc=5"}
+      ]
+    },
+    {
+      "summary": "南亞科新建晶圓廠確定選址屏東，總座並說明背後關鍵考量；市場同時指出DDR4缺貨情況恐延續至2027年，法人看好記憶體缺貨行情尚未結束，顯示DRAM供需吃緊已進入影響廠商擴產決策的結構性階段，而非單季現象。",
+      "relatedStocks": [
+        {"code": "2408", "name": "南亞科"}
+      ],
+      "sources": [
+        {"title": "半導體風雲／南亞科新廠拍板屏東 總座親曝幕後關鍵", "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12WERkeE1INmhkR3BXR0pXMGhUNTdxak5ST0x6RXluZ0hlNjZwTm5JQU9aTkhZSjJ4NTlldERlQjhfenRYbXVWczhEV2RrY005aGxENU5TRQ?oc=5"},
+        {"title": "DDR4缺貨延至2027年！大和讚南亞科獲利，上修目標價", "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hQWFNSzlSTzhySjR5aHVoM1lrLWJ2UDVtbmJZT204Tm5TVEJfa2hDNWhoMzF4d0NrNXdES1h4VWpaZklxWFJ0NmdIY1FKMUY0WnpDOHpKMnJGM1hPbFFPR2Z4QWREZWxtLUNHb3d3elJRMWF0VWpCb1pDOEY1aWM?oc=5"}
+      ]
+    },
+    {
+      "summary": "華邦電法說會上與威剛同步表態看好明年DRAM供給更吃緊；三星電子則傳出明年起旗下電視產品擬採用華邦電LPDDR4產品，占比約達5成，意味華邦電在利基型記憶體的客戶導入再下一城，記憶體供需缺口由上游延伸至下游應用端的佈局更趨明朗。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"}
+      ],
+      "sources": [
+        {"title": "開法說會》華邦電、威剛同看好 明年DRAM供給更吃緊", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DSDBaRk9lSE13UWdHbGJvOFlZU3lZQWhyMnJQN2hfRHJqWUhWMkM0Y09xX1FFZ3BWZzNkdlhtWXdvSFJWaXBhd0E0a0sxalNYZVUwbWpNZGE?oc=5"},
+        {"title": "三星電視擬於明年起採用華邦電LPDDR4產品，佔比約達5成", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9tZkhScEdDYkJMazdhSWZlV0NIQ2c5X0toM3dBalpBdENKQUZMLWdVcVBNa2tQTHFnWDVPcVFYMW10VFVJMldmNkdGd0o2OTE2MDBLM2Zsel8?oc=5"}
+      ]
+    },
+    {
+      "summary": "聯茂董事長陳進財近日多場合談擴產進度：特殊基板全球市占已躍居第二，新品M10已送樣各大科技廠認證，無錫與泰國廠月產能擬擴充至915萬張；他坦言目前「最大機會是訂單做不完」、最大挑戰反而是「原料拿不到」，並直言現在談AI泡沫化「真的還太早」，對CCL產業景氣展望態度偏樂觀。",
+      "relatedStocks": [
+        {"code": "6213", "name": "聯茂"}
+      ],
+      "sources": [
+        {"title": "聯茂急起直追！特殊基板市占躍居全球第二 董事長陳進財：「最大機會是訂單做不完！」", "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1TnlzM2p3YnpKNVJnUFdCN3VBX0tyT1p1bUpMeEhLOU55M2xlVXM1MkluRVhXcjF0RTk1OEZRcGNudVpBa1pxSm1LS0htNXBETTNJMEJrVkVXdTRqX2hTMFdRcV90bWR0TmJQakZmV0UzaHJsN1BMMU51WQ?oc=5"},
+        {"title": "聯茂擴產訂單做不完 董座陳進財：AI談泡沫「真的還太早」", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB3dUdnVWdILXJvbzc5UmtndkVuWHNfRkJ2QzZnNnJHVlFoX3dEQTVKanVEWDFZa0cwMThwY1piQnY0aVRhalhVSVJONmloSjFU0gFWQVVfeXFMTUx6bUo2TDZ2UUtSMlkySmtsVUxMazBnX3ptOWhpOENXdFRJOVNZb2NvZGRZbFZTUUstV01IZHNrb3pPUU43X0VpZkppOTFRaURFT0VRQ0E?oc=5"}
+      ]
+    },
+    {
+      "summary": "ABF載板龍頭欣興宣布百億元級投資擴產，帶動ABF、PCB族群訂單齊旺；關係企業臻鼎則受惠手機拉貨旺季與AI高階應用放量，兩家公司皆表態看好第4季營運維持高檔，反映載板供不應求態勢延續至年底。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "4958", "name": "臻鼎-KY"}
+      ],
+      "sources": [
+        {"title": "欣興百億投資吹號角 ABF、PCB族群訂單齊旺！AI大擴產 16檔受惠股水漲船高", "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBlaVpKU1pDME5ETC02V1A0OGl4c1IyY2Y0eU9jd2pUZ0tNMHJJT2tSNVJxcThSekd2RlZ6dFdFVGdXVC12UW90d18tbmRsclhQQUU0UE1OdVpGV0xnVnVudl9WYjY4eUdPT3NTM19ZdzRWNFBHQnFZUmp5NA?oc=5"},
+        {"title": "手機拉貨旺季、AI高階應用放量 臻鼎看好4Q26營運攀高", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE45cWNabzZzcFE1QThRT2R5WjROaFB5LVBFVDhZWXZIZk1XOTRGOFc5dklJVTRqRDNzeDJ4NEZIMm1TdTF1LUNfYXhCejY5YTBLTm80SXJGdElnU1M5RFJQckx0RnI3LTRmTFc4?oc=5"}
+      ]
+    },
+    {
+      "summary": "大立光Q3法說會重點浮現：FAU模組已通過客戶認證、明年中可望量產，公司並押注AI光通訊CPO布局三箭齊發；但同時傳出蘋果新機拉貨下修、客戶要求產品一路做到FAU增添成本負擔，加上綠電成本形成結構性壓力，公司對Micro LED切入光通訊的前景也不表樂觀，整體呈現機會與壓力並存的「變局」。",
+      "relatedStocks": [
+        {"code": "3008", "name": "大立光"}
+      ],
+      "sources": [
+        {"title": "大立光3008 2026Q3法說會重點：FAU客戶認證通過明年中量產！綠電成本成結構性壓力？", "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQS0R4R25lRjlvS1JWSUotV2NyVmQ5X1FMdGs4R3g2dWtXcXJ5b1AyZGNGODlETXR0bi1GUmh4WnBvdUkybmxaZTBnaF9OTVU2Z3dTOGN3NDljNVV0TVUyaHU4UXg5NjBSYWxuODdrQ09mb3NvY3J0alpxY3RyU1dYWG5wQkVFRXZjakEtTlNKWDJiaFN5dndNSnJpTnZpdw?oc=5"},
+        {"title": "大立光變局2》客戶要求一路做到FAU 整座新廠押AI光通訊", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9kSGJIZ0tXYlhtSTZSZG5fYXBuSUJFY2trQ0FKQXhGVTBpeGViangwc2RlOU04bjZpNjVsNW1OU1htY0gwUWRnNFY1akJ0WU1ZVFoySmpJVWU5UWU2VU9KcHJnYnJQcmNqUVpr?oc=5"}
+      ]
+    },
+    {
+      "summary": "力成就媒體報導發布澄清，確認公司自主開發的PiFO面板級封裝（FOPLP）技術正成為新成長動能，董事長預期全年營收有機會改寫2022年歷史新高紀錄；同時市場傳出美光、超微（AMD）啟動記憶體大掃貨備貨，力成與群聯作為封測及控制IC廠同步受惠，顯示記憶體產業鏈需求持續擴散至下游封測環節。",
+      "relatedStocks": [
+        {"code": "6239", "name": "力成"},
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {"title": "說明媒體報導本公司相關資訊（力成FOPLP與全年營收展望）", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"},
+        {"title": "超微啟動記憶體大掃貨！2台廠力成、群聯樂翻", "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcU1panRGb0NsUm80UlNkTFBVempMY09UWEpyajNiRHBlMTZ4RmJQek5ySlNGd2diemVlYmVmQzhoQ2pIQmZTNTBWa0FRLVd1dWE4d3dhUmktT1l4X1Z2dUhZVExzb3R2c2E4aEw2WUw1ZDVRcEtuQnNHS3Y1ZnZ6NGlLOA?oc=5"}
+      ]
+    },
+    {
+      "summary": "受惠AI特殊製程需求回升，聯電8吋晶圓廠稼動率回升至85%，顯示先前較為疲弱的成熟製程產能利用率已隨AI相關訂單增溫而改善，為晶圓代工族群的景氣落底訊號之一。",
+      "relatedStocks": [
+        {"code": "2303", "name": "聯電"}
+      ],
+      "sources": [
+        {"title": "AI特殊製程需求爆發！聯電8吋廠稼動率回升至85%", "url": "https://news.google.com/rss/articles/CBMipANBVV95cUxQdG5YNW11THAzN1p1bnpCeFcyMWdiakpaSDJjc1JNdm1UV3pqcnpEdUtfZ0dJVmdkWnIyeWV2cDhJamxqRzJFcjhnVmk3UWF5MTQ2OG9TblhGMXNTUks5WDh4dmxPTlU2TTdQZC1PUXFrTU1zV1hMM3Q5SWtpWVU5ZUJVYjZOVUYxdExGSXEzdW5DSER5aUJUbTNmb3hQeVUwLVpXdnRidE5MeUxVcmgzSlhnS1lGSWpKQzVlNEtya21pS1pKOHU2SXRrNE9hODNQYlJOZmpIR29kM3plYXNYWU11MGNfQXN2MVdvMUZNYTlzSXdFU1JqTm5TRkhPTmVDTU40YjVQOWFxMVlPYV85cW56S2JiYnpZSGczcjFkYVo2Q1ZISFJUc0J3SVJjS3NuaTNfTEVhRVFjUmY0VGU5NElPMDI3dFBxRDNEYU1WNGJha1hWelFnUFVybHFsZDFYWHMtc0REYUMtYk1VdTJwbnFvRGZzMXEyR2hWc0VnN0wzYlFad0ZBTThHYzQzQW1HODNhRG9fckNtbFlxZ3FwZUVJT0k?oc=5"}
+      ]
+    }
+  ]
+}
