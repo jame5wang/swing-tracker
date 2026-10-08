@@ -314,10 +314,23 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .feedHead{cursor:pointer; user-select:none;}
 .feedCaret{display:inline-block; margin-left:6px; color:var(--mute); font-size:11px; transition:transform .2s;}
 .feedCard.collapsed .feedCaret{transform:rotate(-90deg);}
-.feedCard .cnList{margin-top:9px;}
-.feedStock{display:inline-block; margin-left:6px; font-size:10.5px; font-weight:650; padding:0 6px; border-radius:6px; background:var(--panel2); color:var(--accent); cursor:pointer; white-space:nowrap;}
+.feedStock{display:inline-block; margin-right:6px; font-size:10.5px; font-weight:650; padding:0 6px; border-radius:6px; background:var(--panel2); color:var(--accent); cursor:pointer; white-space:nowrap; vertical-align:1px;}
 .feedStock:hover{text-decoration:underline;}
-.feedNote{font-size:11px; color:var(--mute); margin-top:8px;}
+.feedCat{margin-top:11px;}
+.feedCatHead{font-size:12px; font-weight:700; color:var(--sub); margin-bottom:5px;}
+.cnCatCount{font-size:10.5px; font-weight:500; color:var(--mute); margin-left:6px;}
+.feedLine{font-size:13px; line-height:1.5; padding:2px 0 4px;}
+.feedLine > a, .feedSub a{color:var(--ink); text-decoration:none;}
+.feedLine > a:hover, .feedSub a:hover{color:var(--accent); text-decoration:underline;}
+.feedGroupBtn{background:none; border:none; padding:0; margin-left:6px; font-size:11px; color:var(--accent); cursor:pointer; font-family:inherit; white-space:nowrap;}
+.feedCatBtn{display:block; background:none; border:none; padding:0; margin-top:2px; font-size:11.5px; color:var(--accent); cursor:pointer; font-family:inherit;}
+.feedGroupBtn:hover, .feedCatBtn:hover{text-decoration:underline;}
+.feedSub{margin:4px 0 2px 4px; padding-left:10px; border-left:2px solid var(--line); display:flex; flex-direction:column; gap:4px;}
+.feedSub .cnItem{font-size:12.5px;}
+.cnGroup{margin-top:10px;}
+.cnGroup .cnItem{margin-bottom:5px;}
+.cnExtra{display:none;}
+.cnGroup.open .cnExtra{display:block;}
 .detailAnnNote.lv2{background:var(--stopBg); border-left:3px solid var(--stop);}
 .detailAnnNote.lv1{background:var(--sellBg); border-left:3px solid var(--sell);}
 .cnList{display:flex; flex-direction:column; gap:8px; margin-top:6px;}
@@ -831,11 +844,66 @@ function renderAnnBox(){
   if(routineBtn) routineBtn.addEventListener('click',()=>{ annRoutineOpen=!annRoutineOpen; renderAnnBox(); });
   el.querySelectorAll('.annStock').forEach(x=>x.addEventListener('click',()=>openStockByCode(x.dataset.code,'reports')));
 }
-// 首頁「持股最新新聞」：把每檔股票的個股新聞合併成一條時間軸（同一則新聞點名多檔股票時只列一次、標出相關股票）
-let feedExpanded=false;
+// 首頁「持股最新新聞」：一天兩百多則太多，依標題分類（重大事件、營收財報、法說…），同一類裡同一檔股票的
+// 新聞合併成一組、只顯示最新一則標題；每類先列報導最多的 1～2 組，其餘收合，要看細節再自己點進去或搜尋
 let feedCollapsed=(()=>{ try{ return localStorage.getItem('feedCollapsed')==='1'; }catch(e){ return false; } })();
-const FEED_SHOW=6, FEED_MAX=60;
+let feedOpenCats=new Set();   // 已展開「其餘 N 組」的分類
+let feedOpenGroups=new Set(); // 已展開「另 N 則」的組
+// 每類預設顯示幾組：報導最多的那組一定列；第二組也很熱門（3 則以上報導）才一起列；「其他」預設收合
+function feedShownCount(cat, groups){
+  if(cat==='other') return 0;
+  return (groups.length>=2 && groups[1].items.length>=3) ? 2 : 1;
+}
+// 依序比對，先符合的優先：同時講搜索與營收的歸「重大事件」；「法說」優先於營收，董座發言則在營收之後才判斷
+const NEWS_CAT_RULES=[
+  ['event',    /搜索|調查局|檢調|約談|起訴|羈押|交保|收押|內線|掏空|澄清|重訊|火災|氣爆|爆炸|停工|停產|罷工|訴訟|裁罰|罰鍰|違約|跳票|資安|駭客|下市/],
+  ['outlook',  /法說|股東會/],
+  ['revenue',  /營收|EPS|獲利|財報|毛利|淨利|盈餘|自結|稅後|純益|季報|年報/],
+  ['disposal', /注意股|處置|管制|撮合|警示股|全額交割|關禁閉/],
+  ['outlook',  /展望|董座|董事長|總經理|執行長|總裁|說明會/],
+  ['inst',     /目標價|評等|外資|投信|自營商|三大法人|法人|買超|賣超|大摩|小摩|摩根|高盛|花旗|美系|日系|野村|瑞銀|里昂|大和|FactSet|Factset|調升|調降|融資|融券|籌碼|ETF|00\d{3}/],
+  ['move',     /漲停|跌停|大漲|大跌|亮燈|噴|飆|重挫|創高|新高|天價|摜|跳水|強攻|走強|走弱|拉回|盤中|領漲|領跌|爆量|攻頂|翻黑|翻紅|收漲|收跌|千金股|狂殺|急殺/],
+  ['biz',      /擴產|產能|接單|訂單|出貨|量產|廠|買地|投資|合作|供應鏈|客戶|題材|概念股|漲價|缺貨|報價|技術|認證|AI|CPO|HBM|ASIC|伺服器|衛星|機器人|載板|CCL|PCB|散熱|光通訊|記憶體/],
+];
+const NEWS_CAT_ORDER=['event','revenue','outlook','inst','biz','disposal','move','other'];
+const NEWS_CAT_LABEL={event:'🚨 重大事件', revenue:'📊 營收財報', outlook:'🗣️ 法說／經營層', inst:'🏦 法人／目標價', biz:'🏭 接單／產業', disposal:'⚠️ 注意／處置', move:'📈 股價異動', other:'📰 其他'};
+function newsCategory(title){
+  const t=String(title||'');
+  for(const [id,rx] of NEWS_CAT_RULES) if(rx.test(t)) return id;
+  return 'other';
+}
 function normTitle(t){ return String(t||'').replace(/[\s\p{P}\p{S}_]+/gu,'').toLowerCase().slice(0,40); }
+// 一則新聞點名多檔股票時，以標題中最先出現的那檔當作這則新聞的主角
+function primaryCode(n){
+  if(n.codes.length<=1) return n.codes[0];
+  let best=n.codes[0], bestIdx=Infinity;
+  n.codes.forEach(c=>{
+    const nm=stockNameOf(c).replace(/-(KY|創)$/,'');
+    [nm, nm.replace(/(科技|電子|投控|微系統|金屬|精密)$/,'')].forEach(a=>{
+      if(a.length<2) return;
+      const i=n.title.indexOf(a);
+      if(i>=0 && i<bestIdx){ bestIdx=i; best=c; }
+    });
+  });
+  return best;
+}
+function groupFeedByCategory(feed){
+  const cats={};
+  feed.forEach(n=>{
+    const cat=newsCategory(n.title), code=primaryCode(n), key=`${cat}|${code}`;
+    if(!cats[cat]) cats[cat]=new Map();
+    if(!cats[cat].has(key)) cats[cat].set(key,{key, code, items:[]});
+    cats[cat].get(key).items.push(n); // feed 已經由新到舊排序，組內第一則就是最新的
+  });
+  return NEWS_CAT_ORDER.filter(c=>cats[c]).map(c=>({
+    cat:c,
+    // 報導越多的事件越重要，排前面；一樣多就看誰比較新
+    groups:[...cats[c].values()].sort((a,b)=>b.items.length-a.items.length || b.items[0].ts-a.items[0].ts),
+  }));
+}
+function newsLinkHtml(n){
+  return `<a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="cnMeta">${esc(n.source||'')}${n.publishedAt?` · ${esc(relativeTimeFrom(n.publishedAt))}`:''}</span>`;
+}
 function stockNameOf(code){ const s=stocks.find(x=>String(x.code)===String(code)); return s ? s.name : String(code); }
 function stockNewsFeed(hours){
   if(!companyNews || !companyNews.news) return [];
@@ -853,26 +921,59 @@ function stockNewsFeed(hours){
   });
   return [...byKey.values()].sort((a,b)=>b.ts-a.ts);
 }
+function feedGroupHtml(g){
+  const open=feedOpenGroups.has(g.key), more=g.items.length-1;
+  return `<div class="feedLine">
+    <span class="feedStock" data-code="${esc(g.code)}">${esc(stockNameOf(g.code))}</span>${newsLinkHtml(g.items[0])}${more?`<button type="button" class="feedGroupBtn" data-key="${esc(g.key)}">${open?'收合':`另 ${more} 則`}</button>`:''}
+    ${open?`<div class="feedSub">${g.items.slice(1).map(n=>`<div class="cnItem">${newsLinkHtml(n)}</div>`).join('')}</div>`:''}
+  </div>`;
+}
 function renderNewsFeed(){
   const el=document.getElementById('newsFeedBox');
   if(!el) return;
   let hours=24, feed=stockNewsFeed(24);
-  if(feed.length<FEED_SHOW){ hours=72; feed=stockNewsFeed(72); } // 週末、連假新聞少時放寬到近3日
+  if(feed.length<6){ hours=72; feed=stockNewsFeed(72); } // 週末、連假新聞少時放寬到近3日
   if(!feed.length){ el.innerHTML=''; return; }
-  const shown=feed.slice(0, feedExpanded ? FEED_MAX : FEED_SHOW);
+  const cats=groupFeedByCategory(feed);
   el.innerHTML=`<div class="annCard feedCard${feedCollapsed?' collapsed':''}">
-    <div class="annHead"><span class="feedHead" id="feedHeadBtn">📰 持股最新新聞（近${hours===24?'24小時':'3日'}，${feed.length} 則）<span class="feedCaret">▾</span></span>${!feedCollapsed && feed.length>FEED_SHOW?`<button type="button" class="annMore" id="feedMoreBtn">${feedExpanded?'收合':'顯示更多'}</button>`:''}</div>
-    ${feedCollapsed ? '' : `<div class="cnList">${shown.map(n=>`<div class="cnItem"><a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="cnMeta">${esc(n.source||'')}${n.publishedAt?` · ${esc(relativeTimeFrom(n.publishedAt))}`:''}</span>${n.codes.slice(0,4).map(c=>`<span class="feedStock" data-code="${esc(c)}">${esc(stockNameOf(c))}</span>`).join('')}${n.codes.length>4?`<span class="cnMeta">等 ${n.codes.length} 檔</span>`:''}</div>`).join('')}</div>
-      ${feedExpanded && feed.length>FEED_MAX ? `<div class="feedNote">只列出最新 ${FEED_MAX} 則，其他新聞請到個股頁「法人／新聞」查看</div>` : ''}`}
+    <div class="annHead"><span class="feedHead" id="feedHeadBtn">📰 持股最新新聞（近${hours===24?'24小時':'3日'} ${feed.length} 則，依類型整理）<span class="feedCaret">▾</span></span></div>
+    ${feedCollapsed ? '' : cats.map(({cat,groups})=>{
+      const catOpen=feedOpenCats.has(cat);
+      const base=feedShownCount(cat, groups);
+      const shown=catOpen ? groups : groups.slice(0,base);
+      const total=groups.reduce((s,g)=>s+g.items.length,0);
+      return `<div class="feedCat">
+        <div class="feedCatHead">${NEWS_CAT_LABEL[cat]}<span class="cnCatCount">${groups.length} 檔／${total} 則</span></div>
+        ${shown.map(feedGroupHtml).join('')}
+        ${groups.length>base?`<button type="button" class="feedCatBtn" data-cat="${cat}">${catOpen?'收合':(base?`＋ 其餘 ${groups.length-base} 檔`:`＋ 展開 ${groups.length} 檔`)}</button>`:''}
+      </div>`;
+    }).join('')}
   </div>`;
   document.getElementById('feedHeadBtn').addEventListener('click',()=>{
     feedCollapsed=!feedCollapsed;
     try{ localStorage.setItem('feedCollapsed', feedCollapsed?'1':'0'); }catch(e){}
     renderNewsFeed();
   });
-  const more=document.getElementById('feedMoreBtn');
-  if(more) more.addEventListener('click',()=>{ feedExpanded=!feedExpanded; renderNewsFeed(); });
+  el.querySelectorAll('.feedCatBtn').forEach(b=>b.addEventListener('click',()=>{
+    const c=b.dataset.cat; feedOpenCats.has(c) ? feedOpenCats.delete(c) : feedOpenCats.add(c); renderNewsFeed();
+  }));
+  el.querySelectorAll('.feedGroupBtn').forEach(b=>b.addEventListener('click',()=>{
+    const k=b.dataset.key; feedOpenGroups.has(k) ? feedOpenGroups.delete(k) : feedOpenGroups.add(k); renderNewsFeed();
+  }));
   el.querySelectorAll('.feedStock').forEach(x=>x.addEventListener('click',()=>openStockByCode(x.dataset.code,'reports')));
+}
+// 個股頁的新聞也依類型分組，每類先顯示 2 則
+function stockNewsGroupedHtml(list){
+  const byCat=new Map();
+  list.forEach(n=>{ const c=newsCategory(n.title); if(!byCat.has(c)) byCat.set(c,[]); byCat.get(c).push(n); });
+  return NEWS_CAT_ORDER.filter(c=>byCat.has(c)).map(c=>{
+    const items=byCat.get(c);
+    return `<div class="cnGroup">
+      <div class="feedCatHead">${NEWS_CAT_LABEL[c]}<span class="cnCatCount">${items.length} 則</span></div>
+      ${items.map((n,i)=>`<div class="cnItem${i>=2?' cnExtra':''}">${newsLinkHtml(n)}</div>`).join('')}
+      ${items.length>2?`<button type="button" class="feedCatBtn cnMoreBtn">＋ 另 ${items.length-2} 則</button>`:''}
+    </div>`;
+  }).join('');
 }
 function rowAnnTagHtml(code){
   const imp=importantAnns(code, ANN_RECENT_DAYS);
@@ -1375,8 +1476,8 @@ function renderReportsNewsTab(s){
   const cn=companyNewsFor(s.code);
   if(cn.length){
     html+=`<div class="researchBlock">
-      <div class="rbTitle">最新新聞（近7日，${cn.length} 則）<span class="autoTag">自動更新</span></div>
-      <div class="cnList">${cn.map(n=>`<div class="cnItem"><a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="cnMeta">${esc(n.source||'')}${n.publishedAt?` · ${esc(relativeTimeFrom(n.publishedAt))}`:''}</span></div>`).join('')}</div>
+      <div class="rbTitle">最新新聞（近7日，${cn.length} 則，依類型整理）<span class="autoTag">自動更新</span></div>
+      ${stockNewsGroupedHtml(cn)}
     </div>`;
   }
   if(r && r.reports && r.reports.length){
@@ -1548,6 +1649,11 @@ function renderDetail(i){
   document.getElementById('backBtn').addEventListener('click',()=>{ activeIndex=null; render(); window.scrollTo(0,savedListScrollY); });
   const annNote=document.getElementById('detailAnnNote');
   if(annNote) annNote.addEventListener('click',()=>{ activeTab='reports'; render(); });
+  // 個股新聞分組的「另 N 則」：直接展開／收合，不重繪整頁（避免畫面跳動）
+  view.querySelectorAll('.cnMoreBtn').forEach(btn=>btn.addEventListener('click',()=>{
+    const g=btn.closest('.cnGroup'); const open=g.classList.toggle('open');
+    btn.textContent = open ? '收合' : `＋ 另 ${g.querySelectorAll('.cnExtra').length} 則`;
+  }));
   view.querySelectorAll('.tabBtn').forEach(btn=>{
     btn.addEventListener('click',()=>{ activeTab=btn.dataset.tab; render(); });
   });
