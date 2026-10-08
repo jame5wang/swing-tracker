@@ -1,0 +1,43 @@
+name: 抓取持股重大訊息與個股新聞
+
+on:
+  schedule:
+    # 台北時間 07:05（早上 7:30 Claude 每日彙整之前）、12:35（午盤）、17:45（盤後重訊）、
+    # 21:45（晚間重訊，公司常在收盤後到晚上發布重大訊息）；週末也跑，週末一樣可能有重訊與新聞
+    - cron: '5 23 * * *'
+    - cron: '35 4 * * *'
+    - cron: '45 9 * * *'
+    - cron: '45 13 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 抓取重大訊息（公開資訊觀測站）與個股新聞（鉅亨網、Google 新聞）
+        continue-on-error: true
+        run: python3 scripts/fetch_company_news.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/company_news.json
+          git diff --quiet --cached && exit 0
+          git commit -m "更新持股重大訊息與個股新聞 $(TZ=Asia/Taipei date +'%Y-%m-%d %H:%M')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*15))
+          done
+          echo "::error::推送失敗（重試5次仍衝突）"
+          exit 1
