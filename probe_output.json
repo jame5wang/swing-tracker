@@ -1,0 +1,188 @@
+{
+ "twse_swagger": {
+  "status": 200,
+  "n_paths": 143,
+  "hits": {
+   "/opendata/t187ap04_L": "上市公司每日重大訊息",
+   "/opendata/t187ap23_L": "上市公司違反資訊申報、重大訊息及說明記者會規定專區"
+  }
+ },
+ "tpex_swagger": {
+  "status": 200,
+  "n_paths": 225,
+  "hits": {
+   "/mopsfin_t187ap04_O": "上櫃公司每日重大訊息",
+   "/mopsfin_t187ap23_O": "上櫃公司違反資訊申報、重大訊息及說明記者會規定專區"
+  }
+ },
+ "twse_t187ap04_L": {
+  "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+  "status": 200,
+  "ctype": "application/json",
+  "bytes": 135592,
+  "count": 72,
+  "keys": [
+   "出表日期",
+   "發言日期",
+   "發言時間",
+   "公司代號",
+   "公司名稱",
+   "主旨 ",
+   "符合條款",
+   "事實發生日",
+   "說明"
+  ],
+  "sample": [
+   {
+    "出表日期": "1151008",
+    "發言日期": "1151007",
+    "發言時間": "658",
+    "公司代號": "6589",
+    "公司名稱": "台康生技",
+    "主旨 ": "本公司向歐盟藥品管理局(EMA)提交生物相似藥EG1206A\r\n(Pertuzumab Biosimilar)液體注射劑420毫克產品\r\n之上市許可申請",
+    "符合條款": "第10款",
+    "事實發生日": "1151006",
+    "說明": "1.事實發生日:115/10/06\n2.研發新藥名稱或代號:\n  研發代號：EG1206A (Pertuzumab生物相似藥)\n3.用途:\n  治療HER2早期乳癌、轉移性乳癌\n4.預計進行之所有研發階段:\n  (1)人體臨床試驗審查(IND)：已申請。\n  (2)第一期臨床試驗(Phase I)：已完成。\n  (3)第三期臨床試驗(Phase III)：豁免。\n  (4)查驗登記審核(BLA/MAA)：向歐盟藥品管理局(EMA)提出產品上市申請。\n5.目前進行中之研發階段(請說明目前之研發階段係屬提出申請/通過核准/\n不通過核准，若未通過者，請說明公司所面臨之風險及因應措施；\n另請說明未來經營方向及已投入累積研發費用):\n  (1)提出申請/通過核准/不通過核准/各期人體試驗(含期中分析)結果/\n     發生其他影響新藥研發之重大事件：\n     向歐盟藥品管理局(EMA)提出生物相似藥EG1206A(Pertuzumab Biosimilar)\n  (2)未通過目的事業主管機關許可、\n     各期人體臨床試驗(含期中分析)結果未達統計上顯著意義或\n     發生其他影響新藥研發之重大事件者，\n     公司所面臨之風險及因應措施：不適用\n  (3)已通過目的事業主管機關許可、\n     各期人體臨床試驗(含期中分析)結果達統計上著意義或\n     發生其他影響新藥研發之重大事件者，未來經營方向：\n     (A)114年9月，本公司已收到FDA及EMA就本產品第三期臨床試驗豁免\n        所提供之正面回饋。\n     (B)本公司與Sandoz AG已於114年11月簽署生物相似藥EG1206A授權銷售合約，\n        由本公司負責生產製造，由銷售夥伴 Sandoz 負責全球上市銷售除臺灣、\n        中國大陸、澳門、韓國、蒙古、汶萊、柬埔寨、印尼、寮國、緬甸、菲律賓\n        與日本區域以外。\n        依據合約，本公司除可獲得總額達美金1.52億元的簽約金、\n        研發及銷售里程碑金（Milestone Payment），\n        並將依市場銷售表現另外再獲得潛在的銷售激勵獎金(Sales Incentives)；\n        同時，在產品上市後，亦將享有銷售分潤（Profit Share）。\n     (C)115年3月本公司與銷售夥伴Sandoz AG，就EG1206A pertuzumab生物相似藥於\n        美國及歐洲市場，與Genentech, Inc.、Hoffmann-La Roche, Inc.及\n        F. Hoffmann-La Roche Ltd 達成和解及專利授權協議。\n  (4)已投入之累積研發費用：\n     本公司已與授權夥伴簽訂保密協議，\n     為保障公司及投資人權益， 故不予公開揭露。\n6.將再進行之下一階段研發(請說明預計完成時間及預計應負擔之義務):\n  (1)預計完成時間：\n    EMA收到申請後會核閱資料是否齊全並通知啟動審理流程，\n     審核進度均依EMA主管機關規定時程進行及\n     核准藥證准駁與否係為歐洲聯盟執行委員會(EC)之職權，\n     最後皆以歐洲聯盟執行委員會(EC)之正式通知為準。\n  (2)預計應負擔之義務：無\n7.市場現況:\n  根據羅氏大藥廠114年報資料，\n  Perjeta全球銷售額為29.68億瑞士法郎（約37.63億美元）。\n8.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，\n本則重大訊息同時符合證券交易法施行細則第7條第8款所定\n對股東權益或證券價格有重大影響之事項): 無\n9.新藥開發時程長、投入經費高且未保證一定能成功，此等可能使投資面臨風險，投\n   資人應審慎判斷謹慎投資。:"
+   },
+   {
+    "出表日期": "1151008",
+    "發言日期": "1151007",
+    "發言時間": "70003",
+    "公司代號": "6949",
+    "公司名稱": "沛爾生醫*-創",
+    "主旨 ": "公告本公司股票面額由「新台幣10元」變更為「新台幣0.5元」，\r\n公告期間：115年08月06日至115年11月05日。",
+    "符合條款": "第51款",
+    "事實發生日": "1150713",
+    "說明": "1.事實發生日：民國115年07月13日\r\n2.公司名稱：沛爾生技醫藥股份有限公司\r\n3.與公司關係(請輸入本公司或子公司)：本公司\r\n4.相互持股比例：不適用\r\n5.發生緣由：\r\n(1)公司面額變更核准日期/事實發生日：民國115年07月13日\r\n(2)公司面額變更核准文號：經授商字第經授商字第11530095510號號函\r\n(3)董事會決議通過換股計畫書日期：民國115年08月06日\r\n(4)變更前面額：新台幣10.00\r\n(5)變更後面額：新台幣0.50\r\n(6)新股票上市買賣日及舊股票終止上市買賣日：民國115年09月07日\r\n(7)換發股票時程重大訊息公告日期：民國115年08月06日重大訊息公告\r\n6.因應措施：無。\r\n7.其他應敘明事項：一、本公司係辦理變更股票面額，每股面額由新台幣10元變更為新台幣0.5元，業經臺灣\r\n證券交易所函核准在案。\r\n二、配合面額變更，新股票上市買賣日(115年09月07日)之參考價按比例調整為舊股票\r\n最後交易日(115年8月26日)收盤價之20分之1，請投資人注意。\r\n三、股票面額變更後，每股盈餘、每股淨值及每股股價等將有所變動，參閱資訊時須留\r\n意。"
+   },
+   {
+    "出表日期": "1151008",
+    "發言日期": "1151007",
+    "發言時間": "70003",
+    "公司代號": "2072",
+    "公司名稱": "世紀風電",
+    "主旨 ": "公告本公司名稱由「世紀離岸風電設備股份有限公司」更名\r\n為「世紀能源設備股份有限公司」，公告期間：115年8月26日至\r\n115年11月25日。",
+    "符合條款": "第51款",
+    "事實發生日": "1150824",
+    "說明": "1.事實發生日：民國115年08月24日\r\n2.公司名稱：世紀能源設備股份有限公司(原名：世紀離岸風電設備股份有限公司)\r\n3.與公司關係(請輸入本公司或子公司)：本公司\r\n4.相互持股比例：不適用\r\n5.發生緣由：\r\n(1)公司名稱變更核准日期/事實發生日：民國115年08月24日\r\n(2)公司名稱變更核准文號：經授商字第11530130420號\r\n(3)更名案股東會決議通過日期：民國115年08月12日\r\n(4)變更前公司名稱：世紀離岸風電設備股份有限公司\r\n(5)變更後公司名稱：世紀能源設備股份有限公司\r\n(6)變更前公司簡稱：世紀風電\r\n(7)變更後公司簡稱：世紀能源\r\n6.因應措施：無\r\n7.其他應敘明事項：(1)本公司於115/08/26收到經濟部變更登記核准函。\r\n(2)依據臺灣證券交易所股份有限公司營業細則第45條規定，\r\n於更名後須連續公告三個月。\r\n(3)本公司股票代號未變動，普通股仍為「2072」。\r\n(4)本公司英文名更名為「Century Energy Co., Ltd.」"
+   }
+  ],
+  "codes_3017_6805": [
+   {
+    "出表日期": "1151008",
+    "發言日期": "1151007",
+    "發言時間": "184547",
+    "公司代號": "6805",
+    "公司名稱": "富世達",
+    "主旨 ": "公告法務部調查局至本公司新莊廠區對員工進行搜索及調查。",
+    "符合條款": "第19款",
+    "事實發生日": "1151007",
+    "說明": "1.事實發生日:115/10/07\n2.發生緣由:法務部調查局至本公司新莊廠區，針對特定員工進行搜索及調查。\n3.因應措施:公司依法配合相關調查程序。\n4.對公司財務業務之影響:無。\n5.其他應敘明事項:本次搜索及詢問主要是與本公司112年申請上市期間的相關事宜,\n對本公司之營運並無影響。"
+   },
+   {
+    "出表日期": "1151008",
+    "發言日期": "1151007",
+    "發言時間": "185544",
+    "公司代號": "3017",
+    "公司名稱": "奇鋐",
+    "主旨 ": "公告法務部調查局至本公司新莊廠區對員工進行搜索及調查。",
+    "符合條款": "第19款",
+    "事實發生日": "1151007",
+    "說明": "1.事實發生日:115/10/07\n2.發生緣由:法務部調查局至本公司新莊廠區，針對特定員工進行搜索及調查。\n3.因應措施:公司依法配合相關調查程序。\n4.對公司財務業務之影響:無。\n5.其他應敘明事項:本次搜索及詢問係屬子公司「富世達股份有限公司」112年申請\n上市期間的相關事宜, 對本公司之營運並無影響。"
+   }
+  ]
+ },
+ "tpex_mopsfin_t187ap04_O": {
+  "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+  "status": 200,
+  "ctype": "application/json",
+  "bytes": 49845,
+  "count": 28,
+  "keys": [
+   "Date",
+   "發言日期",
+   "發言時間",
+   "SecuritiesCompanyCode",
+   "CompanyName",
+   "主旨",
+   "符合條款",
+   "事實發生日",
+   "說明"
+  ],
+  "sample": [
+   {
+    "Date": "1151007",
+    "發言日期": "1151006",
+    "發言時間": "70004",
+    "SecuritiesCompanyCode": "4530",
+    "CompanyName": "天意能創",
+    "主旨": "公告本公司名稱由「宏易創新國際股份有限公司」\r\n更名為「天意能創股份有限公司」，\r\n公告期間：115年7月09日至115年10月08日。",
+    "符合條款": "第53款",
+    "事實發生日": "1150708",
+    "說明": "1.事實發生日：民國115年07月08日\r\n2.公司名稱：天意能創股份有限公司(原名：宏易創新國際股份有限公司)\r\n3.與公司關係(請輸入本公司或子公司)：本公司\r\n4.相互持股比例：不適用\r\n5.發生緣由：\r\n(1)公司名稱變更核准日期/事實發生日：民國115年07月08日\r\n(2)公司名稱變更核准文號：府產業商字第11550721810\r\n(3)更名案股東會決議通過日期：民國115年06月24日\r\n(4)變更前公司名稱：宏易創新國際股份有限公司\r\n(5)變更後公司名稱：天意能創股份有限公司\r\n(6)變更前公司簡稱：宏易\r\n(7)變更後公司簡稱：天意\r\n6.因應措施：無\r\n7.其他應敘明事項：(1)本公司於115年7月09日收到台北市政府變更登記核准函。\r\n(2)依據財團法人中華民國櫃檯買賣中心證券商營業所買賣有價證券業務規則第9-1條規定，於更名後須連續公告三個月。\r\n(3)本公司股票代號未變動，仍為「4530」。"
+   },
+   {
+    "Date": "1151007",
+    "發言日期": "1151006",
+    "發言時間": "70004",
+    "SecuritiesCompanyCode": "4747",
+    "CompanyName": "強生*",
+    "主旨": "公告本公司股票面額由「新台幣10元」變更為「新台幣5元」\r\n公告期間：115年7月22日至115年10月21日",
+    "符合條款": "第53款",
+    "事實發生日": "1150624",
+    "說明": "1.事實發生日：民國115年06月24日\r\n2.公司名稱：強生化學製藥廠股份有限公司\r\n3.與公司關係(請輸入本公司或子公司)：本公司\r\n4.相互持股比例：不適用\r\n5.發生緣由：\r\n(1)公司面額變更核准日期/事實發生日：民國115年06月24日\r\n(2)公司面額變更核准文號：經授商字第新北府經司字第1158046510號函\r\n(3)董事會決議通過換股計畫書日期：民國115年07月22日\r\n(4)變更前面額：新台幣10.00\r\n(5)變更後面額：新台幣5.00\r\n(6)新股票上市買賣日及舊股票終止上市買賣日：民國115年08月31日\r\n(7)換發股票時程重大訊息公告日期：民國115年07月22日重大訊息公告\r\n6.因應措施：不適用。\r\n7.其他應敘明事項：無。"
+   },
+   {
+    "Date": "1151007",
+    "發言日期": "1151006",
+    "發言時間": "134311",
+    "SecuritiesCompanyCode": "3303",
+    "CompanyName": "岱稜",
+    "主旨": "公告本公司董事會決議買回庫藏股",
+    "符合條款": "第35款",
+    "事實發生日": "1151006",
+    "說明": "1.董事會決議日期:115/10/06\r\n2.買回股份目的:轉讓股份予員工\r\n3.買回股份種類:普通股\r\n4.買回股份總金額上限(元):1,394,032,701\r\n5.預定買回之期間:115/10/06~115/12/04\r\n6.預定買回之數量(股):1,000,000\r\n7.買回區間價格(元):34.23~75.23，公司股價低於區間價格下限，將繼續買回\r\n8.買回方式:自集中交易市場買回\r\n9.預定買回股份占公司已發行股份總數之比率(%):1.05\r\n10.申報時已持有本公司股份之累積股數(股):0\r\n11.申報前五年內買回公司股份之情形:\r\n(1)實際買回股份期間：114/04/21 ~ 114/06/10 、預定買回股數(股)：1000000 、實際已買回\r\n股數(股)：554000 、執行情形(實際已買回股數占預定買回股數%)：55.00\r\n(2)實際買回股份期間：113/07/08 ~ 113/08/06 、預定買回股數(股)：1000000 、實際已買回\r\n股數(股)：548000 、執行情形(實際已買回股數占預定買回股數%)：55.00\r\n12.已申報買回但未執行完畢之情形:\r\n無\r\n13.董事會決議買回股份之會議紀錄:\r\n本公司經第13屆第13次董事會決議通過在集中交易市場，於每股新台幣34.23~75.23元之間，以新台\r\n幣75,230,000元作為買回股份之總金額上限，買回本公司普通股，預定買回股數為1,000,000股。\r\n14.「上市上櫃公司買回本公司股份辦法」第十條規定之轉讓辦法:\r\n岱稜科技股份有限公司\r\n第14次買回股份轉讓員工辦法\r\n115年10月06日訂定\r\n第一條\t目的\r\n本公司為激勵員工及提昇員工向心力，依據證券交易法第28條之2第1項第1款及金融監督管理委員會\r\n發布之「上市上櫃公司買回本公司股份辦法」等相關規定，訂定本公司買回股份轉讓員工辦法。本公\r\n司買回股份轉讓予員工，除依有關法令規定外，悉依本辦法規定辦理。\r\n\r\n第二條\t轉讓股份之種類、權利內容及權利受限情形\r\n本次轉讓予員工之股份為普通股，其權利義務除有關法令及本辦法另有規定者外，與其他流通在外普\r\n通股相同。\r\n\r\n第三條\t轉讓期間\r\n本次買回之股份，得依本辦法之規定，自買回股份之日起五年內，一次或分次轉讓予員工。\r\n\r\n第四條\t受讓人資格\r\n凡於認股基準日前到職滿三個月之全職員工或對公司有特殊貢獻經提報董事會同意之本公司及直接或\r\n間接持有同一被投資公司表決權股份超過百分之五十之子公司（子公司包括海外子公司）員工，得依\r\n本辦法第五條所定認購數額，享有認購資格。\r\n\r\n第五條\t員工得認購股數\r\n員工得認購股數由本公司考量員工服務年資、職務、績效表現、整體貢獻、特殊功績或其它管理上需\r\n要之條件，訂定員工得受讓股份之權數，並須兼顧認股基準日時公司持有之買回股份總額及單一員工\r\n認購股數之上限等因素，實際認購資格及認購數量由董事會決議。惟認股人名單具經理人身份者，應\r\n先提報薪資報酬委員會審議後送呈董事會決議，非具經理人身份者，應先提報審計委員會審議後呈報\r\n董事會決議。\r\n員工於繳款期限屆滿而未認購繳款者，視為棄權，認購不足之餘額，可由董事會於當次認購作業或併\r\n至第三條轉讓期間內之後續次別認購作業，另洽其他員工認購，並依認股人身分提報審計委員會或薪\r\n資報酬委員會審議後呈報董事會決議。\r\n\r\n第六條\t轉讓之程序\r\n本次買回股份轉讓予員工之作業程序：\r\n一、依董事會之決議，公告、申報並於執行期限內買回本公司股份。\r\n二、董事會依本辦法訂定有關分次轉讓股數、員工認股基準日、認股繳款期間、權利內容及限制條件\r\n等作業事項。\r\n三、統計實際認購繳款股數，辦理股票轉讓過戶登記。\r\n\r\n第七條\t約定之每股轉讓價格\r\n本次買回股份轉讓予員工，以實際買回之平均價格（計算至新台幣元小數點第二位，以下捨去不計）\r\n為轉讓價格；惟轉讓前，如遇公司已發行之普通股股份增加得按發行股份增加比率調整之。\r\n\r\n第八條\t轉讓後之權利義務\r\n本次買回股份轉讓予員工並辦理過戶登記後，除另有規定者外，餘權利義務與原有股份相同。\r\n\r\n第九條\t其他有關公司與員工權利義務事項\r\n一、公司可斟酌需要與員工約定，惟不得違反證券交易法及公司法等相關法令規定。\r\n二、本公司為轉讓股份予員工所買之庫藏股，應自買回之日起五年內全數轉讓，逾期未轉讓部份，視\r\n為本公司未發行股份，應依法辦理銷除股份變更登記。\r\n\r\n第十條\t本辦法經董事會決議通過後生效，並得報經董事會決議修訂。\r\n15.「上市上櫃公司買回本公司股份辦法」第十一條規定之轉換或認股辦法:\r\n不適用\r\n16.董事會已考慮公司財務狀況，不影響公司資本維持之聲明:\r\n上述買回股份總數，僅占本公司已發行股份之1.05%，且買回股份所需金額上限占本公司流動資產之\r\n2.88%，茲聲明本公司董事會已考慮公司財務狀況，上述股份之買回並不影響本公司資本之維持。\r\n17.會計師或證券承銷商對買回股份價格之合理性評估意見:\r\n本證券承銷商認為岱稜預計買回其普通股份之價格區間尚屬合理，而買回股份對財務結構、每股淨值、\r\n每股盈餘、權益報酬率、速動比率、流動比率及現金流量狀況，對該公司之財務狀況並無重大之影響。\r\n18.其他證期局所規定之事項:\r\n無"
+   }
+  ],
+  "codes_3017_6805": []
+ },
+ "tpex_t187ap04_O": {
+  "url": "https://www.tpex.org.tw/openapi/v1/t187ap04_O",
+  "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+ },
+ "gnews_name": {
+  "url": "https://news.google.com/rss/search?q=%E5%A5%87%E9%8B%90&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+  "status": 200,
+  "ctype": "application/xml; charset=utf-8",
+  "bytes": 132199,
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"奇鋐\" - Google 新聞</title><link>https://news.google.com/search?q=%E5%A5%87%E9%8B%90&amp;hl=zh-TW&amp;gl=TW&amp;ceid=TW:zh-Hant</link><language>zh-TW</language><webMaster>news-webmaster@google.com</webMaster><copyright>Copyright © 2026 Google. All rights reserved. This XML feed is made available solely for the purpose of rendering Google News results within a personal feed reader for personal, non-commercial use. Any other use of the feed is expressly prohibited. By accessing this feed or using these results in any manner whatsoever, you agree to be bound by the foregoing restrictions.</copyright><lastBuildDate>Thu, 08 Oct 2026 00:51:26 GMT</lastBuildDate><image><title>Google 新聞</title><url>https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w256</url><link>https://news.google.com/</link><height>256</height><width>256</width></image><description>Google 新聞</description><item><title>奇鋐、富世達同步公告 調查局搜索新莊廠區「為一件事」 - 工商時報</title><link>https://news.google.com/rss/articles/CBMiX0FVX3lxTE9wbnJpYVM2S01HSXhYM0QxMWo3WW9WT24xVTNzcElKa1h4MUZZbUY4ZEdXZVd5MU5QQUpXZ1JqMVFWV3kxb05KREhsZDlieE9OSWQzSWN5WkhneGN5bTFj?oc=5</link><guid isPermaLink=\"false\">CBMiX0FVX3lxTE9wbnJpYVM2S01HSXhYM0QxMWo3WW9WT24xVTNzcElKa1h4MUZZbUY4ZEdXZVd5MU5QQUpXZ1JqMVFWV3kxb05KREhsZDlieE9OSWQzSWN5WkhneGN5bTFj</guid><pubDate>Wed, 07 Oct 2026 11:28:00 GMT</pubDate><description>&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9wbnJpYVM2S01HSXhYM0QxMWo3WW9WT24xVTNzcElKa1h4MUZZbUY4ZEdXZVd5MU5QQUpXZ1JqMVFWV3kxb05KREhsZDlieE9OSWQzSWN5WkhneGN5bTFj?oc=5\" target=\"_blank\"&gt;奇鋐、富世達同步公告 調查局搜索新莊廠區「為一件事」&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;工商時報&lt;/font&gt;</description><source url=\"https://www.ctee.com.tw\">工商時報</source></item><item><title>員工遭搜索調查 奇鋐、富世達：對營運無影響 - 經濟日報</title><link>https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wZjI4eHJLOU9vaGFMNy15alhvbDJ0VmhUbTBHM0xSZlBwVmE2X3JKRG5sWU1MSERZbnlFQzE0MG9jOWJmUHRGQ0d6YXpZbXkxQXNFeWlzbFZwZ9IBX0FVX3lxTE9xUGRrWTlEMHAwdzZ0MUNET3FKTXlFaUpVeE1BUEFYM3dMbHJXMTRra3k3Njh6UEdvU2FKY1hxTTJxMG8zYVpTWXpSR3ZHZWJRaEc1MlRqMlV1UlBDcnFV?oc=5</link><guid isPermaLink=\"false\">CBMiWkFVX3lxTE5wZjI4eHJLOU9vaGFMNy15alhvbDJ0VmhUbTBHM0xSZlBwVmE2X3JKRG5sWU1MSERZbnlFQzE0MG9jOWJmUHRGQ0d6YXpZbXkxQXNFeWlzbFZwZ9IBX0FVX3lxTE9xUGRrWTlEMHAwdzZ0MUNET3FKTXlFaUpVeE1BUEFYM3dMbHJXMTRra3k3Njh6UEdvU2FKY1hxTTJxMG8zYVpTWXpSR3ZHZWJRaEc1MlRqMlV1UlBDcnFV</guid><pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate><description>&lt;a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wZjI4eHJLOU9vaGFMNy15alhvbDJ0VmhUbTBHM0xSZlBwVmE2X3JKRG5sWU1MSERZbnlFQzE0MG9jOWJmUHRGQ0d6YXpZbXkxQXNFeWlzbFZwZ9IBX0FVX3lxTE9xUGRrWTlEMHAwdzZ0MUNET3FKTXlFaUpVeE1BUEFYM3dMbHJXMTRra3k3Njh6UEdvU2FKY1hxTTJxMG8zYVpTWXpSR3ZHZWJRaEc1MlRqMlV1UlBDcnFV?oc=5\" target=\"_blank\"&gt;員工遭搜索調查 奇鋐、富世達：對營運無影響&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;經濟日報&lt;/font&gt;</description><source url=\"https://money.udn.com\">經濟日報</source></item><item><title>AI散熱需求強勁 奇鋐9月、Q3、前三季登頂 - 自由時報</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zNkNRQnBsNmFyZVQ1eURycjBucHE0WkRuVWRzM2FXM29JUURud200R3N2OGdzLUhiSDFudUpWbWxQSk1hcTBkcFc4UF9NVzctbXRpUHVjLUw?oc=5</link><guid isPermaLink=\"false\">CBMiWEFVX3lxTE4zNkNRQnBsNmFyZVQ1eURycjBucHE0WkRuVWRzM2FXM29JUURud200R3N2OGdzLUhiSDFudUpWbWxQSk1"
+ },
+ "gnews_name_code": {
+  "url": "https://news.google.com/rss/search?q=%E5%A5%87%E9%8B%90%203017&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+  "status": 200,
+  "ctype": "application/xml; charset=utf-8",
+  "bytes": 122526,
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"奇鋐 3017\" - Google 新聞</title><link>https://news.google.com/search?q=%E5%A5%87%E9%8B%90+3017&amp;hl=zh-TW&amp;gl=TW&amp;ceid=TW:zh-Hant</link><language>zh-TW</language><webMaster>news-webmaster@google.com</webMaster><copyright>Copyright © 2026 Google. All rights reserved. This XML feed is made available solely for the purpose of rendering Google News results within a personal feed reader for personal, non-commercial use. Any other use of the feed is expressly prohibited. By accessing this feed or using these results in any manner whatsoever, you agree to be bound by the foregoing restrictions.</copyright><lastBuildDate>Thu, 08 Oct 2026 00:51:26 GMT</lastBuildDate><image><title>Google 新聞</title><url>https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w256</url><link>https://news.google.com/</link><height>256</height><width>256</width></image><description>Google 新聞</description><item><title>奇鋐、富世達突公告「新莊廠遭搜索」！特定員工被調查局鎖定 - Yahoo股市</title><link>https://news.google.com/rss/articles/CBMi_wJBVV95cUxORVFxN3ZteVU4V0EzU2pWS19YYjNhOXJtRkI0MnlSUEx1TkhNTEF3RFZuN0NEcENFYW9tTnR0ZkJRc00tQmc0bklNbHBXU0ZKNHN1eUw0VFVEdlU2aEZFd1BUY3N5YWo0NE1jU2prRFFtMzBJRm8ydkxya0R6NTZ4NHlxZm15MmlZSEZRUU1VdTdhUkNBZjFETENmVmJjZjdsQ25YRFNzRG01b1hHOWFwQjlNelQwNmZONzc5Z3g5cWpGVm90dk8zR2lkVzR1a1dVcU5NNWxKLWFQdUFoOTNZdFlkZFdZNFNFejZNQldXSUdsLXRqQjZZdUYzV0x6d1NhVW1LOGpibEx6UUt5ZzVuZ2tSSmk0T29pa3d2UVpkNWhBcE5kLTc3aWZiUFl0SmUtd0NmWTBUYU94cUNlTk9BTDVISXV3bzNnWUEtUVpEWjlKNzE2RUpRMjdOZDQzR1ZDRFFHOU1aZ1BIdUJvWFNqZDBhUS1pWTRwUFFSZ3dtSQ?oc=5</link><guid isPermaLink=\"false\">CBMi_wJBVV95cUxORVFxN3ZteVU4V0EzU2pWS19YYjNhOXJtRkI0MnlSUEx1TkhNTEF3RFZuN0NEcENFYW9tTnR0ZkJRc00tQmc0bklNbHBXU0ZKNHN1eUw0VFVEdlU2aEZFd1BUY3N5YWo0NE1jU2prRFFtMzBJRm8ydkxya0R6NTZ4NHlxZm15MmlZSEZRUU1VdTdhUkNBZjFETENmVmJjZjdsQ25YRFNzRG01b1hHOWFwQjlNelQwNmZONzc5Z3g5cWpGVm90dk8zR2lkVzR1a1dVcU5NNWxKLWFQdUFoOTNZdFlkZFdZNFNFejZNQldXSUdsLXRqQjZZdUYzV0x6d1NhVW1LOGpibEx6UUt5ZzVuZ2tSSmk0T29pa3d2UVpkNWhBcE5kLTc3aWZiUFl0SmUtd0NmWTBUYU94cUNlTk9BTDVISXV3bzNnWUEtUVpEWjlKNzE2RUpRMjdOZDQzR1ZDRFFHOU1aZ1BIdUJvWFNqZDBhUS1pWTRwUFFSZ3dtSQ</guid><pubDate>Wed, 07 Oct 2026 13:24:00 GMT</pubDate><description>&lt;a href=\"https://news.google.com/rss/articles/CBMi_wJBVV95cUxORVFxN3ZteVU4V0EzU2pWS19YYjNhOXJtRkI0MnlSUEx1TkhNTEF3RFZuN0NEcENFYW9tTnR0ZkJRc00tQmc0bklNbHBXU0ZKNHN1eUw0VFVEdlU2aEZFd1BUY3N5YWo0NE1jU2prRFFtMzBJRm8ydkxya0R6NTZ4NHlxZm15MmlZSEZRUU1VdTdhUkNBZjFETENmVmJjZjdsQ25YRFNzRG01b1hHOWFwQjlNelQwNmZONzc5Z3g5cWpGVm90dk8zR2lkVzR1a1dVcU5NNWxKLWFQdUFoOTNZdFlkZFdZNFNFejZNQldXSUdsLXRqQjZZdUYzV0x6d1NhVW1LOGpibEx6UUt5ZzVuZ2tSSmk0T29pa3d2UVpkNWhBcE5kLTc3aWZiUFl0SmUtd0NmWTBUYU94cUNlTk9BTDVISXV3bzNnWUEtUVpEWjlKNzE2RUpRMjdOZDQzR1ZDRFFHOU1aZ1BIdUJvWFNqZDBhUS1pWTRwUFFSZ3dtSQ?oc=5\" target=\"_blank\"&gt;奇鋐、富世達突公告「新莊廠遭搜索」！特定員工被調查局鎖定&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo股市&lt;/font&gt;</description><source url=\"https://tw.stock.yahoo.com\">Yahoo股市</source></item><item><title>散熱大廠突遭搜索！　奇鋐、富世達重訊證實 - ETtoday財經雲</title><link>https://news.google.com/rss/articles/CBMiUkFVX3lxTFByTDVqVHM3OHBaQ05Dek5INGVBWmp3T09UQldzMWwtcEY2OHVITGtnbWZQWVFWZWQyaDVmdXFfSHFuc1Vrb3NpQXBSRGQ0b2xJZUHSAVBBVV95cUxNSl9NRzRvQXJ5ZHdMZms1UHpNOWVuZDBhWTREdGFvZzBNS3FQZEJ2MGdoaE9MdXozQXE3aGxwSzVFX2o1VmxnSXZCOC1VQTFHNQ?oc=5</link><guid isPermaLink=\"false\">CBMiUkFVX3l"
+ },
+ "gnews_fsd": {
+  "url": "https://news.google.com/rss/search?q=%E5%AF%8C%E4%B8%96%E9%81%94&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+  "status": 200,
+  "ctype": "application/xml; charset=utf-8",
+  "bytes": 122475,
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"富世達\" - Google 新聞</title><link>https://news.google.com/search?q=%E5%AF%8C%E4%B8%96%E9%81%94&amp;hl=zh-TW&amp;gl=TW&amp;ceid=TW:zh-Hant</link><language>zh-TW</language><webMaster>news-webmaster@google.com</webMaster><copyright>Copyright © 2026 Google. All rights reserved. This XML feed is made available solely for the purpose of rendering Google News results within a personal feed reader for personal, non-commercial use. Any other use of the feed is expressly prohibited. By accessing this feed or using these results in any manner whatsoever, you agree to be bound by the foregoing restrictions.</copyright><lastBuildDate>Thu, 08 Oct 2026 00:51:27 GMT</lastBuildDate><image><title>Google 新聞</title><url>https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w256</url><link>https://news.google.com/</link><height>256</height><width>256</width></image><description>Google 新聞</description><item><title>奇鋐、富世達同步公告 調查局搜索新莊廠區「為一件事」 - 工商時報</title><link>https://news.google.com/rss/articles/CBMiX0FVX3lxTE9wbnJpYVM2S01HSXhYM0QxMWo3WW9WT24xVTNzcElKa1h4MUZZbUY4ZEdXZVd5MU5QQUpXZ1JqMVFWV3kxb05KREhsZDlieE9OSWQzSWN5WkhneGN5bTFj?oc=5</link><guid isPermaLink=\"false\">CBMiX0FVX3lxTE9wbnJpYVM2S01HSXhYM0QxMWo3WW9WT24xVTNzcElKa1h4MUZZbUY4ZEdXZVd5MU5QQUpXZ1JqMVFWV3kxb05KREhsZDlieE9OSWQzSWN5WkhneGN5bTFj</guid><pubDate>Wed, 07 Oct 2026 11:28:00 GMT</pubDate><description>&lt;ol&gt;&lt;li&gt;&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9wbnJpYVM2S01HSXhYM0QxMWo3WW9WT24xVTNzcElKa1h4MUZZbUY4ZEdXZVd5MU5QQUpXZ1JqMVFWV3kxb05KREhsZDlieE9OSWQzSWN5WkhneGN5bTFj?oc=5\" target=\"_blank\"&gt;奇鋐、富世達同步公告 調查局搜索新莊廠區「為一件事」&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;工商時報&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTFByTDVqVHM3OHBaQ05Dek5INGVBWmp3T09UQldzMWwtcEY2OHVITGtnbWZQWVFWZWQyaDVmdXFfSHFuc1Vrb3NpQXBSRGQ0b2xJZUHSAVBBVV95cUxNSl9NRzRvQXJ5ZHdMZms1UHpNOWVuZDBhWTREdGFvZzBNS3FQZEJ2MGdoaE9MdXozQXE3aGxwSzVFX2o1VmxnSXZCOC1VQTFHNQ?oc=5\" target=\"_blank\"&gt;散熱大廠突遭搜索！　奇鋐、富世達重訊證實&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ETtoday財經雲&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE96b0REa2lFdE40Y1g2aER4TmVYUk9BM3UweDZBWkFaeXFmU2loQWtUNGNmYVJoLW1FX3JKX2tLZjBKMG1hcUlqTXF4WVhXM2hTTHBpemdPRFM?oc=5\" target=\"_blank\"&gt;散熱大廠突遭搜索！ 奇鋐、富世達重訊證實&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;CMoney&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://news.google.com/rss/articles/CBMi_wJBVV95cUxORVFxN3ZteVU4V0EzU2pWS19YYjNhOXJtRkI0MnlSUEx1TkhNTEF3RFZuN0NEcENFYW9tTnR0ZkJRc00tQmc0bklNbHBXU0ZKNHN1eUw0VFVEdlU2aEZFd1BUY3N5YWo0NE1jU2prRFFtMzBJRm8ydkxya0R6NTZ4NHlxZm15MmlZSEZRUU1VdTdhUkNBZjFETENmVmJjZjdsQ25YRFNzRG01b1hHOWFwQjlNelQwNmZONzc5Z3g5cWpGVm90dk8zR2lkVzR1a1dVcU5NNWxKLWFQdUFoOTNZdFlkZFdZNFNFejZNQldXSUdsLXRqQjZZdUYzV0x6d1NhVW1LOGpibEx6UUt5ZzVuZ2tSSmk0T29pa3d2UVpkNWhBcE5kLTc3aWZiUFl0SmUtd0NmWTBUYU94cUNlTk9BTDVISXV3bzNnWUEtUVpEWjlKNzE2RUpRMjdOZDQzR1ZDRFFHOU1aZ1BIdUJvWFNqZDBhUS1pWTRwUFFSZ3dtSQ?oc=5\" target=\"_blank\"&gt;奇鋐、富世達突公告「新莊廠遭搜索」！特定員工被調查局鎖定&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo股市&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wZjI4eHJLOU9vaGFMNy15alhvbDJ0VmhUbTBHM0xSZlBwVmE2X3JKR"
+ },
+ "yahoo_stock_rss": {
+  "url": "https://tw.stock.yahoo.com/rss?s=3017",
+  "status": 200,
+  "ctype": "text/xml; charset=utf-8",
+  "bytes": 13785,
+  "head": "<?xml version=\"1.0\" encoding=\"utf-8\"?><?xml-stylesheet title=\"XSL_formatting\" type=\"text/xsl\" href=\"/nolsol.xsl\"?><rss version=\"2.0\"><channel><language>zh-tw</language><lastBuildDate>Thu, 08 Oct 2026 00:51:27 GMT</lastBuildDate><title>Yahoo股市 - 最新新聞</title><link>https://tw.stock.yahoo.com/</link><description>瀏覽Yahoo股市 Yahoo奇摩股市上國內外財經新聞，包含台股、美股、ETF、期貨、選擇權、國際指數、外匯、房地產等相關資訊。</description><ttl>5</ttl><image><title>Yahoo股市</title><url>https://s.yimg.com/cv/apiv2/twstock/img/TW_desktop_stock_home@2x.png</url><link>https://tw.stock.yahoo.com/</link></image><item><title><![CDATA[【盤前焦點】台指期夜盤下跌　法人：台股可能高檔震盪]]></title><link>https://tw.stock.yahoo.com/news/%E7%9B%A4%E5%89%8D%E7%84%A6%E9%BB%9E-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E4%B8%8B%E8%B7%8C-%E6%B3%95%E4%BA%BA-%E5%8F%B0%E8%82%A1%E5%8F%AF%E8%83%BD%E9%AB%98%E6%AA%94%E9%9C%87%E7%9B%AA-002351519.html</link><pubDate>Thu, 08 Oct 2026 00:23:51 GMT</pubDate><guid isPermaLink=\"false\"/><description><![CDATA[（中央社記者張建中台北2026年10月8日電）美股主要指數全面收低，與台股關聯性高的費半指數下跌151.67點，跌幅逾1%。法人表示，台股7日小跌16.18點，收在49806.37點，台指期夜盤下挫3]]></description></item><item><title><![CDATA[員工遭搜索調查　奇鋐、富世達：對營運無影響]]></title><link>https://tw.stock.yahoo.com/news/%E5%93%A1%E5%B7%A5%E9%81%AD%E6%90%9C%E7%B4%A2%E8%AA%BF%E6%9F%A5-%E5%A5%87%E9%8B%90-%E5%AF%8C%E4%B8%96%E9%81%94-%E5%B0%8D%E7%87%9F%E9%81%8B%E7%84%A1%E5%BD%B1%E9%9F%BF-114030074.html</link><pubDate>Wed, 07 Oct 2026 11:40:30 GMT</pubDate><guid isPermaLink=\"false\"/><description><![CDATA[（中央社記者曾仁凱台北2026年10月7日電）散熱廠奇鋐(3017)及子公司富世達(6805)今天傍晚公告，法務部調查局至公司新莊廠區，針對特定員工進行搜索及調查，公司依法配合相關調查程序。奇鋐與富世]]></description></item><item><title><![CDATA[【公告】法務部調查局至奇鋐新莊廠區對員工進行搜索及調查。]]></title><link>https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%95%E5%8B%99%E9%83%A8%E8%AA%BF%E6%9F%A5%E5%B1%80%E8%87%B3%E5%A5%87%E9%8B%90%E6%96%B0%E8%8E%8A%E5%BB%A0%E5%8D%80%E5%B0%8D%E5%93%A1%E5%B7%A5%E9%80%B2%E8%A1%8C%E6%90%9C%E7%B4%A2%E5%8F%8A%E8%AA%BF%E6%9F%A5-111556931.html</link><pubDate>Wed, 07 Oct 2026 11:15:56 GMT</pubDate><guid isPermaLink=\"false\"/><description><![CDATA[日 期：2026年10月07日公司名稱：奇鋐(3017)主 旨：法務部調查局至奇鋐新莊廠區對員工進行搜索及調查。發言人：陳易成說 明：1.事實發生日:115/10/072.發生緣由:法務部調查局至本公]]></description></item><item><title><![CDATA[奇鋐9月營收首破200億大關　連3月創新高]]></title><link>https://tw.stock.yahoo.com/news/%E5%A5%87%E9%8B%909%E6%9C%88%E7%87%9F%E6%94%B6%E9%A6%96%E7%A0%B4200%E5%84%84%E5%A4%A7%E9%97%9C-%E9%80%A33%E6%9C%88%E5%89%B5%E6%96%B0%E9%AB%98-010837196.html</link><pubDate>Wed, 07 Oct 2026 01:08:37 GMT</pubDate><guid isPermaLink=\"false\"/><description><![CDATA[（中央社記者曾仁凱台北2026年10月7日電）散熱大廠奇鋐(3017)今天公告9月營收新台幣210.18億元，年增44.92%，比8月再增加7.89%，單月營收首度衝破200億元大關，續創歷史新高。奇]]></description></item><item><title><![CDATA[【公告】奇鋐 2026年9月合併營收210.18億元 年增44.92%]]></title><link>https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A5%87%E9%8B%90-2026%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6210-18%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E44-000155045.html</link><pubDate>Wed, 07 Oct 2026 00:01:55 GMT</pubDate><guid isPermaLink=\"false\"/><description><![CDATA[日期： 2026 年 10 月 07日上市公司：奇鋐(3017)單位：仟元 【公告】奇鋐 2026年9月合併營收 (單位：仟元)項目合併營業收入淨額本月21,018,128去年同期14,503,309]]></description></item><item><title><![CDATA[輝達與ASIC雙引擎催動　奇鋐雙鴻年底再拉新成長曲線]]></title><link>https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94%E8%88%87asic%E9%9B%99%E5%BC%95%E6%93%8E%E5%82%AC%E5%8B%95-%E5%A5%87%E9%8B%90%E9%9B%99%E9%B4%BB%E5%B9%B4%E5%BA%95%E5%86%8D%E6%8B%89%E6%96%B0%E6%88%90%E9%95%B7%E6%9B%B2%E7%B7%9A-003322397.html</link><pubDate>Sat, 12 Sep 2026 00:33:22 GMT</pubDate><guid isPermaLink"
+ },
+ "cnyes_twstock": {
+  "url": "https://api.cnyes.com/media/api/v1/newslist/category/tw_stock?limit=5",
+  "status": 200,
+  "ctype": "application/json",
+  "bytes": 21641,
+  "sample": "{\"items\": {\"total\": 844, \"per_page\": 5, \"current_page\": 1, \"last_page\": 169, \"next_page_url\": \"/media/api/v1/newslist/category/tw_stock?page=2\", \"prev_page_url\": null, \"from\": 1, \"to\": 5, \"data\": [{\"content\": \"&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6624513/o/6f667f5e1146441f0d6cd96b5711ab67.jpg&quot; alt=&quot;LS Electric營收規模明顯高於台灣主要重電業者。優分析產業資料庫（全球版）&quot; /&gt;&lt;p&gt;2026年10月08日（優分析／產業數據中心報導）⸺ 南亞(1303-TW)7日宣布，與南韓重電暨工業自動化大廠LS Electric(010120-KS)、KHI共同成立合資公司「南亞樂星」，由LS Electric持股50%、南亞40%、KHI 10%。合資公司初期將先在台灣建立從投標、工程設計到技術支援的在地服務能力。&lt;/p&gt;\\n&lt;p&gt;雙方合作也從設備供應進一步往工程與專案承攬延伸。LS Electric與南亞去年3月已簽署台灣環保型電力設備與能源效率解決方案合作備忘錄，過去主要集中在電力設備供應，這次成立合資公司後，合作範圍擴大到工程設計與專案投標。&lt;/p&gt;\\n&lt;p&gt;LS Electric本身已經參與北美資料中心重電市場。今年4月，公司取得約1,700億韓元的北美資料中心電力設備合約，供應345kV高壓變壓器，預計2027年第4季開始交貨，並延續至2028年上半年。&lt;/p&gt;\\n&lt;p&gt;LS Electric的業務也不只集中在變壓器。公司產品涵蓋能源管理系統、SCADA監控系統、配電管理與控制系統、微電網、低壓與中壓配電設備、輸配電系統、模組化變電站、儲能系統與太陽能設備；工業自動化產品則包括PLC、人機介面、伺服與運動控制、變頻器等。&lt;/p&gt;\\n&lt;p&gt;在資料中心市場，LS Electric也開始往能源管理延伸。公司先前與Honeywell建立全球策略合作，共同開發資料中心與商辦大樓的一體化能源管理方案，首波將推出整合式電力管理系統，後續再延伸至電池儲能與智慧基礎設施。&lt;/p&gt;\\n&lt;p&gt;對南亞來說，這次合資主要是補強工程與系統整合能力。LS Electric具備電力設備製造、工程設計、技術服務，以及完整的美國UL認證產品線；南亞則有台灣既有製造基礎與EPC工程網絡，雙方將提高在台灣電力基礎建設市場的投標與承攬能力。&lt;/p&gt;\\n&lt;p&gt;南亞近年也持續擴大重電布局。今年4月成立電力工程部，並陸續與華城(1519-TW)、大同(2371-TW)等業者合作，準備拓展美國電力基礎建設市場。目前公司也投入環保型氣體絕緣開關盤、H級耐高溫變壓器、高科技產業公用系統統包、微電網，以及設備汰換、保養與檢測服務。&lt;/p&gt;\\n&lt;p&gt;南亞樂星初期仍以台灣市場為主，後續則可觀察雙方合作是否進一步延伸到美國等海外電力工程與系統整合市場。&lt;/p&gt;&lt;p&gt;※ 本文經「優分析」授權轉載，原文出處:&lt;a style=&quot;color:#A9A9A9&quot; rel=&quot;nofollow&quot; href=&quot;https://uanalyze.com.tw/articles/9092956716&quot;&gt;原文連結&lt;/a&gt;\\n            &lt;br&gt;※ 免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險。&lt;/p&gt;\\n            &lt;p&gt;&lt;/p&gt;\", \"feature\": 0, \"hasCoverPhoto\": 0, \"is24h\": 0, \"isCategoryHeadline\": 0, \"isIndex\": 0, \"isOutsource\": 1, \"keyword\": [\"電力變壓器\", \"EPC\", \"優分析\"], \"newsId\": 6624513, \"otherProduct\": [\"TWS:1303:STOCK:COMMON\", \"TWS:1519:STOCK:COMMON\", \"TWS:2371:STOCK:COMMON\", \"FX:KRWUSD:FOREX:COMMON\"], \"payment\": 0, \"source\": \"優分析 Uanalyze\", \"stock\": [], \"summary\": null, \"title\": \"南亞重電布局再升級 合資夥伴LS Electric已打進北美AI資料中心\", \"video\": \"\", \"publishAt\": 1791419412, \"coverSrc\": null, \"abTesting\": null, \"categoryId\": 827, \"categoryName\": \"台股新聞\", \"columnists\": null, \"magazine\": null, \"fundCategoryAbbr\": [], \"fbShare\": 0, \"fbComment\": 0, \"fbCommentPluginCount\": 0, \"market\": [{\"code\": \"1303\", \"name\": \"南亞\", \"symbol\": \"TWS:1303:STOCK\"}, {\"code\": \"1519\", \"name\": \"華城\", \"symbol\": \"TWS:1519:"
+ }
+}
