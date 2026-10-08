@@ -72,7 +72,7 @@ NOISE_TITLE = re.compile(
 # 時報資訊「《投信買超5-4》景碩(151)、奇鋐(147)…」「《上週上櫃成交金額排名（6-3）》」這類數字表
 TABLE_TITLE = re.compile(r"《[^》]*\d+-\d+[)）]?》")
 KEEP_TABLE = re.compile(r"處置|注意股|管制")  # 處置股／注意股名單會影響交易方式，保留
-NOISE_SOURCES = {"YouTube", "Facebook", "Instagram", "Threads", "Dcard", "PTT", "Mobile01", "鉅亨號"}  # 鉅亨號是網友部落格
+NOISE_SOURCES = {"YouTube", "Facebook", "Instagram", "Threads", "Dcard", "PTT", "Mobile01", "鉅亨號", "CMoney投資網誌"}  # 鉅亨號、CMoney投資網誌是網友／投資達人部落格
 QA_SOURCES = {"UDN", "CMoney"}  # 這兩個來源以問句結尾的標題多半是自動產生的問答頁（例：「金像電毛利率預估多少？」）
 
 
@@ -116,7 +116,7 @@ NEWS_REVENUE = re.compile(r"營收|EPS|每股|獲利|毛利|淨利|盈餘|自結
 NEWS_MOVE = re.compile(
     r"漲停|跌停|大漲|大跌|上漲|下跌|亮燈|噴|飆|重挫|下挫|勁揚|摜|跳水|強攻|走強|走弱|拉回|盤中|領漲|領跌|爆量|攻頂|翻黑|翻紅|翻綠|撐紅"
     r"|收漲|收跌|收紅|收黑|千金股|狂殺|急殺|狂瀉|天價|股價|股王|股后|市值|走勢|漲幅|跌幅|漲逾|跌逾|漲\d|跌\d|即時新聞"
-    r"|開盤|收盤|早盤|尾盤|均線|跌破|站上|站回|成交額|成交量")
+    r"|開盤|收盤|早盤|尾盤|均線|跌破|站上|站回|成交額|成交量|多頭|空頭|多方|空方|交易活躍")
 NEWS_CHIPS = re.compile(r"外資|投信|自營商|三大法人|法人|買超|賣超|融資|融券|借券|籌碼|主力|ETF|00\d{3}|目標價|評等|喊買|喊進|喊賣|國家隊")
 NEWS_DISPOSAL = re.compile(r"注意股|處置|管制|撮合|警示")
 NEWS_OUTLOOK_WEAK = re.compile(r"明年|下半年|上半年|第四季|第4季|Q4|4Q\d\d|後市|看好|看旺|看淡|看俏|轉弱|轉強|樂觀|保守|審慎|動能|旺季|淡季|成長可期|續旺")
