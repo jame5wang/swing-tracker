@@ -62,11 +62,11 @@ QUERY_OVERRIDES = {
 # 2026-10-08 第一次全面抓取時 549 則裡有 156 則是爆料同學會貼文，把真正的新聞擠出每檔 8 則的名額。
 NOISE_TITLE = re.compile(
     r"股市爆料同學會|爆料同學會|討論牆|討論區|PTT|Dcard|Mobile01"
-    r"|個股概覽|股價預估|怎麼買賣|今日股價與討論|金包銀之"
+    r"|個股概覽|股價預估|怎麼買賣|今日股價與討論|金包銀之|即時新聞|即時報價|股價走勢與"  # CMoney 盤中股價快訊、報價頁
     r"|排行榜|TOP\s*\d+|前\d+名|\d+大成交|【[^】]*(?:節目|直播)[^】]*】|#[^\s#]"  # 帶 hashtag 的是影音／社群貼文
     r"|^[^\s（(]{2,8}[（(]\d{4}[)）]$|^\d{4}\s*\S{1,8}$"  # 只有「松川精密(7788)」「3661世芯KY」這樣的個股頁
     r"|權證|(?<!增資)(?<!員工)(?<!現增)認(?:購|售)|牛熊證|最牛一輪|即時走勢"  # 權證推薦專欄、權證報價頁
-    r"|取得.{0,16}(?:機器設備|廠務工程|營業使用|供營業用|營業用之)|海外路演|NDR"  # 例行重訊的轉載（重訊卡片已列在例行公告）
+    r"|取得.{0,16}(?:設備|廠務工程|營業使用|供營業用|營業用之)|海外路演|NDR"  # 例行重訊的轉載（重訊卡片已列在例行公告）
     r"|[\U0001F300-\U0001FAFF\u2600-\u27BF]"  # 標題帶表情符號的幾乎都是社群貼文
 )
 # 時報資訊「《投信買超5-4》景碩(151)、奇鋐(147)…」「《上週上櫃成交金額排名（6-3）》」這類數字表
@@ -84,6 +84,70 @@ def is_noise(title, source):
     if TABLE_TITLE.search(title) and not KEEP_TABLE.search(title):
         return True
     return source in QA_SOURCES and bool(re.search(r"[？?]\s*$", title))
+
+
+# ---------------------------------------------------------------- 新聞類型（只保留使用者要的）
+# 使用者 2026-10-08：「營收財報不用發」、「主要是需要新聞資訊，例如法說內容、重大影響營運結構的事件、
+# 未來展望、產業趨勢這類型的」。依標題判斷，只收三類：
+#   event   重大事件：檢調／訴訟／災害／罷工等突發事件，以及併購、增資、合資、擴產建廠、大額投資、重大訂單
+#   outlook 法說／展望：法說會、股東會、經營層發言，或標題對後市的看法（明年、Q4、旺季、看好…）
+#   trend   產業趨勢：漲價缺貨、供需、產品技術世代、量產送樣、訂單客戶、AI／記憶體／載板等產業動態
+# 不收（回傳 None）：月營收與財報數字、股價漲跌與盤勢、法人買賣超與目標價、注意／處置股、投資建議文。
+# 被排除的新聞不佔每檔 8 則的名額。
+_AMOUNT = r"\s*[\d一二三四五六七八九十百千萬億.,]+\s*(?:億|萬)"
+NEWS_HYPE = re.compile(  # 投資建議、喊價文：不管講什麼都不收
+    r"撿便宜|可以追|能追|追嗎|追高|搶進|卡位|攻略|閉眼買|口袋名單|又要噴|飆股|妖股|買點|存股|上車|下車|誰還沒漲|必買|快跑|CP值|狂喊"
+    r"|能買|可買|該買|要買|怎麼買|能抱|續抱")
+NEWS_EVENT = re.compile(
+    r"搜索|調查局|檢調|約談|起訴|羈押|交保|收押|內線|掏空|訴訟|裁罰|罰鍰|違約|跳票|資安事件|遭駭|駭客攻擊|網路攻擊|勒索"
+    r"|火災|火警|氣爆|爆炸|停工|停產|罷工|下市|澄清|重訊"
+    r"|併購|收購|合併案|吸收合併|入股|增資|私募|減資|分割|合資|結盟|策略聯盟|出售|處分|關廠|裁員|換帥|接班"
+    r"|擴產|擴廠|新廠|建廠|設廠|買地|購地|(?<!盤)大單|拿下|打入(?!處置|注意|跌停|漲停|全額)|打進(?!處置|注意|跌停|漲停)|獨家|轉單"
+    rf"|(?:砸|斥資|投資|資本支出|擲){_AMOUNT}.{{0,12}}(?:廠|設備|產能|土地|園區|買下|購入|入股)")
+NEWS_CALL = re.compile(r"法說|法人說明會|股東會")
+NEWS_OUTLOOK_STRONG = re.compile(r"法說|法人說明會|股東會|展望|董座|董事長|總經理|執行長|總裁|營運長|財務長|發言人|CEO|CFO|COO")
+# 具體的產業資訊：TREND_KEY 是漲價缺貨、量產認證、技術規格這類「產業本身的變化」；TREND_BIZ（訂單、客戶、拉貨）
+# 常被拿來解釋月營收，所以標題主軸是營收數字時，只有 TREND_KEY 才算數
+NEWS_TREND_KEY = re.compile(
+    r"漲價|跌價|降價|傳漲|喊漲|調漲|缺貨|供不應求|吃緊|供過於求|合約價|(?<!即時)報價|供需|庫存|稼動率|產能利用率|滿載|量產|送樣|認證|驗證"
+    r"|新品|新世代|規格|製程|改採|專利|市占|搶光|交期")
+NEWS_TREND_BIZ = re.compile(r"訂單|接單|客戶|拉貨|擴充")
+NEWS_REVENUE = re.compile(r"營收|EPS|每股|獲利|毛利|淨利|盈餘|自結|稅後|純益|財報|季增|年增|月增|月減|年減")
+NEWS_MOVE = re.compile(
+    r"漲停|跌停|大漲|大跌|上漲|下跌|亮燈|噴|飆|重挫|下挫|勁揚|摜|跳水|強攻|走強|走弱|拉回|盤中|領漲|領跌|爆量|攻頂|翻黑|翻紅|翻綠|撐紅"
+    r"|收漲|收跌|收紅|收黑|千金股|狂殺|急殺|狂瀉|天價|股價|股王|股后|市值|走勢|漲幅|跌幅|漲逾|跌逾|漲\d|跌\d|即時新聞"
+    r"|開盤|收盤|早盤|尾盤|均線|跌破|站上|站回|成交額|成交量")
+NEWS_CHIPS = re.compile(r"外資|投信|自營商|三大法人|法人|買超|賣超|融資|融券|借券|籌碼|主力|ETF|00\d{3}|目標價|評等|喊買|喊進|喊賣|國家隊")
+NEWS_DISPOSAL = re.compile(r"注意股|處置|管制|撮合|警示")
+NEWS_OUTLOOK_WEAK = re.compile(r"明年|下半年|上半年|第四季|第4季|Q4|4Q\d\d|後市|看好|看旺|看淡|看俏|轉弱|轉強|樂觀|保守|審慎|動能|旺季|淡季|成長可期|續旺")
+NEWS_TREND_WEAK = re.compile(
+    r"AI|CPO|HBM|ASIC|GPU|伺服器|資料中心|液冷|散熱|載板|ABF|CCL|PCB|矽光子|光通訊|記憶體|DRAM|NAND|晶圓|封裝|CoWoS|衛星|機器人|電動車"
+    r"|800G|1\.6T|3\.2T|FAU|商機|市場|題材|供應鏈|布局|佈局|轉型|技術|需求|產能")
+
+
+def news_category(title):
+    t = title or ""
+    if NEWS_HYPE.search(t):
+        return None
+    revenue = bool(NEWS_REVENUE.search(t))
+    strong_trend = bool(NEWS_TREND_KEY.search(t)) or (not revenue and bool(NEWS_TREND_BIZ.search(t)))
+    move = bool(NEWS_MOVE.search(t))
+    if NEWS_CALL.search(t) and (strong_trend or not move):
+        return "outlook"  # 法說會內容即使有 EPS、毛利率數字也要收；「法說前股價熄火」這種盤勢文不算
+    if NEWS_EVENT.search(t):
+        return "event"
+    # 董座／總經理發言；標題主軸是營收數字的（「營收創新高董座開講」）不算
+    if NEWS_OUTLOOK_STRONG.search(t) and not revenue and (strong_trend or not move):
+        return "outlook"
+    if strong_trend:
+        return "trend"  # 標題有具體的產業資訊（漲價、缺貨、量產、訂單…），即使順帶提到股價或法人也收
+    if revenue or move or NEWS_CHIPS.search(t) or NEWS_DISPOSAL.search(t):
+        return None
+    if NEWS_OUTLOOK_WEAK.search(t):
+        return "outlook"
+    if NEWS_TREND_WEAK.search(t):
+        return "trend"
+    return None
 
 
 # 標題尾巴常掛著網站分類（「| 科技產業| 產經」「- 日報」「｜新聞快訊｜豐雲學堂」），拿掉比較好讀
@@ -449,12 +513,15 @@ def main():
         for it in sorted(pool, key=lambda x: x.get("publishedAt") or "", reverse=True):
             if (it.get("publishedAt") or "") < cutoff_news:
                 continue
+            cat = news_category(it.get("title"))
+            if not cat:
+                continue  # 營收數字、股價漲跌、籌碼目標價這類不收（見 NEWS_RULES）
             key = norm_title(it.get("title"))[:40]
             if not key or key in seen or it.get("url") in seen:
                 continue
             seen.add(key)
             seen.add(it.get("url"))
-            kept.append(it)
+            kept.append(dict(it, cat=cat))
             if len(kept) >= NEWS_PER_STOCK:
                 break
         if kept:
@@ -462,7 +529,7 @@ def main():
 
     output = {
         "generatedAt": now.isoformat(timespec="seconds"),
-        "note": "公司重大訊息來自證交所／櫃買中心 OpenAPI（公開資訊觀測站每日重大訊息）；個股新聞來自鉅亨網台股新聞（文章標註個股）與 Google 新聞搜尋，僅保存標題與連結作為新聞索引。重大訊息保留近30天、個股新聞保留近7天。",
+        "note": "公司重大訊息來自證交所／櫃買中心 OpenAPI（公開資訊觀測站每日重大訊息）；個股新聞來自鉅亨網台股新聞（文章標註個股）與 Google 新聞搜尋，僅保存標題與連結作為新聞索引，並只保留重大事件（event）、法說／展望（outlook）、產業趨勢（trend）三類。重大訊息保留近30天、個股新聞保留近7天。",
         "sources": status,
         "announcements": announcements,
         "news": news,

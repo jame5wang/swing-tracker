@@ -844,34 +844,18 @@ function renderAnnBox(){
   if(routineBtn) routineBtn.addEventListener('click',()=>{ annRoutineOpen=!annRoutineOpen; renderAnnBox(); });
   el.querySelectorAll('.annStock').forEach(x=>x.addEventListener('click',()=>openStockByCode(x.dataset.code,'reports')));
 }
-// 首頁「持股最新新聞」：一天兩百多則太多，依標題分類（重大事件、營收財報、法說…），同一類裡同一檔股票的
-// 新聞合併成一組、只顯示最新一則標題；每類先列報導最多的 1～2 組，其餘收合，要看細節再自己點進去或搜尋
+// 首頁「持股最新新聞」：只列使用者要的三類——重大事件（影響營運結構）、法說／展望、產業趨勢。
+// 分類在抓取端（scripts/fetch_company_news.py 的 news_category）依標題判斷並寫進每則新聞的 cat 欄位，
+// 營收財報數字、股價漲跌、法人買賣超與目標價、注意／處置股、投資建議文在抓取時就不收。
+// 同一類裡同一檔股票的新聞合併成一組、只顯示最新一則標題；每類先列報導最多的 2 組，其餘收合，
+// 要看細節再自己點進去或搜尋
 let feedCollapsed=(()=>{ try{ return localStorage.getItem('feedCollapsed')==='1'; }catch(e){ return false; } })();
-let feedOpenCats=new Set();   // 已展開「其餘 N 組」的分類
+let feedOpenCats=new Set();   // 已展開「其餘 N 檔」的分類
 let feedOpenGroups=new Set(); // 已展開「另 N 則」的組
-// 每類預設顯示幾組：報導最多的那組一定列；第二組也很熱門（3 則以上報導）才一起列；「其他」預設收合
-function feedShownCount(cat, groups){
-  if(cat==='other') return 0;
-  return (groups.length>=2 && groups[1].items.length>=3) ? 2 : 1;
-}
-// 依序比對，先符合的優先：同時講搜索與營收的歸「重大事件」；「法說」優先於營收，董座發言則在營收之後才判斷
-const NEWS_CAT_RULES=[
-  ['event',    /搜索|調查局|檢調|約談|起訴|羈押|交保|收押|內線|掏空|澄清|重訊|火災|氣爆|爆炸|停工|停產|罷工|訴訟|裁罰|罰鍰|違約|跳票|資安|駭客|下市/],
-  ['outlook',  /法說|股東會/],
-  ['revenue',  /營收|EPS|獲利|財報|毛利|淨利|盈餘|自結|稅後|純益|季報|年報/],
-  ['disposal', /注意股|處置|管制|撮合|警示股|全額交割|關禁閉/],
-  ['outlook',  /展望|董座|董事長|總經理|執行長|總裁|說明會/],
-  ['inst',     /目標價|評等|外資|投信|自營商|三大法人|法人|買超|賣超|大摩|小摩|摩根|高盛|花旗|美系|日系|野村|瑞銀|里昂|大和|FactSet|Factset|調升|調降|融資|融券|籌碼|ETF|00\d{3}/],
-  ['move',     /漲停|跌停|大漲|大跌|亮燈|噴|飆|重挫|創高|新高|天價|摜|跳水|強攻|走強|走弱|拉回|盤中|領漲|領跌|爆量|攻頂|翻黑|翻紅|收漲|收跌|千金股|狂殺|急殺/],
-  ['biz',      /擴產|產能|接單|訂單|出貨|量產|廠|買地|投資|合作|供應鏈|客戶|題材|概念股|漲價|缺貨|報價|技術|認證|AI|CPO|HBM|ASIC|伺服器|衛星|機器人|載板|CCL|PCB|散熱|光通訊|記憶體/],
-];
-const NEWS_CAT_ORDER=['event','revenue','outlook','inst','biz','disposal','move','other'];
-const NEWS_CAT_LABEL={event:'🚨 重大事件', revenue:'📊 營收財報', outlook:'🗣️ 法說／經營層', inst:'🏦 法人／目標價', biz:'🏭 接單／產業', disposal:'⚠️ 注意／處置', move:'📈 股價異動', other:'📰 其他'};
-function newsCategory(title){
-  const t=String(title||'');
-  for(const [id,rx] of NEWS_CAT_RULES) if(rx.test(t)) return id;
-  return 'other';
-}
+const FEED_GROUPS_SHOWN=2;
+const NEWS_CAT_ORDER=['event','outlook','trend'];
+const NEWS_CAT_LABEL={event:'🚨 重大事件', outlook:'🗣️ 法說／展望', trend:'🌐 產業趨勢'};
+function newsCategory(n){ return NEWS_CAT_LABEL[n && n.cat] ? n.cat : null; }
 function normTitle(t){ return String(t||'').replace(/[\s\p{P}\p{S}_]+/gu,'').toLowerCase().slice(0,40); }
 // 一則新聞點名多檔股票時，以標題中最先出現的那檔當作這則新聞的主角
 function primaryCode(n){
@@ -890,7 +874,9 @@ function primaryCode(n){
 function groupFeedByCategory(feed){
   const cats={};
   feed.forEach(n=>{
-    const cat=newsCategory(n.title), code=primaryCode(n), key=`${cat}|${code}`;
+    const cat=newsCategory(n);
+    if(!cat) return;
+    const code=primaryCode(n), key=`${cat}|${code}`;
     if(!cats[cat]) cats[cat]=new Map();
     if(!cats[cat].has(key)) cats[cat].set(key,{key, code, items:[]});
     cats[cat].get(key).items.push(n); // feed 已經由新到舊排序，組內第一則就是最新的
@@ -913,7 +899,7 @@ function stockNewsFeed(hours){
     (items||[]).forEach(n=>{
       const ts=new Date(n.publishedAt).getTime();
       const key=normTitle(n.title);
-      if(!(ts>=since) || !key) return;
+      if(!(ts>=since) || !key || !newsCategory(n)) return;
       let e=byKey.get(key);
       if(!e){ e={...n, ts, codes:[]}; byKey.set(key,e); }
       if(!e.codes.includes(code)) e.codes.push(code);
@@ -939,13 +925,13 @@ function renderNewsFeed(){
     <div class="annHead"><span class="feedHead" id="feedHeadBtn">📰 持股最新新聞（近${hours===24?'24小時':'3日'} ${feed.length} 則，依類型整理）<span class="feedCaret">▾</span></span></div>
     ${feedCollapsed ? '' : cats.map(({cat,groups})=>{
       const catOpen=feedOpenCats.has(cat);
-      const base=feedShownCount(cat, groups);
+      const base=FEED_GROUPS_SHOWN;
       const shown=catOpen ? groups : groups.slice(0,base);
       const total=groups.reduce((s,g)=>s+g.items.length,0);
       return `<div class="feedCat">
         <div class="feedCatHead">${NEWS_CAT_LABEL[cat]}<span class="cnCatCount">${groups.length} 檔／${total} 則</span></div>
         ${shown.map(feedGroupHtml).join('')}
-        ${groups.length>base?`<button type="button" class="feedCatBtn" data-cat="${cat}">${catOpen?'收合':(base?`＋ 其餘 ${groups.length-base} 檔`:`＋ 展開 ${groups.length} 檔`)}</button>`:''}
+        ${groups.length>base?`<button type="button" class="feedCatBtn" data-cat="${cat}">${catOpen?'收合':`＋ 其餘 ${groups.length-base} 檔`}</button>`:''}
       </div>`;
     }).join('')}
   </div>`;
@@ -965,7 +951,7 @@ function renderNewsFeed(){
 // 個股頁的新聞也依類型分組，每類先顯示 2 則
 function stockNewsGroupedHtml(list){
   const byCat=new Map();
-  list.forEach(n=>{ const c=newsCategory(n.title); if(!byCat.has(c)) byCat.set(c,[]); byCat.get(c).push(n); });
+  list.forEach(n=>{ const c=newsCategory(n); if(!c) return; if(!byCat.has(c)) byCat.set(c,[]); byCat.get(c).push(n); });
   return NEWS_CAT_ORDER.filter(c=>byCat.has(c)).map(c=>{
     const items=byCat.get(c);
     return `<div class="cnGroup">
