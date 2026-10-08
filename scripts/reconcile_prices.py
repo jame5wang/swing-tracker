@@ -86,6 +86,7 @@ def main():
         stocks = data.get("stocks") or []
         patched = []
         tracked_dates = []
+        current_rows = []  # 逐日K是最新的追蹤股票，對應的收盤價資料列
         for row in stocks:
             code = str(row.get("code") or "").strip()
             t = tech_stocks.get(code)
@@ -98,6 +99,7 @@ def main():
                 if row.get("date"):
                     tracked_dates.append(row["date"])
                 continue
+            current_rows.append(row)
             need, reason = decide(row, series)
             if need:
                 prev = series[-2] if len(series) >= 2 else None
@@ -122,6 +124,13 @@ def main():
             if data.get("dateSource") != "api" or data.get("date", "") < data["trackedDate"]:
                 data["date"] = data["trackedDate"]
         data["reconciledFromTechnical"] = len(patched)
+        # 抓取失敗時檔案會被標成 stale，但如果追蹤股票的收盤價（校正後）已經都是最新交易日的資料，
+        # 網站上顯示的價格其實是對的，不該再跳「抓取失敗，非最新」的紅色警示。
+        # 例：2026-10-07 17:50 已成功抓到當天上櫃收盤價，20:10 補抓時連線中斷被標成 stale，造成誤報。
+        if data.get("stale") and current_rows and all((r.get("date") or "") >= latest for r in current_rows):
+            data["stale"] = False
+            data["staleCleared"] = f"本次抓取失敗（{data.get('staleReason', '')}），但追蹤股票收盤價已是最新交易日 {latest} 的資料"
+            print(f"{path}：本次抓取失敗，但追蹤股票收盤價已是最新交易日 {latest}，解除 stale 警示")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
         if patched:

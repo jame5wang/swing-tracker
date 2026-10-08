@@ -261,7 +261,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .rbTitle{font-size:12.5px; font-weight:700; margin-bottom:6px; color:var(--sub); text-transform:uppercase; letter-spacing:.06em;}
 .rbBody{font-size:13.5px; line-height:1.7; white-space:pre-wrap;}
 .researchEmpty{font-size:13px; color:var(--sub); padding:16px; background:var(--panel2); border:1px dashed var(--line); border-radius:11px; margin:14px 0; text-align:center;}
-.srcList{font-size:11.5px; color:var(--sub); margin-top:8px; line-height:1.6;}
+.srcList{font-size:11.5px; color:var(--sub); margin-top:8px; line-height:1.6; overflow-wrap:anywhere;}
 .srcList a{color:var(--accent); text-decoration:none; margin-right:4px;}
 .srcList a:hover{text-decoration:underline;}
 .revGrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:6px;}
@@ -287,6 +287,45 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .reportSrc{font-weight:650;}
 .reportDate{color:var(--mute); font-family:var(--mono);}
 .reportBody{font-size:13px; line-height:1.6;}
+/* 持股重大訊息／個股新聞（data/company_news.json） */
+.annCard{border:1px solid var(--line); border-radius:12px; padding:12px 14px 12px 16px; margin-bottom:14px; background:var(--panel); position:relative; overflow:hidden;}
+.annCard::before{content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--accent);}
+.annHead{display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:13px; font-weight:700;}
+.annMore{font-size:11.5px; color:var(--accent); background:none; border:none; cursor:pointer; padding:0; font-family:inherit;}
+.annList{display:flex; flex-direction:column; gap:9px; margin-top:9px;}
+.annItem{font-size:12.5px; line-height:1.55;}
+.annItem details summary{cursor:pointer;}
+.annItem details summary::-webkit-details-marker{color:var(--mute);}
+.annMeta{font-size:11px; color:var(--mute); font-family:var(--mono); margin-right:6px; white-space:nowrap;}
+.annStock{color:var(--accent); font-weight:700; cursor:pointer; margin-right:6px; white-space:nowrap;}
+.annStock:hover{text-decoration:underline;}
+.annDetail{white-space:pre-wrap; font-size:12px; color:var(--sub); margin:6px 0 2px; padding:8px 10px; background:var(--panel2); border-radius:8px; line-height:1.6;}
+.annDetail a{color:var(--accent);}
+.annEmpty{font-size:12px; color:var(--mute); margin-top:6px;}
+.rAnnTag{display:inline-block; margin-left:6px; font-size:10px; font-weight:700; padding:1px 6px; border-radius:6px; background:color-mix(in srgb, var(--accent) 16%, var(--panel2)); color:var(--accent); vertical-align:1px;}
+.rAnnTag.lv2, .annLv.lv2{background:var(--stopBg); color:var(--stop);}
+.rAnnTag.lv1, .annLv.lv1{background:var(--sellBg); color:var(--sell);}
+.annCard.hasLv2::before{background:var(--stop);}
+.annLv{display:inline-block; font-size:10px; font-weight:700; padding:0 5px; border-radius:5px; margin-right:6px; vertical-align:1px; white-space:nowrap;}
+.annRoutineBtn{display:block; margin-top:10px; font-size:11.5px; color:var(--sub); background:none; border:none; padding:0; cursor:pointer; font-family:inherit; text-align:left;}
+.annRoutineBtn:hover{color:var(--accent);}
+.annRoutine{margin-top:8px;}
+.feedCard::before{background:var(--accent2);}
+.feedHead{cursor:pointer; user-select:none;}
+.feedCaret{display:inline-block; margin-left:6px; color:var(--mute); font-size:11px; transition:transform .2s;}
+.feedCard.collapsed .feedCaret{transform:rotate(-90deg);}
+.feedCard .cnList{margin-top:9px;}
+.feedStock{display:inline-block; margin-left:6px; font-size:10.5px; font-weight:650; padding:0 6px; border-radius:6px; background:var(--panel2); color:var(--accent); cursor:pointer; white-space:nowrap;}
+.feedStock:hover{text-decoration:underline;}
+.feedNote{font-size:11px; color:var(--mute); margin-top:8px;}
+.detailAnnNote.lv2{background:var(--stopBg); border-left:3px solid var(--stop);}
+.detailAnnNote.lv1{background:var(--sellBg); border-left:3px solid var(--sell);}
+.cnList{display:flex; flex-direction:column; gap:8px; margin-top:6px;}
+.cnItem{font-size:13px; line-height:1.5;}
+.cnItem a{color:var(--ink); text-decoration:none;}
+.cnItem a:hover{color:var(--accent); text-decoration:underline;}
+.cnMeta{font-size:11px; color:var(--mute); margin-left:6px; white-space:nowrap;}
+.detailAnnNote{font-size:12px; margin:8px 0 0; padding:8px 10px; border-radius:8px; background:color-mix(in srgb, var(--accent) 10%, var(--panel2)); color:var(--ink); cursor:pointer;}
 </style>
 </head>
 <body>
@@ -723,6 +762,131 @@ async function loadMacro(){
   renderMacroCard();
 }
 
+// 持股重大訊息與個股新聞（scripts/fetch_company_news.py 每天自動更新4次）
+let companyNews=null;
+const ANN_RECENT_DAYS=3;
+let annExpanded=false;
+async function loadCompanyNews(){
+  const json=await fetchJson('data/company_news.json');
+  if(!json) return;
+  companyNews=json;
+  render();
+}
+// 外部來源（公開資訊觀測站、新聞標題）的文字一律跳脫後再放進畫面
+function esc(v){ return String(v===undefined||v===null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function safeUrl(u){ return /^https?:\/\//i.test(String(u||'')) ? esc(u) : '#'; }
+function announcementsFor(code, days){
+  if(!companyNews || !Array.isArray(companyNews.announcements)) return [];
+  const today=taipeiToday();
+  return companyNews.announcements.filter(a=>(code===null || a.code===String(code)) && a.date && (days===null || daysBetween(a.date,today)<days));
+}
+function companyNewsFor(code){
+  return (companyNews && companyNews.news && companyNews.news[String(code)]) || [];
+}
+// 重訊分級（scripts/fetch_company_news.py 依主旨判斷）：2=重大事件（檢調搜索、停工、違約…）、1=需留意（澄清報導、增減資、經營層異動、注意交易…）、0=例行公告
+function annLevel(a){ return Number(a && a.level)||0; }
+function annTime(a){ return `${a.date||''} ${a.time||''}`; }
+function importantAnns(code, days){
+  return announcementsFor(code, days).filter(a=>annLevel(a)>=1)
+    .sort((x,y)=>annLevel(y)-annLevel(x) || annTime(y).localeCompare(annTime(x)));
+}
+function annItemHtml(a, withStock){
+  const d=a.date ? a.date.slice(5).replace('-','/') : '';
+  const lv=annLevel(a);
+  const lvTag = lv>=2 ? '<span class="annLv lv2">重大</span>' : (lv>=1 ? '<span class="annLv lv1">留意</span>' : '');
+  return `<div class="annItem">
+    <span class="annMeta">${esc(d)} ${esc(a.time||'')}</span>${lvTag}${withStock?`<span class="annStock" data-code="${esc(a.code)}">${esc(a.name)} ${esc(a.code)}</span>`:''}
+    <details><summary>${esc(a.title)}</summary><div class="annDetail">${esc(a.detail||'')}${a.clause?`\n（${esc(a.clause)}）`:''}　<a href="${safeUrl(a.url)}" target="_blank" rel="noopener">公開資訊觀測站</a></div></details>
+  </div>`;
+}
+function openStockByCode(code, tab){
+  const idx=stocks.findIndex(x=>String(x.code)===String(code));
+  if(idx<0) return;
+  savedListScrollY=window.scrollY; activeIndex=idx; activeTab=tab||'overview'; render(); window.scrollTo(0,0);
+}
+// 首頁卡片：重大／需留意的重訊直接列出（重大的排最前面），取得設備、月營收、法說會這類例行公告收合起來，
+// 避免例行公告把「檢調搜索」這種真正重要的消息淹沒
+let annRoutineOpen=false;
+const ANN_SHOW_MAX=6;
+function renderAnnBox(){
+  const el=document.getElementById('annBox');
+  if(!el) return;
+  if(!companyNews){ el.innerHTML=''; return; }
+  const recent=announcementsFor(null, ANN_RECENT_DAYS);
+  const important=importantAnns(null, ANN_RECENT_DAYS);
+  const routine=recent.filter(a=>annLevel(a)<1);
+  const shown=annExpanded ? important : important.slice(0,ANN_SHOW_MAX);
+  const emptyText = recent.length
+    ? `近${ANN_RECENT_DAYS}日沒有需要特別留意的重大訊息`
+    : `近${ANN_RECENT_DAYS}日追蹤的股票沒有新的重大訊息（每天 07:05、12:35、17:45、21:45 自動更新）`;
+  el.innerHTML=`<div class="annCard${important.some(a=>annLevel(a)>=2)?' hasLv2':''}">
+    <div class="annHead"><span>📢 持股重大訊息（近${ANN_RECENT_DAYS}日）</span>${important.length>ANN_SHOW_MAX?`<button type="button" class="annMore" id="annMoreBtn">${annExpanded?'收合':`展開全部 ${important.length} 則`}</button>`:''}</div>
+    ${important.length ? `<div class="annList">${shown.map(a=>annItemHtml(a,true)).join('')}</div>` : `<div class="annEmpty">${emptyText}</div>`}
+    ${routine.length ? `<button type="button" class="annRoutineBtn" id="annRoutineBtn">${annRoutineOpen?'▾':'▸'} 例行公告 ${routine.length} 則（取得設備、月營收、法說會等）</button>
+      ${annRoutineOpen ? `<div class="annList annRoutine">${routine.map(a=>annItemHtml(a,true)).join('')}</div>` : ''}` : ''}
+  </div>`;
+  const more=document.getElementById('annMoreBtn');
+  if(more) more.addEventListener('click',()=>{ annExpanded=!annExpanded; renderAnnBox(); });
+  const routineBtn=document.getElementById('annRoutineBtn');
+  if(routineBtn) routineBtn.addEventListener('click',()=>{ annRoutineOpen=!annRoutineOpen; renderAnnBox(); });
+  el.querySelectorAll('.annStock').forEach(x=>x.addEventListener('click',()=>openStockByCode(x.dataset.code,'reports')));
+}
+// 首頁「持股最新新聞」：把每檔股票的個股新聞合併成一條時間軸（同一則新聞點名多檔股票時只列一次、標出相關股票）
+let feedExpanded=false;
+let feedCollapsed=(()=>{ try{ return localStorage.getItem('feedCollapsed')==='1'; }catch(e){ return false; } })();
+const FEED_SHOW=6, FEED_MAX=60;
+function normTitle(t){ return String(t||'').replace(/[\s\p{P}\p{S}_]+/gu,'').toLowerCase().slice(0,40); }
+function stockNameOf(code){ const s=stocks.find(x=>String(x.code)===String(code)); return s ? s.name : String(code); }
+function stockNewsFeed(hours){
+  if(!companyNews || !companyNews.news) return [];
+  const since=Date.now()-hours*3600*1000;
+  const byKey=new Map();
+  Object.entries(companyNews.news).forEach(([code,items])=>{
+    (items||[]).forEach(n=>{
+      const ts=new Date(n.publishedAt).getTime();
+      const key=normTitle(n.title);
+      if(!(ts>=since) || !key) return;
+      let e=byKey.get(key);
+      if(!e){ e={...n, ts, codes:[]}; byKey.set(key,e); }
+      if(!e.codes.includes(code)) e.codes.push(code);
+    });
+  });
+  return [...byKey.values()].sort((a,b)=>b.ts-a.ts);
+}
+function renderNewsFeed(){
+  const el=document.getElementById('newsFeedBox');
+  if(!el) return;
+  let hours=24, feed=stockNewsFeed(24);
+  if(feed.length<FEED_SHOW){ hours=72; feed=stockNewsFeed(72); } // 週末、連假新聞少時放寬到近3日
+  if(!feed.length){ el.innerHTML=''; return; }
+  const shown=feed.slice(0, feedExpanded ? FEED_MAX : FEED_SHOW);
+  el.innerHTML=`<div class="annCard feedCard${feedCollapsed?' collapsed':''}">
+    <div class="annHead"><span class="feedHead" id="feedHeadBtn">📰 持股最新新聞（近${hours===24?'24小時':'3日'}，${feed.length} 則）<span class="feedCaret">▾</span></span>${!feedCollapsed && feed.length>FEED_SHOW?`<button type="button" class="annMore" id="feedMoreBtn">${feedExpanded?'收合':'顯示更多'}</button>`:''}</div>
+    ${feedCollapsed ? '' : `<div class="cnList">${shown.map(n=>`<div class="cnItem"><a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="cnMeta">${esc(n.source||'')}${n.publishedAt?` · ${esc(relativeTimeFrom(n.publishedAt))}`:''}</span>${n.codes.slice(0,4).map(c=>`<span class="feedStock" data-code="${esc(c)}">${esc(stockNameOf(c))}</span>`).join('')}${n.codes.length>4?`<span class="cnMeta">等 ${n.codes.length} 檔</span>`:''}</div>`).join('')}</div>
+      ${feedExpanded && feed.length>FEED_MAX ? `<div class="feedNote">只列出最新 ${FEED_MAX} 則，其他新聞請到個股頁「法人／新聞」查看</div>` : ''}`}
+  </div>`;
+  document.getElementById('feedHeadBtn').addEventListener('click',()=>{
+    feedCollapsed=!feedCollapsed;
+    try{ localStorage.setItem('feedCollapsed', feedCollapsed?'1':'0'); }catch(e){}
+    renderNewsFeed();
+  });
+  const more=document.getElementById('feedMoreBtn');
+  if(more) more.addEventListener('click',()=>{ feedExpanded=!feedExpanded; renderNewsFeed(); });
+  el.querySelectorAll('.feedStock').forEach(x=>x.addEventListener('click',()=>openStockByCode(x.dataset.code,'reports')));
+}
+function rowAnnTagHtml(code){
+  const imp=importantAnns(code, ANN_RECENT_DAYS);
+  if(!imp.length) return '';
+  const lv=annLevel(imp[0]);
+  return `<span class="rAnnTag lv${lv}" title="${esc(imp[0].title)}">${lv>=2?'⚠ 重大訊息':'📢 重訊'}</span>`;
+}
+function detailAnnNoteHtml(s){
+  const imp=importantAnns(s.code, ANN_RECENT_DAYS);
+  if(!imp.length) return '';
+  const lv=annLevel(imp[0]);
+  return `<div class="detailAnnNote lv${lv}" id="detailAnnNote">${lv>=2?'⚠':'📢'} 近${ANN_RECENT_DAYS}日重大訊息：${esc(imp[0].title)}${imp.length>1?`（共 ${imp.length} 則）`:''}　<b>查看 ›</b></div>`;
+}
+
 let newsData=null;
 let digestData=null; // Claude 每日彙整版（若當天有跑），優先於原始RSS清單顯示
 let newsIndex=[]; // 可查詢的日期清單，新到舊
@@ -930,6 +1094,8 @@ function renderList(){
     return;
   }
   view.innerHTML=`
+    <div id="annBox"></div>
+    <div id="newsFeedBox"></div>
     <div class="summary" id="summaryBox"></div>
     <div class="searchBar">
       <input id="searchBox" placeholder="搜尋股票代號或名稱" value="${(searchQuery||'').replace(/"/g,'&quot;')}">
@@ -952,6 +1118,8 @@ function renderRows(){
   const rowsEl=document.getElementById('rows');
   const summaryBox=document.getElementById('summaryBox');
   if(!rowsEl) return;
+  renderAnnBox();
+  renderNewsFeed();
 
   const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0,'st-extended':0};
   stocks.forEach(s=>{ const c=statusOf(s).cls; if(counts[c]!==undefined) counts[c]++; });
@@ -1029,7 +1197,7 @@ function renderRows(){
         <div class="row ${accentCls}" data-open="${i}">
           <div class="dotStatus ${st.cls}"></div>
           <div class="rInfo">
-            <span class="rName">${s.name||'(未命名)'}</span><span class="rCode">${s.code||''}</span>
+            <span class="rName">${s.name||'(未命名)'}</span><span class="rCode">${s.code||''}</span>${rowAnnTagHtml(s.code)}
             <div class="rLabel">${st.label}</div>
             ${stopBreadthWarningHtml(st.cls)}
           </div>
@@ -1059,7 +1227,13 @@ function renderRows(){
 
 function renderSources(list){
   if(!list || !list.length) return '';
-  return `<div class="srcList">資料來源：${list.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.title||s.url}</a>`).join('、')}</div>`;
+  // 來源沒有標題（或標題就是網址）時顯示網站名稱，不要把整串編碼過的長網址印出來（會撐破版面）
+  const label=s=>{
+    const t=String(s.title||'');
+    if(t && !/^https?:\/\//i.test(t)) return esc(t);
+    try{ return esc(new URL(s.url||t).hostname.replace(/^www\./,'')); }catch(e){ return '連結'; }
+  };
+  return `<div class="srcList">資料來源：${list.map(s=>`<a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${label(s)}</a>`).join('、')}</div>`;
 }
 
 function marginTrend(cur,prev){
@@ -1191,6 +1365,20 @@ function renderFundamentalTab(s){
 function renderReportsNewsTab(s){
   const r=s.research;
   let html='';
+  const anns=announcementsFor(s.code, null);
+  if(anns.length){
+    html+=`<div class="researchBlock">
+      <div class="rbTitle">公司重大訊息（近30日，${anns.length} 則）<span class="autoTag">自動更新</span></div>
+      <div class="annList">${anns.map(a=>annItemHtml(a,false)).join('')}</div>
+    </div>`;
+  }
+  const cn=companyNewsFor(s.code);
+  if(cn.length){
+    html+=`<div class="researchBlock">
+      <div class="rbTitle">最新新聞（近7日，${cn.length} 則）<span class="autoTag">自動更新</span></div>
+      <div class="cnList">${cn.map(n=>`<div class="cnItem"><a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="cnMeta">${esc(n.source||'')}${n.publishedAt?` · ${esc(relativeTimeFrom(n.publishedAt))}`:''}</span></div>`).join('')}</div>
+    </div>`;
+  }
   if(r && r.reports && r.reports.length){
     html+=`<div class="researchBlock">
       <div class="rbTitle">法人報告（${r.reports.length} 則）${r.updated?`<span class="autoTag">更新於 ${r.updated}</span>`:''}</div>
@@ -1213,7 +1401,7 @@ function renderReportsNewsTab(s){
       ${renderSources(r.news.sources)}
     </div>`;
   }
-  if(!html) return `<div class="researchEmpty">尚無法人報告或新聞資料。跟 Claude 說要幫這檔股票查法人報告與新聞，查完會自動出現在這裡。</div>`;
+  if(!html) return `<div class="researchEmpty">近期沒有這檔股票的重大訊息或新聞，也還沒有法人報告。重大訊息與新聞每天自動更新4次；需要法人報告的話可以跟 Claude 說。</div>`;
   return html;
 }
 
@@ -1277,7 +1465,9 @@ function renderDetail(i){
   const hasTechnical = !!(r && r.technical) || !!(technicalData && technicalData.stocks && technicalData.stocks[s.code]);
   const hasFundamental = !!(r && r.revenue);
   const reportsCount = (r && r.reports) ? r.reports.length : 0;
-  const hasReportsNews = reportsCount>0 || !!(r && r.news);
+  const recentAnnCount = announcementsFor(s.code, 7).length;
+  const autoNewsCount = companyNewsFor(s.code).length;
+  const hasReportsNews = reportsCount>0 || !!(r && r.news) || recentAnnCount>0 || autoNewsCount>0;
 
   let momentumNoteHtml='';
   if(st.cls==='st-stop'){
@@ -1328,7 +1518,7 @@ function renderDetail(i){
     {id:'overview', label:'總覽', html:overviewHtml, has:true},
     {id:'technical', label:'技術面', html:technicalHtml, has:hasTechnical},
     {id:'fundamental', label:'基本面', html:fundamentalHtml, has:hasFundamental},
-    {id:'reports', label:'法人／新聞', html:reportsHtml, has:hasReportsNews, count:reportsCount},
+    {id:'reports', label:'法人／新聞', html:reportsHtml, has:hasReportsNews, count:reportsCount+recentAnnCount+autoNewsCount},
   ];
   if(!tabs.some(t=>t.id===activeTab)) activeTab='overview';
 
@@ -1340,6 +1530,7 @@ function renderDetail(i){
         <div class="status ${st.cls}">${st.label}</div>
       </div>
       ${detailPriceNoteHtml(s)}
+      ${detailAnnNoteHtml(s)}
 
       <div class="tabBar">
         ${tabs.map(t=>`<button type="button" class="tabBtn${t.id===activeTab?' active':''}" data-tab="${t.id}">${t.label}${t.count?`<span class="tabBadge">${t.count}</span>`:(t.has?'<span class="tabBadge">•</span>':'')}</button>`).join('')}
@@ -1355,6 +1546,8 @@ function renderDetail(i){
   `;
 
   document.getElementById('backBtn').addEventListener('click',()=>{ activeIndex=null; render(); window.scrollTo(0,savedListScrollY); });
+  const annNote=document.getElementById('detailAnnNote');
+  if(annNote) annNote.addEventListener('click',()=>{ activeTab='reports'; render(); });
   view.querySelectorAll('.tabBtn').forEach(btn=>{
     btn.addEventListener('click',()=>{ activeTab=btn.dataset.tab; render(); });
   });
@@ -1381,6 +1574,7 @@ function loadAllData(){
   loadResearchData();
   loadTechnical();
   loadMacro();
+  loadCompanyNews();
   // 正在翻看較舊日期的新聞時不要把使用者拉回今天
   if(newsDateIdx===0) loadNews();
 }
