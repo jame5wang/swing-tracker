@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-12T08:15:00+08:00",
+  "coversWeekend": true,
+  "items": [
+    {
+      "summary": "上週五(10/9)美股受OpenAI公布年化營收約500億美元、遠低於市場傳聞700億美元的消息衝擊，費城半導體指數一度重挫逾3%、台積電ADR同步重摔逾3%，雖美股尾盤明顯反彈、四大指數當週仍收漲，但台積電ADR週末後再度走弱，分析師示警台股連假後恐面臨三大利空、有千點補跌風險，市場緊盯本週台積電法說（市場預期約10月中登場）與AI供應鏈獲利能否支撐評價。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "〈美股盤後〉OpenAI營收遭爆不如預期 AI概念股嚇趴 費半、台積電ADR重挫逾3%", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-openai%E7%87%9F%E6%94%B6%E9%81%AD%E7%88%86%E4%B8%8D%E5%A6%82%E9%A0%90%E6%9C%9F-ai%E6%A6%82%E5%BF%B5%E8%82%A1%E5%9A%87%E8%B6%B4-%E8%B2%BB%E5%8D%8A-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E9%87%8D%E6%8C%AB%E9%80%BE3-220120048.html"},
+        {"title": "台股國慶連假後恐迎千點跌勢？台積電ADR挫4% 葉育碩示警「3大利空」", "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E5%9C%8B%E6%85%B6%E9%80%A3%E5%81%87%E5%BE%8C%E6%81%90%E8%BF%8E%E5%8D%83%E9%BB%9E%E8%B7%8C%E5%8B%A2-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E6%8C%AB4-%E8%91%89%E8%82%B2%E7%A2%A9%E7%A4%BA%E8%AD%A6-3%E5%A4%A7%E5%88%A9%E7%A9%BA-211334259.html"}
+      ]
+    },
+    {
+      "summary": "美國國際貿易委員會（USITC）對AI伺服器垂直供電相關專利展開337調查，鴻海、台達電、廣達等約20家企業遭Vicor指控侵權而被點名；鴻海已就旗下富士康工業互聯網所涉部分發布澄清公告，稱案件尚處調查立案初期、相關產品仍在內部驗證評估階段。此案若未來擴大為排除令，對AI伺服器電源供應鏈的出貨與認證進度將是潛在風險，值得持續追蹤後續聽證與裁定進度。",
+      "relatedStocks": [{"code": "2308", "name": "台達電"}],
+      "sources": [
+        {"title": "鴻海：美國Vicor Corporation提出之專利侵權主張，尚處337調查立案初期", "url": "https://tw.stock.yahoo.com/news/%E9%B4%BB%E6%B5%B7-%E7%BE%8E%E5%9C%8Bvicor-corporation%E6%8F%90%E5%87%BA%E4%B9%8B%E5%B0%88%E5%88%A9%E4%BE%B5%E6%AC%8A%E4%B8%BB%E5%BC%B5-%E5%B0%9A%E8%99%95337%E8%AA%BF%E6%9F%A5%E7%AB%8B%E6%A1%88%E5%88%9D%E6%9C%9F-211900862.html"},
+        {"title": "美國啟動337調查！鴻海、台達電、廣達…20家企業遭點名，AI伺服器「垂直供電」成專利新戰場？", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMloxTThvaTItc0hrRVpiYkhFazFMVGdEWnNFS2JrVlJhbXdFQk9VSzR5bk96SjdRb3lzZ1AwUGVkcmtpS3B5SGZkMzNFbFB0SWlwVU9RcmxRZkVSY2tQTF9DUDlYNVl2MzVYbGRQOHZnNW1oUHozNk1ST1FIRUVmNQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "南亞科與華邦電接連在近期公開發言中示警DRAM缺口持續擴大：南亞科稱缺貨恐延續到明年底，不排除再興建新廠應對；華邦電則形容「缺口大到不曉得怎麼補」。南亞科法說會今日(10/12)登場，市場將緊盯公司對明年供需與定價的具體展望，記憶體缺貨、漲價行情能否延續是本週觀察重點。",
+      "relatedStocks": [{"code": "2408", "name": "南亞科"}, {"code": "2344", "name": "華邦電"}],
+      "sources": [
+        {"title": "南亞科：DRAM缺貨到明年底", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BUGxLVDJkVHdqMFQ5dkNmV3NJa1gxMm9lcWY4dE43VXJrUFcxckdsaEc4eXF1RkNYRlZvVFJ3bkdBa3NUZjRrekdwZGN2TS13Yjh0SkFEenk?oc=5"},
+        {"title": "華邦電:DRAM缺口 大到不曉得怎麼補", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjVjktSUM1SGFPWXFqQUtwN1pqZHd3b3pPaE1zd05lWS13b1d0bUpyMVR6Y3VzbEg0eTY1WC1TVDZGRmdyT3U4eDRiaWR6NXY2eWpPbnctQkI?oc=5"},
+        {"title": "DRAM缺貨到明年上半年 南亞科：不排除再蓋新廠", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03dzUyZVlaaU42ZjEtVDFJMzVud2hHSmpneXlvbDFIeV83VVd1NTh6TjhHV3RkQUthUkM4eGdUVk1VUkRMczNLQXN2TzNheEh5ME9ncVViVTg?oc=5"}
+      ]
+    },
+    {
+      "summary": "市場傳出超微(AMD)啟動新一波記憶體掃貨行動，帶動相關封測與模組受惠股：力成可望受惠訂單與稼動率提升，群聯則在記憶體模組/控制晶片端同步沾光，顯示AI伺服器記憶體需求熱度已進一步外溢到封測與下游模組環節。",
+      "relatedStocks": [{"code": "6239", "name": "力成"}, {"code": "8299", "name": "群聯"}],
+      "sources": [
+        {"title": "超微啟動新一波記憶體掃貨 力成、群聯樂透", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXeVFVWE4zamJIQWpiLWJzN21ERWg2M3dlWTRJQ3d5VWRLOU9KdFBwYWxxbnpKUnFPSjZBSnh3SlBwTXlzdTdybm9XUjlUQURVY1RJOEhqTVlBUdIBX0FVX3lxTE1rTUVRMFNvRldybzl1NW5tREJkUlNLdVk1al93V0R3MklUMHUtNmlPYlF0TXdBVDRaRElGLXBhY1NBNDU2UXRVekZKdjJNdlVtNm5VNERGZGpobjVURU9R?oc=5"}
+      ]
+    },
+    {
+      "summary": "光寶科加碼在美國德州興建新電源廠，斥資約3.48億美元(約合新台幣110.59億元)，簽訂工程統包合約，布局AI伺服器所需的HVDC高壓直流供電製造產能，為台系電源供應鏈卡位美國本地化生產的最新一波具體行動。",
+      "relatedStocks": [{"code": "2301", "name": "光寶科"}],
+      "sources": [
+        {"title": "光寶公告投資110.59億元在美國設新廠 擴產動作一波波", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZFRGNU9PcWlmbWc0cGNrVkdhajA1R0dEbkI1dWlvYW9lbm1HMHdDMjJ1bkM5OU43YWt5RkNoa3RyeTFXQXdYMTVRYTNiMUJuc280VS1fcDczVGZrWDZOOGc5RlA2R21ETGs3NVRpYUc1dW13TDhZMjVsV3M0ZU9pRdIBX0FVX3lxTE5Yb2FsZEhyNE1VMHdicHR2TmZXclJhTVFaVk1fbjNUa3hGMkROVjN3THdCMF9wWUNJczlMTHZZSm51UTJ4c1JTS0QtVlcxX1p0X1YtSy1QNG8xVHUyc0lN?oc=5"},
+        {"title": "斥資3.48億美元 台廠光寶在德州建新廠 加速AI電源製造布局", "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJVlNCUDRZd0UzV0RZMXRYdmRHeVYzOXVTTnMteFJ1b21JeHVyQ1dtVTRRYjJaVXY1M1ZqTHFINF9vZExjbG83SWJMWFFVcG13TFVvTi0wWXhpeUlZRW5xaHdQRjF2b1XSAWdBVV95cUxQSVZTQlA0WXdFM1dEWTF0WHZkR3lWMzl1U05zLXhSdW9tSXh1ckNXbVU0UWIyWlV2NTNWakxxSDRfb2RMY2xvN0liTFhRVXBtd0xVb04tMFl4aXlJWUVucWh3UEYxdm9V?oc=5"}
+      ]
+    },
+    {
+      "summary": "AI晶片需求帶動封測報價走向今年最強一波漲價潮，日月光、京元電等封測大廠可望受惠漲價紅利，顯示半導體供應鏈的價格上行壓力已從晶圓代工、記憶體端進一步擴散到封裝測試環節。",
+      "relatedStocks": [{"code": "3711", "name": "日月光投控"}, {"code": "2449", "name": "京元電子"}],
+      "sources": [
+        {"title": "AI太熱 封測業迎最強漲價潮 日月光、京元電等大進補", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FMFl2VjYwSmc4cGR5anRIbWt0eGVwYVRLQUNMTkhLZlV6XzUwS1dFNV9SVGRUTTg0czJWYzRBenBwLUUxTGR3Mmx5LXdJX1lZV1gyczhBblJIQQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "大立光法說會上，董事長林恩平對CPO(共同封裝光學)布局態度積極，兩條產品線同步推進，但對明年手機客戶拉貨力道轉趨保守，顯示公司正加速從光學鏡頭轉向AI光通訊應用轉型，CPO進度將是後續觀察重點。",
+      "relatedStocks": [{"code": "3008", "name": "大立光"}],
+      "sources": [
+        {"title": "談手機保守、CPO卻積極 老實樹大立光林恩平的直白", "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPT3llM05xcDRTcFdvWmE1UlkzZTl1SXRFWlV5N3EwcDMxRHBBc3l1T29YVnlDTzRCQVdqYktpYmg1QTVsRWxxek5sNW02cVRhQ2ZCRFFKSVVZVnZFanE5ZjZrWFpGQlZVZWJkWUlmbzFjeU93TmxsaDN6cXE4OVNuSEwwUE15eDZuajJvYTFB?oc=5"},
+        {"title": "大立光法說呈現的「時代意義」", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE56V1dmSDNITlZFeGU5aktjS2hMeUVhR05PN25LaXNGRllxZEVhak1aS3VjWkZZdG9tSGRpaHZQZmtBVUZVbHdQN0JQMXFSeGdjVF92ZGstbEQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "CPO/光通訊供應鏈題材持續延燒：產業分析點名聯亞、上詮、光聖為康寧GlassBridge光互連技術潮下的供應鏈受惠股，穩懋的光通訊訂單則可望明年放量為公司添增長動能，顯示AI資料中心光連接升級需求正帶動相關零組件廠訂單能見度提升。",
+      "relatedStocks": [{"code": "3081", "name": "聯亞"}, {"code": "3363", "name": "上詮"}, {"code": "6442", "name": "光聖"}, {"code": "3105", "name": "穩懋"}],
+      "sources": [
+        {"title": "GlassBridge是什麼？康寧光互連熱潮解析：聯亞、上詮、光聖誰是CPO供應鏈贏家？", "url": "https://news.google.com/rss/articles/CBMi-ANBVV95cUxPLXRzYjB0WTlaMzRzRmpPZEFWLVBTNGJwNVNUMWVKYjZYOUlkOTFyU2pXai1pb1pUUWM5akR5UjJRRnVYWTF3XzJmcm5fX0ttSnc1NGtNdGJMdWZiWUl0RVdmZHNOV1NIdlk1UlJ6VlFQLWZQRVZSWEhWdlFRVlBRWmxrNUc3VDl0dHh6YkQydVFVN09GUkctSWRadHMxZnUta3ZYeGdlTGtNOEtERTlNVjZDTWRlS3FSWTJEV05weGt2cDdsZzhld0ZtOGlaTHNpcjVvWUZ0VE54WFo3YXRNU0xUNEZLdVNZUEFzbF9xZFp6T0V5UE51dHl6dE1JdFhES0ZCRDFreDhHNGhhaTBzWTJsWG1wR0xfejh3bzY4dXpFLWtYc1cwLUJYS0piLU5MWm9Fal82MTZKT2t4QUl3YkZUZFdkZFJ3NU40ZmsyZzdhUmUxTWxPN204bmFlTnVzWi1tYno3SGc2NS1YVW5ndWtvaDhKZV9waTFoTW0zVkptcDNwVlVsTkctbDFwcnJuejhtakpaSWlOLWd2M2N6TVNOS2dIdTRyeFlmQ29RRmtjYjB3ZHdrZXBfOXo4NHNWUEVYclROTXZ0MG1EZngyRzY3XzlENm5ua1RFU3ZpeF9CYTBBZ1RYdjNDOEZtZ0JGMXN6OENaa3I?oc=5"},
+        {"title": "穩懋光通訊放量，明年營運添動能", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQS1c3WF9oYklVZl9TYlAwNDFONkV0QkUzZ19SVkEyaE1Yako2M25DMUx1QXMzNmxXUFlRcnhwWnhaRnk1S2xOV1ZkaTdVREc1Nk5yck9TU2Z6TUxGcVQzMHR4OWZpanBpT3l1YWlIaEhrNjZYWG9MelBLUHRfRWNNOTM0cEdoWjZlSDZ0RE81eXNiQQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "ABF/CCL/PCB族群擴產與展望利多持續發酵：合晶第四度申請台商回台方案，加碼178.8億元擴建中科二林矽晶圓廠區並衝刺矽光子商機；台塑集團高層吳嘉昭公開看好南亞、南電明年事業展望更佳；高階CCL材料升級至M9等級並逐步成為主流，台光電、台燿、聯茂同步沾光，顯示上游材料擴產與漲價動能尚未見頂。",
+      "relatedStocks": [{"code": "6182", "name": "合晶"}, {"code": "1303", "name": "南亞"}, {"code": "8046", "name": "南電"}, {"code": "2383", "name": "台光電"}, {"code": "6274", "name": "台燿"}, {"code": "6213", "name": "聯茂"}],
+      "sources": [
+        {"title": "合晶四度申請臺商回臺投資，178.8億元擴大中科二林廠布局", "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSC0tSkplc24zb3NGdlcyUmxHcXMydnBQV085QWEwclpmeExnaE1OdW1NWlRDb0Q4aUZXZGtTVHp6U2hLZVVWSkQ1OGJkQUdWdEtFTENVS0NPNmlrY1RjSnNhODFITjVUVmYwOXlmazFLejZBRGZRSkhhNG85cUMxMGZqVWVGZjFKRVlxSzFkbEx4SFpzdlIyWWJQZnV6X05adWNhLVM2Y2U?oc=5"},
+        {"title": "台塑集團電子事業展望旺 吳嘉昭：南亞、南電明年會更好", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9mZS1UTGc1aG5WUG82T20xRW1jTkl6aHNKMHEtcmRPTFk3bTMyNkdvVVpGN1lnN0M5QU1qV2JUR3lKMXV5UFZwOXl4NVQyY0xJblhFSWk5WFk?oc=5"},
+        {"title": "PCB高階CCL升級推進 M9等級材料將成主流 台光電、台燿、聯茂沾光", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBObnZ2aWlLbUwtcjlIcktuM2hKUTVFcjltdXFfcWV4S0E4MlV6ZjA2ZWwxRU91MXFaUUdRWWJJRWNEZ2NBbjRPN2YwaVRrYV9oU2dEMXNYMVFvUdIBX0FVX3lxTFBIWWtKNlJLZHNhdHV4VFQ1RUdSSGlsalVsaFFjSlI1TkpGQUxVRnRTbjNLSExiNC1zN244RnRKcV9wVC10UlNhX240SUI0MnJoVUlRcTlzZ0FMeEVDUlhZ?oc=5"}
+      ]
+    },
+    {
+      "summary": "台股大型基礎建設訂單持續擴散：華通受惠SpaceX奪得美國國防大單，衛星相關營收占比有望拉升至約26%；嘉澤則受惠AI伺服器規格升級需求，穩坐高階Socket連接器龍頭地位，顯示衛星與伺服器周邊零組件受惠層面仍在擴大。",
+      "relatedStocks": [{"code": "2313", "name": "華通"}, {"code": "3533", "name": "嘉澤"}],
+      "sources": [
+        {"title": "受惠SpaceX奪美國防大單 華通衛星營收看增至26%", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4yUEtmTVMteUJoWV83czhfY2Y4WWwwdDV2MmNhcEJRS3FRZjNkZkt3ekg1MzR4RFlKVUU5SVFjcWRicGJHdFFaZmpRQkJXRHBJRjlrcENIR0Q?oc=5"},
+        {"title": "伺服器規格升級 嘉澤穩坐高階Socket龍頭後市可期", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1wM2FtZFRYSFdxUnlMdW1OUkdObTVUa2xmV0ZDNk5kWHRJc2xYSURZOGwtT2V1LWZ6WGFQZVNOcHJKWHpMaHZGaHdhNFdleFVw0gFWQVVfeXFMTTQ0UW4yUHlEUmNfeDR2R0RHaEVlREdtX08zZHRHRUo4d2dzZGpnbFV2NzZXWDhmRDd0a0d6bmNNSUM2RGVVVE1LUndMWWF3eXc0emp1dVE?oc=5"}
+      ]
+    },
+    {
+      "summary": "成熟製程晶圓代工景氣回溫，聯電9月稼動率回升且Q3營收表現超出市場預期，反映先前較疲弱的成熟製程產能利用率已隨AI相關訂單增溫明顯改善，為晶圓代工族群景氣落底的訊號之一。",
+      "relatedStocks": [{"code": "2303", "name": "聯電"}],
+      "sources": [
+        {"title": "晶圓代工成熟製程市況火熱！聯電單月攻頂Q3超標 世界先進Q3創歷史新高", "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxPb1U4YUhYVUhBRmZTN1JUdkFBY3pMSTB5anFCTEVVWUZzNGJZckxRbnZxbnpZX2lsSlEya09QUm9sNGJVNmQwN2FGb0w3WGduS0NTZzBwMVhzMmE1SG5IX1ZWSXhUMS1JZWhGazU5UEZ6N1N0b1RIUms0UVYtTXpuZmloYi0wNzhERTJCM04wMWV4Rzktb3JBODM3bTBXZ3JEVnhLamp1SXRMcXNyS2MyOUJaekV1S3hONEJkTDQyRThjMUs5eFd5Tm83QXkxRGJuWjM5N19oOEFVSlNqdEh5bG9NbTBjM2xqWVo4REQyWFNwWlBGM05NU0J1X3ZRZkJVVmpIS05HRWZKZktaaU5LLWdTdGpHOEdXcUpodmdHOWNlNU5OS0NsNDVhQjI3OFJfb28yaTlrdTdqVHZpakVHc1hzal95ckhpS2xZaUVSZEdTajBVWUpoS3pGdkpBampxeTM0UUFKVU5mYnB0MExoR0JhdjJZbjBfVHNLTTI2b0JHYmZaQURnYldwMmdnS2h0aEt1c3FRZFhXUWVoN1RrMHlQbGJ5Zlllb1lQVVotZG1lNzhoQTZPb3daSVFvSms?oc=5"}
+      ]
+    },
+    {
+      "summary": "奇鋐、富世達遭調查局搜索約談案後續：兩公司重申事件對營運無影響，惟報導指出搜索範圍延燒至同樣因軍用無人機業務受關注的第三家企業錦明（非本網站追蹤標的），顯示檢調調查仍在進行中，需持續留意是否有更多供應鏈廠商受牽連。",
+      "relatedStocks": [{"code": "3017", "name": "奇鋐"}, {"code": "6805", "name": "富世達"}],
+      "sources": [
+        {"title": "員工遭搜索調查 奇鋐、富世達：對營運無影響", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wZjI4eHJLOU9vaGFMNy15alhvbDJ0VmhUbTBHM0xSZlBwVmE2X3JKRG5sWU1MSERZbnlFQzE0MG9jOWJmUHRGQ0d6YXpZbXkxQXNFeWlzbFZwZ9IBX0FVX3lxTE9xUGRrWTlEMHAwdzZ0MUNET3FKTXlFaUpVeE1BUEFYM3dMbHJXMTRra3k3Njh6UEdvU2FKY1hxTTJxMG8zYVpTWXpSR3ZHZWJRaEc1MlRqMlV1UlBDcnFV?oc=5"},
+        {"title": "奇鋐、富世達之後...錦明也遭搜索！近期才因軍用無人機登德媒公司回應了", "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEbzBXNTA5QXVUSDBhVmtzczVBdlNlRi1oUWFwMG0zTlVyMHl2T1ZuUVhaTTdMamszTFRGa1RnVXhocnF1aFViZDZMYU9CMXlzZzlRTzc2UmljRjQtNzFN?oc=5"}
+      ]
+    }
+  ]
+}
