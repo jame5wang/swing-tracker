@@ -181,6 +181,13 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .st-near-buy{color:var(--buy); background:var(--buyBg);}
 .st-near-sell{color:var(--sell); background:var(--sellBg);}
 .st-rebuy{color:var(--accent2); background:color-mix(in srgb, var(--accent2) 14%, var(--panel2));}
+/* 返回箱型：回測箱頂（藍）／突破失敗（紅） */
+.st-retest{color:var(--accent); background:color-mix(in srgb, var(--accent) 14%, var(--panel2)); box-shadow:0 0 0 1px color-mix(in srgb, var(--accent) 30%, transparent);}
+.dotStatus.st-retest{background:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);}
+.st-failed{color:var(--stop); background:var(--stopBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--stop) 30%, transparent);}
+.dotStatus.st-failed{background:var(--stop); box-shadow:0 0 7px 0 var(--stop);}
+.row.rowRetest{border-left-color:var(--accent);} .row.rowFailed{border-left-color:var(--stop);}
+.failedNote{font-size:11px; color:var(--stop); margin-top:3px;}
 .searchBar{margin-bottom:14px; display:flex; gap:8px;}
 .searchBar input{flex:1; min-width:0; padding:10px 12px; border-radius:9px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:14px;}
 .signalToggleBtn{flex-shrink:0; padding:10px 14px; border-radius:9px; border:1px solid var(--line); background:var(--panel); color:var(--sub); font-size:12.5px; font-weight:650; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:6px;}
@@ -195,6 +202,8 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .ticker{font-size:19px; font-weight:750; letter-spacing:.1px;}
 .ticker .code{color:var(--sub); font-weight:500; font-size:13px; margin-left:6px; font-family:var(--mono);}
 .status{font-size:12px; font-weight:700; padding:5px 11px; border-radius:20px; white-space:nowrap; letter-spacing:.02em;}
+/* 訊號說明越來越長（例如「返回箱型・突破失敗 · 回到箱型操作，反彈到 1630 減碼」），手機上單行會撐破版面，改成可換行 */
+.cardTop .status{white-space:normal; min-width:0; line-height:1.45; text-align:right; border-radius:12px;}
 .st-buy{color:var(--buy); background:var(--buyBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--buy) 30%, transparent);}
 .st-sell{color:var(--sell); background:var(--sellBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--sell) 30%, transparent);}
 .st-stop{color:var(--deep); background:var(--deepBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--deep) 30%, transparent);}
@@ -241,6 +250,8 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .plRow.sell .plDot{background:var(--sell);} .plRow.sell .plLabel{color:var(--sell);}
 .plRow.stop .plDot{background:var(--deep);} .plRow.stop .plLabel{color:var(--deep);}
 .plRow.stretch .plDot{background:var(--sell); opacity:.55;} .plRow.stretch .plLabel{color:var(--sell); opacity:.85;}
+.plRow.guard .plDot{background:var(--stop);} .plRow.guard .plLabel{color:var(--stop);}
+.plRow.prevtop .plDot{background:var(--mute);} .plRow.prevtop .plLabel{color:var(--sub);}
 
 .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin:14px 0;}
 .field label{display:block; font-size:11px; color:var(--sub); margin-bottom:4px;}
@@ -557,6 +568,39 @@ function isExtendedNow(trend, p){
   return t.change20d>=EXTENDED_CHANGE20_PCT && distHigh<=EXTENDED_NEAR_HIGH_PCT;
 }
 
+// ── 返回箱型（2026-10-11 新增）────────────────────────────────────────────
+// 「突破」一律用收盤價認定：近20個交易日內，至少有一天收盤站上箱頂 3% 以上才算有效突破。
+// 原本用20日最高價（盤中）判斷：10/8 有42檔盤中碰過箱頂，大多收盤根本沒站上去，
+// 光寶科、華邦電、南亞科、奇鋐、合晶、群聯、金居都因此被誤標成「突破後拉回找買點」。
+// 有效突破之後：
+//   回到箱頂上下 3% → 返回箱型・回測箱頂（舊壓力變支撐的測試，守住可續抱）
+//   跌到箱頂 3% 以下、仍在箱內 → 返回箱型・突破失敗（回到箱型操作，不加碼、反彈到箱頂減碼）
+//   一路跌到箱底／跌深價 → 仍顯示建倉買進／超跌區，但加註「近期突破失敗」，提醒先確認止跌
+// 之前雙鴻、松川精密跌回箱內還顯示「突破後拉回找買點」，鴻勁、新代從上方回落到箱頂卻顯示
+// 「漲多停利減碼／接近部分停利」，都是缺了這一段判斷。
+// 箱型因突破而上修過的股票（research.json 的 prevBuy／prevSell），也會檢查是否跌回上修前的舊箱子。
+const BREAKOUT_LOOKBACK=20;     // 看最近幾個交易日
+const BREAKOUT_CONFIRM_PCT=3;   // 收盤站上箱頂幾 % 才算有效突破
+const RETEST_BAND_PCT=3;        // 回到箱頂上下幾 % 內算「回測箱頂」，低於箱頂這麼多就算「突破失敗」
+function recentMaxClose(code){
+  const t=technicalData && technicalData.stocks && technicalData.stocks[code];
+  if(!t || !Array.isArray(t.series) || !t.series.length) return null;
+  let m=null;
+  t.series.slice(-BREAKOUT_LOOKBACK).forEach(x=>{ const c=Number(x && x.c); if(!isNaN(c) && (m===null || c>m)) m=c; });
+  return m;
+}
+function closedAbove(maxClose, top){
+  return maxClose!==null && top!==null && !isNaN(top) && maxClose>=top*(1+BREAKOUT_CONFIRM_PCT/100);
+}
+// 「突破失敗線」＝箱頂 −3%，取整時一律往下取，判斷也直接用這個顯示出來的價位，
+// 避免出現「守住 560 可續抱」但現價已經是 558 這種畫面跟判斷對不起來的情況
+function tickOf(x){ return x>=1000?5 : x>=500?1 : x>=100?0.5 : x>=50?0.1 : x>=10?0.05 : 0.01; } // 台股升降單位
+function floorNicePrice(x){
+  const t=tickOf(x);
+  return Math.round(Math.floor(x/t+1e-9)*t*100)/100;
+}
+function guardOf(top){ return floorNicePrice(top*(1-RETEST_BAND_PCT/100)); }
+
 function statusOf(s){
   const p=parseFloat(s.price);
   if(isNaN(p)) return {cls:'st-none', label:'尚未取得股價'};
@@ -566,10 +610,39 @@ function statusOf(s){
   const buyIsAi = isNaN(buy) && !isNaN(aiBuy);
   const sellRef = !isNaN(sell)?sell:(!isNaN(aiSell)?aiSell:null);
   const sellIsAi = isNaN(sell) && !isNaN(aiSell);
-  const trend=trendInfo(String(s.code||'').trim());
+  const code=String(s.code||'').trim();
+  const trend=trendInfo(code);
 
-  if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'超跌區 · 基本面未變可分批加碼'};
-  if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'建倉買進（AI 建議）':'建倉買進'};
+  const maxClose=recentMaxClose(code);
+  const prevSell=parseFloat(s.prevSell), prevBuy=parseFloat(s.prevBuy);
+  const hasPrevBox = !isNaN(prevSell) && !isNaN(prevBuy) && sellRef!==null && prevSell<sellRef;
+  const brokeCur = sellRef!==null && closedAbove(maxClose, sellRef);  // 近20日收盤曾站上目前箱頂 3%
+  const brokePrev = hasPrevBox && closedAbove(maxClose, prevSell);    // 曾站上「上修前」的舊箱頂 3%
+  const band=RETEST_BAND_PCT/100;
+  const guardPrev = hasPrevBox ? guardOf(prevSell) : null;
+  const backInPrevBox = brokePrev && p<guardPrev;                     // 跌回上修前的舊箱子
+  const failedAgo = brokeCur || backInPrevBox;
+
+  if(!isNaN(stop) && p<=stop) return {cls:'st-stop', label:'超跌區 · 基本面未變可分批加碼', afterFailedBreakout:failedAgo, maxClose};
+  // 跌回上修前的舊箱子、但還在舊箱底之上 → 突破失敗；跌到舊箱底以下就回到下面的「建倉買進」並加註
+  if(backInPrevBox && p>prevBuy){
+    return {cls:'st-failed', label:`返回箱型・突破失敗 · 跌回上修前的箱型（${prevBuy}–${prevSell}）`, failedBox:{buy:prevBuy, sell:prevSell, prev:true}, maxClose};
+  }
+  if(buyRef!==null && p<=buyRef) return {cls:'st-buy', label:buyIsAi?'建倉買進（AI 建議）':'建倉買進', afterFailedBreakout:failedAgo, maxClose};
+
+  // 有效突破後回到箱頂附近：判斷優先於「噴出未拉回」與「漲多停利減碼」——
+  // 從上方回落到箱頂是回測，不是從下面漲上來碰到箱頂，不該再叫你停利或勿追價
+  if(brokeCur && p<sellRef*(1+band)){
+    const guard=guardOf(sellRef);
+    if(p>=guard){
+      return {cls:'st-retest', label:`返回箱型・回測箱頂 · 守住 ${guard} 可續抱`, guard, top:sellRef, maxClose};
+    }
+    return {cls:'st-failed', label:`返回箱型・突破失敗 · 回到箱型操作，反彈到 ${sellRef} 減碼`, failedBox:{buy:buyRef, sell:sellRef, prev:false}, maxClose};
+  }
+  // 箱型上修過：回到上修前的舊箱頂附近（還在新箱型內）
+  if(brokePrev && p>=guardPrev && p<=prevSell*(1+band)){
+    return {cls:'st-retest', label:`返回箱型・回測舊箱頂 ${prevSell} · 守住 ${guardPrev} 可續抱`, guard:guardPrev, top:prevSell, prev:true, maxClose};
+  }
 
   // 噴出未拉回：近20日大漲且現價仍貼近20日高點，代表這波噴出還沒被真正拉回測試過，
   // 現在的「安全買進」只是噴出後的短暫整理，不是經過驗證的支撐，追價風險較高。
@@ -582,9 +655,10 @@ function statusOf(s){
 
   // 噴出後拉回測10日均線：股價明顯高於原始買點（代表已經噴出過一段），
   // 現在拉回到10日線附近，且均線仍多頭排列 → 視為「買回」訊號，而不是原本的靜態買點
-  // 「突破後」要真的突破過：近20日最高價曾站上部分停利（箱頂），否則只是箱型內震盪、
+  // 「突破後」要真的突破過：近20日「收盤」曾站上箱頂 3%（或上修前的舊箱頂 3%），否則只是箱型內震盪、
   // 剛好貼近10日線，不該標成「突破後拉回找買點」（例如穩懋從未站上箱頂卻被標成買回訊號）。
-  const brokeOut = !!(trend && sellRef!==null && trend.t.high20!==undefined && trend.t.high20>=sellRef);
+  // 原本用20日最高價（盤中）判斷，盤中碰到箱頂又收回來的也被算成突破，2026-10-11 改用收盤價。
+  const brokeOut = brokeCur || brokePrev;
   if(trend && trend.uptrend && buyRef!==null && brokeOut){
     const ma10=trend.t.ma10;
     const distToMa10=(p-ma10)/ma10*100;
@@ -720,6 +794,12 @@ function mergeResearchList(list, opts){
     ['support','resist','buy','sell','stop'].forEach(f=>{
       if(!(f in item)) return;
       // research.json 明確給 null/空字串代表「清除這個價位」，之前會被忽略而沿用舊值
+      const v=(item[f]===null || item[f]===undefined) ? '' : item[f];
+      if(s[f]!==v){ s[f]=v; changed=true; }
+    });
+    // 箱型因突破而上修時，research.json 會記住上修前的舊箱型（判斷「跌回舊箱子＝突破失敗」用）；
+    // 沒有這些欄位就代表沒有上修過（或之後又下修），一律清空，避免沿用瀏覽器快取裡的舊值
+    ['prevBuy','prevSell','prevStop','boxRaisedOn'].forEach(f=>{
       const v=(item[f]===null || item[f]===undefined) ? '' : item[f];
       if(s[f]!==v){ s[f]=v; changed=true; }
     });
@@ -1158,8 +1238,9 @@ function render(){
 
 let searchQuery='';
 let signalOnly=false;
-let pillFilter=null; // null | 'st-buy' | 'st-sell' | 'st-stop' | 'st-rebuy' | 'near' | 'st-hold'
-const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy','st-extended'];
+let pillFilter=null; // null | 'st-buy' | 'st-sell' | 'st-stop' | 'st-rebuy' | 'near' | 'st-hold' | 'return'（返回箱型＝回測箱頂＋突破失敗）
+const SIGNAL_CLASSES=['st-buy','st-sell','st-stop','st-rebuy','st-extended','st-retest','st-failed'];
+const PILL_GROUPS={'return':['st-retest','st-failed']};
 let sectorNewsExpanded={}; // 產業分類旁「相關新聞」展開狀態，key=sector 名稱
 function sectorNewsFor(codes){
   if(!digestData || !Array.isArray(digestData.items) || !codes || !codes.length) return [];
@@ -1208,13 +1289,13 @@ function renderRows(){
   renderAnnBox();
   renderNewsFeed();
 
-  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0,'st-extended':0};
+  const counts={'st-buy':0,'st-sell':0,'st-stop':0,'st-hold':0,'st-none':0,'st-near-buy':0,'st-near-sell':0,'st-rebuy':0,'st-extended':0,'st-retest':0,'st-failed':0};
   stocks.forEach(s=>{ const c=statusOf(s).cls; if(counts[c]!==undefined) counts[c]++; });
 
   if(summaryBox){
     const pillActive=(key)=> pillFilter===key ? ' active' : '';
     // 由買進排到賣出（價格由低到高）：超跌區 → 建倉買進 → 接近提醒‧買進 → 突破後拉回找買點
-    // → 續抱觀察 → 接近提醒‧賣出 → 漲多停利減碼 → 突破區間/創短期新高尚未拉回
+    // → 續抱觀察 → 接近提醒‧賣出 → 返回箱型（箱頂附近）→ 漲多停利減碼 → 突破區間/創短期新高尚未拉回
     summaryBox.innerHTML=`
       <button type="button" class="pill${pillActive(null)}" data-pill="all"><b>${stocks.length}</b> 檔追蹤中</button>
       <button type="button" class="pill${pillActive('st-stop')}" data-pill="st-stop" style="color:var(--deep)"><b>${counts['st-stop']}</b> 超跌區</button>
@@ -1223,6 +1304,7 @@ function renderRows(){
       <button type="button" class="pill${pillActive('st-rebuy')}" data-pill="st-rebuy" style="color:var(--accent2)"><b>${counts['st-rebuy']}</b> 突破後拉回找買點</button>
       <button type="button" class="pill${pillActive('st-hold')}" data-pill="st-hold"><b>${counts['st-hold']}</b> 續抱觀察</button>
       <button type="button" class="pill${pillActive('st-near-sell')}" data-pill="st-near-sell" style="color:var(--sell)"><b>${counts['st-near-sell']}</b> 接近提醒‧賣出</button>
+      <button type="button" class="pill${pillActive('return')}" data-pill="return" style="color:var(--accent)"><b>${counts['st-retest']+counts['st-failed']}</b> 返回箱型${counts['st-failed']?`<span style="color:var(--stop)">（${counts['st-failed']} 檔突破失敗）</span>`:''}</button>
       <button type="button" class="pill${pillActive('st-sell')}" data-pill="st-sell" style="color:var(--sell)"><b>${counts['st-sell']}</b> 漲多停利減碼</button>
       <button type="button" class="pill${pillActive('st-extended')}" data-pill="st-extended" style="color:var(--sell)"><b>${counts['st-extended']}</b> 突破區間/創短期新高尚未拉回</button>
     `;
@@ -1240,14 +1322,14 @@ function renderRows(){
     if(signalOnly && !SIGNAL_CLASSES.includes(statusOf(s).cls)) return false;
     if(pillFilter){
       const cls=statusOf(s).cls;
-      if(cls!==pillFilter) return false;
+      if(PILL_GROUPS[pillFilter] ? !PILL_GROUPS[pillFilter].includes(cls) : cls!==pillFilter) return false;
     }
     if(!q) return true;
     return (s.code||'').toLowerCase().includes(q) || (s.name||'').toLowerCase().includes(q);
   });
 
   if(items.length===0){
-    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'突破區間/創短期新高尚未拉回','st-near-buy':'接近提醒‧買進','st-near-sell':'接近提醒‧賣出','near':'接近提醒','st-hold':'續抱觀察'};
+    const pillLabels={'st-buy':'建倉買進','st-sell':'漲多停利減碼','st-stop':'超跌區','st-rebuy':'突破後拉回找買點','st-extended':'突破區間/創短期新高尚未拉回','st-near-buy':'接近提醒‧買進','st-near-sell':'接近提醒‧賣出','near':'接近提醒','st-hold':'續抱觀察','return':'返回箱型'};
     const pillName = pillFilter ? (pillLabels[pillFilter]||pillFilter) : '';
     const emptyMsg = (signalOnly && pillFilter) ? `「今日訊號」和「${pillName}」兩個篩選同時開著，沒有股票同時符合，可以關掉其中一個。`
       : (q && (signalOnly || pillFilter)) ? `在目前的篩選條件下，找不到符合「${searchQuery}」的股票。`
@@ -1279,13 +1361,14 @@ function renderRows(){
     }
     groups[sec].forEach(({s,i})=>{
       const st=statusOf(s);
-      const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy'||st.cls==='st-rebuy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell'||st.cls==='st-extended' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : ''));
+      const accentCls = st.cls==='st-buy'||st.cls==='st-near-buy'||st.cls==='st-rebuy' ? 'rowBuy' : (st.cls==='st-sell'||st.cls==='st-near-sell'||st.cls==='st-extended' ? 'rowSell' : (st.cls==='st-stop' ? 'rowStop' : (st.cls==='st-retest' ? 'rowRetest' : (st.cls==='st-failed' ? 'rowFailed' : ''))));
       rows+=`
         <div class="row ${accentCls}" data-open="${i}">
           <div class="dotStatus ${st.cls}"></div>
           <div class="rInfo">
             <span class="rName">${s.name||'(未命名)'}</span><span class="rCode">${s.code||''}</span>${rowAnnTagHtml(s.code)}
             <div class="rLabel">${st.label}</div>
+            ${st.afterFailedBreakout?'<div class="failedNote">⚠ 近期突破失敗後回落，先確認止跌再接</div>':''}
             ${stopBreadthWarningHtml(st.cls)}
           </div>
           <div class="rPriceWrap">
@@ -1561,10 +1644,18 @@ function renderDetail(i){
     momentumNoteHtml=`<div class="srcList" style="color:var(--deep); margin:10px 0 0">◆ 跌破深度加碼價不代表要出場——這裡假設你追蹤的都是已經自己確認過基本面的標的，超跌本身可能是機會而不是風險。系統只負責標出「到價了」，不做技術面抄底判斷；請自己確認基本面假設是否還成立（財報、產業展望有沒有變化），成立就當加碼機會，不成立就是真的該重新檢視部位了。</div>${stopBreadthWarningHtml(st.cls)}`;
   }else if(st.cls==='st-rebuy'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--accent2); margin:10px 0 0">↻ 這檔股價已經噴出一段又拉回測10日均線，均線仍未走弱，屬於「噴出後找拉回買回」的典型時機，比追高進場更有紀律。</div>`;
+  }else if(st.cls==='st-retest'){
+    momentumNoteHtml=`<div class="srcList" style="color:var(--accent); margin:10px 0 0">↩ 返回箱型・回測${st.prev?'舊':''}箱頂：近${BREAKOUT_LOOKBACK}個交易日收盤最高到 <b>${st.maxClose}</b>，曾有效突破${st.prev?'上修前的舊':''}箱頂 <b>${st.top}</b>（收盤站上 ${BREAKOUT_CONFIRM_PCT}% 以上），現在回到箱頂附近測試支撐。舊壓力變支撐守得住，就是續抱、甚至加碼的位置；收盤跌破 <b>${st.guard}</b>（箱頂 −${RETEST_BAND_PCT}%）就代表突破失敗，回到箱型操作。</div>`;
+  }else if(st.cls==='st-failed'){
+    const fb=st.failedBox;
+    momentumNoteHtml=`<div class="srcList" style="color:var(--stop); margin:10px 0 0">⚠ 返回箱型・突破失敗：近${BREAKOUT_LOOKBACK}個交易日收盤最高到 <b>${st.maxClose}</b>，曾有效突破${fb.prev?'上修前的舊':''}箱頂 <b>${fb.sell}</b>，但現在已經跌回箱頂 ${RETEST_BAND_PCT}% 以下，這次突破不成立。回到${fb.prev?'舊':''}箱型（${fb.buy}–${fb.sell}）操作：不加碼，反彈到箱頂 ${fb.sell} 附近減碼，回到箱底 ${fb.buy} 附近再考慮接。</div>`;
   }else if(st.momentum==='first-stage'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">⚠ 這裡的「部分停利」只算「第一次減碼」的參考，不是全出訊號；均線仍多頭排列（未走弱）時不建議全出，續抱看突破箱型/前高訊號 <b>${st.stretch}</b>（部分停利價×1.15，對應噴出段的延伸幅度）。</div>`;
   }else if(st.momentum==='extended'){
     momentumNoteHtml=`<div class="srcList" style="color:var(--sell); margin:10px 0 0">🔥 股價已經漲到突破箱型/前高訊號 <b>${st.stretch}</b> 附近（約當部分停利價的+15%），這個位階漲多，可以考慮把減碼力道加重；如果均線之後真的走弱，就代表這波噴出結束了。</div>`;
+  }
+  if(st.afterFailedBreakout){
+    momentumNoteHtml+=`<div class="srcList" style="color:var(--stop); margin:8px 0 0">⚠ 近期突破失敗後回落：近${BREAKOUT_LOOKBACK}個交易日收盤最高到 <b>${st.maxClose}</b>、曾有效突破箱頂，現在已經跌回箱底一帶。突破失敗後的回落常會再殺一段，先確認止跌（例如出現止跌K棒、量縮不再破低）再分批接。</div>`;
   }
 
   const companyOverviewHtml = (r && r.overview) ? `
@@ -1578,6 +1669,14 @@ function renderDetail(i){
   if(!isNaN(sellRefVal)) plLevelRows.push({cls:'sell', label:sellRefLabel, val:sellRefVal, price:fmt(sellRefVal)||'—', dist:pctStr(toSell)});
   if(!isNaN(stop)) plLevelRows.push({cls:'stop', label:'跌深買進', val:stop, price:fmt(stop)||'—', dist:pctStr(toStop)});
   if(stretchVal!==null) plLevelRows.push({cls:'stretch', label:'突破箱型/前高訊號', val:stretchVal, price:stretchVal, dist:pctStr(toStretch)});
+  if(st.cls==='st-retest' && st.guard){
+    plLevelRows.push({cls:'guard', label:'突破失敗線（箱頂−3%）', val:st.guard, price:st.guard, dist:pctStr(pct(p,st.guard))});
+  }
+  // 箱型上修過：列出上修前的舊箱頂（跟現有價位重疊時就不重複列）
+  const prevTopVal=parseFloat(s.prevSell);
+  if(!isNaN(prevTopVal) && !isNaN(p) && ![buyRefVal, sellRefVal, stop, st.guard].some(v=>!isNaN(v) && v!==undefined && v!==null && Math.abs(v-prevTopVal)<=prevTopVal*0.005)){
+    plLevelRows.push({cls:'prevtop', label:`上修前箱頂${s.boxRaisedOn?`（${String(s.boxRaisedOn).slice(5).replace('-','/')} 上修）`:''}`, val:prevTopVal, price:prevTopVal, dist:pctStr(pct(p,prevTopVal))});
+  }
   // 「目前股價」不再固定放最上面，改成跟其他價位一起依價格高低排序，
   // 這樣才能一眼看出現價實際卡在哪兩個點位之間，並用外框特別標示出來。
   if(!isNaN(p)) plLevelRows.push({cls:'current', label:'目前股價', val:p, price:fmt(p)||'—'});
