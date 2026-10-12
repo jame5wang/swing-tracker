@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T08:30:00+08:00",
+  "items": [
+    {
+      "summary": "隔夜美光(Micron)股價下跌3.9%，拖累費城半導體指數與那斯達克走低，道瓊則在銀行股撐盤下逆勢上漲約195點，反映Q3財報季開局、資金自科技股轉向金融股的輪動效應；台指期夜盤同步重挫399點，牽動今日台股在4萬9千點關卡附近面臨賣壓測試，記憶體概念股可留意是否同步承壓。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"}
+      ],
+      "sources": [
+        {"title": "美光摔3.9％拖累科技股！道瓊逆勢漲195點 台指期夜盤下挫399點", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E5%85%89%E6%91%943-9-%E6%8B%96%E7%B4%AF%E7%A7%91%E6%8A%80%E8%82%A1-%E9%81%93%E7%93%8A%E9%80%86%E5%8B%A2%E6%BC%B2195%E9%BB%9E-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E4%B8%8B%E6%8C%AB399%E9%BB%9E-222121506.html"},
+        {"title": "〈美股盤後〉美光跌3.9%拖累費半、那指 油價走高、銀行財報季登場", "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%BE%8E%E5%85%89%E8%B7%8C3-9-%E6%8B%96%E7%B4%AF%E8%B2%BB%E5%8D%8A-%E9%82%A3%E6%8C%87-215245091.html"}
+      ]
+    },
+    {
+      "summary": "台達電就美國337調查發布正式重訊，證實旗下3家子公司遭列入專利侵權調查名單，但強調案件仍處立案初期、相關產品目前未受影響；消息一度導致股價重挫逾5%，隨後跌幅收斂，顯示市場對AI伺服器垂直供電專利戰的後續發展仍保持高度關注。",
+      "relatedStocks": [
+        {"code": "2308", "name": "台達電"}
+      ],
+      "sources": [
+        {"title": "台達電發重訊：回應捲入美337調查名單，股價一度跌逾5%", "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RdWY2Xzh2M05va3RSckdidGtqaVVHTWNlZm5PbG93MjBNczQ1dF9uUTk2b1JQS0dCU3U5cDdoV0NhTklBZEwwQ1JzbHVWa3JxamNwcTg1RXYyQTd2UzNlMA?oc=5"}
+      ]
+    },
+    {
+      "summary": "南亞科法說會指出DRAM報價估將持續上漲，公司規劃在屏東新建3D IC先進封裝廠、總投資上看100億美元，目標2028年底量產因應AI記憶體需求；總座並透露現有客戶為保障DDR4貨源，甚至向公司探詢入股可能性，而公司雖具備轉進DDR5的能力，但判斷目前尚不急於轉換，反映DDR4供給吃緊的程度。",
+      "relatedStocks": [
+        {"code": "2408", "name": "南亞科"}
+      ],
+      "sources": [
+        {"title": "南亞科總座：DRAM售價還會漲", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LQ0RlaXpZdUVrcmx1RWV1dHJUek5Wczc0RkxvTDVwcl9TNUVxeWhLaW1mamhWNUtiMGpTYzFLOUNIUWlhdHdXVzFZMnlBMFB3WmhKblVxaXM5QdIBX0FVX3lxTE93eFJkNllYXy1BcGxBUHEzenFUNE5hclJobmJnUU9qcERvTTNoS0pZMk9MeG5sbUx3eExfOU5NRHA5Rk1GYmZ4OElwSE5LaWU3SG1oR05OaXpzYlZydHR3?oc=5"},
+        {"title": "DRAM搶貨戰1》客戶出狠招保貨源 南亞科證實有人想入股", "url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNZS1peU9lYmtrNEJpUnJWZDc2bEMtbTNBN0VuWWJXTklqRWdPRkl6RWs0eWs2NUJ6bjdKY3JfUzdpdFlqRTJaXzFCbjMwSnBpSXJmeF9COVI5ZVBNdVNyT25wS1kwMlZjdnV0MGNtcnljalNYTk9va0RpSF9aRG1YMWp5a1VFZnUtVG5UU3ZDd3dFR3ZKczd5Y2xKTk5XRmVyNXR3SE93WHRJTXFHcU54Ti1hNFpZUUZuenhva05NRlVicW9FSWhwUGpJeE1iVWN5dXV1YXdQWF9EZUhBYXEwUzR2dWtsRHNyMk4yZ3hzeExjSFpsckJqbldfZXZTcnljUzNHX0JOUG1YejVWVmVnUUlManQyNDJ6WDNxc010VXE1VjlkUGo1bGdFRDhtSkl5ZWxYVDFEa3hiN0t6NjVYUU1EUlpKU2V1RGZjZVhZcjhyWnRzQkhvQQ?oc=5"},
+        {"title": "南亞科屏東廠聚焦3D IC技術", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE54eWZGcXQtSUxtYWVrSE8xal9RR2s4eUZXTHlKcDR6Ym9oOGJLczdyLVhwQjJxemIyc2UxX211eTF5eENKTHFLNFlselQ3OUt30gFWQVVfeXFMUFFDR2RRTGRxX3EzaWdvOUdReDVvWXNVcWpMWndpN2dmS1FVdTlydFZPazZRNHRKaFg2dlNEdDRoSldRbUNHazJ4WTZQTFhjSm4wX19rbUE?oc=5"}
+      ]
+    },
+    {
+      "summary": "華邦電、威剛在法說會上同步看好明年DRAM供給吃緊態勢延續，市場預期第4季記憶體報價再漲約15%；利基型記憶體模組廠宜鼎則表示今明兩年的記憶體缺口規模是「用倍數計算」，顯示缺貨漲價行情短期內難以緩解。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "5289", "name": "宜鼎"},
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {"title": "開法說會》華邦電、威剛同看好 明年DRAM供給更吃緊", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DSDBaRk9lSE13UWdHbGJvOFlZU3lZQWhyMnJQN2hfRHJqWUhWMkM0Y09xX1FFZ3BWZzNkdlhtWXdvSFJWaXBhd0E0a0sxalNYZVUwbWpNZGE?oc=5"},
+        {"title": "記憶體Q4再漲價15％！南亞科、華邦電、旺宏、群聯、宜鼎、威剛…9月營收一次評金控法人曝最新目標價", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Rd2kxQ0gwdk1BRE00akRCbXhPOTRVSW0zT3BTbE0yS0RSRC00ZzBaNmpYY2RWZUNnWHZvUkpDM3cxdmRFYXFYNkgtQVJyMjRFS0d1Vk1YYm93TUtNU0o0QTVRU0libEdBQ3c?oc=5"},
+        {"title": "法說會速報》宜鼎：今明年記憶體缺口 用倍數計算", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8wOGQ1TUJBUTdIeEZDVDYzc09vRTAycFdUZXNSUHhtZlptMGNJOFlyQndFOThlbVl4aHNtVHNLQ3hPa21YRmU5c2JzbTBfNXZETnNPU3Zxdkw?oc=5"}
+      ]
+    },
+    {
+      "summary": "AI資料中心對光通訊元件需求暴增，傳出美國大廠高達7成訂單產能滿載、產能已賣到2029年；輝達並傳出與思科(Cisco)合作加碼布局AI資料中心光通訊方案，帶動聯亞、華星光等台灣光通訊供應鏈同步沾光。",
+      "relatedStocks": [
+        {"code": "3081", "name": "聯亞"},
+        {"code": "4979", "name": "華星光"}
+      ],
+      "sources": [
+        {"title": "光通訊缺貨大爆炸！美國大廠驚爆「7成訂單做不出來」 產能賣光到2029年、聯亞華星光沾光", "url": "https://news.google.com/rss/articles/CBMi_wNBVV95cUxNNnplQ1cxUzNxYWdRbXFPb1BhWkZMN0xKZks3V1FpT3hTUEhWeTBqTFBKcUdVTlJJYmdLd1BYbjNseElpbFp2QjVVU0MzMC1vLVMzcnU4M0NjVER3ci1CelpPcUtkWTMtdmlwUm1yT3JibmkxVkR1SVdlaG1pRTR6TTV4MmJJWEcwUlRxOVJYeGJEY3dpdDdzbXd4ZEpKbGlramlMdDRRRndUOEVsTFRRcmtQczBOUDlMSEZsalJDZzZtVDlVd0VZN1hFYjJRMjhadUVZUGR0NUZMTlRYbUhreGxqMHFBU0k3NTZEMUFYNG9JM0JGVTZZV3ZKZDluNmZLQkRjY3lGSmhIZ2wtakNHUkx5UzZVUXFnXzNpZ1JVd0dOUGhUVGdlTnZtSGdxaERWZ1RrZDJhcDFQd0JMZmNUZkJfZmh5c0xmLW9jbU9WZFJzNG9EX29qNGxBQkREMUxNN2ZSSU85Zl9yR3Q3MDQxZnUwNjVHZGtMdlI0UEdGNk9IZnltbHVvMnQxdHoxRXJFTzV6aGNvLUFlcnliVThHNWRLeEdVNUctYWxDT1NRNGl3QjgwdXY1WHdSVE1fZTFGUjVmNEtJMkhKWUVVNmt3UDE0VU1KMWhrQWhydGl3aXNCcTBUbXdXWWNaVDN5ZC1JdXZMdG43RnRvYThkMTZz?oc=5"},
+        {"title": "輝達聯手思科光通訊大進擊 華星光、眾達等台鏈歡呼", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWLWxqQUFSMnd3NG1sTXJjQThPM1hNakc0MGhEeXVWbldMVi1RY045R2daMjdYR3pTZS0tV1c4QmVlSlBpRXBlRVlEN0xQTW9uQW5XQUlDaWo?oc=5"}
+      ]
+    },
+    {
+      "summary": "市場分析馬斯克旗下AI算力擴張十倍的計畫將高度依賴台灣CCL供應鏈，台光電、台燿、聯茂、騰輝電子-KY等高階CCL廠可望受惠，財經週報報導更指出相關漲價潮已上看2027年、訂單能見度持續拉長；上游銅箔原料同樣量價齊揚，金居搭上PCB產業超級周期。",
+      "relatedStocks": [
+        {"code": "2383", "name": "台光電"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6672", "name": "騰輝電子-KY"},
+        {"code": "8358", "name": "金居"}
+      ],
+      "sources": [
+        {"title": "馬斯克算力擴張十倍高度依賴台灣CCL 台光電、台燿、聯茂、騰輝搶攻2027年AI材料商機", "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBYdmFTTFV4ZTNsSXZ1VGFkRDBLU1dpRXNnclhndWxCdEVNYW5zOEJhQjVHVndlSGhSTW02eHg0MXptQk9Uc0ZMMGtfbVF0T29Fay14YkJ4V1RTY09YQUVLT2llX0FIXzVkandfMHhacw?oc=5"},
+        {"title": "〈財經週報-PCB〉漲價潮上看2027年 台光電、台燿、聯茂爆單", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80Vkw2QVZ5WE9DN0V1OTIyVmhBZHVXTUZBVXBlVEV1N1FCV3BGT2tkelJRVHNTd3FNYkNqTkM4RklXOWJFLUZ4YjgwQUNzWlhBeXFwUGxnY0c?oc=5"},
+        {"title": "AI用銅箔量價齊揚 金居搭上PCB超級周期", "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9vQXo2Vkd6d051YkVRTVFFOUdHWmZrNG9uQWhVTW9jSWZxZ21rMktXWV9IY18tWmlIRDlBU0xCdElvamVTeTI0YllrMWoxaWQwdVIyU2daRDdya3E4?oc=5"}
+      ]
+    },
+    {
+      "summary": "大立光CPO/FAU認證過關，法人估FA明年量產、本益比改採新成長曲線評價，股價應聲上漲近9%；但高盛同時下修大立光第3季財測（示警手機拉貨保守等因素），大摩也因產能效率疑慮下調上詮評等，顯示市場對CPO放量節奏看法分歧。先進封裝布局同步擴大，力成亦規劃明年量產CPO相關封裝應用。",
+      "relatedStocks": [
+        {"code": "3008", "name": "大立光"},
+        {"code": "3363", "name": "上詮"},
+        {"code": "6239", "name": "力成"}
+      ],
+      "sources": [
+        {"title": "大立光(3008)CPO認證過關！FAU搶攻百億商機，本益比飆40倍，第二成長曲線浮現？", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rTDcyVS1NUlFteUlDZm1ucV94NWFYQjFMTkNXYVM1R1hzNzFLbHctYU9hYXNlaXd4WmtrZWZVR2ZieUhEVUwwSFlRcVBPdVE?oc=5"},
+        {"title": "焦點股》大立光：FA明年量產 股價漲近9％", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKTE13aUtHeDVEZ1pJRU9adDZQTDNVTFgxSGo5d0hPSHF2dWF4Vi1JamZHREttN3lhR0N3QUYzNFlxU2paLWNzRlRXaUktbktYTVIySWdqZHo?oc=5"},
+        {"title": "大立光開法說...友達、上詮變法會？高盛給看法目標價超炸裂：第3季「5原因」弱預期", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CMFh1U1hHZDVqdFFZRmo4YjFrbEc2b1BkVTI3SGF4TXN2Mnp5VnlJcE1HWFN6Z0REMVA3OEhpSHVLUW5mU2g5QjRMNUJMbEdlRjJ3SzU0YXhranBxMkdFWUdSdk91SGVyanc?oc=5"},
+        {"title": "CPO量產帶動FAU需求升溫 上詮產能效率受考驗，大摩降評示警", "url": "https://news.cnyes.com/news/id/6627945"},
+        {"title": "熱門股》先進封裝夯 力成CPO明年量產", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LREtKRUVrQVNqRUVPQlI3eFhHbkdvZ2VMZUM3Vk9GT0lLUHJfQnNjT2xRZ1drU01pU1lHZm1ZMi1EU2RTcUpSQU51Wmk4Z3RlbW9ZMXRHeFg?oc=5"}
+      ]
+    },
+    {
+      "summary": "AI急單湧入，封測產業迎來今年最強一波漲價潮，急單報價傳出翻倍，日月光、京元電等封測大廠可望受惠，旺矽等測試設備廠同步沾光，顯示半導體漲價動能已從晶圓代工、記憶體擴散至封測與測試設備環節。",
+      "relatedStocks": [
+        {"code": "3711", "name": "日月光投控"},
+        {"code": "2449", "name": "京元電子"},
+        {"code": "6223", "name": "旺矽"}
+      ],
+      "sources": [
+        {"title": "AI太熱 封測業迎最強漲價潮 日月光、京元電等大進補", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FMFl2VjYwSmc4cGR5anRIbWt0eGVwYVRLQUNMTkhLZlV6XzUwS1dFNV9SVGRUTTg0czJWYzRBenBwLUUxTGR3Mmx5LXdJX1lZV1gyczhBblJIQQ?oc=5"},
+        {"title": "封測迎漲價潮！台星科、久元、旺矽股價飆", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FMFl2VjYwSmc4cGR5anRIbWt0eGVwYVRLQUNMTkhLZlV6XzUwS1dFNV9SVGRUTTg0czJWYzRBenBwLUUxTGR3Mmx5LXdJX1lZV1gyczhBblJIQQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "SEMICON Taiwan 2026展會上，環球晶看好矽晶圓後市，台積電則宣布擴大3D IC先進封裝聯盟規模，顯示先進封裝與矽晶圓材料需求仍處於上升週期。",
+      "relatedStocks": [
+        {"code": "6488", "name": "環球晶"},
+        {"code": "6182", "name": "合晶"}
+      ],
+      "sources": [
+        {"title": "SEMICON Taiwan 2026今登場》環球晶看旺矽晶圓 台積電做大3D IC聯盟", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9adlQ0aFFhRFZVZnFyQlByckd4UnFyVnRtRHJmQkZzYWVvUi1Fa2tfaUs0bzhINm16ZFFXSHlaOEQteDk5YnR2emptREhjSll4YTRwaU0tWUc?oc=5"}
+      ]
+    },
+    {
+      "summary": "力旺旗下熵碼科技的資安IP技術打入Arm與Meta的次世代AI晶片合作案，雙方將共同開發新一代資安防護方案，為力旺在AI晶片矽智財授權版圖增添新客戶與成長動能。",
+      "relatedStocks": [
+        {"code": "3529", "name": "力旺"}
+      ],
+      "sources": [
+        {"title": "力旺旗下熵碼資安IP打入Arm、Meta合作次世代AI晶片", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY21CUWlCNTJHNTVPblVzWXRlMUg0bW5FYWFKbnNMenJuWXhsWWlZOU9ybm9PQ1VQLVJGd1NLVFlRR1VCVDVacW1LUEI1R2RYdjNvMU9oWDZ5WkNGZHJBN21OazM0YVJVd1N2aGZpR1lYTGRWelQxSXNWT3NKZzJxWGtUeDR2VFI2dWRxN0dsWGUydw?oc=5"}
+      ]
+    },
+    {
+      "summary": "世芯-KY法說會表示看好下半年營收將明顯放大、全年可望創新高，公司同步擴大2奈米先進封裝整合布局，年底前將有新客戶案投片，顯示其ASIC設計服務訂單能見度持續拉長。",
+      "relatedStocks": [
+        {"code": "3661", "name": "世芯-KY"}
+      ],
+      "sources": [
+        {"title": "法說會速報》世芯看好下半年營收大增 全年將創高", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ONHEtdXlvdVRHVDdUUWY5SXFOQXFLTjh1WUpNZkE5eWVHTTcweFF4ekZBQzZVVHB6RzU2b1FpMVB3TUtmak5wbXZNdWJYYWRKRTRoZkx3Qi0?oc=5"},
+        {"title": "世芯-KY擴大2奈米封裝整合，年底新案投片", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNY0pxSU85clBTWGl3c0N6UGdZY2NzMmFFbG5nb2RFQ1dYejhyZnFLYXprVnNPUDBhWDlJRXRLbU81NVZKY3lyaG9CYW5kMGR2dXlTVFZVREk1QWhsczJpYjNKVHNVVl9mVGpLQVc3bFJ4WFJfa1hURzhFdHJ1bFJQT0FYT2JlbXdUMXJZM3BCMWdPdw?oc=5"}
+      ]
+    },
+    {
+      "summary": "聯友金屬-創董事會通過發行國內第二次無擔保可轉換公司債，發行總額上限20億元，資金用於廠房整修與購置機器設備，顯示公司持續擴充稀有金屬回收產能；同一天公司並公告集團總經理人事異動，子公司聯友先進材料總經理退休，集團董座兼任後再調整由現任副總經理陳群諭接棒，11月1日生效。",
+      "relatedStocks": [
+        {"code": "7610", "name": "聯友金屬-創"}
+      ],
+      "sources": [
+        {"title": "聯友金屬-創總經理異動", "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZVE4MHI3WXNpS240YlhZV1A1SHRiRzdwSGlkV0ExMy1iRy1vMlpvREZidW1TMU51R1gtRnpHRFA4MDVyYTF6Y0lSRmFxUldzQXprenVqZzgzdVlXeVlka3RQZU9BSEtSQ2F5a1lqMFBFSnM5bHpZMlFmRHBiSGc3TzNWUzBCWV9I?oc=5"},
+        {"title": "聯友金屬-創 公告董事會決議發行國內第二次無擔保可轉換公司債", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"}
+      ]
+    },
+    {
+      "summary": "南亞宣布攜手韓國LS ELECTRIC合資設廠，跨入台灣電網統包工程領域，搶攻規模上看百億元的商機，是南亞集團在CCL本業之外新開展的業務布局方向。",
+      "relatedStocks": [
+        {"code": "1303", "name": "南亞"}
+      ],
+      "sources": [
+        {"title": "攜手韓廠LS ELECTRIC合資設廠，南亞揮軍台灣電網統包工程爭食百億商機", "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSjVaUFZHU3B0OERvdkdNZmlrOF9tZ0VzQWZ1NFBfTjJqUXlOTzlEcU90THJYeTVfYmlOZ21IVEY5MXBsWEs2dllYdDVEazZ2ZGE2ZnlOQjBpSHVNRXNXQ3dkM080YVc5ZnIxRTQ4WEJyRTBJdVVtRE5aRFUxb21uX1NtWHNSekpqazVnNHkxQWNSX2ls?oc=5"}
+      ]
+    }
+  ]
+}
