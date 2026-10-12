@@ -18,10 +18,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "177.46億元",
-            "yoy": "+56.26%",
-            "mom": "+9.18%"
+            "period": "2026/09",
+            "value": "186.51億元",
+            "yoy": "+64.67%",
+            "mom": "+5.10%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -100,10 +100,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "53.53億元",
-            "yoy": "+40.59%",
-            "mom": "-1.6%"
+            "period": "2026/09",
+            "value": "55.86億元",
+            "yoy": "+57.82%",
+            "mom": "+4.36%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -118,6 +118,10 @@
             "qoqEps": "+72.4%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 8046 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 南電(8046)8月營收53.53億元年增率高達40.59%",
               "url": "https://news.cnyes.com/news/id/6596496"
@@ -174,10 +178,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "48.10億元",
-            "yoy": "+40.58%",
-            "mom": "+5.73%"
+            "period": "2026/09",
+            "value": "51.81億元",
+            "yoy": "+44.47%",
+            "mom": "+7.73%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -192,6 +196,10 @@
             "qoqEps": "+119.7%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3189 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 景碩(3189)8月營收48.10億元年增率高達40.58%",
               "url": "https://news.cnyes.com/news/id/6597743"
@@ -244,10 +252,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "201.46億元",
-            "yoy": "+129.85%",
-            "mom": "+4.89%"
+            "period": "2026/09",
+            "value": "215.32億元",
+            "yoy": "+168.87%",
+            "mom": "+6.88%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -262,6 +270,10 @@
             "qoqEps": "+84.9%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2383 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 台光電(2383)8月營收201.46億元年增率高達129.85%",
               "url": "https://news.cnyes.com/news/id/6597599"
@@ -318,10 +330,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "59.15億元",
-            "yoy": "+132.48%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "61.26億元",
+            "yoy": "+114.80%",
+            "mom": "+3.57%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -336,6 +348,10 @@
             "qoqEps": "+83.9%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6274 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 台燿(6274)8月營收59.15億元年增率高達132.48%",
               "url": "https://m.cnyes.com/news/id/6597745"
@@ -400,10 +416,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "50.44億元",
-            "yoy": "+97.93%",
-            "mom": "+6.21%"
+            "period": "2026/09",
+            "value": "58.24億元",
+            "yoy": "+110.74%",
+            "mom": "+15.47%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -418,6 +434,10 @@
             "qoqEps": "+304.6%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6213 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 聯茂(6213)8月營收50.44億元年增率高達97.93%",
               "url": "https://news.cnyes.com/news/id/6597607"
@@ -474,10 +494,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "8.06億元",
-            "yoy": "+133.24%",
-            "mom": "+21.13%"
+            "period": "2026/09",
+            "value": "10.21億元",
+            "yoy": "+201.68%",
+            "mom": "+26.68%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -492,6 +512,10 @@
             "qoqEps": "+74.6%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6672 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "CCL廠騰輝電子8月營收8.1億元登巔峰 年增1.33倍",
               "url": "https://news.cnyes.com/news/id/6596495"
@@ -535,10 +559,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "103.84億元",
-            "yoy": "+76.39%",
-            "mom": "+3.69%"
+            "period": "2026/09",
+            "value": "93.2億元",
+            "yoy": "+55.46%",
+            "mom": "-10.25%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -553,6 +577,10 @@
             "qoqEps": "+34.9%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2368 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 金像電(2368)8月營收103.84億元年增率高達76.39%",
               "url": "https://news.cnyes.com/news/id/6600755"
@@ -609,10 +637,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "206.66億元",
-            "yoy": "+41.05%",
-            "mom": "+17.42%"
+            "period": "2026/09",
+            "value": "263.58億元",
+            "yoy": "+36.13%",
+            "mom": "+27.54%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -627,6 +655,10 @@
             "qoqEps": "+64.7%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 4958 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【公告】臻鼎-KY 2026年8月合併營收206.66億元 年增41.05%",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%87%BB%E9%BC%8E-ky-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6206-66%E5%84%84%E5%85%83-071302749.html"
@@ -683,10 +715,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "10.56億元",
-            "yoy": "+59.71%",
-            "mom": "+4.72%"
+            "period": "2026/09",
+            "value": "11.04億元",
+            "yoy": "+64.63%",
+            "mom": "+4.53%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -701,6 +733,10 @@
             "qoqEps": "+4.9%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 8358 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "金居Q2獲利年增逾2倍 EPS 2.16元、毛利率衝27.39％",
               "url": "https://www.ctee.com.tw/news/20260807701501-430502"
@@ -744,10 +780,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "10.04億元",
-            "yoy": "+19.97%",
-            "mom": "+1.02%"
+            "period": "2026/09",
+            "value": "10.11億元",
+            "yoy": "+13.52%",
+            "mom": "+0.61%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -762,6 +798,10 @@
             "qoqEps": "—（Q1單季EPS接近0元，季增率無意義無法計算）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6182 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "合晶(6182)2026年第1季EPS為0.0元，季增-100.0%",
               "url": "https://statementdog.com/analysis/6182/eps"
@@ -874,10 +914,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "85.58億元",
-            "yoy": "+24.46%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "85.07億元",
+            "yoy": "+26.96%",
+            "mom": "-0.60%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -892,6 +932,10 @@
             "qoqEps": "+20.0%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6239 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【力成法說會重點內容備忘錄】未來展望趨勢 20260728",
               "url": "https://blog.fugle.tw/post/earnings-call-6239-2026-07-28"
@@ -948,10 +992,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "26.20億元",
-            "yoy": "+43.61%",
-            "mom": "+3.85%"
+            "period": "2026/09",
+            "value": "24.39億元",
+            "yoy": "+27.95%",
+            "mom": "-6.89%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -966,6 +1010,10 @@
             "qoqEps": "+116.9%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6147 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "頎邦(6147) 每股盈餘 - Yahoo股市",
               "url": "https://tw.stock.yahoo.com/quote/6147.TWO/eps"
@@ -1009,10 +1057,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "250.45億元",
-            "yoy": "+30.71%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "253.5億元",
+            "yoy": "+27.22%",
+            "mom": "+1.22%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1027,6 +1075,10 @@
             "qoqEps": "+162.8%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2303 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "聯電Q2每股純益3.39元、毛利率32.5% 符合預期 本季估高個位數增幅",
               "url": "https://udn.com/money/story/5710/9658613"
@@ -1079,10 +1131,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "273.09億元",
-            "yoy": "+289.43%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "282.49億元",
+            "yoy": "+256.67%",
+            "mom": "+3.44%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1097,6 +1149,10 @@
             "qoqEps": "+140.0%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2344 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "《半導體》華邦電Q2毛利率66% 上半年EPS 7.65元 看記憶體明年更吃緊",
               "url": "https://www.ctee.com.tw/news/20260806701656-430201"
@@ -1149,10 +1205,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "446.90億元",
-            "yoy": "+560.85%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "450.91億元",
+            "yoy": "+576.62%",
+            "mom": "+0.90%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1167,6 +1223,10 @@
             "qoqEps": "+74.3%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2408 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【公告】南亞科 2026年8月合併營收446.9億元 年增560.85%",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E4%BA%9E%E7%A7%91-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6446-9%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E560-071215063.html"
@@ -1223,10 +1283,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "282.76億元",
-            "yoy": "+376.52%",
-            "mom": "+4%"
+            "period": "2026/09",
+            "value": "306.39億元",
+            "yoy": "+370.26%",
+            "mom": "+8.36%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1241,6 +1301,10 @@
             "qoqEps": "+72.3%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 8299 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "群聯8月營收282.76億元、年增377% 刷新歷史新高",
               "url": "https://finance.ettoday.net/news/3234642"
@@ -1293,10 +1357,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "86.80億元",
-            "yoy": "+576.29%",
-            "mom": "+2.18%"
+            "period": "2026/09",
+            "value": "87.13億元",
+            "yoy": "+535.71%",
+            "mom": "+0.38%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1311,6 +1375,10 @@
             "qoqEps": "+89.5%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 5289 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 宜鼎(5289)8月營收86.80億元年增率高達576.29%",
               "url": "https://news.cnyes.com/news/id/6597814"
@@ -1480,10 +1548,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "195.92億元",
-            "yoy": "+25.2%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "188.48億元",
+            "yoy": "+22.15%",
+            "mom": "-3.80%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1498,6 +1566,10 @@
             "qoqEps": "+89.2%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2301 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 光寶科(2301)8月營收195.92億元年增率高達25.2%",
               "url": "https://news.cnyes.com/news/id/6601754"
@@ -1550,10 +1622,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "4.71億元",
-            "yoy": "+71.16%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "4.49億元",
+            "yoy": "+29.49%",
+            "mom": "-4.64%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1568,6 +1640,10 @@
             "qoqEps": "+8.5%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2455 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【公告】全新 2026年8月合併營收4.71億元 年增71.16%",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E6%96%B0-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-71%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E71-064439929.html"
@@ -1620,10 +1696,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "19.37億元",
-            "yoy": "+30.55%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "20.3億元",
+            "yoy": "+29.97%",
+            "mom": "+4.76%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1638,6 +1714,10 @@
             "qoqEps": "+82.5%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3105 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "〈焦點股〉穩懋8月營收創56個月新高 盤中大漲超過半根停板",
               "url": "https://news.cnyes.com/news/id/6601476"
@@ -1694,10 +1774,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "1.06億元",
-            "yoy": "+33.03%",
-            "mom": "+0.91%"
+            "period": "2026/09",
+            "value": "1.08億元",
+            "yoy": "+11.37%",
+            "mom": "+1.97%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1712,6 +1792,10 @@
             "qoqEps": "-78.2%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 4971 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "IET-KY(4971) 最新每股盈餘 - 2026Q2EPS為0.43元",
               "url": "https://shop.nstock.tw/stock_info?stock_id=4971&status=6"
@@ -1755,10 +1839,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "70.12億元",
-            "yoy": "+6.87%",
-            "mom": "—"
+            "period": "2026/09",
+            "value": "86.17億元",
+            "yoy": "+15.02%",
+            "mom": "+22.89%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1773,6 +1857,10 @@
             "qoqEps": "-1.6%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2313 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "《電零組》華通Q2每股賺1.24元、前7月營收登峰 今年拚逐季揚",
               "url": "https://www.chinatimes.com/realtimenews/20260806003559-260410"
@@ -1829,10 +1917,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "47.64億元",
-            "yoy": "+7.6%",
-            "mom": "-4.3%"
+            "period": "2026/09",
+            "value": "51.29億元",
+            "yoy": "-13.13%",
+            "mom": "+7.65%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1847,6 +1935,10 @@
             "qoqEps": "+99.0%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6488 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "環球晶Q2每股賺7.9元 既有12吋產能滿載、全球擴產進入收成期",
               "url": "https://finance.ettoday.net/news/3213389"
@@ -1894,10 +1986,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "194.81億元",
-            "yoy": "+54.34%",
-            "mom": "+4.79%"
+            "period": "2026/09",
+            "value": "210.18億元",
+            "yoy": "+44.92%",
+            "mom": "+7.89%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -1974,10 +2066,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "31.41億元",
-            "yoy": "+67.18%",
-            "mom": "-16.58%"
+            "period": "2026/09",
+            "value": "28.84億元",
+            "yoy": "+23.23%",
+            "mom": "-8.19%"
           },
           "quarterly": {
             "note": "公司表示Q3拚季增20%",
@@ -2044,10 +2136,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "32.26億元",
-            "yoy": "+90.90%",
-            "mom": "+0.40%"
+            "period": "2026/09",
+            "value": "30.54億元",
+            "yoy": "+79.97%",
+            "mom": "-5.32%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2126,10 +2218,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "3.57億元",
-            "yoy": "+42.77%",
-            "mom": "-47.19%"
+            "period": "2026/09",
+            "value": "1.77億元",
+            "yoy": "+13.47%",
+            "mom": "-50.30%"
           },
           "sources": [
             {
@@ -2207,10 +2299,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "11.09億元",
-            "yoy": "+103.06%",
-            "mom": "+5.13%"
+            "period": "2026/09",
+            "value": "11.6億元",
+            "yoy": "+109.24%",
+            "mom": "+4.64%"
           },
           "sources": [
             {
@@ -2293,10 +2385,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "1.48億元",
-            "yoy": "+96.73%",
-            "mom": "+7.34%"
+            "period": "2026/09",
+            "value": "1.56億元",
+            "yoy": "+99.97%",
+            "mom": "+5.32%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2374,10 +2466,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "12.2億元",
-            "yoy": "+152.98%",
-            "mom": "+6.37%"
+            "period": "2026/09",
+            "value": "13.04億元",
+            "yoy": "+172.33%",
+            "mom": "+6.92%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2446,10 +2538,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "7.71億元",
-            "yoy": "+97.75%",
-            "mom": "+5.5%"
+            "period": "2026/09",
+            "value": "8.3億元",
+            "yoy": "+98.33%",
+            "mom": "+7.65%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2530,10 +2622,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "5.20億元",
-            "yoy": "+180.9%",
-            "mom": "+3.84%"
+            "period": "2026/09",
+            "value": "5.4億元",
+            "yoy": "+190.16%",
+            "mom": "+3.85%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2548,6 +2640,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3081 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－聯亞(3081)8月營收5.20億元年增率180.9% | 鉅亨網",
               "url": "https://news.cnyes.com/news/id/6597602"
@@ -2611,10 +2707,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "16.28億元",
-            "yoy": "+152.24%",
-            "mom": "+32.44%"
+            "period": "2026/09",
+            "value": "20.61億元",
+            "yoy": "+97.26%",
+            "mom": "+26.59%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2629,6 +2725,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6442 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－光聖(6442)8月營收16.28億元年增率152.24% | 鉅亨網",
               "url": "https://news.cnyes.com/news/id/6601858"
@@ -2688,10 +2788,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "2.04億元",
-            "yoy": "+13.2%",
-            "mom": "+19.69%"
+            "period": "2026/09",
+            "value": "2.24億元",
+            "yoy": "+28.38%",
+            "mom": "+9.67%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2706,6 +2806,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3363 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "上詮(3363)每月營收 | 財報狗",
               "url": "https://statementdog.com/analysis/3363/monthly-revenue"
@@ -2766,10 +2870,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "2.05億元",
-            "yoy": "+9.69%",
-            "mom": "-2.37%"
+            "period": "2026/09",
+            "value": "2.42億元",
+            "yoy": "+27.44%",
+            "mom": "+18.12%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2784,6 +2888,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3163 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "波若威(3163)每月營收 | 財報狗",
               "url": "https://statementdog.com/analysis/3163/monthly-revenue"
@@ -2835,10 +2943,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "58.4億元",
-            "yoy": "+111.02%",
-            "mom": "+1.23%"
+            "period": "2026/09",
+            "value": "71.45億元",
+            "yoy": "+97.78%",
+            "mom": "+22.35%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -2853,6 +2961,10 @@
             "marginPeriod": "2026 Q2（毛利率年增比較為主，QoQ單季數字未查得）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3443 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 創意(3443)8月營收58.40億元年增率高達111.02%",
               "url": "https://news.cnyes.com/news/id/6599377"
@@ -2985,10 +3097,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "50.12億元",
-            "yoy": "-16.02%",
-            "mom": "+2.76%"
+            "period": "2026/09",
+            "value": "57.79億元",
+            "yoy": "-7.31%",
+            "mom": "+15.31%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3003,6 +3115,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3008 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "大立光8月營收50.12億元月增2.76% Q3仍屬市場需求旺季",
               "url": "https://tw.stock.yahoo.com/news/%E5%A4%A7%E7%AB%8B%E5%85%898%E6%9C%88%E7%87%9F%E6%94%B650-12%E5%84%84%E5%85%83%E6%9C%88%E5%A2%9E2-76-q3%E4%BB%8D%E5%B1%AC%E5%B8%82%E5%A0%B4%E9%9C%80%E6%B1%82%E6%97%BA%E5%AD%A3-021953359.html"
@@ -3065,10 +3181,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "641.83億元",
-            "yoy": "+44.08%",
-            "mom": "+32.41%"
+            "period": "2026/09",
+            "value": "553.99億元",
+            "yoy": "+1.97%",
+            "mom": "-13.69%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3083,6 +3199,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2454 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報 - 聯發科(2454)8月營收641.83億元年增率高達44.08%",
               "url": "https://news.cnyes.com/news/id/6603653"
@@ -3203,10 +3323,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "11.34億元",
-            "yoy": "+852.63%",
-            "mom": "+16.8%"
+            "period": "2026/09",
+            "value": "10.73億元",
+            "yoy": "+722.77%",
+            "mom": "-5.40%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3221,6 +3341,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 7610 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "聯友金屬-創(7610) EPS與獲利率分析 - 財報狗",
               "url": "https://statementdog.com/analysis/7610/eps"
@@ -3264,10 +3388,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "24.37億元",
-            "yoy": "+151.07%",
-            "mom": "-15.09%"
+            "period": "2026/09",
+            "value": "24.99億元",
+            "yoy": "+125.09%",
+            "mom": "+2.56%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3282,6 +3406,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 7750 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "新代(7750) EPS與獲利率分析 - 財報狗",
               "url": "https://statementdog.com/analysis/7750/eps"
@@ -3390,10 +3518,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "2.66億元",
-            "yoy": "+58.98%",
-            "mom": "-6.00%"
+            "period": "2026/09",
+            "value": "2.47億元",
+            "yoy": "+79.42%",
+            "mom": "-7.32%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3408,6 +3536,10 @@
             "marginPeriod": "2026 Q2（毛利率40%，創上市以來單季EPS新高3.03元）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6922 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "《電週邊》宸曜第二季EPS3.03元創新高 訂單能見度至年底－工商時報",
               "url": "https://www.ctee.com.tw/news/20260807701716-430201"
@@ -3468,10 +3600,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
+            "period": "2026/09",
             "value": "4.27億元",
-            "yoy": "+98.05%",
-            "mom": "+16.35%"
+            "yoy": "+74.70%",
+            "mom": "+0.06%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3486,6 +3618,10 @@
             "marginPeriod": "2026 Q2 vs Q1（毛利率季減，但營益率季增，費用控管效率提升）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 4576 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "上銀、大銀微系統 Q2營收獲利均報喜－工商時報",
               "url": "https://www.ctee.com.tw/news/20260812701742-430503"
@@ -3546,10 +3682,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "27.08億元",
-            "yoy": "+42.3%",
-            "mom": "+0.98%"
+            "period": "2026/09",
+            "value": "27.2億元",
+            "yoy": "+30.14%",
+            "mom": "+0.45%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3564,6 +3700,10 @@
             "marginPeriod": "2026 Q2（毛利率、營收、獲利均創15季新高）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2049 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "上銀財報／上半年EPS 4.03元 第2季獲利創15季高點－經濟日報",
               "url": "https://money.udn.com/money/story/5710/9688153"
@@ -3616,10 +3756,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "5.46億元",
-            "yoy": "+37.45%",
-            "mom": "+7.29%"
+            "period": "2026/09",
+            "value": "5.75億元",
+            "yoy": "+97.78%",
+            "mom": "+5.30%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3634,6 +3774,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 4979 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－華星光(4979)8月營收5.46億元年增率高達37.45%｜鉅亨網",
               "url": "https://news.cnyes.com/news/id/6601944"
@@ -3681,10 +3825,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "12.04億元",
-            "yoy": "+112.84%",
-            "mom": "+30.48%"
+            "period": "2026/09",
+            "value": "16.16億元",
+            "yoy": "+153.78%",
+            "mom": "+34.24%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3699,6 +3843,10 @@
             "marginPeriod": "2026 Q2 vs Q1（毛利率/營益率未查得公開揭露數字，故留空，不予臆測）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 8996 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－高力(8996)8月營收12.04億元年增率高達112.84%｜鉅亨網",
               "url": "https://news.cnyes.com/news/id/6597818"
@@ -3829,10 +3977,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "8.07億元",
-            "yoy": "-13.83%",
-            "mom": "約-4.72%（較7月8.47億元）"
+            "period": "2026/09",
+            "value": "8.4億元",
+            "yoy": "-19.01%",
+            "mom": "+4.11%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3847,6 +3995,10 @@
             "marginPeriod": "2026 Q2 vs Q1（營益率未查得公開揭露數字，故留空）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 8039 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "台虹1-8月營收67.66億元年減0.91%｜鉅亨網",
               "url": "https://news.cnyes.com/news/id/6597591"
@@ -3898,10 +4050,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "163.32億元",
-            "yoy": "+51.8%",
-            "mom": "+1.25%"
+            "period": "2026/09",
+            "value": "170.68億元",
+            "yoy": "+46.12%",
+            "mom": "+4.51%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -3916,6 +4068,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2327 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－國巨(2327)8月營收163.32億元年增率51.8% | 鉅亨網",
               "url": "https://news.cnyes.com/news/id/6600752"
@@ -3984,10 +4140,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "14.40億元",
-            "yoy": "+33.22%",
-            "mom": "-4.08%"
+            "period": "2026/09",
+            "value": "15.98億元",
+            "yoy": "+27.11%",
+            "mom": "+10.98%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4002,6 +4158,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3026 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "禾伸堂8月營收14.40億、年增33.22% | Yahoo股市",
               "url": "https://tw.stock.yahoo.com/news/%E7%A6%BE%E4%BC%B8%E5%A0%82-115%E5%B9%B48%E6%9C%88%E7%87%9F%E6%94%B614-40%E5%84%84-%E5%B9%B4%E5%A2%9E33-22-070400639.html"
@@ -4139,10 +4299,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "8.72億元",
-            "yoy": "+66.41%",
-            "mom": "-11.55%"
+            "period": "2026/09",
+            "value": "8.77億元",
+            "yoy": "+73.30%",
+            "mom": "+0.59%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4157,6 +4317,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 7788 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "松川8月營收改寫史上次高 將推升Q3創下連4季營收創新高格局 | 鉅亨網",
               "url": "https://news.cnyes.com/news/id/6600705"
@@ -4213,10 +4377,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "56.32億元",
-            "yoy": "+156.3%",
-            "mom": "+3.64%"
+            "period": "2026/09",
+            "value": "68.6億元",
+            "yoy": "+206.47%",
+            "mom": "+21.79%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4231,6 +4395,10 @@
             "marginPeriod": "2026 Q2（毛利率/營益率僅有上半年累計數，無法計算單季環比）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2360 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "致茂法說會／上半年賺逾二股本、EPS 21.27元 CPO 等帶動下半年 - 聯合新聞網",
               "url": "https://udn.com/news/story/7252/9660604"
@@ -4282,10 +4450,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
+            "period": "2026/09",
             "value": "20.48億元",
-            "yoy": "+69.87%",
-            "mom": "—（查證來源未提供8月月增率具體數字，避免臆測不予填寫）"
+            "yoy": "+82.23%",
+            "mom": "-0.02%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4300,6 +4468,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6223 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "客戶需求續強 法人調高旺矽獲利預估值及目標價 - 經濟日報",
               "url": "https://money.udn.com/money/story/5710/9686683"
@@ -4351,10 +4523,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "2.33億元",
-            "yoy": "+25.74%",
-            "mom": "+1.36%"
+            "period": "2026/09",
+            "value": "2.47億元",
+            "yoy": "+33.58%",
+            "mom": "+5.91%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4369,6 +4541,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6683 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "雍智財報／第2季獲利年增近四倍 毛利率站上5成、EPS 6.01元 - 聯合新聞網",
               "url": "https://udn.com/news/story/7252/9682649"
@@ -4412,10 +4588,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "1.57億元",
-            "yoy": "+192.14%",
-            "mom": "+21.16%"
+            "period": "2026/09",
+            "value": "1.56億元",
+            "yoy": "+102.30%",
+            "mom": "-0.56%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4430,6 +4606,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 7828 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【創新服務法說會重點內容備忘錄】未來展望趨勢 20260910 - 富果直送",
               "url": "https://blog.fugle.tw/post/earnings-call-7828-2026-09-10"
@@ -4473,10 +4653,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "17.06億元",
-            "yoy": "+233.37%",
-            "mom": "+6.58%"
+            "period": "2026/09",
+            "value": "12.5億元",
+            "yoy": "+87.72%",
+            "mom": "-26.69%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4491,6 +4671,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6515 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－穎崴(6515)8月營收17.06億元年增率高達233.37%",
               "url": "https://news.cnyes.com/news/id/6599499"
@@ -4547,10 +4731,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "40.80億元",
-            "yoy": "+31.6%",
-            "mom": "+2.2%"
+            "period": "2026/09",
+            "value": "40.71億元",
+            "yoy": "+24.46%",
+            "mom": "-0.21%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4565,6 +4749,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2449 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "京元電子8月營收40.80億元",
               "url": "https://cdnfinance.technews.tw/2026/09/07/kyec-2449-202608-financial-report/"
@@ -4617,10 +4805,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "10.31億元",
-            "yoy": "+150.82%",
-            "mom": "-6.6%"
+            "period": "2026/09",
+            "value": "11.89億元",
+            "yoy": "+90.15%",
+            "mom": "+15.31%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4635,6 +4823,10 @@
             "marginPeriod": "2026 Q2 vs Q1"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6531 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "愛普*8月營收10.31億元",
               "url": "https://finance.technews.tw/2026/09/05/ap-memory-6531-202608-financial-report"
@@ -4682,10 +4874,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "52.19億元",
-            "yoy": "+91.58%",
-            "mom": "-0.51%"
+            "period": "2026/09",
+            "value": "57.29億元",
+            "yoy": "+100.22%",
+            "mom": "+9.78%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4700,6 +4892,10 @@
             "marginPeriod": "2026 Q2 vs Q1（毛利率季減0.2個百分點、營益率季減1.5個百分點；Q1毛利率/營益率由Q2數字反推）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 7769 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－鴻勁(7769)8月營收52.19億元年增率高達91.58%｜鉅亨網",
               "url": "https://news.cnyes.com/news/id/6600843"
@@ -4761,10 +4957,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "31.98億元",
-            "yoy": "+19.58%",
-            "mom": "-5.1%"
+            "period": "2026/09",
+            "value": "33.57億元",
+            "yoy": "+16.13%",
+            "mom": "+4.95%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4779,6 +4975,10 @@
             "marginPeriod": "2026 Q2 vs Q1（毛利率、營益率均連兩季下滑，主因2025年低價原物料庫存於Q1消化完畢，Q2起成本反映當前較高原物料價格）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 3533 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "嘉澤8月營收31.98億元，月增-5.1%、年增19.6% - TechNews科技新報",
               "url": "https://cdnfinance.technews.tw/2026/09/08/lotes-3533-202608-financial-report"
@@ -4857,10 +5057,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "15.28億元",
-            "yoy": "+29.14%",
-            "mom": "+12.37%"
+            "period": "2026/09",
+            "value": "16.13億元",
+            "yoy": "+32.17%",
+            "mom": "+5.57%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -4875,6 +5075,10 @@
             "marginPeriod": "2026 Q2 vs Q1（毛利率季增1.74個百分點、年增9.98個百分點；營益率查無明確揭露數字）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6805 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【公告】富世達 2026年8月合併營收15.28億元 年增29.14%",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AF%8C%E4%B8%96%E9%81%94-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B615-28%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E29-070305751.html"
@@ -5013,10 +5217,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "46.28億元",
-            "yoy": "+10.87%",
-            "mom": "-0.85%（較7月46.68億元）"
+            "period": "2026/09",
+            "value": "51.62億元",
+            "yoy": "+15.94%",
+            "mom": "+11.53%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -5031,6 +5235,10 @@
             "marginPeriod": "2026 Q2 vs Q1（毛利率/營益率查無公開資料；EPS數字取自HiStock單季EPS統計）"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6278 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "【公告】台表科 2026年8月合併營收46.28億元 年增10.87%",
               "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E8%A1%A8%E7%A7%91-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B646-28%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E10-085239080.html"
@@ -5092,10 +5300,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "408.73億元",
-            "yoy": "+59.42%",
-            "mom": ""
+            "period": "2026/09",
+            "value": "403.99億元",
+            "yoy": "+66.13%",
+            "mom": "-1.16%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -5104,6 +5312,10 @@
             "grossMargin": "19.7%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 2345 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "營收速報－智邦(2345)8月營收408.73億元年增率高達59.42%｜鉅亨網",
               "url": "https://news.cnyes.com/news/id/6599372"
@@ -5163,10 +5375,10 @@
         },
         "revenue": {
           "monthly": {
-            "period": "2026/08",
-            "value": "6.38億元",
-            "yoy": "+54.27%",
-            "mom": "+3.86%"
+            "period": "2026/09",
+            "value": "6.52億元",
+            "yoy": "+55.85%",
+            "mom": "+2.11%"
           },
           "quarterly": {
             "period": "2026 Q2",
@@ -5175,6 +5387,10 @@
             "grossMargin": "57.52%"
           },
           "sources": [
+            {
+              "title": "公開資訊觀測站(MOPS) 6510 2026/09 月營收",
+              "url": "https://mopsfin.twse.com.tw/opendata/"
+            },
             {
               "title": "《半導體》精測8月營收連6高 H2拚逐季揚、動能續看升",
               "url": "https://www.ctee.com.tw/news/20260903701983-430201"
