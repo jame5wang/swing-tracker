@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T08:30:00+08:00",
+  "items": [
+    {
+      "summary": "美股晶片股全面承壓，美光重摔3.6%拖累費半與那斯達克，科技巨頭對AI狂潮降溫的示警引發「像賭博」的憂慮，道瓊逆勢收漲但整體氣氛轉弱；台股測試48K支撐，外資同步大舉撤退，公股單日買超412億元進場護盤，記憶體概念股（華邦電、南亞科、群聯、宜鼎）同步承壓。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"}
+      ],
+      "sources": [
+        {"title": "美股收盤變臉！晶片股承壓　美光跌3.6%", "url": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%A4%E8%AE%8A%E8%87%89-%E6%99%B6%E7%89%87%E8%82%A1%E6%89%BF%E5%A3%93-%E7%BE%8E%E5%85%89%E8%B7%8C3-6-224424145.html"},
+        {"title": "科技巨頭示警如賭博！AI狂潮引疑慮　美股4大指數收黑道瓊跌180點", "url": "https://tw.news.yahoo.com/%E7%A7%91%E6%8A%80%E5%B7%A8%E9%A0%AD%E7%A4%BA%E8%AD%A6%E5%A6%82%E8%B3%AD%E5%8D%9A-ai%E7%8B%82%E6%BD%AE%E5%BC%95%E7%96%91%E6%85%AE-%E7%BE%8E%E8%82%A14%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E9%BB%91%E9%81%93%E7%93%8A%E8%B7%8C180%E9%BB%9E-215400556.html"},
+        {"title": "外資大撤退 股匯遇亂流…台股公股救援單日買超412億元", "url": "https://tw.news.yahoo.com/%E5%A4%96%E8%B3%87%E5%A4%A7%E6%92%A4%E9%80%80-%E8%82%A1%E5%8C%AF%E9%81%87%E4%BA%82%E6%B5%81-%E5%8F%B0%E8%82%A1%E5%85%AC%E8%82%A1%E6%95%91%E6%8F%B4%E5%96%AE%E6%97%A5%E8%B2%B7%E8%B6%85412%E5%84%84%E5%85%83-222758792.html"}
+      ]
+    },
+    {
+      "summary": "京元電子重訊確認與NVIDIA International簽訂客戶預付款協議，由輝達先行預付款項、京元電及美國子公司AeternZ在美建置測試產能並為其保留，預付款將以日後服務費用抵減；市場傳出廠址選在德州沃斯堡，整體投資規模上看450億元，是京元電深化對AI龍頭客戶合作、擴充美國先進封測產能的重要布局。",
+      "relatedStocks": [
+        {"code": "2449", "name": "京元電子"}
+      ],
+      "sources": [
+        {"title": "公告本公司董事會決議通過與客戶簽訂客戶預付款協議", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"},
+        {"title": "輝達搶產能1》黃仁勳先掏錢　京元電啟動450億赴美大案", "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxNU1JLdGFreG95VzktTWZ6U1dfcFZ3NGV6UVBZT21TZE90ZVhPampiTUhlNnRkRkx5cG1FMzc1d3RlVUh5amRESElLaWN1Y3VMckhnVWFJM1dPTGhTTGpranA2OE5lOUttd0ltOUNDbVc1MUswR1EyVFNtXzE5eEg1NVdyRUdST0tsODBZTjZRX3hFbXJ6Wnl0a1dmZEpibUhZeldRUjFqLU1oM09lYU5OY3JRblZxd3M0dWFqTjVPeExKWGhCcU9yS3dvOEFOWjNjZlBOazhodkI5X0NsdnJybF9xTElkWnZuOGs4TEg0WTRNOFIyQU94c01aNTJNcUxucFVJUVNuNHBHVHVScVZES2tneElRWl9YbC12LWdSeFRJZHU5YUV3R0dhZTRfOGdudjVPQ2IxaUVuVzRKcjcyYmlTSy1HSlJFN2ZUZXNMS0MteVlFdXlR?oc=5"},
+        {"title": "京元電美國廠攜手NVIDIA大布局！ 傳落腳德州沃斯堡", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5TRVhNb2xhSEd3OWtkYURjZ1FIQ1ZYMm5PS0pGTjh5VlFTeU5aOENvem90OV9sbm5mb3RrQ2F6MGFndWFJUnlkazM3VTJ1NXBSRWFCZFdGcGRuZlVDTUhUSlNvdHNieXpfT0ZR?oc=5"}
+      ]
+    },
+    {
+      "summary": "欣興楊梅一廠10/13下午發生重大工安意外，一名員工維修機台時遭夾傷送醫不治，桃園市勞動檢查處已依法對該廠區課以部分停工處分；公司發布重訊說明目前尚未影響整體生產營運，但仍須配合勞檢調查釐清事故原因並研擬改善對策，後續須留意停工範圍是否擴大及裁罰結果。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"}
+      ],
+      "sources": [
+        {"title": "本公司針對115/10/13工安意外之說明", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"},
+        {"title": "欣興楊梅廠員工遭夾傷重不治！勞檢處勒令部分停工 公司重訊回應", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UNmtCdGtKMkNwajZUU2w3NmRId01CX0Ryci10TDFVbjVwaGctRTlaWjRYakRhSXJrd2RQMElYSXpETUtmSVZqZWtoYm12V1E?oc=5"},
+        {"title": "快訊／員工遭機台夾亡！IC載板大廠被勒令停工 「欣興電子」急發重訊", "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxNd2psT2JtaEdKcnVabTBPa3NrRWtHWEE3LTBqYzVuREpreFVBY2JZc2w0OHE1SkU1N0g0aUNVMUwyQUxqSlFqbjVGVmRMaDk1WHpYTGNZVFc4ZEFNa2tZVC1hU21mRG1jc2IxcVdkM1VBRWJaRXJSWlBoYWs0Q2Q3MjhRVllPWUVZalFyaVV5TVMtUlFpTzJqaG85MG11WGo0T0pQdWRFQ1ZFem43RmFFWU91dlZIb0tkeklBRDZkQkRoM05tWktsZzFkTDIyTHZPZExlRGlhNFFySl92NnowSl90VGhDMG9xNWxDSlc5RGl4STlra2lkSHFoLU90b1dnQTNZMWtQUVpFcWJ3SEliTWJ0c2pXU3lWWk9GZl94SFNETnFqamYwek1fRktlSnZEVzl2X0JvQ3ZfZzBIaTVzUzc3TTNBMm80Vm02bXVDZUZXUlFNUXNfaUdZa3lON05WaHU2bVh2N0xVbHpJWkI5Uzd3ald2RmN4Nkt6Z1dPUUVLOGk2ai1LTjBEUzh0cjI2ZGJN?oc=5"}
+      ]
+    },
+    {
+      "summary": "中國長鑫存儲(CXMT)傳出DRAM技術出現重大突破，引發市場對陸系記憶體廠急起直追的憂慮，南亞科、華邦電、旺宏等台系記憶體廠股價單日重挫逾7%；但南亞科法說會中強調上季獲利已超過2倍股本、毛利率高達85.7%且尚未見頂，顯示公司對基本面動能仍有信心，暫不急於轉進DDR5產線。",
+      "relatedStocks": [
+        {"code": "2408", "name": "南亞科"},
+        {"code": "2344", "name": "華邦電"}
+      ],
+      "sources": [
+        {"title": "長鑫存儲傳DRAM技術重大突破 嚇壞台系記憶體廠！旺宏、南亞科及華邦電均殺逾7%", "url": "https://news.google.com/rss/articles/CBMi2gNBVV95cUxNZ3BOclNOZ2hzWk5nUGFrVlhocEI1dzdBZ3ZoNFJITFpoSS16Vll5Wk5jemI0RW4xV0hUeGkxdnRBNXgxbnNUR0ZteWlfY25JMVA4YTBLbVl1RjUwRndnSEllbkYxdkNGWERmUEYxalN3MThwSktRRHdNSnFzQVFoaXRwVkk1QkFLLVdUZVI5RGMxOWJUb1BzTV9zY0J5cUxkbmFjTFFsX0pwbkVQN0pnSVdHakkyOFMxa3JRX2V1dmxPRE1UdkM3SjlkM29IeEpKX1hsYU8zYzNYS3I1MGk5MEd6bzVQV1Nkc1dUWk9ReVlmR05TOWt0dnJxZHpBYjZUcTY3N3FwdEctcTFaX2pkTmE1WERBY25pMlMwTEZXYUVCeEF3VGFxaTFYbFlVRDlGdnZfdHcxV1ZJUVNCeXVjQ1lZS0pSUFFReEpWTWJuTmptUGVNMnM4QUFDV29xS2JxR0xnRnlsUnZrUjBCVDNwWHl2YW1iaERLLTlvb0tSNXlSOXRKTmJoam00REc2dUZNQWlhUW5ZX1pUak5McFVhUWxNdkhDcGFMY0dic3loTWE2dHNldUFCQlFSUEI0VHM1b25rbkliV0pDRkJXQ09VVW84ODVma3U3a3c?oc=5"},
+        {"title": "南亞科法說／上季賺逾2股本、毛利率85.7%還沒到頂，屏東建3D封測新廠！被問股價太低委屈？李培瑛直回一句", "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQdENNZTRQMmlGRjZPRUthdnR5cDRvT0taenVhRUI0YVVVQnVBRW5DQ0RMYXM2S2RQZE1hRktnYXc3NHNRWWJkejlibDNaYUt0dkR4SGJodmRwN00xMjQydGI3RERYS2w4dmM0WDQ0OVdIb2ZZR1pTWWtTS2pUeUUtNDhETWNaelVhZmYxRUgyeGhWOTRfOHkwUWtGT2NVRUdRNUJiaWR2WV9JTHRNSnNoTlVsRkxEdy0tOWtDOWlad2xsWVpORjVaaGItU0FlYi1FZU80bDFaQUhwVExoTXM0TGRfYVJ1ZktXbFdnaEVGa1dNbFpjaGZhUFFrWU9tV0FqVDNzR1VrU0R4MTBPSFZtbFRWNDUzRC1LeGNVamFFWTkyM2l5X1BxWERtWE1MZnNDNVV1S1hn?oc=5"}
+      ]
+    },
+    {
+      "summary": "欣興、南電、景碩雖一度因「洗產地」傳言股價重挫，但法人分析指出基本面並未改變，AI需求引爆的ABF載板結構性缺貨格局仍在延續、三雄獲利高峰尚未到來，後續仍將持續擴產搶占商機，顯示先前跌勢偏向消息面雜訊而非需求反轉。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"}
+      ],
+      "sources": [
+        {"title": "洗產地利空退散！欣興、南電、景碩全成千金股專家曝「這檔」獲利高峰還沒到：AI引爆結構性大缺貨", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xUVRDR2N4STF5bVI1enJXZm1ybDAxS0lrU1RPWl9FaWF2TnNWdkRWbkw0Q1BWQjZzMl9FWmN4MDhsTTlfbm1vR0tVUXZoQTFwZ3FsWFVDZERLRVd2cTZHMXlVdkJ5TERZSEE?oc=5"},
+        {"title": "ABF三雄又殺一波！欣興跌近6％、南電景碩齊挫分析師翻前2次殺盤：關鍵仍在擴產速度", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBkODlBWnVBbEkxUlJQWENSTlVXanBsMU9Pc0RMbVNDU0trZ1VLSG1CQ3MzbDBIb0RHbFlKdW1JbDdOVXdSNHVwNC1LX2ZlSkpRWF8wVG5VNVhhVTNfLWRaZVFxbFZLTVhnSHc?oc=5"},
+        {"title": "欣興、南電擴產搶商機", "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8xMFh2em5EcnZ3N1M4N1dNdWRiT2o1NzdnTEdTMjFobm1ud1hzb284RjNFY1RMYVhnYUxfOFJnUkZwa2YxQkpzTS1uU3JrcHJnWmxYMTM2NTVoM1FrZ1B3?oc=5"}
+      ]
+    },
+    {
+      "summary": "日月光投控管理層表示封測代工漲價有其必要性，先進封裝需求強勁、CPO預計年底量產，並規劃2027年導入PLP自動化產線；旺矽、穎崴等測試設備廠CPO測試商機展望同步轉正向，合晶也著手擴產搶進矽光子新商機，顯示先進封裝與CPO測試供應鏈正逐步成形。",
+      "relatedStocks": [
+        {"code": "3711", "name": "日月光投控"},
+        {"code": "6223", "name": "旺矽"},
+        {"code": "6515", "name": "穎崴"},
+        {"code": "6182", "name": "合晶"}
+      ],
+      "sources": [
+        {"title": "日月光投控：漲價有必要", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5KV1BNRFlqemdXZzFLcUhjMnVVWHpiUmxKR1pQeERBdEhnaWhHZTZSSDZENExVYWdGeUdjNG55aVVDQVhyX3lFSjJyMk9YVW5taWM4aW1hX1g?oc=5"},
+        {"title": "先進封裝需求旺到不行！日月光投控9月營收881億元連3月登峰CPO年底量產、2027年導入PLP自動化", "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxPRFZYdE5ycEFiWTJ4Yk0xdHNSLTREZ2cyNV84TDg4SDBRdFlVYWZMa01fc2VGTWx6VzV1dVRwcUdKbHU4c2ROUEtNalk1Q09VU2pfcC1lRmxwQ21qWVRpejFpWUdPbmllLXpGRXY3Sno4QWpqZmpwSklXc2Z6T1JoN19qMmZtdjdEXzBkbGZhNkZya21fa0JJbDJXcnhrUHFDOG5aTGEySEVETXoxallrQUhRQmhfN2t2TnRvb3JMa1hQb1dPZEtRWm10SWMxOV9xRUd3V0x0ZGZkLVZHTUpmU1FQbnJMTXNqUFEtMUwzSmV1M2M0dnFpenl2YjlfSC1peGRWNUxFNEJsSjN2cXNhLWFYX0VaeENxb3ZQWS1OR0RMS01vYUZFRlhwZWhwZUpqZVVNYlVQRkwwalY1MnF1OTBQRHM1anR0amFnbHdlOTNPdFhwcGRUdzBNOGx1enRjX0lDbm9PeVpnNjdTNE5LLS1NQWViRDBSMEFkMTlCNGlPVTR3WmUzM09TSk1hYTk5WDlBZndIaS1MbVdZaXZCaW03Z0hZUTV0MEcyczZfZHp1WklraXhZU1liREd6WmdzV1JPQ1dwbHBqZXBtWGlJWlJWNzZob2NuZzduMWlhbDB1bTdvaEt1UUxnZHZRamtyWHVSTnU0d0ZzR1JsRFg3bWNvbWVsV1J6SEZz?oc=5"},
+        {"title": "緯穎、旺矽 營運展望正向", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFdl9udVpsS09uUmRVSlhsdkZpNHpNV05KdHVxSHpVQzlLZ3h4bkZ4QUVYLUY4d3lfYU80dmJlbDhHNVA4WDNvOUZnUzIwbWZFNFBFSGQ4QVprLU9XWG5hZWo1NHhFbjVlWVg0?oc=5"},
+        {"title": "焦點股》合晶：擴產衝矽光子商機 亮燈漲停", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNMlVhM3BZZEpXMUhxTkx3SFNodi15YnBXR19MX2p0dlc0UkV1SVZwejFBdzg1VUZZZi1rNm1iZTh5d2lOX1Z3dUFyTG5jODhWWE1yMlg2dmk?oc=5"}
+      ]
+    },
+    {
+      "summary": "聯茂因訂單能見度滿載而「訂單做不完」，泰國廠一期產能目標在年底前拚翻倍；董座陳進財並表態AI需求談泡沫「真的還太早」，顯示公司對CCL/覆銅板產業在AI高階材料需求帶動下的擴產動能延續抱持高度信心。",
+      "relatedStocks": [
+        {"code": "6213", "name": "聯茂"}
+      ],
+      "sources": [
+        {"title": "\"訂單做不完\" 聯茂泰國廠一期產能拚年底翻倍", "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBla3dicFdldlBzbDNGMW5MNnZVTnRWZC1CcHNUYl9qS0FuUVU0eDFtc21KbFVhWkxqdmJfWE44dEFIdGVjWU5MSk5TNFNHc00yUWtrRnpoMHVkaHU0?oc=5"},
+        {"title": "聯茂擴產訂單做不完 董座陳進財：AI談泡沫「真的還太早」", "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Mem1KNkw2dlFLUjJZMkprbFVMTGswZ196bTloaThDV3RUSTlTWW9jb2RkWWxWU1FLLVdNSGRza296T1FON19FaWZKaTkxUWlERU9FUUNB0gFWQVVfeXFMTUx6bUo2TDZ2UUtSMlkySmtsVUxMazBnX3ptOWhpOENXdFRJOVNZb2NvZGRZbFZTUUstV01IZHNrb3pPUU43X0VpZkppOTFRaURFT0VRQ0E?oc=5"}
+      ]
+    },
+    {
+      "summary": "台積電9月營收報16.06億美元、年增54.6%創新高，AI/HPC需求占營收比重達66%，先進製程持續滿載，公司已將今年營收成長展望上修至逾40%、資本支出規劃上修至600-640億美元；市場調研機構並傳出台積電2奈米、3奈米產能明年中將再擴產逾16-22%，CoWoS先進封裝產能2028年底前上看倍增，反映AI晶片需求持續吃緊整體先進製程與封裝供應鏈。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "TSMC posts $16.06 billion in September revenue, up 54.6% year over year", "url": "https://cryptobriefing.com/tsmc-september-revenue-16-billion-ai/"},
+        {"title": "TSMC Reportedly Targets 22% 2nm, 16.3% 3nm Capacity Boost by Mid-2027, CoWoS to Double by 2028", "url": "https://www.trendforce.com/news/2026/09/14/news-tsmc-reportedly-targets-22-2nm-16-3nm-capacity-boost-by-mid-2027-cowos-to-double-by-2028/"}
+      ]
+    }
+  ]
+}
