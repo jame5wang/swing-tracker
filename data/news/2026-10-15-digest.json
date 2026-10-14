@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-15T07:45:57+08:00",
+  "items": [
+    {
+      "summary": "美國9月CPI數據高於市場預期，點燃聯準會升息路徑疑慮，費城半導體指數重摔逾4%、那斯達克同步走弱，AMD重挫5.73%、輝達與台積電ADR跌逾3%；台指期夜盤重殺853點，台股今日開盤恐失守4萬8關卡，市場也緊盯台積電法說會能否穩住投資信心。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "美股收盤／通膨升息疑慮「美股收黑」　AMD重挫5.73%、台積電ADR跌3.4%",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%A4-%E9%80%9A%E8%86%A8%E5%8D%87%E6%81%AF%E7%96%91%E6%85%AE-%E7%BE%8E%E8%82%A1%E6%94%B6%E9%BB%91-amd%E9%87%8D%E6%8C%AB5-73-224100149.html"
+        },
+        {
+          "title": "〈美股盤後〉美CPI升溫、AI融資疑慮夾擊 費半重摔超4% 台積電ADR跌逾3%",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%BE%8Ecpi%E5%8D%87%E6%BA%AB-ai%E8%9E%8D%E8%B3%87%E7%96%91%E6%85%AE%E5%A4%BE%E6%93%8A-%E8%B2%BB%E5%8D%8A%E9%87%8D%E6%91%94%E8%B6%854-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C%E9%80%BE3-220235513.html"
+        },
+        {
+          "title": "新台幣告別連4黑止血　台積電法說、美CPI成匯市兩大變數",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%91%8A%E5%88%A5%E9%80%A34%E9%BB%91%E6%AD%A2%E8%A1%80-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%BE%8Ecpi%E6%88%90%E5%8C%AF%E5%B8%82%E5%85%A9%E5%A4%A7%E8%AE%8A%E6%95%B8-230500284.html"
+        }
+      ]
+    },
+    {
+      "summary": "美銀分析師指出輝達、超微、蘋果爭相向台積電下單，推升其2027年先進製程產能有望提前達標，2奈米製程營收貢獻比重上看11%，顯示先進封裝與晶圓代工訂單能見度持續墊高，對半導體供應鏈仍屬正向訊號。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "輝達、超微、蘋果爭相下單！美銀：台積電2027年產能有望提前達標　2奈米營收貢獻升至11%",
+          "url": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94-%E8%B6%85%E5%BE%AE-%E8%98%8B%E6%9E%9C%E7%88%AD%E7%9B%B8%E4%B8%8B%E5%96%AE-%E7%BE%8E%E9%8A%80-%E5%8F%B0%E7%A9%8D%E9%9B%BB2027%E5%B9%B4%E7%94%A2%E8%83%BD%E6%9C%89%E6%9C%9B%E6%8F%90%E5%89%8D%E9%81%94%E6%A8%99-221004332.html"
+        }
+      ]
+    },
+    {
+      "summary": "特斯拉執行長馬斯克公開稱讚美光定價合理，但美光股價仍未止穩、連續第5個交易日下跌，反映市場對記憶體族群評價依舊偏保守，台系記憶體供應鏈同步受此氣氛牽動。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "5289", "name": "宜鼎"}
+      ],
+      "sources": [
+        {
+          "title": "馬斯克獨讚定價合理 美光股價仍慘吞5連跌",
+          "url": "https://tw.stock.yahoo.com/news/%E9%A6%AC%E6%96%AF%E5%85%8B%E7%8D%A8%E8%AE%9A%E5%AE%9A%E5%83%B9%E5%90%88%E7%90%86-%E7%BE%8E%E5%85%89%E8%82%A1%E5%83%B9%E4%BB%8D%E6%85%98%E5%90%9E5%E9%80%A3%E8%B7%8C-222003505.html"
+        }
+      ]
+    },
+    {
+      "summary": "法人報告指出台光電、欣興、南電、臻鼎、華通等9檔PCB相關個股訂單能見度已看到2030年；欣興、南電分別砸537億、468億元擴產因應ABF載板缺貨、漲價超乎預期，欣興並正式公告以自地委建方式興建新廠房，工程合約金額達20.85億元；金像電同步宣布泰國廠擴產6倍，華通則積極搶占光模塊商機；臻鼎-KY法說會公布1H26淨利暴增208%創新高，訂單能見度達2028年、資本支出上修逾800億元。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "2368", "name": "金像電"},
+        {"code": "2313", "name": "華通"},
+        {"code": "4958", "name": "臻鼎-KY"}
+      ],
+      "sources": [
+        {
+          "title": "目標價1表看》台光電、欣興、南電、臻鼎、華通等9檔PCB 法人一口氣全評了：它訂單看到2030年",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE96ZFdwc3RUUnNtR1UtbTByVm9MZ3UtaWVOZUFkYWt6TXRyTnczRG9TUWVtcVhOQjJ3eW1mNHZva2libXdsek42MmI4NDgwcFZzazdoc092SjEwZS1TOF9VWGpYZ0o5eHdLaHc?oc=5"
+        },
+        {
+          "title": "AI載板缺貨恐一路到2030年！欣興砸537億、南電豪擲468億擴產 ABF漲價超預期",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MaFAtRVh4Y1dyd25kcnFvZklOZVV2cG9BNDM1dG9HbEVpSUxvcVAwTVZiYXJSeC1aRDZqRmlhNWNpbDM1dHROemthdw?oc=5"
+        },
+        {
+          "title": "本公司公告以自地委建方式興建廠房相關工程（欣興楊梅新廠，合約總額20.85億元）",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        },
+        {
+          "title": "＜財經週報-PCB＞金像電泰國擴產6倍 華通搶占光模塊商機",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBUekZ6elM0eE9qZUNMYTZYbUdjbVZjRU9aQlZXVy1IZkRLRVdyQ2Vra0x6dGI0MkEtUDhRTDhVV1hmb3FzSm05SEZ1aWJFa25sOWViNDRoTlI?oc=5"
+        },
+        {
+          "title": "【臻鼎科技控股FY2026 Q2 法說會】1H26淨利暴衝208%創新高訂單能見度達2028年資本支出上調逾800億",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpX0dqRjJnc0FMM1RpX2pYZlNsUW5TZ1p2OE9ZS3JOdEN2RHI2d05FM1pVZkF3dTEtYTRhSXB1eXNuM3JBblRPczRvYnlOTUg4YUE5eGhhNzRONUZNaE9iZWs3a0RjZw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "CCL覆銅板漲價潮延燒：日系大廠松下宣布CCL價格大漲200%，法人形容「形同淡出一般材料市場」；中國CCL龍頭建滔今年第8度喊漲、單次調幅達15%；台廠台光電、台燿、聯茂同步受惠高階銅箔基板擴產與漲價動能，聯茂更傳出「訂單做不完」，泰國廠一期產能拚年底翻倍，2027、2028年EPS遭法人大幅上修；此外低損耗PTFE新材料需求升溫，台虹藉此切入Nvidia供應鏈。",
+      "relatedStocks": [
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "6672", "name": "騰輝電子-KY"},
+        {"code": "8039", "name": "台虹"}
+      ],
+      "sources": [
+        {
+          "title": "松下CCL一口氣漲價200%！法人稱「形同淡出一般材料市場」，台光電、騰輝將受惠？",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9aSi1tYTJibDlXbkVRTjRwakVDQ2xsOHp3a0FZRjRyYkdKeW9wazlRMFVuVXVjZzktYUtnNnB0TEdPZWdFR2RiS29oRS1GNGpadjlPNTJR?oc=5"
+        },
+        {
+          "title": "CCL漲價潮又來了！建滔今年第8度喊漲15% 台玻、聯茂強攻、騰輝電子-KY大漲",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE11Ri1WLTgyX2pZZHBoN1RmTngweWNaemNvUWF0dUF3MFBHd1VOa0ZaOVM0eGUyZTdzVTQ1WVZZNDFHeE9KakduX0lKRVQ?oc=5"
+        },
+        {
+          "title": "\"訂單做不完\" 聯茂泰國廠一期產能拚年底翻倍",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBla3dicFdldlBzbDNGMW5MNnZVTnRWZC1CcHNUYl9qS0FuUVU0eDFtc21KbFVhWkxqdmJfWE44dEFIdGVjWU5MSk5TNFNHc00yUWtrRnpoMHVkaHU0?oc=5"
+        },
+        {
+          "title": "聯茂 (6213) 2027、2028年 EPS 大幅上修！供給緊缺，漲價超出市場預期",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rdjRXMDk2SWFLc0JLN3g3TnFfS1dtTnRod3hRUktXVHJkcnJmbW9fellObEg3MWlMWVpJQ0JsZnZjcGxabnYxd3owU2wtemswNk0tMnNR?oc=5"
+        },
+        {
+          "title": "新材料要搶舊材料生意？台虹、台郡、亞電走強 分析師揭PTFE量產前「市場忽略1關卡」",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SNkpmZThMRlJxT2dhTm8yQU9fV2R2ZXg0T1ZJZDR4ckpPalotdHpsMzdGMzJDQVJXaGR5bUNWUU1rY1NqSTl1cWRXTUdMQVlSY1JTd0F5ODE1ZDBNWkRnMWRDYXJmZDhPeXc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "智慧能源週與2026 OCP峰會登場，台達電展示SST直流電力解決方案（今年已破百套）及SOFC固態氧化物燃料電池方案（年底試量產），深化AI資料中心電力佈局；光寶科則聚焦輝達800VDC高壓直流架構與液冷散熱核心技術，全年AI業務貢獻比重拉升至3成，顯示電源╱工控廠商持續卡位AI基礎建設商機。",
+      "relatedStocks": [
+        {"code": "2308", "name": "台達電"},
+        {"code": "2301", "name": "光寶科"}
+      ],
+      "sources": [
+        {
+          "title": "〈智慧能源週〉台達電SST直流電力解決方案今年破百套 SOFC預計年底試量產",
+          "url": "https://news.cnyes.com/news/id/6630369"
+        },
+        {
+          "title": "光寶科 全年AI貢獻拉升至3成",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9IRkNWS0k3LTI0RkgydE8wZERERFRNbzNZLTQxVlMyeXpzdUtFQmZPbkdvbGlmdGwwS0FZajkwcnNEdWowTzc1ZUxGYS10eEtQbkZDR2ktQ2I?oc=5"
+        },
+        {
+          "title": "個股：光寶科OCP聚焦輝達800 VDC架構、液冷散熱布局，打造新世代AI能源架構",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbnNESkd3emhHSUhEbDZPUU5fSkppT2otcTU3UmtURWtmaHp3OU1nZWVpeVBjeE1neTNiMTlrbElnRXFLb1R0cEd1M1o0SXM0YUV3M3RWZEk1ZXo2Q0hqNzQzSGM4eEp6eEIzeDhCWlh1dnFnZERIb2JGMUEyMl9mb1R0YkNIeDNv?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "自動化設備廠大量因股價於集中市場觸及公布注意交易資訊標準，依規定公布財務業務重大訊息，顯示近期股價漲勢已引發交易所關注，投資人宜留意後續是否進一步被列為處置股。",
+      "relatedStocks": [
+        {"code": "3167", "name": "大量"}
+      ],
+      "sources": [
+        {
+          "title": "公布注意交易資訊相關財務業務等重大訊息",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "群聯執行長潘健成在科技論壇上指出混合式AI（雲端╱地端並重）應用正快速崛起，並以「買房子」比喻企業自建地端AI基礎建設的趨勢，看好此一趨勢可為記憶體控制晶片與模組廠帶來新商機。",
+      "relatedStocks": [
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {
+          "title": "2026科技論壇／群聯執行長潘健成 混合式AI崛起",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE41Zlk1eFhSQTg1QzJwRDBGTThPcEVvUWFvcGJpcFF6UjBWcGUyWnJNYl9YUHg0MDRSYWZTNEt3UkQ3OTNjTWpPSVJYeFJrM2hD0gFWQVVfeXFMTVdUR19KdHIzTjd5c2tmR1lYWGJZcnJ2YkFweGNpMVlwYUdVUFVEeW1SbEMzdUdOeG1zN2xQbWctVk1TeXFyZmFCMzdYWldYMXlqU0JvQlE?oc=5"
+        },
+        {
+          "title": "群聯搶攻企業 AI 商機 潘建成：地端 AI 就像買房子",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13bVRGdmNHMVJzd0lHNFlSbkpYTnlkSFJRbmlnVi12WndSVlZlSFFmM3VTOEIzcFBhYkx6c2dPOHhyTlpoWkIzbDlsemM?oc=5"
+        }
+      ]
+    }
+  ]
+}
