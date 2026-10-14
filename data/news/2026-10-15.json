@@ -1,0 +1,364 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-14T23:19:58.949697+00:00",
+  "stale": false,
+  "items": [
+    {
+      "title": "新台幣告別連4黑止血　台積電法說、美CPI成匯市兩大變數",
+      "link": "https://tw.news.yahoo.com/%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%91%8A%E5%88%A5%E9%80%A34%E9%BB%91%E6%AD%A2%E8%A1%80-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%BE%8Ecpi%E6%88%90%E5%8C%AF%E5%B8%82%E5%85%A9%E5%A4%A7%E8%AE%8A%E6%95%B8-230500284.html",
+      "source": "台股",
+      "pubDate": "2026-10-14T23:05:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美股收盤／通膨升息疑慮「美股收黑」　AMD重挫5.73%、台積電ADR跌3.4%",
+      "link": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%A4-%E9%80%9A%E8%86%A8%E5%8D%87%E6%81%AF%E7%96%91%E6%85%AE-%E7%BE%8E%E8%82%A1%E6%94%B6%E9%BB%91-amd%E9%87%8D%E6%8C%AB5-73-224100149.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:41:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "【盤前】美CPI高預期4大指數全倒！台指夜盤崩853點　台股今恐失守4萬8",
+      "link": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E7%BE%8Ecpi%E9%AB%98%E9%A0%90%E6%9C%9F4%E5%A4%A7%E6%8C%87%E6%95%B8%E5%85%A8%E5%80%92-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E5%B4%A9853%E9%BB%9E-%E5%8F%B0%E8%82%A1%E4%BB%8A%E6%81%90%E5%A4%B1%E5%AE%884%E8%90%AC8-223000407.html",
+      "source": "台股",
+      "pubDate": "2026-10-14T22:30:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "輝達、台積電ADR跌逾3% 通膨數據加深晶片股賣壓",
+      "link": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C%E9%80%BE3-%E9%80%9A%E8%86%A8%E6%95%B8%E6%93%9A%E5%8A%A0%E6%B7%B1%E6%99%B6%E7%89%87%E8%82%A1%E8%B3%A3%E5%A3%93-222147328.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:21:47+00:00",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ]
+    },
+    {
+      "title": "馬斯克獨讚定價合理 美光股價仍慘吞5連跌",
+      "link": "https://tw.stock.yahoo.com/news/%E9%A6%AC%E6%96%AF%E5%85%8B%E7%8D%A8%E8%AE%9A%E5%AE%9A%E5%83%B9%E5%90%88%E7%90%86-%E7%BE%8E%E5%85%89%E8%82%A1%E5%83%B9%E4%BB%8D%E6%85%98%E5%90%9E5%E9%80%A3%E8%B7%8C-222003505.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:20:03+00:00",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        }
+      ]
+    },
+    {
+      "title": "通膨掀升息疑慮美股收黑 台指期下殺853點、台積電ADR挫逾3％",
+      "link": "https://tw.stock.yahoo.com/news/%E9%80%9A%E8%86%A8%E6%8E%80%E5%8D%87%E6%81%AF%E7%96%91%E6%85%AE%E7%BE%8E%E8%82%A1%E6%94%B6%E9%BB%91-%E5%8F%B0%E6%8C%87%E6%9C%9F%E4%B8%8B%E6%AE%BA853%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E6%8C%AB%E9%80%BE3-221546492.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:15:46+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美股熱門 ETF 揭曉！比特幣、輝達與特斯拉槓桿商品交易熱絡",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%86%B1%E9%96%80-etf-%E6%8F%AD%E6%9B%89-%E6%AF%94%E7%89%B9%E5%B9%A3-%E8%BC%9D%E9%81%94%E8%88%87%E7%89%B9%E6%96%AF%E6%8B%89%E6%A7%93%E6%A1%BF%E5%95%86%E5%93%81%E4%BA%A4%E6%98%93%E7%86%B1%E7%B5%A1-221004183.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:10:04+00:00",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ]
+    },
+    {
+      "title": "輝達、超微、蘋果爭相下單！美銀：台積電2027年產能有望提前達標　2奈米營收貢獻升至11%",
+      "link": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94-%E8%B6%85%E5%BE%AE-%E8%98%8B%E6%9E%9C%E7%88%AD%E7%9B%B8%E4%B8%8B%E5%96%AE-%E7%BE%8E%E9%8A%80-%E5%8F%B0%E7%A9%8D%E9%9B%BB2027%E5%B9%B4%E7%94%A2%E8%83%BD%E6%9C%89%E6%9C%9B%E6%8F%90%E5%89%8D%E9%81%94%E6%A8%99-221004332.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:10:04+00:00",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ]
+    },
+    {
+      "title": "台積電翻空2訊號！看到快跑 孫慶龍重押「大牛股」噴發",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%BF%BB%E7%A9%BA2%E8%A8%8A%E8%99%9F-%E7%9C%8B%E5%88%B0%E5%BF%AB%E8%B7%91-%E5%AD%AB%E6%85%B6%E9%BE%8D%E9%87%8D%E6%8A%BC-%E5%A4%A7%E7%89%9B%E8%82%A1-%E5%99%B4%E7%99%BC-220530620.html",
+      "source": "台股",
+      "pubDate": "2026-10-14T22:05:30+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "〈美股盤後〉美CPI升溫、AI融資疑慮夾擊 費半重摔超4% 台積電ADR跌逾3%",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%BE%8Ecpi%E5%8D%87%E6%BA%AB-ai%E8%9E%8D%E8%B3%87%E7%96%91%E6%85%AE%E5%A4%BE%E6%93%8A-%E8%B2%BB%E5%8D%8A%E9%87%8D%E6%91%94%E8%B6%854-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C%E9%80%BE3-220235513.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T22:02:35+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "通膨走強、AI股遭拋售　美股那指及費半重摔",
+      "link": "https://tw.news.yahoo.com/%E9%80%9A%E8%86%A8%E8%B5%B0%E5%BC%B7-ai%E8%82%A1%E9%81%AD%E6%8B%8B%E5%94%AE-%E7%BE%8E%E8%82%A1%E9%82%A3%E6%8C%87%E5%8F%8A%E8%B2%BB%E5%8D%8A%E9%87%8D%E6%91%94-215929113.html",
+      "source": "國際",
+      "pubDate": "2026-10-14T21:59:29+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "友達ADR14日上漲0.391美元漲幅3.70%折台股35.19元",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94adr14%E6%97%A5%E4%B8%8A%E6%BC%B20-391%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%853-70-%E6%8A%98%E5%8F%B0%E8%82%A135-19%E5%85%83-214604875.html",
+      "source": "台股",
+      "pubDate": "2026-10-14T21:46:04+00:00",
+      "relatedStocks": []
+    }
+  ],
+  "note": "來源：Yahoo股市 RSS（國際財經／台股）自動彙整最新標題並依關鍵字關聯持股，非人工編選，僅供參考，不構成投資建議。"
+}
