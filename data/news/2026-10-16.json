@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-15T23:15:29.806524+00:00",
+  "stale": false,
+  "items": [
+    {
+      "title": "台股最血腥一頁！外資黑化瘋砍3025億「斷檔式登頂」　4檔ETF齊斬10萬張刀刀見骨",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E6%9C%80%E8%A1%80%E8%85%A5-%E9%A0%81-%E5%A4%96%E8%B3%87%E9%BB%91%E5%8C%96%E7%98%8B%E7%A0%8D3025%E5%84%84-%E6%96%B7%E6%AA%94%E5%BC%8F%E7%99%BB%E9%A0%82-4%E6%AA%94etf%E9%BD%8A%E6%96%AC10%E8%90%AC%E5%BC%B5%E5%88%80%E5%88%80%E8%A6%8B%E9%AA%A8-230000187.html",
+      "source": "台股",
+      "pubDate": "2026-10-15T23:00:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美股收盤／道瓊大漲556點、費半連7黑！台積電ADR跌1.8％　日月光重挫5.5％",
+      "link": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%A4-%E9%81%93%E7%93%8A%E5%A4%A7%E6%BC%B2556%E9%BB%9E-%E8%B2%BB%E5%8D%8A%E9%80%A37%E9%BB%91-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C1-8-225500436.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:55:00+00:00",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ]
+    },
+    {
+      "title": "Volvo擴大與輝達合作　2030年前導入新一代自駕技術",
+      "link": "https://tw.news.yahoo.com/volvo%E6%93%B4%E5%A4%A7%E8%88%87%E8%BC%9D%E9%81%94%E5%90%88%E4%BD%9C-2030%E5%B9%B4%E5%89%8D%E5%B0%8E%E5%85%A5%E6%96%B0-%E4%BB%A3%E8%87%AA%E9%A7%95%E6%8A%80%E8%A1%93-225458362.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:54:58+00:00",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ]
+    },
+    {
+      "title": "禾伸堂獲輝達大追單 本季全面啟動漲價",
+      "link": "https://tw.news.yahoo.com/%E7%A6%BE%E4%BC%B8%E5%A0%82%E7%8D%B2%E8%BC%9D%E9%81%94%E5%A4%A7%E8%BF%BD%E5%96%AE-%E6%9C%AC%E5%AD%A3%E5%85%A8%E9%9D%A2%E5%95%9F%E5%8B%95%E6%BC%B2%E5%83%B9-224605036.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:46:05+00:00",
+      "relatedStocks": [
+        {
+          "code": "3026",
+          "name": "禾伸堂"
+        },
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ]
+    },
+    {
+      "title": "鴻海砸173億 擴大美國產能",
+      "link": "https://tw.news.yahoo.com/%E9%B4%BB%E6%B5%B7%E7%A0%B8173%E5%84%84-%E6%93%B4%E5%A4%A7%E7%BE%8E%E5%9C%8B%E7%94%A2%E8%83%BD-224605075.html",
+      "source": "台股",
+      "pubDate": "2026-10-15T22:46:05+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "超級印鈔機再進化！台積電上季獲利猛 每天賺83億",
+      "link": "https://tw.news.yahoo.com/%E8%B6%85%E7%B4%9A%E5%8D%B0%E9%88%94%E6%A9%9F%E5%86%8D%E9%80%B2%E5%8C%96-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E4%B8%8A%E5%AD%A3%E7%8D%B2%E5%88%A9%E7%8C%9B-%E6%AF%8F%E5%A4%A9%E8%B3%BA83%E5%84%84-224315888.html",
+      "source": "台股",
+      "pubDate": "2026-10-15T22:43:15+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "台積電：台南增建一座3奈米廠",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E5%8F%B0%E5%8D%97%E5%A2%9E%E5%BB%BA-%E5%BA%A73%E5%A5%88%E7%B1%B3%E5%BB%A0-224315749.html",
+      "source": "台股",
+      "pubDate": "2026-10-15T22:43:15+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "布局擴大 台積電擬赴德州設晶圓廠",
+      "link": "https://tw.news.yahoo.com/%E5%B8%83%E5%B1%80%E6%93%B4%E5%A4%A7-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%93%AC%E8%B5%B4%E5%BE%B7%E5%B7%9E%E8%A8%AD%E6%99%B6%E5%9C%93%E5%BB%A0-224126397.html",
+      "source": "台股",
+      "pubDate": "2026-10-15T22:41:26+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "AI擔憂促使資金輪動！美股三大指數反彈收紅　台指期夜盤強彈435點",
+      "link": "https://tw.stock.yahoo.com/news/ai%E6%93%94%E6%86%82%E4%BF%83%E4%BD%BF%E8%B3%87%E9%87%91%E8%BC%AA%E5%8B%95-%E7%BE%8E%E8%82%A1%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E5%8F%8D%E5%BD%88%E6%94%B6%E7%B4%85-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E5%BC%B7%E5%BD%88435%E9%BB%9E-222250998.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:22:50+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "財報連6季創高仍收跌！台積電ADR跌近2% AI大廠搶產能競爭白熱化",
+      "link": "https://tw.stock.yahoo.com/news/%E8%B2%A1%E5%A0%B1%E9%80%A36%E5%AD%A3%E5%89%B5%E9%AB%98%E4%BB%8D%E6%94%B6%E8%B7%8C-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C%E8%BF%912-ai%E5%A4%A7%E5%BB%A0%E6%90%B6%E7%94%A2%E8%83%BD%E7%AB%B6%E7%88%AD%E7%99%BD%E7%86%B1%E5%8C%96-222013992.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:20:13+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美股漲跌互現！道瓊漲556點、台積電ADR跌近2％",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%BC%B2%E8%B7%8C%E4%BA%92%E7%8F%BE-%E9%81%93%E7%93%8A%E6%BC%B2556%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C%E8%BF%912-221434186.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:14:34+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "美股正醞釀大牛市 避險基金大咖點名「標普493」接棒領漲",
+      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%AD%A3%E9%86%9E%E9%87%80%E5%A4%A7%E7%89%9B%E5%B8%82-%E9%81%BF%E9%9A%AA%E5%9F%BA%E9%87%91%E5%A4%A7%E5%92%96%E9%BB%9E%E5%90%8D-%E6%A8%99%E6%99%AE493-%E6%8E%A5%E6%A3%92%E9%A0%98%E6%BC%B2-220004578.html",
+      "source": "國際",
+      "pubDate": "2026-10-15T22:00:04+00:00",
+      "relatedStocks": []
+    }
+  ],
+  "note": "來源：Yahoo股市 RSS（國際財經／台股）自動彙整最新標題並依關鍵字關聯持股，非人工編選，僅供參考，不構成投資建議。"
+}
