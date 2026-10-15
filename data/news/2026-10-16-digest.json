@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-16T07:53:27+08:00",
+  "items": [
+    {
+      "summary": "美股道瓊大漲556點，但費城半導體指數連續第7個交易日下跌，台積電ADR跌1.8%、日月光重挫5.5%，資金持續由半導體股轉向其他板塊；台股同日遭外資單日大砍3025億元創史上最大賣壓，台指期夜盤震盪後翻紅，顯示AI狂熱降溫與獲利了結壓力仍籠罩台股及半導體供應鏈情緒。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "美股收盤／道瓊大漲556點、費半連7黑！台積電ADR跌1.8％ 日月光重挫5.5％",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%A4-%E9%81%93%E7%93%8A%E5%A4%A7%E6%BC%B2556%E9%BB%9E-%E8%B2%BB%E5%8D%8A%E9%80%A37%E9%BB%91-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C1-8-225500436.html"
+        },
+        {
+          "title": "台股最血腥一頁！外資黑化瘋砍3025億「斷檔式登頂」 4檔ETF齊斬10萬張刀刀見骨",
+          "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E6%9C%80%E8%A1%80%E8%85%A5-%E9%A0%81-%E5%A4%96%E8%B3%87%E9%BB%91%E5%8C%96%E7%98%8B%E7%A0%8D3025%E5%84%84-%E6%96%B7%E6%AA%94%E5%BC%8F%E7%99%BB%E9%A0%82-4%E6%AA%94etf%E9%BD%8A%E6%96%AC10%E8%90%AC%E5%BC%B5%E5%88%80%E5%88%80%E8%A6%8B%E9%AA%A8-230000187.html"
+        },
+        {
+          "title": "AI擔憂促使資金輪動！美股三大指數反彈收紅 台指期夜盤強彈435點",
+          "url": "https://tw.stock.yahoo.com/news/ai%E6%93%94%E6%86%82%E4%BF%83%E4%BD%BF%E8%B3%87%E9%87%91%E8%BC%AA%E5%8B%95-%E7%BE%8E%E8%82%A1%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E5%8F%8D%E5%BD%88%E6%94%B6%E7%B4%85-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E5%BC%B7%E5%BD%88435%E9%BB%9E-222250998.html"
+        }
+      ]
+    },
+    {
+      "summary": "台積電法說會釋出擴產訊息，宣布台南將加碼新建一座3奈米廠，並評估赴美國德州設立晶圓廠；法人並指輝達、超微、蘋果等客戶持續爭搶先進製程產能，2奈米營收貢獻比重上看雙位數，顯示晶圓代工擴產與先進封裝需求對台灣半導體供應鏈仍具指標意義。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台積電：台南增建一座3奈米廠",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E5%8F%B0%E5%8D%97%E5%A2%9E%E5%BB%BA-%E5%BA%A73%E5%A5%88%E7%B1%B3%E5%BB%A0-224315749.html"
+        },
+        {
+          "title": "布局擴大 台積電擬赴德州設晶圓廠",
+          "url": "https://tw.news.yahoo.com/%E5%B8%83%E5%B1%80%E6%93%B4%E5%A4%A7-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%93%AC%E8%B5%B4%E5%BE%B7%E5%B7%9E%E8%A8%AD%E6%99%B6%E5%9C%93%E5%BB%A0-224126397.html"
+        },
+        {
+          "title": "財報連6季創高仍收跌！台積電ADR跌近2% AI大廠搶產能競爭白熱化",
+          "url": "https://tw.stock.yahoo.com/news/%E8%B2%A1%E5%A0%B1%E9%80%A36%E5%AD%A3%E5%89%B5%E9%AB%98%E4%BB%8D%E6%94%B6%E8%B7%8C-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E8%B7%8C%E8%BF%912-ai%E5%A4%A7%E5%BB%A0%E6%90%B6%E7%94%A2%E8%83%BD%E7%AB%B6%E7%88%AD%E7%99%BD%E7%86%B1%E5%8C%96-222013992.html"
+        }
+      ]
+    },
+    {
+      "summary": "聯電指出8吋晶圓產能連續兩年縮減，加上稼動率回升，成熟製程代工漲價潮正在醞釀，法人預估2027年報價漲幅上看雙位數，顯示成熟製程晶圓代工供需同步吃緊。",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "8吋晶圓產能連兩年縮減，代工漲價潮醞釀！聯電稼動率回升，2027年報價漲幅上看雙位數",
+          "url": "https://news.cnyes.com/news/id/6630828"
+        }
+      ]
+    },
+    {
+      "summary": "群聯執行長潘健成多次公開駁斥「記憶體供需反轉」的市場鬼故事，強調明年只有訂單不缺、產能能見度仍滿；對中國長鑫存儲發表的4F²新架構，他則認為技術落地仍需時間，短期不足以撼動現有供應鏈格局。",
+      "relatedStocks": [
+        {
+          "code": "8299",
+          "name": "群聯"
+        }
+      ],
+      "sources": [
+        {
+          "title": "不要再問缺不缺記憶體！群聯潘健成一句話駁供需反轉鬼故事：明年只有訂單不缺",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE10cWtuR2pPVGtiREZxekREazdFNjU5OWt3TzVQVk5UY0gxdEJwWVR3dFZvN2xyMDlOV3FuQXhYQmRWS3lOTTdnd25yc3U0ZjlaakE?oc=5"
+        },
+        {
+          "title": "評長鑫4F²架構 群聯潘健成：落地仍需時間 市場沒事找故事",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ISF9uUnE5U2xKX2lqQ0JPbHVpbVhPREVoeFhTR0tKdnM2a2E0MHVxNXYtTExpWmNMWWs5TGpmazUyeHpHNVllSzVneWJKakpBSEZET01Pcw?oc=5"
+        },
+        {
+          "title": "群聯 CEO 潘健成談「長鑫震撼」…市場鬼故事",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBja2JzWDhYXzdWTkFQNUpTRjZxX21rREVSN2NUcUF2a21iMVlMeVNOZVJYUW9BQzJ4cmpreXNjNkd6bjNtYkx5aGNEa2tIWHJoeXRfWE42REVXMlNUdWhQbHltaTEwRGJvN25weHlyU0h3VEMxYkF6NFJxRdIBYEFVX3lxTE5ya3M1RF9WQ3BTNVZkbEw0Mm1ZTjZCOGJfNVdHMm1vREw4YWd1VmJKaTA4aDFKbzhkWWxKT0U1T0ZRaTV5amZ2dVRRaTRmek1xcDVyQVk2VUgyU0F1N0YyTg?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "CCL漲價行情延燒，聯茂董座陳進財表態「AI泡沫說法真的還太早」、訂單滿手；台燿、台光電等高階CCL／ABF材料廠同步反映產能供不應求，台虹則受惠輝達PTFE高頻材料需求；臻鼎-KY法說會揭露2030年擴廠目標達59座廠，尖點、大量等鑽針與背鑽設備廠同步訂單滿手，顯示PCB／載板供應鏈漲價與擴產動能同步強勁。",
+      "relatedStocks": [
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        }
+      ],
+      "sources": [
+        {
+          "title": "聯茂擴產 訂單做不完 董座陳進財：AI談泡沫「真的還太早」",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ja1g2MFRWTDV2eWJtM1RpNEhDMVZGLWRZS0JOeUNXVkFQU1g1N1dNZ01mQ09oTUQxY0V2RGl1RkhtMExrNnloeVhrZzhJVll6bTgwdXZJOGE2Z9IBX0FVX3lxTFBvRGR6QTNPaEhGTWttTHd0TG43ZVQzUm5MOVlQY1hzWEZhbTFXRzJOT3NtaVdnZWc2b1pzb0VvRzJSM0s2QnpMTFJXclozemoxYlkzMmpTS0M5NW5Ic0JF?oc=5"
+        },
+        {
+          "title": "【個股分析】台燿：高階CCL大幅漲價，產能持續供不應求！",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54RGZCLUUxTUtoSW1DMG1ScDNnZWNpZnR1UFN4WTFPQi1ZSkMyU1hvT1A4Y2kxeWVRQnNBV2VoVlpjR3NhVzE2ZGpYekdkSEhnMHdUZWEwbGpVcng1R3QtU3JjelFCdHM?oc=5"
+        },
+        {
+          "title": "台光電(2383) 高階材料布局解析：切入ABF載板CCL，挑戰日系材料供應鏈！",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3SzNuT0lPc2VmcWVPR05LeE4xazFKWTBUeGp5YjlObE5hcU5rUXhKYVJBbzVrRUhvUmJkRmxjc1NOTC15UXpJbi1yTEZTNk81UFA5UHJR?oc=5"
+        },
+        {
+          "title": "輝達PTFE題材誰最有料？台郡續漲停、台虹爆量回檔，真正訂單仍要看這一步",
+          "url": "https://news.cnyes.com/news/id/6630911"
+        },
+        {
+          "title": "臻鼎-KY 4958 2026Q3 法說會重點：AI PCB營收年增113%！2030年挑戰59座廠？",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRndySUkyclJsV3pnRlV6aUs5T3FCOTlVN2R6VE5rclhxMllnYVdjRGlMSmVGQXdIRlBIUThVMnZCNkVEQmZnOE5IWXhpaFBlZzlqU3VDVXlPS0JkcHRpci1razg1Z3JBdGJfOVhSYnZlaTZMVWVhZEdoalNzZ3ZFaC1JR0JraGxNUGxlNWxVWFBuZnZzOXc?oc=5"
+        },
+        {
+          "title": "尖點股東會：持續擴產 年底鑽針月產能拉高到4500萬支",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jZnpneGd0ZTM4RG53Y3dDdGVzN1lVVDB5UERjZHZqLXplZ0EtbExNNkJ2dWN6ZndnNXhMYVlJSW5uaXVkR0N1NldMWkNUMk5fQmdQenRjNDk?oc=5"
+        },
+        {
+          "title": "【個股近況更新】大量：背鑽機製程設備訂單滿手，2027 年獲利持續成長",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBkT0U0MjlSR2JaN0xucDZLaS1NNkQ2WFlEWUM0X1dTNmtleGlzYXJvRDJlRGQtdEdoRlA5NWxfdjZaNGU0N0JZTUVscWo3ZUdrbURDaTBqZjJxTXlHUmZjbTVjSEx4Zw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "台達電執行副總鄭平多次公開示警，AI伺服器用電需求已超過電力基建建置速度，供電缺口將是AI產業發展的關鍵挑戰，並透露SOFC固態氧化物燃料電池明年量產作為解方之一；光寶科同步在OCP峰會展示800VDC電源與2.6MW液冷系統，顯示電源／工控供應鏈正積極因應AI資料中心的供電與散熱缺口。",
+      "relatedStocks": [
+        {
+          "code": "2308",
+          "name": "台達電"
+        },
+        {
+          "code": "2301",
+          "name": "光寶科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台達電鄭平：電力基建跟不上 供電缺口成AI發展關鍵挑戰",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZemdkcXZQN3ZPSkJkRnpHQW5hd2toSTAycW1oUy1aZXVPRUR2bm1McXFCU2tYeUcza2lDZVFMTFVOR1BEdXhUTkZraU1CUEdXNVlSc1RVUkVEZ9IBX0FVX3lxTE8zNVM4SGczVTNyU0x6V1hmeUVQU2lEeUNlTFlNcGlhUGxRVXlvMmJ5aXBBUnc2dXhleTFoWVRrTE8zS0V0dHhwUlY1TTJwVkx5R0U2akdsSGpVYVI1Y0Nn?oc=5"
+        },
+        {
+          "title": "台達電深化AI供電商機 鄭平：SOFC明年量產",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jejlIcGIxdVFvS3NPb0pmSjRrUHlUVmhlZ1g2bUFzcWJoLWV4ajgzYzN4VlRPUlloZjlHa1hZWGhuX2hQZUd0Ui1uSDBiNHRSOHVMUmF0blR1MlZxUGVB0gFkQVVfeXFMT1RXWVo0SHNrRXFqZExLYmVLM29sN1BZX0J2VkVGblN6cVgxekRtQkdOM0c3aV9nYUZES1VYY0hSbF9JTzY2bmtkZTYtbzNSRnlIOWN2QXpXYVVtaFJYZEJCMFJUQQ?oc=5"
+        },
+        {
+          "title": "光寶科亮相 OCP，秀 800 VDC 電源與 2.6MW 液冷系統",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNV2FMVGlidXp2bEUyV2s3enlsdWMzYTNOTnpFVGNmcVowcTdoX1BieVp0VmlJSExmejlndzRIaFBiTUQ5Y25SZHAxT0JOZnpNUUVZWlRiZFpqd1k4RWd1bnZjSDBmNUpseHFjSE1PaG1wMnVzcGpNRVZqTHVYY09CSDk3VXY5RmhRdS1YNTZURmR6WTN2SHFiajNWdWE?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "市場傳出字節跳動洽談聯發科AI晶片供應協議，可能成為繼Google之後聯發科第二大資料中心ASIC客戶，若成局將與高通形成直接競爭；IC設計同業世芯-KY法說會同樣看好下半年營收將大幅成長、全年可望創高，顯示台灣IC設計／ASIC供應鏈持續在雲端AI客製化晶片浪潮中卡位。",
+      "relatedStocks": [
+        {
+          "code": "2454",
+          "name": "聯發科"
+        },
+        {
+          "code": "3661",
+          "name": "世芯-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "傳字節跳動洽購聯發科AI晶片 有望成Google後第二家主要ASIC客戶",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LSk9TMGpPdThiRlh3cHlfWTQxZTZjempUM3RlMGxMNjJONDV2MTFEbU0xSTNyRjRicWpDdzRNcHhFN2lTM0FMMzJSVnZnRkk?oc=5"
+        },
+        {
+          "title": "聯發科傳奪字節跳動 ASIC 大單 有望與勁敵高通一較高下",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MdnRVNm1aemhIbV9BSGg1eWllZFVScy1kbXUyX3MzMWJObUg0X3RrY2Z5MThHdThXZExLTHBYT2JORG01cGtrNlRpbEJuMF9xQUNqdnJxUVNEZ9IBX0FVX3lxTFBKV0xUS2E0a3IzblBVU3JHbVpJS19MdWFjYmtsR2FtYXJkaGVtZk1wdmdzbUVKcm1OV3JncWJlUGYtLW5ZTXl2WWRydW5pcG5MazBIZWY2ZWNrYkcyQmln?oc=5"
+        },
+        {
+          "title": "法說會速報》世芯看好下半年營收大增 全年將創高",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ONHEtdXlvdVRHVDdUUWY5SXFOQXFLTjh1WUpNZkE5eWVHTTcweFF4ekZBQzZVVHB6RzU2b1FpMVB3TUtmak5wbXZNdWJYYWRKRTRoZkx3Qi0?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "禾伸堂傳出獲輝達Vera Rubin平台大量追加訂單，訂單能見度塞爆，本季不僅全面啟動漲價，備料量更同步大幅翻倍，顯示被動元件供應鏈隨輝達新平台放量同步受惠。",
+      "relatedStocks": [
+        {
+          "code": "3026",
+          "name": "禾伸堂"
+        }
+      ],
+      "sources": [
+        {
+          "title": "禾伸堂獲輝達大追單 本季全面啟動漲價",
+          "url": "https://tw.news.yahoo.com/%E7%A6%BE%E4%BC%B8%E5%A0%82%E7%8D%B2%E8%BC%9D%E9%81%94%E5%A4%A7%E8%BF%BD%E5%96%AE-%E6%9C%AC%E5%AD%A3%E5%85%A8%E9%9D%A2%E5%95%9F%E5%8B%95%E6%BC%B2%E5%83%B9-224605036.html"
+        },
+        {
+          "title": "禾伸堂輝達 Vera Rubin 訂單塞爆 不僅漲價、備料量還大翻倍",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZSU8xdzZXT0tHZ3dKTXJoVTlTNDNRZU5YVnlONHBfN20yb19PQWJHNTdPNGRwZHdWNW5vYUhPZzVCbTVZaFZsZTdKMk1tcGs4WGc2b052bDJKLUdJcEd5dllfaDg5VU9kUnNOOVBzdTFrd9IBVkFVX3lxTE9lTHhZM3RyLVFoejQtUHdxSjE2MmtqLW1ISGZUTGYzc0dwOXlESUtxX3dsQlctbzdEZmdkN0tUc2ZQdHp3QUdEZnJNd2JYVm5Hbl9LUG53?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "合晶宣布擴產衝刺矽光子商機，消息激勵股價亮燈漲停，顯示矽晶圓廠藉CPO／矽光子題材打開第二成長曲線的動能獲市場認同。",
+      "relatedStocks": [
+        {
+          "code": "6182",
+          "name": "合晶"
+        }
+      ],
+      "sources": [
+        {
+          "title": "焦點股》合晶：擴產衝矽光子商機 亮燈漲停",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNMlVhM3BZZEpXMUhxTkx3SFNodi15YnBXR19MX2p0dlc0UkV1SVZwejFBdzg1VUZZZi1rNm1iZTh5d2lOX1Z3dUFyTG5jODhWWE1yMlg2dmk?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "財經週報報導金像電泰國廠擴產規模達現有6倍，華通則積極搶占光模塊商機，顯示PCB／軟板供應鏈持續透過海外擴產與新應用卡位，承接AI伺服器與光通訊需求成長。",
+      "relatedStocks": [
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        }
+      ],
+      "sources": [
+        {
+          "title": "＜財經週報-PCB＞金像電泰國擴產6倍 華通搶占光模塊商機",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBUekZ6elM0eE9qZUNMYTZYbUdjbVZjRU9aQlZXVy1IZkRLRVdyQ2Vra0x6dGI0MkEtUDhRTDhVV1hmb3FzSm05SEZ1aWJFa25sOWViNDRoTlI?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "日月光投控表態封測產業「漲價有必要」，並持續深耕AI伺服器供電（功率元件）布局，顯示封測大廠一方面藉AI急單漲價提升獲利品質，一方面跨入電源管理領域尋找新成長動能。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "日月光投控：漲價有必要",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5KV1BNRFlqemdXZzFLcUhjMnVVWHpiUmxKR1pQeERBdEhnaWhHZTZSSDZENExVYWdGeUdjNG55aVVDQVhyX3lFSjJyMk9YVW5taWM4aW1hX1g?oc=5"
+        },
+        {
+          "title": "工商證券頭條：日月光投控深耕AI供電",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcFBtNUF2XzNQYkxzRUJfSmMzNXhEV2ltcThWYUxOSV9fbEdsam5GM2EtZDJOQ2dCaXRyNlFORWZ2ay1fOW9BdGx2OWVIUWFkdGFxSnZXQjJxQURITjI5WHdkbllFQkd3TDRPSF9OM2JqelhKR3BhRHRVVlhzVzBVcUVOSGdEc2Vr?oc=5"
+        }
+      ]
+    }
+  ]
+}
