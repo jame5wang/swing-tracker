@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T08:10:00+08:00",
+  "coversWeekend": true,
+  "items": [
+    {
+      "summary": "美股費城半導體指數連8個交易日下挫、單週重摔逾11%創一年半最大跌幅，VIX恐慌指數衝上4個月高點；市場憂心AI資本支出能否兌現獲利、CoreWeave等AI雲端廠債務壓力浮現（博通執行長陳福陽直言「像賭場」），加上中國記憶體廠長鑫存儲技術叫牌、通膨數據升溫及油價走高，美光、三星、SK海力士、希捷等記憶體/儲存股單週重挫二位數，連帶拖累台積電、日月光、聯電ADR走弱。台指期夜盤週一開盤前重挫逾1,100點，為新的一週台股蒙上濃厚賣壓陰影，是這個週末最需留意的焦點。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "美股收盤》恐慌飆升！費半連8黑 台積電ADR續跌逾2％",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5609057"
+        },
+        {
+          "title": "〈美股盤後〉VIX飆升！晶片、記憶體全面下殺 費半單週重挫逾11% 創逾1年半最慘",
+          "url": "https://news.cnyes.com/news/id/6632513"
+        },
+        {
+          "title": "Global chip selloff deepens as AI worries, China competition weigh",
+          "url": "https://finance.yahoo.com/technology/articles/global-chip-selloff-deepens-ai-085657296.html"
+        },
+        {
+          "title": "【盤前】恐慌指數急拉費半狂瀉！台指夜盤崩1144點 台股恐再掀殺盤",
+          "url": "https://inews.setn.com/news/1924726"
+        }
+      ]
+    },
+    {
+      "summary": "桃園地檢署搜索欣興電子2處廠區，約談含1名總經理、1名副總等18名員工，公司重訊說明案件主要涉及PCB產品「產地標示」爭議（俗稱洗產地），而非公司主力的ABF載板業務；此案呼應美國川普政府近期將非法轉運列為「非關稅作弊」查核重點，欣興強調全力配合調查，待檢方正式說明後再發布後續重大訊息。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        }
+      ],
+      "sources": [
+        {
+          "title": "涉貼牌洗產地 檢調搜索欣興電子",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wSXlTUzVjZGx4VjhPRHlVeU9aZWx1NmZwVnpoQ0NlWVV1aEJiemJrc0ZFRDhFVGdtTzBneExDazdtLU1XOUxBZTlkNjdSMkE5R2pwd1dWdjU?oc=5"
+        },
+        {
+          "title": "欣興涉貼牌洗產地 經濟部：非紅供應鏈是目前重要趨勢",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCQzMwYzNTUnNDRU1KZl9pUWxDSDVYUWZycjJOa3RGN0VUTlFON0w0eVoxOGlGQ3JVdTJTSTJQM3RHbWxnUDVsZVE2QWZIRzZFODZfNTBqM04?oc=5"
+        },
+        {
+          "title": "欣興澄清檢調調查 公司:主要涉及PCB產地標示爭議",
+          "url": "https://uanalyze.com.tw/articles/2878754282"
+        }
+      ]
+    },
+    {
+      "summary": "CNBC報導指出，台積電北美子公司執行長每天至少接到10通客戶要求釋出產能的電話，顯示當前CoWoS先進封裝產能絕大部分已被輝達訂走；這則第一手高層發言再度印證ABF載板／先進封裝供應鏈在AI急單下持續供不應求的態勢，與近期法人上修相關個股目標價的論調相互呼應。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6182",
+          "name": "合晶"
+        },
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3167",
+          "name": "大量"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ],
+      "sources": [
+        {
+          "title": "CNBC報導》台積電北美公司執行長每天至少接到10通要產能的電話　絕大部分的CoWoS產能被輝達訂走",
+          "url": "https://tw.news.yahoo.com/cnbc%E5%A0%B1%E5%B0%8E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%8C%97%E7%BE%8E%E5%85%AC%E5%8F%B8%E5%9F%B7%E8%A1%8C%E9%95%B7%E6%AF%8F%E5%A4%A9%E8%87%B3%E5%B0%91%E6%8E%A5%E5%88%B010%E9%80%9A%E8%A6%81%E7%94%A2%E8%83%BD%E7%9A%84%E9%9B%BB%E8%A9%B1-%E7%B5%95%E5%A4%A7%E9%83%A8%E5%88%86%E7%9A%84cowos%E7%94%A2%E8%83%BD%E8%A2%AB%E8%BC%9D%E9%81%94%E8%A8%82%E8%B5%B0-230522688.html"
+        }
+      ]
+    },
+    {
+      "summary": "大立光第三季毛利率滑落至42.2%、創13年半新低，主因11月手機拉貨轉弱，但法說會焦點迅速轉向CPO新業務：董事長林恩平證實光纖陣列(FA)已通過客戶量產認證、試量產線完工，且因客戶要求改為直接供應整合後的FAU（光纖陣列單元），公司近期密集購地擴廠、累計斥資逾80億元建置無塵室專供CPO產線，外資仍喊目標價上看11,000元，顯示市場更看重CPO帶來的第二成長曲線而非短期毛利率下滑。",
+      "relatedStocks": [
+        {
+          "code": "3008",
+          "name": "大立光"
+        }
+      ],
+      "sources": [
+        {
+          "title": "大立光事隔3個月變了！兩場法說爆CPO「3大轉折」 外資不甩毛利率破底",
+          "url": "https://www.chinatimes.com/realtimenews/20261018000016-260410"
+        },
+        {
+          "title": "大立光 Q3 毛利率創 13 年新低 林恩平示警 11 月手機拉貨轉弱、CPO 最快 2027 年量產",
+          "url": "https://statementdog.com/news/17860"
+        },
+        {
+          "title": "毛利率創13年半新低 大立光為何還被外資喊到11,000元？CPO成下一個成長引擎",
+          "url": "https://money.udn.com/money/story/12040/9814425"
+        }
+      ]
+    },
+    {
+      "summary": "奇鋐與富世達針對10月初遭法務部調查局搜索約談的內線交易案發布補充澄清重訊，強調受調查對象僅為少數特定員工、非公司董事長或高層主管，公司並非本案調查對象，對財務、業務及營運均無影響，為先前搜索事件後續的正式釐清。",
+      "relatedStocks": [
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "6805",
+          "name": "富世達"
+        }
+      ],
+      "sources": [
+        {
+          "title": "奇鋐捲富世達內線交易案！調查局曾赴新莊辦公室兩公司都發重訊澄清",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oTW90SEV4LUtWb0Y3ZDR4OWtQaDNZU2xhWkZLNGxjNjI1cDliS3FWTmE3bE9ZU3JhMDNlbVl3ZHgwTWN6VFlZRTA2YzAwLWwyVnh1SFoxMzJXZHc?oc=5"
+        },
+        {
+          "title": "奇鋐澄清內線交易案調查僅聚焦特定員工",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tRFNUTlB4Y0M3M05ONE5RX0JvbGtNZVRudFdySWs2ZWtqZjdiZ3dCMWE2bE5vcG04N3oxTWhyWTlsX0Zzd3M5OEMtQm5IOGxhRUhkdlVWVDltYlJkeEhj?oc=5"
+        }
+      ]
+    }
+  ]
+}
