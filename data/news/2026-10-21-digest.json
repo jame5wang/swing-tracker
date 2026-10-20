@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T07:45:00+08:00",
+  "items": [
+    {
+      "summary": "台積電高雄楠梓F22廠工地20日晚間發生4名工人連同鋼樑自高處墜落意外，造成3死1傷，是台積電近來兩倍速擴廠下工地工安事故頻傳的最新一起，後續工地管理與廠房建置時程受到外界關注。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台積電高雄楠梓F22廠4工人連同鋼樑高處墜落　釀3死1傷",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%AB%98%E9%9B%84%E6%A5%A0%E6%A2%93f22%E5%BB%A04%E5%B7%A5%E4%BA%BA%E9%80%A3%E5%90%8C%E9%8B%BC%E6%A8%91%E9%AB%98%E8%99%95%E5%A2%9C%E8%90%BD-%E9%87%803%E6%AD%BB1%E5%82%B7-223603338.html"
+        }
+      ]
+    },
+    {
+      "summary": "台灣電路板展(TPCA Show)登場，台光電董事長董定宇表示高階CCL供需緊俏看旺到2030年、台灣產能2028年估增三倍，且研判PTFE新材料短期難以取代現有技術地位；聯茂執行長蔡馨暳同步預告高階CCL訂單能見度達2029年，集團月產能3年內可望增加六成，並持續在中國、泰國加碼擴產。",
+      "relatedStocks": [
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台光電看旺高階CCL市況 供需緊俏至少到2030年",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rYVl1MENSbGFHZjNJWHFCNXQxMndzSDlmajlwQUc1QVZLLUxkblFmYjhEUkJtOUlVbGM2ZVQ1V1g0WTVtTHVjaF9Gb2N6OXRzbTRIU0NoUkF1Q240WlE?oc=5"
+        },
+        {
+          "title": "3年內月產能估增6成！聯茂執行長蔡馨暳：高階銅箔基板看旺至2029年",
+          "url": "https://news.google.com/rss/articles/CBMiswNBVV95cUxOa0lyWjJEQm5kWGJpRnN6YnlBamI0V1NySXNVb0FHUVZBYnk4ZkQxazMyM3FEXzNGYzNGRVF3ak5IZlpSWmM3V0w3WVZVbk5iSUdsRkdVNmh2ZFpXS0w3RWRBSkpRcXN6b0FFREhFa3ZTZmJDbHFOM3FKQ3pzNHR1X3YtN1BpRHVLU1JiRzhTSVdwcnBCNHE2dWRJTFNLWGdoZFdsNTQtMEZ6WjlQYXJxQk93RzFHaXQ0ZU9PY0E1MlVFNHN3a0dCMGN0NW55Ny1xaHhnLVlrTGoxZjZqREhnVEVFaTdSQkM0M2t4VTY0cVJBTVpxeFE2SHBwWm1wRm02bjQxQ21vaUdCWW1TYlgzcEdkYnYzeFl2Ym4ybGRRdmp1ZEhrRnFHem9leFNxRlhlV3o2aFNqdURobFo0N0xxMEdZSzd1bE5IRXFNY0JPRUdTVW9xNTVaS1p5S242MlR4RHZnOTJyRTk0bVRldThvbkhtSlhwNDhWZ3RjbW1kNG1yRVhWTnNLT21zNEg3U3VTTVI4MHRsVHRpbVZXWkVRVjh0VkdzR3pmTW9TcHZyekp0cHc?oc=5"
+        },
+        {
+          "title": "聯茂執行長蔡馨暳：公司未來2-3年持續高速成長 高階CCL訂單能見度達2029年",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0RXhvSS05eWlRT1RmbUVialJiV1RucV9iYkpXNEs1ZjVwNERRYVNHd0hiOW1qMkk4aXdobFZRVGxwUldIZ045OFpNS1dsb2xZbnFMS2RHdGJIUE5RRDhv0gFkQVVfeXFMTVhVQUwyekVEcHNKa1ltYWZyVlduMEJPb2FKTWtZckk0bjVycjliZ3NPTlNRajJEd3NxQ0VGcHc4RW1PbVIzUjhYUmZnc01mUjM3VTFqbUthQjFNa2hTNXUybnEtSw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "欣興董事長簡山傑在TPCA展表示，今年AI相關產品營收占比將衝上六成，並示警2027年高階載板材料恐出現二成短缺、設備交期最長將拉長至30個月，呼籲台廠供應鏈應建立三年以上長期夥伴關係，告別單打獨鬥模式。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        }
+      ],
+      "sources": [
+        {
+          "title": "欣興(3037)股價今年翻6.5倍！董座簡山傑：2027年高階材料恐現20%短缺、設備交期遞延，載板恐現缺貨潮",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNUJGZWhTaEM3TGxScVpjNUNPUVhMUElRb2hBN2I4dHoxamw3bHduUFB5U1JJWEtoMUFXTDBlT04yWFNDbnk4b2lTa0pvT2JvOFF0NUY0NGtEaTNFYlNUTTQ0ZTV4RThKVzZzS1VoYjVPVjk0RlJ0R0dYUExsdHVhYw?oc=5"
+        },
+        {
+          "title": "AI客戶期待3年以上夥伴關係 欣興簡山傑：台鏈應告別單打獨鬥時代",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IRTFwNU1ZcGIwbHE4QU5kRkQyS3Q1QUxPNkZIX05yQnlYdVk4ZUp3anpRZzhBLVROUXhzaldYWDk4R3o5ZmtsWl9CMGF1ZWg1ZDFHRkpTSVBjTllDYVhnNDlHQktHNjY3eG1Z?oc=5"
+        },
+        {
+          "title": "漲價擋不住需求 欣興︰今年AI產品 比重衝60%",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1va3dqVUNpbnJ0cDk5YTBZdnFLZGU5ajlPaXZBa0JEOXdyd002cVFSZmJUOEp6ekx1Ym1IanFhLVZmOTFBWVBNQi1La0o2bjlIand5TDVPRWg?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "金居董事長李思賢在TPCA展公布馬來西亞新廠最新規畫：總投資上看百億元，鎖定年產能3萬噸高階銅箔(HVLP4)，預計2028年全數開出，目標明年底高階銅箔營收占比挑戰四成，並看好明年營收有望寫下雙位數成長。",
+      "relatedStocks": [
+        {
+          "code": "8358",
+          "name": "金居"
+        }
+      ],
+      "sources": [
+        {
+          "title": "金居斥資百億 馬國建新廠",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hZVZhajQzVmFpVlc0bE53T25JN2FwZmZhMzJFY25ZRjlLSU9RN2N6N09oOVd5Y0E4VkNZamZpOXNkME1qanJUTmpBZmtSY0NkRHdXNHZuMGtxZF9hTTc2VWQxLU1TU3N0dVQ0?oc=5"
+        },
+        {
+          "title": "金居拚明年績增雙位數",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBEQ2pkNEUtYkR0REpxaDdIVUpiVWdVc2h6bU1WVVAzUURpTWFLUjlDSHJ1TU1wcnlVeVZSWXZuNktoU0F6cF9xcjNVczByYW1Q0gFWQVVfeXFMTU83NDVNUmYzRDB0cmxRQXJ1aWtJS25RQ2N1T3RMLXd4M3dUeTN6a05Ec2g2UTJSX2c2QllxOFhpSVdSLVFuY1A1bHZwbDlaVHl5ZUx4ZlE?oc=5"
+        },
+        {
+          "title": "金居馬來西亞新廠攻高階銅箔HVLP4 年產能3萬噸",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5BY251VTh6VWRvMUhad3JaeWg2SWlfTEJ0SUpTZ3lHTHZEdjFYdFliNEZZV24tRTdwUVE1eWE1aHI3bjhjMVc4UmFBMjc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "尖點在TPCA展宣布擴產計畫，鑽針月產能拚2028年底衝上9000萬支，以因應AI伺服器高階PCB精密鑽孔需求持續增加，用於PTFE新材料鑽孔的專用鑽針也已開發就緒。",
+      "relatedStocks": [
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ],
+      "sources": [
+        {
+          "title": "尖點加速擴產腳步",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYVFtWmNfTllubkEySzd6b2pqYzBQbXhvQ0JfMHQ4LTd5c1hXT1RVbUhVbHF3TnExMGRRX3FlMlFmQ1BoR1lhTlhHb3lGZDlnT0pyeFkzdnMyUE8tanFvMmR2QjhNTEY2SHo4dWNueWxyVS1WcmJTdlFuYmdPR29QQmNhNUk3YW9NWmhFUW8xOEQ2QQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "臻鼎-KY在TPCA展展現AI世代高階PCB完整布局，董事長沈慶芳預告AI需求催出集團29棟新廠房、2028年營收結構恐大洗牌；公司法說並指出上游材料缺口尚未紓緩，看好光模組業務明年營收可望倍數成長。",
+      "relatedStocks": [
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "PCB兆元商戰1》AI催出臻鼎29棟新廠 沈慶芳預告2028年營收大洗牌",
+          "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOLW12SF9TdTdlOUNpWjYzcXVvNjI4bEc3SHNvR2dzWlRBN3Awc0hqdTRFZV9FblkzelE5eHd3cXFmd1g2UGpfekU1eE1jOTNhOGtFXzF6V1RKdzZlcTc5VkdLZ1UtcFNTRGJkNlFfQlZodC05eFhaa0tBSWxPTE9ZSDJ1YklFU3R3NUdJaDhpWW1wRzJ6eVRQWGRnSjBwS3hfTXRORGZWdThtMm9XOGRBaEljNmNtQWEybDFxNzVvYXVJQ0tfVWxqYlJXU0JobEhJWEpyOTF4NDRuR1VkZjV2cXBLLU5GeUtXVmVyWV9DeFFpbGNPdkg0NWpPMmZsOUlXWFotVG80Y1hvTzRQUV84U2NlUDdIMDhHdEU3WGhmakpWcHZHazBTOUZPLXNjbmE5alpUZjF6YXRqUWJGWkEwalRSNG1ERndBaE01TGNvUXFvazFCN290Nnk3eERfQndsNmNCUjRHOHg2N1paVHc?oc=5"
+        },
+        {
+          "title": "臻鼎：上游材料缺口未舒緩光模組明年倍數成長",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBfOGJiUkNKRV9QbHpJemt2N3NIQW9lUUdMTEpJR1h6YlY5Y29OME9IMG1pOUhkR3NCZHdtTkNsMmZLdW03WXhPTk4taDB0enU1dWNpZUhyeHBvV21oQ1E?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "華邦電法說會與威剛同步看好明年DRAM供給將更加吃緊，南亞科法說會也公布第三季獲利創歷史新高；與此同時，美光台灣（桃園、台中廠）勞資爭議持續升溫，工會不滿公司調高獎金方案仍堅持比照15%獲利分潤，業界憂心一旦真的罷工，三星、SK海力士產能已滿難以承接缺口，恐讓本已供不應求的全球記憶體市場雪上加霜。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        }
+      ],
+      "sources": [
+        {
+          "title": "開法說會》華邦電、威剛同看好 明年DRAM供給更吃緊",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DSDBaRk9lSE13UWdHbGJvOFlZU3lZQWhyMnJQN2hfRHJqWUhWMkM0Y09xX1FFZ3BWZzNkdlhtWXdvSFJWaXBhd0E0a0sxalNYZVUwbWpNZGE?oc=5"
+        },
+        {
+          "title": "〈台股盤前要聞〉台灣美光罷工危機升溫、外銷訂單連19紅、股匯雙殺再現",
+          "url": "https://news.cnyes.com/news/id/6634420"
+        },
+        {
+          "title": "美光史上最高獎酬》工會不買單喊罷工 業界憂衝擊供應鏈缺口",
+          "url": "https://ec.ltn.com.tw/article/paper/1770300"
+        }
+      ]
+    },
+    {
+      "summary": "南亞科一名工程師被控擬跳槽中國高薪企業前，涉嫌竊取公司關鍵技術機密，遭檢方依營業秘密法起訴，為近期台灣記憶體產業人才與技術外流疑慮再添一例，凸顯半導體廠商在陸企挖角下面臨的智財安全壓力。",
+      "relatedStocks": [
+        {
+          "code": "2408",
+          "name": "南亞科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "擬跳槽高薪中企 南亞科工程師竊密起訴",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91NzFPWVFfOV9mcUJiUmZadWV5RVEzejdtaFY1bGE3RXdnVE9zcE8wYUx4dDlfNlZhUGhLN2lCSGJBMm1MWTZwc1dsWEVUVDhBOFhYZ2Y4YTA?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "戴爾創辦人麥克戴爾接受訪問時表示目前運算需求「前所未見」，並警告由於晶圓廠興建耗時遠跟不上AI模型進展速度，記憶體與儲存裝置缺貨問題恐於2027年持續惡化、甚至延續到2029至2030年，呼應先前公司高層對硬碟(HDD)、DRAM、NAND缺貨恐持續逾5年的看法。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Michael Dell warns memory shortage could persist for years, touts just-in-time as a cushion against AI slump",
+          "url": "https://www.roic.ai/news/michael-dell-warns-memory-shortage-could-persist-for-years-touts-just-in-time-as-a-cushion-against-ai-slump-10-16-2026"
+        }
+      ]
+    },
+    {
+      "summary": "日月光投控子公司矽品精密10月5日至20日間分四批向愛德萬測試採購營業用機器設備，交易總額約16億元，顯示在先進封裝產能滿載、公司重申漲價有其必要性的氛圍下，封測測試設備投資仍持續加碼。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "代子公司矽品精密工業(股)公司公告取得營業用機器設備達十億元（公開資訊觀測站重大訊息）",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "聯電、世界先進、力積電等成熟製程晶圓代工廠漲價潮持續延燒，呈現價量齊揚態勢，反映市況吃緊下代工廠議價能力進一步提升。",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "成熟製程晶圓代工升價潮延續 聯電、世界先進、力積電持續迎來價量齊揚盛況",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsRmQ5NUd4R1VkSGp6cGJfMmxFMUVQdnM4aG1ZRzFpN2d0a3Bpbmlja2w4aVZfSG5ndmg0dllwMTh3b2w3cFZ6MU83MG5CVXVHNFNWRmVraUNpdjlVQS05SkRZTC1oQkZaeUE?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "台達電近期動作顯示全面強化AI資料中心電力布局：因應AI伺服器機櫃轉用800V高壓直流架構搶攻新電源管理商機，並於德國啟用新研發中心深化HPC與電動車布局，同時在美國底特律打造微電網示範場域、預計明年春邀客戶驗證，呼應其成長動能已從消費性電子全面轉向資料中心的策略方向。",
+      "relatedStocks": [
+        {
+          "code": "2308",
+          "name": "台達電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI機櫃改用800V，台達電究竟多了哪些生意？",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tYkg4UzdvU1V3MDhiSW40OG9NaGtWVFQ2bThkLXoxMGd0MFo0ZmtTNTQtdnZIVjF1eGtMamNzcHJDY0NhYmF4eG5KUnhZRnQ1TldqZHBWT3RCbGc0eUduNUx1Nzhodw?oc=5"
+        },
+        {
+          "title": "德國新研發中心啟用 台達電強化HPC、EV布局",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBiT0NRQ0l2MmU2V0U5Q1ZSM3BzeWtwUU5mdWplVTNBcmJMZkNFSkZINm01dHp4UW1jY2NuVGxZRjZ5cWRBMjJnUGp3cWZ2cTVSY0FIYXFER2g?oc=5"
+        },
+        {
+          "title": "台達電底特律微電網 明春邀客戶驗證",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFQVZrY1ZEYi1ucWNJUWhfdlpyeWhoV1dSRGl4LUxiVVN1N1BWYmVUSGd3NFhNRDB6Y2N3dGhVZk1RRjBUUFBfVXNVbFpRdmNYOFJDVG5sbkg3eDDSAVtBVV95cUxQRUFWa2NWRGItbnFjSVFoX3ZacnloaFdXUkRpeC1MYlVTdTdQVmJlVEhndzRYTUQwemNjd3RoVWZNUUYwVFBQX1VzVWxaUXZjWDhSQ1RubG5IN3gw?oc=5"
+        }
+      ]
+    }
+  ]
+}
