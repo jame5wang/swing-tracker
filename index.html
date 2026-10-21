@@ -86,6 +86,10 @@ main{max-width:720px; margin:0 auto; padding:18px 16px 60px; position:relative;}
 .macroLight.riskYellow{color:var(--sell); background:var(--sellBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--sell) 35%, transparent);}
 .macroLight.riskRed{color:var(--stop); background:var(--stopBg); box-shadow:0 0 0 1px color-mix(in srgb, var(--stop) 35%, transparent);}
 .macroLight.riskGray{color:var(--mute); background:var(--panel2);}
+.macroLights{display:flex; align-items:center; gap:6px; flex-wrap:wrap;}
+.macroLights .macroLight{white-space:nowrap;}
+.macroLight .mlScope{font-weight:600; opacity:.72;}
+.macroReasons .mrScope{font-weight:650; color:var(--ink);}
 .macroBody{overflow:hidden; max-height:3000px; transition:max-height .25s ease, opacity .2s ease; opacity:1;}
 .macroCard.collapsed .macroBody{max-height:0; opacity:0;}
 .macroReasons{font-size:12.5px; color:var(--sub); margin-top:8px; line-height:1.6;}
@@ -833,10 +837,10 @@ function computeMarketBreadth(){
   });
   if(total===0) return null;
   const pct = weak/total*100;
-  let level='green', label='多數追蹤股票站上20日均線，內部結構健康';
-  if(pct>=BREADTH_RED_PCT){ level='red'; label='多數追蹤股票同步跌破20日均線，屬系統性轉弱期間'; }
-  else if(pct>=BREADTH_YELLOW_PCT){ level='yellow'; label='部分追蹤股票轉弱，留意是否持續擴散'; }
-  return {pct:Math.round(pct*10)/10, weak, total, level, label};
+  let level='green', label='多數追蹤股票站上20日均線，內部結構健康', short='結構健康';
+  if(pct>=BREADTH_RED_PCT){ level='red'; label='多數追蹤股票同步跌破20日均線，屬系統性轉弱期間'; short='系統性轉弱'; }
+  else if(pct>=BREADTH_YELLOW_PCT){ level='yellow'; label='部分追蹤股票轉弱，留意是否持續擴散'; short='部分轉弱'; }
+  return {pct:Math.round(pct*10)/10, weak, total, level, label, short};
 }
 async function loadTechnical(){
   const json=await fetchJson('data/technical.json');
@@ -1126,7 +1130,16 @@ function renderMacroCard(){
   const el=document.getElementById('macroCard');
   if(!el || !macroData) return;
   const rl=macroData.riskLight||{level:'gray',label:'資料暫缺',reasons:[]};
-  const cls='risk'+rl.level.charAt(0).toUpperCase()+rl.level.slice(1);
+  const riskCls=lv=>'risk'+lv.charAt(0).toUpperCase()+lv.slice(1);
+  const usCls=riskCls(rl.level);
+  // 標題同時放「隔夜美股」與「台股廣度」兩顆燈：國際燈號只看前一晚美股的單日／5日變化，
+  // 美股一平靜就會回綠燈，台股卻可能仍在系統性下跌（2026-10-21 就是隔夜美股綠燈、台股廣度紅燈 57/72，
+  // 卡片收合時只看得到「風險偏低」容易誤判）。卡片左側色條取兩顆燈中較差的那顆。
+  const breadth = marketBreadthData;
+  const bCls = breadth ? riskCls(breadth.level) : '';
+  const LV_RANK={gray:-1, green:0, yellow:1, red:2};
+  const cardLevel = (breadth && (LV_RANK[breadth.level]??-1) > (LV_RANK[rl.level]??-1)) ? breadth.level : rl.level;
+  const cls=riskCls(cardLevel);
   const idx=macroData.indices||{};
   const names={dji:'道瓊',sp500:'S&P500',nasdaq:'那斯達克',sox:'費半',vix:'VIX',dxy:'美元指數',tsmAdr:'台積電ADR'};
   let gridHtml='';
@@ -1149,8 +1162,6 @@ function renderMacroCard(){
   const eventsHtml = events.length
     ? `<div class="macroEvents">近期財經事件：${events.map(e=>`${e.watch?'🔥':''}${e.date} ${e.name}（${e.daysAway===0?'今天':`${e.daysAway}天後`}${e.tpeTime?'，'+e.tpeTime:''}）`).join('、')}</div>`
     : '';
-  const breadth = marketBreadthData;
-  const bCls = breadth ? 'risk'+breadth.level.charAt(0).toUpperCase()+breadth.level.slice(1) : '';
   const breadthHtml = breadth
     ? `<div class="breadthRow ${bCls}">
         <span class="breadthLight ${bCls}">${breadth.label}</span>
@@ -1201,10 +1212,13 @@ function renderMacroCard(){
     <div class="macroCard ${cls}${macroCollapsed?' collapsed':''}">
       <div class="macroHead" id="macroHeadBtn">
         <span class="macroTitle">盤前國際總經簡報${macroData.stale?'<span class="macroStale">（資料為上次成功結果，非最新）</span>':''}<span class="macroCaret">▾</span></span>
-        <span class="macroLight ${cls}">${rl.label}</span>
+        <span class="macroLights">
+          <span class="macroLight ${usCls}"><span class="mlScope">隔夜美股：</span>${rl.label}</span>
+          ${breadth ? `<span class="macroLight ${bCls}"><span class="mlScope">台股廣度：</span>${breadth.short} ${breadth.weak}/${breadth.total}</span>` : ''}
+        </span>
       </div>
       <div class="macroBody">
-        <div class="macroReasons">${(rl.reasons||[]).join('；')}</div>
+        <div class="macroReasons"><span class="mrScope">隔夜美股：</span>${(rl.reasons||[]).join('；')}</div>
         ${breadthHtml}
         ${gridHtml?`<div class="macroGrid">${gridHtml}</div>`:''}
         ${eventsHtml}
