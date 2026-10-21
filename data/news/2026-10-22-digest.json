@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T07:42:50+08:00",
+  "items": [
+    {
+      "summary": "輝達在GTC活動親自曝光全球AI供應鏈擴產合作細節：欣興將與揖斐電、三星電機等夥伴在未來3年把高階ABF載板產能提升2.5倍、測試產能兩年內翻倍；京元電將赴美新設廠、目標2027年4月量產；日月光子公司矽品的CPO先進封裝產能目標在2027年較現在增加15倍。相較之下，景碩雖同樣拿下輝達急單、目標2029年AI載板產能衝上8000萬顆，擴產腳步卻意外卡在廠地不足的新瓶頸，顯示即使同為受惠股、擴產進度仍有分化。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "2449", "name": "京元電子"},
+        {"code": "3711", "name": "日月光投控"}
+      ],
+      "sources": [
+        {"title": "影／GTC背板股名單來了，不只台積電，鴻海和碩也入列！輝達攜手欣興京元電矽品擴產，黃仁勳曝合作模式", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc2NDdDNiY1hEYkFEWVVfRTUyQkV2UEUtX0U3ZzlySDZOQkFnN0xnbGVzb05qUnB6N21COU8zelpVbmFzeW9LUDQ4T3RvMGRqTjF2eG05UjQxYWF3c1VESEpkczh3UGt4MEhhajdBZ1duTW1sMUtuZDY2VUN2N0o2VA?oc=5"},
+        {"title": "載板太缺了！輝達攜手欣興、揖斐電、三星電機未來3年載板產能提升2.5倍", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5adzI3TndwSDNSOWlaNmtqR0RGWTdXM0c3ODBIWUVIM2VRV1NjT04ydlAwdVkxTmp4VEYweDAzWm1YTFItVW1ha3AzcWk?oc=5"},
+        {"title": "景碩AI載板產能拚翻倍！2029衝8000萬顆 再擴產卻遇「缺地」難題", "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTzhiQ0p2OVBiano0Ny15Z2tLSVE2MC03V3dvWC0xWmJLMUtNd3JDQUpNMHZvbk9qRWRZclhqYWpaY3VJSnpPMG94ME9NWE1WZ1NnR3VoTm10a0JvZk9NcTNqcHZTazRiRmI1MWIyVllkdUwxYXQ4ZHhoQmk3VzVNSFRB?oc=5"},
+        {"title": "輝達支持京元電美新廠明年4月量產 攜矽品攻CPO光學引擎", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZUmd5bTVPTzBHbDY5SzNjTnlTSGtRWjVpOUhWbldtbHk1ZkptWHBLMld0QjU3SnFUSk5rakNOb3RpN3lnUVhsSHFydzFyQmlicmNWZnREbmxNQdIBX0FVX3lxTE5nTGRnTHR4TEszTEQwRTJYa0Vad2tCZHJBbGRFbHlzWmh1QzlPS05qQjB5bkdLWEsteU5Nd2N3Q1pnTWR2ZWFvaFlJanhVSDRETDFzTHRIYldlMjY3Ymx3?oc=5"}
+      ]
+    },
+    {
+      "summary": "TPCA展效應持續發酵：金居宣布加碼投資百億元在馬來西亞新建高階銅箔(HVLP4)廠，並公布9月自結獲利年增89%、EPS達0.8元；南電BT載板重啟漲價，毛利率估由0.22%一路挑戰30%；臻鼎總經理簡禎富再度強調「全球規模化量產能力」是高階PCB競爭決勝關鍵，集團22棟新廠興建中、另9棟規劃中。市場估整體PCB缺料比例恐達四成，台光電、聯茂、金居、臻鼎、華通等廠訂單能見度已看到2030年。",
+      "relatedStocks": [
+        {"code": "8358", "name": "金居"},
+        {"code": "8046", "name": "南電"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "4958", "name": "臻鼎-KY"},
+        {"code": "2313", "name": "華通"}
+      ],
+      "sources": [
+        {"title": "金居自結9月獲利年增89%、EPS 0.8元 擬再投資百億新建高階銅箔廠", "url": "https://news.cnyes.com/news/id/6635020"},
+        {"title": "南電(8046)毛利率從0.22%挑戰30%！BT載板重啟漲價、1.6T放量，2029年新廠接棒", "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96el9yTEJBWXZ2YzdiMGZSRGxnUURONktTWExpNHVDLTJBdXdlbXVhZG5WcXBqZ0NXdEt5VUZVbmdJTXlRcEVHeUJ6bnNoaTg5MXI3SWlR?oc=5"},
+        {"title": "臻鼎總經理簡禎富：高階PCB競爭升級 全球量產能力成決勝關鍵", "url": "https://news.cnyes.com/news/id/6635035"},
+        {"title": "TPCA展》PCB缺料恐達40％！台光電、聯茂、金居、臻鼎、華通...5檔PCB誰最有料？它訂單滿到2030年", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1mLXhiZFhJcXlmZWg4SGhySzlXbzVSU08ybTJ3RkFpR3JTeUJ0NmJSUHA4VlhtNmFxWC1uNzNxbHlhaXloeElOQ2lzYnF4M0VFYU5XTndwM3NvcjMwbGc2VVhEZ2dhWmdnenc?oc=5"}
+      ]
+    },
+    {
+      "summary": "聯發科法說會將至，市場傳出其短線產能布建出現雜音，但法人仍普遍看好其今明兩年AI PC與手機晶片動能，多數維持正向評等，反映市場對其長線競爭力信心未減。",
+      "relatedStocks": [
+        {"code": "2454", "name": "聯發科"}
+      ],
+      "sources": [
+        {"title": "法說關鍵期！短線產能有雜音 法人力挺聯發科目標價5,500", "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOY3A0TndWZ05XbUxYZDBwb1BFR3R3cXVLbHlyQWROc0gyX1RKNXhLeEpQczFzR2F4ZV9PSUlCZ1JKYXVTdEN0UFpQazFmLU9tOVlLNHlvNkNscE8xaWNKR08zMnFHZGZuQkQ3bjF5b0xHdnRfdVpfcXVrYWtHU1dUbDV3NDdndmVvR3VPYTItaE1YZmxpa3V2ekxnLVRsZ080aGFwbHItM3dLNWtuaHlKMXJ1cmhaVktkYzIxdXVBeUc5bFJQc2JWRkJPNnVJTlc0cExLZlJXV3lhcUotdmRka2JtNGVsU2J6R281TE9tLVZaRDZZT1JuamNQU3IzYzdQS1BoTHVXQUhSdkQ0eTVCbGUwZnNEcEJ5UWs2TU8wemplbE5yb0wzME1qdWppTEFMQ0VDQzJGSnRTU2pVMlJPejNyYzRXa1pxWTNxQ3poaHgyYVN6azJRbDA3NjVFMDN1R3puZQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "矽晶圓族群近期出現久違的轉強訊號：環球晶表示目前12吋矽晶圓產能滿載、8吋急單持續增加，報價後市看漲；合晶同步受惠矽光子擴產題材走強，顯示停滯已久的矽晶圓報價行情可能正要啟動。",
+      "relatedStocks": [
+        {"code": "6488", "name": "環球晶"},
+        {"code": "6182", "name": "合晶"}
+      ],
+      "sources": [
+        {"title": "環球晶：12吋滿載 8吋急單續增", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jb3lYQUV6MXUxZ21oaVFfeHZ2N3BBR0N1cnQ5NmxsdW1wMFFRZ1pQb2FXaGlDbGpKUFM3UWtxaVFrQTlra1YxQWRYeWFfMmZDV2pOZVBBUWY?oc=5"},
+        {"title": "矽晶圓突然醒了！環球晶亮燈領軍 合晶、中美晶跟著噴，報價漲風才剛吹起？", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBKM1JOSnVvMHhxdTUtYl9IOWtNZXNpc2lOc3UtVGxWNllCNGJINDlmeVZmeHZCVm1Hc1BOOU5XVDROQjUzMG5nVUZsZGc?oc=5"}
+      ]
+    },
+    {
+      "summary": "記憶體供應鏈持續吃緊：市場傳出超微(AMD)啟動新一波記憶體掃貨備貨，力成、群聯可望同步受惠；與此同時，中國長鑫存儲發表的4F²新DRAM架構，開始被市場拿來檢視是否會衝擊南亞科、華邦電既有的技術優勢，但多數看法認為短期真實供需缺口仍是主旋律，技術替代威脅尚屬次要變數。",
+      "relatedStocks": [
+        {"code": "6239", "name": "力成"},
+        {"code": "8299", "name": "群聯"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "2344", "name": "華邦電"}
+      ],
+      "sources": [
+        {"title": "超微啟動新一波記憶體掃貨 力成、群聯樂透", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB5RDRNVUVPaGQ4bWVqTVNqLUsyZE90WEpSLTQyOVVsbS1zdTFMcndReEpRTFY5QUhUVDBXNGNieTg4NmY5ZDg1bmxWUU0?oc=5"},
+        {"title": "長鑫 4F² 是什麼？DRAM 新架構衝擊南亞科、華邦電？拆解 2027 記憶體供需真威脅與假議題", "url": "https://news.google.com/rss/articles/CBMitgRBVV95cUxPeEN1Z0JfcjVmdWstMFNXUFIwY0dzazk4Y1FUOFZqRkJ4OUFBS2JtU203OS1keUtWSE0yZ3RiSndaUGhfb0U1enBaV1ZYaVhKNTE0RU91ZFFkVjVfZ3RwWHVxXy1iZERvQ1ZPQkRMUndaWUgxYzI5RS15UTVCdjE2dUZMa1R2UTQzWUM2ODRLLWxoQzNvRHhodzItX1JPbmQwdW0xRHdVMGhZV3pzdWUzODBaVHdSaVRkUERQS2hQOGlydVZ0dG5udDZOZVh1ZXRWS2RXWmc0eFZDUlJhdVgyRFRKUVFYM2RhT3JxeXRRVlktR1BXcm90elRINFJWclQyeDBGcVdzVjVGSXpISmdUejNCWW5SZXB3WEE5NkZGSGFTZzU5Qm1qZlc1VEM4Y3o1ZV83M3o0TVlSd0hzdVZjNXdnLVlpUGRhbmZsMWlTYUxHOGhYTVpCc1dlUWdMalNsUHBzRkRZcndGOXpCV3AwYzZmbFZxeEhMUkgtV2t5QmFPbnkxc2RZVE1XZnRPMDJxMkpiclNlTXlaRGJOSVRpN1lBeUxGSVZUSFp0SW9mUlRLaGdHbjZoSWJKWmhxMzBTcE5SZHJISmxKdUhLS25ESUJhV3N6VW1TTDR5Q3ZjVE8wbVRlTlpKV28tY3E1clg3ZkR0VlIwekhVa1Q4Sk1nbElkX2JnNkN5Q3ZNMEpjVHRxVFptSzQ2Zk1pd1ZJYTlCck1XM29pYUd1RTFYeDZkeXRSSV9HUQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "被動元件搶搭輝達外溢行情：市場傳出輝達新一代Rubin平台相關MLCC追加訂單恐翻倍，國巨、禾伸堂可望受惠漲價動能、禾伸堂並打入南韓車廠供應鏈；惟同時傳出中國被動元件廠已打入戴爾、惠普驗證，2027年台廠是否因此遭分單尚待觀察，為這波行情增添變數。",
+      "relatedStocks": [
+        {"code": "2327", "name": "國巨"},
+        {"code": "3026", "name": "禾伸堂"}
+      ],
+      "sources": [
+        {"title": "輝達Rubin追單傳翻倍！禾伸堂啟動漲價卻收黑 國巨、華新科、凱美同步承壓", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9XVEtfRGJTb0FJVUNHbC1BTzRTdWZFWVd6S19kdHVWb2xuaFFpSVhmV1FtQ2d6a1FmTkNtODNNTkZPVzhLUS1EeWJwV1M?oc=5"},
+        {"title": "陸廠打進戴爾惠普驗證！國巨華新科會不會被分單？看2027年", "url": "https://news.google.com/rss/articles/CBMiygNBVV95cUxNaUJZNmRrR2V0c0NqYUJLa3RhaTMtLVQxQ3FZNTBwUWZxRUYweXprQWtxUjRjdWpLOFlza21idE94aUN0bC1MaXZOOHgxOWwzaGZyLW42eV8zUWY2MEpzS19qMXVSRXl2blVsbk1ydHRjS3RUNmhwVXlWTmNURlplWDNrNW9OM3NNa2VjZWxmMm1fQmhidHlvY05GV3l2ME9ibFY5V3B0Ykg1akFEQUt6c0V5OTJYUE1WNG1FcmJtM2hYVWFEdXpvRnFkVnhsaFhMdWlMMkJZaXVUNXlFU0hpLTRoekpMV0JPeDVQVFVDVFhQMzdHMGFSTWZWT2V0VlBmRExJWlcxaVcydVRKXzM3a202YUJ1VWtSU3p5U2hJNTFvcTNseVE0Yk80eDcwd1UtNjZnSWFUbVR2eDIwNW9DQVpGc0VhSGJOVEpKSGliUnVWWWZhVGo3Mm9JeklnbWJ0ZUwwaHlYUy13UkVxdVhoaTR1eW42Z29rWm5wdTY4cUdjUVpzS1ZmNjBSN0gxcGNaZGZqUGY0LVFfNndRMWxUMkhaZndEN204OXRZMjJrenZPd0RUSTMwR0hXdmJJaFVSX3AxUXZKUFp1Zw?oc=5"}
+      ]
+    },
+    {
+      "summary": "聯亞取得美系大廠長期訂單合約，宣布投入近23億元擴產，鞏固其在光通訊元件供應鏈的地位，呼應AI資料中心對高速光模組零組件的強勁需求。",
+      "relatedStocks": [
+        {"code": "3081", "name": "聯亞"}
+      ],
+      "sources": [
+        {"title": "獲美系客戶長約 聯亞砸近23億擴產", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vdlgyYjdhSkJTZFI2WUdEaFNVblI2b3doWVFXdGxKZG5IY0xmdVpFRURoNVdIdHNLb1ZWVGlJZ09UVjljYjhNMW5WZUdTVDFtTlFaY3hCd3g?oc=5"}
+      ]
+    },
+    {
+      "summary": "財經週報報導指出，金像電規劃泰國廠產能擴大6倍以因應伺服器PCB訂單，華通則以高階mSAP製程擴產搶占光模塊商機，顯示台廠PCB供應鏈持續朝高毛利、高技術含量產品升級。",
+      "relatedStocks": [
+        {"code": "2368", "name": "金像電"},
+        {"code": "2313", "name": "華通"}
+      ],
+      "sources": [
+        {"title": "＜財經週報-PCB＞金像電泰國擴產6倍 華通搶占光模塊商機", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBUekZ6elM0eE9qZUNMYTZYbUdjbVZjRU9aQlZXVy1IZkRLRVdyQ2Vra0x6dGI0MkEtUDhRTDhVV1hmb3FzSm05SEZ1aWJFa25sOWViNDRoTlI?oc=5"},
+        {"title": "華通高階mSAP擴產 新動能", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA0MjNyRnlPTUtvX3BTU1VsdG02MnpEbmprRXZHSHdHV0c0NnVQRlFWeEVlZ2FKQnpuSWVvQUJfVElfQUVQYUs4bjFmUzNmWDl5VW5zM3FxWHAyZHNzVFpBclNuVUZ0VTRSRlFN?oc=5"}
+      ]
+    },
+    {
+      "summary": "輝達發表可14天快速部署的模組化AI工廠方案DSX POD，台達電、鴻海、廣達等6家台廠入列合作夥伴；AI資料中心電源架構同步加速轉向800V高壓直流，台達電、光寶科雙雄領軍搶占新賽局。惟台達電近期遭美系電源廠Vicor向美國國際貿易委員會提起337條款專利訴訟，若最終裁定不利，不排除面臨美國進口限制風險，為其AI供電布局添上變數，值得後續留意訴訟進展。",
+      "relatedStocks": [
+        {"code": "2308", "name": "台達電"},
+        {"code": "2301", "name": "光寶科"}
+      ],
+      "sources": [
+        {"title": "輝達發表DSX POD AI工廠 鴻海、台達電等6台廠入列合作夥伴", "url": "https://news.cnyes.com/news/id/6635276"},
+        {"title": "AI吃電怪獸，800伏特電源革命開跑！光寶科、台達電...雙雄領軍34家台廠搶攻新賽局", "url": "https://news.google.com/rss/articles/CBMihAVBVV95cUxQUnk3blpUcGFxYW9nRWRpeEN3YVZ2dlBjN2dJaks2YjRyYV9QS2NwOW40U2ktdy1QelZVbmJWTkhmZ1NUeDVDeEFjWTYyWjlFbmlQejgyakhyZUZQZEVGRzhXcGsyRGREX2o3ck4tODlIRmU4dmRJTlJ4RjNRSEJmenBTcnR5VE1HNmxKcTE2OWtJUGJMOXZteEIxN3RJUVZ6NXNjSzNIeVdJMExRYWUxX1BNQV9LRFB3TGVOVXJ6ZHZqYWxyY3hERVFHbWpPWE1pelZQSlc4LUJiejR5NTlzMlcxdG5mU0pkdXhwQXltYjMzZE05dkM4Q0RlLTkzc3ZUZXR4S3NjLXl1Um9lZTBYU0dVYmNnelRTZFhONmRQdjQtNzNIYXd5R3VxNl9ULWF6cWpTQWtnNDlEWFBzcndaOHlVZ3ZIcktHRHZWOU9RMTZ0TEhXeGpOanQ4X3hUNU1YWmoxRnNwc2lETkhQT2NidGEwOVU3VWwtaEQyVVNmc0k4OVBJdXZtekF4dVhLaG5mOENVWXhUdmVLN0s0cjN0Q0xGRHpwSHRoZ3dRNXdBTEQ5UGZvYXZleXJzMVFkVlZUdElOY2haRkF4Vmp0YzFUdGZkOGRDVVhEdVRnNEUyZ2lQMW9qNU1jMEVYZlpzRkRMZkk1SjVQblg1TWFyUHBRSUpWbzBTMl9XRjFlSWxWYWI0cE5GV0xJTEsyeF82TEItWWV6TXlOdUl4ZXpjdVBPV0d3N1RYZ041bHczb2RYUXJlc1NmTWd6THZOdlRVVHFGOTVzX0p0cGNyVTB2Q0M4UzZnS2x1OTBGejNrb0g5eEFwbnZvblFaUUMxUU1vR3ZHeEt1Ug?oc=5"},
+        {"title": "美廠發動專利戰 台達電捲風暴核心！懷克爾祭337條款 AI供電架構成攻防焦點", "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1YaDFJc0pKWF9SMlVubmFXcmdxU21zUUhoNHMtcElFc0FuOV8tWUp2ZW5pM1p0YU5wVGJnTnVjRFU2eXFncjQ5enZKRWVvTUxLODdqY0hNRTJoUDZydWtKSFNlNUx5QzZYM05BWklBcFVfVEJVWm9SWExMRQ?oc=5"}
+      ]
+    },
+    {
+      "summary": "SpaceX完成掛牌後首度公開財報，營收年增達92%優於預期，加上特斯拉財報同步亮眼，激勵美股四大指數全面收紅（道瓊漲360點、那斯達克漲278點），台指期夜盤同步跳漲469點，為台股接下來的交易注入反攻信心。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "【盤前】SpaceX財報報喜美股狂歡！台指夜盤飆469點　台股反攻號角響", "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-spacex%E8%B2%A1%E5%A0%B1%E5%A0%B1%E5%96%9C%E7%BE%8E%E8%82%A1%E7%8B%82%E6%AD%A1-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E9%A3%86469%E9%BB%9E-%E5%8F%B0%E8%82%A1%E5%8F%8D%E6%94%BB%E8%99%9F%E8%A7%92%E9%9F%BF-222200809.html"},
+        {"title": "SpaceX繳亮眼獲利成績單！美股4大指數收紅　道瓊漲360點、那指漲278點", "url": "https://tw.news.yahoo.com/spacex%E7%B9%B3%E4%BA%AE%E7%9C%BC%E7%8D%B2%E5%88%A9%E6%88%90%E7%B8%BE%E5%96%AE-%E7%BE%8E%E8%82%A14%E5%A4%A7%E6%8C%87%E6%95%B8%E6%94%B6%E7%B4%85-%E9%81%93%E7%93%8A%E6%BC%B2360%E9%BB%9E-%E9%82%A3%E6%8C%87%E6%BC%B2278%E9%BB%9E-215100812.html"}
+      ]
+    }
+  ],
+  "note": "由 Claude 彙整自動抓取的原始新聞與個股重大訊息，並以網路搜尋補充國際供應鏈消息，非投資建議，僅供參考。"
+}
