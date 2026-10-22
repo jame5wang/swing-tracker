@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T08:10:00+08:00",
+  "items": [
+    {
+      "summary": "AI資本支出疑慮再度引爆恐慌性賣壓，Meta相關言論與超微(AMD)財報疑慮點燃導火線，費城半導體指數單日暴跌近7%(逾770點)創波段新低，那斯達克重挫逾2%；台積電、聯電、友達等台股ADR同步重挫4.5%至7%，顯示市場對AI供應鏈獲利能否持續兌現的疑慮正衝擊整體科技股信心，連帶牽動台股大盤與半導體類股隔日走勢。",
+      "relatedStocks": [
+        {"code": "2303", "name": "聯電"},
+        {"code": "3481", "name": "友達"}
+      ],
+      "sources": [
+        {"title": "AI發展疑慮血洗美股！費半大跌773點 那指下挫694點今年6月以來最慘", "url": "https://tw.news.yahoo.com/ai%E7%99%BC%E5%B1%95%E7%96%91%E6%85%AE%E8%A1%80%E6%B4%97%E7%BE%8E%E8%82%A1-%E8%B2%BB%E5%8D%8A%E5%A4%A7%E8%B7%8C773%E9%BB%9E-%E9%82%A3%E6%8C%87%E4%B8%8B%E6%8C%AB694%E9%BB%9E%E4%BB%8A%E5%B9%B46%E6%9C%88%E4%BB%A5%E4%BE%86%E6%9C%80%E6%85%98-215100853.html"},
+        {"title": "AI支出疑慮再起！美股費半暴跌6.72%、那指跌逾2% 台積電ADR重挫4.5％", "url": "https://tw.news.yahoo.com/ai%E6%94%AF%E5%87%BA%E7%96%91%E6%85%AE%E5%86%8D%E8%B5%B7-%E7%BE%8E%E8%82%A1%E8%B2%BB%E5%8D%8A%E6%9A%B4%E8%B7%8C6-72-%E9%82%A3%E6%8C%87%E8%B7%8C%E9%80%BE2-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E9%87%8D%E6%8C%AB4-223350841.html"},
+        {"title": "AMD股價重挫7.6% 晶片股全面遭拋售 AI投資回報疑慮升溫", "url": "https://tw.stock.yahoo.com/news/amd%E8%82%A1%E5%83%B9%E9%87%8D%E6%8C%AB7-6-%E6%99%B6%E7%89%87%E8%82%A1%E5%85%A8%E9%9D%A2%E9%81%AD%E6%8B%8B%E5%94%AE-ai%E6%8A%95%E8%B3%87%E5%9B%9E%E5%A0%B1%E7%96%91%E6%85%AE%E5%8D%87%E6%BA%AB-220003925.html"}
+      ]
+    },
+    {
+      "summary": "多家媒體報導輝達以預付貨款方式鎖定台灣供應鏈產能，涉及金額約11億美元(約合新台幣357億元)，點名欣興、景碩的ABF載板產能，以及京元電、矽品(日月光投控子公司)的封測與CPO相關產能；業界同時指出ABF原物料短缺態勢將延續到明年底，相關訂單能見度已看到2028至2030年，顯示輝達正以更強硬的財務手段綁定關鍵供應鏈。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "2449", "name": "京元電"},
+        {"code": "3711", "name": "日月光投控"}
+      ],
+      "sources": [
+        {"title": "輝達直接點名4大供應鏈擴產、配合出貨！京元電、欣興、矽品都入列", "url": "https://news.google.com/rss/articles/CBMixANBVV95cUxPREFLZkFjaHBYaUE5ekFnengzTTVQeUc2YW1iR2kybHJ1MndvLUZxTFFoMlk2TDhkM0RBSldvVHYzdVM1TGZnT0RVQzZsY2hfdU5fZGVZRUNqX3FqWm9DWmpLdHIwU00wcklZend6YTFoR0RnTmdYRHMxYVBDTmE1VHRVOTFlZ1QzZWZTY3ZiWE1WeGFEb2NLb0ljVERWSmI5SVU3Y1pHVm9QbEJfS284T0Ntd3hnQXJoVHBBRjR4LW1sUEJtdzZWQTJ0TUI0Q3ZhdFlkWWpITl80bnAzME9RMEYtU3RfOXBIcUI0R3FfTGFFcDJsSnlIelBOSmQ1bTFlU3NLMEh2MmNFMWxHd0hqemVYUzlUYmg3ejdsTmJVN1RlbWFYeUIwZ2RoWkdUV1RBSGk1a1hCU2xsTWE2SndXNGhMVlI3cnpJWjF0WGJHYzBUTGl5NTd4OHRQQTN5Ym5pbUpHWFJEd1phUy1pMEpYdjJrS0pQQ19FTURRYWlwcUF3N1c2NUxFa25ac1NJb3ZkVFRfVzdIVGJMbjZBZm5ZNGlfR1BJUXNvaXlGSmZzM3VkOFRadTJ1eUE2Q3VPOGphMlFsbA?oc=5"},
+        {"title": "輝達霸氣預付357億包產能！點名欣興、京元電、日月光投控大擴產，CPO狂翻30倍", "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LazR4NE1zTV83Yk1jaEdhSDVrcm90ZUk0OEJHWXRBb1hlRzdRUTc3OTVsLVRfYlJTSFpXckMwVzI5bzVkQjlvTXBXckVUdEFTdkE?oc=5"},
+        {"title": "ABF原物料缺到明年底 景碩訂單直達2030年", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MYng1WE5XQlliRGxGeF94elZ0N3ZndDBSeFk0aE15SmhZczI3WUsxU2FZUFRROHRVQ1VPZVpzT1dSVm9XdjNNZEhuOUM0REhmX0d3anRZWV9QaHM?oc=5"}
+      ]
+    },
+    {
+      "summary": "台光電宣布跨入ABF載板核心層材料市場，瞄準年底前完成客戶端認證，正式切入高毛利新產品線，為CCL本業之外另闢成長動能，消息激勵股價漲停、台燿同步走揚。",
+      "relatedStocks": [
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"}
+      ],
+      "sources": [
+        {"title": "個股：台光電(2383)跨入載板核心層，目標今年底完成認證", "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWlBJNFZXTmJnT0RySFpSWXZYWUNMLTVnQlBwU0ZLRUZUcFdqd0ZJUE42Q0g2NjdOUEJYcjlOcjlDSGdKT0xaQmFHT081OVFIZUllNTAzSHFub3FTNVYyaXNfZUdzd2pyZ3lKU21jOWZRQW85UTBVcnI0TEZyclJsVVhfN2dQNFlf?oc=5"},
+        {"title": "《TPCA展》台光電M9明年放量 載板材料拚年底認證", "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN19uY1lOaVB3ZmRJVVpGS2duN0tBcWVFZnlNMDlUM19TX0RFZE91VXA1WllGekxRNHFMNnA0YkN5OC04UHJmYWc3RFYzN2xDY0pBdHA2S2kwRDUxMWtmQnhqcmxyZFZPUDBXQUQ3c3pOa2U2Z295d3B5WFRiZm84UXFWamdFUERGXzBsMEVtV0JTdWlEY1cycGFKalg?oc=5"},
+        {"title": "轉單效應來了？台光電飆漲停鎖死5485元 台燿強漲7%同歡", "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPZUprSTZpaElWRDlWWm5ZS2l4MnNMbFNvaUFydEdHdFE0c1I4U0FzMWNoWEFjM3J3c0V4cllGdTVGM0k4Z2pYTHczRlljWmdNbkNJZVVTWl9USzFiVktSemthX1dlZjNtV0pSRG5DbzlrbDNYVDhtNmU3T1BtY3hwZGF6eGVNaS14dUluQ2NiWl96T2FqOFVldUlZRFRUVk02a1ZEU0xkdWREZEJaSlhoX3ZLWXBoQ1piblhRdy1WQmFqdTlFZmJ4ZlRBbzZRdzRxSHF4OWdwWWpFZHhNQUtfZXZvQUg2M0Nib1BPMEJXamJMcGcxRFhIX3Q0dWR4RWtxeFBqbnFDcUVteUItVWVuZDIyclRRdWgwQUJZUmdVNl9hZlFiRWs5eVQ2aUJFSHE5NmtXZVIwaENLZWpHUVZ3aW0zVjZqXzE3cmJ6LWZBbmt0Z0xJNW5aN0VqcG00Y0NRdkxRWnZEOFdNYmc?oc=5"}
+      ]
+    },
+    {
+      "summary": "市場傳出南亞高階CCL材料M9遭亞馬遜(AWS)驗證不合格，股價單日重挫逾6%；公司隨即發布重訊並由董事長吳嘉昭親自出面澄清，強調認證作業仍依計畫推進、傳聞並非事實，但事件凸顯南亞在高階電子材料打入雲端大客戶供應鏈過程中的驗證風險仍受市場高度關注。",
+      "relatedStocks": [
+        {"code": "1303", "name": "南亞"}
+      ],
+      "sources": [
+        {"title": "南亞急發重訊！股價暴跌逾6%，傳高階材料遭AWS驗證不合格", "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9fdFM4a1ZnSG9WNGo2VEVBcXBZLVNvRlNIMHVVWWxvemZDNXA2YlczVmpuNGpBZklNekxFQ0NhQk45dmEwSVdkd3ZrQUt1dw?oc=5"},
+        {"title": "南亞董座吳嘉昭：高階電子材料認證、推展依計畫執行 不合格傳言「非事實」", "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xWXVWc2wza3d3QjBWOGhlZWRxUEoxX2RLTDRTY1V0WWVqXzlsb1JleVNnVlVmbEp5d1hPOU5FcWJZX0l1VGJNMWlDdklsQ1VGYUxOOEpiLWZiY1dSX2JR?oc=5"},
+        {"title": "說明115年10月22日媒體報導(公開資訊觀測站重大訊息)", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"}
+      ]
+    },
+    {
+      "summary": "聯電攜手愛普科技共同開發AI與高效能運算系統電源解決方案，雙方的DTC矽電容已完成投片與初步驗證，目標將電源整合推進至先進封裝晶片層級，為成熟製程代工與電源元件廠切入AI供電新應用再添一例。",
+      "relatedStocks": [
+        {"code": "2303", "name": "聯電"},
+        {"code": "6531", "name": "愛普"}
+      ],
+      "sources": [
+        {"title": "聯電攜手愛普搶攻AI供電商機！矽電容完成投片驗證 瞄準先進封裝新需求", "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ySDUzR0t6bWhNSnB4Vm94Y0gxd2F5VFktazczUy1mTjdhWnc4ZWVpSVNVajFXV29ackd0Qy1RZzB0dTRtVUoxZDZsM3hhOWNWeUE?oc=5"},
+        {"title": "聯電攜愛普攻AI伺服器供電進擊先進封裝電源整合市場", "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CbHNpb0RxQ3pBT1dNZlVrSW1jc0pIZkY0dmhHdS1mWXhncHlBOFlrc3Y4RnhFTk0yclkyQ0N2OEZhS09SS25RT25BM2tMS2R3NlVYX2g3VmZ2SUNCSEVmZnl4dWt1YXpINjlNazVnNWdlVlU?oc=5"}
+      ]
+    },
+    {
+      "summary": "聯發科10月30日法說會前，外資陸續表態：花旗維持目標價並預估第4季營收將季增達三成，市場普遍看好其AI PC與手機晶片訂單能見度已延伸至2029年，顯示法人對其中長期動能信心未受短線雜音影響。",
+      "relatedStocks": [
+        {"code": "2454", "name": "聯發科"}
+      ],
+      "sources": [
+        {"title": "聯發科30日法說前 花旗力挺維持目標價6,800元 預估第4季營收季增三成", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1SZFhNVVpoeVAzZHp1TUZaNUlPWTgyS3Nhd2k4RUs5OUdxOTNpdVZBaWhDNExPU3JEZGdDN2Z6YXBQN2ZlcElWcnpwVFF1RVpf0gFWQVVfeXFMUFdCcHU4YmkxTS1vUlkyd2FiSGZiTnFWdk4wNmx1cDJvemlyWjFSSnplQnJjR3p1T0VIbVZlUnF4V3hiSTkwaHZRUmpkSWc4Zk5XQVhVVnc?oc=5"}
+      ]
+    },
+    {
+      "summary": "智邦董事會決議辦理現金增資發行普通股(上限1萬仟股)，資金用於充實營運資金及償還銀行借款，呼應其近期全球擴產布局的資金需求；上銀重要子公司邁萃斯精密同步辦理現金增資(發行總額3.6億元)，同樣用於充實營運資金及償還銀行借款，顯示供應鏈廠商在擴產周期中持續透過資本市場籌措資金。",
+      "relatedStocks": [
+        {"code": "2345", "name": "智邦"},
+        {"code": "2049", "name": "上銀"}
+      ],
+      "sources": [
+        {"title": "智邦現增 衝刺全球布局", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5BdlpDa2xfR0t3OHgwcmVwRTltVU9FYUE4aTBLUVlGTl9tQkpQQTAzRzBlNnREOGRDWnI0aEhKUUU0TEV2dVVBZU5SdU8?oc=5"},
+        {"title": "公告本公司董事會決議辦理現金增資發行普通股(公開資訊觀測站重大訊息)", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"}
+      ]
+    }
+  ]
+}
