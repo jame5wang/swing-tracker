@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: 抓取重大訊息（公開資訊觀測站）與個股新聞（鉅亨網、Google 新聞）
+      - name: 抓取重大訊息（公開資訊觀測站）、個股與產業新聞（鉅亨網、媒體 RSS、Google 新聞＋發布日期驗證）
         continue-on-error: true
         run: python3 scripts/fetch_company_news.py
 
@@ -32,6 +32,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/company_news.json
+          [ -f data/news_dates.json ] && git add data/news_dates.json
           git diff --quiet --cached && exit 0
           git commit -m "更新持股重大訊息與個股新聞 $(TZ=Asia/Taipei date +'%Y-%m-%d %H:%M')"
           for i in 1 2 3 4 5; do
