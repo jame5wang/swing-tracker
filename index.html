@@ -331,6 +331,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .feedCard.collapsed .feedCaret{transform:rotate(-90deg);}
 .feedStock{display:inline-block; margin-right:6px; font-size:10.5px; font-weight:650; padding:0 6px; border-radius:6px; background:var(--panel2); color:var(--accent); cursor:pointer; white-space:nowrap; vertical-align:1px;}
 .feedStock:hover{text-decoration:underline;}
+.feedSector{display:inline-block; margin-right:6px; font-size:10.5px; font-weight:650; padding:0 6px; border-radius:6px; background:color-mix(in srgb, var(--accent2) 14%, var(--panel2)); color:var(--accent2); white-space:nowrap; vertical-align:1px;}
 .feedCat{margin-top:11px;}
 .feedCatHead{font-size:12px; font-weight:700; color:var(--sub); margin-bottom:5px;}
 .cnCatCount{font-size:10.5px; font-weight:500; color:var(--mute); margin-left:6px;}
@@ -880,6 +881,26 @@ function announcementsFor(code, days){
 function companyNewsFor(code){
   return (companyNews && companyNews.news && companyNews.news[String(code)]) || [];
 }
+// 產業新聞（scripts/fetch_company_news.py 依產業關鍵字 PCB、ABF載板、CCL、CPO… 搜尋，key＝網站的產業分類名稱）
+function industryNewsFor(sector){
+  return (companyNews && companyNews.industry && companyNews.industry[sector]) || [];
+}
+// 產業新聞列表：先顯示 shown 則，其餘收合；標題點名到的追蹤股票列在後面
+function industryNewsGroupHtml(sector, list, shown){
+  if(!list.length) return '';
+  return `<div class="cnGroup">
+    <div class="feedCatHead">🏭 ${esc(sector)} 產業新聞<span class="cnCatCount">${list.length} 則</span></div>
+    ${list.map((n,i)=>`<div class="cnItem${i>=shown?' cnExtra':''}">${newsLinkHtml(n)}${(n.codes&&n.codes.length)?`<span class="cnMeta">· ${n.codes.slice(0,4).map(c=>esc(stockNameOf(c))).join('、')}</span>`:''}</div>`).join('')}
+    ${list.length>shown?`<button type="button" class="feedCatBtn cnMoreBtn">＋ 另 ${list.length-shown} 則</button>`:''}
+  </div>`;
+}
+function bindCnMoreButtons(root){
+  root.querySelectorAll('.cnMoreBtn').forEach(btn=>btn.addEventListener('click',(e)=>{
+    e.stopPropagation();
+    const g=btn.closest('.cnGroup'); const open=g.classList.toggle('open');
+    btn.textContent = open ? '收合' : `＋ 另 ${g.querySelectorAll('.cnExtra').length} 則`;
+  }));
+}
 // 重訊分級（scripts/fetch_company_news.py 依主旨判斷）：2=重大事件（檢調搜索、停工、違約…）、1=需留意（澄清報導、增減資、經營層異動、注意交易…）、0=例行公告
 function annLevel(a){ return Number(a && a.level)||0; }
 function annTime(a){ return `${a.date||''} ${a.time||''}`; }
@@ -998,15 +1019,43 @@ function feedGroupHtml(g){
     ${open?`<div class="feedSub">${g.items.slice(1).map(n=>`<div class="cnItem">${newsLinkHtml(n)}</div>`).join('')}</div>`:''}
   </div>`;
 }
+// 產業動態：依產業關鍵字（PCB、ABF載板、CCL、CPO…）抓到的新聞，每個產業一組，個股新聞已經列過的不重複
+function industryFeedGroups(hours, skipKeys){
+  if(!companyNews || !companyNews.industry) return [];
+  const since=Date.now()-hours*3600*1000;
+  const groups=[];
+  Object.entries(companyNews.industry).forEach(([sec,items])=>{
+    const its=(items||[]).map(n=>({...n, ts:new Date(n.publishedAt).getTime()}))
+      .filter(n=>n.ts>=since && !skipKeys.has(normTitle(n.title)))
+      .sort((a,b)=>b.ts-a.ts);
+    if(its.length) groups.push({key:`ind|${sec}`, sector:sec, items:its});
+  });
+  return groups.sort((a,b)=>b.items.length-a.items.length || b.items[0].ts-a.items[0].ts);
+}
+function industryFeedGroupHtml(g){
+  const open=feedOpenGroups.has(g.key), more=g.items.length-1;
+  return `<div class="feedLine">
+    <span class="feedSector">${esc(g.sector)}</span>${newsLinkHtml(g.items[0])}${more?`<button type="button" class="feedGroupBtn" data-key="${esc(g.key)}">${open?'收合':`另 ${more} 則`}</button>`:''}
+    ${open?`<div class="feedSub">${g.items.slice(1).map(n=>`<div class="cnItem">${newsLinkHtml(n)}</div>`).join('')}</div>`:''}
+  </div>`;
+}
 function renderNewsFeed(){
   const el=document.getElementById('newsFeedBox');
   if(!el) return;
   let hours=24, feed=stockNewsFeed(24);
   if(feed.length<6){ hours=72; feed=stockNewsFeed(72); } // 週末、連假新聞少時放寬到近3日
-  if(!feed.length){ el.innerHTML=''; return; }
+  const ind=industryFeedGroups(hours, new Set(feed.map(n=>normTitle(n.title))));
+  if(!feed.length && !ind.length){ el.innerHTML=''; return; }
   const cats=groupFeedByCategory(feed);
+  const indTotal=ind.reduce((s,g)=>s+g.items.length,0);
+  const indOpen=feedOpenCats.has('industry');
+  const indHtml = ind.length ? `<div class="feedCat">
+      <div class="feedCatHead">🏭 產業動態<span class="cnCatCount">${ind.length} 個產業／${indTotal} 則</span></div>
+      ${(indOpen ? ind : ind.slice(0,FEED_GROUPS_SHOWN)).map(industryFeedGroupHtml).join('')}
+      ${ind.length>FEED_GROUPS_SHOWN?`<button type="button" class="feedCatBtn" data-cat="industry">${indOpen?'收合':`＋ 其餘 ${ind.length-FEED_GROUPS_SHOWN} 個產業`}</button>`:''}
+    </div>` : '';
   el.innerHTML=`<div class="annCard feedCard${feedCollapsed?' collapsed':''}">
-    <div class="annHead"><span class="feedHead" id="feedHeadBtn">📰 持股最新新聞（近${hours===24?'24小時':'3日'} ${feed.length} 則，依類型整理）<span class="feedCaret">▾</span></span></div>
+    <div class="annHead"><span class="feedHead" id="feedHeadBtn">📰 持股與產業最新新聞（近${hours===24?'24小時':'3日'}，個股 ${feed.length} 則${indTotal?`＋產業 ${indTotal} 則`:''}，依類型整理）<span class="feedCaret">▾</span></span></div>
     ${feedCollapsed ? '' : cats.map(({cat,groups})=>{
       const catOpen=feedOpenCats.has(cat);
       const base=FEED_GROUPS_SHOWN;
@@ -1018,6 +1067,7 @@ function renderNewsFeed(){
         ${groups.length>base?`<button type="button" class="feedCatBtn" data-cat="${cat}">${catOpen?'收合':`＋ 其餘 ${groups.length-base} 檔`}</button>`:''}
       </div>`;
     }).join('')}
+    ${feedCollapsed ? '' : indHtml}
   </div>`;
   document.getElementById('feedHeadBtn').addEventListener('click',()=>{
     feedCollapsed=!feedCollapsed;
@@ -1368,10 +1418,12 @@ function renderRows(){
   orderedSectors.forEach(sec=>{
     const secCodes=groups[sec].map(({s})=>s.code).filter(Boolean);
     const secNews=sectorNewsFor(secCodes);
+    const indNews=industryNewsFor(sec);
+    const secTotal=secNews.length+indNews.length;
     const secExpanded=!!sectorNewsExpanded[sec];
-    rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span>${secNews.length?`<button type="button" class="sectorNewsBtn" data-sector="${sec}">📰 ${secNews.length}則產業消息${secExpanded?' ▴':' ▾'}</button>`:''}</div>`;
-    if(secNews.length && secExpanded){
-      rows+=`<div class="sectorNewsBox">${secNews.map(sectorNewsItemHtml).join('')}</div>`;
+    rows+=`<div class="sectorHead">${sec}<span class="sectorCount">${groups[sec].length}</span>${secTotal?`<button type="button" class="sectorNewsBtn" data-sector="${sec}">📰 ${secTotal}則產業消息${secExpanded?' ▴':' ▾'}</button>`:''}</div>`;
+    if(secTotal && secExpanded){
+      rows+=`<div class="sectorNewsBox">${secNews.map(sectorNewsItemHtml).join('')}${indNews.length?`<div class="sectorNewsItem">${industryNewsGroupHtml(sec, indNews, 3)}</div>`:''}</div>`;
     }
     groups[sec].forEach(({s,i})=>{
       const st=statusOf(s);
@@ -1406,6 +1458,7 @@ function renderRows(){
       renderRows();
     });
   });
+  bindCnMoreButtons(rowsEl);
 }
 
 
@@ -1557,10 +1610,12 @@ function renderReportsNewsTab(s){
     </div>`;
   }
   const cn=companyNewsFor(s.code);
-  if(cn.length){
+  const ind=industryNewsFor(s.sector);
+  if(cn.length || ind.length){
     html+=`<div class="researchBlock">
-      <div class="rbTitle">最新新聞（近7日，${cn.length} 則，依類型整理）<span class="autoTag">自動更新</span></div>
+      <div class="rbTitle">最新新聞（近7日，${cn.length} 則個股＋${ind.length} 則產業，依類型整理）<span class="autoTag">自動更新</span></div>
       ${stockNewsGroupedHtml(cn)}
+      ${industryNewsGroupHtml(s.sector, ind, 2)}
     </div>`;
   }
   if(r && r.reports && r.reports.length){
@@ -1650,7 +1705,7 @@ function renderDetail(i){
   const hasFundamental = !!(r && r.revenue);
   const reportsCount = (r && r.reports) ? r.reports.length : 0;
   const recentAnnCount = announcementsFor(s.code, 7).length;
-  const autoNewsCount = companyNewsFor(s.code).length;
+  const autoNewsCount = companyNewsFor(s.code).length + industryNewsFor(s.sector).length;
   const hasReportsNews = reportsCount>0 || !!(r && r.news) || recentAnnCount>0 || autoNewsCount>0;
 
   let momentumNoteHtml='';

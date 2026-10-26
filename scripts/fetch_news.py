@@ -10,9 +10,10 @@ data/news/YYYY-MM-DD.json（索引在 data/news/index.json），讓網站可以�
 1. 直接比對新聞標題是否出現你追蹤的個股名稱／代號（清單直接讀網站 index.html 的 SEED_STOCKS，
    新增追蹤股票時不用再回來改這支腳本）。名稱是常見詞彙的（全新、大量、創意、新代、南亞）
    改用全名比對，避免「全新產品」「大量出貨」之類的標題被誤標成持股新聞。
-2. 主題關鍵字比對——例如新聞提到「輝達」「GB300」「AI伺服器」等AI晶片供應鏈
-   關鍵字時，即使沒有直接點名某檔台股，也會關聯到你持股中屬於該供應鏈的個股
-   （ABF載板／CCL／封測／矽晶圓等）。這是規則式關鍵字比對，不是語意理解，
+2. 主題與產業關鍵字比對——例如新聞提到「輝達」「GB300」「AI伺服器」等AI晶片供應鏈關鍵字，
+   或「PCB」「ABF載板」「CCL」「CPO」等產業關鍵字時，即使沒有直接點名某檔台股，也會關聯到
+   該產業的所有追蹤股票（產業分類讀 index.html 的 SEED_STOCKS，關鍵字與個股新聞共用
+   scripts/fetch_company_news.py 的 INDUSTRY_KEYWORDS）。這是規則式關鍵字比對，不是語意理解，
    只能抓到明顯的產業關聯，仍需自行判斷新聞對個股的實際影響。
 
 這支腳本只做「彙整＋關聯標記」，不做真假查證或投資判斷。
@@ -59,42 +60,29 @@ FALLBACK_STOCK_NAMES = {
     "3167": "大量", "8021": "尖點",
 }
 
-# 主題關鍵字 -> 受影響的持股代號（供應鏈/產業關聯，不需要新聞直接點名個股）
-THEME_KEYWORDS = {
-    # AI晶片／伺服器／先進封裝供應鏈：載板、CCL、封測、矽晶圓、PCB 都跟這波景氣連動
-    r"輝達|NVIDIA|GB300|GB200|Rubin|CoWoS|HBM|AI伺服器|AI晶片|AI算力|資料中心": [
-        "3037", "8046", "3189",  # ABF載板
-        "2383", "6274", "6213", "6672",  # CCL
-        "2368", "4958", "8358", "2313",  # PCB
-        "3711", "6239", "6147",  # 封測
-        "6182", "6488",  # 矽晶圓
-        "3017", "3653", "3324",  # AI伺服器散熱(均熱板/液冷)
-        "3167",  # 先進封裝研磨拋光設備
-        "8021",  # 高階基板PCB鑽針
+# 主題關鍵字 -> 受影響的產業（2026-10-26 改成對應到「產業」，再展開成該產業的所有追蹤股票；
+# 原本手動列代號，後來新增的股票都沒補進來，72 檔只涵蓋 35 檔）
+THEME_SECTORS = {
+    # AI晶片／伺服器／先進封裝供應鏈：載板、CCL、PCB、封測、散熱都跟這波景氣連動
+    r"輝達|NVIDIA|GB300|GB200|Rubin|CoWoS|AI伺服器|AI晶片|AI算力|資料中心": [
+        "ABF載板", "CCL／覆銅板", "PCB／軟板", "封測", "散熱",
     ],
     # 記憶體漲價／缺貨／三星SK海力士美光動態
-    r"記憶體|DRAM|NAND|三星|SK海力士|美光|Micron|memory": [
-        "2344", "2408", "8299", "5289",
-    ],
-    # 聯電／成熟製程代工（注意：不要用「台積電」「先進製程」等關鍵字，
-    # 那些新聞絕大多數是台積電自己的擴產/財報消息，跟聯電的成熟製程業務關聯很弱，
-    # 掛上去只會製造雜訊）
-    r"聯電|UMC|成熟製程|車用晶片代工": [
-        "2303",
-    ],
+    r"記憶體|DRAM|NAND|HBM|三星|SK海力士|美光|Micron|memory": ["記憶體"],
+    # 成熟製程代工（不要用「台積電」「先進製程」，那些新聞大多是台積電自己的消息，跟成熟製程關聯很弱）
+    r"聯電|UMC|成熟製程|車用晶片代工": ["晶圓代工"],
     # 化合物半導體／砷化鎵／衛星通訊／電動車功率元件
-    r"砷化鎵|GaN|氮化鎵|PA|功率元件|衛星通訊|矽光子": [
-        "2455", "3105", "4971",
-    ],
+    r"砷化鎵|GaN|氮化鎵|PA|功率元件|衛星通訊": ["化合物半導體"],
     # 面板／車用顯示
-    r"面板|MiniLED|車用顯示": [
-        "3481",
-    ],
-    # 電源、散熱、伺服器機殼
-    r"電源供應器|散熱|伺服器機殼|台達電|光寶科": [
-        "2308", "2301",
-    ],
+    r"面板|MiniLED|車用顯示": ["面板"],
+    # 電源、伺服器電源
+    r"電源供應器|伺服器電源|HVDC|BBU": ["電源／工控"],
 }
+# 產業關鍵字（PCB、ABF載板、CCL、CPO…）與個股新聞共用同一份設定：scripts/fetch_company_news.py 的 INDUSTRY_KEYWORDS
+try:
+    from fetch_company_news import INDUSTRY_KEYWORDS
+except Exception:  # 單獨執行或設定讀取失敗時，只用上面的主題關鍵字
+    INDUSTRY_KEYWORDS = {}
 
 
 def http_get(url):
@@ -159,6 +147,19 @@ NAME_PATTERN_OVERRIDES = {
 }
 
 
+def load_sectors():
+    """從 index.html 的 SEED_STOCKS 讀取 {產業: [代號...]}"""
+    try:
+        with open("index.html", encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return {}
+    sectors = {}
+    for code, sec in re.findall(r"\{code:'(\w+)'[^{}]*?sector:'([^']+)'", text):
+        sectors.setdefault(sec, []).append(code)
+    return sectors
+
+
 def load_stock_names():
     """從網站主清單 index.html 的 SEED_STOCKS 讀取追蹤股票（代號→名稱）。
     之前這裡手動維護一份清單，後來新增的股票都沒補進來（72檔只涵蓋35檔）。"""
@@ -183,11 +184,20 @@ def name_pattern(code, name):
     return re.escape(base)
 
 
-# 直接點名：名稱或代號（代號前後不能緊接其他數字，避免 23030 之類誤中 2303）
-NAME_REGEXES = [
-    (code, name, re.compile(f"{name_pattern(code, name)}|(?<!\\d){code}(?!\\d)"))
-    for code, name in STOCK_NAMES.items()
-]
+# 直接點名：名稱或代號（代號前後不能緊接其他數字，避免 23030 之類誤中 2303）。
+# 優先使用個股新聞腳本的比對規則（處理了「全新產品」「族群創高」這類同名誤判，也認得京元電、光寶、英特磊等常見寫法）
+try:
+    from fetch_company_news import build_title_matchers
+    _MATCHERS = build_title_matchers(STOCK_NAMES)
+    NAME_REGEXES = [
+        (code, name, re.compile(f"(?:{_MATCHERS[code].pattern})|(?<!\\d){code}(?!\\d)"))
+        for code, name in STOCK_NAMES.items()
+    ]
+except Exception:
+    NAME_REGEXES = [
+        (code, name, re.compile(f"{name_pattern(code, name)}|(?<!\\d){code}(?!\\d)"))
+        for code, name in STOCK_NAMES.items()
+    ]
 
 
 def _bounded(pattern):
@@ -202,7 +212,14 @@ def _bounded(pattern):
     return "|".join(parts)
 
 
-THEME_REGEXES = [(re.compile(_bounded(p), re.IGNORECASE), codes) for p, codes in THEME_KEYWORDS.items()]
+SECTORS = load_sectors()
+THEME_REGEXES = [
+    (re.compile(_bounded(p), re.IGNORECASE), [c for sec in secs for c in SECTORS.get(sec, [])])
+    for p, secs in THEME_SECTORS.items()
+] + [
+    (re.compile(rule[1], re.IGNORECASE), SECTORS.get(sec, []))
+    for sec, rule in INDUSTRY_KEYWORDS.items() if SECTORS.get(sec)
+]
 
 
 def related_stocks_for(title):
