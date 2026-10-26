@@ -1,7 +1,7 @@
 name: probe-news (temporary)
 on:
   push:
-    branches: [probe-news]
+    branches: [probe-dates]
     paths: ['probe/probe_news.py', '.github/workflows/probe-news.yml']
 permissions:
   contents: write
