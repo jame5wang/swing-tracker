@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/company_news.json
+          git add data/company_news.json data/news_dates.json
           git diff --quiet --cached && exit 0
           git commit -m "更新持股重大訊息與個股新聞 $(TZ=Asia/Taipei date +'%Y-%m-%d %H:%M')"
           for i in 1 2 3 4 5; do
