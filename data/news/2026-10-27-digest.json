@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T07:42:28+08:00",
+  "items": [
+    {
+      "summary": "美股那斯達克與費城半導體指數同步走高（費半大漲304點），市場解讀Anthropic申請IPO的消息帶動AI股買氣回溫，台積電ADR同步上揚1.4%，為台股開盤前注入正面情緒。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "Anthropic IPO提振AI股！美股收紅、費半強漲304點 台積電ADR上揚1.4%",
+          "url": "https://tw.stock.yahoo.com/news/anthropic-ipo%E6%8F%90%E6%8C%AFai%E8%82%A1-%E7%BE%8E%E8%82%A1%E6%94%B6%E7%B4%85-%E8%B2%BB%E5%8D%8A%E5%BC%B7%E6%BC%B2304%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E4%B8%8A%E6%8F%9A1-231500662.html"
+        },
+        {
+          "title": "AI交易回暖！美股全線收高 台積電ADR勁揚1.4%",
+          "url": "https://tw.news.yahoo.com/ai%E4%BA%A4%E6%98%93%E5%9B%9E%E6%9A%96-%E7%BE%8E%E8%82%A1%E5%85%A8%E7%B7%9A%E6%94%B6%E9%AB%98-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E5%8B%81%E6%8F%9A1-4-225410336.html"
+        },
+        {
+          "title": "【美股盤後】收高",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E6%94%B6%E9%AB%98-224317913.html"
+        }
+      ]
+    },
+    {
+      "summary": "輝達推動的先進封裝架構轉型，使中介層（interposer）供給吃緊、搶手度大增，部分成熟製程晶圓代工與測試封裝廠因此迎來新的訂單機會，為台灣封裝與晶圓代工供應鏈帶來結構性利多。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6451",
+          "name": "訊芯-KY"
+        },
+        {
+          "code": "2449",
+          "name": "京元電子"
+        },
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "輝達先進封裝變革 成熟製程廠迎新機遇",
+          "url": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E5%85%88%E9%80%B2%E5%B0%81%E8%A3%9D%E8%AE%8A%E9%9D%A9-%E6%88%90%E7%86%9F%E8%A3%BD%E7%A8%8B%E5%BB%A0%E8%BF%8E%E6%96%B0%E6%A9%9F%E9%81%87-223841795.html"
+        },
+        {
+          "title": "輝達先進封裝變革 中介層變搶手貨",
+          "url": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E5%85%88%E9%80%B2%E5%B0%81%E8%A3%9D%E8%AE%8A%E9%9D%A9-%E4%B8%AD%E4%BB%8B%E5%B1%A4%E8%AE%8A%E6%90%B6%E6%89%8B%E8%B2%A8-223841639.html"
+        }
+      ]
+    },
+    {
+      "summary": "輝達、超微、英特爾等AI晶片大廠傳合計砸下近50億美元搶攻台灣ABF載板產能，欣興、景碩、南電三雄同步啟動上看千億元規模的擴產計畫；欣興董事長簡山傑受訪證實輝達已向其預訂產能至2028年滿載，並表示高階載板未來須與封裝、玻璃基板等技術協同發展，不能再單打獨鬥。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2449",
+          "name": "京元電子"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NVIDIA、AMD、Intel傳砸50億美元搶台灣ABF載板產能：欣興、景碩、南電啟動千億擴產",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQQlMxRVlrcDhGSGx2QmlsNjJ2THlJWUJuOVNVSllGNkl3TW11cEZOZnBQLVdrbmZ4QjJnXzllVXhubHJkOTlQalJibE5HVk5iRXFPdEdzaHNuc3FzQ3VFMTU3V3J2RFF3UVFzUDNEV3NSblNvQURXVkVoM3M5NjlGWnEzN1lKSkg1Y0xwUktSeUNwNDg2NUkyVENveFFlN1JMZXVSYXN2Mm9QMjNuQUdoSzNYWm5xeXBvbjQ1VWFZTjkybFNnUzdweDBvQkw5OENhVk0tYjhJZjE1XzNpNTdkaHRYUXdfZ3I3d0YwWExGT2ZwOFk?oc=5"
+        },
+        {
+          "title": "規格、需求持續成長！「這載板廠」握ABF、BT雙引擎＋玻璃基板研發中欣興挑戰超大尺寸載板整合",
+          "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOT2tmTHRqX2JsRXU2V0RJT1VZZG9EWEN1ZjlBelNoaEZibURfNHVQenZxRm1zc29xV2g1OXNrRVFmbUZlTTFjeTQ4SWZMUi0tNVpGMGhqTDl2LTFBQ3pVdHlqRG1sYXJtZDRnQ2phQW56dEFvTHdMQkhRVURjQ0NReTQyOTJ2RjFDdnpLY2NMQkR3RjUwMnZ0NXF6VGxuTkl3aEdES09LWDlSX3F1eFR2SGpPT216cU9WdVVhNkwzSkJNczZoX19pTjROQm50dzdzOWphNGgwWVluZUFXZktnSDRMZlNKclQtLUF3LXRSSF9VaVVOdXBsY1l1UFpiUzhSbnNlbWlyRHlQX0FtT0ZZUk92X2Z1cGR5aDJxQTNyTVJleVg4V0Q0?oc=5"
+        },
+        {
+          "title": "輝達預訂產能至2028滿載，欣興簡山傑揭密：AI高階載板不能再單打獨鬥",
+          "url": "https://finance.technews.tw/2026/10/26/unimicron-jensen-huang-capacity-rush-jan-shan-jie-new-pcb-game/"
+        },
+        {
+          "title": "欣興擴產加速度 法人看好2028年續擁優勢",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44SUkwM3ZwajVXZkNnVXFyMnJ4VU8wUm9iMTYyZEE4QUhhOGZRNHNKbjBPbmFhaXZtSkxLaEdyWUhJTFZoNHgxaUpHeDc0UEJr0gFWQVVfeXFMT0duUlRoMjIxTEFKN2x4ZUpoQTlNMndWNzN1eUxSb19SZTUzMWRZZTBWdlFremQ0cDZFX1ZnQ1hJX1Z0a2QwSjZDYmZRZXk4N3JBOTNkeWc?oc=5"
+        },
+        {
+          "title": "欣興、京元電、矽品被點名！輝達揭AI擴產藍圖 四大供應鏈動起來",
+          "url": "https://www.ctee.com.tw/news/20261026700013-430502"
+        }
+      ]
+    },
+    {
+      "summary": "CCL廠騰輝電子-KY泰國新廠正式開幕投產，中國昆山廠同步追加15億元擴產，反映伺服器與AI應用對覆銅板材料需求持續吃緊。",
+      "relatedStocks": [
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "騰輝-KY啟用泰國新廠 昆山同步擴產15億元",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53WUhTbmQzVGJNdlhoQUowdkRQSldETzJoNTczTmVESDNNY0taSGZ6LU95eGpCNmV5NDN0TEdpdmFjcjNPOENPY2c5Rmt3bWF0M3JfcU9ybDB6d9IBX0FVX3lxTFBBTVNERTM0Z0gtbHNLU00yOWNRVnpwM256aWwzWExsQ0Y4MG8tUXlXWm5MWktrSmNoRmhaSkt4OWtSenZUb3FuZmFWYmpFa2h0RVc0QkVWUlpjTEVyek5F?oc=5"
+        },
+        {
+          "title": "CCL廠騰輝電子泰國新廠今開幕 昆山同步投資15億元擴產",
+          "url": "https://news.cnyes.com/news/id/6637671"
+        }
+      ]
+    },
+    {
+      "summary": "CCL與玻纖布報價持續上漲，台光電、金居、南亞等廠的M6至M8高階玻纖布材料訂單洽談踴躍，部分訂單已排到2030年，反映AI伺服器板材規格持續升級、供給吃緊。",
+      "relatedStocks": [
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
+        }
+      ],
+      "sources": [
+        {
+          "title": "CCL、銅箔報價走揚！「台光電、金居、南亞誰最強？」訂單滿到2030年",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzLWppWFNGcDFlV3BHVnB3ZGhNNHUxQXBteHMtWmJoNWt6d2ZkQ2cwMXpfRkZYc0RvbVNMbEFEcTZXLXIzd0k5bUJScjNhU0tnd3JsM2c3MjkzSzJhMDN0WDZKNU9ET2FZZUE?oc=5"
+        },
+        {
+          "title": "「玻纖布大廠」M6至M8高階材料大單洽談中",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5Jb0oyLTIxT2EyZ1ZBUk81YmdzcVhNcUtwSm41azRPcnZQT1ROYmJYclVHN3RwVFFtRzBFaU5CUmFMZzNLTGtBbHZ2Yw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "市場傳出全球記憶體現貨庫存只剩不到10天水位，供需失衡恐將延燒長達3年；同時中國長鑫科技（CXMT）傳優先供應中國內需市場，拒絕蘋果與台灣廠商的記憶體訂單、力拼DRAM自主，兩則消息都凸顯記憶體缺貨情勢持續升溫。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "記憶體缺貨拉警報！庫存剩不到10天 供需失衡恐延燒3年",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1lX1diS0RXOHVwTFZhdXQycE5McEN4R2J5a1MzTzNWSVZrRzZfT1VmWHRsZ1V4S1hKQlBoLUlTS0dfeURqNlJMV1VsYjUyZnc?oc=5"
+        },
+        {
+          "title": "長鑫科技傳拒絕蘋果、台灣製造商記憶體訂單！優先供應中國市場、力拚DRAM自主",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5vWEpwelI0UG1BcjhaYVJFR2FGaS1saFNudnliNWZMTmNjWjhOVnY3NW1aQUp1QjFScmhPUHBuUFhrclU5XzJGcndzYw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "市場傳出成熟製程晶圓代工報價可望在2027年再上漲10%至20%，相關廠商毛利率有望衝上48%；同為成熟製程代工廠的聯電可望同步受惠於這波漲價行情。",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "成熟製程2027年迎春天？傳市場再漲價10%到20%",
+          "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOYUo5TGRaMV9pTXNCRVowRzNVZF9ES2JSNXluTXJ0bHRCX2lQeEJhd0NyTmFBWWpCeWlGNV9OZGx3UDBvc2FSODdZVWxVeUs2Wk5xZ2lpNm1yY05XdjgwLVZoZkNxNjlKNUZqNGJMaG9valc5SHI1ZEszVDMwRWpNSGNubUJyNHlWOHV3d21yYlhuY1lSU1kwa1NWWVY3RkY2cGJhRnNCS3VqdHNCa1pqQ2tKS2IyVkg1OTRUb0xETTM0UmZyRzBRaThiaGJtMml2YzlMQUVkQzlOMDdYdGRYMUNOQW5WNnVJNDZwVElCYUExU2JnN0I1UkpiOF90VHJtb2J2cm5sWG95VGJUOE52cmZPZ0xzVlUxSkNQODVkbWc3WTZWejc1X0RCZXV1UUhkanU1bWN5a003MjVNYUd3SDNxRnB6QVBJVFlwSjhhU1RrU01NYnN1cThNelpBNHNlZ1B3RWV6Z1g5VWZlRk1FM1p2bXpVajNISFlNRHVPbw?oc=5"
+        },
+        {
+          "title": "力積電真的翻身了？毛利率衝48% 分析師看成熟製程還要漲10%至20%",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9vUUlCWjBFV0VRTDRBamlXTjU4SUhLM2lHdzlpWFFaMTd5RlI2bHdXSXV4ZkFvOVBjcS1KLUo0aHhEaURqbVdiQ0hzMi1uNWlT0gFWQVVfeXFMTUxOT1lybWJMRXdybS1EeWs4Q09TR3FSUi1LRFozTV9sT1MzY0EySHFqNl82MTNvMlhLRlhZa04xVmVETTQwbWtpU2RrSGZ4SGY4RUNJYmc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "玻璃大廠康寧（Corning）宣布跨入CPO（共同封裝光學）市場，市場重新評估台股CPO供應鏈贏家與輸家，點名聯亞、旺矽等受惠；另有產業分析指出輝達以預付款鎖住CPO後段產能，相關產能未來可望放大15倍，顯示CPO在AI伺服器中的重要性持續提升。",
+      "relatedStocks": [
+        {
+          "code": "3081",
+          "name": "聯亞"
+        },
+        {
+          "code": "6223",
+          "name": "旺矽"
+        }
+      ],
+      "sources": [
+        {
+          "title": "康寧黑科技插旗CPO！誰被取代、誰奪王座？正達、聯亞、旺矽優勝劣敗全解析",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSRFVxTjE0aVMtSXdLb0dLWFpUWmNQS2hHUEp0R0NfeGNzSjNjLVR1UmZtNmRYTWVjRVByOE9iY3pWdmxoV255cWFTOEZOcE82UTViTnR0X2QzWDNBM3N1NENXX1gtRDF0Y0E?oc=5"
+        },
+        {
+          "title": "CPO產能放大15倍，買單的是最缺錢的客戶：NVIDIA預付款鎖住後段",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaHo2cGpJVzd6QXFEMEl2NjNmbnhvWXI4MFBHTHZGT19QeUpuYWoxdnRUTW1SLTRzZ3FibHJVNWUzWXZ5M2NJZGRFY2V4MmVuZkxoN3ZHZUR3TEFjaXNiUmUzejJRTExIeEt0N2NfaXQ2a2t6RTg3U0RXWHdlMkVxQUlTS1ZTb0FxbHBv?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "上銀首度證實人形機器人相關零組件已開始分批出貨給美系大廠客戶，是公司在人形機器人題材上首個具體訂單進展；同日機械、工具機公會表示產業景氣已見復甦，預期明年產值上看3000億元，展望審慎樂觀。",
+      "relatedStocks": [
+        {
+          "code": "2049",
+          "name": "上銀"
+        }
+      ],
+      "sources": [
+        {
+          "title": "上銀首度鬆口：人形機器人相關零組件供應美系大廠已開始分批出貨",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1wZHdPdnBsT1FzaVZtdnN4YmRSS3BwdXR0MmRVSk1FVV9lNVozWjMwY0tGSWZLMll2UFJDMFpFQXQ2OXdGVC1KOGZIN0w4NW1r0gFWQVVfeXFMTjgtNG53RFVnQ0VYSUZhMmFxSS10YkdMZFBMMkREc0k2QXhFOExUVTZyRERTelRhRXBrbzlBcUpfNmRrVFhJVFdBajZxQ0N2cEhhRzJEZVE?oc=5"
+        },
+        {
+          "title": "產值明年衝3000億！機械、工具機公會：產業已見復甦明年展望審慎樂觀",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE92dmVGd2h3eUl0ZndtMHFkX0tNVjlKOHVWZlZ3N0Y0YjUwSWpHLXpfa1FQZm9YSGYzSzNkdDZRdWVxV3AzcWtSd3lqdHktakd20gFWQVVfeXFMTUlvSXBqT3AzQ3lEMjFHbUdwNzNaZzNBcDBsejZvSHNEei1naUlibnh0b0JIT21FVENtdWxaY3NfdENvZkhuSE9fdnJ2ZmZLNTdmdnhOUVE?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "SpaceX加碼採購輝達AI晶片用於自家衛星與資料中心建設，市場預期這波龐大採購可能為台積電晶圓代工與廣達伺服器組裝帶來新一波訂單動能。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "SpaceX狂掃輝達晶片 台積、廣達等有望迎新一波訂單",
+          "url": "https://tw.news.yahoo.com/spacex%E7%8B%82%E6%8E%83%E8%BC%9D%E9%81%94%E6%99%B6%E7%89%87-%E5%8F%B0%E7%A9%8D-%E5%BB%A3%E9%81%94%E7%AD%89%E6%9C%89%E6%9C%9B%E8%BF%8E%E6%96%B0-%E6%B3%A2%E8%A8%82%E5%96%AE-223841619.html"
+        }
+      ]
+    }
+  ]
+}
