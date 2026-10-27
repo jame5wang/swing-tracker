@@ -355,7 +355,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .cnItem a:hover{color:var(--accent); text-decoration:underline;}
 .cnMeta{font-size:11px; color:var(--mute); margin-left:6px; white-space:nowrap;}
 .detailAnnNote{font-size:12px; margin:8px 0 0; padding:8px 10px; border-radius:8px; background:color-mix(in srgb, var(--accent) 10%, var(--panel2)); color:var(--ink); cursor:pointer;}
-/* 上市／上櫃融資融券餘額（近20日） */
+/* 上市／上櫃融資融券餘額（近60日） */
 .creditCard::before{background:var(--deep);}
 .creditCard .annHead{cursor:pointer; user-select:none;}
 .creditCard .mgHeadDate{font-size:11px; font-weight:600; color:var(--mute); font-family:var(--mono);}
@@ -901,7 +901,7 @@ async function loadMacro(){
 let creditData=null;
 let creditCollapsed=(()=>{ try{ return localStorage.getItem('creditCollapsed')==='1'; }catch(e){ return false; } })();
 let creditTableOpen=false;
-const CREDIT_DAYS=20;
+const CREDIT_DAYS=60; // 使用者 2026-10-27 從近20日改成近60日
 async function loadCredit(){
   const json=await fetchJson('data/margin.json');
   if(!json) return;

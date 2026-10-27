@@ -1,6 +1,6 @@
 """
-抓取上市（證交所）與上櫃（櫃買中心）的大盤融資融券餘額，寫入 data/margin.json，保留近 60 個交易日
-（網站顯示近 20 日）。使用者 2026-10-27 要求：「增加櫃買／上市融資融券餘額，近20日，每日更新」。
+抓取上市（證交所）與上櫃（櫃買中心）的大盤融資融券餘額，寫入 data/margin.json，保留近 70 個交易日
+（網站顯示近 60 日）。使用者 2026-10-27 要求：「增加櫃買／上市融資融券餘額，每日更新」，同日改成近60日。
 
 資料來源（官方公開資料）：
 - 上市：證交所「信用交易統計」
@@ -24,9 +24,9 @@ from datetime import date, datetime, timedelta, timezone
 
 TZ = timezone(timedelta(hours=8))
 OUTPUT_PATH = "data/margin.json"
-KEEP_DAYS = 60          # 保留的交易日數（網站顯示 20 日，多留一些可以算 20 日變化）
-BACKFILL_DAYS = 25      # 資料少於這個交易日數時往回補
-BACKFILL_LOOKBACK = 45  # 往回補最多回溯幾個日曆日
+KEEP_DAYS = 70          # 保留的交易日數（網站顯示 60 日，多留幾天可以算 60 日變化）
+BACKFILL_DAYS = 62      # 資料少於這個交易日數時往回補
+BACKFILL_LOOKBACK = 100  # 往回補最多回溯幾個日曆日（60 個交易日約 85～90 個日曆日）
 RECENT_LOOKBACK = 7     # 平常每次重抓最近幾個日曆日（補漏抓的日子、更正前一日餘額）
 PAUSE = 2.0             # 證交所對短時間大量請求會暫時封鎖，請求之間留間隔
 
