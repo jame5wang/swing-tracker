@@ -1,0 +1,41 @@
+name: 抓取上市／上櫃融資融券餘額
+
+on:
+  schedule:
+    # 使用者要求每天 18:00 更新（台北時間＝UTC 10:00）。證交所、櫃買中心的融資融券資料約在晚上
+    # 20:30～22:00 才公布當天數字，18:00 這次會先抓到前一個交易日；21:50（UTC 13:50）再補抓當天。
+    - cron: '0 10 * * 1-5'
+    - cron: '50 13 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 抓取融資融券餘額（證交所信用交易統計、櫃買中心融資融券餘額）
+        continue-on-error: true
+        run: python3 scripts/fetch_margin.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -f data/margin.json ] && git add data/margin.json
+          git diff --quiet --cached && exit 0
+          git commit -m "更新上市／上櫃融資融券餘額 $(TZ=Asia/Taipei date +'%Y-%m-%d %H:%M')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*15))
+          done
+          echo "::error::推送失敗（重試5次仍衝突）"
+          exit 1

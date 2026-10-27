@@ -355,6 +355,41 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 .cnItem a:hover{color:var(--accent); text-decoration:underline;}
 .cnMeta{font-size:11px; color:var(--mute); margin-left:6px; white-space:nowrap;}
 .detailAnnNote{font-size:12px; margin:8px 0 0; padding:8px 10px; border-radius:8px; background:color-mix(in srgb, var(--accent) 10%, var(--panel2)); color:var(--ink); cursor:pointer;}
+/* 上市／上櫃融資融券餘額（近20日） */
+.creditCard::before{background:var(--deep);}
+.creditCard .annHead{cursor:pointer; user-select:none;}
+.creditCard .mgHeadDate{font-size:11px; font-weight:600; color:var(--mute); font-family:var(--mono);}
+.creditCard.collapsed .mgBody{display:none;}
+.creditCard.collapsed .feedCaret{transform:rotate(-90deg);}
+.mgGrid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;}
+@media (max-width:560px){ .mgGrid{grid-template-columns:1fr;} }
+.mgPanel{background:var(--panel2); border-radius:10px; padding:10px 12px; min-width:0;}
+.mgTitle{display:flex; justify-content:space-between; align-items:baseline; font-size:12.5px; font-weight:700; margin-bottom:6px;}
+.mgTitle .mgDate{font-size:10.5px; font-weight:600; color:var(--mute); font-family:var(--mono);}
+.mgRow{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; font-size:12px; margin-top:3px;}
+.mgLabel{color:var(--sub); min-width:52px;}
+.mgVal{font-family:var(--mono); font-weight:700; font-size:14px; color:var(--ink);}
+.mgChg{font-family:var(--mono); font-size:11.5px; font-weight:650; color:var(--sub);}
+.mgChg.up{color:var(--buy);} .mgChg.down{color:var(--sell);}
+.mgSub{font-size:11px; color:var(--sub); margin-top:2px;}
+.mgSub b{font-family:var(--mono); font-weight:650;}
+.mgSpark{display:block; width:100%; height:38px; margin:6px 0 2px;}
+.mgSpark .mgLine{fill:none; stroke:var(--accent); stroke-width:1.6; vector-effect:non-scaling-stroke;}
+.mgSpark .mgArea{fill:color-mix(in srgb, var(--accent) 12%, transparent); stroke:none;}
+.mgSparkLbl{display:flex; justify-content:space-between; font-size:10px; color:var(--mute); font-family:var(--mono);}
+.mgTableBtn{margin-top:10px; font-size:11.5px; font-weight:650; color:var(--accent); background:none; border:none; padding:0; cursor:pointer; font-family:inherit;}
+.mgTables{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px;}
+@media (max-width:760px){ .mgTables{grid-template-columns:1fr;} }
+.mgTableWrap{overflow-x:auto; border:1px solid var(--line); border-radius:8px;}
+.mgTable{width:100%; border-collapse:collapse; font-size:11.5px; font-family:var(--mono); white-space:nowrap;}
+.mgTable caption{text-align:left; font-family:inherit; font-size:11.5px; font-weight:700; padding:6px 8px 2px; color:var(--sub);}
+.mgTable th{font-weight:650; color:var(--sub); text-align:right; padding:4px 8px; border-bottom:1px solid var(--line); background:var(--panel2);}
+.mgTable td{text-align:right; padding:3px 8px; border-bottom:1px solid color-mix(in srgb, var(--line) 60%, transparent);}
+.mgTable th:first-child, .mgTable td:first-child{text-align:left;}
+.mgTable td.up{color:var(--buy);} .mgTable td.down{color:var(--sell);}
+.mgTable .mgProv{font-size:9.5px; color:var(--mute); margin-left:3px;}
+.mgFoot{font-size:10.5px; color:var(--mute); margin-top:8px; line-height:1.5;}
+@media (max-width:420px){ .mgTable th, .mgTable td{padding:3px 5px;} .mgTable{font-size:11px;} }
 </style>
 </head>
 <body>
@@ -366,6 +401,7 @@ button.pill.active{background:var(--panel2, var(--panel)); border-color:currentC
 </header>
 <main>
   <div id="macroCard"></div>
+  <div id="creditCard"></div>
   <div class="dataBar" id="dataBar"><span class="dot"></span><span id="dataBarText">正在讀取自動盤後資料…</span></div>
   <div id="view"></div>
 </main>
@@ -860,6 +896,91 @@ async function loadMacro(){
   renderMacroCard();
 }
 
+// 上市／上櫃融資融券餘額（scripts/fetch_margin.py，每天 18:00、21:50 更新；官方約晚上 20:30～22:00 公布當日資料）
+// finAmt＝融資餘額（仟元）、finLots＝融資餘額（張）、shortLots＝融券餘額（張）；prov＝當日初值，隔日依官方「前日餘額」更正
+let creditData=null;
+let creditCollapsed=(()=>{ try{ return localStorage.getItem('creditCollapsed')==='1'; }catch(e){ return false; } })();
+let creditTableOpen=false;
+const CREDIT_DAYS=20;
+async function loadCredit(){
+  const json=await fetchJson('data/margin.json');
+  if(!json) return;
+  creditData=json;
+  renderCreditCard();
+}
+function yi(thousand){ return thousand/1e5; } // 仟元 → 億元
+function fmtNum(n, digits){ return Number(n).toLocaleString('zh-TW',{minimumFractionDigits:digits||0, maximumFractionDigits:digits||0}); }
+function signed(n, digits, unit){ if(n===null||n===undefined||isNaN(n)) return '—'; return (n>0?'+':n<0?'−':'±')+fmtNum(Math.abs(n),digits)+(unit||''); }
+function chgCls(n){ return n>0?'up':(n<0?'down':''); }
+function mdLabel(d){ return d ? d.slice(5).replace('-','/') : ''; }
+function creditSparkSvg(rows){
+  const vals=rows.map(r=>yi(r.finAmt));
+  if(vals.length<2) return '';
+  const min=Math.min(...vals), max=Math.max(...vals), span=(max-min)||1;
+  const W=200, H=38, pad=3;
+  const pts=vals.map((v,i)=>[ (i/(vals.length-1))*W, pad+(1-(v-min)/span)*(H-2*pad) ]);
+  const line=pts.map(p=>p.map(x=>x.toFixed(1)).join(',')).join(' ');
+  const area=`0,${H} ${line} ${W},${H}`;
+  return `<svg class="mgSpark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polygon class="mgArea" points="${area}"/><polyline class="mgLine" points="${line}"/></svg>
+    <div class="mgSparkLbl"><span>${mdLabel(rows[0].date)}</span><span>近${rows.length}日融資：低 ${fmtNum(min,0)}／高 ${fmtNum(max,0)} 億</span><span>${mdLabel(rows[rows.length-1].date)}</span></div>`;
+}
+function creditPanelHtml(label, all){
+  if(!all || !all.length) return `<div class="mgPanel"><div class="mgTitle">${label}</div><div class="mgSub">資料暫缺</div></div>`;
+  const last=all[all.length-1], prev=all.length>1?all[all.length-2]:null;
+  const base=all.length>CREDIT_DAYS?all[all.length-1-CREDIT_DAYS]:all[0];
+  const recent=all.slice(-CREDIT_DAYS);
+  const finChg=prev?yi(last.finAmt-prev.finAmt):null;
+  const finPct=prev?(last.finAmt/prev.finAmt-1)*100:null;
+  const fin20=yi(last.finAmt-base.finAmt), fin20Pct=(last.finAmt/base.finAmt-1)*100;
+  const shortChg=prev?last.shortLots-prev.shortLots:null;
+  const ratio=last.finLots?last.shortLots/last.finLots*100:null;
+  return `<div class="mgPanel">
+    <div class="mgTitle">${label}<span class="mgDate">${mdLabel(last.date)}${last.prov?'（初值）':''}</span></div>
+    <div class="mgRow"><span class="mgLabel">融資餘額</span><span class="mgVal">${fmtNum(yi(last.finAmt),1)} 億</span><span class="mgChg ${chgCls(finChg)}">${signed(finChg,1,' 億')}${finPct!==null?`（${signed(finPct,2,'%')}）`:''}</span></div>
+    ${creditSparkSvg(recent)}
+    <div class="mgSub">近${Math.min(CREDIT_DAYS, all.length-1)}日：<b class="mgChg ${chgCls(fin20)}">${signed(fin20,1,' 億')}（${signed(fin20Pct,2,'%')}）</b>　融資張數 <b>${fmtNum(last.finLots)}</b> 張</div>
+    <div class="mgRow" style="margin-top:7px"><span class="mgLabel">融券餘額</span><span class="mgVal">${fmtNum(last.shortLots)} 張</span><span class="mgChg ${chgCls(shortChg)}">${signed(shortChg,0,' 張')}</span></div>
+    ${ratio!==null?`<div class="mgSub">券資比 <b>${ratio.toFixed(2)}%</b></div>`:''}
+  </div>`;
+}
+function creditTableHtml(label, all){
+  // 多取一天，最早那天只用來算第一列的增減，不顯示
+  const rows=all.slice(-(CREDIT_DAYS+1));
+  const first=rows.length>CREDIT_DAYS?1:0;
+  const body=[];
+  for(let i=rows.length-1;i>=first;i--){
+    const r=rows[i], p=i>0?rows[i-1]:null;
+    const fc=p?yi(r.finAmt-p.finAmt):null, sc=p?r.shortLots-p.shortLots:null;
+    body.push(`<tr><td>${mdLabel(r.date)}${r.prov?'<span class="mgProv">初值</span>':''}</td><td>${fmtNum(yi(r.finAmt),1)}</td><td class="${chgCls(fc)}">${signed(fc,1)}</td><td>${fmtNum(r.shortLots)}</td><td class="${chgCls(sc)}">${signed(sc,0)}</td><td>${r.finLots?(r.shortLots/r.finLots*100).toFixed(2):'—'}</td></tr>`);
+  }
+  return `<div class="mgTableWrap"><table class="mgTable"><caption>${label}</caption>
+    <thead><tr><th>日期</th><th>融資餘額(億)</th><th>增減(億)</th><th>融券餘額(張)</th><th>增減(張)</th><th>券資比%</th></tr></thead>
+    <tbody>${body.join('')}</tbody></table></div>`;
+}
+function renderCreditCard(){
+  const el=document.getElementById('creditCard');
+  if(!el) return;
+  const tw=(creditData&&creditData.twse)||[], tp=(creditData&&creditData.tpex)||[];
+  if(!tw.length && !tp.length){ el.innerHTML=''; return; }
+  const latest=[tw, tp].map(s=>s.length?s[s.length-1].date:'').filter(Boolean).sort().pop();
+  el.innerHTML=`<div class="annCard creditCard${creditCollapsed?' collapsed':''}">
+    <div class="annHead" id="creditHeadBtn"><span>💰 融資融券餘額（上市／上櫃，近${CREDIT_DAYS}日）<span class="feedCaret">▾</span></span><span class="mgHeadDate">資料日 ${mdLabel(latest)}</span></div>
+    <div class="mgBody">
+      <div class="mgGrid">${creditPanelHtml('上市（集中市場）', tw)}${creditPanelHtml('上櫃（櫃買市場）', tp)}</div>
+      <button type="button" class="mgTableBtn" id="creditTableBtn">${creditTableOpen?'▾ 收合近'+CREDIT_DAYS+'日明細':'▸ 近'+CREDIT_DAYS+'日每日明細'}</button>
+      ${creditTableOpen?`<div class="mgTables">${creditTableHtml('上市', tw)}${creditTableHtml('上櫃', tp)}</div>`:''}
+      <div class="mgFoot">來源：證交所「信用交易統計」、櫃買中心「上櫃股票融資融券餘額」合計。每天 18:00、21:50 自動更新；官方約晚上 8:30～10 點才公布當天數字，所以 18:00 看到的是前一個交易日。最新一天是初值，隔天依官方「前日餘額」更正。券資比＝融券張數÷融資張數。</div>
+    </div>
+  </div>`;
+  document.getElementById('creditHeadBtn').addEventListener('click',()=>{
+    creditCollapsed=!creditCollapsed;
+    try{ localStorage.setItem('creditCollapsed', creditCollapsed?'1':'0'); }catch(e){}
+    renderCreditCard();
+  });
+  const tb=document.getElementById('creditTableBtn');
+  if(tb) tb.addEventListener('click',()=>{ creditTableOpen=!creditTableOpen; renderCreditCard(); });
+}
+
 // 持股重大訊息與個股新聞（scripts/fetch_company_news.py 每天自動更新4次）
 let companyNews=null;
 const ANN_RECENT_DAYS=3;
@@ -1292,6 +1413,8 @@ function render(){
   const isDetail = activeIndex!==null && stocks[activeIndex];
   // 個股詳情頁只專注這一檔，盤前簡報與自動資料狀態列收起，減少滑動距離
   if(macroEl) macroEl.style.display = isDetail ? 'none' : '';
+  const creditEl=document.getElementById('creditCard');
+  if(creditEl) creditEl.style.display = isDetail ? 'none' : '';
   if(dataBarEl) dataBarEl.style.display = isDetail ? 'none' : '';
   if(isDetail) renderDetail(activeIndex);
   // 列表已經在畫面上時只重繪列表內容，不重建搜尋框——資料是非同步陸續載入的，
@@ -1835,6 +1958,7 @@ function loadAllData(){
   loadResearchData();
   loadTechnical();
   loadMacro();
+  loadCredit();
   loadCompanyNews();
   // 正在翻看較舊日期的新聞時不要把使用者拉回今天
   if(newsDateIdx===0) loadNews();
