@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T02:30:00+00:00",
+  "items": [
+    {
+      "summary": "Anthropic傳出已申請首次公開發行(IPO)，點燃市場對AI投資熱度，美股那斯達克收紅、費城半導體指數單日大漲逾3.6%，為台股開盤注入正面氣氛；另有報導指出輝達VR平台相關訂單在鴻海大幅躍增，業界傳出佔比有望挑戰五成，顯示AI終端應用訂單能見度持續擴大。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "Anthropic熱潮延燒！美股收紅、費半飆3.6%", "url": "https://tw.news.yahoo.com/anthropic%E7%86%B1%E6%BD%AE%E5%BB%B6%E7%87%92-%E7%BE%8E%E8%82%A1%E6%94%B6%E7%B4%85-%E8%B2%BB%E5%8D%8A%E9%A3%863-6-224437649.html"},
+        {"title": "輝達VR平台鴻海訂單躍增 業界傳出占比挑戰五成", "url": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94vr%E5%B9%B3%E5%8F%B0%E9%B4%BB%E6%B5%B7%E8%A8%82%E5%96%AE%E8%BA%8D%E5%A2%9E-%E6%A5%AD%E7%95%8C%E5%82%B3%E5%87%BA%E5%8D%A0%E6%AF%94%E6%8C%91%E6%88%B0%E4%BA%94%E6%88%90-224649157.html"}
+      ]
+    },
+    {
+      "summary": "欣興董事會同一天通過兩項重大決議：因應ABF載板需求持續吃緊，長交期設備採購再加碼509億元；同時擬將日本子公司全部股權處分予當地同業MEIKO，並對多家海外轄下公司增資以償還既有債務、重組海外轉投資版圖。",
+      "relatedStocks": [{"code": "3037", "name": "欣興"}],
+      "sources": [
+        {"title": "ABF載板需求太強！ 欣興：長交期設備採購再增509億元", "url": "https://ec.ltn.com.tw/article/breakingnews/5620751"},
+        {"title": "欣興：擬處分日本子公司全部股權 日本MEIKO可望接手", "url": "https://ec.ltn.com.tw/article/breakingnews/5620711"},
+        {"title": "欣興董事會擬處分日本子公司予 MEIKO 簽署合作意向", "url": "https://money.udn.com/money/story/5612/9840498"}
+      ]
+    },
+    {
+      "summary": "力成法說會表示漲價效益延續，Q4營收毛利率、稼動率可望續揚，先進封裝FOPLP技術布局逾10年明年進入放量階段、可望成為新成長引擎，董座也表態希望與晶圓代工廠進一步策略聯盟；另有報導提及集團同步調整中國廠區股權佈局，並談及與台積電往來策略。",
+      "relatedStocks": [{"code": "6239", "name": "力成"}],
+      "sources": [
+        {"title": "〈力成法說〉漲價效益延續帶動Q4獲利攀升 盼與晶圓廠策略聯盟", "url": "https://news.cnyes.com/news/id/6638372"},
+        {"title": "力成FOPLP技術布局逾10年明年量產進度不變", "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORlFMS1JyWEFzQngxM0hHcFR0RXNCNEZ0TGhBeWJBUmRCbl92Ylg1Sk43dVFJS3A2V1k5WFcwaE96eVB2dzBnb2gyOVB2Zk9IYy1XWXlGOVMxWjU2aGF1TmpFM3ZYenk2alRreDJPNVkyeURrWURMRVpsQzFweFJ3ZWYzQWRhcFI3Q3h1VnQxaG0wVmUyYUs2MWJfcG8?oc=5"},
+        {"title": "力成調整中國廠股權　董座談台積電戰略", "url": "https://tw.news.yahoo.com/%E5%8A%9B%E6%88%90%E8%AA%BF%E6%95%B4%E4%B8%AD%E5%9C%8B%E5%BB%A0%E8%82%A1%E6%AC%8A-%E8%91%A3%E5%BA%A7%E8%AB%87%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%97%8F%E5%A4%A7%E6%88%B0%E7%95%A5-230000670.html"}
+      ]
+    },
+    {
+      "summary": "南亞科透露DRAM擴廠進度明確，5A新廠明年裝機、月產能拚上看5萬片，2027年亦有新廠裝機規劃；本土法人估Q4DRAM合約價有望再漲近兩成，記憶體超級循環延續的看法也與近期黃仁勳、戴爾對供需吃緊的談話相呼應；原規劃落腳雲林的擴廠案最終改落腳屏東。",
+      "relatedStocks": [{"code": "2408", "name": "南亞科"}],
+      "sources": [
+        {"title": "南亞科擴廠棄雲林落腳屏東 張麗善曝事後接獲電話：未來還有合作機會", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tS0tub0ItQmp5Nk1JOGxOMTJKbGM4d1JMeWlUYzVXX1JDOVJwSXpMNzlFN0JWRlFlUHdGNS16U2FEQVkyOTFXY3lzNk5xdkdI0gFWQVVfeXFMT0c0WmhOckNBNDYwY0dMTzQ3dXpvWmhRTF9EYXZlT0VReGtMdHgxOGRDaFNKMlZqVnhoSGw4Rl9lUkY0aXd2N192QVNubEtEQUxJU0tRRlE?oc=5"},
+        {"title": "半導體產業鏈／南亞科Q3每股大賺25.4元！DRAM新廠2027年裝機", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DTGxTeDZGWDQtN0UybmNhMi1xbW5hLTNZZVA4VDUwUnRibW8xYU53bXVkLV9LM0hfNUJjRG1wZy00bDFtWnY0YU1NMmhmUjJnbV8yYXl1S1NrOVBLWktLX0ZSNk5WcmlWRUE?oc=5"},
+        {"title": "記憶體超級循環還沒結束？黃仁勳、戴爾談供需 南亞科彈升逾5%", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE80Yl9nbmpuc3RKbE9sVkh6N1ZtaDFaNmc5ajZJXzlvWFlPcDh5UHRXenlZRklGdjdIcF84dllWM0VseHV1SmkxR214OGZNcFUtdVFWQ01taXkyd9IBX0FVX3lxTE9TeTNBMUo4dUNBWG1yTjdXenVILUwydVhldTh2ck5leEx5cDdPVUxfMkJXTGpqeDZJODRZSTFmODh3cnRONm1FejhRUi1lZTNMOG5TTUxuMDlFZ1k2YWtR?oc=5"}
+      ]
+    },
+    {
+      "summary": "PCB上游CCL與玻纖布缺貨漲價風潮持續擴大，部分高階材料報價較年初已大漲逾10倍、毛利率看上70%，載板與高階材料亦以每季約15%速度調漲；市場也在討論PTFE等新材料是否撼動現有CCL霸主地位，聯茂同步啟動M10混壓材料驗證、規劃2027年M9放量擴產，南亞、台光電、台燿、聯茂、金居、臻鼎等供應鏈廠商同步受惠。",
+      "relatedStocks": [
+        {"code": "1303", "name": "南亞"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "8358", "name": "金居"},
+        {"code": "4958", "name": "臻鼎-KY"},
+        {"code": "3037", "name": "欣興"}
+      ],
+      "sources": [
+        {"title": "PCB他們最香！CCL報價漲10倍、毛利率看70％", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQaXlwOFdGV1ctYkNOdlZ0QkIwa1Z1UE9SMVB0Z29TNWJhUDdPZU9sRFBNSEN0bGxMOVZ3SHJqbFRQRmNvMnJ3WWhUeHNnZmZtQ3I5OEhHbHRLVlAxRk9jZ0tLOFRCMDV3elE?oc=5"},
+        {"title": "上游材料爆缺貨潮！PCB、載板每季喊漲15％", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVX2xCcEc2UXMxLUUyZUtwYWJYVGpaV2lEWGc0cndrU1RPZWR1RllhWFhGRUV4OW9pWmRiLVlGRFZvSk5Tdk1NUGZlb1ZkbE9jekwyQTY1UWhxUElyMmg4V3MxWE1LamV3ZGc?oc=5"},
+        {"title": "PCB大潮／PTFE撼動CCL霸主地位？", "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HTTdUa1RncEE4N0hha3ZJajVwU19vVi1IcS1lb1JDbWY0ZF9uSTVsVVEwbGFibGxTRllTQVhKNXNkOGhIUC1FdFJ3ekhMWUR6X1E?oc=5"}
+      ]
+    },
+    {
+      "summary": "市場傳出台積電先進封裝CoWoS報價最高上調兩成、設備交期拉長至8個月，輝達Blackwell、超微等客戶成本承壓；成熟製程晶圓代工報價同步看漲，先進封裝架構轉型帶動中介層(interposer)供給緊張，聯電、力積電因此迎來補漲行情；智原也與三星、聯電合作拿下美國2奈米雲端AI ASIC史上最大規模專案，顯示先進製程訂單能見度持續拉高。",
+      "relatedStocks": [{"code": "2303", "name": "聯電"}],
+      "sources": [
+        {"title": "AI晶片需求燒旺 CoWoS 台積電傳漲價最高兩成、交期拉長至8個月", "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5FY00ybTg1S3ZuUVVNWGFHQVhiMWVmZE9PdXlkejM1TVVNSHN1T1RfejJJdFF3Z2VwU2QzSmc0ejl6OVk4REh6WG1kQXVPd2NoeW9taUhQaHR2YXNseGFlcE1PczlWMjZYbGktYWxNTDkzdVdtWkZleDNn?oc=5"},
+        {"title": "晶圓代工吹漲價風！投顧點名4檔迎補漲 聯電、力積電有戲", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBXRkVUb3ZHNk5VV0hNQUh2ZmVwZUFzd1Nqd1pOVVJ4Z0k1M2h2ZGFkWS1JRGxlWHpFUDFJSVhEeTZkX0tKay15Nm5fSmNJYzA?oc=5"},
+        {"title": "智原聯手三星、聯電搶2奈米 拿下史上最大AI案", "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zeHZkbmY3WkxUbFNXYUxPRTlCZ0JyeE5jWFBybTlYTUd3RnNKYm1XSWw1U3BFU3BvaDlMbFQtMUZUUGt5Tk52X0d4MjRSbDdrd29MSWtpQWJlNXNpWXNiRXh6dmc?oc=5"}
+      ]
+    },
+    {
+      "summary": "光通訊關鍵材料磷化銦(InP)缺貨潮持續延燒，產業人士預期短缺恐拉長到2028年，聯亞、全新積極搶穩料源，華星光則規劃產能翻倍以應對CPO與光通訊需求升溫。",
+      "relatedStocks": [
+        {"code": "3081", "name": "聯亞"},
+        {"code": "2455", "name": "全新"},
+        {"code": "4979", "name": "華星光"}
+      ],
+      "sources": [
+        {"title": "光通訊需求爆發 關鍵材料卻缺到2028年？聯亞、全新搶穩料源 華星光拚產能翻倍", "url": "https://www.ctee.com.tw/news/20261027700759-430502"},
+        {"title": "磷化銦缺貨潮延燒！聯亞一度狂飆9%、華星光跟漲", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE85b3FpRUdIcE5JLUN5SXFUM05Kai1DQkVrRlhxVnVfVGlIbm9sbWVJekQ1T01lY1p4d0tTMmVfS2c5UGtKS2szSFBwWFo?oc=5"}
+      ]
+    },
+    {
+      "summary": "英飛凌宣布將投資11億歐元在奧地利建立全球首座12吋晶圓氮化鎵(GaN)功率半導體量產線，瞄準AI資料中心高效供電需求；此舉可能改變全球GaN供應格局，對台灣化合物半導體供應鏈（全新、穩懋、台勝科、IET-KY等）的長期競爭態勢與訂單能見度值得持續留意。",
+      "relatedStocks": [
+        {"code": "2455", "name": "全新"},
+        {"code": "3105", "name": "穩懋"},
+        {"code": "3532", "name": "台勝科"},
+        {"code": "4971", "name": "IET-KY"}
+      ],
+      "sources": [
+        {"title": "AI資料中心推升高效供電需求！第三代半導體牽動產業鏈，英飛凌砸11億歐元建12吋GaN廠", "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNaldQM2gzcEJFV2pjSkQzZ19OWjgtY0V2WTlqOVdadF9kSF94RXZvMXRzMjJmUnl1NVVMLWVEVk1LQjNRLU5lUklkbTFnNHFoc3RGdFB6TUhCcGt0Q1Jrak1YaU1zLVNlay0xMnVKZmFyYks1V09yanVlOTFJUUlDNWZNMmI5WEZZdnd4TDVUX0lsUGVrYklyZDFqZGhhZDd3ckcyd1lLdkEzMFNJb2x0WDVEUW43QUZqaGZlSmtncTY4RUdRU2lPLXBLNWtNVTFSREM3blM2dlJ6OTNxbHRUOElfWmFKNW56RUR2Y1drTk13SHZhNzhkZW95Sm8xRWRuRDl4VG94b0IwVnhucWNhbUItbGNZTTQxUUpPYkR1d2Mwa0k5MXJ2Nm0xVWlPTjRudHBKMGIxVVVtUUtuX3JQeFJzTDBiNE0?oc=5"}
+      ]
+    },
+    {
+      "summary": "AI伺服器液冷需求持續加溫，美超微(Supermicro)推出模組化液冷方案將PUE降至1.06，並發表搭載256顆CPU的全液冷Vera CPU機櫃；緯穎則因Meta、亞馬遜需求延續，液冷機櫃出貨可望接續成長，顯示散熱供應鏈訂單動能仍強。",
+      "relatedStocks": [
+        {"code": "3017", "name": "奇鋐"},
+        {"code": "3324", "name": "雙鴻"},
+        {"code": "8996", "name": "高力"},
+        {"code": "6805", "name": "富世達"},
+        {"code": "3653", "name": "健策"}
+      ],
+      "sources": [
+        {"title": "伺服器大廠美超微背後液冷推手大訊不藏了 推模組化散熱PUE降至1.06", "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAzbE8taTBjZlUtV2ItdFBoNlVtZmdGNVIzVWtSVFhTeWFyN3hvak1zOWQ5YVp6M1FGeEx6YjIzbmdDeHJiMG1SOUQ4cE4wb2ZCT3c?oc=5"},
+        {"title": "緯穎 (6669-TW) Meta與亞馬遜需求延續，液冷機櫃接續成長", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9namtKUGFHOW1MNkE3czhIOFpWdlVnNEFBV21OSFlHLXEyTm1lUkFPMlJyWEtGVjlqVkgxSms3X0hfdEhZMDhpYXkzR1FUUGc?oc=5"}
+      ]
+    },
+    {
+      "summary": "鴻海將於10/30舉行科技日，聚焦AI智慧製造、機器人與電動車；上銀集團旗下邁萃斯精密同步證實今年日本市場訂單估年增達4成。網通設備方面，資料中心AIDC升級潮持續帶動需求，智邦交換器營收占比估衝上3成並擴產，高技則積極尋地擴廠搶攻伺服器商機。",
+      "relatedStocks": [
+        {"code": "2049", "name": "上銀"},
+        {"code": "2345", "name": "智邦"}
+      ],
+      "sources": [
+        {"title": "鴻海科技日30日登場 鎖定AI智造機器人電動車", "url": "https://money.udn.com/money/story/5612/9840645"},
+        {"title": "上銀訂單爆滿 日本市場今年訂單預估年成長4成", "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PQUtLaEhoV2NKYkxrWXlNLXM3ZzJHdW44SkVhQTNFSGRrUklVVDlBQUp3Q25fU0JIM1F6ZU1Ublc3LWlxcW81RkNMZ0tLZmhJd3FWTTRxbDlsa3VkcEZwcURQY1V3QkQtcFhwdEt3?oc=5"},
+        {"title": "2345 智邦 - 網通廠搶AIDC升級潮 啟碁、明泰、建漢年底搭上商機", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02QmJQVmVrcHVONXpVc0xGQkN4MmhIZVItcXNoZ1dsTmN3NnkxdGQ1eEdfRHh6YWVod0dxOEVobWZfRzdFam8xeEVIcnBOUjNnUVIxUmRWMV8?oc=5"},
+        {"title": "高技尋地擴廠搶伺服器商機；交換器營收占比衝3成", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSHZpWlVUUmJVZ1hOcnlicXJ4M1pVeW94MGMzQlJVenI2WEVJVFQxTU1SbHNnM0pjdmlvci0tQ05VVkpUaTlHaHNfbjVvUTlTS1pscjRPMkIyZk5jX3dNLTlhOG9xMmlfVHZBRnBsWkdVbTlhWFlIUW4yWl9QMTI0aUtnTF9vYjF6UHZkbU5hd28yZw?oc=5"}
+      ]
+    }
+  ]
+}
