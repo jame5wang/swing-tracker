@@ -1,19 +1,259 @@
 {
- "generated": "2026-10-27T22:36+08:00",
+ "generated": "2026-10-27T23:01+08:00",
  "note": "上市資料來自證交所「信用交易統計」、上櫃資料來自櫃買中心「上櫃股票融資融券餘額」合計列。finAmt＝融資餘額（仟元），finLots＝融資餘額（張），shortLots＝融券餘額（張）。prov＝當日初值：授信機構隔日仍會調帳，下一個交易日公布後改以其「前日餘額」更正。兩家約在盤後晚上 20:30～22:00 公布當日資料。",
  "status": {
   "twse": {
-   "成功天數": 27,
+   "成功天數": 67,
    "休市或尚未公布": 5,
    "失敗": []
   },
   "tpex": {
-   "成功天數": 27,
+   "成功天數": 67,
    "休市或尚未公布": 5,
    "失敗": []
   }
  },
  "twse": [
+  {
+   "date": "2026-07-20",
+   "finAmt": 569035380,
+   "finLots": 9270954,
+   "shortLots": 210862
+  },
+  {
+   "date": "2026-07-21",
+   "finAmt": 576496212,
+   "finLots": 9359439,
+   "shortLots": 212614
+  },
+  {
+   "date": "2026-07-22",
+   "finAmt": 582823676,
+   "finLots": 9354572,
+   "shortLots": 206549
+  },
+  {
+   "date": "2026-07-23",
+   "finAmt": 582626349,
+   "finLots": 9349915,
+   "shortLots": 208646
+  },
+  {
+   "date": "2026-07-24",
+   "finAmt": 577059338,
+   "finLots": 9354810,
+   "shortLots": 204754
+  },
+  {
+   "date": "2026-07-27",
+   "finAmt": 568663408,
+   "finLots": 9272006,
+   "shortLots": 186233
+  },
+  {
+   "date": "2026-07-28",
+   "finAmt": 545533645,
+   "finLots": 9096013,
+   "shortLots": 219259
+  },
+  {
+   "date": "2026-07-29",
+   "finAmt": 507010017,
+   "finLots": 8764867,
+   "shortLots": 217485
+  },
+  {
+   "date": "2026-07-30",
+   "finAmt": 493865783,
+   "finLots": 8701432,
+   "shortLots": 204214
+  },
+  {
+   "date": "2026-07-31",
+   "finAmt": 507462771,
+   "finLots": 9144265,
+   "shortLots": 188324
+  },
+  {
+   "date": "2026-08-03",
+   "finAmt": 514755353,
+   "finLots": 9120700,
+   "shortLots": 185322
+  },
+  {
+   "date": "2026-08-04",
+   "finAmt": 521134665,
+   "finLots": 9032012,
+   "shortLots": 196970
+  },
+  {
+   "date": "2026-08-05",
+   "finAmt": 523492321,
+   "finLots": 8901189,
+   "shortLots": 197203
+  },
+  {
+   "date": "2026-08-06",
+   "finAmt": 532804981,
+   "finLots": 8958261,
+   "shortLots": 191897
+  },
+  {
+   "date": "2026-08-07",
+   "finAmt": 537664510,
+   "finLots": 8986437,
+   "shortLots": 192740
+  },
+  {
+   "date": "2026-08-10",
+   "finAmt": 545295561,
+   "finLots": 9003222,
+   "shortLots": 202632
+  },
+  {
+   "date": "2026-08-11",
+   "finAmt": 544151977,
+   "finLots": 8970583,
+   "shortLots": 204819
+  },
+  {
+   "date": "2026-08-12",
+   "finAmt": 548083912,
+   "finLots": 8961034,
+   "shortLots": 201947
+  },
+  {
+   "date": "2026-08-13",
+   "finAmt": 549780654,
+   "finLots": 8969839,
+   "shortLots": 214046
+  },
+  {
+   "date": "2026-08-14",
+   "finAmt": 547059318,
+   "finLots": 8918284,
+   "shortLots": 222827
+  },
+  {
+   "date": "2026-08-17",
+   "finAmt": 550101672,
+   "finLots": 8867616,
+   "shortLots": 218218
+  },
+  {
+   "date": "2026-08-18",
+   "finAmt": 547011854,
+   "finLots": 8815336,
+   "shortLots": 204455
+  },
+  {
+   "date": "2026-08-19",
+   "finAmt": 548190238,
+   "finLots": 8828363,
+   "shortLots": 188334
+  },
+  {
+   "date": "2026-08-20",
+   "finAmt": 548407734,
+   "finLots": 8810093,
+   "shortLots": 197390
+  },
+  {
+   "date": "2026-08-21",
+   "finAmt": 546939324,
+   "finLots": 8845947,
+   "shortLots": 199998
+  },
+  {
+   "date": "2026-08-24",
+   "finAmt": 545259587,
+   "finLots": 8856844,
+   "shortLots": 201513
+  },
+  {
+   "date": "2026-08-25",
+   "finAmt": 546937698,
+   "finLots": 8900805,
+   "shortLots": 200504
+  },
+  {
+   "date": "2026-08-26",
+   "finAmt": 554802585,
+   "finLots": 8894031,
+   "shortLots": 206809
+  },
+  {
+   "date": "2026-08-27",
+   "finAmt": 559918784,
+   "finLots": 8881554,
+   "shortLots": 210591
+  },
+  {
+   "date": "2026-08-28",
+   "finAmt": 567177536,
+   "finLots": 8892721,
+   "shortLots": 213833
+  },
+  {
+   "date": "2026-08-31",
+   "finAmt": 569876903,
+   "finLots": 8859895,
+   "shortLots": 217718
+  },
+  {
+   "date": "2026-09-01",
+   "finAmt": 578115458,
+   "finLots": 8896988,
+   "shortLots": 220835
+  },
+  {
+   "date": "2026-09-02",
+   "finAmt": 585675285,
+   "finLots": 8929878,
+   "shortLots": 214315
+  },
+  {
+   "date": "2026-09-03",
+   "finAmt": 578739307,
+   "finLots": 8902986,
+   "shortLots": 222843
+  },
+  {
+   "date": "2026-09-04",
+   "finAmt": 581894588,
+   "finLots": 9018943,
+   "shortLots": 219160
+  },
+  {
+   "date": "2026-09-07",
+   "finAmt": 588271579,
+   "finLots": 9073477,
+   "shortLots": 211213
+  },
+  {
+   "date": "2026-09-08",
+   "finAmt": 586266976,
+   "finLots": 9048661,
+   "shortLots": 208614
+  },
+  {
+   "date": "2026-09-09",
+   "finAmt": 587166811,
+   "finLots": 9070712,
+   "shortLots": 203610
+  },
+  {
+   "date": "2026-09-10",
+   "finAmt": 591897687,
+   "finLots": 9102904,
+   "shortLots": 197447
+  },
+  {
+   "date": "2026-09-11",
+   "finAmt": 587871180,
+   "finLots": 9130041,
+   "shortLots": 197926
+  },
   {
    "date": "2026-09-14",
    "finAmt": 583877609,
@@ -179,6 +419,246 @@
   }
  ],
  "tpex": [
+  {
+   "date": "2026-07-20",
+   "finAmt": 188191272,
+   "finLots": 2342289,
+   "shortLots": 31555
+  },
+  {
+   "date": "2026-07-21",
+   "finAmt": 190289983,
+   "finLots": 2360813,
+   "shortLots": 29857
+  },
+  {
+   "date": "2026-07-22",
+   "finAmt": 192703743,
+   "finLots": 2369252,
+   "shortLots": 30570
+  },
+  {
+   "date": "2026-07-23",
+   "finAmt": 192753560,
+   "finLots": 2365064,
+   "shortLots": 29937
+  },
+  {
+   "date": "2026-07-24",
+   "finAmt": 190161370,
+   "finLots": 2333659,
+   "shortLots": 36439
+  },
+  {
+   "date": "2026-07-27",
+   "finAmt": 188348180,
+   "finLots": 2316463,
+   "shortLots": 29972
+  },
+  {
+   "date": "2026-07-28",
+   "finAmt": 180983857,
+   "finLots": 2258460,
+   "shortLots": 32582
+  },
+  {
+   "date": "2026-07-29",
+   "finAmt": 167408159,
+   "finLots": 2167903,
+   "shortLots": 35236
+  },
+  {
+   "date": "2026-07-30",
+   "finAmt": 163014474,
+   "finLots": 2149360,
+   "shortLots": 31943
+  },
+  {
+   "date": "2026-07-31",
+   "finAmt": 166158485,
+   "finLots": 2170404,
+   "shortLots": 30646
+  },
+  {
+   "date": "2026-08-03",
+   "finAmt": 167007662,
+   "finLots": 2174594,
+   "shortLots": 31855
+  },
+  {
+   "date": "2026-08-04",
+   "finAmt": 168974654,
+   "finLots": 2179458,
+   "shortLots": 32465
+  },
+  {
+   "date": "2026-08-05",
+   "finAmt": 170004770,
+   "finLots": 2176335,
+   "shortLots": 33427
+  },
+  {
+   "date": "2026-08-06",
+   "finAmt": 174317701,
+   "finLots": 2192451,
+   "shortLots": 33627
+  },
+  {
+   "date": "2026-08-07",
+   "finAmt": 175213725,
+   "finLots": 2201745,
+   "shortLots": 34993
+  },
+  {
+   "date": "2026-08-10",
+   "finAmt": 176995575,
+   "finLots": 2204568,
+   "shortLots": 35714
+  },
+  {
+   "date": "2026-08-11",
+   "finAmt": 178177224,
+   "finLots": 2211494,
+   "shortLots": 37303
+  },
+  {
+   "date": "2026-08-12",
+   "finAmt": 179059840,
+   "finLots": 2207948,
+   "shortLots": 35740
+  },
+  {
+   "date": "2026-08-13",
+   "finAmt": 180743862,
+   "finLots": 2213903,
+   "shortLots": 36404
+  },
+  {
+   "date": "2026-08-14",
+   "finAmt": 181611101,
+   "finLots": 2216058,
+   "shortLots": 36101
+  },
+  {
+   "date": "2026-08-17",
+   "finAmt": 182824981,
+   "finLots": 2219250,
+   "shortLots": 37364
+  },
+  {
+   "date": "2026-08-18",
+   "finAmt": 182463435,
+   "finLots": 2219658,
+   "shortLots": 34316
+  },
+  {
+   "date": "2026-08-19",
+   "finAmt": 182424031,
+   "finLots": 2219806,
+   "shortLots": 35976
+  },
+  {
+   "date": "2026-08-20",
+   "finAmt": 184079129,
+   "finLots": 2235696,
+   "shortLots": 37720
+  },
+  {
+   "date": "2026-08-21",
+   "finAmt": 185210828,
+   "finLots": 2240989,
+   "shortLots": 37034
+  },
+  {
+   "date": "2026-08-24",
+   "finAmt": 184030699,
+   "finLots": 2239805,
+   "shortLots": 37365
+  },
+  {
+   "date": "2026-08-25",
+   "finAmt": 183919755,
+   "finLots": 2233525,
+   "shortLots": 36614
+  },
+  {
+   "date": "2026-08-26",
+   "finAmt": 187660887,
+   "finLots": 2248866,
+   "shortLots": 41386
+  },
+  {
+   "date": "2026-08-27",
+   "finAmt": 191015337,
+   "finLots": 2254630,
+   "shortLots": 44008
+  },
+  {
+   "date": "2026-08-28",
+   "finAmt": 192693531,
+   "finLots": 2264354,
+   "shortLots": 43380
+  },
+  {
+   "date": "2026-08-31",
+   "finAmt": 194660092,
+   "finLots": 2271981,
+   "shortLots": 40347
+  },
+  {
+   "date": "2026-09-01",
+   "finAmt": 197262910,
+   "finLots": 2276807,
+   "shortLots": 39375
+  },
+  {
+   "date": "2026-09-02",
+   "finAmt": 198211959,
+   "finLots": 2286136,
+   "shortLots": 39063
+  },
+  {
+   "date": "2026-09-03",
+   "finAmt": 196161733,
+   "finLots": 2276760,
+   "shortLots": 39737
+  },
+  {
+   "date": "2026-09-04",
+   "finAmt": 198243211,
+   "finLots": 2287283,
+   "shortLots": 37080
+  },
+  {
+   "date": "2026-09-07",
+   "finAmt": 200457405,
+   "finLots": 2303038,
+   "shortLots": 37332
+  },
+  {
+   "date": "2026-09-08",
+   "finAmt": 200067558,
+   "finLots": 2306230,
+   "shortLots": 37060
+  },
+  {
+   "date": "2026-09-09",
+   "finAmt": 200584560,
+   "finLots": 2316911,
+   "shortLots": 38965
+  },
+  {
+   "date": "2026-09-10",
+   "finAmt": 201273701,
+   "finLots": 2323019,
+   "shortLots": 41311
+  },
+  {
+   "date": "2026-09-11",
+   "finAmt": 199568970,
+   "finLots": 2313337,
+   "shortLots": 44652
+  },
   {
    "date": "2026-09-14",
    "finAmt": 197710150,
