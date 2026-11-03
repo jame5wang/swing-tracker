@@ -12,6 +12,13 @@ on:
     # 都還是舊資料，晚一點再抓一次，讓非追蹤股票的收盤價資料也能補上。
     - cron: '10 12 * * 1-5'
   workflow_dispatch: {}
+  # 備援觸發：GitHub 的排程（schedule）在尖峰時段會延遲，2026-10-28 起連續多天晚了 3～10 小時
+  # （例如 11/02 的 17:00 盤後更新拖到 11/03 凌晨 3:13 才跑）。所以 Claude 排程任務「台股網站
+  # 更新備援」每個交易日 07:03／17:03／22:03 會直接用 workflow_dispatch 觸發；萬一當下呼叫不了
+  # GitHub API，就改推送 .github/kick/ 底下同名的檔案來觸發（push 事件不受排程延遲影響）。
+  push:
+    branches: [main]
+    paths: ['.github/kick/update-prices']
 
 permissions:
   contents: write
