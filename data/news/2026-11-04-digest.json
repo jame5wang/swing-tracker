@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-03T23:54:00+00:00",
+  "items": [
+    {
+      "summary": "台股11/3重挫1612點，創史上第7大單日跌點，主因美股「AI泡沫」疑慮蔓延，加上美光科技Marvell以約1150億美元收購光通訊大廠Lumentum的交易遭雙方股東痛批「出價過高」，衝擊市場對CPO/光通訊供應鏈的信心，穩懋、聯亞、光聖、華星光等多檔台廠光通訊概念股重摔甚至跌停。",
+      "relatedStocks": [
+        {
+          "code": "3105",
+          "name": "穩懋"
+        },
+        {
+          "code": "3081",
+          "name": "聯亞"
+        },
+        {
+          "code": "6442",
+          "name": "光聖"
+        },
+        {
+          "code": "4979",
+          "name": "華星光"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台股重挫1612點 金管會：跌幅介於亞洲主要股市之間",
+          "url": "https://www.cna.com.tw/news/afe/202611030281.aspx"
+        },
+        {
+          "title": "台股重挫1612點千檔下跌 CPO賣壓沉重資服股走強",
+          "url": "https://money.udn.com/money/story/5612/9854436"
+        },
+        {
+          "title": "邁威爾Marvell 1,150億美元收購Lumentum",
+          "url": "https://www.bnext.com.tw/article/92891/marvell-lumentum-115-billion-acquisition"
+        },
+        {
+          "title": "光通訊為何重挫？邁威爾併Lumentum 股東砲轟「垃圾價碼」",
+          "url": "https://money.udn.com/money/story/122381/9854594"
+        },
+        {
+          "title": "焦點股／Marvell收購Lumentum雙雙重挫！光通訊承壓聯亞、華星光等摔跌停",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTczZJRmd6cVk2RnpuTDI4cC1xajJ2VnpLOWxQdVhjZnBHMXlVT3FFbm1Qemh3a1ZjbElUTFZOSkhQQmxPRFNQRTBiOFB5WWJISVJnOHh6QTVvYjZnTklN?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "環球晶法說會上，董事長徐秀蘭表示半導體產業將進入新一輪「超級循環」，矽晶圓供需轉緊、全尺寸產能接近滿載，客戶甚至願意提前加價搶訂2027年產能，但第四季仍維持舊價、要等2027年才是價格驗證點；公司並擬發行5億美元（約163億元）私募可轉債，強化美國矽晶圓/SOI產能布局，第三季獲利受義大利廠火災拖累。台勝科同步表示產能滿載。",
+      "relatedStocks": [
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "3532",
+          "name": "台勝科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "環球晶徐秀蘭：半導體迎新超級循環SOI擴產洽談長約",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qUHJSd0JRbVFGWi1SS04yQkVuQndMRnZXb1pDc0JPdEVUSlRMRTBuNTlWazhiYTgzZHdOczJUb0NwaUwxVy1RRkFldEZMcGx4VU81U1Azay1kOW10dlJwSElxUWxNc2ozdnFV?oc=5"
+        },
+        {
+          "title": "環球晶163億私募…美光全認董座徐秀蘭：本季動能比預期好",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Ca2NPZ0RTNkI1Q3dWZ09yOEhDTDRhVWRFUEI3WEs5MWxudlhrdFBDUUUzSlFSa3F4V1VyaUZTczA4b29abDhFVUlfamFoSE1rVVRHUEdwblJmcEZNZWdSNk44VldJblluMWtaT1pQU2dwZw?oc=5"
+        },
+        {
+          "title": "〈台股盤前要聞〉華邦電斥資731億元擴建高雄廠、環球晶擬發行5億美元私募可轉債",
+          "url": "https://news.cnyes.com/news/id/6640350"
+        }
+      ]
+    },
+    {
+      "summary": "華邦電董事會通過731.63億元資本支出，擴建高雄園區12吋晶圓廠（Module B年底動土，2029下半年起小量出貨），並已精挑10家客戶以PLTA長約鎖定2029~2032年產能；董事長陳沛銘看好明年記憶體供應恐更加吃緊，公司同步布局矽電容與CUBE封裝，矽電容產能已被兩大MLCC大廠包下並售罄，正預留專線迎接長約。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "華邦電再砸731.63億 擴建高雄12吋廠",
+          "url": "https://ec.ltn.com.tw/article/paper/1777099"
+        },
+        {
+          "title": "華邦電731億元擴新廠 精挑10家PLTA客戶鎖2029~2032年產能",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773377_V3740PAR64DKE18CROZHO"
+        },
+        {
+          "title": "華邦電矽電容產能傳兩大MLCC廠包下 產能售罄再預留專線迎長約",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773465_W415GYL35BKJ6J6RPNBZK"
+        },
+        {
+          "title": "AI伺服器不只吃DRAM！華邦電估明年Server NOR Flash需求2.4億顆，布局矽電容與CUBE",
+          "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNYk9USTZUbjhlbVpKcmhqZVROY3dWMVZMdlZjZldMbDZYYXk3LVdDMXBPeWFUeXBGS0g5MnUtODFuODZLTDJnMk9CUlBvSXFDSEZuclE5YVZ2S21OMzNBazQtaTJJeE1ReThKemQzUFVWV1c2bWgta1hXVWcxaktIbzc5bEZjZ2ozOWt2YUQ2OGFDckZiNS1nTEJ6NUZBLWw4VkpXbEJsaEN0TzYyUFRtODJTcWdlVU1NdEpYZ3JDU0N6QzBDbVUybGs2LTdBaFdMTzhCUktoYUtaSE5OaWY1ckU0ZzFOZEd4Y25aemNsYm9wNWRmdERrbjlERWFsZkFXcmRoMTNXRDdhRnFadzNudUpBOXFxSTIwWjNJVU96aTlVNGJlN1ZFTXhPeXdzeWRGMF83aXln?oc=5"
+        },
+        {
+          "title": "公告本公司董事會通過12吋晶圓廠擴建計劃及購買設備",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "AMD第三季財報優於市場預期，資料中心營收近乎翻倍，股價盤後大漲逾8%，連帶激勵美股費城半導體指數強彈，台積電ADR同步收紅，為11/3台股重挫後的隔夜美股注入一絲AI晶片需求無虞的信心，台指夜盤因此翻紅上漲426點。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "〈財報〉AMD Q3超預期 資料中心營收近翻倍 盤後大漲8%",
+          "url": "https://tw.stock.yahoo.com/news/%E8%B2%A1%E5%A0%B1-amd-q3%E8%B6%85%E9%A0%90%E6%9C%9F-%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E7%87%9F%E6%94%B6%E8%BF%91%E7%BF%BB%E5%80%8D-%E7%9B%A4%E5%BE%8C%E5%A4%A7%E6%BC%B28-220412936.html"
+        },
+        {
+          "title": "美股費半強彈2.63%　台積電ADR收紅1.55%",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A1%E8%B2%BB%E5%8D%8A%E5%BC%B7%E5%BD%882-63-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E6%94%B6%E7%B4%851-55-223042742.html"
+        },
+        {
+          "title": "【盤前】費半大漲AMD盤後飆高！台指夜盤漲426點　台股今拚止跌反彈",
+          "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E8%B2%BB%E5%8D%8A%E5%A4%A7%E6%BC%B2amd%E7%9B%A4%E5%BE%8C%E9%A3%86%E9%AB%98-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%BC%B2426%E9%BB%9E-%E5%8F%B0%E8%82%A1%E4%BB%8A%E6%8B%9A%E6%AD%A2%E8%B7%8C%E5%8F%8D%E5%BD%88-221900606.html"
+        }
+      ]
+    },
+    {
+      "summary": "三星傳跟進台積電腳步，計劃2030年底前退出8吋晶圓代工市場，將重塑全球成熟製程競爭版圖；南韓IC設計業者因此急尋替代產能，台廠成熟製程代工廠可望成為轉單去處。",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "三星跟進台積電淡出8吋晶圓代工 重塑全球成熟製程的競爭版圖",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBleE51Nk9IMUVJVE9Gb195SzgzS1Z0SUhJT01mT25XR0poNUJIUUpqV0JRYTlLSFNZS3dWQTdoVEZycHNfWGJKdGpEN2owNktXajQ4SnFjODJCcmJKdlpJdGsxaHhtWDJuWDh4em5nNG5sNUR2S2JJcmhR?oc=5"
+        },
+        {
+          "title": "傳三星2030年底退出8吋晶圓代工 南韓IC設計業者急尋替代產能",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb25OZnhVUElYb1psck1BUmxmNWJqRlhtdDUwMlhQek1TZzZqb0lCaXl2ZFdodm8yNGdhbTl3RGotZTVZRTNEMkZYMHhoM0tLWUh4UFJXZTFrd3BUYl9HWXcxZW5mQUUxUm1pV2RKanRjYTNWSGZEamlUV3VUU0JocThvZjd6RUU0TUFpbVlJRm1FSTBNQjNvS08xX2dNcEhRR1Jz?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "創意電子（GUC）傳與三星晶圓代工結盟，拿下2奈米雲端AI晶片訂單，顯示其代工合作版圖不再侷限於台積電單一陣營；同時市場亦指出其原有來自台積電陣營的CPU相關ASIC訂單需求優於預期。",
+      "relatedStocks": [
+        {
+          "code": "3443",
+          "name": "創意電子"
+        }
+      ],
+      "sources": [
+        {
+          "title": "韓國三星晶圓代工結盟台灣夥伴創意電子，拿下2奈米雲端AI晶片訂單",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LZnR3ZTZXRDc5cnl6YmJmVzJYZUpVOFM5WVJjRzZfSXhLM2pyZThrNE9wTUswY0Z5Z01EeGRKbjI2RFIxb1Y5SzBlV19LMl8tSVl2ZVR3M0QxSGJjZlhWWW5sQzhtcE83aUdGVk91UWVNM0JnckltTUVn?oc=5"
+        },
+        {
+          "title": "焦點股》創意：台積電最強「親兒子」 CPU訂單需求優於預期",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5627409"
+        }
+      ]
+    },
+    {
+      "summary": "日月光集團子公司矽品傳將砸下千億元於中科二林擴產，衝刺先進封裝產能；市場也聚焦日月光的CPO（共同封裝光學）技術布局，比較其與台積電COUPE方案的差異，顯示先進封裝廠正加碼搶攻AI晶片共同封裝光學商機。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "矽品傳砸千億 中科二林擴產 日月光集團衝刺先進封裝",
+          "url": "https://money.udn.com/money/story/5612/9855473"
+        },
+        {
+          "title": "日月光CPO和台積電COUPE差在哪？ 封測廠怎麼搶AI商機",
+          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPMWd3Z0FGWm9MQ01wcXZsUXNKVjQ4LVZfeXR4OUk1WmtvRlNhWjkwNTIxMEpQcml6dnJEVGRvNXllS25UQnJhR0YwaXdjeUYyYlp2V1psT3pBUHI1djBzQ3NiZVpCMzd4RFgtRnlPMEJCWTd3YldtT01VaThQZHJ0S25vam4wRElxc0ZtdGMwQ2hQQjNBMXNYZk9xb25oUW9iY0dUSFc4cnMyTG9fN01sREtfRFhrM2xwTzJFUmhhdHRoc0tYQnJ5WnF3V19JdmIyQzJtRUVOSkZoU2o0d0o3OTVkSjNhenpBMm55b1RQV25vVm16R0lzTm9lOUVieWFJLUpNMDU3Y1ZXNUtWZ2pnaEpOMnk1X0JabWtkWWNneVRqQ2RBMGJaWUFKdHNaZjR5eHJNbHk5Q29SUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "AI晶片量產放量帶動測試設備需求升溫，美系Aehr Test Systems傳擴產、Burn-In測試設備直送台灣封測廠；精測10月營收首度突破7億元，背後是測試介面供貨吃緊、短期內難以緩解，反映AI晶片測試端的產能瓶頸。",
+      "relatedStocks": [
+        {
+          "code": "6510",
+          "name": "精測"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI晶片量產升溫Aehr擴產、Burn-In測試設備直送台灣封測廠",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83R0JyZmE4eW9lbkxfcVRjM0g3YmRKaGx3el9NMWdpQnNSUnUzZkdWTnJURllsS09sLU1FbG1LSHJwVUJKMWlVOUg2UzBWZUdYMXRibU9n?oc=5"
+        },
+        {
+          "title": "精測10月營收首破7億元大關 測試介面供貨吃緊短期難解",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773444_3333D8LV5BWCQT3MYQE7C"
+        }
+      ]
+    },
+    {
+      "summary": "AI伺服器需求推升被動元件產能全面滿載、供不應求，日系大廠村田傳砸1兆日圓擴產電容，國巨等台廠同步加開產線因應，顯示被動元件產業正迎來新一波擴產潮。",
+      "relatedStocks": [
+        {
+          "code": "2327",
+          "name": "國巨"
+        }
+      ],
+      "sources": [
+        {
+          "title": "財訊快報：AI產能滿載、供不應求，村田、國巨兩大龍頭啟動擴產",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOb3ZETlllQ0VJbDVrMkVlSC16d2Z1UXN5Vks0Tkd6YTdxZnRuM0EtX0dNR0VRM2ItN3hvb2x3TXZJU1dEbndHOG4zcnFoT2MzV3RpNkxTNWJPb3ZIRFcwZ09Icl9aTldlR0NWMVlkd0o4OFZ6czlLX2R2ZFlFLUJ4dDl2STBjeHhv?oc=5"
+        },
+        {
+          "title": "圖解》AI伺服器需求有多旺？日本村田砸1兆日圓擴產電容，國巨、華新科也在加開產線",
+          "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNSG1sRVU4ZkN4Zm5jM3dtMnJUamFFSFEydEQtZDc5aGVySmRFMnlzNEZyOVY3b19mY2lGUWpPaTlOdGJ5QVZadDZkX3h4VS1sZnFtVFpOZ1hqejZtSGpaT2dralJSdFVwWDZ0VHV4Y3lKT3ZQYmYyaFgtb3J3ZXBvOWtfV3lPeW9OcFpaLVBUdEJOSzRvbGJYb3NUMm5xRkdqSXF6SVdnY2RjZmY5NW0zZnZxaEVzbGJmUFJKUy00VDB4SHljV1RieU1ES3Jqd2N6c1lia05JS2tXVmNJUU9KOWVhN2dRTW9xbW85Y0kzcE9JcXpESmgwOVNDU2dEcnFkMkg0MXRWcFQ1d21NanVVelp1dUtYMHZHemNaTjM1QUlWM3BWdGpBanVmMlpfRlltNkJmOGhZREd5R0NDV3NFbEFBaGwyb2pXaFhqbjRBYjV6VjZBMG12eFp3MDJqdW05NG50ZVZsYjJXeXRpeGlZcUpWR3RpNk1XQ1ptSnFRcnU0N3pUcHJsaXdBNUZkMTJybDY4NnFBYnZWejhqajFaVGlVYm9qSjF4aThHOE9QS2FDWW04UG1SMkFTR2hPVTRpeEx6Tm5aX0xCbU1acWpteHRtTGNtQ05vSWw4b2RoQmY5cXF6RkVVMg?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "富世達法說會釋出強勁展望：AI伺服器業務營收占比已衝上65%，明年拚倍數成長，快接頭月產能達4.5KK提前達陣、並將再增5成；總座同時看好iPhone加入摺疊手機戰局後市場擴大，高價接受度將提升，帶動快接頭與散熱零組件需求。",
+      "relatedStocks": [
+        {
+          "code": "6805",
+          "name": "富世達"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【富世達FY2026 Q3 法說會】伺服器營收佔比衝上65%、EPS 18.11元年增八成，快接頭月產能4.5KK 提前達陣",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92Zk1Ra291TTFNNU1vNUNvUDF3UFJwM1JHcU15UGh6NWpRUnQ2bU5sNHhOZmROQ1Q3d2NwQmVPVklDNUp0cm40R09pVlluWVdnOEltdDFNRDNvU082enJDeVVSUS15QQ?oc=5"
+        },
+        {
+          "title": "富世達法說會》明年AI伺服器業務拚倍數成長！快接頭產能增5成",
+          "url": "https://news.google.com/rss/articles/CBMiowNBVV95cUxNcHFzU202OUV2bl80RlBVWHlzamF2dVRob2l1UDRnUkVTRmhsMTV2WFdUTjdWdWVqcXJRbkJNUTNCV1NudnFHV0dJRDlQbFFlZ2N5MW1WNHprRnBOTndlVy0yV0hCTndpX3lMOFo0UGo4RzFieVlXRkJJa1l5QVpTSWJPdWxuSGRtazBVUlBTNG8yYmFrcEpTa2lOdXBjYWgyWExCY3RNc0hOQU9JVjBxOHVyeGdNcmQxY3JUVWRUdElYcTFlQmhyTjZSUzdjaExaems0Tmh3ckUyZTUyWFVlYTBHS2hPSlVpSmQ5QTdfdllVTm5vUUJLdnlBa2lWVUlnY3ZOSDBNQW5VdTZkdG5YRlJNc1JNWllKSDRGd0lOQkZVQzM0dnhtMUZBMHJKLUpOTGxLOGRqV1JsQm1jRVZEdnBEMGZkaGZ1RENCQzVPdk1uUThCUW1NWl9FSGRMY2NURUpGYjQwV3gtVzZyWnhSb2I2ZG5jZXBGX2ZING5MM2wya1AxOTExLWx1dnk2RWwwXzI2YXh2amNCQmpvV1ZqU1BvUQ?oc=5"
+        },
+        {
+          "title": "富世達法說會》iPhone加入摺疊手機戰局！總座看好市場擴大：高價接受度將提高",
+          "url": "https://news.google.com/rss/articles/CBMi7wNBVV95cUxOMW5VMzF1Z2FUZUFmRHU1bVBCbDFCNlE1X0o3V1djOVR3RXNoYWdkd204dm5zaWRkMTZkeGZQVW10dy1DUE9MSzhIS3JrQ1NqUzlGTFNFV1FsNWhfWTBFYlo4bl9ud1ZVZll1V0Vvdkl3czRPOVdzVUFWN1RSU2cwM2lDYmt5Q0drYnIzMEhlbkhIUDQxZTVDSFdra05CejVQVE1iQkRXN01Da1hiQUU5UG55YzdOZHc2ZE5pX082eWhhOHY0M0dnNEtyTFkxMzZNYVNvbEYxWjA5c0Q5MGZJTDNlemE3THVpZTJQeE1BTkpfX3h4SXVIZG5CMVRKNHVGbWVwM05qaGQ4QmZ5cmhfVE9lUHhrNHFHZllaZEdjZ2FBZDZZS1VrcDUtMm5pQmNLX01TMjJKa1VWZkZoWnRlUFRyVnhUa25sVXpGQTZpdGlsY1VkR3lCRXFzTkZ1VU5hNXgyc2FINGo2NlQzYVd4MXN6QXdVRVdTZmNKYmhnRHJudloxZmZpS3Z0dEpjVmFMOWFrUjNVNkhaTXA1R2JfR3VZWFk4My1kZlFFLTZ3Q3BaYWIzRE10TkUyQXRxdExBQWd1eWlQRDNaU0lrZFZYNXhENDVrNWVJb0duNHAzamI5S1VtamhlcWxjZFd6WTA?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "盟立遭投保中心提起的損害賠償訴訟，智慧財產及商業法院判決原告之訴及假執行聲請均駁回，解除長期法律隱憂；同時公司透露OHT/Stocker半導體自動化設備擴產加速、標準化助攻毛利率，機器人出貨增加、泰國廠明年Q2投產，全年接單拚突破200億元，明年營運續看增。",
+      "relatedStocks": [
+        {
+          "code": "2464",
+          "name": "盟立"
+        }
+      ],
+      "sources": [
+        {
+          "title": "說明智慧財產及商業法院針對投保中心向本公司等提起損害賠償訴訟之判決結果",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        },
+        {
+          "title": "《DJ專訪3》盟立OHT/Stocker擴產加速，標準化助攻毛利率",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWFU4TXY4Ym1DTTVQTjU3VDVraHpoUjU0UGpGMU9oYXllWDFuaTF5THc5S2dKd3lUbzhJNDlYSE5oUkJpY3pidnFza3BIOEVVY3JTeUVrY0dmUmlyNkI0VDZISTVNS0pCa255YmRMT0dOWEVoVXJNTHh1Z19naTNzMWxJYURnZGN5NzZBT0Y2TldSSkxLcTk5ekNMSEZqQWhDaURjMGlqMVhPT1k?oc=5"
+        },
+        {
+          "title": "《DJ專訪2》盟立機器人出貨增，泰國廠明年Q2投產",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaTZuVG50WVhTdWR2ODJOdTJ1RzUwdG1QZ08zQldTbmNmV0ZRMHlFb2kxeEF1N0N1NzRPbDI2MDUtLVVNaGFNMDMyVDhITmdCS3BzcHdHRF9GT0thcXdMWHF0cWdXYTZOWU5nZnY0aUtqQjVZektwLW5Gc2hOcVh1dnNmMTFWREZ5OEFaSzRXTENDUQ?oc=5"
+        },
+        {
+          "title": "《DJ專訪1》盟立全年接單拚破200億，明年營運續看增",
+          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxOTUFySjRwYXRSX0FSR3lmWVM1RHFaWmRHNmFMdlZMZ0hTTm1HaGFwVHdTYjNjVEVXQV90ZW9rMzA0SjZFQVozNXRpSlF2Smtsa1llaW4xODNkRmtxREV3RHZsdzE1V2lBUWdmR09yNnJMMzZweTFBaUhlU3NkdE5rN1BMa3dUbjBJdUlENVpCRlFFY3pzdDlIMnhVdFpJaFpvaE1fZ3NZcjVWc3l6QXR1ZUdUT01HVFNaV3R5aUt3Z2VJcVFVTWNFUjBhTWZpNHlncF9xY2RaM0M5bEtfcjlHcGZJZk14S29UcENBWUZHM1FNN2lrN0UxNFFqUnRWd1hnN3UzRWFXSGFKOUc4V3U4cTZibm5QQVdwMXVhU1FwNVROR1l6RHNVZlU0X0RqOW5xTngtTk1hS0hBZUtodmc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "光寶科公告將分次增資越南子公司共3.2億美元，用於擴增當地產能，顯示公司持續強化海外基地以分散產能布局、承接AI及電源相關訂單成長。",
+      "relatedStocks": [
+        {
+          "code": "2301",
+          "name": "光寶科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "光寶增資越南子公司3.2億美元，分次投資擴增產能",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeXh2WFVvcXEtZlBNb0ZRUXpIU0ZncnhRYzdYeUdJS3k5U09aYllIVGg4SzZLNVNUVXhvdlFCcTEyaXJLSHp6aG1IaElfRkk4VC1XN0tPUTI5cFQ4NkpHT1BuYW9zX3dFelBlUlVYdmdmMm5ORUdGeVNaWV82MXZvV2k2REpCQWFuUkVWUHFGMA?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "金居看旺2026年營收拚雙位數成長，主要動能來自HVLP高速銅箔（用於AI伺服器高階PCB）占比持續提升，加上新廠產能貢獻，反映AI伺服器拉貨帶動高階銅箔需求升溫。",
+      "relatedStocks": [
+        {
+          "code": "8358",
+          "name": "金居"
+        }
+      ],
+      "sources": [
+        {
+          "title": "金居明年營收拚雙位數成長HVLP占比升+新廠擔動能",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY1E5Z3E0ZFkxNEZBV2F2UV93TnZ3VVFobmR2S0pLdERPZmZ4eC1rRUZjcGFMVWl4SUxqTmJSRnZhc3BSYU5TNlA3el9uZC1nczN1N3VxM2dQN1UxR2pMM283VkV1REFFbUI3OE1GSG9FZ0xmc05QTmgyQzZNRU9vVkc2c3ZnaUZDUmRxMHRNMEg0Zw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "ABF載板缺貨效應持續發酵，南電表示現貨報價續漲；台灣10月PMI擴張趨緩，中經院分析AI供應鏈的缺料瓶頸已從記憶體轉移至ABF載板，顯示載板端產能吃緊正成為AI伺服器出貨的新瓶頸。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ABF載板現貨報價續漲！南電：10月營收飆新高年增69.67％",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBJT1BaYTlJZ1ZGR19XWDV0QVVaV0xidFB3TnFBLUVZVjB1ZEt1SGVvMnkxR05ha1lCazhVWEFqUGRyRVlJWjNoX0lZaFg?oc=5"
+        },
+        {
+          "title": "台灣 PMI 放緩！AI 缺料瓶頸從記憶體轉向載板，景氣見頂了嗎？",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUGpPdENJVVYzOTJmWnd2LXJENUlCd0Zzay00UDdhVFhGc2t3OTdmdm5OZ2lyMDVDbHBiem14dlNfQTBYamxCa1IyN045elFSdVBUMmo4cVFmVVNUTGdDSmpvSUR2TlktN1lxM00xLU1yNXRDNWNHZ3NSU1QwRk8za3NEMkNUZ2FiSTZJSmdfanBhVllv?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "騰輝電子-KY因股價表現達台灣證交所公布注意交易資訊標準，依規定公布財務資訊，顯示其近一季獲利較去年同期大幅成長，為CCL／覆銅板族群中近期股價波動最劇烈的個股之一，後續市場動態值得留意。",
+      "relatedStocks": [
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "公布有價證券於集中交易市場達公布注意交易資訊標準相關財務業務重大訊息",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "ABF載板廠尖點公告115年度現金增資已收足股款，以每股388元發行400萬股，募集資金約15.52億元，顯示資本市場對其高價認購意願強烈，資金可望用於支應後續產能擴充。",
+      "relatedStocks": [
+        {
+          "code": "8021",
+          "name": "尖點"
+        }
+      ],
+      "sources": [
+        {
+          "title": "公告本公司115年度現金增資收足股款暨增資基準日",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "高力董事會通過與華新麗華、世紀能源設備、泰豐貿易共同出資1億元成立合資公司「華新世紀核能系統」，高力持股10%，布局小型模組化反應爐（SMR）相關核能系統商機，反映AI資料中心用電需求激增下，供應鏈開始往核能散熱/電力系統延伸佈局。",
+      "relatedStocks": [
+        {
+          "code": "8996",
+          "name": "高力"
+        }
+      ],
+      "sources": [
+        {
+          "title": "公告本公司董事會決議通過參與設立合資公司",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        },
+        {
+          "title": "劍指 SMR 千億商機！華新麗華攜世紀能源、高力成立「華新世紀核能」",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5RTU10NEF5UFh6U3BLSjl0RjdaNVRJOG9PVG5GUHhtLVpJam9UelNiLWxIWnpDWGQ2dW1YMjU0al9DT0hjWWxnUUNPajZYZ0NuWHZsSXJB?oc=5"
+        }
+      ]
+    }
+  ]
+}
