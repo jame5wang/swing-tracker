@@ -896,7 +896,8 @@ async function loadMacro(){
   renderMacroCard();
 }
 
-// 上市／上櫃融資融券餘額（scripts/fetch_margin.py，每天 18:00、21:50 更新；官方約晚上 20:30～22:00 公布當日資料）
+// 上市／上櫃融資融券餘額（scripts/fetch_margin.py，每個交易日約 17:00、22:00 更新，隔天早上 7:00 再補抓一次；
+// 官方約晚上 20:30～22:00 公布當日資料。GitHub 排程常延遲，改由 Claude 排程任務「台股網站更新備援」準時觸發）
 // finAmt＝融資餘額（仟元）、finLots＝融資餘額（張）、shortLots＝融券餘額（張）；prov＝當日初值，隔日依官方「前日餘額」更正
 let creditData=null;
 let creditCollapsed=(()=>{ try{ return localStorage.getItem('creditCollapsed')==='1'; }catch(e){ return false; } })();
@@ -969,7 +970,7 @@ function renderCreditCard(){
       <div class="mgGrid">${creditPanelHtml('上市（集中市場）', tw)}${creditPanelHtml('上櫃（櫃買市場）', tp)}</div>
       <button type="button" class="mgTableBtn" id="creditTableBtn">${creditTableOpen?'▾ 收合近'+CREDIT_DAYS+'日明細':'▸ 近'+CREDIT_DAYS+'日每日明細'}</button>
       ${creditTableOpen?`<div class="mgTables">${creditTableHtml('上市', tw)}${creditTableHtml('上櫃', tp)}</div>`:''}
-      <div class="mgFoot">來源：證交所「信用交易統計」、櫃買中心「上櫃股票融資融券餘額」合計。每天 18:00、21:50 自動更新；官方約晚上 8:30～10 點才公布當天數字，所以 18:00 看到的是前一個交易日。最新一天是初值，隔天依官方「前日餘額」更正。券資比＝融券張數÷融資張數。</div>
+      <div class="mgFoot">來源：證交所「信用交易統計」、櫃買中心「上櫃股票融資融券餘額」合計。每個交易日約 17:00、22:00 自動更新；官方約晚上 8:30～10 點才公布當天數字，所以晚上 10 點前看到的是前一個交易日。最新一天是初值，隔天依官方「前日餘額」更正。券資比＝融券張數÷融資張數。</div>
     </div>
   </div>`;
   document.getElementById('creditHeadBtn').addEventListener('click',()=>{

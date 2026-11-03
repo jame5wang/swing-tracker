@@ -8,8 +8,8 @@ on:
     - cron: '50 13 * * 1-5'
   workflow_dispatch: {}
   # 備援觸發：GitHub 排程會延遲（2026-10-28 起這兩個排程都拖到隔天凌晨才跑），Claude 排程任務
-  # 每個交易日 17:03（補正前一日餘額）與 22:03（抓當天初值）直接觸發；呼叫不了 GitHub API 時
-  # 改推送這個檔案觸發。詳見 update-prices.yml 的說明。
+  # 每個交易日 16:53（補正前一日餘額）、21:53（抓當天初值）與 06:53（補抓前一晚較晚公布的資料）
+  # 直接觸發；呼叫不了 GitHub API 時改推送這個檔案觸發。詳見 update-prices.yml 的說明。
   push:
     branches: [main]
     paths: ['.github/kick/fetch-margin']

@@ -6,7 +6,7 @@ on:
     - cron: '0 23 * * 0-4'
   workflow_dispatch: {}
   # 備援觸發：GitHub 排程會延遲（2026-10-29 起都拖到 10～11 點才跑，07:30 的每日彙整因此找不到
-  # 原始新聞而略過），Claude 排程任務每個交易日 07:03 直接觸發；呼叫不了 GitHub API 時改推送
+  # 原始新聞而略過），Claude 排程任務每個交易日 06:53 直接觸發；呼叫不了 GitHub API 時改推送
   # 這個檔案觸發。詳見 update-prices.yml 的說明。
   push:
     branches: [main]

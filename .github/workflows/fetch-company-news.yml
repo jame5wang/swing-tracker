@@ -9,7 +9,7 @@ on:
     - cron: '45 9 * * *'
     - cron: '45 13 * * *'
   workflow_dispatch: {}
-  # 備援觸發：GitHub 排程會延遲好幾個小時，Claude 排程任務每個交易日 07:03／17:03／22:03
+  # 備援觸發：GitHub 排程會延遲好幾個小時，Claude 排程任務每個交易日 06:53／16:53／21:53
   # 直接觸發；呼叫不了 GitHub API 時改推送這個檔案觸發。詳見 update-prices.yml 的說明。
   push:
     branches: [main]
