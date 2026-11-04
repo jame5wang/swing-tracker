@@ -35,7 +35,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/macro.json
           git diff --quiet --cached && exit 0
-          git commit -m "更新盤前國際總經簡報 $(date -u +'%Y-%m-%d')"
+          git commit -m "更新盤前國際總經簡報 $(TZ=Asia/Taipei date +'%Y-%m-%d')"
           # 其他排程可能同時推送到 main（2026-09-29 曾因同時觸發而推送失敗），失敗時先 rebase 再重試
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && exit 0
