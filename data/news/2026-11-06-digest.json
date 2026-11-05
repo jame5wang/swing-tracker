@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-05T23:47:08.412Z",
+  "items": [
+    {
+      "summary": "美國期中選舉後民主黨同時掌控國會參眾兩院，民主黨籍眾議員Yassamin Ansari公開呼籲暫停先進AI開發、並提案禁建新資料中心兩年，引爆市場對AI監管趨嚴、資料中心建設放緩的恐慌：費城半導體指數暴跌12.25%，那斯達克重挫5.52%進入修正、標普500跌4.36%、道瓊挫1833點（3.44%），VIX恐慌指數單日急升近70%；AMD重挫13%、輝達跌9.3%、美光跌17%、博通跌10%，美股科技股單日蒸發逾3兆美元市值。分析師指出賣壓主因是避險基金提前鎖住今年獲利、而非基本面轉差，但消息仍帶動台指期夜盤重挫2946點，台股開盤面臨年線保衛戰。",
+      "relatedStocks": [],
+      "sources": [
+        { "title": "Stock market today: Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html" },
+        { "title": "US stocks drop sharply as Democrats win raises fears about AI investment", "url": "https://www.irishtimes.com/business/2026/11/05/us-stocks-drop-sharply-as-democrats-win-raises-fears-about-ai-investment/" },
+        { "title": "AMD Tumbles 13%, NVIDIA Slides 7% as AI Regulation Fears Hit Chip Stocks; Intel Sinks 8%", "url": "https://247wallst.com/investing/2026/11/05/amd-tumbles-13-nvidia-slides-7-as-ai-regulation-fears-hit-chip-stocks-intel-sinks-8/" },
+        { "title": "【盤前】美股崩盤費半跌12%！台指夜盤慘摔2946點　台股年線保衛戰開打", "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E7%BE%8E%E8%82%A1%E5%B4%A9%E7%9B%A4%E8%B2%BB%E5%8D%8A%E8%B7%8C12-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%85%98%E6%91%942946%E9%BB%9E-%E5%8F%B0%E8%82%A1%E5%B9%B4%E7%B7%9A%E4%BF%9D%E8%A1%9B%E6%88%B0%E9%96%8B%E6%89%93-222500240.html" }
+      ]
+    },
+    {
+      "summary": "原本市場預期松下湖口廠爆炸會讓訂單轉向台灣CCL業者，加上台光電、台燿等廠訂單滿手、報價持續上漲，但在美股無差別重挫、外資大舉撤出下，台光電、台燿、聯茂、欣興、金像電、南亞等CCL/PCB概念股同步跌停，「轉單利多」完全被大盤恐慌蓋過；聯茂更因波動過大被交易所實施5個營業日人工管制交易。另有報導指出，美國若收緊AI資料中心審批，恐進一步限縮PCB業者後續訂單能見度。",
+      "relatedStocks": [
+        {"code":"2383","name":"台光電"},
+        {"code":"6274","name":"台燿"},
+        {"code":"6213","name":"聯茂"},
+        {"code":"3037","name":"欣興"},
+        {"code":"2368","name":"金像電"},
+        {"code":"1303","name":"南亞"}
+      ],
+      "sources": [
+        { "title": "松下湖口廠爆炸轉單效應有限？CCL族群集體跌停，法人仍看好「這1檔」", "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LWnQzLWZUVElac19OZE1iU05aOU12bW9TRXdOQi1pRHRwSkNJTmlXUktWUEFVNXZvR051MDNKTF8wUkVGZGluWG8wQ0Fldw?oc=5" },
+        { "title": "松下爆炸反利多出盡？台光電、台燿4檔CCL同步亮燈跌停 南亞也亮綠燈摔至249元", "url": "https://news.google.com/rss/articles/CBMi0ANBVV95cUxNSjhOcThWc0d3eXJhWHdTU2pBM2wzN0JlOEtlUjk0Q3FWRDZKa1VnZVlEODlISVdVMU00bzcwcnNOSm9DRjA2TFNHSnJCQnA5UmhnZVZaQ2s3V3lPanExUUhpQWdaYkFKRWNRNjdUNndtYnJvUWdITU9DUnc4dFpzM0R1Um15STN3eDhxN0NXX1Nod19KRWU1cDJhWm1xT3BxQjFKYTVURzFPZ19RdUYtbm1MMlJRTWtQYnhTU0lRaXZ2R0l4UWRPOTFENmE5enVDeU9JVmo5cE92RmpBZWJreHF0X3BUR2Rsd3JNU3pCSXJCZ1JRb25iZFNLRkJ0ZUo4N21URGxFVTRURXVYVlJFNll0ZU1MSmtiS3FVckpVbnp3VlVGbVRxbGI4MDRyd3gtZ2d6RG1vMV91SDdWSDk4RVctbkdEOXBYczJuRktEU1QxcUVLcVpOZno0UE1BdW9qQUpObkZrR0QyX2xxMC1GN0c4WTRHVHJUNVl4ZTJmUmxhSWMwNERZbHhCa0FXc3NwYm9ncTdDVjZYWUFvWFdPc0M5M3lQVUx3S2pMci1wS0lUUnRrRndiMDVCNkhTTVZnTW44MVEyWXoyd2xiWmhicQ?oc=5" },
+        { "title": "聯茂遭「關禁閉」慘了 股價亮燈跌停「高掛900賣單逃不出」", "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBuTDVqVElOZDBmUFgzSktsM2JUYzNyc0dqTmtzS056TkZZWUpxQXViNmR2b0pPQTYzbnhRc3RnSFY1Qm9MQkFTQk9lNA?oc=5" },
+        { "title": "美AI資料中心審批恐限縮 PCB慘遭血洗", "url": "https://ec.ltn.com.tw/article/paper/1777427" }
+      ]
+    },
+    {
+      "summary": "日月光投控通過新台幣1,237億元投資案，將在高雄楠梓、台南科學園區及台南三地同步擴建先進封裝與測試產能，並增聘3,553名員工，為該公司近期第三筆經經濟部核准的「投資台灣」重大投資案，三大方案累計投資金額已近3兆元，反映AI與HPC晶片對先進封測產能的需求持續強勁。",
+      "relatedStocks": [
+        {"code":"3711","name":"日月光投控"}
+      ],
+      "sources": [
+        { "title": "日月光砸1,237億元擴AI封測產能 楠梓、南科、台南三地同步增設智慧產線", "url": "https://news.google.com/rss/articles/CBMioANBVV95cUxQLW0xakI5TFJVNEZ2eU5SRkNFQzZRWVNjdEZJaWJmOTZwYVA5TFNpdUtKS2xzSzl4a0NFUTVVRndOUWZnUHZMWHpTLU01MDRVRkpGRjlEcnlxZGVzMUYxVV95OV9Wb0xjdzd6dUUtTl9pb21JNFhDX3I2LVh5SDVCTWdYajQwQlRsMm5iV1VlZldSd0lyb2U1cUo2Y2V5d1d3QUVJV1NpSWpiWlpWSmE4Q3BDcVRVU0NOYVRvMUMyMFJWRzZJRmJ3ZnhTTXB1VWlpRUpJYXRBdDhHQ2l3R01uTUZpU0gtLWxUVEZyWU93dzJ3UDhHSVpCTzh1MV85WTFlWUZwdnJPNTBhc08yVU1lTmxmNG51eWtCV2RXYlEwZ0xYYlBFNEYzZGpwS1Y2bHJpdWlrOEdzZy05MEIweG16SDkyZUotRVo1c1VLbzZZNXZxZ3B3OTdDT21RZ3ljRjlLWDVBN1hqaVJTQUNocnhnWVJIU1BlWUVIYUV4dUk5WFMtdVktSnotTS1iY0ktNXlueDhBc1FVUGh1WmhveVJEcA?oc=5" },
+        { "title": "投資台灣再添3案！日月光砸1237億擴充封測產能、增聘3553人", "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpUUxsVDItTG1GaWo1enRmRndzVHdqeS1VSFF2YzJCc0E4WUlIckkza2tYY29LdzZNWWRZRmhVckxZTlZPekdnUlYxSkd4TEVjR3FXZTh2SkVsOHBDajNYNDlKZ3ZNYzJnakJHRlo5cVNiVjI1ejlxYV9R?oc=5" }
+      ]
+    },
+    {
+      "summary": "多篇產業報導指出，AI資料中心對HBM與高頻寬記憶體的需求持續排擠手機、筆電等傳統DRAM/NAND供給，記憶體漲勢「前所未見」，連蘋果、三星手機SoC業務都得靠品牌力與整合能力硬扛成本壓力，高通核心手機晶片業務也因此承受壓力；NAND供需預估到2027年都未必能緩解缺貨。另有報導指出，有美系低軌衛星大客戶已與台灣記憶體業者簽下3年期供貨協議、每年需求上看數百萬顆，顯示新應用持續加入搶貨行列；但同時美光在台灣桃園的擴廠計畫傳出喊卡，仍與勞方協商中，顯示即便缺貨，擴產腳步仍可能受當地因素牽制。",
+      "relatedStocks": [
+        {"code":"2344","name":"華邦電"},
+        {"code":"2408","name":"南亞科"},
+        {"code":"8299","name":"群聯"},
+        {"code":"5289","name":"宜鼎"}
+      ],
+      "sources": [
+        { "title": "記憶體漲勢前所未見 蘋果、三星手機SoC靠品牌與整合逆勢抗跌", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773705_YWU6P70B10CK11439FSBA" },
+        { "title": "AI資料中心排擠手機記憶體 高通核心業務衰退成隱憂", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773692_1LP7WT208Y40VJ3UJDY8Q" },
+        { "title": "AI儲存需求改寫NAND供需 2027年缺貨緩解仍有變數？", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773721_M506GR0Z39J7ZS0PVM0RV" },
+        { "title": "美系低軌衛星大客戶喊每年數百萬顆需求 旺宏迎3年記憶體大單", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773707_8XC8LI8ALA2S2V8MEPP7P" },
+        { "title": "美光桃園擴廠傳喊卡 勞資續協商", "url": "https://www.ctee.com.tw/news/20261106700086-430501" }
+      ]
+    },
+    {
+      "summary": "產業報導指出，受AI特殊製程需求帶動，晶圓代工業2027年產值可望年增逾3成，報價全面上漲，8吋晶圓同步掀起漲價潮；法人預估主要晶圓代工廠明年平均售價上看漲1成，2029年AI相關營收占比可能突破25%，顯示AI需求對晶圓代工景氣的拉抬效應已延伸至成熟製程與特殊應用領域。",
+      "relatedStocks": [
+        {"code":"2303","name":"聯電"}
+      ],
+      "sources": [
+        { "title": "AI需求燒旺晶圓代工 明年產值再衝3成、8吋晶圓掀漲價潮", "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1xUXJ1MFZWeWhaOUhmZXo4cFpUOHFqaDZyWExfVHJNQlA1aTBpRTdudDkxUVd6RjBDa0NBZnZ1X2xlTzVycEQwbU1IOVhoTldQQ3B3TTdJSlNVSllySFh1eXc3STFENUNPb25GZl9GMDgwQms5dGFUVjBB?oc=5" },
+        { "title": "晶圓代工全面漲價！2027產值增3成、世界先進力積電吃緊", "url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNNGtQY2RuQUIwLVg5X2lvVHkzR3Jpb0MtcWVOaW9GSHpJZzlZbHRmdF9HYXoyemZhcjRiWEtXbC1QV0dQT1hQQmRZSGRPZmxEa1dZVkN5ME9UUTBhMHM3WnBVTnBaTFR5T3lOOVAwSjFtdGtQZWVhN3RvSEtWWHAwbDhySllqRTlRLVFnMUF4aGxMQVFMLVk4UTBjckpSck91OHEwT2VLRkFGTzlxLW9UNlpRbGphS05uaWJIdWphcFRGV096MDZxbWhHN1ZSWEFvMEdlOFJraWxXbGdHVmJwUTljV0Q3ZW1NeUNVcWRabzk1b3dDS09odGpUeENha3FsbDNiU3FjZXBPYnZCOUkwQmFPMVBGZ19aTWFfdWpUV1lna2JyTTd2ZUNhVXVuUWl2M0o3LUZ5QTRNdng5VHhkZGNUclN6SVFUQVRVTlpzeGNZdFJBd1hrdw?oc=5" },
+        { "title": "AI特殊製程需求強勁！「晶圓代工大廠」明年ASP估漲10%、2029年AI營收占比拚破25%", "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxQai1ndTlza1NiNVhBclAyVExHZ01HeVZiSzlzVTlrNDNuUklIeGtKaFBPWVZkaW9obGdyaDh5YUpGQjZHdTZSanBDREZlQWJOZndyWHJIaHhXYWQ3dzVERGNLaHNGeGVCV05ycHlrbThTUmx6WUpPQUtoMlZSLXI2WTFXNlVCcTlqSjRmbjFVUmZRNmNja2liOTJpdnQyeFJJWDNaS1VqWW5henVGbXYzSFBha3NZMlJldzR0MjVSZW1oczVBcGdpbWxNbGcwLXlPUEZ6SWVTTVI0MG5WVldoMWV4SVNxU0JOc2htRHo2bUkzMjJvRWRtWlZUVEtTbEhRWGlUX2U0RWZEbXRUTTBJM0ZoT3VEekdBV1Njbkp5X05hc09OSFpvZ1c0cU5vb0FMcWxkZmJmdXNQc290WXFmREJGaFRUbGJjTGNGamxfdVlhMnFmNEZnSEJuOWlkZE9OSlFrSlJxRFI5VzQ0S2FUVDRKQ3V5VVk4NU9HVlVvWG1rOWZ6emt5QnBWRFBCWVQ4VWJSVlltQjR1alRkWE0tTGZETms1bXlXcVRpM3Fxc2pZVXVWTk9FcXNfUmZVby1jRDl6OWlfbFhzcFFZcjZvb29B?oc=5" }
+      ]
+    },
+    {
+      "summary": "中時新聞網報導，ASIC設計服務廠創意與矽智財廠力旺近期業績表現持續受惠於AI相關設計需求熱潮，顯示先進封裝與AI客製化晶片設計這條供應鏈在大盤重挫之際，產業基本面動能仍未減弱。",
+      "relatedStocks": [
+        {"code":"3443","name":"創意"},
+        {"code":"3529","name":"力旺"}
+      ],
+      "sources": [
+        { "title": "AI商機熱 創意、力旺業績帶勁", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnR3NsYlhSQ21oQ25meW1HMzk4RUhBYjZVdXhnRHZPeW5yUlByYjJYd1oxOVVIbktoUXVTVEJTbENLSnZuaFFRc1Q5bGI0MDktS2tYQTJsR3pJMWR2LWtuTm1pWWVsNzV4SkVr?oc=5" }
+      ]
+    },
+    {
+      "summary": "騰輝電子-KY表示旗下AI伺服器電源材料將於第4季進一步放量生產，顯示在CCL基礎材料之外，公司切入AI伺服器電源應用的布局已進入出貨階段，為CCL族群在漫天跌停聲中少數帶有具體成長訊號的個股。",
+      "relatedStocks": [
+        {"code":"6672","name":"騰輝電子-KY"}
+      ],
+      "sources": [
+        { "title": "騰輝電子-KY 10月營收11.7億元創高 AI伺服器電源材料Q4拚量產", "url": "https://www.ctee.com.tw/news/20261105701391-430502" }
+      ]
+    },
+    {
+      "summary": "環球晶召開2026年第3季法人說明會，第3季營收季減2.3%，法人與投資人關注的重點在於新竹廠火災後的產能復原時程；公司過去已多次強調SiC（碳化矽）晶圓長線成長動能不變，本次法說會則聚焦短期產能缺口何時能補上。",
+      "relatedStocks": [
+        {"code":"6488","name":"環球晶"}
+      ],
+      "sources": [
+        { "title": "環球晶 6488 2026Q3 法說會重點：Q3營收季減2.3%！火災後何時恢復？", "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbjE1cGNsdlRpVVc1cXlRWHI3YnRYU1JaeWhpdDgzSW1rYVRfczVFRDFPVnY3UTlVVkNkMEZLQUdmUjM4V216LWVFNmNTYUZYeTFPWkV4RXBVWGlTMkdCWENtcU9RN0hKU3ZFbUtlNWRJTTVqWW9oNE84RTMtRmo0enZJSUd4WTNDbmdOeUdKa0R3cnJNWGFvbk1MZUtvdw?oc=5" }
+      ]
+    },
+    {
+      "summary": "大立光法人預估公司11月出貨動能將較10月趨緩，反映傳統光學鏡頭業務進入淡季；在CPO（共同封裝光學）題材持續發燒之際，傳統鏡頭主力業務的短期動能走弱，值得留意其對第4季營運展望的影響。",
+      "relatedStocks": [
+        {"code":"3008","name":"大立光"}
+      ],
+      "sources": [
+        { "title": "大立光估11月出貨動能下滑", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0yNndaRGJLSHVQRTVWQnlIMnAyUGE4eDNaNkI4ZkdQVDZSeWlEWERLUXl0eWJ4MnNOajJJMGEtc0VwWXRCdi1RcGxVQW9lRFZmTmtuMTh0T3pRMVY2RVJCanVyUk5zZ0xSQkk4?oc=5" }
+      ]
+    },
+    {
+      "summary": "國巨股價雖與大盤同步重挫，但法人認為公司基本面依然強勁、AI相關訂單續旺；報導並指出另有被動元件廠同樣迎來漲價與轉單行情，第3季獲利已接近去年全年水準。產業預測顯示，高階MLCC市場2027年將進入「量減值增」的結構性缺貨格局，有助被動元件廠報價與訂單能見度同步提升。",
+      "relatedStocks": [
+        {"code":"2327","name":"國巨"}
+      ],
+      "sources": [
+        { "title": "國巨股價重挫 基本面仍強勁、AI訂單續旺", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE53NkxPc00yay1HSnRNdzc2eHJqQ3FrVW91NWJCQmZXRjZvalZRbEhDdThtbWI0U2VyTEVOMk51RXFKOWdRYk5WUXRXYlpxSEhK0gFWQVVfeXFMTWRiSXp5WTJFdm5zTzRXUHFXUVd4TGE0MEs4M3lRZ0NYanBtM2dkeTEtNU9vOVdDazNlamltRGVQeHVEZ3JILVVsLU5lWTh6QmZjMHVXd2c?oc=5" },
+        { "title": "不只國巨！這「被動元件廠」同迎漲價、轉單大行情 Q3賺近去年全年", "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9lS2oxNjRjWHNCTVhzY2lPNGRIcEp5NkF5M20zWDJKTlBoU1ctRWM3aENtRWFVc3ZfeEVTd3ltcElwdDRPcWZaREJyRQ?oc=5" },
+        { "title": "2027科技產業大預測／高階 MLCC 進入「量減值增」結構性缺貨年", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5KeUdhNzdtNVZxT3Axanc0ajdRdDFsWWlrSGVQV2xfcy1oREpFSHBfRmFKVWJ5bjloQTBhc1loWllTWi1oNkI2Wld4c2s?oc=5" }
+      ]
+    },
+    {
+      "summary": "研調機構指出，第4季電視面板品牌採購季減約5%，11月電視、監視器及筆電面板價格大致維持平盤，需求轉弱壓抑漲價空間；另有報導指出，三星因LCD減產及報價走勢受中國廠商主導，面臨事業長期虧損風險，間接反映面板報價的議價權正逐漸向中國廠商傾斜。",
+      "relatedStocks": [
+        {"code":"3481","name":"群創"}
+      ],
+      "sources": [
+        { "title": "研調：第4季電視面板品牌採購季減5% 11月價格持平", "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBwQlZFNUlfRHVJOWxkYVZOSGF1NC1kR01aNFl5ZFdYWnpaeG9DRjhHWlNHdGJYcXZHYTRrcjFGUmc1NmdSNkhPS3hQRW5MdEJJMHNFN0tadVBwdldVcVZJ0gFfQVVfeXFMUHBCVkU1SV9EdUk5bGRhVk5IYXU0LWRHTVo0WXlkV1haelp4b0NGOEdaU0d0YlhxdkdhNGtyMUZSZzU2Z1I2SE9LeFBFbkx0Qkkwc0U3S1p1UHB2V1VxVkk?oc=5" },
+        { "title": "LCD減產又喊漲「中國說了算」 三星電視事業恐難逃長期虧損", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773740_S5Z8O74O3XNNP51886ADG" }
+      ]
+    }
+  ]
+}
