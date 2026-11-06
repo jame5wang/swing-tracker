@@ -1,196 +1,90 @@
 {
   "date": "2026-11-06",
-  "generatedAt": "2026-11-05T22:53:42.872467+00:00",
+  "generatedAt": "2026-11-06T03:10:39.519159+00:00",
   "stale": false,
   "items": [
     {
-      "title": "藍潮擋關！川普關稅仍有牌面 對伊朗陷入困局",
-      "link": "https://tw.news.yahoo.com/%E8%97%8D%E6%BD%AE%E6%93%8B%E9%97%9C-%E5%B7%9D%E6%99%AE%E9%97%9C%E7%A8%85%E4%BB%8D%E6%9C%89%E7%89%8C%E9%9D%A2-%E5%B0%8D%E4%BC%8A%E6%9C%97%E9%99%B7%E5%85%A5%E5%9B%B0%E5%B1%80-224151959.html",
-      "source": "國際",
-      "pubDate": "2026-11-05T22:41:51+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "外資10月淨匯出金額創高 外匯存底跌破6,000億美元",
-      "link": "https://tw.news.yahoo.com/%E5%A4%96%E8%B3%8710%E6%9C%88%E6%B7%A8%E5%8C%AF%E5%87%BA%E9%87%91%E9%A1%8D%E5%89%B5%E9%AB%98-%E5%A4%96%E5%8C%AF%E5%AD%98%E5%BA%95%E8%B7%8C%E7%A0%B46-000%E5%84%84%E7%BE%8E%E5%85%83-224024218.html",
-      "source": "國際",
-      "pubDate": "2026-11-05T22:40:24+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "輝達成竊賊目標　逾3.7億元硬體與貨車在南加州離奇消失",
-      "link": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E6%88%90%E7%AB%8A%E8%B3%8A%E7%9B%AE%E6%A8%99-%E9%80%BE3-7%E5%84%84%E5%85%83%E7%A1%AC%E9%AB%94%E8%88%87%E8%B2%A8%E8%BB%8A%E5%9C%A8%E5%8D%97%E5%8A%A0%E5%B7%9E%E9%9B%A2%E5%A5%87%E6%B6%88%E5%A4%B1-223845149.html",
-      "source": "國際",
-      "pubDate": "2026-11-05T22:38:45+00:00",
-      "relatedStocks": [
-        {
-          "code": "3037",
-          "name": "欣興"
-        },
-        {
-          "code": "8046",
-          "name": "南電"
-        },
-        {
-          "code": "3189",
-          "name": "景碩"
-        },
-        {
-          "code": "2383",
-          "name": "台光電"
-        },
-        {
-          "code": "6274",
-          "name": "台燿"
-        },
-        {
-          "code": "6213",
-          "name": "聯茂"
-        },
-        {
-          "code": "6672",
-          "name": "騰輝電子-KY"
-        },
-        {
-          "code": "8039",
-          "name": "台虹"
-        },
-        {
-          "code": "1303",
-          "name": "南亞"
-        },
-        {
-          "code": "2368",
-          "name": "金像電"
-        },
-        {
-          "code": "4958",
-          "name": "臻鼎-KY"
-        },
-        {
-          "code": "2313",
-          "name": "華通"
-        },
-        {
-          "code": "8358",
-          "name": "金居"
-        },
-        {
-          "code": "8021",
-          "name": "尖點"
-        },
-        {
-          "code": "6727",
-          "name": "亞泰金屬"
-        },
-        {
-          "code": "3711",
-          "name": "日月光投控"
-        },
-        {
-          "code": "6239",
-          "name": "力成"
-        },
-        {
-          "code": "6147",
-          "name": "頎邦"
-        },
-        {
-          "code": "6451",
-          "name": "訊芯-KY"
-        },
-        {
-          "code": "2449",
-          "name": "京元電子"
-        },
-        {
-          "code": "3017",
-          "name": "奇鋐"
-        },
-        {
-          "code": "3653",
-          "name": "健策"
-        },
-        {
-          "code": "3324",
-          "name": "雙鴻"
-        },
-        {
-          "code": "8996",
-          "name": "高力"
-        },
-        {
-          "code": "6805",
-          "name": "富世達"
-        }
-      ]
-    },
-    {
-      "title": "鴻海營收猛 創兩個新高…全年有望飆破10兆元大關",
-      "link": "https://tw.news.yahoo.com/%E9%B4%BB%E6%B5%B7%E7%87%9F%E6%94%B6%E7%8C%9B-%E5%89%B5%E5%85%A9%E5%80%8B%E6%96%B0%E9%AB%98-%E5%85%A8%E5%B9%B4%E6%9C%89%E6%9C%9B%E9%A3%86%E7%A0%B410%E5%85%86%E5%85%83%E5%A4%A7%E9%97%9C-223835547.html",
+      "title": "中國想靠「蒸餾」稱霸科技業，美中半導體競爭誰能勝出？台積電獲利表現是觀察指標",
+      "link": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E5%9C%8B%E6%83%B3%E9%9D%A0%E3%80%8C%E8%92%B8%E9%A4%BE%E3%80%8D%E7%A8%B1%E9%9C%B8%E7%A7%91%E6%8A%80%E6%A5%AD%EF%BC%8C%E7%BE%8E%E4%B8%AD%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%AB%B6%E7%88%AD%E8%AA%B0%E8%83%BD%E5%8B%9D%E5%87%BA%EF%BC%9F%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%8D%B2%E5%88%A9%E8%A1%A8%E7%8F%BE%E6%98%AF%E8%A7%80%E5%AF%9F%E6%8C%87%E6%A8%99-030839805.html",
       "source": "台股",
-      "pubDate": "2026-11-05T22:38:35+00:00",
+      "pubDate": "2026-11-06T03:08:39+00:00",
       "relatedStocks": []
     },
     {
-      "title": "MacBook Neo傳明年出貨增 鴻海、廣達營運吃補",
-      "link": "https://tw.news.yahoo.com/macbook-neo%E5%82%B3%E6%98%8E%E5%B9%B4%E5%87%BA%E8%B2%A8%E5%A2%9E-%E9%B4%BB%E6%B5%B7-%E5%BB%A3%E9%81%94%E7%87%9F%E9%81%8B%E5%90%83%E8%A3%9C-223835220.html",
+      "title": "台股融資斷頭沒完　分析師估還會跌保留現金",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E8%9E%8D%E8%B3%87%E6%96%B7%E9%A0%AD%E6%B2%92%E5%AE%8C-%E5%88%86%E6%9E%90%E5%B8%AB%E4%BC%B0%E9%82%84%E6%9C%83%E8%B7%8C%E4%BF%9D%E7%95%99%E7%8F%BE%E9%87%91-030116703.html",
       "source": "台股",
-      "pubDate": "2026-11-05T22:38:35+00:00",
+      "pubDate": "2026-11-06T03:01:16+00:00",
       "relatedStocks": []
     },
     {
-      "title": "散戶大逃殺！美股恐慌升溫　VIX指數飆高",
-      "link": "https://tw.news.yahoo.com/%E6%95%A3%E6%88%B6%E5%A4%A7%E9%80%83%E6%AE%BA-%E7%BE%8E%E8%82%A1%E6%81%90%E6%85%8C%E5%8D%87%E6%BA%AB-vix%E6%8C%87%E6%95%B8%E9%A3%86%E9%AB%98-222848399.html",
-      "source": "國際",
-      "pubDate": "2026-11-05T22:28:48+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "【盤前】美股崩盤費半跌12%！台指夜盤慘摔2946點　台股年線保衛戰開打",
-      "link": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E7%BE%8E%E8%82%A1%E5%B4%A9%E7%9B%A4%E8%B2%BB%E5%8D%8A%E8%B7%8C12-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%85%98%E6%91%942946%E9%BB%9E-%E5%8F%B0%E8%82%A1%E5%B9%B4%E7%B7%9A%E4%BF%9D%E8%A1%9B%E6%88%B0%E9%96%8B%E6%89%93-222500240.html",
-      "source": "國際",
-      "pubDate": "2026-11-05T22:25:00+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "民主黨大勝掀AI監管風暴！美股四大指數集體崩跌、費半狂瀉逾12％",
-      "link": "https://tw.stock.yahoo.com/news/%E6%B0%91%E4%B8%BB%E9%BB%A8%E5%A4%A7%E5%8B%9D%E6%8E%80ai%E7%9B%A3%E7%AE%A1%E9%A2%A8%E6%9A%B4-%E7%BE%8E%E8%82%A1%E5%9B%9B%E5%A4%A7%E6%8C%87%E6%95%B8%E9%9B%86%E9%AB%94%E5%B4%A9%E8%B7%8C-%E8%B2%BB%E5%8D%8A%E7%8B%82%E7%80%89%E9%80%BE12-221929882.html",
-      "source": "國際",
-      "pubDate": "2026-11-05T22:19:29+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "台股跌不停！股民連日摸底買進已虧5萬　網預測大盤下探位置：別以為自己可買最低賣最高",
-      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E8%B7%8C%E4%B8%8D%E5%81%9C-%E8%82%A1%E6%B0%91%E9%80%A3%E6%97%A5%E6%91%B8%E5%BA%95%E8%B2%B7%E9%80%B2%E5%B7%B2%E8%99%A75%E8%90%AC-%E7%B6%B2%E9%A0%90%E6%B8%AC%E5%A4%A7%E7%9B%A4%E4%B8%8B%E6%8E%A2%E4%BD%8D%E7%BD%AE-%E5%88%A5%E4%BB%A5%E7%82%BA%E8%87%AA%E5%B7%B1%E5%8F%AF%E8%B2%B7%E6%9C%80%E4%BD%8E%E8%B3%A3%E6%9C%80%E9%AB%98-221500342.html",
+      "title": "《FX戰士久留美》動畫開播後台股暴跌！這巧合太神...網友崩潰：別再播了",
+      "link": "https://tw.news.yahoo.com/%E3%80%8Afx%E6%88%B0%E5%A3%AB%E4%B9%85%E7%95%99%E7%BE%8E%E3%80%8B%E5%8B%95%E7%95%AB%E9%96%8B%E6%92%AD%E5%BE%8C%E5%8F%B0%E8%82%A1%E6%9A%B4%E8%B7%8C%EF%BC%81%E9%80%99%E5%B7%A7%E5%90%88%E5%A4%AA%E7%A5%9E%E7%B6%B2%E5%8F%8B%E5%B4%A9%E6%BD%B0%EF%BC%9A%E5%88%A5%E5%86%8D%E6%92%AD%E4%BA%86-030000912.html",
       "source": "台股",
-      "pubDate": "2026-11-05T22:15:00+00:00",
+      "pubDate": "2026-11-06T03:00:00+00:00",
       "relatedStocks": []
     },
     {
-      "title": "他預言台股「最慘跌到2萬5」恐成真？台股夜盤暴跌近3千點",
-      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD%E6%80%A5%E6%AE%BA%E9%80%BE1000%E9%BB%9E-%E4%BB%96%E9%A0%90%E8%A8%80-%E6%9C%80%E6%85%98%E9%82%84%E6%B2%92%E4%BE%86-%E7%B6%B2%E6%8E%80%E8%AB%96%E6%88%B0-031949948.html",
+      "title": "台股大崩跌！金管會下午宣布救市措施　不排除祭限空令",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E5%A4%A7%E5%B4%A9%E8%B7%8C-%E9%87%91%E7%AE%A1%E6%9C%83%E4%B8%8B%E5%8D%88%E5%AE%A3%E5%B8%83%E6%95%91%E5%B8%82%E6%8E%AA%E6%96%BD-%E4%B8%8D%E6%8E%92%E9%99%A4%E7%A5%AD%E9%99%90%E7%A9%BA%E4%BB%A4-030000813.html",
       "source": "台股",
-      "pubDate": "2026-11-05T22:05:32+00:00",
+      "pubDate": "2026-11-06T03:00:00+00:00",
       "relatedStocks": []
     },
     {
-      "title": "台股最慘回到26K？國巨崩至200元？大空頭爆AI真正危機",
-      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E6%9C%80%E6%85%98%E5%9B%9E%E5%88%B026k-%E5%9C%8B%E5%B7%A8%E5%B4%A9%E8%87%B3200%E5%85%83-%E5%A4%A7%E7%A9%BA%E9%A0%AD%E7%88%86ai%E7%9C%9F%E6%AD%A3%E5%8D%B1%E6%A9%9F-220530161.html",
+      "title": "台股二天暴跌5千點 股民財富平均蒸發113萬元",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E4%BA%8C%E5%A4%A9%E6%9A%B4%E8%B7%8C5%E5%8D%83%E9%BB%9E-%E8%82%A1%E6%B0%91%E8%B2%A1%E5%AF%8C%E5%B9%B3%E5%9D%87%E8%92%B8%E7%99%BC113%E8%90%AC%E5%85%83-025750579.html",
       "source": "台股",
-      "pubDate": "2026-11-05T22:05:30+00:00",
-      "relatedStocks": [
-        {
-          "code": "2327",
-          "name": "國巨"
-        }
-      ]
+      "pubDate": "2026-11-06T02:57:50+00:00",
+      "relatedStocks": []
     },
     {
-      "title": "台股挫著等！美股崩盤血洗 道瓊挫1833點、台指期慘跌2946點",
-      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E6%8C%AB%E8%91%97%E7%AD%89-%E7%BE%8E%E8%82%A1%E5%B4%A9%E7%9B%A4%E8%A1%80%E6%B4%97-%E9%81%93%E7%93%8A%E6%8C%AB1833%E9%BB%9E-%E5%8F%B0%E6%8C%87%E6%9C%9F%E6%85%98%E8%B7%8C2946%E9%BB%9E-220320496.html",
+      "title": "「我不想玩了」台股開盤直接殺瘋！暴跌3737點、盤中摔破3萬8　投資人哀號：可以退錢嗎",
+      "link": "https://tw.stock.yahoo.com/news/%E6%88%91%E4%B8%8D%E6%83%B3%E7%8E%A9%E4%BA%86-%E5%8F%B0%E8%82%A1%E9%96%8B%E7%9B%A4%E7%9B%B4%E6%8E%A5%E6%AE%BA%E7%98%8B-%E6%9A%B4%E8%B7%8C3737%E9%BB%9E-%E7%9B%A4%E4%B8%AD%E6%91%94%E7%A0%B43%E8%90%AC8-%E6%8A%95%E8%B3%87%E4%BA%BA%E5%93%80%E8%99%9F-025600109.html",
+      "source": "台股",
+      "pubDate": "2026-11-06T02:56:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "逆勢台股殺出1682點窘境！「9檔黑馬股」噴出漲停…廣寰科、泓瀚上榜　唯2上市股「它」營收強勢",
+      "link": "https://tw.stock.yahoo.com/news/%E9%80%86%E5%8B%A2%E5%8F%B0%E8%82%A1%E6%AE%BA%E5%87%BA1682%E9%BB%9E%E7%AA%98%E5%A2%83-9%E6%AA%94%E9%BB%91%E9%A6%AC%E8%82%A1-%E5%99%B4%E5%87%BA%E6%BC%B2%E5%81%9C-%E5%BB%A3%E5%AF%B0%E7%A7%91-%E6%B3%93%E7%80%9A%E4%B8%8A%E6%A6%9C-025500712.html",
+      "source": "台股",
+      "pubDate": "2026-11-06T02:55:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "台股開盤狂瀉一度失守年線　卓揆：已指示金管會隨時穩定股市",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E9%96%8B%E7%9B%A4%E7%8B%82%E7%80%89-%E5%BA%A6%E5%A4%B1%E5%AE%88%E5%B9%B4%E7%B7%9A-%E5%8D%93%E6%8F%86-%E5%B7%B2%E6%8C%87%E7%A4%BA%E9%87%91%E7%AE%A1%E6%9C%83%E9%9A%A8%E6%99%82%E7%A9%A9%E5%AE%9A%E8%82%A1%E5%B8%82-025300112.html",
+      "source": "台股",
+      "pubDate": "2026-11-06T02:53:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "台股崩跌！傳金管會下午宣布救市措施",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E5%B4%A9%E8%B7%8C-%E5%82%B3%E9%87%91%E7%AE%A1%E6%9C%83%E4%B8%8B%E5%8D%88%E5%AE%A3%E5%B8%83%E6%95%91%E5%B8%82%E6%8E%AA%E6%96%BD-024928462.html",
+      "source": "台股",
+      "pubDate": "2026-11-06T02:49:28+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "下殺3737！台股創盤中最大跌點　官方緊急救市措施全掌握",
+      "link": "https://tw.news.yahoo.com/%E4%B8%8B%E6%AE%BA3737-%E5%8F%B0%E8%82%A1%E5%89%B5%E7%9B%A4%E4%B8%AD%E6%9C%80%E5%A4%A7%E8%B7%8C%E9%BB%9E-%E5%AE%98%E6%96%B9%E7%B7%8A%E6%80%A5%E6%95%91%E5%B8%82%E6%8E%AA%E6%96%BD%E5%85%A8%E6%8E%8C%E6%8F%A1-024800653.html",
+      "source": "台股",
+      "pubDate": "2026-11-06T02:48:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "國安基金進場？美期中選舉連動台股血洗　卓揆最新回應",
+      "link": "https://tw.news.yahoo.com/%E5%9C%8B%E5%AE%89%E5%9F%BA%E9%87%91%E9%80%B2%E5%A0%B4-%E7%BE%8E%E6%9C%9F%E4%B8%AD%E9%81%B8%E8%88%89%E9%80%A3%E5%8B%95%E5%8F%B0%E8%82%A1%E8%A1%80%E6%B4%97-%E5%8D%93%E6%8F%86%E6%9C%80%E6%96%B0%E5%9B%9E%E6%87%89-015246957.html",
+      "source": "台股",
+      "pubDate": "2026-11-06T02:44:56+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "道瓊狂瀉1800點　川普全怪民主黨",
+      "link": "https://tw.news.yahoo.com/%E9%81%93%E7%93%8A%E7%8B%82%E7%80%891800%E9%BB%9E-%E5%B7%9D%E6%99%AE%E5%85%A8%E6%80%AA%E6%B0%91%E4%B8%BB%E9%BB%A8-024426360.html",
       "source": "國際",
-      "pubDate": "2026-11-05T22:03:20+00:00",
+      "pubDate": "2026-11-06T02:44:26+00:00",
       "relatedStocks": []
     }
   ],
