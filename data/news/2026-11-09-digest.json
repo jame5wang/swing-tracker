@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-08T23:47:21.000Z",
+  "coversWeekend": true,
+  "items": [
+    {
+      "summary": "市場傳出台積電應輝達要求，已開始評估生產3D DRAM先進記憶體晶片，可能新建廠房或收購現有廠改造成記憶體生產線，若成行將直接與三星、SK海力士、美光競爭；台積電對此未證實，僅強調專注晶圓代工本業。此傳聞反映AI記憶體嚴重缺貨、漲價，已讓邏輯晶片龍頭認真評估跨入記憶體生產，對南亞科、群聯、華邦電等台廠既是潛在威脅，也可能是產業結構轉變訊號。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {"title": "傳台積電進軍3D DRAM 應輝達要求規劃製造、評估建廠", "url": "https://ec.ltn.com.tw/article/breakingnews/5632308"},
+        {"title": "快訊/傳輝達找台積電生產3D DRAM AI記憶體供應鏈恐迎新變局", "url": "https://uanalyze.com.tw/articles/2661858614"},
+        {"title": "進軍記憶體晶片製造? 台積電：專注晶圓代工", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OdEVkMkxNM0ctRnczaS1xajMycE9uSXVCa3Z4d0hkUzlSd1pjZjlWNUpLUVhzNlV3bEF4bFFsMGNwOTllVkpkcVBpMzhzUnVwbUg5YW9MT253bFE?oc=5"}
+      ]
+    },
+    {
+      "summary": "繼上週五核准的新台幣1,237億元南科／楠梓擴產案後，市場再傳出輝達考慮提供數十億美元資金，協助日月光旗下矽品擴增CoWoS先進封裝產能，顯示輝達為確保先進封裝供給，已不只對台積電下單，也可能直接投資封測夥伴的產能建置；輝達與日月光均未證實此傳聞。",
+      "relatedStocks": [
+        {"code": "3711", "name": "日月光投控"}
+      ],
+      "sources": [
+        {"title": "輝達傳提供數十億美元助日月光擴產 CoWoS吃緊帶動先進封裝投資", "url": "https://uanalyze.com.tw/articles/7992658533"},
+        {"title": "輝達傳砸數十億美元 挺日月光擴增 CoWoS 產能", "url": "https://money.udn.com/money/story/5612/9862943"}
+      ]
+    },
+    {
+      "summary": "群聯第3季每股純益138元創歷史新高，董事會通過最高動用45.6億元買回庫藏股以展現對營運信心；同一天董事會也通過與一家供應商簽訂長約，自11月起取得DRAM/NAND產能優先獲配權至2029年底，執行長潘健成並表示看好中國農曆年後AI需求再度激增，已提早鎖定2027年約7成貨源，記憶體供給保衛戰持續升溫。",
+      "relatedStocks": [
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {"title": "公開資訊觀測站重大訊息：群聯董事會決議與供應商簽署DRAM長期供應協議", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"},
+        {"title": "〈群聯法說〉Q3每股賺138元創高 擬買回2000張庫藏股「展現對營運的信心」", "url": "https://uanalyze.com.tw/articles/6392958587"},
+        {"title": "群聯潘健成：中國年後AI需求再迎激增 提早鎖定2027年7成貨源", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773878_4LE791XB80HUX57CIGBYQ"},
+        {"title": "記憶體攻防戰2》群聯簽長約搶料至2029年 威剛轉攻AI資料中心", "url": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxQSndqNm9HWlpteXNPTDNFR0I5YjdnWlVoNGF3VVp5V21vM1VRZnNydzNpbndpbUMwVzA3NnJlQVQtdnFoQ1JDVEc0elBURDhzMzhQZDNqWUgwcjdtMHdxSEZaamgyMUV0LTF3N2c2NW5odzlyYU9WM3E0b2c1LXJaWlA3V0NHaTZZNzM5RDIwZG1EeVRRMmZwajVoTjhZbzNGV1hMRkt4dXUtZnVpWDVIMGVIRHExaVJCMzZyVE45bDlQc2RxX0FOcWlxanhxMldwY19QRnpibC1VY04tSElHRVJjeU9Bcnppd0NVVGJFVmZ2LVE2ZlJvNUE2VmF3aVQzSHFrbm9EeUZydE5Zb0dBZkFlZGdDS05EaG5SNElHU1dGbW1rRGQ1bFVhc29OdDllVFdlNnJ2d2N2cHFNVU94WEdKMkZ4S0VrYXY4RkdVSlh0VlBjYnhyYndoWjB0Y3ZhNGJSSUwyQjhCajFYUXFVRUZ2aw?oc=5"}
+      ]
+    },
+    {
+      "summary": "創見技術長束崇萬表示，記憶體「低價庫存紅利」已結束、價格進入常態化的高原期；多家記憶體廠公布第3季獲利創高，法人普遍預期2027年缺貨情況可能比今年更嚴重，低價庫存去化見底後漲價動能有望延續。南亞科DRAM現貨報價同步持續走強，呼應整體記憶體供需仍偏緊的格局。",
+      "relatedStocks": [
+        {"code": "2408", "name": "南亞科"},
+        {"code": "2344", "name": "華邦電"}
+      ],
+      "sources": [
+        {"title": "低價庫存紅利結束回歸常態 創見束崇萬：記憶體價格進高原期", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773879_B2W9HDQM6DO224LGR3VYE"},
+        {"title": "記憶體Q3每股獲利王出爐！6大廠看缺貨2027更嚴重 低價庫存見底藏隱憂", "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNay1CY3F6ZVFucW05ejBlLW51MGt3NjJEcl84aEU5UlM4UlN4ZjYtRnR4TW1qd3cwdmhGa0ZCck82Qm9aU3Z0TVRUQTZBQm1iM1QtaXhkYTUxd3ctS0I2VU5tQ2dDQkFHejVjdkc3SEhGaUdxX2ptbnhablBxdDZDTUpn?oc=5"},
+        {"title": "南亞科DRAM報價續強", "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qb2JpeGk2blJFLWtjYWFBT1IyQ0dKeGFPWE0tcXNpTTJPVDc0NjNXd1pIUnpqSkQzTWh5cGZGVUtEajRsOGdwUDIwbFBDTlREZ0lSVDNKZDdYeGhRVG9J?oc=5"}
+      ]
+    },
+    {
+      "summary": "欣興相關人士在產業論壇中指出，先進封裝設備交期已拉長至最長3年，2028年前的新增產能幾乎已排不進新訂單，顯示ABF載板擴產瓶頸已從資金轉向設備交期；與此同時，康寧點出AI晶片尺寸暴增後，玻璃基板量產仍卡在通孔良率、鍊銅附著與成本等3大難關，顯示玻璃基板要取代現有ABF載板仍需時間，但已開始吸引輝達供應鏈廠商布局。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"}
+      ],
+      "sources": [
+        {"title": "AI擴產卡在設備 欣興：交期最長3年、2028前不接單", "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBCR2xFel9wWE9od3IzOWJWQXI4cUZkV0NFbFhhOGUteVZJbmtRc3JvRlN3SXk5dmt0cXo0VTVUTEQ0RTNvQ1RzdWdfQWlSVk5zTnBIajJpaFByaVlaeWxJYjlWWnRuZVQ3Q3pXQTN0Q0ZKSkpEZWRB?oc=5"},
+        {"title": "下一代封裝黑科技！康寧揭AI晶片尺寸暴增 玻璃基板量產卡3大難關", "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObmNnNDZhdk9MSlRFNjMtdXJoMmtKOUc3bDViQmpVeUF6VXpzZDV4dGZUN3BYNlVHdHVxc3NWeEhCbHVsQWhndmNRa05jblZRbUQtRHNVWmFXeElOY2ZoYW9jT2xMcnBhN1RCSGhDOXNDQl9PLVl0QmtXWXJqQzhhNmd3?oc=5"}
+      ]
+    },
+    {
+      "summary": "金居啟動馬來西亞檳城居林高科技園區新廠計畫，規劃年產3萬噸HVLP4高頻高速高階銅箔，初估投資80～100億元，分兩期於2028至2029年陸續開出產能，主要供應在馬來西亞、泰國設廠的台光電、台燿、騰輝-KY及聯茂等CCL客戶；同時將在台發行70億元無擔保可轉債籌措海外擴產資金。",
+      "relatedStocks": [
+        {"code": "8358", "name": "金居"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6672", "name": "騰輝電子-KY"},
+        {"code": "6213", "name": "聯茂"}
+      ],
+      "sources": [
+        {"title": "金居啟動百億大馬建廠計畫 將在台發70億元CB籌資", "url": "https://news.cnyes.com/news/id/6650022"},
+        {"title": "金居籌設在大馬檳城新建HVLP4高階銅箔 規劃年產3萬噸", "url": "https://uanalyze.com.tw/articles/3218057438"}
+      ]
+    },
+    {
+      "summary": "法人大幅上修聯茂2027、2028年獲利預估，主因是上游E玻璃纖維布供給吃緊、報價較年初已上漲150%～200%，且部分設備交期已排到2029年，使聯茂得以持續轉嫁成本、毛利率逐季回升；法人預估聯茂CCL月產能將由今年底570萬張，擴增至2027年底630萬張、2028年底825萬張，顯示CCL原料瓶頸短期難解，整個CCL族群漲價動能可望延續。",
+      "relatedStocks": [
+        {"code": "6213", "name": "聯茂"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "1303", "name": "南亞"}
+      ],
+      "sources": [
+        {"title": "聯茂 (6213) 2027、2028年 EPS 大幅上修！供給緊缺，漲價超出市場預期", "url": "https://uanalyze.com.tw/articles/2781156580"},
+        {"title": "聯茂受惠E布供需吃緊 法人估今年 EPS 上看19.8元", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zSDYtMGtTWWVwNEtId25MdDFJWTd4d2VueW93dVdlM1RSdm14ZnhrLVlpUDE3bTBjWkE2V1V1V3ZMQWN3VjVQTDROTXpFRWJJaktyR2pGbV9rUdIBX0FVX3lxTE10UV80ZUxMZ3JNdkQ4SElXOVVjcEVHY1d2V1JtRlV1WExtbmdEcE9qaWFCbUhoWXJwS014dmtoWVVVYnR4VVNmMlNoYVRZMXdnaXRHVXBOLXdDTFkwOUV3?oc=5"}
+      ]
+    },
+    {
+      "summary": "PCB鑽針廠尖點法說會公布第3季每股純益2.92元、前三季6.18元均創高，年增逾2倍，今明兩年資本支出各達36億元用於加速擴產，總座林若萍對第4季及2027年展望正向；市場並指出PCB產業正迎來「半導體化」趨勢，部分PCB大廠訂單已被預訂至2028年，顯示供需吃緊已從材料端擴散到製程設備端。",
+      "relatedStocks": [
+        {"code": "8021", "name": "尖點"}
+      ],
+      "sources": [
+        {"title": "尖點Q3 EPS 2.92元、前三季EPS 6.18元，籌措資金全數到位，加速擴產", "url": "https://tw.stock.yahoo.com/news/%E5%B0%96%E9%BB%9Eq3-eps-2-92%E5%85%83-%E5%89%8D%E4%B8%89%E5%AD%A3eps-084323333.html"},
+        {"title": "新產能加大 尖點2027年動能強", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XUk0yVVUyaFVNLUQ0ejVXZl9DWkJtdWdaU2ExcXVoN3NPSTF6S3hIX0FIX1NYSUVfOU0tS3BMLWhNejVFTWN4OXJacE9vdjF3RWhWSVpEeTJySUZDS3EtRDhySGhRa2dCazBZ?oc=5"}
+      ]
+    },
+    {
+      "summary": "法人指出，隨台積電、三星相繼縮減8吋晶圓產能（三星更計畫2026年下半年關閉南韓器興S7廠），全球8吋產能萎縮，加上AI伺服器與邊緣AI帶動電源管理晶片（PMIC）等特殊製程需求回溫，聯電8吋月產能逾36萬片可望承接轉單，法人看好聯電、世界先進等台廠8吋代工報價同步走升。",
+      "relatedStocks": [
+        {"code": "2303", "name": "聯電"}
+      ],
+      "sources": [
+        {"title": "台積電、三星淡出8吋晶圓市場 「台廠三雄」迎轉機成最大贏家", "url": "https://www.peoplenews.tw/articles/hot-news/12663"},
+        {"title": "聯電閃見「8字頭」，股價腰斬能撿嗎？不只三星關8吋廠轉單大禮包，法人揭另1成長引擎", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR3dObmc2SktEdTBIbEpnNnJRYlRDcjMtcXlJbnVGQmRVZjM5bGhPZnV2Uk90WXlETlRYSm5UV0hQdWc5aWFqQVM5dThxVWZ0eDJyTFdvTS1TYU1xTDZKOVdvQTRWQ1MwVUpWZ1JtMXlPT1dUNEg3TjRWZVUtMmhfWg?oc=5"}
+      ]
+    },
+    {
+      "summary": "京元電子總經理張高薰在受訪時提醒，AI帶動晶片測試需求全面升溫，但終端需求經過供應鏈層層轉單後容易被放大，提醒業界留意需求被誇大的風險，公司仍持續擴大美國測試產能以滿足客戶需求、強化先進測試環節布局。",
+      "relatedStocks": [
+        {"code": "2449", "name": "京元電子"}
+      ],
+      "sources": [
+        {"title": "京元電張高薰揭AI擴產新挑戰 示警供應鏈「需求」層層放大風險", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773873_73A7ZBJS8CZIF42TSBBSE"}
+      ]
+    },
+    {
+      "summary": "智邦10月合併營收446.63億元，較9月成長10.6%、較去年同期大增91.2%，為連續第3個月刷新高，反映AI交換器與網通設備訂單持續暢旺；公司並擴大資本支出加速擴產，以爭取更多AI資料中心網通訂單。",
+      "relatedStocks": [
+        {"code": "2345", "name": "智邦"}
+      ],
+      "sources": [
+        {"title": "《通網股》智邦營收連3月破400億！10月再登頂、大手筆擴產搶訂單", "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NZmFNLWcyOWVrNXNMZkFXZnl0SjVYb0pKbXNQbjNmdTA0bEJOUDFuU29yQ2k2UDl5czE3ZDlKZURxUExXblE5SUk4Tnd6akR5bUVzYlRSa1pPeUtvempaa0k2cERfSFU3M2c?oc=5"}
+      ]
+    },
+    {
+      "summary": "日本MLCC大廠太陽誘電公布季報並二度上修全年財測，第3季訂單年增130%、BB值達1.70，其中MLCC訂單年增162%、BB值1.83創歷史新高，因AI相關需求成長快於預期，公司將原訂擴產計畫提前2年執行，目標2027年度將AI伺服器用MLCC產能提升至今年的2倍以上，反映被動元件供需吃緊已從被動元件龍頭延伸到全球MLCC供應鏈，對國巨等台廠接單與報價環境偏多。",
+      "relatedStocks": [
+        {"code": "2327", "name": "國巨"},
+        {"code": "3026", "name": "禾伸堂"}
+      ],
+      "sources": [
+        {"title": "MLCC 訂單飆／BB 值破表 太陽誘電升財測、加快擴產", "url": "https://finance.technews.tw/2026/11/06/taiyo-yuden-raises-forecast-and-accelerates-capacity-expansion/"}
+      ]
+    }
+  ]
+}
