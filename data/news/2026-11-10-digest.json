@@ -1,0 +1,188 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-09T23:46:07.000Z",
+  "items": [
+    {
+      "summary": "輝達執行長黃仁勳與一名遭美方認定為中國情報人員的高層職員關係密切，引發國會三大委員會主席要求其於11月18日前進行閉門簡報說明，相關爭議持續牽動股價；美股四大指數11/9同步大漲、費半指數狂飆近7%，輝達卻逆勢下跌逾4%，顯示市場對輝達個股風險與整體AI晶片供應鏈情緒已出現分歧。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "美股4大指數全面反彈！道瓊飆漲1104點、費半漲逾6.8% 輝達收跌4.27%",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E%E8%82%A14%E5%A4%A7%E6%8C%87%E6%95%B8%E5%85%A8%E9%9D%A2%E5%8F%8D%E5%BD%88-%E9%81%93%E7%93%8A%E9%A3%86%E6%BC%B21104%E9%BB%9E-%E8%B2%BB%E5%8D%8A%E6%BC%B2%E9%80%BE6-8-215800022.html"
+        },
+        {
+          "title": "美媒指與中國情報人員關係密切 議員要求黃仁勳向國會簡報",
+          "url": "https://www.cna.com.tw/news/aopl/202611060026.aspx"
+        }
+      ]
+    },
+    {
+      "summary": "華邦電董事長焦佑鈞公開回應台積電傳評估進軍3D DRAM先進記憶體一事，直言台積電「不會做半吊子」，意味此一潛在競爭威脅不容小覷；他同時透露記憶體缺貨能見度已看到2027年，但示警2029年景氣恐現轉折，公司並規劃砸逾700億元擴建高雄廠，目標2030年導入14奈米EUV製程強化長期競爭力。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台積電傳攻3D DRAM！華邦電董座焦佑鈞：不會做半吊子",
+          "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNb2dJc1YxQ0VJS0NrMkduaGtrcjh4NW9YY2pOdkF0bWVqUVNEaHBlbE1jb3lickp2aTg3YUNhc0V5MF9QZVpvSTVTRzc0c3U4Y0JpeVJaVTlUR1NGRVhnakVhUVV4VTlXQW80WW4ybVVWbTFnOFExelhEa2RzR1lWanVDWXNTUEEwY1JaREVzQ1JIYjZ0MjZsbWl5bjFabGl0RjdOTkszNWhLdF9reWlQLUx0Y0dvUU1hdV9zUFNoajlEZlJ3cmRZMTNpZWREcjZWdTg1Mkhsb0hxWjJocGk2NDNFaWJPUnN4eUxOMFp6N2xacmlLRmVmTi1sbVI3WEZjZjJGRkRVanMzaDY2VFlEXzBDUkFXRUl5OFRpaXdtTDlMOVFRQm9pcXhjempyQlJWMldqWjg1UGlsTm54V2hkS1VCSQ?oc=5"
+        },
+        {
+          "title": "華邦電砸逾700億擴建高雄廠！14奈米製程瞄準EUV，最快2030年導入",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9qMzJUblhHajBVanVkOGNJdUk2R0p1SkRzMWhVR0NTOTE1c2NtMmtoaHBFNk55UWhMandvR3J2eWZhcFM3clhXZ1lNTGFNbFg5NlhwMDVxNA?oc=5"
+        },
+        {
+          "title": "華邦電員工分紅上看30個月！董座焦佑鈞示警2029年恐景氣轉折",
+          "url": "https://news.google.com/rss/articles/CBMi_AJBVV95cUxQSHoyb2VsVWM0SThySHpoWnI3QkVMNDhfRG84LTZBYnpyTHFfSHJFRG56blNYMExBN2Y1RExJVWFqU3FrMjdaNEhrMWJ5dXo2eURkN1loWk9XN0d0d0hpbHozQ2prc0NQbUlLZWx2RFBYdUdNS1A0a0xyY0dSRW5hN3cwdVMyRC14QUxYbmZ5WWt6eVdEbHp5c1FlUU4wc3RhRXNDV0F2T0xHRFlDaFZzeDRVX2FFYXc4SXdOdHBMdE52c0U5aHQ4Rkh4MWI3c2JzWl9KeWhGWFpaQjFVZHBaUHd3TzhGSXpUVGFPeFMzdm1iU01HbWFoeXVENGgydUNRdVI0LWV6V2txUmJZY2t1ci1PUENpWmZINGlxTV9KS3RGamZkOHhUVXM1SENVLWRoaHA1eVJhZWFFSVpqWk0xN0RoMjl2dEVZRTJNLXZwVTVDbi1kSUppYVk1dEh3Qkw0c3MtdEdZajhWSUNpZV9DX3ZBR2kxNFQwUXN5dw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "世芯-KY遭媒體報導稱2027年營收預期將達三位數成長，公司依交易所要求說明但未否認內容；市場同時傳出公司再下一城、取得第2家美系雲端服務供應商(CSP)大單，單筆規模約10億美元，訂單將自2027年下半年挹注營收，法人同步將目標價大幅上修至6,850元。",
+      "relatedStocks": [
+        {
+          "code": "3661",
+          "name": "世芯-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI ASIC放量！「這大廠」拿下北美CSP大單 目標價上看6850元",
+          "url": "https://www.setn.com/news/1935991"
+        },
+        {
+          "title": "拿下第2家美系CSP客戶！「ASIC大廠」獲10億美元大單助攻 明年營收拚三位數成長",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Eb2NaUHh3R0E0OGdNdTNVcnFtZV9kNUp3UnNzUlZLMU85ejNpcTBTdnU2SG91dnViM0prcGFmdTBSb1lJNVE1VkFUYw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "全球碳化矽(SiC)大廠動向分歧：英飛凌SiC晶圓製程推進至300毫米、單片晶片數達200毫米製程的2.3倍，產能效益大增；安森美則喊卡原訂20億美元的捷克SiC擴產案，主因終端需求(如電動車)成長放緩，反映SiC產業資本支出步調正出現分化，台廠化合物半導體供應鏈宜留意競爭態勢變化。",
+      "relatedStocks": [
+        {
+          "code": "2455",
+          "name": "全新"
+        },
+        {
+          "code": "3105",
+          "name": "穩懋"
+        },
+        {
+          "code": "4971",
+          "name": "IET-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "英飛凌碳化矽晶圓攻上300毫米 晶片數達200毫米2.3倍",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBkclFoQ0dHaTYwTXdxc2dGU0JSWEZrTFJCcVhRWWJIOUxvbmh4YkNYZTlTQ0FrNnB1N092NElGTER3Zzh2U1Fac0V3WUY4Mko5MTg0QmVQN2Y1YVZPOXRZSWQwcURaakQxanVxaG1WdnNzeldFbFcw?oc=5"
+        },
+        {
+          "title": "安森美喊卡20億美元捷克SiC擴產 市場需求轉變促調整",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774050_HM91O4PC4NPOGC1S8OB68"
+        }
+      ]
+    },
+    {
+      "summary": "日月光投控代子公司矽品以逾20億元向盟立自動化採購營業用設備、另以5.3億元委外發包廠務工程，顯示先進封裝產能擴建持續進行；市場消息也指出半導體廠房工程與設備訂單能見度看旺至2028年，亞翔、盟立、聖暉等自動化設備廠同步受惠，另有消息指NVIDIA與矽品看好資料中心Scale-Out需求，2027年將加速CPO(共同封裝光學)放量。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "2464",
+          "name": "盟立"
+        }
+      ],
+      "sources": [
+        {
+          "title": "半導體瘋狂吸金！「這檔」訂單看旺至2028年翻紅漲逾3% 亞翔、盟立、聖暉等11檔攻頂",
+          "url": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxNeENTUFBFNVY1ejF3c241c2pkM09xNmZWUnJaeE56Rlhfa2t6RG9RalFTV0kyWFBqZnZQejJlbUtuODFzZTBORWZZbENCM2JWZzBLRUJrRFhKUlFfYzJGUVhYVTM5S2V1NkpqeTFXRkg1QlEtdnVFXzFuak94VTNUbGRhMWJUZ0p6N0FPWk1KYS1zdXpFcFRKMDVlOVU2TjQtT09uLTBmbnhqZFFrU3doUEtZWm9vS3doOWJ3UDQ1V3R5RjNSel81bzFjUlo0RnNJNDQ4NUpoWDZ0cEM1eGhrcnRQNkp6aExkWnlGY0JSc1BHa2o0MkhJSHRGeWZEX1B0c2ZFM2plc2RucVdFXzhjWEk0WUNSOGtteFNBQXV0Qkp6bGJqZGNQOGhBTGhuTUhnamt3bXp0a3ZpR0ZTbFNKVUl3TTNNUGZEYm1xblJIOU5aR3k3VHRuRlg3R0R6SUFFdnBvV3lQN3R5N1dfRnJHX0lGR1EtMTN2X18w?oc=5"
+        },
+        {
+          "title": "日月光投控代子公司矽品公告取得盟立自動化營業用機器設備暨廠務工程重大訊息",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "記憶體產業軍備競賽升溫：三星與SK海力士加碼爭奪EUV曝光機產能、擴大先進DRAM布局；另有報導指馬斯克旗下TeraFab積極尋求記憶體產能支援，台廠記憶體業者可能成為潛在合作對象，市場並點名南亞科為討論焦點之一，惟目前尚無具體合作案證實。",
+      "relatedStocks": [
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "2344",
+          "name": "華邦電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "光刻大戰開打！三星、SK海力士重金爭奪EUV產能 加碼先進DRAM擴產",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE53UHprcVRVZG1jQS1ZeVdhcDVXN0ZLdDBPYk1Nc3FaSXZ0RzlvOC1tTEptdTJPcUtqTEZBZ3p1aEctUFhRU0FDblNpT3BacWM?oc=5"
+        },
+        {
+          "title": "Terafab攻記憶體 台廠助陣",
+          "url": "https://www.ctee.com.tw/news/20261110700130-430501"
+        }
+      ]
+    },
+    {
+      "summary": "穩懋揭露營收結構持續轉型：衛星、航太與長距離通訊相關基礎設施營收占比已達四成，規模可能超越基地台應用，手機功率放大器(PA)占比則降至不到三成，且中階手機機種因記憶體漲價而遭壓縮，顯示公司正加速擺脫對手機市場的依賴，轉向低軌衛星與AI光通訊等新成長動能。",
+      "relatedStocks": [
+        {
+          "code": "3105",
+          "name": "穩懋"
+        }
+      ],
+      "sources": [
+        {
+          "title": "穩懋(3105) 衛星、航太與長距離通訊占基建四成！規模可能超過基地台",
+          "url": "https://news.cnyes.com/news/id/6653679"
+        },
+        {
+          "title": "穩懋(3105) 手機PA占不到三成！中階機被記憶體漲價壓住",
+          "url": "https://news.cnyes.com/news/id/6653675"
+        }
+      ]
+    },
+    {
+      "summary": "群聯法說會釋出成本面轉折訊號：外資指出公司過去受惠的低價記憶體庫存紅利即將耗盡，在上游記憶體報價上漲環境下，獲利恐面臨壓力，暫維持中立評等，顯示記憶體價格上漲對下游控制晶片/模組廠而言是雙面刃。",
+      "relatedStocks": [
+        {
+          "code": "8299",
+          "name": "群聯"
+        }
+      ],
+      "sources": [
+        {
+          "title": "《半導體》群聯低價庫存紅利快沒了！外資點出獲利隱憂、維持中立",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50RWh2ekZhazZpODNDUVVoUTRCdHNCdmRWeFQtLVludk1BZTZ0dnIydm00VndDZ2FyRU4zQzBlUWJWMmo4VjU1NjhYSGFCdkpZLXdVUDBkQWF4Q3Jab1ZMYTRPWWNwRXdWbWc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "蘋果加速人形機器人布局，傳將與宇樹科技(Unitree)合作成為關鍵夥伴，市場點名台廠傳動元件供應商上銀同步受惠，可望跟進搶攻機器人商機，為公司在半導體設備以外再添新成長題材。",
+      "relatedStocks": [
+        {
+          "code": "2049",
+          "name": "上銀"
+        }
+      ],
+      "sources": [
+        {
+          "title": "宇樹將成為蘋果機器人關鍵夥伴 上銀、雅特力跟進搶商機",
+          "url": "https://money.udn.com/money/story/5612/9867809"
+        },
+        {
+          "title": "上銀、雅特力有喜 跟著蘋果搶機器人商機",
+          "url": "https://money.udn.com/money/story/5612/9867939"
+        }
+      ]
+    }
+  ]
+}
