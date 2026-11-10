@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-10T23:43:58.041Z",
+  "items": [
+    {
+      "summary": "台積電董事會11/10核准約409.3億美元資本預算（含約194億美元先進製程設備、46億美元先進封裝／成熟及特殊製程產能），並通過上限各5億美元認購Anthropic普通股與OpenAI優先股（合計上限10億美元），另編列5億美元成立半導體生態系策略投資公司；同時Q3配息升至9元創新高，顯示公司在持續擴產之餘，積極卡位AI軟體生態系投資。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台積電Q3配息9元 核准資本預算409億美元 擬各砸5億美元入股Anthropic與OpenAI",
+          "url": "https://news.cnyes.com/news/id/6656911"
+        },
+        {
+          "title": "台積電董事會核准約194億美元先進製程產能機器設備、約46億美元先進封裝等案",
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ac6984c0-c1ce-4b94-b6ae-c5b238280076"
+        }
+      ]
+    },
+    {
+      "summary": "TrendForce預估CPO／NPO光引擎需求將由2027年354萬顆大增至2028年6,286萬顆、近18倍成長，但2027年PIC晶圓有效產能約8.28萬片、需求約15.2萬片，缺口近1.8倍，帶動晶圓代工2027年產值成長逾30%、12吋晶圓漲幅上看90~95%；受惠供應鏈包括台積電COUPE技術相關封裝與系統廠（矽品／日月光、台達、創意、世芯等），另新思科技亦宣布與台積電在A14製程深化合作、促成CPO設計導入。",
+      "relatedStocks": [
+        {"code": "3711", "name": "日月光投控"},
+        {"code": "2308", "name": "台達電"},
+        {"code": "3443", "name": "創意"},
+        {"code": "3661", "name": "世芯-KY"}
+      ],
+      "sources": [
+        {
+          "title": "CPO是什麼？2028需求暴增18倍晶圓代工迎漲價潮受惠廠商出列一表看",
+          "url": "https://www.businesstoday.com.tw/article/category/183015/post/202611050045/"
+        },
+        {
+          "title": "瞄準AI晶片需求！新思科技聯手台積電 A14製程認證、促成CPO設計",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1URlZsYm5LQll3cVo1ZEtLdHd4NzNER1kzWENacXF5S3FfZlVpU1hnYmZGcDB1T0xPRVJpUV93eVlseENnbjdfS2lEM3TSAVJBVV95cUxQLTF2Nk55aUNobUQ5UEpnNUFtbkMwSkZnOFh5OVo2eDBScmNJcEtMakIzYkt0VXJxYlBSc3JzOEpIZ1JSMVN6NXFMNzkzVXdMbGVB?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "路透披露微軟正遊說川普政府放棄限制中國製光收發器進口的計畫，理由是美國供應商（如Coherent、Lumentum）短期內無法取代中國約三分之二的全球產能，若倉促禁運恐使已採購的AI晶片因連接器缺口而閒置；FCC仍在評估範圍是否僅限3.2Tbps新規格產品。此進展若使禁令延後或縮小範圍，將削弱原本預期台廠光通訊零件商受惠程度，增添CPO/光通訊供應鏈政策面不確定性。",
+      "relatedStocks": [
+        {"code": "3163", "name": "波若威"},
+        {"code": "4971", "name": "IET-KY"},
+        {"code": "3081", "name": "聯亞"}
+      ],
+      "sources": [
+        {
+          "title": "AI晶片買了卻可能用不了！微軟遊說川普 別禁中國光通訊零件",
+          "url": "https://news.cnyes.com/news/id/6657705"
+        }
+      ]
+    },
+    {
+      "summary": "針對日前市場傳出輝達要求台積電評估代工3D DRAM一事，台灣DRAM業界資深人士高啟全公開反駁，直言台積電「做不來」3D DRAM，真正該留意的衝擊其實是中系記憶體廠持續擴產；此說法與華邦電董座焦佑鈞先前「台積電不會做半吊子」的評論形成對照，顯示業界對台積電是否跨足記憶體製造、以及中國記憶體產能擴張對台廠競爭威脅看法分歧。",
+      "relatedStocks": [
+        {"code": "2408", "name": "南亞科"},
+        {"code": "2344", "name": "華邦電"}
+      ],
+      "sources": [
+        {
+          "title": "高啟全直言台積電「做不來3D DRAM」 中系記憶體廠擴產才是衝擊",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774273_FRC1TVQS8M42J728MQELR"
+        }
+      ]
+    },
+    {
+      "summary": "奇鋐Q3法說釋出強勁展望：公司預告2027年ASIC液冷散熱營收將超越GPU相關業務，水冷產能規劃擴增逾五成以應對垂直供電架構帶動的雙面水冷板需求，同期毛利率已衝上33.86%創歷史新高，顯示散熱產品組合正快速轉向高毛利的ASIC/液冷應用。",
+      "relatedStocks": [
+        {"code": "3017", "name": "奇鋐"}
+      ],
+      "sources": [
+        {
+          "title": "垂直供電架構推升雙面水冷板需求 奇鋐出貨搶商機",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774215_RQ619LV92TUIFD41GA3BK"
+        },
+        {
+          "title": "【奇鋐2026 Q3 法說會】毛利率衝上33.86%創新高，EPS倍增至29.32元；奇鋐：2027年ASIC營收將超越GPU",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9BQlJhYUFNdFhUNW9qb0s1c0FiclRwNy1mTEhuQTFGcnhNN182d1hvMm5Ed3dHaWpCWDNiWl82M0t1bkFvNDVFX0tEdnBqazE3UVZ3dXBaMWFSZEtPLXVrdXI3UHVpQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "上銀法說會透露重大新成長動能：公司已打入美系人形機器人供應鏈，每月出貨上萬支線性滑軌，明年初加速出貨、AI物流機器人訂單最快年底出貨；同時既有半導體設備訂單能見度已看到2027年中，螺桿線軌持續擴產，公司預告Q4展望優於Q3，2027年表現「依舊強勁」，等於在半導體設備本業之外再添一條新成長曲線。",
+      "relatedStocks": [
+        {"code": "2049", "name": "上銀"}
+      ],
+      "sources": [
+        {
+          "title": "訂單接不完、排隊到明年中 上銀預告2027表現「依舊強勁」",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774206_XU81ZOPM171R8E5OC1EQH"
+        },
+        {
+          "title": "上銀機器人訂單報喜 每月上萬支線軌交貨美系T客戶",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5636081"
+        },
+        {
+          "title": "〈上銀法說〉美系人形機器人接單報捷 AI物流機器人最快年底出貨",
+          "url": "https://news.cnyes.com/news/id/6656020"
+        }
+      ]
+    },
+    {
+      "summary": "南電宣布再下一城，新接獲美系客戶AI相關大單，帶動ABF載板毛利率一舉突破40%，外資同步大幅調升目標價；此次新訂單與毛利率同步改善，顯示AI伺服器/ASIC拉貨對高階ABF載板的拉抬效益持續兌現，而非單純價格因素。",
+      "relatedStocks": [
+        {"code": "8046", "name": "南電"}
+      ],
+      "sources": [
+        {
+          "title": "南電千金股回來了！美系AI大單入袋、ABF毛利率衝40％ 高盛喊上2700元",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9sd2ZaMjl6QkxwTEM5d2VnbnVLRkx0cUdtWkpYLUNWSmVXUE5udTVxRzhqcU1IZDdDbnlmbjlJVjhtZ0psNkhjNG9zYw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "禾伸堂法說會釋出樂觀未來兩年展望：AI相關營收占比持續攀高，公司規劃明年擴充高階MLCC產能達四成以因應AI伺服器與電源管理應用需求，管理層對未來兩年營運表現表示樂觀，顯示被動元件在AI基礎建設拉貨下的結構性成長動能持續強化。",
+      "relatedStocks": [
+        {"code": "3026", "name": "禾伸堂"}
+      ],
+      "sources": [
+        {
+          "title": "AI需求強勁 英業達、禾伸堂法說報喜／美期中選舉後 尚未有客戶調整訂單",
+          "url": "https://ec.ltn.com.tw/article/paper/1778088"
+        },
+        {
+          "title": "〈禾伸堂法說〉AI營收比重續攀高明年MLCC擴產4成 未來兩年展望樂觀",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JNGUwMG1hbE42SlRRUEFlMXJkWDkwdHpxWFRWSGg4U19sb05EMm5BUVNvVE4tUmFMZFNIa2ZZckRCQXpFMWpUVWcyaWV0OGhLVGlHNTFvd3Y?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "愛普法說會揭露IPD矽電容訂單能見度已看至2027下半年，並與聯電採取雙軌並進策略擴大矽光子相關產能布局，以滿足先進封裝與資料中心客戶需求放量；公司同步看旺明年整體IPD出貨表現，顯示利基型矽智財/被動元件在AI供應鏈中的角色持續強化。",
+      "relatedStocks": [
+        {"code": "6531", "name": "愛普"},
+        {"code": "2303", "name": "聯電"}
+      ],
+      "sources": [
+        {
+          "title": "愛普IPD矽電容訂單能見度看至2H27 攜手聯電採雙軌並進",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774258_40Y1SVVC6ZII237JOWQJ1"
+        },
+        {
+          "title": "愛普 IPD 放量、擴產迎需求 聯電合作產品已有客戶導入",
+          "url": "https://money.udn.com/money/story/5612/9869598"
+        }
+      ]
+    },
+    {
+      "summary": "輝達執行長黃仁勳與遭美方認定涉及中國情報活動人士的關係持續引發國會關注，公司已委託紐約律師事務所展開調查以回應國會11/18閉門簡報要求；相關爭議疊加市場風險偏好轉弱，輝達股價單日重挫逾5%、拖累美股四大指數同步下跌，市場須留意此一治理爭議是否延續影響台股開盤AI供應鏈情緒。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "輝達出手了！聘請「紐約知名律師事務所」調查黃仁勳相關爭議",
+          "url": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E5%87%BA%E6%89%8B%E4%BA%86-%E8%81%98%E8%AB%8B-%E7%B4%90%E7%B4%84%E7%9F%A5%E5%90%8D%E5%BE%8B%E5%B8%AB%E4%BA%8B%E5%8B%99%E6%89%80-%E8%AA%BF%E6%9F%A5%E9%BB%83%E4%BB%81%E5%8B%B3%E5%A9%9A%E5%A4%96%E6%83%85-223900557.html"
+        },
+        {
+          "title": "黃仁勳外遇拖累輝達挫逾5%　美股全跌",
+          "url": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%A4%96%E9%81%87%E6%8B%96%E7%B4%AF%E8%BC%9D%E9%81%94%E6%8C%AB%E9%80%BE5-%E7%BE%8E%E8%82%A1%E5%85%A8%E8%B7%8C-222942350.html"
+        }
+      ]
+    }
+  ]
+}
