@@ -1,13 +1,65 @@
 {
   "date": "2026-11-12",
-  "generatedAt": "2026-11-11T22:54:17.443414+00:00",
+  "generatedAt": "2026-11-12T03:36:18.244240+00:00",
   "stale": false,
   "items": [
     {
-      "title": "「輝達親兒子」CoreWeave報喜！上修今年財測 鴻海、技嘉等受惠",
-      "link": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E8%A6%AA%E5%85%92%E5%AD%90-coreweave%E5%A0%B1%E5%96%9C-%E4%B8%8A%E4%BF%AE%E4%BB%8A%E5%B9%B4%E8%B2%A1%E6%B8%AC-%E9%B4%BB%E6%B5%B7-%E6%8A%80%E5%98%89%E7%AD%89%E5%8F%97%E6%83%A0-224108006.html",
+      "title": "馬斯克喊打造「有意識的太陽」！「太空板霸主」領敬鵬、競國等5檔亮燈　臻鼎跌0.54%、南電、景碩挫逾3%",
+      "link": "https://tw.stock.yahoo.com/news/%E9%A6%AC%E6%96%AF%E5%85%8B%E5%96%8A%E6%89%93%E9%80%A0-%E6%9C%89%E6%84%8F%E8%AD%98%E7%9A%84%E5%A4%AA%E9%99%BD-%E5%A4%AA%E7%A9%BA%E6%9D%BF%E9%9C%B8%E4%B8%BB-%E9%A0%98%E6%95%AC%E9%B5%AC-%E7%AB%B6%E5%9C%8B%E7%AD%895%E6%AA%94%E4%BA%AE%E7%87%88-033000107.html",
       "source": "國際",
-      "pubDate": "2026-11-11T22:41:08+00:00",
+      "pubDate": "2026-11-12T03:30:00+00:00",
+      "relatedStocks": [
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        }
+      ]
+    },
+    {
+      "title": "黃仁勳出軌醜聞逼台股震盪！台積電股價下殺炸328億成交額　「這檔玻纖布」目標價喊81元拉2漲停",
+      "link": "https://tw.stock.yahoo.com/news/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%87%BA%E8%BB%8C%E9%86%9C%E8%81%9E%E9%80%BC%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%82%A1%E5%83%B9%E4%B8%8B%E6%AE%BA%E7%82%B8328%E5%84%84%E6%88%90%E4%BA%A4%E9%A1%8D-%E9%80%99%E6%AA%94%E7%8E%BB%E7%BA%96%E5%B8%83-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%96%8A81%E5%85%83%E6%8B%892%E6%BC%B2%E5%81%9C-032400079.html",
+      "source": "台股",
+      "pubDate": "2026-11-12T03:24:00+00:00",
+      "relatedStocks": [
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
+        }
+      ]
+    },
+    {
+      "title": "「小四」也來過台灣！輝達女副總拜會台大",
+      "link": "https://tw.news.yahoo.com/%E5%B0%8F%E5%9B%9B-%E4%B9%9F%E4%BE%86%E9%81%8E%E5%8F%B0%E7%81%A3-%E8%BC%9D%E9%81%94%E5%A5%B3%E5%89%AF%E7%B8%BD%E6%8B%9C%E6%9C%83%E5%8F%B0%E5%A4%A7-031259401.html",
+      "source": "國際",
+      "pubDate": "2026-11-12T03:12:59+00:00",
       "relatedStocks": [
         {
           "code": "3037",
@@ -112,36 +164,95 @@
       ]
     },
     {
-      "title": "小摩：台積電產能加速擴張到2028年",
-      "link": "https://tw.news.yahoo.com/%E5%B0%8F%E6%91%A9-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%94%A2%E8%83%BD%E5%8A%A0%E9%80%9F%E6%93%B4%E5%BC%B5%E5%88%B02028%E5%B9%B4-223920812.html",
+      "title": "台股震盪翻紅、直逼4萬5遇壓？「五檔布局名單」股價在半年線下",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA%E7%BF%BB%E7%B4%85-%E7%9B%B4%E9%80%BC4%E8%90%AC5%E9%81%87%E5%A3%93-%E4%BA%94%E6%AA%94%E5%B8%83%E5%B1%80%E5%90%8D%E5%96%AE-%E8%82%A1%E5%83%B9%E5%9C%A8%E5%8D%8A%E5%B9%B4%E7%B7%9A%E4%B8%8B-030945409.html",
       "source": "台股",
-      "pubDate": "2026-11-11T22:39:20+00:00",
+      "pubDate": "2026-11-12T03:09:45+00:00",
       "relatedStocks": []
     },
     {
-      "title": "主動式新兵00413A掛牌日強彈3.53%！前10大持股公開　台積電、聯發科領軍迎AI商機",
-      "link": "https://tw.stock.yahoo.com/news/%E4%B8%BB%E5%8B%95%E5%BC%8F%E6%96%B0%E5%85%B500413a%E6%8E%9B%E7%89%8C%E6%97%A5%E5%BC%B7%E5%BD%883-53-%E5%89%8D10%E5%A4%A7%E6%8C%81%E8%82%A1%E5%85%AC%E9%96%8B-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E9%A0%98%E8%BB%8D%E8%BF%8Eai%E5%95%86%E6%A9%9F-223500078.html",
+      "title": "黃仁勳出軌連環爆恐下台！網友盼「挖角他」　馬斯克親回：將是我的榮幸",
+      "link": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%87%BA%E8%BB%8C%E9%80%A3%E7%92%B0%E7%88%86%E6%81%90%E4%B8%8B%E5%8F%B0-%E7%B6%B2%E5%8F%8B%E7%9B%BC-%E6%8C%96%E8%A7%92%E4%BB%96-%E9%A6%AC%E6%96%AF%E5%85%8B%E8%A6%AA%E5%9B%9E-%E5%B0%87%E6%98%AF%E6%88%91%E7%9A%84%E6%A6%AE%E5%B9%B8-030800241.html",
+      "source": "國際",
+      "pubDate": "2026-11-12T03:08:00+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "「黃仁勳爆下台危機」馬斯克要了？親回網友：那將是我的榮幸",
+      "link": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E7%88%86%E4%B8%8B%E5%8F%B0%E5%8D%B1%E6%A9%9F-%E9%A6%AC%E6%96%AF%E5%85%8B%E8%A6%81%E4%BA%86-%E8%A6%AA%E5%9B%9E%E7%B6%B2%E5%8F%8B-%E9%82%A3%E5%B0%87%E6%98%AF%E6%88%91%E7%9A%84%E6%A6%AE%E5%B9%B8-030606543.html",
+      "source": "國際",
+      "pubDate": "2026-11-12T03:06:06+00:00",
+      "relatedStocks": []
+    },
+    {
+      "title": "【台股盤中】指數攻上44500點　玻纖布概念股強勢",
+      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E6%8C%87%E6%95%B8%E6%94%BB%E4%B8%8A44500%E9%BB%9E-%E7%8E%BB%E7%BA%96%E5%B8%83%E6%A6%82%E5%BF%B5%E8%82%A1%E5%BC%B7%E5%8B%A2-030522331.html",
       "source": "台股",
-      "pubDate": "2026-11-11T22:35:00+00:00",
+      "pubDate": "2026-11-12T03:05:22+00:00",
       "relatedStocks": [
         {
-          "code": "2454",
-          "name": "聯發科"
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
         }
       ]
     },
     {
-      "title": "【盤前】CoreWeave回神費半飆5.6%！台指夜盤漲470點　台股拚延續反彈",
-      "link": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-coreweave%E5%9B%9E%E7%A5%9E%E8%B2%BB%E5%8D%8A%E9%A3%865-6-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%BC%B2470%E9%BB%9E-%E5%8F%B0%E8%82%A1%E6%8B%9A%E5%BB%B6%E7%BA%8C%E5%8F%8D%E5%BD%88-222700786.html",
+      "title": "台股盤中攻上44500點　玻纖布概念股強勢",
+      "link": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD%E6%94%BB%E4%B8%8A44500%E9%BB%9E-%E7%8E%BB%E7%BA%96%E5%B8%83%E6%A6%82%E5%BF%B5%E8%82%A1%E5%BC%B7%E5%8B%A2-030409738.html",
       "source": "台股",
-      "pubDate": "2026-11-11T22:27:00+00:00",
-      "relatedStocks": []
+      "pubDate": "2026-11-12T03:04:09+00:00",
+      "relatedStocks": [
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
+        }
+      ]
     },
     {
-      "title": "輝達利空連環爆！華爾街示警　券商調降評級",
-      "link": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E5%88%A9%E7%A9%BA%E9%80%A3%E7%92%B0%E7%88%86-%E8%8F%AF%E7%88%BE%E8%A1%97%E7%A4%BA%E8%AD%A6-%E5%88%B8%E5%95%86%E8%AA%BF%E9%99%8D%E8%A9%95%E7%B4%9A-222558983.html",
+      "title": "傳輝達開會定黃仁勳去留　分析師：短期營收無虞前景難料",
+      "link": "https://tw.news.yahoo.com/%E5%82%B3%E8%BC%9D%E9%81%94%E9%96%8B%E6%9C%83%E5%AE%9A%E9%BB%83%E4%BB%81%E5%8B%B3%E5%8E%BB%E7%95%99-%E5%88%86%E6%9E%90%E5%B8%AB-%E7%9F%AD%E6%9C%9F%E7%87%9F%E6%94%B6%E7%84%A1%E8%99%9E%E5%89%8D%E6%99%AF%E9%9B%A3%E6%96%99-030105506.html",
       "source": "國際",
-      "pubDate": "2026-11-11T22:25:58+00:00",
+      "pubDate": "2026-11-12T03:01:05+00:00",
       "relatedStocks": [
         {
           "code": "3037",
@@ -246,10 +357,10 @@
       ]
     },
     {
-      "title": "CoreWeave強勁財報消弭AI疑慮！美股全面收漲　輝達止跌回穩",
-      "link": "https://tw.stock.yahoo.com/news/coreweave%E5%BC%B7%E5%8B%81%E8%B2%A1%E5%A0%B1%E6%B6%88%E5%BC%ADai%E7%96%91%E6%85%AE-%E7%BE%8E%E8%82%A1%E5%85%A8%E9%9D%A2%E6%94%B6%E6%BC%B2-%E8%BC%9D%E9%81%94%E6%AD%A2%E8%B7%8C%E5%9B%9E%E7%A9%A9-221317557.html",
+      "title": "輝達不只是晶片商　財務承諾牽動AI產業金融風險",
+      "link": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E4%B8%8D%E5%8F%AA%E6%98%AF%E6%99%B6%E7%89%87%E5%95%86-%E8%B2%A1%E5%8B%99%E6%89%BF%E8%AB%BE%E7%89%BD%E5%8B%95ai%E7%94%A2%E6%A5%AD%E9%87%91%E8%9E%8D%E9%A2%A8%E9%9A%AA-030103900.html",
       "source": "國際",
-      "pubDate": "2026-11-11T22:13:17+00:00",
+      "pubDate": "2026-11-12T03:01:03+00:00",
       "relatedStocks": [
         {
           "code": "3037",
@@ -354,10 +465,10 @@
       ]
     },
     {
-      "title": "「輝達親兒子」助攻！美股4大指數全收紅　那指漲400點、費半狂飆逾5%",
-      "link": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E8%A6%AA%E5%85%92%E5%AD%90-%E5%8A%A9%E6%94%BB-%E7%BE%8E%E8%82%A14%E5%A4%A7%E6%8C%87%E6%95%B8%E5%85%A8%E6%94%B6%E7%B4%85-%E9%82%A3%E6%8C%87%E6%BC%B2400%E9%BB%9E-%E8%B2%BB%E5%8D%8A%E7%8B%82%E9%A3%86%E9%80%BE5-220700098.html",
+      "title": "輝達去年封鎖黃樂前東家Megaspeed後　新加坡從財報消失難追晶片流向",
+      "link": "https://tw.news.yahoo.com/%E8%BC%9D%E9%81%94%E5%8E%BB%E5%B9%B4%E5%B0%81%E9%8E%96%E9%BB%83%E6%A8%82%E5%89%8D%E6%9D%B1%E5%AE%B6megaspeed%E5%BE%8C-%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%BE%9E%E8%B2%A1%E5%A0%B1%E6%B6%88%E5%A4%B1%E9%9B%A3%E8%BF%BD%E6%99%B6%E7%89%87%E6%B5%81%E5%90%91-025900109.html",
       "source": "國際",
-      "pubDate": "2026-11-11T22:07:00+00:00",
+      "pubDate": "2026-11-12T02:59:00+00:00",
       "relatedStocks": [
         {
           "code": "3037",
@@ -462,39 +573,112 @@
       ]
     },
     {
-      "title": "【美股盤後】收高",
-      "link": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E6%94%B6%E9%AB%98-220041441.html",
+      "title": "跟黃仁勳傳出婚外情！輝達女副總裁今臨時取消公開演講活動",
+      "link": "https://tw.stock.yahoo.com/news/%E8%B7%9F%E9%BB%83%E4%BB%81%E5%8B%B3%E5%82%B3%E5%87%BA%E5%A9%9A%E5%A4%96%E6%83%85-%E8%BC%9D%E9%81%94%E5%A5%B3%E5%89%AF%E7%B8%BD%E8%A3%81%E4%BB%8A%E8%87%A8%E6%99%82%E5%8F%96%E6%B6%88%E5%85%AC%E9%96%8B%E6%BC%94%E8%AC%9B%E6%B4%BB%E5%8B%95-025600881.html",
       "source": "國際",
-      "pubDate": "2026-11-11T22:00:41+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "CoreWeave領軍科技股反攻　美股全收紅",
-      "link": "https://tw.news.yahoo.com/coreweave%E9%A0%98%E8%BB%8D%E7%A7%91%E6%8A%80%E8%82%A1%E5%8F%8D%E6%94%BB-%E7%BE%8E%E8%82%A1%E5%85%A8%E6%94%B6%E7%B4%85-215917513.html",
-      "source": "國際",
-      "pubDate": "2026-11-11T21:59:17+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "台積電ADR11日上漲16.87美元漲幅4.25%折台股2716.54元",
-      "link": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBadr11%E6%97%A5%E4%B8%8A%E6%BC%B216-87%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%854-25-%E6%8A%98%E5%8F%B0%E8%82%A12716-54%E5%85%83-215136915.html",
-      "source": "台股",
-      "pubDate": "2026-11-11T21:51:36+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "友達ADR11日上漲0.46美元漲幅5.60%折台股28.52元",
-      "link": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94adr11%E6%97%A5%E4%B8%8A%E6%BC%B20-46%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%855-60-%E6%8A%98%E5%8F%B0%E8%82%A128-52%E5%85%83-215134329.html",
-      "source": "台股",
-      "pubDate": "2026-11-11T21:51:34+00:00",
-      "relatedStocks": []
-    },
-    {
-      "title": "中華電信ADR11日上漲0.22美元漲幅0.45%折台股161.11元",
-      "link": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1adr11%E6%97%A5%E4%B8%8A%E6%BC%B20-22%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%850-45-%E6%8A%98%E5%8F%B0%E8%82%A1161-11%E5%85%83-215130243.html",
-      "source": "台股",
-      "pubDate": "2026-11-11T21:51:30+00:00",
-      "relatedStocks": []
+      "pubDate": "2026-11-12T02:56:00+00:00",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        },
+        {
+          "code": "6727",
+          "name": "亞泰金屬"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        },
+        {
+          "code": "6147",
+          "name": "頎邦"
+        },
+        {
+          "code": "6451",
+          "name": "訊芯-KY"
+        },
+        {
+          "code": "2449",
+          "name": "京元電子"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "8996",
+          "name": "高力"
+        },
+        {
+          "code": "6805",
+          "name": "富世達"
+        }
+      ]
     }
   ],
   "note": "來源：Yahoo股市 RSS（國際財經／台股）自動彙整最新標題並依關鍵字關聯持股，非人工編選，僅供參考，不構成投資建議。"
