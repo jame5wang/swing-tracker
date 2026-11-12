@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-12T23:55:00.000Z",
+  "items": [
+    {
+      "summary": "輝達創辦人黃仁勳於11/12無預警請辭總裁、執行長及董事職務，即刻生效；財務長柯蕾絲(Colette Kress)暫代執行長並留任財務長，前Synopsys執行長哈維·瓊斯(Harvey Jones)獲任輝達史上首位董事長。公司強調營運、客戶承諾與產品路線圖不受影響，11/17仍將如期召開Q3(FY2027)法說會，消息衝擊美股夜盤，台指期逆勢收高，市場後續聚焦交接期間是否影響AI晶片訂單節奏與法說會指引方向。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "NVIDIA Announces CEO Transition (SEC Form 8-K/新聞稿)", "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"},
+        {"title": "〈台股盤前要聞〉MSCI調整PCB獲青睞、鴻海上修全年展望、黃仁勳辭輝達執行長", "url": "https://news.cnyes.com/news/id/6660917"},
+        {"title": "【盤前】黃仁勳閃辭重擊美股！台指夜盤逆漲548點 台股拚反攻3變數", "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E9%BB%83%E4%BB%81%E5%8B%B3%E9%96%83%E8%BE%AD%E9%87%8D%E6%93%8A%E7%BE%8E%E8%82%A1-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E9%80%86%E6%BC%B2548%E9%BB%9E-%E5%8F%B0%E8%82%A1%E6%8B%9A%E5%8F%8D%E6%94%BB3%E8%AE%8A%E6%95%B8-222500072.html"}
+      ]
+    },
+    {
+      "summary": "黃仁勳請辭引發市場重新評估AI晶片供應鏈版圖，法人示警超微、博通有望搶占ASIC市占，台灣IC設計概念股創意、世芯-KY、聯發科受關注，惟台新投顧認為台廠短期營運穩定、反而是高估值股承壓；同日鴻海Q3法說會由董事長劉揚偉表示美國期中選舉不影響AI投資步調，寄售模式助攻下ASIC出貨季增1.5倍、開發週期已縮至9個月，看好明年ASIC伺服器出貨成長優於GPU、CPO商機可期，四大事業群全年展望同步上修。",
+      "relatedStocks": [
+        {"code": "2454", "name": "聯發科"},
+        {"code": "3443", "name": "創意"},
+        {"code": "3661", "name": "世芯-KY"}
+      ],
+      "sources": [
+        {"title": "黃仁勳恐遭撤換誰受惠？超微、博通搶市占 台灣3檔個股跟著漲", "url": "https://news.cnyes.com/news/id/6660217"},
+        {"title": "鴻海法說／寄售模式助攻！ASIC出貨暴增1.5倍 劉揚偉看好CPO商機", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mbW9QUDBacUduWlBYSGw3RVB5cndJN3BkRFJQWlktdnpGbWQ3U2lXQWZLaFNtV3JjY3ZfcGt6V0x3S2tfRnRjNlJsQ1kzbTA?oc=5"},
+        {"title": "鴻海釋強勁成長訊號！四大部門展望全上調 董座劉揚偉看好明年營運", "url": "https://tw.news.yahoo.com/%E9%B4%BB%E6%B5%B7%E9%87%8B%E5%BC%B7%E5%8B%81%E6%88%90%E9%95%B7%E8%A8%8A%E8%99%9F-%E5%9B%9B%E5%A4%A7%E9%83%A8%E9%96%80%E5%B1%95%E6%9C%9B%E5%85%A8%E4%B8%8A%E8%AA%BF-%E8%91%A3%E5%BA%A7%E5%8A%89%E6%8F%9A%E5%81%89%E7%9C%8B%E5%A5%BD%E6%98%8E%E5%B9%B4%E7%87%9F%E9%81%8B-224448155.html"}
+      ]
+    },
+    {
+      "summary": "元太Q3法說會：全年營收成長目標下修至9%，總經理李政昊坦言公司在AI浪潮中屬「受害者」，但宣布攜手台虹開發AI高速傳輸用PTFE銅箔基板，預計明年小量出貨、2028年放量，盼藉新材料打入AI伺服器供應鏈。",
+      "relatedStocks": [
+        {"code": "8039", "name": "台虹"}
+      ],
+      "sources": [
+        {"title": "【元太FY2026 Q3 法說會】全年營收成長下修至9% 李政昊坦言「AI受害者」 攜手台虹攻PTFE銅箔基板2028年放量", "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Yek1GZk5qM25EMnYzVmVucWRTRTRXeklwNHBwZnhWc3NUU3oxTk01anM2bERoSFFOVDB0N0x4Zk5Kei1jXzVlUE5UeEFyZFRDMFRLeHozdWRUMDN2ZHNIY3ItVXgzUQ?oc=5"},
+        {"title": "「AI受害者也要搭上AI列車！」元太攜台虹攻PTFE 2028年拚放量", "url": "https://ec.ltn.com.tw/article/breakingnews/5638720"}
+      ]
+    },
+    {
+      "summary": "金像電Q3法說會：第三季毛利率衝上38.7%單季新高，AI伺服器營收占比已突破五成，前三季EPS達28.41元、年增14.8元；公司表示藉漲價轉嫁原物料成本奏效，法人估全年EPS上看83.62元，既有大客戶AI伺服器新產品將於2027年陸續量產。",
+      "relatedStocks": [
+        {"code": "2368", "name": "金像電"}
+      ],
+      "sources": [
+        {"title": "金像電(2368) 漲價轉嫁原物料成本！第3季毛利率38.7%，AI伺服器占營收過半", "url": "https://news.cnyes.com/news/id/6661093"},
+        {"title": "金像電(2368) 法人估EPS最高83.62元！老客戶AI伺服器新產品2027年陸續量產", "url": "https://news.cnyes.com/news/id/6661091"}
+      ]
+    },
+    {
+      "summary": "MLCC缺貨漲價行情延續，禾伸堂宣布產能大舉擴增40%以滿足AI伺服器與終端客戶訂單需求，反映被動元件在AI供應鏈中的吃緊態勢仍未緩解。",
+      "relatedStocks": [
+        {"code": "3026", "name": "禾伸堂"}
+      ],
+      "sources": [
+        {"title": "MLCC供不應求！禾伸堂產能大擴40% 目標價上看...", "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSUEpqNktfZElqdGN2VTVsVndRTDV0a2NpZldGSktoRFBxNVdRZUJFOHVsd3BGcWd2ZExDeHV4bVlub0RLczBqODk2LVRyWHVaZ2pWc3c2OHk?oc=5"}
+      ]
+    },
+    {
+      "summary": "光寶科透露AI伺服器訂單能見度已看至2028年，隨伺服器電源規格轉向800V DC，公司認為此次架構轉換將重新洗牌電源市場版圖，帶來新一輪產品與市占機會。",
+      "relatedStocks": [
+        {"code": "2301", "name": "光寶科"}
+      ],
+      "sources": [
+        {"title": "光寶AI伺服器訂單能見度看至2028年 800V DC引發電源市場版圖重新洗牌", "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDh1V1MtU3o0WUc4SWRCclVlbzhSLXczR2ZlRlBZQmp1WkJaekNZMTFXYTE0ZE9wam8zZHFLdGZkanpZanRRam4wWVlYUmw0ZXB2MkZ5ZnNuSWpYb01nSHNZbS11bEIwSFZqM3pSYVEtejdXYnhmbW1RdlNUY2M2WDQwNGY5bkZfU3ZtOWJ1YkMySzdYcXVHcTVtU0xsV1RKNEdn?oc=5"}
+      ]
+    },
+    {
+      "summary": "IET-KY法說會釋出高毛利佳績，Q3獲利季增逾2倍，董座表示國防與AI高速光通訊為兩大成長引擎，明年營運展望正面；公司並透露QD Laser將於明年小量試產，搶進矽光子光源商機。",
+      "relatedStocks": [
+        {"code": "4971", "name": "IET-KY"}
+      ],
+      "sources": [
+        {"title": "IET-KY董座：國防與光通訊兩大成長引擎 明年營運正面樂觀", "url": "https://ec.ltn.com.tw/article/breakingnews/5638462"},
+        {"title": "國防和AI高速光通訊雙重需求 英特磊看好三大成長方向", "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU29tbmJEUXh4TTlIR19VUDB2eXRzZW5ja2V0ZHA1RzFER3NHazI0TTNZaTB6X3NZUmpUSml5QVJRMlUxb2dOZ1BNNDhackpYWG13eDY0NmMtazlFQVNPaThGdmw5RFdvTnE3TFh0SWNUOHl4eF83d0ZRdldBMmliR2p3VHEzREZHNGxqX2hOQzJRb19obUxzNXlLMF9ULXZGdUc4?oc=5"}
+      ]
+    },
+    {
+      "summary": "智邦董事會單日通過多項全球擴產案，合計投資近2.26億美元(約合新台幣72億元)，涵蓋馬來西亞新廠建置、越南廠生產設備增購、新加坡無塵室廠房工程及台灣廠設備增購，反映網通設備廠對未來AI資料中心網通需求維持高度樂觀。",
+      "relatedStocks": [
+        {"code": "2345", "name": "智邦"}
+      ],
+      "sources": [
+        {"title": "智邦公告本公司董事會通過馬來西亞工廠廠房建置計畫等多項投資案(公開資訊觀測站重大訊息)", "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"}
+      ]
+    },
+    {
+      "summary": "為力保AI記憶體主導權，SK海力士HBM4良率傳已突破70%；三星同步在南韓溫陽動工HBM封裝廠，董事長李在鎔宣示將轉型為最先進HBM生產據點，顯示主要記憶體廠仍在加碼投資應對AI帶動的HBM供需吃緊。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "力保AI記憶體主導權 SK海力士HBM4良率傳突破70%", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774623_2GB7N7AE1ZJD444OQ2FFN"}
+      ]
+    }
+  ]
+}
