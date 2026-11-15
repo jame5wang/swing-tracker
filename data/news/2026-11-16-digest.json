@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T00:10:00.000Z",
+  "coversWeekend": true,
+  "items": [
+    {
+      "summary": "英國《金融時報》報導，黃仁勳辭任輝達執行長後正與親信討論回任可能性，馬斯克、Bill Ackman等矽谷重量級人士公開力挺其續任，呼籲董事會讓他復職；輝達原訂11/17召開的Q3法說會（財測看向約1,080億美元/季營收）將成市場觀察其領導權歸屬與AI晶片訂單展望的關鍵時刻，本週輝達股價重挫也拖累費半指數與台股AI供應鏈同步承壓。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "2454",
+          "name": "聯發科"
+        },
+        {
+          "code": "3443",
+          "name": "創意"
+        },
+        {
+          "code": "3661",
+          "name": "世芯-KY"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        }
+      ],
+      "sources": [
+        {
+          "title": "黃仁勳傳想重返輝達　矽谷大咖組「作戰室」",
+          "url": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%82%B3%E6%83%B3%E9%87%8D%E8%BF%94%E8%BC%9D%E9%81%94-%E7%9F%BD%E8%B0%B7%E5%A4%A7%E5%92%96%E7%B5%84-%E4%BD%9C%E6%88%B0%E5%AE%A4-223634749.html"
+        },
+        {
+          "title": "金融時報：黃仁勳考慮回鍋　矽谷盟友施壓輝達董事會要求讓他復職",
+          "url": "https://tw.news.yahoo.com/%E9%87%91%E8%9E%8D%E6%99%82%E5%A0%B1-%E9%BB%83%E4%BB%81%E5%8B%B3%E8%80%83%E6%85%AE%E5%9B%9E%E9%8D%8B-%E7%9F%BD%E8%B0%B7%E7%9B%9F%E5%8F%8B%E6%96%BD%E5%A3%93%E8%BC%9D%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E8%A6%81%E6%B1%82%E8%AE%93%E4%BB%96%E5%BE%A9%E8%81%B7-205709877.html"
+        },
+        {
+          "title": "Jensen Huang discusses comeback as Nvidia CEO with allies, FT reports",
+          "url": "https://www.investing.com/news/stock-market-news/jensen-huang-discusses-comeback-as-nvidia-ceo-with-allies-ft-reports-5028065"
+        }
+      ]
+    },
+    {
+      "summary": "輝達領導層動盪持續牽動AI晶片供應鏈版圖，法人指出「後黃仁勳時代」ASIC／CSP自製晶片廠商成最大受惠者：創意傳拿下新訂單、明年出貨量拚衝上400萬顆，世芯-KY迎入10億美元等級大單，聯發科則同步強化CPO與ASIC布局。",
+      "relatedStocks": [
+        {
+          "code": "3443",
+          "name": "創意"
+        },
+        {
+          "code": "3661",
+          "name": "世芯-KY"
+        },
+        {
+          "code": "2454",
+          "name": "聯發科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "輝達變天誰最賺？投顧點名3檔ASIC受惠股 創意明年出貨拚400萬顆、世芯迎10億美元大單",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE80enpBVkpSOEhyRmtCdzFwM0pYUGgyZ252bkQ2anRaRzFjQWRId3VIWnF4cTAzeGozYXNtTVZNNFBTTFZwZnV1b2hMNA?oc=5"
+        },
+        {
+          "title": "後黃仁勳時代來臨 聯發科、世芯、創意迎大單",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5641128"
+        }
+      ]
+    },
+    {
+      "summary": "AI伺服器需求點燃ABF載板超級循環，欣興、南電、景碩等台廠四雄積極擴產搶單，其中一家傳已切入輝達Vera Rubin平台供應鏈，法人喊出目標價上看900元，今年每股獲利估上看22元。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ABF載板迎漲價潮！「這大廠」拿下輝達Vera Rubin供應鏈 目標價至900元",
+          "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxORlh1ZGZaV0F6ZEdBbVFpYTdsT3ozaS1QVlVkbzFYQWxVSzNESUM3c2NidTVGZFMxN1ZBV2RsWGlSSlY1dmt5ZHJfWlFVanF1NVVkWnlSMWtQeW9rbUhLdWN2LUlUcXVUdy1XdFNnaDVLa0FtYWc4NG5TOFVJRFdBTHFlbFVfd0xldFdfRDhDd3FRS0g3OXh1YVIyOHh1Y0otY3VleU5fbEpHaE1OblE1eVhYeVJmTjdQS0hjVFhVeDAySHRFdmtpTEFNdEU5bm5ZTm1tRVg4aTlWTzNkRWVhSlJjXzFTRklaUnBLMnpiSm0xMmNXV0xmSEFQaDVWUS1INWJkZ0VSX09ScFZsa0xDMVAwQU93VDA1ZklvQjNObmZCZUJCX0RLUUk0Z0lrTlE5c3E5OEowYTJxbEh6YnU2czhGZjhJNVItRVJxMzJkc05UQjEtWlAyZ3pIOUgzaDhnbmwwZ3hENWo?oc=5"
+        },
+        {
+          "title": "累計獲利噴漲8倍！「ABF載板廠」今年EPS估達22元 切輝達Rubin鏈＋逐季漲價15%加持",
+          "url": "https://news.google.com/rss/articles/CBMiigNBVV95cUxQSVU5Y3FraUtyREtJczNmeUFZbkdwbmdGUDVLanVDS25IUGpBbHgtQnhoV25fTEJ2RGNGSlFHdUplc01LLS0wRjJISHBka2N1T3BzandOR3lkbzhuN1RMbFBqRG12aXBUREdGY2luenIwMTFxUTFSbEZzZ3BZeUg4UW9jQldWUFEwZUpSa3NtSFhkVU5sY1k2dHRkMm1ZOGFHSFdwdDg0NkdxdTJTWVVtaW01bFY1Nmc1ZXByaFB1UkZrenNfby04US1iLWZsN19TYkNybFJ0ZEpVMGhYbnZHcnl1THk4YUZ5VWhNeVFhT0thWTM2eGp2QnJza1psS2U1MnpkNEpXUlJzTTZic1JRS3BOcTFZdzlESW9RYTVUY3VMVGNDQ20tWjVTYUVaVlp0RlowQTFfWVA4T0tVZTRnQzNpY29VRUNVclFDR3M4R2ktVnVLRGxtRjM2bVFqRFhReWJDSk9DOFZ6SG51XzhvLV9XZGJtVUxZdGZYdWpjci1yeHVrOFZ3RXVR?oc=5"
+        },
+        {
+          "title": "AI點火ABF載板超級循環 台廠四雄砸重金擴產搶食大單",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9EaS12MU5uT0lkVHAxcUJmME9VajlOdzBxLXA1U2pDc3pEZ21mX1Jtd2J0TkVaMU5TaE0tV1hKekNKS2hVMFZkM1pldHUxNmF5ZkJpLWU1TlV2VkV0eDg00gFkQVVfeXFMTjRvQUh1enQ4Mnd6R21qMzZOOVNpUHZQQnVjUDlfYjR0d3lWVnFMSHNwZzMtdGgxYjlIUGNjS2FqdHpYSm9yeHVkc1dxR3BHanBrN3piQllPUHNUTmtvWXNUS1d2SA?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "高階CCL（覆銅板）缺貨漲價延續，台光電領軍台廠四雄獲利噴發，一家銅箔基板廠傳吃下Google、超微訂單、明年報價估再漲約50%，目標價喊上1,030元；南亞同步砸115億元擴建玻纖布產能應對缺口，騰輝電子-KY法說會也揭露Q3毛利率衝上43.2%新高，執行長看好明年AI高速材料將是「爆發年」。",
+      "relatedStocks": [
+        {
+          "code": "1303",
+          "name": "南亞"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "南亞投資115億元興建玻纖布5廠 擴大電子材料布局",
+          "url": "https://money.udn.com/money/story/5612/9873401"
+        },
+        {
+          "title": "目標價1030元！「銅箔基板廠」EPS上看50元 吃Google、超微訂單＋明年漲價50%獲利大增",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9LSVlKM1RJSzJqdnd1MlVmRTk5SzZxdmFmR3JMUUhERWVIbmNnczFhRko5MTkzTTlJTUFGLVR0a2FUczE1RG11dGd0cw?oc=5"
+        },
+        {
+          "title": "高階CCL大缺貨 台光電領軍台廠四雄獲利噴發",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80VktZUGZ5VkJXRG1pM3JaTUlNeXBVbi1BWFdRbWV1UGt6VTFKZkNEUTBXLUp1UkdtVlJNbThxY3VfeHV1Ukhkc3JGaHVmSklDNzhUR0VlWDQ5dUpicjhN?oc=5"
+        },
+        {
+          "title": "【騰輝電子國際集團FY2026 Q3 法說會】毛利率衝43.2%創新高，Q3營收季增54.4%，執行長：明年AI高速材料將是「爆發年」",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xNHpxcTJDZzlTdlFwMnJUQ0RWQnpkSGhTYm5WYW95UjktdDNqZ0hsYUpxeFFkVEhzQVpJT1Fsd01rWE0wY3dQRkdXdGZLRmFqSFM3T2M4bUFvSXNKUTVEZ0Fja0FHUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "台灣PCB產業迎來史上最大擴產潮，法人看旺景氣至2029年，惟上游材料缺口估將延續到2028年、替代材料成為市場焦點，今年產值可望衝上1.1兆元，金像電、華通、群翊、亞泰金屬等廠商同步加碼擴產。",
+      "relatedStocks": [
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        },
+        {
+          "code": "6727",
+          "name": "亞泰金屬"
+        }
+      ],
+      "sources": [
+        {
+          "title": "〈財經週報-PCB〉AI點火超級循環 台灣PCB迎來史上最大擴產潮",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DMlZkc3FVdFNzTFIyR3lFSEhiODMyRU1FWWNxeHlUVkl2WGwtVzA3SUNudll5aUlvU2YyQ3VBRDlQNTg0YXVCb3htd3lGQ015N01wb3dR0gFbQVVfeXFMT09keVFxc2NRUnlKTmhiQmM1R2NHNnNIc0hhZDM5Q1Q1c0lkLXlUNFNLbWVyMFVwVUMzMHBpVTVYYi11LWZiaUJjQ1hEa1Q4NGZTZDNMTXAyc09QYw?oc=5"
+        },
+        {
+          "title": "〈財經週報-PCB〉PCB上游材料缺到2028年 替代材料成市場焦點",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kUUZOeG0yY2J2X0w1R21MQlhyM0MyWFQ1Tlhoc2lqbmpOb0JMUXN1Xy1WSTNfTVRrQWFueFQ0TTNwTGlYc2pzMnpHUDI4WDhERXlWMFhn0gFbQVVfeXFMTTAwck5OaXZqUUh6OFgxb012Q3JiSmVQU3ROUXdKYWEyV1FDN0M4b2hyNzNnTVpLSzFyTmJfMlk4emtrckk1NjVwQWtlU2RvTGxoR1JETkNYRUNPSQ?oc=5"
+        },
+        {
+          "title": "台灣PCB今年產值看衝1.1兆元 金像電、華通擴產搶市",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PMVRGdFVXOHV4Znhyekd3ZUwxbjR5dWExYWpUc2RSLUE1RC00M19ya3B6TGEtSjRFaHJWNGduWW5ycEFyNE9XMjNQTFY?oc=5"
+        },
+        {
+          "title": "PCB設備業迎超級循環 群翊、亞泰金屬等六大廠產能全滿載",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1tbXZiaDJJbi1NbHpSdVV4RHZiaFpwZEdjZ3M2OGlidHhKUnZpU1RjTDV0V3hGYm9mem4ySHlqcTA4RzdnUlRlMEFPVG4?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "台積電先進封裝布局加速：傳與友達合作開發玻璃基板CoPoS新製程，並在中科廠區同步擴建先進封裝產能，帶動設備廠訂單排滿全年，萬潤等設備供應商同步受惠。",
+      "relatedStocks": [
+        {
+          "code": "6187",
+          "name": "萬潤"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台積電、友達合攻先進封裝 在玻璃基板 CoPoS 領域合作開發新製程",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fdEUwZFhTQ0VhTjhFeHpLdjVTeU11VDcxbG1aN1FMeGxPVzVpYUJ1N0E5aDc0eFhaNjdzQWlZTEw2ZTdHTVRlaU5CY0E3TGJiSG5jcEhB0gFWQVVfeXFMTU53RVBwUlRfSk80dmZ3aUM2R0duQUJ3SUJXLWhXSkRKNVdackRqVzcwbExoMWprNEFKRHRROUdSSDVQYTBHQ3M2WHlZbllPbW82clc5UHc?oc=5"
+        },
+        {
+          "title": "台積電中科廠區布建先進封裝產能 萬潤、倍利科同步吃補",
+          "url": "https://money.udn.com/money/story/5612/9880554"
+        },
+        {
+          "title": "台積電擴產先進封裝！設備廠訂單排滿整年",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5TdWtEOW1pajlkWTZ6dklTdHEwbDdIVl9sZURqZTUtbzFZd2lKMXZYMHN3anljLUNNVDR0bk0tdDMyN2NER1F0bHV5RkFMS3pVOVdjOE1HYmw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "AI資料中心散熱競賽升溫：三星傳洽購美國散熱廠Modine、最快數週內可望敲定，藉此擴大AI散熱版圖；大金也瞄準輝達AI工廠市場，目標2027年供應60MW液冷架構，台廠雙鴻、奇鋐、健策等液冷供應鏈同步受到法人關注。",
+      "relatedStocks": [
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "8996",
+          "name": "高力"
+        },
+        {
+          "code": "6805",
+          "name": "富世達"
+        }
+      ],
+      "sources": [
+        {
+          "title": "三星擬再擴AI散熱版圖 傳洽購美國Modine、最快數週內敲定",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPS1EteGYxcXFIa3h1aHNEbE9oUmZOM25rbnYtRW41akdRd0pveHV2bzFVU2h4aklseU5QUWF1SDdLQ0ZMQ0ZKUEVMamVQOUpFX3YzbER3T2l3Nk54VzJjQTBucVUzaUhEQVZZSzk0ZlI4NGoweHJ4TjZzVE0tb2ZqTE9XR2lQQzdhdFNEQ3Bn?oc=5"
+        },
+        {
+          "title": "大金鎖定NVIDIA AI工廠 60MW液冷架構拚2027年供貨",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9BRjZmV3lNU0JoNHdCLU5zOE9FV1o4UG9ocF9aclJtRF9URkVDOWlKRHBvUlRSN2NXeS16bHpJSmJHNlViRS1RQVYwLVY?oc=5"
+        },
+        {
+          "title": "傳獲三星青睞 AI 散熱廠 Modine 盤後暴漲近 27%",
+          "url": "https://finance.technews.tw/2026/11/13/samsung-reportedly-in-talks-to-acquire-modine/"
+        }
+      ]
+    },
+    {
+      "summary": "CPO「光進銅退」趨勢加速，法人指出Marvell近期一系列併購（含對光學大廠的百億美元級收購）強化其CPO布局，帶動台廠光學供應鏈接棒受惠轉單；同時富采減資後新股掛牌上市，法人同步看俏光通訊後市。",
+      "relatedStocks": [
+        {
+          "code": "3081",
+          "name": "聯亞"
+        },
+        {
+          "code": "6442",
+          "name": "光聖"
+        },
+        {
+          "code": "3363",
+          "name": "上詮"
+        },
+        {
+          "code": "3163",
+          "name": "波若威"
+        },
+        {
+          "code": "3008",
+          "name": "大立光"
+        },
+        {
+          "code": "4979",
+          "name": "華星光"
+        }
+      ],
+      "sources": [
+        {
+          "title": "CPO光進銅退加速！Marvell狂砸千億美元併購台廠3大族群爆轉單潮",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA0d2ZIcTg0cTVoMzVsWnpGUFd5YmRabnVKSlNHQWQ0cXpsa2pUSVUtUU1Ma2tfZE9sMExEZUNDN285Z0NuWF8xMFRkNjl4ZFU5dW1uZlhvZTUzdXF6NFRXcVVkWjVTRjV2SU5PcmZR?oc=5"
+        },
+        {
+          "title": "富采減資新股上市光通訊看俏",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5qdDU2X3AzTTMzRUotMmVYWGwtUm53Z2xEVkNHQl9zZUR4aDE4eFEzZUpodkNJZ2hmR1cwQTBkWTNVQmMwQjlRbVJNajhjYTAyTFNYYl83QnJ4eXFUdFpr?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "日月光宣布大舉擴產：路竹廠案資本支出上看千億元規模，一期已啟用、二期同步動土，估可望創造5,000個工作機會、年營收貢獻達800億元；法人指出其CoWoS、CPO先進封裝產能擴增主要受輝達相關訂單驅動，CPO產能可望大幅提升。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "大砸千億 日月光擴產 年營收貢獻800億",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vR3NXNkwtbkxvYTNHNzBVMnhKUnhPOTVSanhXdE9fdGo0cTM2Vjh6TXNhYUZGNEd0d09JaFJucFhndVdlV3oxbDR6ZWpBcmFpeEpNYXg4T0tkZnRVcUNlbkZoTWF3YnlnWGtR?oc=5"
+        },
+        {
+          "title": "日月光千億布局 路竹廠一期啟用、二期動土 可望創造5,000職缺",
+          "url": "https://money.udn.com/money/story/5612/9877835"
+        },
+        {
+          "title": "黃仁勳押寶台灣這大廠！CPO產能拚暴增15倍 曾因「1原因」痛失輝達訂單",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1IcERxakczeFJZeVBEZVl6dFNVN3dJTVJmVGVkTEVNdFFScE9DcDJUeXVlcS1PMnpwN0ZsS0VYN0ZRLXVGc1dMa0tjcw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "記憶體供需失衡未見緩解：報導指出DRAM明年上半年估更加短缺，模組廠傾向惜售因應，低價手機記憶體成本占比已逾五成、漲勢恐延續至2027年；美國聯邦法官同步放行對美光、三星、SK海力士的DRAM價格操縱集體訴訟續審，凸顯近年記憶體漲價爭議仍未平息。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DRAM明年上半年更缺 模組廠惜售因應",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MQkNyNXo4RHd5N3p5a1hERDJnVTlXR2poQzZqOFNSY3hPZ1dMUGFQWVpRWHkzTWpjWkdSbTYzYlJjYzMxQ1NuUlJGVTREdHdFcC1nUktleGdvQdIBX0FVX3lxTE9hVnpvM3hvenFFazB2c0MxNVBFeXJESFgyMXF0N1ZHcHg2aGQ0VnBURzFxcTNzWnBqWVJLb0JvX3cyNklmLXFld09qN3p3b0xDWExUVzBvT1ZDY3NnSnVN?oc=5"
+        },
+        {
+          "title": "記憶體佔低價手機成本逾5成 漲勢恐延續至2027",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774581_HN6600IR78R6532BDAL9K"
+        },
+        {
+          "title": "DRAM價格操縱案獲准續審，美國聯邦法官放行對美光、韓國三星與SK海力士的集體訴訟",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1DTzhxbEFPamJDQjFWNlVrdnVCX0lvOXlJbXc2X1pQdkk5UGlwU0tGTnVyMldqYnZRNTVmTzJJSXlKb3NncWNpNmk3dFdsSlRnTEZNTHl1R3VoS051bzRkUW83aXFEQ21uaFZiYlI3ek5CSXl2OVFQSmhn?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "有報導指出群聯與頂新集團魏家共同入股，在深圳成立一家外界鮮少關注的記憶體大廠，顯示其記憶體供應鏈布局持續向中國大陸深化延伸，後續發展值得留意。",
+      "relatedStocks": [
+        {
+          "code": "8299",
+          "name": "群聯"
+        }
+      ],
+      "sources": [
+        {
+          "title": "頂新二董新盤算2》群聯、魏家都入股 台灣父女檔創神祕深圳記憶體大廠",
+          "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxNanZmTUJGOVBFUlVhNE15UllXZ2FHV0dtRUZBaFZxeVNBYjJabmNBaVlveVcyMnNwZG9wdy1iRXJLRkZpZ2Y4REJJYmNuYnpuTUtzVXI3WlNPRDV5MFhyOEhhMU5aTXZabmZqRHVRbnhKU05fTzJBa0JvdWd1amZFenhVYTR0Nzg4MVdIaTRkWEZqOFdOZ0ZLR01ONE5JaW5sM29zY0dtZE10dW1HVV9qNnVQS19QQ0dVTnlLbnh0d0h3UDR1cHlPaXdCZDVHVlpCTGljLWNIRmZfTjRGVXZoQWNaU3BNR0xXaHl0LThwZmtjMERBSGctNEQxM2JnUU5kMnZhekY0MkgyazFmd3VRQzZEQ0Z2NDlfV0p5cUNJMmVCbk9vcDZMS1l4Y2RFMktxWXlLZGZXV2xXRWd6b2hCbFo4elRSS2tnZl9JSWJHNjQyeTZxX0EyMEhaeExBUzc4bXNtMkhOTnJGX1lCd0pfQzBQM2RWbGlZbE9sWko3enBfV0JvaDFPV1NXUS1IdEk3dkZpWW41SC1hYlZUMmVrM1BRNEZFVGIzSUJYMHBZeXBkUXdn?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "嘉澤端子法說會揭露Q3營收創新高達99.6億元，但產品組合轉向伺服器壓縮毛利率至44.83%；公司觀察到DDR4價格倒掛提前出現，可能帶動客戶加速轉換新機種，惟預估2027年伺服器出貨量僅增10%至15%、新平台插槽單價同步看漲。",
+      "relatedStocks": [
+        {
+          "code": "3533",
+          "name": "嘉澤"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【嘉澤端子工業FY2026 Q3 法說會】嘉澤端子營收創新高達99.6億新台幣，產品組合轉向伺服器拖累毛利率驟降至44.83%",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDS1Z6Q3ZiQ19vYXpiREFIb0tiT29vYmEtRmJ2SGVOR1NyeHVDRDJSdUhXNjRIWHNzcm9hb1d3dGFsQXdhb0x2MzQ2NWRsM3NzVENjWlo4bGdOYlhQbTUwX0t4cW1lZw?oc=5"
+        },
+        {
+          "title": "DDR4 價格倒掛早一季！嘉澤(3533) 第 2 季已見舊規格較貴，預期帶動客戶轉向新機種",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1UUG5rWVI2RUNYNEc0Y1BiZGtFSHJlakdiTDY5ZUdMUG9OUzA2cC0tWkg1VWhwbkRQRE5aQkhrOG91S2o5RGNUdV9DMzBGMV85TjM0a0ln?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "化合物半導體與自動化設備廠法說會釋出正面訊號：IET-KY(英特磊)Q3每股賺1.26元、季增近兩倍，董座看好明年營收成長15%至25%、銻化鎵產能可增約30%；新代科技法說會則透露記憶體供貨到2027年底無虞、前十月營收年增逾106%，持續加速海外市場布局。",
+      "relatedStocks": [
+        {
+          "code": "4971",
+          "name": "IET-KY"
+        },
+        {
+          "code": "7750",
+          "name": "新代"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【IET-KY FY2026 Q3 法說會】英特磊Q3每股賺1.26元、季增近兩倍董座高永中：明年沒有保守說法，營收成長15%至25%",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04Ymc2TWxCQlAzaDNmMUJ0U0ZwRWh1c3JUOWtlOTFUazMzOGtnQzJnaXVLVGFpRUJFaEc1WnhjY21fQmJuZmpNdloxZHoyUFM3WlBxazJVc3BxR3F1dFV4TmxpYTNXZw?oc=5"
+        },
+        {
+          "title": "新增 2 至 3 台機台，IET-KY(4971) 銻化鎵產能可增約 30%！整體增幅僅 10 至 20%",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ESUlwS1A3SlliTUM2NjFlVUhCUVVaenVjek4wY1ZuX0RPZXcyQU9CZHNvdWoxTjVPQ2txTFZwaThMam5HU2VkcktQc1FyZzhjTmw5alhB?oc=5"
+        },
+        {
+          "title": "新代法說會／記憶體供貨到2027年底無虞 持續加速海外市場布局",
+          "url": "https://money.udn.com/money/story/5612/9877539"
+        }
+      ]
+    }
+  ]
+}
