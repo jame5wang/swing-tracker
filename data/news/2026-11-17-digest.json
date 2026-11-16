@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T08:30:00+08:00",
+  "items": [
+    {
+      "summary": "輝達執行長黃仁勳11/12無預警辭任、董事會任命財務長Colette Kress暫代執行長並對外徵求內部與外部人選接棒，領導權真空疊加輝達當日（11/17）即將公布Q3財報的不確定性，引爆全球科技股重挫：費城半導體指數狂瀉近5%，台股創史上第2大跌點、近9成個股下跌，台積電ADR重摔逾6%，央行亦進場捍衛新台幣匯率。",
+      "relatedStocks": [],
+      "sources": [
+        {"title": "NVIDIA Announces CEO Transition（SEC 8-K）", "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"},
+        {"title": "【盤前】美股全倒費半狂瀉5%！台指夜盤漲154點　台股拚止跌面臨考驗", "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E7%BE%8E%E8%82%A1%E5%85%A8%E5%80%92%E8%B2%BB%E5%8D%8A%E7%8B%82%E7%80%895-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%BC%B2154%E9%BB%9E-%E5%8F%B0%E8%82%A1%E6%8B%9A%E6%AD%A2%E8%B7%8C%E9%9D%A2%E8%87%A8%E8%80%83%E9%A9%97-224700511.html"},
+        {"title": "股匯重擊！台股史上第2慘 央行實彈守匯", "url": "https://tw.news.yahoo.com/%E8%82%A1%E5%8C%AF%E9%87%8D%E6%93%8A-%E5%8F%B0%E8%82%A1%E5%8F%B2%E4%B8%8A%E7%AC%AC2%E6%85%98-%E5%A4%AE%E8%A1%8C%E5%AF%A6%E5%BD%88%E5%AE%88%E5%8C%AF-223635469.html"},
+        {"title": "台股創史上次大跌點！近9成個股軟腳　「39檔」成全村的希望", "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E5%89%B5%E5%8F%B2%E4%B8%8A%E6%AC%A1%E5%A4%A7%E8%B7%8C%E9%BB%9E-%E8%BF%919%E6%88%90%E5%80%8B%E8%82%A1%E8%BB%9F%E8%85%B3-39%E6%AA%94-%E6%88%90%E5%85%A8%E6%9D%91%E7%9A%84%E5%B8%8C%E6%9C%9B-222500253.html"},
+        {"title": "黃仁勳辭職餘波盪漾！美股全收黑「費半重挫逾5％」台積電ADR下殺6％", "url": "https://tw.stock.yahoo.com/news/%E9%BB%83%E4%BB%81%E5%8B%B3%E8%BE%AD%E8%81%B7%E9%A4%98%E6%B3%A2%E7%9B%AA%E6%BC%BE-%E7%BE%8E%E8%82%A1%E5%85%A8%E6%94%B6%E9%BB%91-%E8%B2%BB%E5%8D%8A%E9%87%8D%E6%8C%AB%E9%80%BE5-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E4%B8%8B%E6%AE%BA6-221206193.html"}
+      ]
+    },
+    {
+      "summary": "輝達領導權不確定之際，分析師（含郭明錤）指出Google TPU訂單能見度已拉長到2029年，聯發科內部資源與決策重心轉向ASIC事業群、成為多年期最大受惠者之一；世芯-KY則被大摩等外資點名可能迎入神秘「第三大客戶」（市場猜測為Google TPU，尚未證實）。另有報導稱台積電先進產能分配傾向考量客戶財力，促使聯發科、創意、世芯等ASIC設計廠加緊籌資擴產。",
+      "relatedStocks": [
+        {"code": "2454", "name": "聯發科"},
+        {"code": "3661", "name": "世芯-KY"},
+        {"code": "3443", "name": "創意"}
+      ],
+      "sources": [
+        {"title": "聯發科內部資源重心轉移 「ASIC事業群」漸成決策核心", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774951_9GOLOSEF4TD3C42IPM9AW"},
+        {"title": "郭明錤：輝達換帥不確定下...Google TPU搶攻長期訂單聯發科受惠", "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsUjZOZjlOU0hMSVFCT2JzTGZVeG01YVdZYlJ1TzVrVWQ5Y254UGRIdkY5cDdxaHhNNzRBSzBBRW5VUE1VZ0xpdm5CRDFDSGxV?oc=5"},
+        {"title": "世芯還有神祕大咖？大摩再爆「第三家客戶」驚人潛力", "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jeXM0MDU1WmFIengxUGVYanRpUXFYR2hDWWFVOU4za2FCRFgzWE9wbDJoNEgzcml1Z1dHcEw1dTR0RDJFQTRsMzdLSWhWQWpUQVhuMDdQclFHQdIBX0FVX3lxTFBMUC1NNU1mSDZpYzVnWmdFWml0S04tRDRNcTd3aEc1QXQ1RHVmS1c1REx6OGJLTm5KQ21Bd2hoc0JHU0tlRDJtUDlPYWw3TU1yM25QWWRkMlVMcUUteC1r?oc=5"},
+        {"title": "台積電看客戶財力分配產能？聯發科、創意、世芯搶籌資", "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5odGJiSUNlMmNld3BtUHF5ZmtJN1RuSk1QcGtYTlZqaVVJWGw3eFNnM19sR2pCd3cyby1IMGZrNVhqMWNmVVlzbUtQSUpCcnpob3c?oc=5"}
+      ]
+    },
+    {
+      "summary": "傳輝達次世代Vera Rubin平台放量延後，使台廠ABF載板／CCL四雄（欣興、南電、景碩、台光電等）短線情緒轉壞；同時南韓三星電機公開旗下世宗新ABF載板廠規模達9.9萬平方公尺並拚縮短建廠工期，意味競爭產能牌局同步升溫，為先前「超級循環」樂觀敘事增添雜音。",
+      "relatedStocks": [
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"}
+      ],
+      "sources": [
+        {"title": "輝達Vera Rubin傳延後放量CCL、載板4雄慘綠", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSzJsQXpCbi02bEp5djFjc05PN0tteUNfMWxxY2RpNmNnaWVONVZSZjJ6VjVvNExpUTNFTG90MDR6QWFZNTFwUWZzVHdlNHUwSXRDbGFmN2lhdklac0FZbnVnQjFpbk5FZmktbzJFUElSdjQ3ZEJSQWp0NE90N2xKaGpYS2R4MVN1NHBHTUZmaUNqdw?oc=5"},
+        {"title": "傳輝達Vera Rubin放量延後！ 台廠載板、光通訊恐受衝擊", "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFByT19UdndJVkxqeEYwNndaTUdXaEVMdnd2eEFvWFd5eXhXN1cwSFBqU2dJVTRQSU83TlNaUEFlc0ZtNnZaemxhWXhaa08xeUhaNVJVaHdzb3pWLXZ3QTNNdU0wSkZ5RHlOd3l1VndTajJZblFBN0hV?oc=5"},
+        {"title": "三星電機世宗ABF載板新廠規模曝光 9.9萬平方公尺、拚縮短工期", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774703_GZI6EMOZ1OT5OE2KJWWSW"}
+      ]
+    },
+    {
+      "summary": "台光電股價因媒體報導「輝達營收占比達25%~30%」而重挫跌停，公司火速發布重訊澄清：輝達營收占比從未超過20%，數字落差過大恐誤導投資人；公司強調未提供財務預測，報導內容係媒體臆測。",
+      "relatedStocks": [
+        {"code": "2383", "name": "台光電"}
+      ],
+      "sources": [
+        {"title": "黃仁勳風波衝擊股價！台光電緊急澄清：輝達營收占比從未超過20%", "url": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E9%A2%A8%E6%B3%A2%E8%A1%9D%E6%93%8A%E8%82%A1%E5%83%B9-%E5%8F%B0%E5%85%89%E9%9B%BB%E7%B7%8A%E6%80%A5%E6%BE%84%E6%B8%85-%E8%BC%9D%E9%81%94%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%94%E5%BE%9E%E6%9C%AA%E8%B6%85%E9%81%8E20-140051496.html"},
+        {"title": "台光電自救！重訊澄清輝達營收比重從未超過2成", "url": "https://ec.ltn.com.tw/article/breakingnews/5642939"},
+        {"title": "台光電 澄清媒體報導（公開資訊觀測站重大訊息）", "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%85%89%E9%9B%BB-%E6%BE%84%E6%B8%85%E5%AA%92%E9%AB%94%E5%A0%B1%E5%B0%8E-120400938.html"}
+      ]
+    },
+    {
+      "summary": "台媒報導三星加速退出8吋成熟製程晶圓代工（三星先前已表示將於2030年前全面退出8吋代工），並積極在美國奧斯汀廠爭取SpaceX星鏈衛星晶片訂單；報導點名聯電可望受惠轉單，但國際研調機構提醒台廠8吋產線目前餘裕有限，轉單能否順利承接仍待觀察。",
+      "relatedStocks": [
+        {"code": "2303", "name": "聯電"}
+      ],
+      "sources": [
+        {"title": "三星搶星鏈訂單叫陣台積 加速退出成熟製程 聯電、力積有望迎轉單", "url": "https://money.udn.com/money/story/11162/9882662"},
+        {"title": "Samsung reportedly to exit 8-inch foundry by 2030 as TSMC also cuts capacity", "url": "https://trendforce.com/news/2026/11/03/news-samsung-reportedly-to-exit-8-inch-foundry-by-2030-as-tsmc-also-cuts-capacity"}
+      ]
+    },
+    {
+      "summary": "台媒報導美光台中后里DRAM廠發生工安事故導致停工，為原已偏緊的記憶體供給面再添變數；同時南韓SK海力士為滿足AI記憶體需求激增，傳提前開放龍仁Y1無塵室，並與TEMC、TES等廠商洽談Trinity Fab合作，加碼擴產腳步。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"},
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {"title": "爆工安事故 美光后里廠停工", "url": "https://www.ctee.com.tw/news/20261117700117-430501"},
+        {"title": "AI記憶體需求升溫 SK海力士龍仁Y1提前開放無塵室", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774945_GVSLSA8A3S05J965ANPST"},
+        {"title": "SK海力士串接合作園區、Trinity Fab TEMC、TES看好龍仁驗證資源", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774659_2N470LL243ZPZULHAKIFW"}
+      ]
+    },
+    {
+      "summary": "旺矽法說會釋出樂觀展望：明年營收拚增逾五成，CSP雲端服務客戶加碼下單、CPO相關訂單可期，公司並擴大探針卡產能以搶攻ASIC與CPO測試商機。",
+      "relatedStocks": [
+        {"code": "6223", "name": "旺矽"}
+      ],
+      "sources": [
+        {"title": "旺矽法說會／明年營收拚增逾五成 CSP 客戶加碼下單、CPO 訂單可期", "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9NVUpiVDlOZGpQeXFUX0ZGa2VVLU5BUUxHX1Zfc2xiQWRvMWdzODdfa3ZmOGdDbmMtams3TmRWUTM5NUxLN0dxSldBWkI?oc=5"},
+        {"title": "旺矽擴探針卡產能，明年搶ASIC/CPO商機", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMEVFUDh3aUNhNXlRd0M4d1N4dE5FcElIZ04yR1NRLUxWXzhaLWhZLUIyVUlUMGNoY3RySlZSRURoNVRDQkZWQzZidU9GOE5ObVM0MXVqaU9sX0RWdk9HQmF0UG9jeXFQX2dWSmlISUJEUFg5eExYQldjZXlTS0w3X2VYejhhVTd2QkZHazBNemxqZw?oc=5"}
+      ]
+    },
+    {
+      "summary": "金居法說會揭露前三季EPS達6.62元，已提前改寫全年獲利紀錄；總座表示高速銅箔材料的結構性轉變「回不去了」，2030年後的長期供貨合約已開始與客戶洽談上桌，顯示高階材料能見度拉得更長。",
+      "relatedStocks": [
+        {"code": "8358", "name": "金居"}
+      ],
+      "sources": [
+        {"title": "【金居FY2026 Q3 法說會】前三季EPS 6.62元提前改寫全年紀錄總座：高速材料「回不去」，2030年後長約已上桌", "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZNjFyVE5DdlplSUdabi0xNGFlbWx3cVRaUTVjNXFEZjY0b1BmblNFc0hEUUJGcEwyVXlqRU1jaEFFTUM2TVVVWTdQOVhEQVk1Qk9fUFU3c3dOOVJoLWxsV091akdJZw?oc=5"}
+      ]
+    },
+    {
+      "summary": "嘉澤表示QD連接器產線已滿載，目標進一步擴大至倍增，預估2027年此產品線營收貢獻可望逼近一成，成為伺服器插槽主力業務之外的新成長引擎。",
+      "relatedStocks": [
+        {"code": "3533", "name": "嘉澤"}
+      ],
+      "sources": [
+        {"title": "嘉澤QD產能滿載拚倍增 2027年營收佔比近1成", "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774909_XWI8JNPG1XZFCB8Z9QSXK"}
+      ]
+    }
+  ]
+}
