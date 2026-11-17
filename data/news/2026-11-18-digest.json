@@ -1,0 +1,216 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T07:45:00+08:00",
+  "items": [
+    {
+      "summary": "輝達前執行長黃仁勳辭職風暴持續擴大，川普公開質疑黃仁勳是否涉入間諜疑雲，黃仁勳則回應若董事會要求願意回任執行長。輝達同時公布Q3財報、營收展望倍增，股價盤後一度上漲2%，美股道瓊重挫逾800點，但費城半導體指數逆勢收漲，顯示市場對AI晶片供應鏈信心尚未全面潰堤。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "黃仁勳願回任輝達CEO！川普質疑黃仁勳是否為間諜",
+          "url": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E9%A1%98%E5%9B%9E%E4%BB%BB%E8%BC%9D%E9%81%94ceo-%E5%B7%9D%E6%99%AE%E8%B3%AA%E7%96%91%E9%BB%83%E6%A8%82%E6%98%AF%E5%90%A6%E7%82%BA%E9%96%93%E8%AB%9C-223825687.html"
+        },
+        {
+          "title": "黃仁勳去職後！輝達財報出爐 營收翻倍預期、盤後漲2％",
+          "url": "https://tw.stock.yahoo.com/news/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%8E%BB%E8%81%B7%E5%BE%8C-%E8%BC%9D%E9%81%94%E8%B2%A1%E5%A0%B1%E5%87%BA%E7%88%90-%E7%87%9F%E6%94%B6%E7%BF%BB%E5%80%8D%E9%A0%90%E6%9C%9F-%E7%9B%A4%E5%BE%8C%E6%BC%B22-222848908.html"
+        },
+        {
+          "title": "美股漲跌互見！道瓊重挫848點 費半逆勢收漲",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%BC%B2%E8%B7%8C%E4%BA%92%E8%A6%8B-%E9%81%93%E7%93%8A%E9%87%8D%E6%8C%AB848%E9%BB%9E-%E8%B2%BB%E5%8D%8A%E9%80%86%E5%8B%A2%E6%94%B6%E6%BC%B2-221746090.html"
+        }
+      ]
+    },
+    {
+      "summary": "輝達宣布擴大供應鏈合作承諾，攜手景碩、三星電機、日月光旗下矽品、台積電、Amkor、鴻海等夥伴，規劃3年內將基板產能擴增2.5倍，以支應Vera Rubin平台與AI基礎設施建置需求，顯示即使領導層動盪，輝達仍積極鞏固上游產能。",
+      "relatedStocks": [
+        {"code": "3189", "name": "景碩"},
+        {"code": "3711", "name": "日月光投控"}
+      ],
+      "sources": [
+        {
+          "title": "NVIDIA Expands Commitments With Six Partners for AI and Vera Rubin",
+          "url": "https://www.tokenpost.com/news/business/59927"
+        },
+        {
+          "title": "英偉達臨時CEO克雷斯：已與景碩和三星電機簽署協議以擴大基板產能，並正在擴大與供應鏈合作伙",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbk10XzNyOWJZNW1ZNzZGTnZRb1BXNzJkVzZzaWNVekZjRVZDQjRRX3N6MkthZTBHM1E0UUxkTzRUdTM1YVU5eUFpSjdNMFhTalpqaGE3SGt2ZUlwcWZoYmQ4WEtZQ2ZlUHZXR2YyRHNoVDFUcVAtWG5GaXM4VnByQ3NHeXNyYW11YWV2WDRPeGRlWUxuR1g2VklqdENDRVRsdTVhVjI4VmlPUkE4V0E?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "ABF/CCL族群賣壓未歇，台光電與ABF三雄(欣興、南電、景碩)再吞跌停，台光電緊急澄清輝達營收占比低於兩成，分析師則認為規格升級趨勢不變、「落入甜蜜區」後仍有反彈空間。市場同時傳出黃仁勳下台導致台廠遭抽單的謠言，業者澄清「他帶不走CoWoS產能」；光通訊CPO類股（上詮、華星光等）受衝擊程度因個股而異，法人持續拆解差異化影響。",
+      "relatedStocks": [
+        {"code": "2383", "name": "台光電"},
+        {"code": "3037", "name": "欣興"},
+        {"code": "8046", "name": "南電"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "3363", "name": "上詮"},
+        {"code": "4979", "name": "華星光"}
+      ],
+      "sources": [
+        {
+          "title": "台光電重挫、ABF三雄連吞2根跌停！規格升級趨勢未改變 PCB女王喊「落入甜蜜區」",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LMUhLZ0sxS3hhclBNeWZpVVFjTE9PZXB5S2RrRDEyYWRGeUlka3FERUY4VzNGNjNNZFd5d0NJMXl3eXRiRkVZSjBpamRHQTd5S1BIcnB3YUN4MTJmbEU3VFptNjRpdUFqRmc?oc=5"
+        },
+        {
+          "title": "與輝達畫界線也沒用？台光電緊急澄清 今續重挫逾5%股價破底",
+          "url": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNRUd3SjJCRTJheHNTdjY3aG9LS2ZaWmhLei1mNlZBVUM3a01yZG9rMXFNa1dXNUFNcWNOanMzOXpmUml3dGZ3MVhqbEtyVllQWVo4ckFDakdHR1A5MnJHTnlkaUhzbDVKMzdIbU5BSDl3bkFfQTNydUdiNXJQZlh2RUZvM3g5dnhNMnJzQ2VZa05zN3JzTVN3SzF4ZlJNRHFpYmFOb0pZU2RPa1hUTjRZRWNibFREdDk3bWVzN2JTU3d0WFNtZUpzQTF2ejlFQkl4QW1yNzlFcXhwNDFFamI5d1hyamdsTEhoM0lFSnZvQXN4MGMzWm42VmhaZ2VET01XRDJuazhEeXhTbkg1c3hwSV83N1dvYzZrWGp4VnJlQ1FrQjJyN0VOdTVTdDVtZzV5MlhaZnlKUm9GMXg3Z1AzZ3l1ZVNZOHo4Q09Hd25hUVNyV1pySHA5Q1ZFMm42bHpFQXFLS1pFWUJqSnNWMXdQZGZhcTdrazF1NUp1UWZJQmtORVRkNVl4NzU5N1lSd3UtNjdNYU53?oc=5"
+        },
+        {
+          "title": "才澄清輝達營收占比未逾20%！「這CCL龍頭」繼昨跌停今再重挫255元、跌近7%",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBQNk9xV0pLTTlQcTRiZHJndnpKZDRNbzJpaVdhS3Zwb21ISEREVEVhRE1NWEV3VW1rS2RXZzdxd0RYSzEyTmRMUVNwTQ?oc=5"
+        },
+        {
+          "title": "黃仁勳下台台廠慘被抽單？周代運3字嗆爆謠言：他帶不走CoWoS產能",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8tQ2xuVGtVaEdVZ2lNT1I3djBVdUJUa2t3SHBKVmVnRS1PNDlGa0JXNE9UQlFmUXo4eEprclBXZ2V6U3pOdklmSmlsQQ?oc=5"
+        },
+        {
+          "title": "黃仁勳辭職後 台廠CPO類股9檔影響曝",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTXA0MXg5UFFpeXFhSHlVcW9PTDA5LXlublVhSjV4VmVKQUlreW5wa1AzUHRIdFBDSXczYUNYVDczdTFucEsxSDR6aXJGRHlmZjByLUkyUVBDTDNXaklMOFRUeXlaZWR5N2U4R25STTFmTXctNmtPOTc3X2g3dThKSnpncG5KUlI2cU1SQmY0UVNvM29PeHVpRm9aQ0IyN3RWTndvMFZwRmZJYlVtTTNTSWp4SE4zWWxRbFJfNS1RRzd3cnQtNUZ4eFBiazJXckhYbEN1dUNaS0hwMUxGeGJtSGtaLWpmdDkzdVEyTXZSbTFTWjVJM2p3LTFBcDdxNE1LVFE?oc=5"
+        },
+        {
+          "title": "黃仁勳請辭，CPO會延後嗎？上詮、華星光受衝擊程度大不同",
+          "url": "https://news.google.com/rss/articles/CBMivgNBVV95cUxQU05FMnBBQXFuZFJmZUFKWHJEWkV4MEJzWEt3LVBFSTNKUlZjRm1wanYtRVFITG0xLURkREYwSTV2R0RNLXVpVElBcTEzRDFTYVkwREgzTnMzQ1NFUWRZb2xfOEhRbEZjT2FZcFRWZXFKY09mZkU4U1VqNzE3dE9NNnVSRjVyYzhJN3A5MUhYZWhwX3JaQ0liLWh2Yl9scHlONjkxb3JYU3NlU0Vwa21FT21GZHVJMmFQd3ZzOC1ybTVPRkdCMmNoQmFDVEJYdjZZX05JcnVuM3A0NjVUNFM2bU9DaE1jOWVKOWhsZVp2RVZ2NF8yM3BwalV6X3JuWG1WbTl6dllVS3FiZmZWT0laeHRJQVFKVzBnYUJaNkRRSlVZUDBPZy1qSnhMcUZCaHJUWlBqSlpnRWJzX0VRWVdndldnQTFpRDFnLTl2U0Z6M1piNG8xTGF4LS1KcHdHUHBxSnVYMlVsOWJoNnZ5ZGE5dHAtd1FMeFBBX2hNVlNwQ1ZfOHZZMDRHQ2FZVFRlMkFNNUlmdldMWFc4UzQyeFRRZmZqandoeEJVU1pmMHdoZTMwRHlkcmpvOExJbGRHQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "SemiAnalysis下修AI需求預測，使DRAM價格高點可能提前到2027年，南亞科、華邦電面臨擴產兩難，大摩同步下調華邦電、旺宏等評等並示警2028年供需反轉；但中國長鑫同時表態Q4 DRAM仍將緊缺，三星記憶體報價大漲270%、蘋果被迫簽5年長約鎖貨，顯示業者對AI需求降溫看法分歧，美銀並示警NAND Flash報價可能與DRAM走勢脫節走弱。南亞科另與旺宏合作布局車用物聯網商機，董事長吳敏求親自同意供貨，為記憶體廠拓展新應用市場。",
+      "relatedStocks": [
+        {"code": "2344", "name": "華邦電"},
+        {"code": "2408", "name": "南亞科"}
+      ],
+      "sources": [
+        {
+          "title": "DRAM價格高點提前到2027年！SemiAnalysis大砍AI需求預測，南亞科、華邦電面臨擴產考驗？",
+          "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxNb1NsTEdERzRCZFo4WDlaRVltcGhMajRLRTdsRGpEakNVVnVxNlNiU2ltbTYwSWx4aW1QakVCRWFZNHU5aFBkd2NHRUtoNGxBRWJqRXFiMjhXWTVrUGZlSmlaWG5ZY1B6dHJESWF3Vl9adGdHcUQxUmlYT2tkYTRXU2lBYVVKb0c2U2xLczRNR0ZGNldrTElkN3lSNHM2dUN6QmQyYmUwczZoSjg2aE1YYTl5Y192NTI0czcta05aVXdiNHd5Y01MQ1NaNG5FZEZvM1dKcHgzMEh3QUIzazlXd1AtUlRrcmozclROWWhiNG5FQmtqMDdxNzhaNUFxUG1idUNWTEVqQW1OdkpTUFFxNktmNkktbHFYQ0lsa19fQXppUk9WUGlFVWtVT05ZcDF1Q0VfelRGZy1VZEJNTlZPdzFRS3lrX0lUandkQjNicUJCdVVUTUJEWlc2bWFFbGMzNjlYQ2tRLUhnNDZtS0t2U042SkNFN3EwcUFmS1lFdGZSeURIcmphNWFlXzE5WDFTQmFPT3ZPUWNtdHBya0ppeVJWWFNodFo4SmlHc2R2a0FtV1pyc016SjduYVo5UVJMSWJHV0NlbDE2M3RadGZJRU5IZWUxbGpBSWRmVlR5d2lWRXJaVmp2cEQ0Nld2QzlIZDhjajJPODd3X1V3SFRadFlsamNyRTBZ?oc=5"
+        },
+        {
+          "title": "記憶體股淪重災區！大摩降評華邦電、旺宏等4檔 示警2028年供需反轉",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE16aktkenJaakZsdVp5SWNvSEJRVElZTGxubUZUNmdsTUQ3NnFUaXpHS3UzbHFYTFZiTTNpVEc2WHlxVTZXbF85ekpOalp5NXhXVXfSAVdBVV95cUxNY1QtSE1ZWnFZbm9aS2pHTWJnNXZlOGNpaHhBSlhXUzZ3NjRLN2R3cHR2ODdQTUJkU1pSc29Wd2JuMnpVVHdMV2pEOXoyZm9FRzZEaHoyZHc?oc=5"
+        },
+        {
+          "title": "長鑫：Q4 DRAM將持續緊缺",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YN0ZQRkRPZzFmWDhqZlNHU20zY05icWE3YUFIbVBZQ0JLT284c2NCODdNRU5BekpCaFRTU2xPaGNYclJKdlJJMUhiQzl0b2x4ZDhkRVVwWEdzSHdfVjdJ?oc=5"
+        },
+        {
+          "title": "AI重寫半導體產業！三星記憶體漲價270%、蘋果改簽5年長約、消費市場承壓",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VcWMtLXppMU9LUk1ad2plTmdkY2hPVWVGVGUwckRNci1uZXpNSld6NXFRY0pwai1WRXVnTTJFSlFHVlFLcHpnUUdnSEdsSmM?oc=5"
+        },
+        {
+          "title": "全球記憶體行情出現分歧 美銀示警 NAND Flash 價格看跌牽動台廠",
+          "url": "https://money.udn.com/money/story/5612/9885128"
+        },
+        {
+          "title": "南亞科與旺宏互補搶車聯網商機 吳敏求親自點頭同意給貨",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775059_BEI1ZFWV4QY6JEL3K4JAK"
+        }
+      ]
+    },
+    {
+      "summary": "晶圓代工傳出明年首季漲價、漲幅最高逾兩成，成熟製程稼動率已逾9成，IC設計廠則反映「客戶不分攤成本、寧棄低階市場」。同時美國進一步收緊AI晶片出口管制及晶圓代工/封測出口認證規定（改採逐案審核），經濟部已表態協助台廠因應新規，影響範圍不只限於海外AI運算。",
+      "relatedStocks": [
+        {"code": "2303", "name": "聯電"},
+        {"code": "3711", "name": "日月光投控"}
+      ],
+      "sources": [
+        {
+          "title": "成熟製程利用率逾9成 明年首季漲價",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNY0pMY2tvMy1tMVZ0WWswQmd5SWswYWRwLU00cFBIbW1Sdy1mVUIyYUpNdVdSRzkwazE1Tk5DSEphYUI5LUZxc0kySWlaTU1DdGIwMDBkak1wcFdVVkw5OGFISHVNbjJoenFfTWhKbUNqQjQ5S0RhUUxhYzhrUjd0d2d2LW9JLUZULUtjZHVSNEpmdnAwc0VVczk1YkhXU3ZFOFN3NmNKWnctR1hLdkFoalpDS0RYTGoxeUl5SDNpM213ai1fY3JwbVFvVUdXZlFJd3RlZGo2bHZYa0VaMUlRMDYtLWx1cG82SEVGVS1CeGc5Z28xVVBoT0VBMTVGZkYybVpydGdfYTVwZw?oc=5"
+        },
+        {
+          "title": "晶圓代工明年再漲價 漲幅最高逾2成",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQZU45Q0VTTEFfTE9NMlVmMm94Z2pXUGh1TEcwV0NJMHhSM2Y4eVlfbDdMeWhTemlCeWJJbnM2LUJPTklraXNoNTM4enZyenBWTWtsd2RlVndXTjJKUy1FRnRTSllNYktWc2t6b1g2cm9vaWx5dFlsVDBWUnc5Qnp5RHZFNVYxalJWdXoyRVBlUDBGWGM0Q0c5ZGkyQU42VFduOHNQbVhGOVhsbm9JUlFlbEhKOW1IN3A1NFJKbk1CQmRNRUxvUjJ5QVU3eXdmS2hvQTJ2RDlPS3pQYU83Ykc5U2EyM1FZV1pFMWphaldmZlpFUWV4YUdLV0pIaC15cGdJWEpMZ0I0dE91QQ?oc=5"
+        },
+        {
+          "title": "美收緊晶圓代工出口豁免經濟部協助台廠因應新規",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PZS1jcXhoVWhzeDhtcldBRmpXNHRVNGVkbmhIVmt2eWxxSkZ3T09UVVJGZzN4U0VpTE94aVF3RjNqLUZkSTFKQ0lsUlRGaTVmQ00yU0FR?oc=5"
+        },
+        {
+          "title": "美國晶片出口新規收緊代工及封測認證，影響不只海外 AI 算力",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ENkpad0d0NkFpYnQ0WHFPMHZ0cHE5RDQ3MWdEUTJEWFVsSUhGcmE2QUNLR2ZHN0J5SDJCWWRLTEZjYUpPRDM5djJjMlE3ZEhaSjBFc05WWnE?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "郭明錤看好Google TPU訂單能見度延伸至2029年，認為輝達換帥不確定性反而成為聯發科的助力；集邦科技預估明年AI ASIC出貨動能將超越GPU，AI伺服器出貨量看增三成，法人視創意、世芯-KY等IC設計服務商為同受惠的潛在對象。",
+      "relatedStocks": [
+        {"code": "2454", "name": "聯發科"},
+        {"code": "3443", "name": "創意"},
+        {"code": "3661", "name": "世芯-KY"}
+      ],
+      "sources": [
+        {
+          "title": "郭明錤看好 Google TPU 出貨能見度延伸至 2029 年，輝達換帥不確定性成助力，聯發科最受惠",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNk9OdXczV2JkY3czT1E1UWNRcXBFYkNlb3B0alRVeE1MOTlFUzFQVHNpUG9uWUhGWWdIMC03V19ETUVFYXBJWEJuQk1jaWgta0JaWkZNNFJSR1RjaUlIZzlNZ3l6ZGl5NlRwMjhHUWJxekFLckRrRG1Nd1VsZG9YNFJ2THNPOGd1X2hIT3FxSGlPQ09ScnZIRVZjdzA3QVphSlVF?oc=5"
+        },
+        {
+          "title": "集邦：明年 AI ASIC 出貨動能超越 GPU AI 伺服器看增三成",
+          "url": "https://money.udn.com/money/story/5612/9884760"
+        }
+      ]
+    },
+    {
+      "summary": "日月光宣布砸下1,237億元擴產，帶動科技業缺工壓力蔓延至產線基層，相關技術員職缺年增35%，部分大廠開出年薪80萬搶人，反映先進封裝產能競賽已延伸至人力市場。",
+      "relatedStocks": [
+        {"code": "3711", "name": "日月光投控"}
+      ],
+      "sources": [
+        {
+          "title": "日月光豪砸1237億帶動擴產潮！技術員職缺年增35%大廠開年薪80萬搶人",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1oNFh1NThXYnR5bWZaLW42UWdJOHNNVm1rbXh3SVJzcGppaEZwak5ZaGYxTkhXdi1zb0hCTkM2cWlfSjZuTHFzY1lkem5tWTFxd29ZR0w2LTA?oc=5"
+        },
+        {
+          "title": "日月光砸1,237億元擴產 科技業缺工燒向產線基層、職缺年增35%",
+          "url": "https://money.udn.com/money/story/5612/9883646"
+        }
+      ]
+    },
+    {
+      "summary": "金居透露電源層厚銅材料已獲客戶選用於功耗達2,000瓦的新一代GPU，帶動規格升級；公司計畫將高階銅箔產能擴增至3倍，但預估2027年全球HVLP4銅箔供給仍可能缺口達三成，擴產需求已延伸至2030年之後，顯示先進銅箔供需緊張將是長期趨勢。",
+      "relatedStocks": [
+        {"code": "8358", "name": "金居"}
+      ],
+      "sources": [
+        {
+          "title": "金居(8358) 高階銅箔產能增至 3 倍！2027 年全球 HVLP4 供給仍缺三成",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9OZDlOTWVMa1pOUHFZMFpZYWlIRWo5R3Y0X0hWOEx4UU43MUVXN1FPcG9lVEpId2dtQ0hLNjJpXzRWUWp5VDlaOVg2Vmo5WmZTelFfd0hB?oc=5"
+        },
+        {
+          "title": "金居(8358) 電源層厚銅已獲客戶選用！GPU 功耗達 2,000 瓦帶動新規格",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zLTVQNXo0NGVoYU1Rb0RLcUdyU25aU1BUTVN6dEtaQktjdU4wWkhIR0t5ZmRGRVlyZFdCTUs3em1jTlRGOEswU3ZJMnZNdDlFR2hSRjNn?oc=5"
+        },
+        {
+          "title": "金居(8358) 擴產需求已延伸至 2030 年之後！5 年長約尚未簽訂",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MY2pVbXpTQl9DN1NvN2FKYm01Yzl6aGFXdXBHX2thdzZTcllYNVBOMGl1em1sQW1fRWUzS1hPMEdjeXh5RV9JdlUxSFJjbmxJelhTS21R?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "市場傳蘋果明年將推出AI眼鏡新品，可望為大立光等光學鏡頭供應鏈帶來新一波成長動能。",
+      "relatedStocks": [
+        {"code": "3008", "name": "大立光"}
+      ],
+      "sources": [
+        {
+          "title": "蘋果明年推 AI 眼鏡 大立光、宏達電、英濟等有望受惠",
+          "url": "https://money.udn.com/money/story/11162/9885133"
+        }
+      ]
+    },
+    {
+      "summary": "台積電公布最新一期35家認證優良供應商名單，萬潤、健策等入列，台積電董事長魏哲家並談及建構「AI大同盟」供應鏈合作模式，顯示台積電持續整合上下游夥伴以支應AI需求成長。",
+      "relatedStocks": [
+        {"code": "6187", "name": "萬潤"},
+        {"code": "3653", "name": "健策"}
+      ],
+      "sources": [
+        {
+          "title": "台積電認證35家優良供應商出爐！漢唐、萬潤、健策等入列魏哲家談AI大同盟",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YaEtEeEo3NkE1WHF4S0o2RXFlaVV4a3VtUVk2c2RYU3lBT2xYRmFUOUZsVlZvbXprb1lRWUo3MG9fSEZKajRXRzZnTWJKTGlHLTFoYTdYTDNDTVE?oc=5"
+        }
+      ]
+    }
+  ],
+  "note": "每日焦點消息彙整：由RSS原始新聞、個股/產業重大訊息與網路搜尋整理而成，經相關性與時效性篩選，僅供參考，不構成投資建議。"
+}
