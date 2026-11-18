@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T07:40:00+08:00",
+  "items": [
+    {
+      "summary": "NVIDIA公布季度營收1,158億美元、年增103%並優於市場預期，但在黃仁勳（11/12因個人醜聞辭任CEO）去職風暴未平、AI投資可持續性與對中出口管制疑慮未散下，股價收跌近3%，美股道瓊重挫561點、那指逆勢翻紅，台指期夜盤同步跟跌345點、台積電ADR僅小漲0.38%；董事長再次重申不會讓黃仁勳回任，由財務長柯蕾特（Colette Kress）以代理CEO身分主持法說會並對員工喊話穩定信心。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "Nvidia earnings live: Nvidia posts Q3 beat as revenue rose 103% YOY to $115.8B, board says it will not reinstate Jensen Huang as CEO",
+          "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-interim-ceo-kress-prepares-for-q3-earnings-with-huang-reportedly-planning-comeback-153114076.html"
+        },
+        {
+          "title": "輝達財報亮眼仍跌近3%！AI投資與出口管制等「四大疑慮」未散",
+          "url": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94%E8%B2%A1%E5%A0%B1%E4%BA%AE%E7%9C%BC%E4%BB%8D%E8%B7%8C%E8%BF%913-ai%E6%8A%95%E8%B3%87%E8%88%87%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6%E7%AD%89-%E5%9B%9B%E5%A4%A7%E7%96%91%E6%85%AE-%E6%9C%AA%E6%95%A3-221006368.html"
+        },
+        {
+          "title": "〈美股盤後〉輝達財報難救股價！道瓊挫逾560點 標普連五黑 那指逆勢翻紅",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E7%9B%A4%E5%BE%8C-%E8%BC%9D%E9%81%94%E8%B2%A1%E5%A0%B1%E9%9B%A3%E6%95%91%E8%82%A1%E5%83%B9-%E9%81%93%E7%93%8A%E6%8C%AB%E9%80%BE560%E9%BB%9E-%E6%A8%99%E6%99%AE%E9%80%A3%E4%BA%94%E9%BB%91-%E9%82%A3%E6%8C%87%E9%80%86%E5%8B%A2%E7%BF%BB%E7%B4%85-221054999.html"
+        }
+      ]
+    },
+    {
+      "summary": "延續NVIDIA擴大台灣供應鏈合作的承諾，11/18當天陸續釋出更具體的擴產數字：日月光旗下矽品CoWoS先進封裝產能將於2029年中前擴增3倍；景碩獲NVIDIA逾10億美元投資，ABF載板產能看3.5倍、2028年第3季到位；欣興、京元電子同列受惠名單。另有法人觀察指出ABF載板與CCL覆銅板供需缺口持續擴大、已有5檔廠商獲利估值上修，但美國BIS新出口管制規則仍為後續產能布局增添變數。",
+      "relatedStocks": [
+        {"code": "3711", "name": "日月光投控"},
+        {"code": "3189", "name": "景碩"},
+        {"code": "3037", "name": "欣興"},
+        {"code": "2449", "name": "京元電子"},
+        {"code": "8046", "name": "南電"},
+        {"code": "2383", "name": "台光電"},
+        {"code": "6274", "name": "台燿"},
+        {"code": "6213", "name": "聯茂"},
+        {"code": "6672", "name": "騰輝電子-KY"},
+        {"code": "8039", "name": "台虹"},
+        {"code": "1303", "name": "南亞"}
+      ],
+      "sources": [
+        {
+          "title": "日月光旗下矽品與輝達簽署數十億美元協議 2029年中先進封裝產能擴增3倍",
+          "url": "https://news.cnyes.com/news/id/6665977"
+        },
+        {
+          "title": "輝達代理CEO喊話擴大與台廠合作 矽品、景碩全力擴增產能",
+          "url": "https://money.udn.com/money/story/5612/9887611"
+        },
+        {
+          "title": "輝達出資逾10億美元，景碩ABF新線要過哪幾關才能交貨？",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9MZ1R1dzZFNHg1c2dseEdkVnNxUGdtLW9wemZYNG52MzZibHZmVHV0ZzJNNTFRUkVBeHRsbWdqak0zc2JEb0doWUs2SXhmRzBpNGtXcUdidnJlMHp4N2RvNlZtNTBBUQ?oc=5"
+        },
+        {
+          "title": "ABF、CCL供需缺口擴大！5檔獲利上修 美國BIS新管制添變數",
+          "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQdEVtVTZZcDcwZ1RFeXB2eDB3ZWdKQUVoNHQ4TWxROHJHdWMzOTdBWVN0MlFTMk8tSkQ3dzhLc0xSVy1Bek1BUGJILVBlcWRiZHBCQVl1ZWwxelhTQ3ZMTkhad3ZHeWk1Z2FXZDZrelJWUlZsZkhxM2VwUk9yOUJDWnkzQlpDUkk4UXhERlAtaFpzdHJNSWZNMkd0OVFlOUo3S0FiOFVaREVLMDM5Q3d4d0xRUTdjdzFYQzhGampxQ2tha1RDM0VpQnhiZkdTUkIwR0pfMmtMM1lycjlIamdqNElZcVNtb0luYktwa1gzOFNKclhESzZoX2NOdHJqSnBYZHQxWmdkNndXUTM1b0pud21PRGw3SC1kaDNSbHp4Nl9OWll4VlNFSGlxX1NFSUxOWWZ6aDZxRGFRcjY2b185MXZFUGJCWTBE?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "DIGITIMES產業分析指出，無論NVIDIA由誰掌舵，AI晶片散熱需求估只增不減；雙鴻法說會重申AI產業成長趨勢不變，ASIC散熱業務明年可望貢獻超越GPU。董座稍早一度表態擔憂黃仁勳去職可能讓AI伺服器迭代放緩，但隨後法說會與多篇產業報導皆強調，Vera Rubin等新平台放量所帶動的散熱需求並未因人事變動而改變。",
+      "relatedStocks": [
+        {"code": "3324", "name": "雙鴻"},
+        {"code": "3017", "name": "奇鋐"},
+        {"code": "3653", "name": "健策"},
+        {"code": "8996", "name": "高力"},
+        {"code": "6805", "name": "富世達"}
+      ],
+      "sources": [
+        {
+          "title": "NVIDIA管理層無論誰掌舵 AI晶片散熱需求估只增不減",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775241_GHL3OGA23XXIOF2RDFF9N"
+        },
+        {
+          "title": "雙鴻法說會／ASIC明年大放量 董座：AI產業成長趨勢不變",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBBWGdjcjV4OFNSOThxNVZqT0Qtb1R5MnVBY3lycU9CUTFRZmVrcHhKN05pcGl5ZDhTS19zVFU1ZHNqTmU2M1RkQU9xT0M2OGRZWnVPZEtB0gFWQVVfeXFMUEFYZ2NyNXg4U1I5OHE1VmpPRC1vVHkydUFjeXJxT0JRMVFmZWtweEo3TmlwaXlkOFNLX3NUVTVkc2pOZTYzVGRBT3FPQzY4ZFladU9kS0E?oc=5"
+        },
+        {
+          "title": "雙鴻衝刺ASIC散熱商機 明年營運大成長",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QeWpLUF9BR294ME9SUXNxV2lGVWhGNnFLenh5OGpSeV9fQ0R5LWNTMkY4c0NWUmljUFZCZ1g2RHc5ZUpLd1R2dElXT01majZPSDBaUjBn0gFWQVVfeXFMTVB5aktQX0FHb3gwT1JRc3FXaUZVaEY2cUt6eHk4alJ5X19DRHktY1MyRjhzQ1ZSaWNQVkJnWDZEdzllSkt3VHZ0SVdPTWZqNk9IMFpSMGc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "DIGITIMES報導歐系客戶罕見提前搶簽2027年記憶體產能長期協議（LTA），台廠藉此強攻車用、工控、網通三大應用；南亞科、華邦電同步加速導入EUV先進製程追趕三星、SK海力士的技術優勢。群聯則於SC26發表三項新世代儲存技術，執行長潘健成同時坦言NAND供應持續吃緊。",
+      "relatedStocks": [
+        {"code": "2408", "name": "南亞科"},
+        {"code": "2344", "name": "華邦電"},
+        {"code": "8299", "name": "群聯"}
+      ],
+      "sources": [
+        {
+          "title": "歐系客戶2027罕見搶簽記憶體產能LTA 台廠強攻車用、工控、網通三大應用",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775235_PUT12F3X4B6G6W4SR15TO"
+        },
+        {
+          "title": "【動物農莊】南亞科、華邦電攻EUV先進製程 三星、SK海力士緊張了？",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774959_KD0LAKII4C15HXLW0W2L1"
+        },
+        {
+          "title": "群聯喊NAND吃緊，花27億元買回自家股票會擠壓備料嗎？",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5NZUd6S2t3Z3R6dXl0TjA3YjM0MGtIZ2FGd3cyMmRxVzNrc0xXQ3EwZjlaZFdPMk1sMmx1eXA1Zm9razV4UldqMjRFQ3FHWXByVkJWMllMN1EwbnJ4MVpRZ0RHY3hsQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "外電傳美國正研議限制中國製造的光收發模組輸入美國，台灣CPO／光通訊供應鏈可望受惠轉單效應。",
+      "relatedStocks": [
+        {"code": "3081", "name": "聯亞"},
+        {"code": "6442", "name": "光聖"},
+        {"code": "3363", "name": "上詮"},
+        {"code": "3163", "name": "波若威"},
+        {"code": "4979", "name": "華星光"}
+      ],
+      "sources": [
+        {
+          "title": "美擬禁中國光模組 美、台股CPO影響6檔曝",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQTFcyWTRjbi1peTFlN1BRb25sVDBFN2N0amg5aVRMTG9uU2RualJlZzQ5WlN1NHdaLW9vdjFfMW5VMWs1aEdVYkptOENtWGxybVlkaVRjVnBPSUVNMjNfdVpPTnJiSV8tOWZIRllFTEh0SXdKVk1GNWhiUW5JOTdoVWVhcEhCbHBqbDFLUzlZVU1sOWhOZ09NeXBZakdMOWRYYWtDSll6NHFVVG9Qd2l5blU2UExOYXBMSnRkaFJpOGdBZGtSLVBackd6eFg1N0Yycll3SnI0bnRGWWdpWlQxN2x3S3ZoeHNuNTZ2dzlvcG8ybTVRR0NIdkx3OXlZZTNLTGRmeldnT085RlMtRF80?oc=5"
+        },
+        {
+          "title": "台廠迎轉單》陸製光收發模組 擬限制輸美",
+          "url": "https://www.ctee.com.tw/news/20261119700083-430502"
+        }
+      ]
+    },
+    {
+      "summary": "DIGITIMES報導美方近期藉NVIDIA人事風波持續圍堵中國AI算力，傳北京正考慮動用稀土出口管制作為反制手段，若成真可能牽動全球稀土與稀有金屬回收供應鏈情緒。",
+      "relatedStocks": [
+        {"code": "7610", "name": "聯友金屬-創"}
+      ],
+      "sources": [
+        {
+          "title": "美借黃仁勳風波圍堵中國AI算力 傳北京擬打稀土王牌反制",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775261_JHS31FPN50ZSJA2MOK9QN"
+        }
+      ]
+    },
+    {
+      "summary": "DIGITIMES報導三星電機與NVIDIA的合作進一步升級，MLCC產品正式納入供應鏈名單，傳擴產資金可望加碼，顯示高階被動元件需求隨AI伺服器升級持續墊高，台灣被動元件廠後續擴產動向值得留意。",
+      "relatedStocks": [
+        {"code": "2327", "name": "國巨"},
+        {"code": "3026", "name": "禾伸堂"}
+      ],
+      "sources": [
+        {
+          "title": "三星電機與NVIDIA合作再升級 MLCC入列、擴產資金可望加碼",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775186_Q7I2VMRE7OYRP17BO3TM8"
+        }
+      ]
+    }
+  ],
+  "note": "每日焦點消息彙整：由RSS原始新聞、個股/產業重大訊息與網路搜尋整理而成，經相關性與時效性篩選，僅供參考，不構成投資建議。"
+}
