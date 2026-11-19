@@ -1,0 +1,231 @@
+{
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T07:41:36+08:00",
+  "items": [
+    {
+      "summary": "AMD遭做空機構指控踩中國出口管制紅線，股價一度重挫逾8%（公司隨後發聲駁斥）；同一時間Anthropic掛牌上市未能提振市場信心，美股四大指數全面重挫（道瓊重挫逾1100點、那斯達克與費城半導體指數跌逾2%），拖累台指期夜盤重挫逾500點，金管會隨即祭出放空「雙限令」穩定市場；惟法人仍提出台積電2奈米量產進度可能是支撐台股止跌反攻的關鍵，顯示AI晶片供應鏈情緒雖劇烈震盪但基本面敘事未變。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "AMD爆中國出口管制疑雲！遭做空機構狙擊股價跌逾8％　公司急發聲駁斥",
+          "url": "https://tw.news.yahoo.com/amd%E7%88%86%E4%B8%AD%E5%9C%8B%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6%E7%96%91%E9%9B%B2-%E9%81%AD%E5%81%9A%E7%A9%BA%E6%A9%9F%E6%A7%8B%E7%8B%99%E6%93%8A%E8%82%A1%E5%83%B9%E8%B7%8C%E9%80%BE8-%E5%85%AC%E5%8F%B8%E6%80%A5%E7%99%BC%E8%81%B2%E9%A7%81%E6%96%A5-224325136.html"
+        },
+        {
+          "title": "Anthropic史詩級IPO失靈！美股四大指數全面重挫　道瓊狂瀉逾千點",
+          "url": "https://tw.stock.yahoo.com/news/anthropic%E5%8F%B2%E8%A9%A9%E7%B4%9Aipo%E5%A4%B1%E9%9D%88-%E7%BE%8E%E8%82%A1%E5%9B%9B%E5%A4%A7%E6%8C%87%E6%95%B8%E5%85%A8%E9%9D%A2%E9%87%8D%E6%8C%AB-%E9%81%93%E7%93%8A%E7%8B%82%E7%80%89%E9%80%BE%E5%8D%83%E9%BB%9E-222051865.html"
+        },
+        {
+          "title": "台股賣壓罩頂 金管會祭放空「雙限令」",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E8%B3%A3%E5%A3%93%E7%BD%A9%E9%A0%82-%E9%87%91%E7%AE%A1%E6%9C%83%E7%A5%AD%E6%94%BE%E7%A9%BA-%E9%9B%99%E9%99%90%E4%BB%A4-223838779.html"
+        },
+        {
+          "title": "落底訊號浮現！摩爾投顧蔡慶龍：大盤靠台積電2奈米反攻",
+          "url": "https://tw.news.yahoo.com/%E8%90%BD%E5%BA%95%E8%A8%8A%E8%99%9F%E6%B5%AE%E7%8F%BE-%E6%91%A9%E7%88%BE%E6%8A%95%E9%A1%A7%E8%94%A1%E6%85%B6%E9%BE%8D-%E5%A4%A7%E7%9B%A4%E9%9D%A0%E5%8F%B0%E7%A9%8D%E9%9B%BB2%E5%A5%88%E7%B1%B3%E5%8F%8D%E6%94%BB-220500449.html"
+        }
+      ]
+    },
+    {
+      "summary": "美國晶片出口禁令正式生效，台積電傳已緊急喊停中國客戶的16奈米以下先進製程訂單，部分已完成設計的AI晶片恐面臨無廠可代工的窘境；中國官方則表態將採取反制措施，美中半導體管制角力進一步升溫，雖非直接衝擊台灣持股標的，但牽動晶圓代工地緣政治風險與整體台股半導體供應鏈情緒。",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "美國晶片禁令今正式生效！台積電緊急喊停中國16奈米先進製程訂單，AI晶片設計完成也恐無廠可代工",
+          "url": "https://news.cnyes.com/news/id/6667918"
+        },
+        {
+          "title": "美國收緊晶圓代工管制，台積電停接中國客戶訂單，中國表態將反制",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBaOUpnS1F4NHd4djY2bHVBdVVSQkxlVEJEQk1WdHZYcWFVZkx1WHpmMm1QZ0tNZUdvZ180U0htM05pb1FEU2RSRFlxTXhFMkxCZkYwcWlNVXowS2F5LU83TW1Majk4Szdleng3RjVwTWlMYThvUWRBUEx3?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "美光公開示警記憶體缺貨恐進一步加劇，因AI需求強勁、2027年合約產能已賣出75%；同時美光桃園廠勞資爭議未解，為其台灣擴產計畫添變數，群聯執行長潘健成透露美光已因此取消原訂在桃園設立研發據點的計畫，但他也強調NVIDIA執行長交接風波並未讓各大廠放緩AI投資步伐，明年記憶體供應仍將維持吃緊、群聯自身營運可望持續成長。",
+      "relatedStocks": [
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        }
+      ],
+      "sources": [
+        {
+          "title": "美光示警：記憶體缺貨恐加劇！2027年75%供應量已售出",
+          "url": "https://news.cnyes.com/news/id/6668133"
+        },
+        {
+          "title": "桃園廠勞資爭議延燒 美光台灣布局添變數",
+          "url": "https://money.udn.com/money/story/5612/9890054"
+        },
+        {
+          "title": "潘健成：黃仁勳風波AI大廠無放慢理由 美光勞資爭議取消桃園投資",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775344_DJ822LQ75LUQ543D5AT58"
+        },
+        {
+          "title": "潘健成：明年記憶體仍吃緊",
+          "url": "https://www.ctee.com.tw/news/20261120700169-430501"
+        }
+      ]
+    },
+    {
+      "summary": "記憶體市況出現分歧：鈺創看好記憶體供需緊俏將延續至2027年下半年，並與南亞科合作攻AI記憶體設計服務；但TrendForce同時示警NAND Flash明年恐轉向供過於求，報價自2027年第一季起可能轉跌，顯示DRAM吃緊、NAND轉弱的結構性分化值得留意，南亞科、群聯、宜鼎、華邦電等記憶體供應鏈後續走勢可能分歧。",
+      "relatedStocks": [
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "2344",
+          "name": "華邦電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "鈺創看記憶體供需緊俏至2H27 與南亞科攻AI記憶體設計服務",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775343_2T72IUZH5K6SV52CP14EW"
+        },
+        {
+          "title": "明年恐供過於求 集邦︰NAND Flash Q1起轉跌",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14N0lpb200d1ZJaXlkX3Q1LVBMc2toeFdDZkNhdUpVQ2tJR3REOXJSdDJHNUlzQ3FWRlNBSUVVd0NPblpCMktVOC14YTF1R1RmSHAyc3pic0c?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "日月光集團加碼投資高雄仁武園區先進封測產能，福雷電子K、J兩區合計投資規模擴大至逾3,663億元，瞄準AI高階封測與測試需求，預計分期至2028至2029年完工，形成半導體S廊帶高值化聚落；相關擴產同步帶動萬潤等封測設備廠接獲新增訂單。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6187",
+          "name": "萬潤"
+        }
+      ],
+      "sources": [
+        {
+          "title": "看準AI高階測試需求，日月光仁武新廠動土、兩基地合計投資逾3,663億元！拚2028至2029年建置",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBHOUc1d0tQWHBicFBhS2dGWm5oak9TVmx2TklJV0E3N2FLUVN0UHRTTG55dk1oQWg2alJTaEFsT0lyMnlmcW9VUUdhRkJuUQ?oc=5"
+        },
+        {
+          "title": "日月光布局AI世代 高雄仁武投資2489億元擴大高階半導體測試聚落",
+          "url": "https://news.cnyes.com/news/id/6667498"
+        },
+        {
+          "title": "日月光擴產先進封測 萬潤、鈦昇迎設備訂單",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzRWdpRXJrZXFta0dPdzhPd251Rl9CUDB5TlFJb0pGWmd3cjdLZGFONE5jQnJNOEdmTDRLZWFreUxnNWczRHd4Y0l5Tlg?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "隨著Google TPU成為雲端AI晶片市場的「老二」，聯發科積極卡位客製化ASIC領域，盼爭取主要雲端業者的獨家供應商地位；同時市場人士指出，NVIDIA執行長交接風波後，台廠普遍仍看好GPU與ASIC雙線商機不受影響，顯示ASIC自研趨勢持續侵蝕傳統GPU的市占空間。",
+      "relatedStocks": [
+        {
+          "code": "2454",
+          "name": "聯發科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "TPU成雲端AI晶片市場二把手 聯發科拚上位ASIC獨家供應商",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775356_69I4D57I40F0EP7NMWFXJ"
+        },
+        {
+          "title": "NVIDIA換帥牽動AI機櫃節奏 台廠看好GPU、ASIC雙線商機",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775440_67U374H95PN0F5LU0VOUC"
+        }
+      ]
+    },
+    {
+      "summary": "美國政府傳正研議對中國製光收發器等資料中心零組件實施進口禁令，若成真全球逾7成相關供應恐需重新洗牌，台灣光通訊廠聯亞可望搶食3.2T規格轉單商機；大立光同步宣布加碼5億元擴產CPO（共同封裝光學）相關產能，卡位AI資料中心光通訊升級潮。",
+      "relatedStocks": [
+        {
+          "code": "3081",
+          "name": "聯亞"
+        },
+        {
+          "code": "3008",
+          "name": "大立光"
+        }
+      ],
+      "sources": [
+        {
+          "title": "川普推光收發器進口禁令 3.2T供應鏈將重組 聯鈞、聯亞等台廠迎商機",
+          "url": "https://www.ctee.com.tw/news/20261119700083-430502"
+        },
+        {
+          "title": "大立光布局CPO趕進度 斥資5億元擴產",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1oRndJeEFtcGJWX3NLdDgwN1IwNklwOGNEb1FoZU8xTEtkMHNYd2tXYW04WVgwVk91aUlRWDFrVFdUdUNrNmkxQy1XODMzN1NxUEdpdHZn0gFWQVVfeXFMTWhGd0l4QW1wYlZfc0t0ODA3UjA2SXA4Y0RvUWhlTzFMS2Qwc1h3a1dhbThZWDBWT3VpSVFYMWtUV1R1Q2s2aTFDLVc4MzM3U3FQR2l0dmc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "台達電與日商羅姆半導體（Rohm）結盟，共同搶攻日本AI資料中心800V高壓直流供電市場，呼應AI伺服器與資料中心電源需求持續擴大的產業趨勢，有助台達電電源管理產品線在日系市場的滲透。",
+      "relatedStocks": [
+        {
+          "code": "2308",
+          "name": "台達電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rohm與台達電子結盟，搶攻日本AI資料中心800V直流供電市場",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5IWXRiYWoxTnI2Qm14aEpWcFozNXlFZ0NSdEQ5bUVZdGUwbHQ4N25QaWdtdFlOTkxUQ1lNczZ2QU5OYVRqY3RDOWZyTlhYeGtrOWs5TXZGRnNfVEpxTWZTM0E5cUtmMXFQWW1JNDQ0YmFqWDJsOHQxR1hR?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "特斯拉積極衝刺人形機器人Optimus與自駕計程車布局，帶動台灣自動化設備供應鏈受惠機會，盟立等相關廠商可望跟隨其機器人與自駕技術擴展腳步接獲新業務；中國工信部同期也發布人形機器人分級標準，反映全球人形機器人產業商業化腳步正在加快。",
+      "relatedStocks": [
+        {
+          "code": "2464",
+          "name": "盟立"
+        }
+      ],
+      "sources": [
+        {
+          "title": "特斯拉衝刺人形機器人、自駕車盟立、亞光等台鏈受惠",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1pZHVTQWhTMjd6bjE5U1dMSDdBd1JhbGpjOVBna190MGNSSmRZcV9WUkF1dlU1Z2ZHcjRfQXptSVRYNVhaVUZZLTJFb3Rzblp4?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "NVIDIA創辦人黃仁勳曾公開表示「不相信做不出來」，被視為激勵台灣散熱供應鏈加快技術迭代的動力，但雙鴻董座也坦言憂心部分訂單有轉向美國本土廠商的風險；市場法人同時看好雙鴻明年營運可望大幅成長，反映AI伺服器散熱需求持續強勁下，供應鏈布局與訂單歸屬仍是觀察重點。",
+      "relatedStocks": [
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        }
+      ],
+      "sources": [
+        {
+          "title": "「我不相信做不出來」黃仁勳逼出散熱台廠迭代潛力！雙鴻董座憂轉單美國",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVk9falRqZVRJRG15LVdFVmprVDVfc2xYc0lrRFFMdXJOV1h5ay03cHY5NkJDcE9WQVFEa3lqUmRUVDlNakZsMHBCMEZ0aFRFM2dPTXBtd3BRZkZLa3ZYWi1hek5kX2h4M3J6Wk16QTU2RWowWDVMZy01R0pZbHJCaG5MbEhLbk5vak02ZlhCUXg?oc=5"
+        },
+        {
+          "title": "經濟證券頭條：雙鴻明年營運大成長",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdGdqQ25ocjZCXzJkdVJDY29femNJTGlEZkdVTFUzakFKTHlJWkl3QTA3cVZDY0lqSENvNEZEQWtoOWhpS3hwYjZNLUlKVmZ6MmdsNHNtZFlKaHdzM2lvTVJUNy1vWGJjQTNPMlFSVXVoeTVTQmQ0X00yWXA4WVlMTUxDOHRaT19q?oc=5"
+        }
+      ]
+    }
+  ]
+}
