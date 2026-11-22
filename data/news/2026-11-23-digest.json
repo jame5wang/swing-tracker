@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T15:30:00+08:00",
+  "coversWeekend": true,
+  "items": [
+    {
+      "summary": "輝達創辦人黃仁勳辭任執行長的風暴持續擴大，市場傳出川普盤算讓他「回鍋」、馬斯克也有意延攬，但博弈市場賠率反而押注他另起爐灶；去向未定疊加美股連七個交易日下跌，台指期夜盤一度重挫逾1800點，週一台股開盤恐再現千點殺盤，AI晶片供應鏈情緒全面承壓。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "黃仁勳下一步曝光？川普喊回鍋、馬斯克搶人 賭盤卻押這選項",
+          "url": "https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E4%B8%8B-%E6%AD%A5%E6%9B%9D%E5%85%89-%E5%B7%9D%E6%99%AE%E5%96%8A%E5%9B%9E%E9%8D%8B-%E9%A6%AC%E6%96%AF%E5%85%8B%E6%90%B6%E4%BA%BA-%E8%B3%AD%E7%9B%A4%E5%8D%BB%E6%8A%BC%E9%80%99%E9%81%B8%E9%A0%85-224200233.html"
+        },
+        {
+          "title": "【盤前】美股血崩台股剉咧等！台指夜盤殺1881點　台股恐再掀千點殺盤",
+          "url": "https://tw.news.yahoo.com/%E7%9B%A4%E5%89%8D-%E7%BE%8E%E8%82%A1%E8%A1%80%E5%B4%A9%E5%8F%B0%E8%82%A1%E5%89%89%E5%92%A7%E7%AD%89-%E5%8F%B0%E6%8C%87%E5%A4%9C%E7%9B%A4%E6%AE%BA1881%E9%BB%9E-%E5%8F%B0%E8%82%A1%E6%81%90%E5%86%8D%E6%8E%80%E5%8D%83%E9%BB%9E%E6%AE%BA%E7%9B%A4-221600605.html"
+        }
+      ]
+    },
+    {
+      "summary": "三星、SK海力士傳出2027年DRAM合約價恐再漲達4成，主因現有DRAM產能僅能滿足約7成需求，AI伺服器大廠簽約後仍得接受加價；同時中國記憶體廠月產能擴至15萬片，雖為南韓供應鏈創造轉單機會，長期也構成替代威脅，記憶體緊俏與地緣競爭並存的格局牽動南亞科、華邦電、群聯等台廠後續報價與訂單動向。",
+      "relatedStocks": [
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DRAM僅能滿足7成 三星、SK海力士DRAM合約價2027恐漲4成",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775562_156400TO74VT5R188QNZ2"
+        },
+        {
+          "title": "中國記憶體擴產月達15萬片 南韓供應鏈迎商機也遇替代危機",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE45dnVVNDEzTUhaZUZfVHp2Z185RDFWUkZjWGlDbnh3Q1FKS0tEWEVybk9hZTZMRnZDLU8tYkNRaWFOTW9EYUpBSFdUeEdsQkR6cVpDV0ZvN0F0X29YakZDRXVZMlpJNEF6LXVJ?oc=5"
+        },
+        {
+          "title": "記憶體貴桑桑 AI伺服器大廠 簽約後坐地喊漲",
+          "url": "https://www.ctee.com.tw/news/20261123700076-439901"
+        }
+      ]
+    },
+    {
+      "summary": "記憶體廠逆勢加碼：華邦電董事長焦佑鈞宣布兩年內擬投入1,127億元擴產，並再推約360億元併購案布局下一個十年；南亞科則因DDR4缺貨轉投資逾112億元搶攻高階IC封測產能。惟同期法人也示警，明年記憶體「漲價紅利」恐逐步消退、NAND報價可能轉跌，顯示大舉擴產的信心與價格降溫風險同時存在，後續報價走勢值得留意。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "華邦電兩年擬砸1,127億擴產！再推約360億併購案 焦佑鈞布局下一個10年",
+          "url": "https://www.ctee.com.tw/news/20261122700016-430502"
+        },
+        {
+          "title": "AI浪潮引爆DDR4缺貨！南亞科轉投資「這檔」豪砸近112億擴產 搶攻高階IC封測",
+          "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxNSkJEb0g3REd6NW9PNl84Zy10eTNXSEJ4VmYxVTRVc2FhNFhYRy1jdHpFSDEyZlZ6WDAzdFBSNGhoUGRkdFNjN2xidUFLRnlwcXdqZlN1UWw4eERiZ3BPVDhXX19ZLVA2N1hkMThELTc2dHVNclgyQVdLZDdOYklKaDFtVjRIWUdnSWxncy1MVTZ5dXhEWjY5azZTTWVaeEtsa21oS0tNOWdiV2oxWGtMXzdSbFFpN1dodFVvODBzZVc5ck9zSlNUWHpDVWQ2UWJmRloxRmFpM0ZhMDlJTWFvbmN5am9sUDhtRnNfUVE0Mmh4OU43S05ESHdudUVEV2xtU2ZFd196XzJfZlJqWjdnQ2E0VGxFLS04VVg0ZVpoYm5LT0pnY1pHTzRiSDJKN3hTM0h5ZWREVTdKMFI1TWxQa0xMMXRhdUx5S052c1BNNkl5M0ppR0l3d2RrUWxsOTRHRHBFV1NTVnRsMFlwTW9VZERuaHh1eFBndDFWQVJwZ0d6TVNkcHpnaUtlbjdaSjFqWFlURU5TS2tCM21Ha1JBZGxKVnhnWVk?oc=5"
+        },
+        {
+          "title": "記憶體利空連環炸！華邦電跌近9%、南亞科跌停見2字頭 投顧示警明年「漲價紅利恐逐步消退」",
+          "url": "https://news.google.com/rss/articles/CBMikwRBVV95cUxQNlUzRmxnQmhtTHkybHdrUjRBc2c3WUlxU3ZXRE9nTUM5RloxWTVnVkR2NVRTLUcyazNCWElzTlJfNUZRQTNDemR4MU1PenNtbXVnWGozWXhFaXl0Z1h0Q3ZfNjVQcEozRkpZbWpVQXFacjhjVGc0andxeUFJMjJTNG01QTlfTzd1YnJTc0l0ZUZhV1hJZjRHNEJLc0NkOTc0NHdTUUdvWlphVnpKNEVUaElyUXhMZ3hpYThnNTYzaDJKclAwcEpQdlVFUkw2TlZ2OXFKQzNfYzNqV2kzZjZJd1paVUZFRGVxYVRzUTFaYW55TFF1ei1XTnAxRUxJQ0YzUTEyWW0xMmJBeHhVUUlzX2RlejVNZkRiZ3FPeUthR1pqNVJXcVZRX3dvUS1scDNvYUV6dngxbUoxQXQ2UXQyNlY1NXQwT3NCa1RJRWFHWnZPYlZrYWxuUXVCVHBweWZHTy1NNzFyZjJNX1doaXlJcHpfbG1zYlZrOXBJTFRuZVlpSFVUMnYyT2ZOZWs4anYyb3o2eGpvNGFRS2ZiSXUwR29xMV8tWkxDbWRDMEhxS0dJbnJTV29RVlNFdVJxbTZqZ1dBVmlncEpkQ2RGeFhWNGt2U3JHZTY3NmFJVUo1M3ZIUmxtakx4ZlhWREJabWlHb29zbVJxUUpnZUFoeUFhWnJkOVhYb1FaQml4MWJENjN4bDA?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "散熱雙雄奇鋐、雙鴻同步看旺2027年，皆喊出ASIC液冷機櫃出貨占比可望超越GPU；雙鴻在法說會上預告明年營運拚新高，奇鋐毛利率衝上34%、明年資本支出上看200億元，顯示輝達在AI伺服器散熱市場的獨大格局正因ASIC陣營壯大而生變。",
+      "relatedStocks": [
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        }
+      ],
+      "sources": [
+        {
+          "title": "散熱雙雄戰1》奇鋐、雙鴻同喊明年ASIC超車 輝達獨大局面生變？",
+          "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxNektmQm9BLVl0UTlIQ2M1bzNoM2dfX2pFNnVoa2xrOHFaZ0wtRVJoZDNjT0hMUi15b1d0NFVUb2Z0SXA0dE5OMFc5WnhiRk1mbkp6OXJFazJleVNRMWNWSzl0ZmpxUkM4VWdjV2FXZDVIRU9PZWZKZjR1V0V1R2hmT3QySjVua2U1R0w5S2NINVcyMG94dWdFN0lkV25NVXNWRjFHWlN3cGRDNEVpeDNpOXN2YjBPVkZCbzEzRXVoU285X01PeHo5V2Z5eW9paWVqRndfNkZVQUV5V1RIZTdUU1FTd29HRTBLVWY4SFpuSUFENVFVN1g5Sm0zTFY2R3l5NkpESFJYSURkQ2JmanktNUJDM21GcjBBRjZ2RlQ0VU9NSG1kNXFJOGVURkxMU3FuN01pWGFwamZNZGJVbzdtMHdPamtMZUVOTGlGTXhDc1BTVXl6SkVoZEVFZ0VyY3d5Z0h0bEVCUWc0ZGhidy1QRlFB?oc=5"
+        },
+        {
+          "title": "散熱雙雄戰2》奇鋐毛利率衝34％ 雙鴻祭貴5成新品迎戰",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPblNvZEVXOTZZT2paXzI3ektCVkcyVlNfb3h2LWxHakhVX0tmOHVydkdDcE5ubjVkdGJRb0s5dmxadWQxMkVLaHcta1BqVkVlNXdGbjBVcjVyZHRjdHJYVkIycUJ2VnNNcjFobHAyajBhbkI4LV9Fc3JGTzRzd29iNXhmNlZhVnNCbjJzaWVjOWFDekFCWUZrUVp0d0J1TWN0TzNHMXpOSFBRRm05U1BPcGZ1YlNsdE05UFh4cm1KcTQ1WDNDejhKZlp4OWFQcG9samxFSXE2dlB6Q2ZZdkgtcUU3ajY4elpOSTUwSzM0aU8teTR0MU9MMkYxMWZ2X0t0UllxbHZ2RXllekVSNEphYkdlbHAwU2xXNlpHZTRXRzFjQVIzUm95bnI4UUt3U3MxS05tcThHSmFZcEFJekRRSEIxVXpHX2RQdTlF?oc=5"
+        },
+        {
+          "title": "第一類接觸／雙鴻看好 AI 伺服器散熱需求持續成長 明年營運拚新高",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTV2hYRnA4QjR6TUhGMzNoMDlEX19ucWZPQXJ2UkpCODA3QUR2cXdpMktzeGItNmhOdEFGQnVJeE5XdHZqa1dYYVNqUTVYQThwSFhPbVFYWllkZU1SNXNKa2pUT2ZScW9NMFJyRjVjZ3Jqa0stWlFITS1KZjFRX1U?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "經濟日報「董事長的一句話」系列專訪中，環球晶董座徐秀蘭表示矽晶圓供需正趨緊、報價有望調升，台達電董座鄭平強調資料中心訂單能見度仍高，聯發科總座蔡力行則說客戶需求強勁、ASIC成長動能可延續；另有外資喊出聯發科AI大單能見度拉長到2031年，郭明錤也分析Google明年下修博通TPU出貨約百萬顆，聯發科可望受惠轉單。",
+      "relatedStocks": [
+        {
+          "code": "6488",
+          "name": "環球晶"
+        },
+        {
+          "code": "2308",
+          "name": "台達電"
+        },
+        {
+          "code": "2454",
+          "name": "聯發科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "董事長的一句話／2027年半導體景氣更旺？環球晶徐秀蘭：矽晶圓供需趨緊 報價有望調升",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5tdi1SUjRoamNLNktkUU1RX21hY0dqbVd6bnRwZkVweDMzSW9oYjNaUTY4TF9VQUNRckRTMC1xUk13bldFM1VyemcyNTV3UW03NW5Hb3JyVFZrb2s00gFiQVVfeXFMTjlzdmVva21PdjQzMkNPMnVXUzc2bXlUY2p3NjRzSmdWc0N1dW9tOThuNVU4a3g5ZGQtOVRPWTZQMnFSTUpiZGZDY2RwYmwxTWhIb1ZwOHJoZFNzZ2Z0U0ptR3c?oc=5"
+        },
+        {
+          "title": "董事長的一句話／2027年AI景氣還能旺？台達電鄭平：資料中心不是蓋一兩季 訂單能見度仍高",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uNmo5QURvZ3lQcGl0dXB5a1ZYUkxvS0hPVTN6eXVYNEsxRG1JT29FMm5UT0I0TjRlY3U2eE1pY2JWVEJueWdrd2xmNU5fU0F3TEJYNmU0NXBNQVV50gFiQVVfeXFMTWs5MTd5YTFmeWd1S0Zmd0lteHJ5ZTVvS3NxbHBFakdrUjVQU3JaNkdCcXFMRzBQNHdTa2NuakFZMHRtR0QxTmxzbmYweXhBNG1EeGVnM1NtcTRrb3dOa01ydnc?oc=5"
+        },
+        {
+          "title": "董事長的一句話／2027年AI景氣還能旺？聯發科蔡力行：客戶需求強勁ASIC成長動能延續",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAzeGJjeTJwWXFhNzBKT1NuTTlPYW1waUZYMHBPOGJHalVNVmZ4aE5oOE1SVV9TVW9uZlhLTW5WTGFvZ2FtZkRqNDgyWTVKcmx1eWN2Wlp1WWpEYXVm?oc=5"
+        },
+        {
+          "title": "郭明錤：Google明年下修博通TPU出貨約百萬顆 「聯發科」可望受惠",
+          "url": "https://news.cnyes.com/news/id/6669649"
+        }
+      ]
+    },
+    {
+      "summary": "AI伺服器用鑽針與高階板材需求爆發，全球PCB供應瓶頸恐延續至2028年中、美歐產能占比偏低加劇供應緊繃；玻纖布大廠報價一年內漲超過100%、EPS上看31元，個別高階PCB廠產品漲價達16倍，反映ABF載板、CCL覆銅板、PCB／軟板整個產業鏈正處於結構性缺料與漲價循環。",
+      "relatedStocks": [
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        },
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        },
+        {
+          "code": "8358",
+          "name": "金居"
+        },
+        {
+          "code": "8021",
+          "name": "尖點"
+        },
+        {
+          "code": "6727",
+          "name": "亞泰金屬"
+        }
+      ],
+      "sources": [
+        {
+          "title": "全球PCB爆短缺危機 供應瓶頸恐延續至2028年中",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775490_J825A7RC85KWHA1SG6ECG"
+        },
+        {
+          "title": "全球PCB缺料警報響起 美歐產能佔比偏低、供應緊繃恐延續至2028年",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBHWVI3RllMNWNCVVp6SF91Y0lGNzQ0NEE1RjN2WUpIX1BrMGYtcmJTZzlTVGNyOTh2ZTZCcHM5d2twRjZCaWo1QlRDb1pkYVJJTnE2Y3hlQzBkM1RwLXhrNFVoeTFNYzdMNURHZExwV19EbWRKMVJDTzRR?oc=5"
+        },
+        {
+          "title": "AI鑽針需求大爆發！這「PCB大廠」營收狂飆81％、凱崴暴增75％ 高階產品漲價16倍旺到2028年",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0yTUt0alp1SU9xd2VyM25mOTN6V3Z0NVhEaVFWdUJXLUhlaTVWZERDMV9lSGRUZnRhMzZxZUExNlEwRmsxR04wVWlsYw?oc=5"
+        },
+        {
+          "title": "目標價310元！「玻纖布大廠」EPS上看31元 2大CSP加碼大單＋漲價超過100%獲利強漲",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82aHhlcDhEbDJiWWVJaFRuLTBfeEM4Z2xrOUNwQkxxWWFrd3J2T3NVbUFEOTBKbHlwUDUwOVlDTjE3Q1FIQWVLZVdrdw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "DIGITIMES報導，隨伺服器CPU先進封裝逐漸轉向類CoWoS架構，日月光與矽品2027年相關產能預估將首度超越封測大廠Amkor，意味日月光集團在AI伺服器高階封裝的市占與議價力可望進一步提升。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "伺服器CPU轉向類CoWoS 日月光與矽品產能2027首超Amkor",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775524_TGL6AGA51TNQUR5ZD5JVD"
+        }
+      ]
+    },
+    {
+      "summary": "光通訊供應鏈利多頻傳：美國傳將進一步收緊中國製光收發器相關產品，台廠可望承接轉單；蘋果則被曝加速徵才，計畫將矽光子光學封裝導入自研晶片，顯示CPO／矽光子應用版圖持續擴大。同期已有台廠10月獲利暴增364%、長單在手逾半年並擴產拚2年產能翻6倍，另一家則砸40億元擴產搶單，反映CPO、EBO需求持續放量帶動設備與檢測商機。",
+      "relatedStocks": [
+        {
+          "code": "3081",
+          "name": "聯亞"
+        },
+        {
+          "code": "6442",
+          "name": "光聖"
+        },
+        {
+          "code": "3363",
+          "name": "上詮"
+        },
+        {
+          "code": "3163",
+          "name": "波若威"
+        },
+        {
+          "code": "3008",
+          "name": "大立光"
+        },
+        {
+          "code": "4979",
+          "name": "華星光"
+        }
+      ],
+      "sources": [
+        {
+          "title": "美再收緊光通訊產品 進補台廠14檔",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPX1ZaVjE3N1pGZEQ1bGd6SWhOTkNJWWktNHhYV0duZG53LXFURk1jU2pIMUN2TmRJZ25lNnRzdktrYTJQS24tRkU0QVRycWFNUVpQMEk5NGFuVFpBcHZTdTFCRDVLSjlmU1Y5UnJLcV9RalpwRkRQSVFuREwzRUxWaTN4ZzdnRGlqOE1qWVEyRmVhUEtVNWRITnRBeDBPZ2NNdi11aWxKSTJUZzRiUW5CZ1dkMzVTVnZVbTJCM251M0hhcHBvSEYybFhEOEtTeUFfOUMwNm5pLThsNlVwdVFpMDNzZ0U4ZTl3MkNQazRiTDNHekNzdkVyVUJMUXl4VWM?oc=5"
+        },
+        {
+          "title": "蘋果加入矽光子戰局 接連徵才擬將光學封裝導入自研晶片",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775505_FKR4PVAF1GPVWO4EY73BW"
+        },
+        {
+          "title": "光通訊需求噴發！「這大廠」10月獲利暴增364%、EPS 2.55元長單握逾半年、砸80億擴產拚2年產能翻6倍",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOQU9ZLWk2eWdNMEZPdjNqWWhOS0VOWnp1MDU5WFo2LU54V3ZDc0llM2RMcDZOaENqNFl5V3haVmowVFM5VDZfbXZjQVQ5Y1pLYjc0dlJCZkFaV016S3NiOVZpZzdvR2ZUU3kzUGs3dDNsYjJCeU9uNmdQMjlDNmVjTi04LXNYRXh5bzFCTWRDRVl6LUpXU0pkeEc1QmotWFpHaFlvQUlIM2hkWmFvSy1SN3JMdjVVamxqZWNvWmlkVi1meEtKcG5Ba1JReDB5bkRGdlJmTDNYYzZtVk9kcjRCa1FrTkx5S3hrOUdEeUJQVmFuQnJrTzFpdkhxdGpYTDBSQ1Z5LU8zYW1EYXQ2TzI5aVdSVjlXM3RVOWZyRWFQQi0?oc=5"
+        },
+        {
+          "title": "EBO、CPO雙引擎點火！「這大廠」砸40億擴產搶單 目標價喊上1090元",
+          "url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNUlJxWDBmRERqY3FsNk5HdzFLeVlMZnMxZDJnNlVNLXJYTkMzZEV6NzhaRE5iNFNhNkVmU2k4U0drOUtUZ0N2NUhnMEFybVdGM3JSc3UtOVp5VV9iRXRZbktkM0NHZjgxNUJadVFfM1pkcTlKak9kOTB0NWpJXzBEUU9JaUlINzEycVFWRGdZUzV5YUJpdWg4eGdDdEdsa0ZuT19ocFpBSmxTeUNGczlTb1Zvb25qOFlQdVdDWWxCc0c2ZVJDWlI4X3hIM2RkdURwVDE2S21SeUp0VHF5a2Q1Q2g5OXY5UWF5VzV0cUxfQl91b21BT2ZoNm1JMmp4ZDF6NVJQRlRyUnBVUmtOVzN6UVpFUUdmT1FzaGJ4U1lXOG5yTHJpLUJfMzlLUFpkdE8wQWhzWUlPR3A1d2VQa2hHNDdpQkJ0QlVhaFJ5cHlxQUcxUld2bkdkSA?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "馬斯克傳出正打造衛星通訊「天羅地網」，收購美國關鍵頻譜資源強化低軌衛星布局，化合物半導體台廠全新、穩懋、IET-KY、台勝科可望沾光；同期也有兩大LEO供應鏈廠傳出將再籌資200億元擴充產能，顯示低軌衛星需求成長正帶動相關台廠同步加碼投資。",
+      "relatedStocks": [
+        {
+          "code": "2455",
+          "name": "全新"
+        },
+        {
+          "code": "3105",
+          "name": "穩懋"
+        },
+        {
+          "code": "4971",
+          "name": "IET-KY"
+        },
+        {
+          "code": "3532",
+          "name": "台勝科"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        }
+      ],
+      "sources": [
+        {
+          "title": "馬斯克打造衛星通訊「天羅地網」收購美關鍵頻譜 台鏈可望沾光",
+          "url": "https://tw.news.yahoo.com/%E9%A6%AC%E6%96%AF%E5%85%8B%E6%89%93%E9%80%A0%E8%A1%9B%E6%98%9F%E9%80%9A%E8%A8%8A-%E5%A4%A9%E7%BE%85%E5%9C%B0%E7%B6%B2-%E6%94%B6%E8%B3%BC%E7%BE%8E%E9%97%9C%E9%8D%B5%E9%A0%BB%E8%AD%9C-%E5%8F%B0%E9%8F%88%E5%8F%AF%E6%9C%9B%E6%B2%BE%E5%85%89-221800460.html"
+        },
+        {
+          "title": "需求成長 這兩大LEO供應鏈廠還將進行市場籌資200億元擴充",
+          "url": "https://news.cnyes.com/news/id/6669835"
+        }
+      ]
+    },
+    {
+      "summary": "美國AI大廠持續加單，帶動旺矽AI晶片測試需求升溫並加速擴產，業界看法認為此一旺勢可延續到2027年，反映AI晶片測試環節在供應鏈瓶頸下同樣供不應求。",
+      "relatedStocks": [
+        {
+          "code": "6223",
+          "name": "旺矽"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI晶片測試2》美國AI大廠要更多貨 旺矽擴產迎戰",
+          "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPcmtzSkg0bjd4ZjVCWGxvR0lfRTJfdVk1b1ZBcEkxNDhLd1Z2Tno0MGlBZTFQV1JKLThUNGgtMU5qM2lqR1YydFlRbloyVzFNVGJjTG5aemZKOWNJR053TElSbG5zaF9Jb2FoUS0yUEwweW9DbXBMVEItY1JpU3JvZlVueU1KVHAybktrNzEtX0lfVTRfOGZKSlkxYnNlWkd3UzNBcDFzel9PVDZJOE5HSXNNcFN5REdWS3V2R2tRbUlLTGtFS3FzRzVQUXQ0a012WmRBdjFPVlRTT09LcHh2d2pRUm1SSlpqYkVNT28zYkY0VnFLUUhwbWlZY0JVSVllWFllZmtLdHdEWmg3YkRNQlUtQm51Y1NNcmkyZm04TW1mR2Y4aVkxc3A2bkMxc3FlS0pwVA?oc=5"
+        },
+        {
+          "title": "旺矽AI晶片測試 2027續旺",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xQVpKc2lWR3ZId3RrQ0U5Ykl5RS1rUXNLR2o1dV9tSkl5SFJ3d1ZhQnlhbnBhSGRsUFhCeWt4czVfVnhKSThpUHhiNnZZNGtuYkQyX0FuRHhtVGdiYmpBN2x1NkFkTDJXR29R?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "群聯攜手太空資料中心新創Lonestar推出太空專用SSD儲存解決方案，預計2027年上半年發射升空，搶攻低軌衛星軌道資料中心商機，為記憶體控制晶片大廠在既有AI伺服器主業外，開拓太空經濟這一全新應用場景。",
+      "relatedStocks": [
+        {
+          "code": "8299",
+          "name": "群聯"
+        }
+      ],
+      "sources": [
+        {
+          "title": "攜手 Lonestar 推進低地球軌道資料中心建置，群聯推出太空專用 SSD 解決方案",
+          "url": "https://finance.technews.tw/2026/11/20/phison-launches-ssd-solution-designed-for-space/"
+        },
+        {
+          "title": "群聯推太空專用SSD搶攻軌道資料中心市場 攜手Lonestar明年上半年發射升空",
+          "url": "https://news.cnyes.com/news/id/6669305"
+        }
+      ]
+    },
+    {
+      "summary": "被動元件報價出現分化：消費級MLCC現貨價約下跌5%，但AI伺服器用高容值MLCC仍供應偏緊；中國國瓷材料同時宣布擬增產5,000噸高階MLCC粉體，日、台同業新產能則多排在2027年後才開出，顯示國巨等台廠在高階AI伺服器MLCC領域的供應優勢可望維持一段時間。",
+      "relatedStocks": [
+        {
+          "code": "2327",
+          "name": "國巨"
+        },
+        {
+          "code": "3026",
+          "name": "禾伸堂"
+        }
+      ],
+      "sources": [
+        {
+          "title": "MLCC報價分化 消費級現貨跌約5%、AI伺服器高容值仍偏緊",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAzRmdFU2tpa2tNUEdCVWFuelBrUUpsN3lWRlN2TE9hYXlLRnczWEJHa1pyVl9iUi1BVDlKN0prNXpxX2E5dU40NnlCdnl3aGVYTnBGclN3?oc=5"
+        },
+        {
+          "title": "國瓷材料擬增產5,000噸高階MLCC粉體，日台同業新廠多排在2027年後",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85YlBISWZVU1IwMFlXM2g1MlV6UldCQmtiNDNHcTBjR180aDJJMXFGN1VFRE9TOVhZbmY4Z3YzWWdLdDdyMGtBZmEwM1JQUk80cUh1TGRn?oc=5"
+        }
+      ]
+    }
+  ]
+}
