@@ -1,0 +1,209 @@
+{
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T15:30:00+08:00",
+  "items": [
+    {
+      "summary": "景碩Q3法說會釋出產業訊號：毛利率飆升至34%（季增8個百分點），ABF載板產能利用率突破95%，預計2027年中才有新產能開出；載板業界高層同時表示，黃仁勳回歸輝達後訂單合作關係與供需缺口並未改變，加上景碩同步傳出擴產動作加快，顯示ABF載板供給吃緊、報價走升的格局短期內難以改變。",
+      "relatedStocks": [
+        {
+          "code": "3189",
+          "name": "景碩"
+        },
+        {
+          "code": "3037",
+          "name": "欣興"
+        },
+        {
+          "code": "8046",
+          "name": "南電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【景碩科技FY2026 Q3 法說會】毛利率飆上34% 季增8個百分點ABF載板產能利用率突破95% 2027年中新產能再挹注",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE16VkttU19wZE9fSk0xQVZBb3I5WjFMSHNHUF9kZ0l2VmFPRy0wLWRzclBhZzdFbHh2elVrRXZkN1JZeE56MnVMS1JHUG80cjdLWVJZQjM5d3JBWEU3UzhhVTljOXl1dw?oc=5"
+        },
+        {
+          "title": "黃仁勳回歸 ABF高層：訂單合作與供需缺口一直沒變",
+          "url": "https://money.udn.com/money/story/5612/9899359"
+        },
+        {
+          "title": "輝達助陣 景碩擴產火力全開",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0xMzAtbm94THNIOFJ5aGVTdnVXMkF2TTlMc2FvWm5aaHZqVHlIVlI3cERrT1ZjazVuNjktTUpmQkhSNzVGeEhMNWwwWExNaU1vUWZib0J2WEpHTm5uejhsMkEtb21XUVYtTVJn?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "玻纖布、CCL供不應求態勢未解，法人看好相關廠商明年將量價齊揚；南亞(1303)旗下南亞新材料宣布加碼28.8億人民幣於中國大陸興建高階覆銅板廠，鎖定AI伺服器與IC載板需求，顯示材料廠已提前卡位擴產以備戰中長期需求成長。",
+      "relatedStocks": [
+        {
+          "code": "1303",
+          "name": "南亞"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "南亞新材斥28.8億人民幣建高階覆銅板廠 鎖定AI與IC載板需求",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE52RlhMdEM2TThDSVJOWG40ZEpqMDNUVHZSNGozNzVoVGM2a0I3cm85YjE4YTlyTEpha3RoWVljdkhORWlXWlRTRkNKZjh3czRWYVhXT2dFR2dTRVdHVmNHNEQwd2hnOThnM3I0aE1VZkNoYkdGcC1UU0ZR?oc=5"
+        },
+        {
+          "title": "《DJ在線》CCL明年量價齊揚低本益比成焦點",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVExIZ05oT2FPUk90R1VKaU1DT2tHYlJ0ZVNQcmtBaElpd243WmxDbkVvOTRmZ1VlZzlNOW5ueGtFTXhQRUdsN0doem5oUkcwenFHbWZ5LThzZmhiTGFVak1ZcWtMdVYySWNCWmdvSEFONkZWbXhMNnh6NzNCOXVRSnlDVU9kWEUwVndPeW9ISkZjdw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "產業分析指出，雖然PCB產業現階段受惠AI伺服器拉貨熱潮，但隨著2027年將有更多廠商投入高階AI伺服器板產能，供應鏈競爭預期加劇，目前的超額利潤可能面臨重新分配，顯示現階段的高獲利表現未必能線性外推到未來幾年，PCB供應鏈內部分化值得留意。",
+      "relatedStocks": [
+        {
+          "code": "2368",
+          "name": "金像電"
+        },
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【產業競爭】AI 伺服器 PCB：2027 年競爭加劇，產業超額利潤將重新分配",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tSHRHZVV3QVhDSEhtbWEzV0l3SkpUNXkxTjdLZkx2c0Jnc0Q4MTZIM29SRHFJYjZNRHNqRWQ2OVR0aW9OUmk3aHlRRVpMN0h6T2Z5YnFn?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "日月光投控(3711)股價自高點拉回逾四成後強勢反彈漲停，法人指出公司已吃下台積電CoWoS先進封裝外溢訂單，推升明年每股盈餘估上看35元，顯示在台積電先進封裝產能滿載下，訂單外溢效應正逐步反映在封測廠的營運展望上。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "日月光765元修正41％後「強攻漲停」！吃下台積電CoWoS外溢大單、EPS估衝35元 投顧喊出目標價：還有18％空間",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10NzRfYjVySUpUUEZ1em9EekI5UEdMbjFIMXJvMHdRNk1rZDBSOVJsT2VvQmdvMjJBMXVtY3F3MElMY00wYUR2NUpCVFhBQ1g5eHJkRGFPekhIaHpJMGFwdkNTX0o2WndDcWc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "記憶體股近期出現劇烈分歧：美光上週股價一度重挫逾一成，遭外資調降評等並大幅下修目標價，示警DRAM「供過於求」風險升高；但也有機構看法轉趨樂觀，認為反彈仍可延續，顯示市場對記憶體景氣高點是否已過仍存在明顯分歧，台廠記憶體概念股波動恐同步放大。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "美光暴跌超10% 遭投行降評、腰斬目標價 示警記憶體「供過於求」風險升高",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBuWk55UmNjWGxVSHVXV3UzNEFGaTJFZHFoQ1VJSG81T1hwNEMzWmpabmV5UENnRVlQaEdscUZtNXBFM1dGaFhDZGVqSQ?oc=5"
+        },
+        {
+          "title": "美光反彈可持續？《巴隆》：3大利多有望推升後市",
+          "url": "https://news.cnyes.com/news/id/6670416"
+        }
+      ]
+    },
+    {
+      "summary": "群聯(8299)PCIe 5.0企業級SSD新品X2已打入CSP雲端業者供應鏈，累計產值突破600億元，並同步導入ODM及品牌伺服器；公司規劃PCIe 6.0新品最快明年上半年量產，顯示台廠在企業級儲存領域的訂單能見度持續墊高。",
+      "relatedStocks": [
+        {
+          "code": "8299",
+          "name": "群聯"
+        }
+      ],
+      "sources": [
+        {
+          "title": "群聯企業級SSD X2累計銷售逾600億元 PCIe 6.0新品明年上半年量產",
+          "url": "https://www.ctee.com.tw/news/20261124701998-430502"
+        },
+        {
+          "title": "群聯PCIe5.0企業級SSD X2上半年放量 打入CSP供應鏈累計產值達600億元",
+          "url": "https://news.cnyes.com/news/id/6671004"
+        }
+      ]
+    },
+    {
+      "summary": "多篇產業分析指出，CPO（共同封裝光學）方案已從概念驗證階段進入AI機房實際量產導入階段，聯亞(3081)、上詮(3363)等台廠在雷射光源、光引擎等關鍵環節的角色與訂單能見度逐漸清晰，顯示光通訊供應鏈分工正隨CPO放量加速成形。",
+      "relatedStocks": [
+        {
+          "code": "3081",
+          "name": "聯亞"
+        },
+        {
+          "code": "3363",
+          "name": "上詮"
+        },
+        {
+          "code": "6442",
+          "name": "光聖"
+        }
+      ],
+      "sources": [
+        {
+          "title": "看懂 CPO 量產，先看懂這兩件事：電訊號走多遠與光源壞了怎麼辦",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbk5vVDU3WFdmMWZjTDJXaHdEMjlGTlRNdW9mbUswLTVWUm1NSWlJS2pNbGNIWVdfMGpwdThncy03YjY3YXpmSjFfRTZ1RjdVclMtTXJKYTg0NGVIVWtxUGpsdFluYm9rRGdDcmphWjhMYm04UXdrbGFEZmdpeHJ0MlBvUTNQTnNLVDdfeFVn?oc=5"
+        },
+        {
+          "title": "CPO 進了 AI 機房，聯亞、上詮的光通訊生意做到哪一步？",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUk9saG9pektUR2dWTm9RclNfVTZRVGdPblVENTFOaUlMdVhJVjVaYThlbjVydkJpd1NESWJQRVFiU2NuaktZRTlISU84X01FaE1KRWd0VGdpTVRWZ1dnZnRxbXNqN0I3cG1KdkcwZWVobUdOeGVLdWQyZ2NWTy1XUg?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "川普在CNBC專訪中警告，若台灣持續維持現行晶片關稅優惠，「兩年後」恐將面臨高達200%的關稅，並重申台灣「幾乎壟斷」美國晶片生意的說法，但也坦言若全面取消關稅，廠商在美建廠意願將大減；同一時間，台積電被曝已向美國德州Brazos郡申請財產稅減免，評估在當地興建一座226億美元的晶圓封裝廠，顯示美國建廠的租稅誘因與關稅施壓正同步進行，台灣半導體供應鏈仍須持續留意後續關稅風險。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "Trump Warns of \"Paying 200 Percent on Chips\" in Two Years. That Pushes TSMC Toward a $22.6 Billion Texas Plant",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/trump-warns-paying-200-percent-195922778.html"
+        },
+        {
+          "title": "川普再嗆台灣：偷走美國近100％晶片生意！放話2年後關稅上看200％",
+          "url": "https://tw.news.yahoo.com/%E5%B7%9D%E6%99%AE%E5%86%8D%E5%97%86%E5%8F%B0%E7%81%A3-%E5%81%B7%E8%B5%B0%E7%BE%8E%E5%9C%8B%E8%BF%91100-%E6%99%B6%E7%89%87%E7%94%9F%E6%84%8F-%E6%94%BE%E8%A9%B12%E5%B9%B4%E5%BE%8C%E9%97%9C%E7%A8%85%E4%B8%8A%E7%9C%8B200-222900499.html"
+        }
+      ]
+    }
+  ]
+}
