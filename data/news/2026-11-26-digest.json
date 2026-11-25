@@ -1,0 +1,289 @@
+{
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T07:43:34+08:00",
+  "items": [
+    {
+      "summary": "美國商務部公布301產能過剩調查報告，確認台灣晶片關稅稅率維持15%、不會與其他措施疊加課徵，政院上午8:30召開記者會說明；報告同時對中國提議加徵20%關稅。同一時間，台積電美國新廠（德州）擴廠典禮傳出川普可能親自出席，凸顯台灣在美中晶片角力中的關鍵戰略地位，美台半導體合作與貿易政策角力持續同步進行。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "美國產能過剩301報告 台灣關稅稅率15％不疊加 政院上午8：30記者會說明",
+          "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E7%94%A2%E8%83%BD%E9%81%8E%E5%89%A9301%E5%A0%B1%E5%91%8A-%E5%8F%B0%E7%81%A3%E9%97%9C%E7%A8%85%E7%A8%85%E7%8E%8715-%E4%B8%8D%E7%96%8A%E5%8A%A0-%E6%94%BF%E9%99%A2%E4%B8%8A%E5%8D%888-30%E8%A8%98%E8%80%85%E6%9C%83%E8%AA%AA%E6%98%8E-222802232.html"
+        },
+        {
+          "title": "美國301調查報告　對中國提議加徵20％關稅",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E%E5%9C%8B301%E8%AA%BF%E6%9F%A5%E5%A0%B1%E5%91%8A-%E5%B0%8D%E4%B8%AD%E5%9C%8B%E6%8F%90%E8%AD%B0%E5%8A%A0%E5%BE%B520-%E9%97%9C%E7%A8%85-220552282.html"
+        },
+        {
+          "title": "台積電美國擴廠典禮川普要來 凸顯AI鏈關鍵戰略地位",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%BE%8E%E5%9C%8B%E6%93%B4%E5%BB%A0%E5%85%B8%E7%A6%AE%E5%B7%9D%E6%99%AE%E8%A6%81%E4%BE%86-%E5%87%B8%E9%A1%AFai%E9%8F%88%E9%97%9C%E9%8D%B5%E6%88%B0%E7%95%A5%E5%9C%B0%E4%BD%8D-224504725.html"
+        }
+      ]
+    },
+    {
+      "summary": "台達電董事長鄭平將近半數個人持股（市值逾新台幣301億元）轉讓並轉入新設立的「廣曜籌備處」，多家媒體追蹤報導此一大股東持股結構調整動作，市場解讀可能與家族控股／傳承安排有關；由於轉讓規模龐大、佔其個人持股比重高，後續廣曜籌備處的角色與是否涉及經營權佈局值得持續關注。",
+      "relatedStocks": [
+        {
+          "code": "2308",
+          "name": "台達電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台達電董事長鄭平申讓近半持股，逾301億元股票將轉入新設「廣曜籌備處」",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE12Q0RGYWJibGt5eWcxcWlTeXdvWEpyWGRHZVdqdmtZdFZLMU1yclNQOFl4VjhJQXNDUlpEYjZaSlFNWE9zcE5WWU9WdXRTS2hXcllHelBLVERwNzZaZkE?oc=5"
+        },
+        {
+          "title": "台達電董座鄭平移轉近半持股 逾300億元股票轉入新設公司",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9YYWtVLWRpczFHX0gtQS1lOHNQeE00Tmw3aUw0U3NMUGtNdTZGN0tPbTVJUFRkMUFKeWpnVFNXdlRUTjRaSWt6NmZ3VzFjQWFzaEt4SURweXpVYnBiTW9DNkVYU1RnX2l6UGFVb0o5WDlNZDNVVVJVdzJn?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "DIGITIMES報導指出，歐盟近期祭出新的數量限制措施、重塑相關產業競爭版圖，市場解讀此舉對台達電及台灣電子代工「六哥」相對有利，意味著歐洲法規走向可能為台廠帶來訂單轉單效應；具體規範內容與受惠機制仍待後續觀察確認。",
+      "relatedStocks": [
+        {
+          "code": "2308",
+          "name": "台達電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "歐盟急劃數量紅線重塑版圖 台達電、電子六哥看俏",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776059_UNAL2VEJ6YG8T68WSLKRC"
+        }
+      ]
+    },
+    {
+      "summary": "大摩（摩根士丹利）看好台光電下階段需求將「爆發式」成長，給予正面評等，為CCL／高頻材料族群注入新一波法人買盤信心；此一分析師觀點與近期玻纖布產能遭AI伺服器排擠、CCL供需偏緊的產業背景相呼應。",
+      "relatedStocks": [
+        {
+          "code": "2383",
+          "name": "台光電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "台光電需求將爆發 大摩挺",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1CZDdGTjZmVXBOY3Utc1pweGt6X1NvSFprc3pzTTMyWG5LTkVfVEZyOENMZklKM0F5NDJCUnE4UGVVX3czbmJtaWlVNEpMRmw4Qzh2YkZn0gFWQVVfeXFMTUJkN0ZONmZVcE5jdS1zWnB4a3pfU29IWmtzenNNMzJYbktORV9URnI4Q0xmSUozQXk0MkJScThQZVVfdzNuYm1paVU0SkxGbDhDOHZiRmc?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "騰輝電子-KY表示高速CCL材料明年拚營收倍增，客戶轉單效應持續發酵；同一時間產業調查指出，玻纖布產能持續被AI伺服器拉貨排擠，推升電路板報價，連帶使LED顯示屏成本單季再增2%，顯示CCL上游材料吃緊格局短期內難解，供應鏈材料廠議價能力同步提升。",
+      "relatedStocks": [
+        {
+          "code": "6672",
+          "name": "騰輝電子-KY"
+        },
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "6274",
+          "name": "台燿"
+        },
+        {
+          "code": "6213",
+          "name": "聯茂"
+        },
+        {
+          "code": "8039",
+          "name": "台虹"
+        },
+        {
+          "code": "1303",
+          "name": "南亞"
+        }
+      ],
+      "sources": [
+        {
+          "title": "騰輝-KY高速材料明年拚倍增轉單效應續發酵",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUDkyQWJKZlJmN0h1TTRXZU9JOVcxRDJHVGktLVhxRXA3ZGpfX2RLNXlBeEdMVzdrb1VyQkFMa0MwZm1ITndMa2V3MVpRcjNfdVpRLXBvd1RrTVdXaEhZREJMLWwydXVybTBkUmlqOXNuWmlRcVhGV0Y4ZGR0S1lVYTJVYndiZ3BsYmF1RGZTS1Vxdw?oc=5"
+        },
+        {
+          "title": "玻纖布產能被AI搶光 電路板漲價、LED螢幕成本季增2％",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUzlxRGtqZEJDYlVjT1h2UFpFZjRyZ3BoMGtMWENsWFlYRll2SmhIYk92RjZ5Q1V5M2liTkhxX3Eyc2h4NDRvUkdQS2lySzhlXzJPTjdyMzh0R3ZvREM5LUhSUm5paFFHd00zX25POTFfcHV0Njc4dTNNY3I3QWdCUTFSakFWRjNRaUpVV0JwNlBCUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "化合物半導體廠穩懋董事長陳進財公開回應輝達相關股價震盪引發的「AI泡沫」疑慮，表示從第一線訂單實況來看，台灣「賣鏟子」的設備與材料供應商角色並未受影響，為市場對台廠在AI供應鏈中的角色提供第一手信心喊話。",
+      "relatedStocks": [
+        {
+          "code": "3105",
+          "name": "穩懋"
+        }
+      ],
+      "sources": [
+        {
+          "title": "輝達風暴AI要泡沫了？穩懋董座陳進財揭第一線實況：台灣「賣鏟子」不受影響",
+          "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxQalYybTU3QjhsMHV2dEcyaUpZWHQ3a0JIeExEN0lNNXdSdnVxY2pBQWpuTXNlMEZrcjRXRkRSbExoSWVBQkdJejlvaUEyX2w1eWRFUHdnckozUkl2UENGVWJIOTNOMFgzX09oWXVEVC1PVVR0UnZKVEtjaVNFQ0QzRE12SVU0ckxPTTFjaUJQTktOd3o5NUtZaEFlYmpHU0dGTWsybzFNNE9WRUJJSE9jMWswdmcxdHUtN0dZc0tkODdsbVp3M0dPb2V5VjRuNFQ1RXF6Z0hqc2k0ODZuZ2FMZzc0ZnlVR1N6a29sMFhHMXQtYWlfLWdGUFBXa25TRDdwQnZidFBvVS1CenNxaWJTZFEySVB2S21kYUVTWUlmUXlQeTF4ODV5Q1V6NXNXUkZVQ0ZxdkJiTkJ4Qk13ejJGWVBNb1BnYTZTM1F6eDJfVEVLTGtmTjFjdklaX1R4TUlVQlRONnJfbHhnX2NFMWpaV2FRTC1WRUZjbEpEWS1kRUV0QWpUNk9V?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "聯電股價11/25打入跌停，法人與媒體分析聚焦其資本支出與擴產規劃，討論重心從成熟製程轉向矽光子等新動能業務；同一時間瑞銀估計2027年全球AI資本支出將達1.4兆美元，建議資金轉向晶圓代工與設備廠，另有消息指三星HBM基礎裸片（base die）產能嚴重不足，正評估委外擴大晶圓代工產能，顯示晶圓代工板塊的供需與資金動向正同步重組。",
+      "relatedStocks": [
+        {
+          "code": "2303",
+          "name": "聯電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "聯電（2303）做什麼？股價為何打入跌停？成熟製程到矽光子新動能，資本支出與擴產計畫一次掌握",
+          "url": "https://news.google.com/rss/articles/CBMixgRBVV95cUxOUzJoSS1ObzFmbm9SLWtwT21STzQ3UUhNTnZKZXY5ak5IM2o1Mk1VdmpiRFVjcDU2dDJ1TWdGaHpQMWJaS0dLN1c1NUJFX1ZnZXplczRwbmRXQXBuVHhlZlFnVnJiR2FMbDlJZW0zSDJPaXdoTjFYUnM0ejBPQ29seEI0WkQ5RzZ2RmdiR0lpZHNlcHljYTlpbFdxVVk1SjE0ZFNTeU1Rd1hhZk5UNVJIT0ozR2NOTFNvaFVxalVfcnhjV1lIMFVJNXJRRFJkSU9tekJZVFFfZFZyZ19ES3c2cnhjc0lENExaOE8zaDRZOVRTTkllckpqamZMZUFSS1Q3WTBaVmpNN2dXR1FBZXByck1MLXZobTlaY3dpTGZVVHBHWlpUcWRxTXN5dWVHYlVNVWVYMjR3QVQwdU9uV1YxVHh6SlZLVHFpdmFjclRzMXNPVEJtSlZHYnl6eDRtcG4xTDVlVWhKcGlScy15NHFJRnFXajVsWWwyYXRlNzZfalEyUTRKN2ZCdnFabm9MUHJJTjZ5d3J0UXFYNlJ5d2k3dEFhQ29LbFBObDEtVnRPaGtvLXRadnZZMkhORnFIRXVrNXpUY3hIQWVzR0VBNGhSNDEwaERpTHgwR25sMkVvYmV0b05idlBXNTlrSUZBSTdlcGVKc2g4YTgxVWdPSWM4YWdqUUxLdjdFZE01MmYwb1hPMFI4d2prRjZsc19uRnRiMWV1akMtOTlJR1BYQjZfWkxPcHh5aHhnLXdYWDRXWjhrdktLYUE?oc=5"
+        },
+        {
+          "title": "瑞銀估2027年全球AI資本支出達1.4兆美元 建議轉向晶圓代工與設備廠",
+          "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxPUFhXREZMZzBsT2hlTURnamUxa0NZaEktZ0RCVlA3SFl6UUZHTlNTUWxCVnZYQnhXeDZHaEY5ZFY0VFhLQ1o3QThWU0MwaTM5a2dNdzhKci1oRFJ3emhsdXJVemJneXJTYlh6TU5jRGVyU211LXNiSlpSRlVVV3ZpSjVzRE9VaDkta0pEY2loMkw0R2VqSnNUc3BFZzNDUjZ5a2w4OGZPRVpZaDhjTlJGRGVYQjZkOV9HOXVzMVNNdDBwYTBxdl8zYmYzWXJjNENNaDRob0s3b0xwWHBpWEVLUHZmS1BSRUpnM1F2QWpjcXR5cVozc3ZuZVdMaE1MbENOYTJOVmN1SmxmWEROMkpKZVowRzFKbEpIMUpzV05yMFlWZlRkN01UUkpXb0RDc3pZYnVrZFdrTVVzbm9MdERUY0Z0ZU55SWQzcE5Pd1g3andlVkVrRE5iRDA5eHpsT1VlbXc3TXNhS2VnT0hwYTA3QmZ6elFvQ0NQNW9UdnFfVGEzQU5zWVFTR0RoTlF5bGpVb0s4YVBad1E1czA4dVR0NjhFTzF4Qk0?oc=5"
+        },
+        {
+          "title": "消息稱三星HBM基礎裸片產能嚴重不足 正考慮擴產晶圓代工",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsUjEtYWRaVWhkUTNOR2lNWjVyZm1LWHNiMl9zWjAwVGl3c0NzcXFvU0JyanYweHJZakppanNzYW42MkRvZ1hwbmNUc3NCYzVkcVU3dndoNnI5cDVNMGR1YWJ3Y1dLMU5DOEE?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "自動化／檢測設備廠大銀微系統第三季營收年增77%，CPO（共同封裝光學）量產訂單入袋，明年3月規劃擴產；同時其高階定位平台的CPO檢測訂單能見度已看到2027年中，顯示CPO產業鏈從驗證走向量產階段，相關檢測設備訂單同步放量。",
+      "relatedStocks": [
+        {
+          "code": "4576",
+          "name": "大銀微系統"
+        }
+      ],
+      "sources": [
+        {
+          "title": "大銀Q3營收年增77%！CPO量產訂單入袋、明年3月擴產",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9KMk43OTN2aUFqbFp1RTVHdHR5T2hjNkp5d1RLdjFnTnR1MjNTdVZTWkg5aXlYQWp1MHQ5WndyMk0wQXhBZmRtWEdiX3QyQjN5Q0lsTzJmUHZfLTMt?oc=5"
+        },
+        {
+          "title": "大銀微系統搶攻高階定位平台 CPO檢測訂單看到2027年中",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776089_FCILPO199831R78T6RCAF"
+        }
+      ]
+    },
+    {
+      "summary": "產業報導指出，輝達與雲端大廠正激烈爭搶CoWoS先進封裝產能，反映AI晶片封測端產能依然吃緊；此一供需格局對台灣先進封裝龍頭持續有利，呼應近期日月光吃下台積電CoWoS外溢訂單、EPS展望上修的趨勢。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        },
+        {
+          "code": "6239",
+          "name": "力成"
+        }
+      ],
+      "sources": [
+        {
+          "title": "輝達、雲端大廠 爭搶CoWoS產能",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UUUxJeHVCMDBMSXZRdkh2VXd0MlF4TVY3cWFhNUVvUmR3Y3E5c3o5Ti1mbXcwbTFKQjJ0QkF5ZzR6MXNXOU9hdV9HeVlTN1F1TTRudkhRSXU0X2F6YWtzd29DUm1LSVoyQTFV?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "記憶體產業多方訊號顯示缺貨與價格緊張格局未解：研調機構指出DRAM合約價仍處高檔、供需緊繃態勢未改善；但漲價效應也開始反噬終端需求，據報導美系兩大PC品牌（戴爾、惠普）對2027年換機潮展望轉趨保守；技術面則傳出三星HBM4E速度已達17Gbps、跨入輝達要求門檻，而輝達RTX Pro 5500中國訂單能否放行的變數，也讓三星、SK海力士原本看好的GDDR7商機添增不確定性。整體而言，記憶體供給吃緊对台廠仍是中期利多，但終端需求降溫與地緣政治變數是後續觀察重點。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DRAM合約價仍處高檔 研調指供需緊繃態勢未解",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776008_AKUL14T41FMPKY7OTJCPA"
+        },
+        {
+          "title": "記憶體漲價、企業換機潮退燒 美系PC雙雄看淡2027年",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776053_YKK10LIJ44OGFJ4EM5V2Y"
+        },
+        {
+          "title": "三星HBM4E速度傳已達17Gbps 研發跨入NVIDIA要求門檻",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776003_2Y31PEKILWRVKX49X9MYO"
+        },
+        {
+          "title": "RTX Pro 5500中國訂單變數 三星、SK海力士GDDR7商機蒙塵",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776018_B7ILP4CW2DQRVZ7N1C0H0"
+        }
+      ]
+    },
+    {
+      "summary": "散熱廠雙鴻雙面水冷板已進入量產，明年CDU（冷卻液分配裝置）營收占比將續升；同時國際大廠也加碼液冷布局，ABB宣布砸26.5億美元收購德國馬達廠、瞄準AI資料中心散熱商機，施耐德電機則規劃義大利液冷產能明年翻倍，顯示全球液冷散熱資本支出熱潮持續擴大，對台灣散熱供應鏈形成中長期需求支撐。",
+      "relatedStocks": [
+        {
+          "code": "3324",
+          "name": "雙鴻"
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐"
+        },
+        {
+          "code": "3653",
+          "name": "健策"
+        },
+        {
+          "code": "8996",
+          "name": "高力"
+        },
+        {
+          "code": "6805",
+          "name": "富世達"
+        }
+      ],
+      "sources": [
+        {
+          "title": "雙鴻雙面水冷板量產，明年CDU占比續升",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUzlxRGtqZEJDYlVjT1h2UFpFZjRyZ3BoMGtMWENsWFlYRll2SmhIYk92RjZ5Q1V5M2liTkhxX3Eyc2h4NDRvUkdQS2lySzhlXzJPTjdyMzh0R3ZvREM5LUhSUm5paFFHd00zX25POTFfcHV0Njc4dTNNY3I3QWdCUTFSakFWRjNRaUpVV0JwNlBCUQ?oc=5"
+        },
+        {
+          "title": "ABB砸26.5億美元收購德國馬達廠 搶攻AI資料中心散熱商機",
+          "url": "https://tw.stock.yahoo.com/news/abb%E7%A0%B826-5%E5%84%84%E7%BE%8E%E5%85%83%E6%94%B6%E8%B3%BC%E5%BE%B7%E5%9C%8B%E9%A6%AC%E9%81%94%E5%BB%A0-%E6%90%B6%E6%94%BBai%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E6%95%A3%E7%86%B1%E5%95%86%E6%A9%9F-175531155.html"
+        },
+        {
+          "title": "施耐德電機義大利液冷產能明年翻倍 新實驗室將測試5MW設備",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1uYzFoLXg5SnU5V3JacV85NGFXZjdXZjg2VThMa1diSmVEek5xd1RJUGpDdjN3UmgtcmRtdXhfQ2xwNnhJbnJ0Q2VYSFVuSTFQUW9jdFdR?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "面板產業傳出結構性變化：LG Display喊停10.5代OLED投資計畫，反映市場環境變化下大尺寸面板建廠策略跟著調整；同一時間中國面板業傳出史上最大併購案，京東方（BOE）傳計畫收購維信諾（Visionox），若成真將進一步整合中國面板供應版圖，牽動全球大尺寸與中小尺寸面板競爭格局。",
+      "relatedStocks": [
+        {
+          "code": "3481",
+          "name": "群創"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【Amy & Dr. Chip】LGD喊停10.5代OLED投資 市場變了、建廠計畫也變了！",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776079_1TBLA8DQ84RWYG86RCD6J"
+        },
+        {
+          "title": "大陸顯示面板行業史上最大併購案 傳京東方計畫收購維信諾",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KalA5c0RaSGhpRF9rdDhvTkNlVnZsRndhWE5nZVpab3o5Nlh5U0NlMVZCbF9jNVRXSDJJWThQN2xOX0oyVTd5LWVPUDJMWUVUSEpOSDJBQ2VqT0FDV0dB0gFfQVVfeXFMTUpqUDlzRFpIaGlEX2t0OG9OQ2VWdmxGd2FYTmdlWlpvejk2WHlTQ2UxVkJsX2M1VFdIMklZOFA3bE5fSjJVN3ktZU9QMkxZRVRISk5IMkFDZWpPQUNXR0E?oc=5"
+        }
+      ]
+    }
+  ]
+}
