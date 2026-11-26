@@ -1,0 +1,271 @@
+{
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T07:41:39+08:00",
+  "items": [
+    {
+      "summary": "美國政府至今未鬆口半導體相關關稅方向，加上傳產已面臨301條款關稅衝擊、美對車用零組件關稅豁免仍待拍板，整體關稅政策不確定性持續籠罩台股科技與傳產供應鏈情緒。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "美未鬆口 半導體關稅不確定性高",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E%E6%9C%AA%E9%AC%86%E5%8F%A3-%E5%8D%8A%E5%B0%8E%E9%AB%94%E9%97%9C%E7%A8%85%E4%B8%8D%E7%A2%BA%E5%AE%9A%E6%80%A7%E9%AB%98-201000373.html"
+        },
+        {
+          "title": "301關稅效應 傳產挑戰大",
+          "url": "https://tw.news.yahoo.com/301%E9%97%9C%E7%A8%85%E6%95%88%E6%87%89-%E5%82%B3%E7%94%A2%E6%8C%91%E6%88%B0%E5%A4%A7-223711202.html"
+        }
+      ]
+    },
+    {
+      "summary": "研調機構指出台積電CoWoS先進封裝產能滿載（月需求上看18萬片），訂單開始外溢至日月光、艾克爾等委外封測廠；預估2027年台積電AI先進封裝市占將達85.8%，OSAT廠承接的「類CoWoS」需求規模估成長5.5倍，反映AI晶片先進封裝需求持續吃緊。",
+      "relatedStocks": [
+        {
+          "code": "3711",
+          "name": "日月光投控"
+        }
+      ],
+      "sources": [
+        {
+          "title": "《科技》AI封裝台積電2027市占估85.8% 日月光等類CoWoS需求增5.5倍",
+          "url": "https://www.ctee.com.tw/news/20261126700982-430503"
+        },
+        {
+          "title": "台積電CoWoS爆單滿載 研調估日月光、艾克爾2027年類CoWoS需求飆5.5倍",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZX1hUYThMS2RYSmZ1Z095dHQzcFhsSV9MRV9MTWZQdjI0OUctWFpFZmNSLXVJNld3ZDl0eVVBNHlQMWl0eG9mZ04ybEdiSmRRZDQwdUUycVVMOS1tVWduNTAxM2FMRG1QTkhmR2ZtSEoxaFdvZkxzZG9R?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "產業報導指出AI伺服器用高階PCB持續排擠傳統PCB產能，供應吃緊情勢估計要到2028年中才可望緩解；臻鼎-KY表示高階PCB需求強勁、新廠產能將分階段開出因應，金像電等廠亦反映網通交換器規格升級帶動的需求轉強。",
+      "relatedStocks": [
+        {
+          "code": "4958",
+          "name": "臻鼎-KY"
+        },
+        {
+          "code": "2368",
+          "name": "金像電"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI排擠PCB供應 短缺估2028年中前難緩解",
+          "url": "https://www.ctee.com.tw/news/20261126701134-430502"
+        },
+        {
+          "title": "臻鼎-KY高階PCB需求強，新廠產能分階段開出",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd1lidU5mMl9uZzRVWkFEU0U3QUZZbUpPV21MWmxRdEFZOUF0YWlMZ0FwUWc1RFZxTlpjNTdxdVdJZE1DcEszeVFBYjdKZVlVVUpVc1lwaWhuZkZOZEhrYmd5ODlObVo1ckcxaWM2NHpBUlZLVzVpV0tJZ0wwRFY1OEFjMjlBQzVqN1FUM0JzUU9DcHQ4OGRxZ0N0Z3VqejVDVEg1aFN1dDFCTmc?oc=5"
+        },
+        {
+          "title": "網通交換器+PCB規格升級！金像電攻上905元奪榜眼「系統整合大廠」亮燈奪量價雙增王",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ENFdiU2UyVmFnb293anYzRlZFSy1uaFI5R0wyMlZmRDBBV0F2eGpicmFJQW9OWDFGTnVFd2V4Ny1iNDc0cWF5aGl3Yw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "SpaceX獲准部署百萬顆低軌衛星的計畫，市場解讀將為PCB與CCL供應鏈開啟長線商機；大摩公開看好台光電可望躋身SpaceX供應商之列，華通則被點名可望受惠於衛星用光模組與高頻材料需求成長，光模組新產能並將逐季開出。",
+      "relatedStocks": [
+        {
+          "code": "2383",
+          "name": "台光電"
+        },
+        {
+          "code": "2313",
+          "name": "華通"
+        }
+      ],
+      "sources": [
+        {
+          "title": "大摩看好台光電 躋身SpaceX供應商",
+          "url": "https://www.ctee.com.tw/news/20261127700095-439901"
+        },
+        {
+          "title": "SpaceX百萬衛星計畫獲准，華通/台光電迎長線商機",
+          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPWDFtdW9SQWhXMDFJc1dKcF9ZZnhaSC1sR0NocHZDbWlkUkNPX0dqWU5yTG9SdmNvNGl2U2w3U3JvZUVtYjF6OHhaMFFCM1JqbnRVMkJKRU1qZVpFaEJrNmpqbjd0NWxKaE1nYm43UG1UQmNNV0J5bFVLYWQ5cWRsQVJvYVVlaGZTXzBRSmxzZjNtX080dkNlSG1CYUlXME1ITnpzT21sUXBoYjFOZ2JjY21JV0ltMjAwbXh6S1FudHR0TTVNSjFrU3lPeXpGTWtLN2twX044amxLcVVncjhjOUNOYWt1X3l6UnJIbVVSajFXd2VRUGxlem4tRGpDalBMcVVxbTB1S3djcE5QS3hHb1FvZnRuVERNdTJLMHdGeUU0a2JXekFfeXBJdjZIWWwxWVR6U1Mtb21fbkxzSFE?oc=5"
+        },
+        {
+          "title": "華通光模組新產能逐季開出，衛星業務明年續增",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPendKUTh2MGZEcFJQejNOZ0FlWEluc0hvX1BHNTdFZ0w1QmJwSWlFbHVZOVJVczVkZDJ4Z1I4cHVFMUZwYUZ3Q01VdGZxbWloQWhWTk4yWFViN1djWlZ2UWRyc09GcGthRUcwSUpqakhENjVhS0RhV3NSTTZCNThCQlR5TV9ESDVtUkRnVjJ1MTh0UQ?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "多方報導指出AI需求持續吸乾全球記憶體產能，缺貨格局估計至少延續到2028年；三星與SK海力士在16層堆疊、4F²無電容器等次世代DRAM技術上加速較勁。值得留意的是，鎧俠(KIOXIA)與輝達合作驗證以SSD儲存裝置補足HBM容量缺口（GB200 NVL72系統以144顆SSD擴充約1.1PB容量），顯示AI記憶體缺口已開始外溢到儲存裝置領域；同時中國華為傳進軍HBM新一代AI記憶體晶片，挑戰美系出口管制的有效性。",
+      "relatedStocks": [
+        {
+          "code": "2344",
+          "name": "華邦電"
+        },
+        {
+          "code": "2408",
+          "name": "南亞科"
+        },
+        {
+          "code": "8299",
+          "name": "群聯"
+        },
+        {
+          "code": "5289",
+          "name": "宜鼎"
+        },
+        {
+          "code": "6531",
+          "name": "愛普"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI吸乾全球記憶體產能 缺貨至少到2028年！馬斯克搶貨也碰壁 晶片貴如「金條」引竊賊覬覦",
+          "url": "https://news.cnyes.com/news/id/6672128"
+        },
+        {
+          "title": "三星與SK海力士DRAM交鋒 16層垂直堆疊較勁4F²無電容器",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776136_FWQ2W52G2BD6227OST5PD"
+        },
+        {
+          "title": "鎧俠聯手NVIDIA驗證SSD補足HBM容量 切入AI記憶體市場",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776185_Z1I2KNHY75E20S6HAB9Y9"
+        },
+        {
+          "title": "北京觀察》華為HBM晶片重大突破！4096位元介面挑戰三星與SK海力士 美國AI晶片封鎖擋得住？",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9YMi15R0JDNk03cElwQWZTVzA4MWVNSVA1RWhicDZ2Y3BxaW96OTh2bFVuRm1hMEk5MG55MXpzWXRCazV4d2h1MmwyVXpsZw?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "研究機構SemiAnalysis大幅下修全球AI加速器相關資本支出預測，2030年預估值下修幅度達四成，其中輝達面臨的調整壓力最大、博通則相對抗跌；此一評估若成真，恐為市場帶來AI資本支出降溫的黑天鵝風險，牽動整個台灣AI供應鏈的終端需求能見度。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "美AI晶片恐供過於求！SemiAnalysis下修2030年支出40% 輝達首當其衝",
+          "url": "https://news.cnyes.com/news/id/6672014"
+        },
+        {
+          "title": "〈SemiAnalysis報告解析〉AI加速器需求與出貨預測大降！輝達受衝擊最大 博通相對抗跌",
+          "url": "https://news.cnyes.com/news/id/6672045"
+        }
+      ]
+    },
+    {
+      "summary": "市場傳出台積電評估在美國德州加碼興建2奈米廠，華爾街解讀此舉透露AI晶片需求仍強勁，為台積電資本支出與先進製程擴產動能添增信心，間接對整體晶圓代工與先進封裝生態系的景氣能見度釋出正面訊號。",
+      "relatedStocks": [],
+      "sources": [
+        {
+          "title": "台積電傳赴德州蓋2奈米廠 洩AI需求風向？華爾街點破關鍵訊號",
+          "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%82%B3%E8%B5%B4%E5%BE%B7%E5%B7%9E%E8%93%8B2%E5%A5%88%E7%B1%B3%E5%BB%A0-%E6%B4%A9ai%E9%9C%80%E6%B1%82%E9%A2%A8%E5%90%91-%E8%8F%AF%E7%88%BE%E8%A1%97%E9%BB%9E%E7%A0%B4%E9%97%9C%E9%8D%B5%E8%A8%8A%E8%99%9F-210530975.html"
+        }
+      ]
+    },
+    {
+      "summary": "健策法說會中談到AI散熱技術正朝「低熱阻」方向演進，熱介面材料未來恐被均熱片等更低熱阻方案逐步取代；公司三片式均熱片已獲多家客戶導入驗證，明年將量產放量，訂單能見度達半年，經營層對2027年營運展望正向。",
+      "relatedStocks": [
+        {
+          "code": "3653",
+          "name": "健策"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI散熱朝低熱阻發展 健策：熱介面材料遲早淘汰",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBDdFZSdXA4elQyWkIzR2hocTJMWTNtR1VsNWZDcG9ubWU2aERiajB0RkFPY1ZmNGtBYTlhSmt3bnhnRF9wTktVaHc2cjc?oc=5"
+        },
+        {
+          "title": "健策訂單看到六個月 高毛利率產品明年量產",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvTGVUcjBKa05sX1RtSGx0UGo1em5KM2VKTFdMamppN29Ebmlmd0lFMXotUlVNbEl1WGFYcEZBNEt3WFdSWk5qSlhUVXNUazZKN3dJY0NPRGlPQdIBX0FVX3lxTE5xckFDSDRYVkYyc0RiUDhlejg4OXRTa1A0M01mMXJWNmhucUhaRGVDZGZmNkllWlkxWms1LUx5V2dfMFlyYVNDd0FBbWdMVlhiTm1xalZuTy1nUEhqaF8w?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "穎崴法說會表示AI測試介面需求持續供不應求，探針卡月產能規劃明年擴增逾2倍，仍難完全滿足客戶需求，明年營收看至少雙位數成長；公司並積極布局7,000W液冷溫控方案與CPO測試設備量產進度，同時搶進老化測試新商機。同屬測試設備族群的鴻勁則傳出Mega Tray與CPO設備接單同步升溫。",
+      "relatedStocks": [
+        {
+          "code": "6515",
+          "name": "穎崴"
+        },
+        {
+          "code": "7769",
+          "name": "鴻勁"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AI測試介面持續供不應求 穎崴喊2027產能倍增仍難滿足",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776158_VKF02KA161FNGJ73HQKIR"
+        },
+        {
+          "title": "AI測試需求強勁！穎崴自製探針月產能拚增逾2倍明年營運看雙位數成長",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1xc1ppVHpXa1VwclRZeGI5MnB3T2owVnk5S3hxQWNBREZNeXdxSlkydl9LOENSb0tfVmxWa1ltczBFU092UG5FNHdkakIxQWZVbE95Z2RIOUhqS0pBOUxz?oc=5"
+        },
+        {
+          "title": "AI晶片越做越大、測試時間拉長！穎崴布局7,000W液冷溫控，王嘉煌談CPO量產進度",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QTjdZR1M5SWhTcThjSVZJSjFZbFlBOHNpVUVLeHJrUExBZFlIdExfUEtBU0o3cHN5UmhkcW80blFtVkN0LXRpWV9jMVAxQQ?oc=5"
+        },
+        {
+          "title": "鴻勁三大成長引擎點火！Mega Tray、CPO 設備接單升溫",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fS2JOODV4WnZneGFwRjloam1VNWJQSUJGNUNNcTNjeWxDMXB2RmN6ZkpWMS1hVl9oYjBCenQ1WXdrWGpLSFlvVXBTZ01hb3BEaDh4cGxJN1Y?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "台勝科11/26舉行法說會，經營層表示公司8吋、12吋矽晶圓產能維持滿載，明年營運展望「非常樂觀」、表現看好大幅優於今年；值得留意的是，因近期股價劇烈波動，台勝科股票同步自11/26起連續5個營業日被列為處置股、採人工管制每2分鐘撮合一次交易。",
+      "relatedStocks": [
+        {
+          "code": "3532",
+          "name": "台勝科"
+        }
+      ],
+      "sources": [
+        {
+          "title": "法說會速報》台勝科明年營運「非常樂觀」 遠優於今年",
+          "url": "https://ec.ltn.com.tw/article/paper/1780059"
+        },
+        {
+          "title": "台勝科：8、12吋矽晶圓產能滿載",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBiUEJBRVlJM3NtdEhqdTNaMlFva050aTNGU3ZjOGlDRzNJVTBqVXEwcHpSdDM5d2RpVDY5WGRCUm1nSTA5cE1sZ05DM1F1bjhwNENhX2JxN080T1lIYlFEVHl2SWFidldkam4w?oc=5"
+        },
+        {
+          "title": "個股：台勝科(3532)即日起5個營業日改採人工管制交易，每2分鐘撮合1次",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM1pLcXJ0SlNzQkh4NHVpcXZqWG5GRDVhVlBHMkxKbGRUdXp0MGM1Z3R3c2pGeWVobXllSE1tTzhDRDNiQ2V0aW1kQm9DSXZCMkhYSWtlRE9CRHNVeUVZc1JjeS1QRkdLTl9GdVJzYktLQzIxR0x5bGkzZjFVUHROWUN0aHBfdGtj?oc=5"
+        }
+      ]
+    },
+    {
+      "summary": "松川精密因近期營收與獲利呈現大幅成長（10月自結營收及第三季稅前淨利均較去年同期顯著增加），依臺灣證交所規定觸及「注意交易資訊」公布標準，公司已公開說明相關財務業務狀況以利投資人區別瞭解；此屬因獲利表現強勁而觸發的揭露程序，非經營疑慮。",
+      "relatedStocks": [
+        {
+          "code": "7788",
+          "name": "松川精密"
+        }
+      ],
+      "sources": [
+        {
+          "title": "【公告】松川精密有價證券於集中交易市場達公布注意交易資訊標準，故公布有關財務業務等重大訊息，以利投資人區別瞭解。",
+          "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9D%BE%E5%B7%9D%E7%B2%BE%E5%AF%86%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E6%9C%89%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-075901100.html"
+        },
+        {
+          "title": "公開資訊觀測站重大訊息公告",
+          "url": "https://mops.twse.com.tw/mops/#/web/t05sr01_1"
+        }
+      ]
+    },
+    {
+      "summary": "市場點出輝達正大舉押注光通訊生態系（包括CPO共同封裝光學）以突破AI運算互連瓶頸；同時研調預估1.6T乙太網路交換器出貨將於明年首季衝破百萬埠，智邦、明泰可望領軍受惠，為網通/光通訊供應鏈帶來新一輪規格升級商機。",
+      "relatedStocks": [
+        {
+          "code": "2345",
+          "name": "智邦"
+        }
+      ],
+      "sources": [
+        {
+          "title": "破除AI算力瓶頸 輝達大舉押注光通訊生態系",
+          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQbGZoa1FGdXM3UFFSWFdHVWxTRkJDQzVRVTVMRkxPZW1iNjJtVGQ2bVJ0dWQxQThFWURvaWp1WkxGdVAxbFhNYVlBWTJCaXJkYWJyVjhDUkh5LWVZT3Uwb09xaktxam9qMi1KTFIxYXA3T1R6Q3hsSlNkNjZSdnpCTkdha3NaLXAyMWFLQ1dEWkhCOGE0S18yRWNVbW9NejItRV9JVmpOUnhBWm5aMm5IWXlZbXpnanBFUWhrRjZXQ19iOWMyejRTbW1wY2NfQzFSRlA4amt5Z2trZFlWWDlyeS1pZU1UNUg0d0V6cERIM0hsNGJLU3lIUS1nRHAtWWJmNHhTNU9yV0EwSFNxdTAwRWl1RGM5R01GRnBOUWlmbk91QXNxU0JFaFZVb2ZOTHVqT19WZGtOSzM3cVk1aHc3eFJn?oc=5"
+        },
+        {
+          "title": "明泰1.6T交換器12月小量出貨 2027鎖定大型資料中心擴大布局",
+          "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776184_QZC2WKVT7FIVNH5R3A8VT"
+        }
+      ]
+    }
+  ]
+}
